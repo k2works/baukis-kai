@@ -26,6 +26,7 @@ cd /vagrant/
 docker-compose build
 ```
 
+### 追加Gemセットアップ
 
 ## アプリケーション開発
 
