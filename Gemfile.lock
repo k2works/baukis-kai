@@ -38,9 +38,36 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arel (7.1.4)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (9.0.6)
+    capybara (2.5.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    capybara-screenshot (1.0.14)
+      capybara (>= 1.0, < 3)
+      launchy
+    capybara-webkit (1.11.1)
+      capybara (>= 2.3.0, < 2.8.0)
+      json
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
+    choice (0.2.0)
+    coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -49,13 +76,30 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.4)
+    database_cleaner (1.3.0)
+    debase (0.2.1)
+      debase-ruby_core_source
+    debase-ruby_core_source (0.9.6)
     debug_inspector (0.0.2)
+    diff-lcs (1.2.5)
+    enum_help (0.0.16)
     erubis (2.7.0)
     execjs (2.7.0)
+    factory_girl (4.8.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.8.0)
+      factory_girl (~> 4.8.0)
+      railties (>= 3.0.0)
+    faker (1.4.3)
+      i18n (~> 0.5)
     ffi (1.9.14)
+    font-awesome-rails (4.7.0.1)
+      railties (>= 3.2, < 5.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    i18n_generators (2.1.1)
+      rails (>= 3.0.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -63,6 +107,9 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    json (2.0.2)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -71,6 +118,8 @@ GEM
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
+    migration_comments (0.4.1)
+      activerecord (>= 4.2.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -81,8 +130,12 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.19.0)
+    public_suffix (2.0.5)
     puma (3.6.2)
     rack (2.0.1)
+    rack-dev-mark (0.7.5)
+      rack (>= 1.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.1)
@@ -100,8 +153,18 @@ GEM
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6)
+    rails-erd (1.5.0)
+      activerecord (>= 3.2)
+      activesupport (>= 3.2)
+      choice (~> 0.2.0)
+      ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.0.1)
       actionpack (= 5.0.1)
       activesupport (= 5.0.1)
@@ -112,6 +175,25 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-rails (3.5.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    ruby-graphviz (1.2.2)
+    rubyzip (1.2.0)
     sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -119,8 +201,16 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    selenium-webdriver (3.0.5)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
+    shoulda-matchers (2.6.2)
+      activesupport (>= 3.0.0)
     spring (2.0.0)
       activesupport (>= 4.2)
+    spring-commands-rspec (1.0.4)
+      spring (>= 0.9.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
       spring (>= 1.2, < 3.0)
@@ -131,6 +221,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.12)
     thor (0.19.4)
     thread_safe (0.3.5)
     tilt (2.0.5)
@@ -146,29 +237,58 @@ GEM
       activemodel (>= 5.0)
       debug_inspector
       railties (>= 5.0)
+    websocket (1.2.3)
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
+    yard (0.9.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
+  better_errors
+  binding_of_caller
   byebug
+  capybara (~> 2.5.0)
+  capybara-screenshot
+  capybara-webkit
   coffee-rails (~> 4.2)
+  database_cleaner (~> 1.3.0)
+  debase
+  enum_help
+  factory_girl_rails
+  faker (~> 1.4.3)
+  font-awesome-rails
+  i18n_generators
   jbuilder (~> 2.5)
   jquery-rails
+  launchy (~> 2.4.2)
   listen (~> 3.0.5)
+  migration_comments
   mysql2 (>= 0.3.18, < 0.5)
+  pg (~> 0.18)
   puma (~> 3.0)
+  rack-dev-mark
   rails (~> 5.0.1)
+  rails-erd
+  rails_12factor
+  rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
+  selenium-webdriver
+  shoulda-matchers (~> 2.6.2)
   spring
+  spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
+  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  yard
 
 BUNDLED WITH
    1.13.7
