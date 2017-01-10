@@ -14,6 +14,12 @@ Baukis 改
 
 # 構成 #
 ## アプリケーション環境構築
+### Vagarntのセットアップ
+```
+vagrant up
+vagrant ssh
+```
+
 
 ## アプリケーション開発
 
