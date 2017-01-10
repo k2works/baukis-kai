@@ -1,24 +1,24 @@
-# README
+Baukis 改
+===================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 目的 #
 
-Things you may want to cover:
+# 前提 #
+| ソフトウェア   | バージョン   | 備考        |
+|:---------------|:-------------|:------------|
+| ruby           |2.4.0    |             |
+| rails          |5.0.1    |             |
+| vagrant        |1.8.7    |             |
+| docker         |1.12.5    |             |
+| docker-compose |1.8.0    |             |
 
-* Ruby version
+# 構成 #
+## アプリケーション環境構築
 
-* System dependencies
+## アプリケーション開発
 
-* Configuration
+## アプリケーション配置
 
-* Database creation
+# 参照 #
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 参照 #
