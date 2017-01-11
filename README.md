@@ -1,5 +1,6 @@
 Baukis 改
 ===================
+[![CircleCI Build Status](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/k2works/baukis-kai) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/k2works/baukis-kai/master/MIT-LICENSE.txt) 
 
 # 目的 #
 
@@ -45,6 +46,8 @@ docker-compose build
 heroku create baukis-kai
 git push heroku master
 ```
+
+### CircleCIセットアップ
 
 ## アプリケーション開発
 
