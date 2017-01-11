@@ -38,10 +38,15 @@ docker-compose build
 + RSpecの初期設定
 + Factory Girlの初期設定
 
-## アプリケーション開発
-
 ## アプリケーション配置
 
-# 参照 #
+### Herokuセットアップ
+```bash
+heroku create baukis-kai
+git push heroku master
+```
+
+## アプリケーション開発
 
 # 参照 #
+
