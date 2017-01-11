@@ -83,4 +83,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.baukis_kai = {
+      staff: { host: ENV["PRD_URL"] , path: '' },
+      admin: { host: ENV["PRD_URL"], path: 'admin' },
+      customer: { host: ENV["PRD_URL"], path: 'mypage' }
+  }
 end
