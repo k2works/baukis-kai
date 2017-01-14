@@ -11,3 +11,23 @@ div.wrapper {
   padding-bottom: 20px;
   background-color: #cccccc;
 }
+header {
+  padding: 5px;
+  background-color: #448888;
+  color: #eeeeee;
+  span.logo-mark {
+    font-weight: bold;
+  }
+}
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #666666;
+  color: #eeeeee;
+  p {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+  }
+}
