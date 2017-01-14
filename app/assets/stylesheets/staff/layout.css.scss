@@ -1,4 +1,5 @@
 @import "colors";
+@import "dimensions";
 
 html, body {
   margin: 0;
@@ -10,11 +11,11 @@ div.wrapper {
   box-sizing: border-box;
   min-height: 100%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
   background-color: $gray;
 }
 header {
-  padding: 5px;
+  padding: $moderate;
   background-color: $dark_cyan;
   color: $very_light_gray;
   span.logo-mark {
@@ -29,7 +30,7 @@ footer {
   color: $very_light_gray;
   p {
     text-align: center;
-    padding: 5px;
+    padding: $moderate;
     margin: 0;
   }
 }
