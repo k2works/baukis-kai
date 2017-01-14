@@ -1,3 +1,5 @@
+@import "colors";
+
 div.wrapper {
   div.container {
     h1 {
@@ -5,8 +7,8 @@ div.wrapper {
       padding: 9px 6px;
       font-size: 16px;
       font-weight: normal;
-      background-color: #1a3333;
-      color: #eeeeee;
+      background-color: $very_dark_cyan;
+      color: $light_gray;
     }
   }
 }
