@@ -1,0 +1,20 @@
+.l-column {
+  flex: 0 1 $base-content-width;
+  max-width: $base-content-width;
+  margin: 0 auto;
+  padding: 0 $space-unit;
+}
+.l-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.l-halfColumn {
+  flex: 1 0 0px;
+  max-width: ($base-content-width - $column-space)/2;
+  margin-right: $column-space;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+}
