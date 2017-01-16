@@ -27,5 +27,8 @@
   }
   &__body {
     margin: 16px auto;
+    @include mq-sp {
+      display: none;
+    }
   }
 }

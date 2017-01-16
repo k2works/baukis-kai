@@ -8,7 +8,7 @@
   font-weight: 300;
 }
 //Media Queries
-@mixin mq-sq($max: $sp-max-width) {
+@mixin mq-sp($max: $sp-max-width) {
   @media only screen and (max-width: #{$max}) {
     @content
   }

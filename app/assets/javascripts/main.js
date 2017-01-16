@@ -1,5 +1,27 @@
 /* main.js */
 
+/* メニュー */
+(function(){
+    function toggle(targetDOM, _className, callback) {
+        var className = ' '+_className;
+        return function(e) {
+            if(targetDOM.className.indexOf(_className)>-1) {
+                targetDOM.className = targetDOM.className.replace(className, '');
+            } else {
+                targetDOM.className += className;
+            }
+        }
+    }
+    var menuButton = document.getElementById('menu-button'),
+        wrapper = document.getElementById('wrapper'),
+        overlay = document.getElementById('overlay'),
+        toggleMenu = toggle(wrapper, 'isOpened');
+
+    menuButton.addEventListener('click', toggleMenu, false);
+    overlay.addEventListener('click', toggleMenu, false);
+
+}());
+
 /* 画像スライダー */
 // @param {string} id - ラッパー要素のid
 // @param {object} options - itemClassName, pointClassName, extraのオプション

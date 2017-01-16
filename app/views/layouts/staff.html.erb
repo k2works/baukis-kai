@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= document_title %></title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= document_title %></title>
+  <%= csrf_meta_tags %>
+</head>
 
-  <body>
-    <div id="wrapper">
-      <%= render 'shared/header' %>
-      <%= yield %>
-      <%= render 'shared/footer' %>
-    </div>
-    <script>
-        imageSlide('Slide', 2);
-    </script>
-  </body>
+<body>
+<div id="wrapper" class="SpMenu__wrapper">
+  <div id="overlay" class="SpMenu__overlay"></div>
+  <%= render 'shared/header' %>
+  <%= yield %>
+  <%= render 'shared/footer' %>
+</div>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<script>
+    imageSlide('Slide', 2);
+</script>
+</body>
 </html>
