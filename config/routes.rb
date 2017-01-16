@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :staff do
     root 'top#index'
+    get 'campaign/index'
   end
 
   namespace :admin do
