@@ -1,7 +1,6 @@
 <% @title = '職員トップページ' %>
 <h1><%= @title %></h1>
 
-
 <div class="ImageSlide Section">
   <ul id="Slide" class="ImageSlide__main">
     <li class="ImageSlide__item js-slide-item">
@@ -38,7 +37,7 @@
         <div class="EntryPanel__body">
           大切なあの方にありがとうを届けたい。心も体も温まる素敵なギフト。プレゼントキャンペーン実施中！
         </div>
-        <div class="EntryPanel__foot"><a href="#" class="button">READ MORE</a></div>
+        <div class="EntryPanel__foot"><%= link_to('READ MORE',staff_campaign_index_url,class:"button") %></div>
       </div>
     </div>
 
@@ -51,7 +50,7 @@
         <div class="EntryPanel__body">
           今話題の人気店、Macaron'n Thingsのパンケーキを使ったコラボ商品のセットメニューを販売中。
         </div>
-        <div class="EntryPanel__foot"><a href="#" class="button">READ MORE</a></div>
+        <div class="EntryPanel__foot"><%= link_to('READ MORE',staff_campaign_index_url,class:"button") %></div>
       </div>
     </div>
   </div>
@@ -109,34 +108,34 @@
       </a>
     </div>
   </div>
+</section>
 
-  <section class="Section l-column">
-    <div class="Section__head">
-      <h2 class="sectionLabel">News</h2>
-    </div>
-    <ol class="NewsList">
-      <li class="NewsList__item">
-        <time class="NewsList__head" datatime="2016-10-12">2016.10.12</time>
-        <span class="NewsList__body">「かぼちゃタルト」「ヘーゼルナッツラテ」「ストロベリーブラウニー」「ハニーソイラテ」「たっぷりチーズときのこのパニーニ」新発売。</span>
-      </li>
-      <li class="NewsList__item">
-        <time class="NewsList__head" datatime="2016-09-01">2016.09.01</time>
-        <span class="NewsList__body">営業時間変更に関するお知らせ</span>
-      </li>
-      <li class="NewsList__item">
-        <time class="NewsList__head" datatime="2016-08-20">2016.08.20</time>
-        <span class="NewsList__body">鎌倉店ニューオープン</span>
-      </li>
-      <li class="NewsList__item">
-        <time class="NewsList__head" datatime="2016-08-10">2016.08.10</time>
-        <span class="NewsList__body">夏季限定。マンゴースムージー発売</span>
-      </li>
-      <li class="NewsList__item">
-        <time class="NewsList__head" datatime="2016-04-02">2016.04.02</time>
-        <span class="NewsList__body">[期間限定]さくら抹茶ラテ販売開始</span>
-      </li>
-    </ol>
-  </section>
+<section class="Section l-column">
+  <div class="Section__head">
+    <h2 class="sectionLabel">News</h2>
+  </div>
+  <ol class="NewsList">
+    <li class="NewsList__item">
+      <time class="NewsList__head" datatime="2016-10-12">2016.10.12</time>
+      <span class="NewsList__body">「かぼちゃタルト」「ヘーゼルナッツラテ」「ストロベリーブラウニー」「ハニーソイラテ」「たっぷりチーズときのこのパニーニ」新発売。</span>
+    </li>
+    <li class="NewsList__item">
+      <time class="NewsList__head" datatime="2016-09-01">2016.09.01</time>
+      <span class="NewsList__body">営業時間変更に関するお知らせ</span>
+    </li>
+    <li class="NewsList__item">
+      <time class="NewsList__head" datatime="2016-08-20">2016.08.20</time>
+      <span class="NewsList__body">鎌倉店ニューオープン</span>
+    </li>
+    <li class="NewsList__item">
+      <time class="NewsList__head" datatime="2016-08-10">2016.08.10</time>
+      <span class="NewsList__body">夏季限定。マンゴースムージー発売</span>
+    </li>
+    <li class="NewsList__item">
+      <time class="NewsList__head" datatime="2016-04-02">2016.04.02</time>
+      <span class="NewsList__body">[期間限定]さくら抹茶ラテ販売開始</span>
+    </li>
+  </ol>
 </section>
 
 <div class="l-column u-mt60px u-mb100px">

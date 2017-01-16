@@ -1,12 +1,12 @@
 <footer class="Footer">
   <div class="l-row l-column">
     <div class="Footer__head">
-      <a href="./" class="logo">BAUKIS KAI</a>
+      <%= link_to('BAUKIS KAI', staff_root_url, class:'logo') %>
       <ul class="Menu Menu--sub">
         <li><a href="#" class="Menu__item">Services</a></li>
         <li><a href="#" class="Menu__item">Work</a></li>
         <li><a href="#" class="Menu__item">About us</a></li>
-        <li><a href="#" class="Menu__item">Blog</a></li>
+        <li><%= link_to('Blog', staff_article_index_url,class:"Menu__item") %></li>
         <li><a href="#" class="Menu__item">Contact</a></li>
       </ul>
     </div>
