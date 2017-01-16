@@ -60,10 +60,17 @@
 
 //font-awesome
 @import "font-awesome";
+
 // ===========================
 // Pages
 // ===========================
 @import "./pages/index";
+
+// ===========================
+// Utils
+// ===========================
+// サイズ、余白などの便利class
+@import "./utils/arrangements";
 
 //@import "pages/staff/container";
 //@import "pages/staff/layout";
