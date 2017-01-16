@@ -1,0 +1,15 @@
+.IconPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__head {
+    padding: $space-unit;
+    font-size: 18px;
+    text-align: center;
+  }
+  &__body {
+    max-width: 100%;
+    padding: $space-unit*1.5;
+    line-height: 1.5;
+  }
+}

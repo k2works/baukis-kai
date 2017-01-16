@@ -24,3 +24,11 @@
   margin: 0;
   padding: 0;
 }
+.l-quaterColumn {
+  flex: 1 0 0px;
+  max-width: ($base-content-width - $column-space*3)/4;
+  margin-right: $column-space;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
