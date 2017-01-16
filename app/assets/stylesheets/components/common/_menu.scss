@@ -1,6 +1,7 @@
 .Menu {
   display: flex;
   justify-content: space-around;
+  @include menu-font;
   &__item {
     display: block;
     padding: 10px 15px;

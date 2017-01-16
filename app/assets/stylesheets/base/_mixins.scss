@@ -1,0 +1,9 @@
+//fonts
+@mixin title-font() {
+  font-family: $font-sub;
+  font-weight: 400;
+}
+@mixin menu-font() {
+  font-family: $font-sub;
+  font-weight: 300;
+}
