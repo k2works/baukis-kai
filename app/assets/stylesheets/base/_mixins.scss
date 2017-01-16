@@ -7,3 +7,14 @@
   font-family: $font-sub;
   font-weight: 300;
 }
+//Media Queries
+@mixin mq-sq($max: $sp-max-width) {
+  @media only screen and (max-width: #{$max}) {
+    @content
+  }
+}
+@mixin mq-pc($min: $pc-min-width) {
+  @media only screen and (min-width: #{$min}) {
+    @content;
+  }
+}
