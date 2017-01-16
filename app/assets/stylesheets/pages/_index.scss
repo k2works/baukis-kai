@@ -1,0 +1,14 @@
+.IndexPage {
+  &__foodMenu,
+  &__drinkMenu {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  &__drinkMenu {
+    background-image: image_url('top/menu_drink.jpg')
+  }
+  &__foodMenu {
+    background-image: image_url('top/menu_food.jpg');
+  }
+}
