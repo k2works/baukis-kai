@@ -69,3 +69,51 @@
     margin-right: 0;
   }
 }
+//記事の大見出し
+.articleLabelL {
+  padding: 0 0 20px;
+  font-weight: normal;
+  font-size: 34px;
+}
+
+//記事の中見出し
+.articleLabelM {
+  padding: 40px 0 20px;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+//記事の小見出し
+.articleLabelS {
+  padding: 40px 0 20px;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.l-content {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 $base-content-width;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: $base-content-width;
+  @include mq-sp {
+    flex-direction: column;
+  }
+}
+
+.l-main {
+  flex: 0 2 auto;
+  margin: 0 $space-unit;
+  max-width: 865px;
+}
+
+.l-sub {
+  flex: 0 0 275px;
+  margin: 0 $space-unit;
+  margin-left: $column-space;
+  @include mq-sp {
+    flex: 1 1 100%;
+    margin: $sp-space-unit;
+  }
+}
