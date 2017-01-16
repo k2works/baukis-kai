@@ -17,4 +17,28 @@
     width: 100%;
     height: auto;
   }
+  &__sub {
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  &__dot {
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-black;
+    border-radius: 10px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.isActive {
+      background: $color-black;
+    }
+  }
 }
