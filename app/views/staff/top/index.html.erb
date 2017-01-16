@@ -1,6 +1,32 @@
 <% @title = '職員トップページ' %>
 <h1><%= @title %></h1>
 
+
+<div class="ImageSlide Section">
+  <ul id="Slide" class="ImageSlide__main">
+    <li class="ImageSlide__item js-slide-item">
+      <a href="#">
+        <%= image_tag('top/slide1.jpg', class: 'ImageSlide__image', alt:'about our tea', width:'1180', height:'490') %>
+      </a>
+    </li>
+    <li class="ImageSlide__item js-slide-item">
+      <a href="#">
+        <%= image_tag('top/slide2.jpg', class: 'ImageSlide__image', alt:'about our tea', width:'1180', height:'490') %>
+      </a>
+    </li>
+    <li class="ImageSlide__item js-slide-item">
+      <a href="#">
+        <%= image_tag('top/slide3.jpg', class: 'ImageSlide__image', alt:'about our tea', width:'1180', height:'490') %>
+      </a>
+    </li>
+  </ul>
+  <div class="ImageSlide__sub">
+    <span class="ImageSlide__dot js-slide-point">image1</span>
+    <span class="ImageSlide__dot js-slide-point">image2</span>
+    <span class="ImageSlide__dot js-slide-point">image3</span>
+  </div>
+</div>
+
 <section class="Section l-column">
   <div class="l-row">
     <div class="EntryPanel l-halfColumn">
@@ -54,24 +80,28 @@
   <div class="Section__item l-column">
     <div class="l-row">
       <a class="IconPanel l-quaterColumn">
+        <%= fa_icon 'tree' %>
         <h3 class="IconPanel__head">こだわりの空間</h3>
         <p class="IconPanel__body">
           ランチからディナーまでいつまでもリラックスして使えるくつろぎ空間。椅子や壁、細部にまでこだわっています。
         </p>
       </a>
       <a class="IconPanel l-quaterColumn">
+        <%= fa_icon 'coffee' %>
         <h3 class="IconPanel__head">豆へのこだわり</h3>
         <p class="IconPanel__body">
           原産地、豆の種類、焙煎方法のこだわりを紹介する
         </p>
       </a>
       <a class="IconPanel l-quaterColumn">
+        <%= fa_icon 'pencil' %>
         <h3 class="IconPanel__head">コーヒースクール</h3>
         <p class="IconPanel__body">
           コーヒー豆の基礎知識から、美味しいコーヒーを淹れるコツをお教えします。
         </p>
       </a>
       <a class="IconPanel l-quaterColumn">
+        <%= fa_icon 'laptop' %>
         <h3 class="IconPanel__head">BLOG</h3>
         <p class="IconPanel__body">
           お店の最新情報を、いち早くお届け。
