@@ -1,3 +1,11 @@
+@charset 'utf-8';
+
+// =====================
+// Overlay Panel
+// ---------------------
+// 写真背景の上にテキストを載せるパネル
+// =====================
+
 .OverlayPanel {
   $root: &;
   display: flex;
@@ -6,11 +14,11 @@
   align-items: center;
   width: 100%;
   padding: 10% 20%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,.2);
   color: $color-white;
   &:hover {
-    background-color: rgba(0,0,0,0.4);
     color: $color-white;
+    background-color: rgba(0,0,0,.4);
   }
   &__head {
     margin: 0 10%;

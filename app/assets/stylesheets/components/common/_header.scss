@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 .Header {
   display: flex;
   justify-content: flex-start;
@@ -8,9 +10,9 @@
     text-align: center;
   }
   &__body {
-    flex: 3 1 auto
+    flex: 3 1 auto;
+    font-size: 16px;
   }
-  //スマートフォン用ハンバーガーボタン
   &__button {
     @include mq-pc {
       display: none;

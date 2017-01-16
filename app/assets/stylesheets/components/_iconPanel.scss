@@ -1,26 +1,35 @@
+@charset 'utf-8';
+
+// =====================
+// IconPanel
+// ---------------------
+// アイコンつきのコンテンツメニュー
+// =====================
+
 .IconPanel {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   cursor: pointer;
   @include mq-sp {
     display: block;
     padding: $space-unit 0;
   }
+
   &__head {
     padding: $space-unit;
-    font-size: 18px;
     text-align: center;
+    font-size: 18px;
     @include mq-sp {
+      text-align: left;
       margin-left: 52px;
       padding: 0 0 15px;
-      text-align: left;
       font-size: 16px;
     }
   }
   &__body {
-    max-width: 100%;
     padding: $space-unit*1.5;
+    max-width: 100%;
     line-height: 1.5;
     @include mq-sp {
       margin-left: 52px;
@@ -28,7 +37,7 @@
       font-size: 12px;
     }
   }
-  //Font Awesomeでアイコンを設定する
+  // font-awesomeでアイコンを設定する
   &__icon {
     margin-bottom: $space-unit;
     padding: $space-unit/2;

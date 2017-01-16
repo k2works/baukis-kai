@@ -1,19 +1,59 @@
+// =====================
+// レイアウトを指定する特別な要素
+// =====================
+
+// 2カラム構成のラッパー
+.l-content {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 $base-content-width;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: $base-content-width;
+  @include mq-sp {
+    flex-direction: column;
+  }
+}
+
+// メインカラム
+.l-main {
+  flex: 0 2 auto;
+  margin: 0 $space-unit;
+  max-width: 865px;
+}
+
+// サブカラム
+.l-sub {
+  flex: 0 0 275px;
+  margin: 0 $space-unit;
+  margin-left: $column-space;
+  @include mq-sp {
+    flex: 1 1 100%;
+    margin: $sp-space-unit;
+  }
+}
+
+// 1カラムでメインのコンテンツ幅に納める
 .l-column {
   flex: 0 1 $base-content-width;
-  max-width: $base-content-width;
   margin: 0 auto;
   padding: 0 $space-unit;
+  max-width: $base-content-width;
   @include mq-sp {
     padding: 0 $sp-space-unit*2;
     width: auto;
   }
 }
+
+// 横並びラッパー
 .l-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
+// メインのコンテンツ幅に対して1/2の幅にする
 .l-halfColumn {
   flex: 1 0 0px;
   max-width: ($base-content-width - $column-space)/2;
@@ -28,15 +68,8 @@
     margin-right: 0;
   }
 }
-.l-halfTile {
-  display: flex;
-  flex: 1 1 50%;
-  margin: 0;
-  padding: 0;
-  @include mq-sp {
-    flex-basis: 100%;
-  }
-}
+
+// メインのコンテンツ幅に対して1/4の幅にする
 .l-quaterColumn {
   flex: 1 0 0px;
   max-width: ($base-content-width - $column-space*3)/4;
@@ -50,16 +83,12 @@
     margin: 0;
   }
 }
-.l-fitImg {
-  max-width: 100%;
-  max-height: 100%;
-}
+
+// メインのコンテンツ幅に対して1/3の幅にする
 .l-tripartitionColumn {
-  flex: 1
-  0 0px;
+  flex: 1 0 0px;
   max-width: ($base-content-width - $column-space*(2/3))/3;
   margin-right: $column-space*2/3;
-  width: ($base-content-width - $column-space*6)/3;
   @include mq-sp {
     flex: 1 1 100%;
     max-width: none;
@@ -69,51 +98,20 @@
     margin-right: 0;
   }
 }
-//記事の大見出し
-.articleLabelL {
-  padding: 0 0 20px;
-  font-weight: normal;
-  font-size: 34px;
-}
 
-//記事の中見出し
-.articleLabelM {
-  padding: 40px 0 20px;
-  font-weight: normal;
-  font-size: 26px;
-}
-
-//記事の小見出し
-.articleLabelS {
-  padding: 40px 0 20px;
-  font-weight: normal;
-  font-size: 26px;
-}
-
-.l-content {
+// 100%画面幅に対して1/2の幅にする
+.l-halfTile {
   display: flex;
-  justify-content: space-between;
-  flex: 0 1 $base-content-width;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  max-width: $base-content-width;
+  flex: 1 1 50%;
+  margin: 0;
+  padding: 0;
   @include mq-sp {
-    flex-direction: column;
+    flex-basis: 100%;
   }
 }
 
-.l-main {
-  flex: 0 2 auto;
-  margin: 0 $space-unit;
-  max-width: 865px;
-}
-
-.l-sub {
-  flex: 0 0 275px;
-  margin: 0 $space-unit;
-  margin-left: $column-space;
-  @include mq-sp {
-    flex: 1 1 100%;
-    margin: $sp-space-unit;
-  }
+// 横幅にfitする画像
+.l-fitImg {
+  max-width: 100%;
+  max-height: 100%;
 }

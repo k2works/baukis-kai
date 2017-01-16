@@ -1,9 +1,10 @@
+// 節の見出し
 .sectionLabel {
   display: flex;
-  flex: 1 1 auto;
   align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  flex: 1 1 auto;
+  padding-top: $space-unit;
+  padding-bottom: $space-unit*2;
   color: $color-main-text;
   text-transform: uppercase;
   font-size: 22px;
@@ -11,11 +12,11 @@
   @include menu-font;
   &::before,
   &::after {
-    content: '';
     display: block;
     flex: 1 0 10%;
     height: 0;
     border-bottom: 1px solid $color-main-text;
+    content: '';
   }
   &::before {
     margin-right: 22px;
@@ -25,6 +26,7 @@
   }
 }
 
+// ロゴ
 .logo {
   display: inline-block;
   padding: 10px 0;
@@ -33,4 +35,25 @@
   font-weight: lighter;
   font-size: 26px;
   @include menu-font;
+}
+
+// 記事の大見出し
+.articleLabelL {
+  padding: 0 0 20px;
+  font-weight: normal;
+  font-size: 34px;
+}
+
+// 記事の中見出し
+.articleLabelM {
+  padding: 40px 0 20px;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+// 記事の小見出し
+.articleLabelS {
+  padding: 40px 0 20px;
+  font-weight: normal;
+  font-size: 26px;
 }

@@ -1,3 +1,11 @@
+@charset 'utf-8';
+
+// =====================
+// SNS
+// ---------------------
+// SNSのリスト
+// =====================
+
 .SNS {
   display: flex;
   align-items: center;
@@ -5,19 +13,19 @@
   @include mq-sp {
     font-size: 16px;
   }
-  &__text {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-  }
   &__item {
     margin-right: 20px;
     &:last-child {
       margin-right: 0;
     }
+  }
+  &__text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding:0;
+    border:0;
+    overflow: hidden;
   }
 }
