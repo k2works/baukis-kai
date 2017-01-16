@@ -57,4 +57,6 @@ Rails.application.configure do
       admin: { host: '0.0.0.0', path: 'admin' },
       customer: { host: '0.0.0.0', path: 'mypage' }
   }
+
+  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
 end

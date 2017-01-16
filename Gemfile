@@ -61,6 +61,8 @@ group :development do
   gem 'i18n_generators'
   gem 'yard'
   gem 'rails-erd'
+  gem 'guard-livereload', '~> 2.5', require: false
+  gem 'rack-livereload'
 end
 
 group :test do
