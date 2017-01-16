@@ -83,3 +83,5 @@ gem 'font-awesome-rails'
 gem 'rails_12factor', group: :production
 gem 'rack-dev-mark'
 gem 'enum_help'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap_form'
