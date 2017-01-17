@@ -69,17 +69,16 @@
 // ===========================
 // Pages
 // ===========================
+// Customer
 @import "pages/customer/index";
-
 @import "pages/customer/campaign";
-
 @import "pages/customer/article";
+
+// Staff
+@import "pages/staff";
 
 // ===========================
 // Utils
 // ===========================
 // サイズ、余白などの便利class
 @import "./utils/arrangements";
-
-//@import "pages/staff/container";
-//@import "pages/staff/layout";

@@ -28,3 +28,35 @@ $font-sub: 'Lato';
 $sp-max-width: 640px;
 $pc-min-width: 641px;
 $sp-menu-width: 200px;
+
+//Staff
+/* グレー系 */
+
+$dark_gray: #666666;
+$gray: #cccccc;
+$light_gray: #eeeeee;
+$very_light_gray: #fafafa;
+
+/* シアン系 */
+
+$dark_cyan: #448888;
+$very_dark_cyan: darken($dark_cyan, 25%);
+
+/* マージン、パディング */
+
+$narrow: 2px;
+$moderate: 6px;
+$wide: 10px;
+$very_wide: 20px;
+
+/* フォントサイズ */
+
+$tiny: 8px;
+$small: 10px;
+$normal: 12px;
+$large: 16px;
+$huge: 20px;
+
+/* 行の高さ */
+
+$standard_line_height: 16px;
