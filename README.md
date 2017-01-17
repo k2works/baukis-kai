@@ -309,6 +309,12 @@ git push heroku master
 + コンポーネントベースで作ると、ページ固有のCSSを少し追加するだけでほぼ１ページ作れる
 
 ### エラーページ
+#### 例外処理の基礎知識
+#### 500 Internal Server Error
+#### 403 Forbidden
+#### 404 Not Found
+#### ActiveSupport::Concern
+
 ### ユーザー認証
 ### ユーザー認証
 ### ルーティング
