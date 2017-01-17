@@ -310,7 +310,13 @@ git push heroku master
 
 ### エラーページ
 #### 例外処理の基礎知識
++ 例外とは
++ raiseメソッドと例外機構文
++ クラスメソッドrescue_from
+
 #### 500 Internal Server Error
++ 準備作業
+
 #### 403 Forbidden
 #### 404 Not Found
 #### ActiveSupport::Concern
