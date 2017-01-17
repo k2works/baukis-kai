@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 // =====================
-// 職員ページ固有のスタイル
+// 管理者ページ固有のスタイル
 // =====================
 
 
@@ -11,7 +11,7 @@ html, body {
   height: 100%;
 }
 
-.Staff {
+.Admin {
   &__wrapper {
     position: relative;
     box-sizing: border-box;
@@ -26,13 +26,13 @@ html, body {
     padding: $moderate * 1.5 $moderate;
     font-size: $large;
     font-weight: normal;
-    background-color: $very_dark_cyan;
+    background-color: $very_dark_magenta;
     color: $light_gray;
   }
 
   &__header {
     padding: $moderate;
-    background-color: $dark_cyan;
+    background-color: $very_dark_magenta;
     color: $very_light_gray;
     span.logo-mark {
       font-weight: bold;
@@ -53,6 +53,6 @@ html, body {
   }
 }
 
-.logo--staff {
+.logo--admin {
   color: $color-white;
 }
