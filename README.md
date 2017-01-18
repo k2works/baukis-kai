@@ -320,6 +320,9 @@ git push heroku master
 + ビジュアルデザイン
 
 #### 403 Forbidden
++ 例外の捕捉
++ ERBテンプレートの作成
+
 #### 404 Not Found
 #### ActiveSupport::Concern
 
