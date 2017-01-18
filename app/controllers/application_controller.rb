@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   rescue_from Exception, with: :rescue500
   rescue_from Forbidden, with: :rescue403
   rescue_from IpAddressRejected, with: :rescue403
+  rescue_from ActionController::RoutingError, with: :rescue404
 
   private
   def set_layout
@@ -17,6 +18,11 @@ class ApplicationController < ActionController::Base
     else
       'customer'
     end
+  end
+
+  def rescue404(e)
+    @exception = e
+    render 'errors/not_found', status: 404
   end
 
   def rescue403(e)

@@ -325,6 +325,8 @@ git push heroku master
 + 動作の確認
 
 #### 404 Not Found
++ 例外ActionController::RoutingErrorの処理
+
 #### ActiveSupport::Concern
 
 ### ユーザー認証
