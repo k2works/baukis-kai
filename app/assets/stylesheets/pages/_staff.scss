@@ -11,6 +11,19 @@ html, body {
   height: 100%;
 }
 
+.Header__head {
+  text-align: left;
+}
+
+.logo--staff {
+  color: $color-white;
+}
+
+.login--staff {
+  float: right;
+  color: $very_light_gray;
+}
+
 .Staff {
   &__wrapper {
     position: relative;
@@ -33,6 +46,7 @@ html, body {
   &__header {
     padding: $moderate;
     background-color: $dark_cyan;
+    text-align: left;
     color: $very_light_gray;
     span.logo-mark {
       font-weight: bold;
@@ -51,8 +65,4 @@ html, body {
       margin: 0;
     }
   }
-}
-
-.logo--staff {
-  color: $color-white;
 }
