@@ -334,6 +334,7 @@ git push heroku master
 #### マイグレーション
 + 各種スケルトンの作成
 + マイグレーションスクリプト
++ マイグレーションの実行
 
 #### モデル
 #### セッション
@@ -359,3 +360,5 @@ git push heroku master
 + [現場のプロが本気で教える HTML/CSSデザイン講義 サンプルデータ](https://github.com/basara669/html_css_book)
 + [Bootstrap for Sass](https://github.com/twbs/bootstrap-sass)
 + [Rails Bootstrap Forms](https://github.com/bootstrap-ruby/rails-bootstrap-forms)
++ [Annotate (aka AnnotateModels)](https://github.com/ctran/annotate_models)
++ [MigrationComments](https://github.com/pinnymz/migration_comments)
