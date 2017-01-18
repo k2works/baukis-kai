@@ -317,6 +317,7 @@ git push heroku master
 #### 500 Internal Server Error
 + 準備作業
 + 例外の捕捉
++ ビジュアルデザイン
 
 #### 403 Forbidden
 #### 404 Not Found

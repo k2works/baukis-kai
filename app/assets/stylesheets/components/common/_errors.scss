@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+// =====================
+// Error
+// ---------------------
+// エラー
+// =====================
+
+.Error {
+  &__box {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 4px $dark_gray;
+    background-color: $very_light_gray;
+    text-align: center;
+  }
+  &__test--url { font-family: monospace; }
+}
