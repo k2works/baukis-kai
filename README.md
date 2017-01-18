@@ -346,6 +346,7 @@ git push heroku master
 #### セッション
 + セッションとは
 + current_staff_memberメソッドの定義
++ ルーティングの決定
 
 ### ユーザー認証
 ### ルーティング
