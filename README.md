@@ -326,6 +326,7 @@ git push heroku master
 
 #### 404 Not Found
 + 例外ActionController::RoutingErrorの処理
++ 例外ActiveRecord::RecordNotFoundの処理
 
 #### ActiveSupport::Concern
 
