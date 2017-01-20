@@ -372,6 +372,7 @@ git push heroku master
 
 #### サービスオブジェクト
 + Staff::Authenticatorクラス
++ サービスオブジェクトのspecファイル
 
 #### ログイン・ログアウト後のメッセージ表示
 #### 演習問題
