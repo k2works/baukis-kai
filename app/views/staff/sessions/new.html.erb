@@ -1,22 +1,21 @@
 <% @title = 'ログイン' %>
-<section class="Section">
-  <h1 class="Staff__title"><%= @title %></h1>
-</section>
-
 <section class="Section l-column">
-  <div class="Form__login">
-    <%= bootstrap_form_for @form, url: :staff_session do |f| %>
-        <div>
-          <%= f.label :email, 'メールアドレス' %>
-          <%= f.text_field :email %>
-        </div>
-        <div>
-          <%= f.label :password, 'パスワード' %>
-          <%= f.password_field :password %>
-        </div>
-        <div>
-          <%= f.submit 'ログイン' %>
-        </div>
-    <% end %>
+  <div class="Login">
+    <h1 class="Login__head"><%= @title %></h1>
+    <div class="Login__body">
+      <%= bootstrap_form_for @form, url: :staff_session do |f| %>
+          <div>
+            <%= f.label :email, 'メールアドレス' %>
+            <%= f.text_field :email %>
+          </div>
+          <div>
+            <%= f.label :password, 'パスワード' %>
+            <%= f.password_field :password %>
+          </div>
+          <div>
+            <%= f.submit 'ログイン' %>
+          </div>
+      <% end %>
+    </div>
   </div>
 </section>
