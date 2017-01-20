@@ -371,6 +371,8 @@ git push heroku master
 + スタイルシートの作成
 
 #### サービスオブジェクト
++ Staff::Authenticatorクラス
+
 #### ログイン・ログアウト後のメッセージ表示
 #### 演習問題
 
