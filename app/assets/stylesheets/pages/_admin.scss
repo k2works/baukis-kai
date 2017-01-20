@@ -11,6 +11,19 @@ html, body {
   height: 100%;
 }
 
+.Header__head {
+  text-align: left;
+}
+
+.logo--admin {
+  color: $color-white;
+}
+
+.login--admin {
+  float: right;
+  color: $very_light_gray;
+}
+
 .Admin {
   &__wrapper {
     position: relative;
