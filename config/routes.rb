@@ -7,6 +7,9 @@
 #            staff_session POST   /staff/session(.:format)            staff/sessions#create
 #                          DELETE /staff/session(.:format)            staff/sessions#destroy
 #               admin_root GET    /admin(.:format)                    admin/top#index
+#              admin_login GET    /admin/login(.:format)              admin/sessions#new
+#            admin_session POST   /admin/session(.:format)            admin/sessions#create
+#                          DELETE /admin/session(.:format)            admin/sessions#destroy
 #            customer_root GET    /customer(.:format)                 customer/top#index
 #   customer_article_index GET    /customer/article/index(.:format)   customer/article#index
 #  customer_campaign_index GET    /customer/campaign/index(.:format)  customer/campaign#index
@@ -27,6 +30,9 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'top#index'
+    get    'login'   => 'sessions#new', as: :login
+    post   'session' => 'sessions#create', as: :session
+    delete 'session' => 'sessions#destroy'
   end
 
   namespace :customer do
