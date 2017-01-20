@@ -11,7 +11,7 @@
     </ul>
   </nav>
   <%= if current_staff_member
-        link_to 'ログアウト', :staff_session, method:delete, class: 'login--staff'
+        link_to 'ログアウト', :staff_session, method: :delete, class: 'login--staff'
       else
         link_to 'ログイン', :staff_login, class: 'login--staff'
       end
