@@ -19,7 +19,6 @@ class Admin::SessionsController < Admin::Base
         render action: 'new'
       else
         session[:administrator_id] = administrator.id
-        session[:last_access_time] = Time.current
         flash.notice = 'ログインしました。'
         redirect_to :admin_root
       end
@@ -27,6 +26,12 @@ class Admin::SessionsController < Admin::Base
       flash.now.alert = 'メールアドレスまたはパスワードが正しくありません。'
       render action: 'new'
     end
+  end
+
+  def destroy
+    session.delete(:administrator_id)
+    flash.notice = 'ログアウトしました。'
+    redirect_to :admin_root
   end
 
   private
