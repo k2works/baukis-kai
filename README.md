@@ -386,6 +386,9 @@ git push heroku master
 + 管理者認証サービス追加
 + メッセージの表示
 
+#### 改
++ i18nの設定と適用
+
 ### ルーティング
 ### レコードの表示、新規作成、更新、削除
 ### String Parameters
@@ -408,3 +411,4 @@ git push heroku master
 + [Rails Bootstrap Forms](https://github.com/bootstrap-ruby/rails-bootstrap-forms)
 + [Annotate (aka AnnotateModels)](https://github.com/ctran/annotate_models)
 + [MigrationComments](https://github.com/pinnymz/migration_comments)
++ [i18n_generators](https://github.com/amatsuda/i18n_generators)

@@ -1,0 +1,17 @@
+ja:
+  staff:
+    shared:
+      header:
+        login: 'ログイン'
+        logout: 'ログアウト'
+    sessions:
+      new:
+        submit: 'ログイン'
+  admin:
+    shared:
+      header:
+        login: 'ログイン'
+        logout: 'ログアウト'
+    sessions:
+      new:
+        submit: 'ログイン'

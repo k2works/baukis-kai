@@ -1,0 +1,39 @@
+ja:
+  activerecord:
+    models:
+      administrator: 管理者
+      staff_member: 職員
+
+    attributes:
+      administrator:
+        email: メールアドレス
+        email_for_index: 索引用メールアドレス
+        hashed_password: パスワード
+        suspended: 停止フラグ
+
+      staff_member:
+        email: メールアドレス
+        email_for_index: 索引用メールアドレス
+        end_date: 終了日
+        family_name: 姓
+        family_name_kana: 姓（カナ）
+        given_name: 名
+        given_name_kana: 名（カナ）
+        hashed_password: パスワード
+        start_date: 開始日
+        suspended: 停止フラグ
+
+  activemodel:
+    models:
+      staff/login_form: 職員ログインフォーム
+      admin/login_form: 管理者ログインフォーム
+
+    attributes:
+      staff/login_form:
+        email: メールアドレス
+        password: パスワード
+
+    attributes:
+      admin/login_form:
+        email: メールアドレス
+        password: パスワード

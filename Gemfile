@@ -63,6 +63,7 @@ group :development do
   gem 'rails-erd'
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'rack-livereload'
+  gem 'i18n_generators'
 end
 
 group :test do

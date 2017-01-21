@@ -17,9 +17,9 @@
     </ul>
   </nav>
   <%= if current_staff_member
-        link_to 'ログアウト', :staff_session, method: :delete, class: 'btn btn-default'
+        link_to t('staff.shared.header.login'), :staff_session, method: :delete, class: 'btn btn-default'
       else
-        link_to 'ログイン', :staff_login, class: 'btn btn-default'
+        link_to t('staff.shared.header.logout'), :staff_login, class: 'btn btn-default'
       end
     %>
 </header>
