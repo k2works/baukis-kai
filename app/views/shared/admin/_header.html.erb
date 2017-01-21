@@ -4,6 +4,12 @@
   </div>
   <div class="Header__head">
     <h1 class="logo"><%= link_to('BAUKIS KAI', admin_root_url, class:'logo logo--admin') %></h1>
+
+    <div class="Flash">
+      <%= content_tag(:span, flash.notice, class: 'Flash__notice') if flash.notice %>
+      <%= content_tag(:span, flash.alert, class: 'Flash__alert') if flash.alert %>
+    </div>
+
   </div>
   <nav class="Header__body SpMenu">
     <ul class="Menu">
