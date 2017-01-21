@@ -11,9 +11,9 @@
 <body>
 <div id="wrapper" class="SpMenu__wrapper">
   <div id="overlay" class="SpMenu__overlay"></div>
-  <%= render 'shared/customer/header' %>
+  <%= render 'customer/shared/header' %>
   <%= yield %>
-  <%= render 'shared/customer/footer' %>
+  <%= render 'customer/shared/footer' %>
 </div>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
