@@ -11,9 +11,9 @@
     </ul>
   </nav>
   <%= if current_administrator
-        link_to 'ログアウト', :staff_session, method:delete, class: 'login--staff'
+        link_to 'ログアウト', :admin_session, method:delete, class: 'login--admin'
       else
-        link_to 'ログイン', :staff_login, class: 'login--staff'
+        link_to 'ログイン', :admin_login, class: 'login--admin'
       end
   %>
 </header>

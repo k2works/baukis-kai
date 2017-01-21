@@ -1,9 +1,9 @@
 <% @title = 'ログイン' %>
 <section class="Section l-column">
-  <div class="Login Login--staff">
+  <div class="Login Login--admin">
     <h1 class="Login__head"><%= @title %></h1>
     <div class="Login__body">
-      <%= bootstrap_form_for @form, url: :staff_session do |f| %>
+      <%= bootstrap_form_for @form, url: :admin_session do |f| %>
           <div>
             <%= f.label :email, 'メールアドレス' %>
             <%= f.text_field :email %>
