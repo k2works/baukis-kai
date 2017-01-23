@@ -6,6 +6,9 @@
 
 .Login {
   width: 400px;
+  @include mq-sp {
+    width: auto;
+  }
   margin: $wide * 2 auto;
   padding: $wide * 2;
   border-radius: $wide;
