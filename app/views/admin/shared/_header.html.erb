@@ -17,9 +17,9 @@
     </ul>
   </nav>
   <%= if current_administrator
-        link_to t('admin.shared.header.login'), :admin_session, method: :delete, class: 'btn btn-default'
+        link_to t('admin.shared.header.logout'), :admin_session, method: :delete, class: 'btn btn-default'
       else
-        link_to t('admin.shared.header.logout'), :admin_login, class: 'btn btn-default'
+        link_to t('admin.shared.header.login'), :admin_login, class: 'btn btn-default'
       end
   %>
 </header>
