@@ -32,8 +32,6 @@ ja:
       staff/login_form:
         email: メールアドレス
         password: パスワード
-
-    attributes:
       admin/login_form:
         email: メールアドレス
         password: パスワード
