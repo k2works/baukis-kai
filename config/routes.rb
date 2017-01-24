@@ -51,11 +51,13 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :customer, path: '' do
-    root 'top#index'
-    get 'article/index'
-    get 'campaign/index'
-    get 'campaign_submit', to: 'campaign#submit'
+  constraints host: config[:customer][:host] do
+    namespace :customer, path: config[:customer][:path] do
+      root 'top#index'
+      get 'article/index'
+      get 'campaign/index'
+      get 'campaign_submit', to: 'campaign#submit'
+    end
   end
 
   root 'errors#routing_error'
