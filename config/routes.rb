@@ -6,6 +6,13 @@
 #              staff_login GET    /staff/login(.:format)          staff/sessions#new
 #            staff_session POST   /staff/session(.:format)        staff/sessions#create
 #                          DELETE /staff/session(.:format)        staff/sessions#destroy
+#        new_staff_account GET    /staff/account/new(.:format)    staff/accounts#new
+#       edit_staff_account GET    /staff/account/edit(.:format)   staff/accounts#edit
+#            staff_account GET    /staff/account(.:format)        staff/accounts#show
+#                          PATCH  /staff/account(.:format)        staff/accounts#update
+#                          PUT    /staff/account(.:format)        staff/accounts#update
+#                          DELETE /staff/account(.:format)        staff/accounts#destroy
+#                          POST   /staff/account(.:format)        staff/accounts#create
 #               admin_root GET    /admin(.:format)                admin/top#index
 #              admin_login GET    /admin/login(.:format)          admin/sessions#new
 #            admin_session POST   /admin/session(.:format)        admin/sessions#create
@@ -33,6 +40,7 @@ Rails.application.routes.draw do
   namespace :staff do
     root   'top#index'
     concerns :session_path
+    resource :account
   end
 
   namespace :admin do
