@@ -85,8 +85,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.baukis_kai = {
-      staff: { host: ENV["PRD_URL"] , path: '' },
+      staff: { host: ENV["PRD_URL"] , path: 'staff' },
       admin: { host: ENV["PRD_URL"], path: 'admin' },
-      customer: { host: ENV["PRD_URL"], path: 'mypage' }
+      customer: { host: ENV["PRD_URL"], path: '' }
   }
 end
