@@ -399,6 +399,7 @@ git push heroku master
 + ルーティングの分類
 + resourcesメソッド
 + リンクの設置
++ resourcesメソッドのオプション
 
 #### 単数リソース
 #### 制約
