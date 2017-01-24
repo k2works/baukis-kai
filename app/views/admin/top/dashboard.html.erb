@@ -1,0 +1,10 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Admin__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column DashBoard">
+  <ul class="DashBoard__menu">
+    <li><%= link_to t('.admin_staff_members'), :admin_staff_members, class: 'btn btn-default' %></li>
+  </ul>
+</section>

@@ -15,3 +15,7 @@ ja:
     sessions:
       new:
         submit: 'ログイン'
+    top:
+      dashboard:
+        title: 'ダッシュボード'
+        admin_staff_members: '職員管理'
