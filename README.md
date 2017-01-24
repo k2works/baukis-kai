@@ -412,6 +412,7 @@ git push heroku master
 + ルーティングのテスト
 
 #### 演習問題
++ ルーティングテスト追加
 
 ### レコードの表示、新規作成、更新、削除
 ### String Parameters

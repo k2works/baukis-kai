@@ -19,10 +19,10 @@
 #      admin_staff_members GET    /admin/staff(.:format)        admin/staff_members#index {:host=>"0.0.0.0"}
 #                          POST   /admin/staff(.:format)        admin/staff_members#create {:host=>"0.0.0.0"}
 #   new_admin_staff_member GET    /admin/staff/new(.:format)    admin/staff_members#new {:host=>"0.0.0.0"}
-#            customer_root GET    /                             customer/top#index
-#   customer_article_index GET    /article/index(.:format)      customer/article#index
-#  customer_campaign_index GET    /campaign/index(.:format)     customer/campaign#index
-# customer_campaign_submit GET    /campaign_submit(.:format)    customer/campaign#submit
+#            customer_root GET    /                             customer/top#index {:host=>"0.0.0.0"}
+#   customer_article_index GET    /article/index(.:format)      customer/article#index {:host=>"0.0.0.0"}
+#  customer_campaign_index GET    /campaign/index(.:format)     customer/campaign#index {:host=>"0.0.0.0"}
+# customer_campaign_submit GET    /campaign_submit(.:format)    customer/campaign#submit {:host=>"0.0.0.0"}
 #                     root GET    /                             errors#routing_error
 #                          GET    /*anything(.:format)          errors#routing_error
 #

@@ -20,6 +20,15 @@ describe 'Routes' do
                                      )
   end
 
+  # 顧客トップページ
+  it 'should route customer top page' do
+    expect(get: 'http://baukis-kai.example.com').to route_to(
+                                                              host: 'baukis-kai.example.com',
+                                                              controller: 'customer/top',
+                                                              action: 'index'
+                                                          )
+  end
+
   # ホスト名が対象外ならerrors/not_foundへ
   it 'should route errors/not_found giving exempt host' do
     expect(get: 'http://foo.example.com').to route_to(
