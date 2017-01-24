@@ -408,6 +408,7 @@ git push heroku master
 
 #### 制約
 + Rails.application.config
++ ホスト名による制約
 
 #### 演習問題
 
