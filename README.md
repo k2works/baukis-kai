@@ -407,6 +407,8 @@ git push heroku master
 + resourceメソッドのオプション
 
 #### 制約
++ Rails.application.config
+
 #### 演習問題
 
 ### レコードの表示、新規作成、更新、削除

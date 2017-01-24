@@ -53,9 +53,9 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.baukis_kai = {
-      staff: { host: '0.0.0.0', path: '' },
+      staff: { host: '0.0.0.0', path: 'staff' },
       admin: { host: '0.0.0.0', path: 'admin' },
-      customer: { host: '0.0.0.0', path: 'mypage' }
+      customer: { host: '0.0.0.0', path: '' }
   }
 
   config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
