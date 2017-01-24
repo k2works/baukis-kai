@@ -404,6 +404,7 @@ git push heroku master
 #### 単数リソース
 + 単数リソースの６つの基本アクション
 + resourceメソッド
++ resourceメソッドのオプション
 
 #### 制約
 #### 演習問題

@@ -33,14 +33,13 @@ Rails.application.routes.draw do
 
   concern :session_path do
     get    'login'   => 'sessions#new', as: :login
-    post   'session' => 'sessions#create', as: :session
-    delete 'session' => 'sessions#destroy'
+    resource :session, only: [:create, :destroy]
   end
 
   namespace :staff do
     root   'top#index'
     concerns :session_path
-    resource :account
+    resource :account, execpt: [:new, :create, :destroy]
   end
 
   namespace :admin do
