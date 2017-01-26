@@ -55,6 +55,8 @@ production:
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
-  port: <%= ENV['PORT'] %>
+  username: postgres
+  password: password
+  host: 127.0.0.1
+  database: baukis-kai_production
 
