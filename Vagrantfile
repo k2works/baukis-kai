@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest:5432, host:5432, id:"postgresql"
   config.vm.network :forwarded_port, guest:6379, host:6379, id:"redis"
   config.vm.network :forwarded_port, guest:27017, host:27017, id:"mongodb"
+  config.vm.network :forwarded_port, guest:8080, host:8080, id:"jenkins"
   config.vm.network :private_network, ip:"127.0.0.1"
 
   config.vm.synced_folder ".", "/vagrant", mount_options: ['dmode=777','fmode=777']
