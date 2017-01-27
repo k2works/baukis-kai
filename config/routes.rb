@@ -47,7 +47,7 @@ Rails.application.routes.draw do
     namespace :admin, path: config[:admin][:path]  do
       root 'top#index'
       concerns :session_path
-      resources :staff_members, only: [:index, :new, :create], path: 'staff'
+      resources :staff_members, path: 'staff'
     end
   end
 

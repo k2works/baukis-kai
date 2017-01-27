@@ -1,0 +1,43 @@
+<% @title = '職員管理' %>
+<section class="Section">
+  <h1 class="Admin__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table">
+  <div class="Table__links">
+    <%= link_to '新規登録', :new_admin_staff_member, class: 'btn btn-default' %>
+  </div>
+
+  <table class="Table__body Table--listing">
+    <tr class="Table__tr">
+      <th class="Table__th">氏名</th>
+      <th class="Table__th">フリガナ</th>
+      <th class="Table__th">メールアドレス</th>
+      <th class="Table__th">開始日</th>
+      <th class="Table__th">終了日</th>
+      <th class="Table__th">停止フラグ</th>
+      <th class="Table__th">アクション</th>
+    </tr>
+    <% @staff_members.each do |m| %>
+        <tr  class="Table__tr">
+          <td class="Table__td"><%= m.family_name %> <%= m.given_name %></td>
+          <td class="Table__td"><%= m.family_name_kana %> <%= m.given_name_kana %></td>
+          <td class="Table__td Table--email"><%= m.email %></td>
+          <td class="Table__td Table--date"><%= m.start_date %></td>
+          <td class="Table__td Table--date"><%= m.end_date %></td>
+          <td class="Table__td Table--boolean">
+            <%= m.suspended? ? raw('&#x2611;') : raw('&#x2610;') %>
+          </td>
+          <td class="Table__td Table--actions">
+            <%= link_to '編集', [ :edit, :admin, m ], class: 'btn btn-default btn-xs' %> |
+            <%= link_to '削除', [ :admin, m ], method: :delete,
+                        data: { confirm: '本当に削除しますか?'}, class: 'btn btn-default btn-xs' %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+
+  <div class="Table__links">
+    <%= link_to '新規登録', :new_admin_staff_member, class: 'btn btn-default' %>
+  </div>
+</section>

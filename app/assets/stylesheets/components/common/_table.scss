@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+// =====================
+// Table
+// ---------------------
+// 共通テーブル
+// =====================
+
+.Table {
+  width: 90%;
+  margin: 0 auto;
+
+  &__links {
+    text-align: right;
+    padding: $moderate;
+  }
+
+  &__body {
+    margin: $moderate auto 0;
+    border: solid $moderate $very_dark_magenta;
+  }
+
+  &__th {
+    background-color: $dark_gray;
+    color: $very_light_gray;
+    padding: $narrow;
+    text-align: center;
+  }
+
+  &__td { padding: $narrow }
+
+  &--email { font-family: monospace }
+
+  &--date {
+    font-family: monospace;
+    text-align: center;
+  }
+
+  &--boolean { text-align: center }
+
+  &--actions {
+    text-align: center;
+    color: $dark_gray;
+  }
+
+  &--listing {
+    width: 100%;
+    tr:nth-child(even) { background-color: $very_light_gray }
+    tr:nth-child(odd) { background-color: $light_gray }
+  }
+}
+
+
