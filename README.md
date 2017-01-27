@@ -426,6 +426,7 @@ git push heroku master
 #### 管理者による職員アカウント管理機能（後編）
 + createアクション
 + updateアクション
++ destroyアクション
 
 ### String Parameters
 ### アクセス制御
