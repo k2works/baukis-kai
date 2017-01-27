@@ -1,0 +1,17 @@
+<% @title = '職員の新規登録' %>
+<section class="Section">
+  <h1 class="Admin__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column AppForm">
+
+  <div class="AppForm__generic-form">
+    <%= bootstrap_form_for [ :admin, @staff_member ] do |f| %>
+    <%= render 'form', f: f %>
+        <div class="AppForm__buttons">
+          <%= f.submit '登録' %>
+          <%= link_to 'キャンセル', :admin_staff_members %>
+        </div>
+    <% end %>
+  </div>
+</section>

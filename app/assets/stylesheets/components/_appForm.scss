@@ -1,0 +1,42 @@
+// =====================
+// ApplicationForm
+// ---------------------
+// アプリケーション用フォーム
+// =====================
+
+
+.AppForm {
+  &__generic-form {
+    width: 480px;
+    margin: $very_wide auto;
+    padding: $very_wide;
+    border-radius: $wide;
+    border: solid 4px $dark_magenta;
+    background-color: $very_light_gray;
+    }
+  &__notes {
+    text-align: right;
+    font-size: $small;
+    span.mark { color: $red }
+  }
+  &__label {
+    display: block;
+    padding: $moderate 0;
+  }
+  label {
+    &.required:after {
+      content: '*';
+      padding-left: $narrow;
+      color: $red;
+    }
+    input[type='checkbox']+label { display: inline-block }
+    input[type='radio']+label { display: inline-block }
+  }
+  &__buttons {
+    text-align: center;
+    input[type='submit'] {
+      padding: $wide $very_wide;
+    }
+  }
+
+}

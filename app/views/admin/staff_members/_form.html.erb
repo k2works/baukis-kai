@@ -1,0 +1,33 @@
+<div class="AppForm__notes">
+  <span class="mark"></span>印の付いた項目は入力必須です。
+</div>
+<div>
+  <%= f.label :email, t('activerecord.attributes.staff_member.email'), class: 'AppForm__label required' %>
+  <%= f.text_field :email, hide_label: true, size: 32, required: true %>
+</div>
+<div>
+  <%= f.label :password, t('activerecord.attributes.staff_member.hashed_password'), class: 'AppForm__label required' %>
+  <%= f.password_field :pasword, hide_label: true, size:32, required: true %>
+</div>
+<div>
+  <%= f.label :family_name, '氏名', class: 'required' %>
+  <%= f.text_field :family_name, hide_label: true, required: true %>
+  <%= f.text_field :given_name, hide_label: true, required: true %>
+</div>
+<div>
+  <%= f.label :family_name_kana, 'フリガナ', class: 'required' %>
+  <%= f.text_field :family_name_kana, hide_label: true, required: true %>
+  <%= f.text_field :given_name_kana, hide_label: true, required: true %>
+</div>
+<div>
+  <%= f.label :start_date, t('activerecord.attributes.staff_member.start_date'), class: 'AppForm__label required' %>
+  <%= f.text_field :start_date, hide_label: true, required: true %>
+</div>
+<div>
+  <%= f.label :end_date, t('activerecord.attributes.staff_member.end_date') %>
+  <%= f.text_field :end_date ,hide_label: true %>
+</div>
+<div class="check-box">
+  <%= f.label :suspended, 'アカウント停止' %>
+  <%= f.check_box :suspended ,hide_label: true %>
+</div>

@@ -420,6 +420,7 @@ git push heroku master
 + 準備作業
 + indexアクション
 + showアクション
++ newアクション
 
 #### 管理者による職員アカウント管理機能（後編）
 
