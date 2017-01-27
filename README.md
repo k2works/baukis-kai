@@ -421,6 +421,7 @@ git push heroku master
 + indexアクション
 + showアクション
 + newアクション
++ editアクション
 
 #### 管理者による職員アカウント管理機能（後編）
 
