@@ -1,0 +1,9 @@
+ja:
+  admin:
+    staff_members:
+      create:
+        flash_success: '職員アカウントを新規登録しました。'
+      update:
+        flash_success: '職員アカウントを更新しました。'
+      destroy:
+        flash_success: '職員アカウントを削除しました。'
