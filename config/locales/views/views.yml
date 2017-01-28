@@ -33,3 +33,7 @@ ja:
         edit: '編集'
         delete: '削除'
         confirm: '本当に削除しますか?'
+      new:
+        title: '職員の新規登録'
+        submit: '登録'
+        cancel: 'キャンセル'
