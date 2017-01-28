@@ -1,4 +1,4 @@
-<% @title = '管理者トップページ' %>
+<% @title = t('.title') %>
 <section class="Section">
   <h1 class="Admin__title"><%= @title %></h1>
 </section>
@@ -8,6 +8,10 @@
     <h2 class="sectionLabel">お知らせ</h2>
   </div>
   <ol class="NewsList">
+    <li class="NewsList__item">
+      <time class="NewsList__head" datatime="2017-1-28">2017.1.28</time>
+      <span class="NewsList__body">職員管理機能を追加</span>
+    </li>
     <li class="NewsList__item">
       <time class="NewsList__head" datatime="2017-1-21">2017.1.21</time>
       <span class="NewsList__body">ログイン機能を追加</span>

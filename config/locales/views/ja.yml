@@ -16,6 +16,8 @@ ja:
       new:
         submit: 'ログイン'
     top:
+      index:
+        title: '管理者トップページ'
       dashboard:
         title: 'ダッシュボード'
         admin_staff_members: '職員管理'
