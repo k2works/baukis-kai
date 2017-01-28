@@ -429,8 +429,10 @@ git push heroku master
 + destroyアクション
 
 ### String Parameters
+#### String Parameters
 + マスアサインメント脆弱性
 + コントローラのテスト
++ 400 Bad Request
 
 ### アクセス制御
 ### モデル間の関連付け
