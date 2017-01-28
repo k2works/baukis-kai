@@ -430,6 +430,7 @@ git push heroku master
 
 ### String Parameters
 + マスアサインメント脆弱性
++ コントローラのテスト
 
 ### アクセス制御
 ### モデル間の関連付け
