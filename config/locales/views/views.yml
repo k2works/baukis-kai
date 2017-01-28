@@ -35,5 +35,9 @@ ja:
         confirm: '本当に削除しますか?'
       new:
         title: '職員の新規登録'
-        submit: '登録'
+        create: '登録'
+        cancel: 'キャンセル'
+      edit:
+        title: '職員アカウントの編集'
+        update: '登録'
         cancel: 'キャンセル'
