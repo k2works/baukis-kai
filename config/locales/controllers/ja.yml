@@ -1,4 +1,8 @@
 ja:
+  staff:
+    accounts:
+      update:
+        flash_success: 'アカウント情報を更新しました。'
   admin:
     staff_members:
       create:
