@@ -438,6 +438,7 @@ git push heroku master
 + showアクション
 + editアクション
 + updateアクション
++ updateアクションのテスト
 
 ### アクセス制御
 ### モデル間の関連付け

@@ -39,7 +39,7 @@ Rails.application.routes.draw do
     namespace :staff, path: config[:staff][:path] do
       root   'top#index'
       concerns :session_path
-      resource :account, execpt: [:new, :create, :destroy]
+      resource :account, only: [:update]
     end
   end
 
