@@ -429,6 +429,8 @@ git push heroku master
 + destroyアクション
 
 ### String Parameters
++ マスアサインメント脆弱性
+
 ### アクセス制御
 ### モデル間の関連付け
 ### 値の正規化とバリデーション
