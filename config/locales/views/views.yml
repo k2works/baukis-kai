@@ -19,3 +19,17 @@ ja:
       dashboard:
         title: 'ダッシュボード'
         admin_staff_members: '職員管理'
+    staff_members:
+      index:
+        title: '職員管理'
+        new: '新規登録'
+        full_name: '氏名'
+        kana: 'フリガナ'
+        email: 'メールアドレス'
+        start_date: '開始日'
+        end_date: '終了日'
+        suspended: '停止フラグ'
+        action: 'アクション'
+        edit: '編集'
+        delete: '削除'
+        confirm: '本当に削除しますか?'

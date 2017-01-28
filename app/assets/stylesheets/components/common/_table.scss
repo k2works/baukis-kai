@@ -18,6 +18,12 @@
   &__body {
     margin: $moderate auto 0;
     border: solid $moderate $very_dark_magenta;
+
+    &--listing {
+      width: 100%;
+      tr:nth-child(even) { background-color: $very_light_gray }
+      tr:nth-child(odd) { background-color: $light_gray }
+    }
   }
 
   &__th {
@@ -27,26 +33,21 @@
     text-align: center;
   }
 
-  &__td { padding: $narrow }
+  &__td {
+    padding: $narrow;
+    &--email { font-family: monospace }
 
-  &--email { font-family: monospace }
+    &--date {
+      font-family: monospace;
+      text-align: center;
+    }
 
-  &--date {
-    font-family: monospace;
-    text-align: center;
-  }
+    &--boolean { text-align: center }
 
-  &--boolean { text-align: center }
-
-  &--actions {
-    text-align: center;
-    color: $dark_gray;
-  }
-
-  &--listing {
-    width: 100%;
-    tr:nth-child(even) { background-color: $very_light_gray }
-    tr:nth-child(odd) { background-color: $light_gray }
+    &--actions {
+      text-align: center;
+      color: $dark_gray;
+    }
   }
 }
 
