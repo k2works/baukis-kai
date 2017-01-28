@@ -1,0 +1,17 @@
+<div class="AppForm__notes">
+  <span class="AppForm__notes--mark">*</span>印の付いた項目は入力必須です。
+</div>
+<div>
+  <%= f.label :email, t('activerecord.attributes.staff_member.email'), class: 'AppForm__label required' %>
+  <%= f.text_field :email, hide_label: true, size: 32, required: true %>
+</div>
+<div>
+  <%= f.label :family_name, '氏名', class: 'required' %>
+  <%= f.text_field :family_name, hide_label: true, required: true %>
+  <%= f.text_field :given_name, hide_label: true, required: true %>
+</div>
+<div>
+  <%= f.label :family_name_kana, 'フリガナ', class: 'required' %>
+  <%= f.text_field :family_name_kana, hide_label: true, required: true %>
+  <%= f.text_field :given_name_kana, hide_label: true, required: true %>
+</div>

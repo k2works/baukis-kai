@@ -16,6 +16,10 @@ ja:
         kana: 'フリガナ'
         email: 'メールアドレス'
         start_date: '開始日'
+      edit:
+        title: 'アカウント情報編集'
+        update: '更新'
+        cancel: 'キャンセル'
   admin:
     shared:
       header:
