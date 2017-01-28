@@ -42,6 +42,10 @@ html, body {
     span.logo-mark {
       font-weight: bold;
     }
+    a {
+      float: right;
+      margin-left: $wide
+    }
   }
 
   &__footer {

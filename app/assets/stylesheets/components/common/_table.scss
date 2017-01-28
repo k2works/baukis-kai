@@ -16,13 +16,16 @@
   }
 
   &__body {
-    margin: $moderate auto 0;
-    border: solid $moderate $very_dark_magenta;
-
     &--listing {
       width: 100%;
       tr:nth-child(even) { background-color: $very_light_gray }
       tr:nth-child(odd) { background-color: $light_gray }
+    }
+
+    &--attributes {
+      width: 100%;
+      th { padding-right: $moderate; width: 200px }
+      td { background-color: $very_light_gray }
     }
   }
 
@@ -39,14 +42,16 @@
 
     &--date {
       font-family: monospace;
-      text-align: center;
     }
 
     &--boolean { text-align: center }
 
     &--actions {
-      text-align: center;
       color: $dark_gray;
+    }
+
+    &--center {
+      text-align: center;
     }
   }
 }

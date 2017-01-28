@@ -22,4 +22,5 @@
         link_to t('staff.shared.header.login'), :staff_login, class: 'btn btn-default'
       end
     %>
+  <%= link_to t('staff.shared.header.account'), (:staff_account if current_staff_member) , class: 'btn btn-default' %>
 </header>

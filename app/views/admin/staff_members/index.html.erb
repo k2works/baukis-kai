@@ -8,7 +8,7 @@
     <%= link_to t('.new'), :new_admin_staff_member, class: 'btn btn-default' %>
   </div>
 
-  <table class="Table__body Table__body--listing">
+  <table class="Table__body Table__body--listing AdminTable__body">
     <tr class="Table__tr">
       <th class="Table__th"><%= t('.full_name') %></th>
       <th class="Table__th"><%= t('.kana') %></th>
@@ -23,8 +23,8 @@
           <td class="Table__td"><%= m.family_name %> <%= m.given_name %></td>
           <td class="Table__td"><%= m.family_name_kana %> <%= m.given_name_kana %></td>
           <td class="Table__td Table__td--email"><%= m.email %></td>
-          <td class="Table__td Table__td--date"><%= m.start_date %></td>
-          <td class="Table__td Table__td--date"><%= m.end_date %></td>
+          <td class="Table__td Table__td--date Table__td--center"><%= m.start_date %></td>
+          <td class="Table__td Table__td--date Table__td--center"><%= m.end_date %></td>
           <td class="Table__td Table__td--boolean">
             <%= m.suspended? ? raw('&#x2611;') : raw('&#x2610;') %>
           </td>

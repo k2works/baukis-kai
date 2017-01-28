@@ -1,0 +1,39 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table StaffTable">
+  <div class="Table__links">
+    <%= link_to t('.edit'), :edit_staff_account, class: 'btn btn-default' %>
+  </div>
+
+  <table class="Table__body Table__body--attributes StaffTable__body">
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.full_name') %></th>
+      <td>
+        <%= @staff_member.family_name %>
+        <%= @staff_member.given_name %>
+      </td>
+    </tr>
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.kana') %></th>
+      <td>
+        <%= @staff_member.family_name_kana %>
+        <%= @staff_member.given_name_kana %>
+      </td>
+    </tr>
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.email') %></th>
+      <td class="Table__td--email">
+        <%= @staff_member.email %>
+      </td>
+    </tr>
+    <tr>
+      <th class="Table__th"><%= t('.start_date') %></th>
+      <td class="Table__td--date">
+        <%= @staff_member.start_date.strftime('%Y/%m/%d') %>
+      </td>
+    </tr>
+  </table>
+</section>

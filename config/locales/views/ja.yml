@@ -4,9 +4,18 @@ ja:
       header:
         login: 'ログイン'
         logout: 'ログアウト'
+        account: 'アカウント'
     sessions:
       new:
         submit: 'ログイン'
+    accounts:
+      show:
+        title: 'アカウント情報'
+        edit: 'アカウント情報編集'
+        full_name: '氏名'
+        kana: 'フリガナ'
+        email: 'メールアドレス'
+        start_date: '開始日'
   admin:
     shared:
       header:
