@@ -5,6 +5,8 @@ ja:
         flash_alert: '職員としてログインしてください。'
       check_account:
         flash_alert: 'アカウントが無効になりました。'
+      check_timeout:
+        flash_alert: 'セッションがタイム・アウトしました。'
     accounts:
       update:
         flash_success: 'アカウント情報を更新しました。'

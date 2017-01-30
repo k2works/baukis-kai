@@ -37,7 +37,7 @@ class Staff::Base < ApplicationController
         session[:last_access_time] = Time.current
       else
         session.delete(:staff_member_id)
-        flash.alert = 'セッションがタイム・アウトしました。'
+        flash.alert = t('staff.base.check_timeout.flash_alert')
         redirect_to :staff_login
       end
     end
