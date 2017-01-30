@@ -3,6 +3,8 @@ ja:
     base:
       authrize:
         flash_alert: '職員としてログインしてください。'
+      check_account:
+        flash_alert: 'アカウントが無効になりました。'
     accounts:
       update:
         flash_success: 'アカウント情報を更新しました。'
