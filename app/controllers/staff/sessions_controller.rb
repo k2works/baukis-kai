@@ -16,19 +16,24 @@ class Staff::SessionsController < Staff::Base
       staff_member = StaffMember.find_by(email_for_index: @form.email.downcase)
     end
     if Staff::Authenticator.new(staff_member).authenticate(@form.password)
-      session[:staff_member_id] = staff_member.id
-      session[:last_access_time] = Time.current
-      flash.notice = 'ログインしました。'
-      redirect_to :staff_root
+      if staff_member.suspended?
+        flash.now.alert = t('common.session.create.alert_account')
+        render action: 'new'
+      else
+        session[:staff_member_id] = staff_member.id
+        session[:last_access_time] = Time.current
+        flash.notice =  t('common.session.create.notice')
+        redirect_to :staff_root
+      end
     else
-      flash.now.alert = 'メールアドレスまたはパスワードが正しくありません。'
+      flash.now.alert = t('common.session.create.alert_mail_password')
       render action: 'new'
     end
   end
 
   def destroy
     session.delete(:staff_member_id)
-    flash.notice = 'ログアウトしました。'
+    flash.notice = t('common.session.destroy.notice')
     redirect_to :staff_root
   end
 

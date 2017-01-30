@@ -1,12 +1,20 @@
 ja:
-  staff:
-    base:
-      authrize:
-        flash_alert: '職員としてログインしてください。'
+  common:
+    session:
+      create:
+        notice: 'ログインしました。'
+        alert_account: 'アカウントが停止されています。'
+        alert_mail_password: 'メールアドレスまたはパスワードが正しくありません。'
+      destroy:
+        notice: 'ログアウトしました。'
       check_account:
         flash_alert: 'アカウントが無効になりました。'
       check_timeout:
         flash_alert: 'セッションがタイム・アウトしました。'
+  staff:
+    base:
+      authrize:
+        flash_alert: '職員としてログインしてください。'
     accounts:
       update:
         flash_success: 'アカウント情報を更新しました。'
@@ -14,10 +22,6 @@ ja:
     base:
       authrize:
         flash_alert: '管理者としてログインしてください。'
-      check_account:
-        flash_alert: 'アカウントが無効になりました。'
-      check_timeout:
-        flash_alert: 'セッションがタイム・アウトしました。'
     staff_members:
       create:
         flash_success: '職員アカウントを新規登録しました。'

@@ -24,7 +24,7 @@ class Admin::Base < ApplicationController
   def check_account
     if current_administrator && !current_administrator.active?
       session.delete(:administrator_id)
-      flash.alert = t('admin.base.check_account.flash_alert')
+      flash.alert = t('common.session.check_account.flash_alert')
       redirect_to :admin_root
     end
   end
@@ -37,7 +37,7 @@ class Admin::Base < ApplicationController
         session[:last_access_time] = Time.current
       else
         session.delete(:administrator_id)
-        flash.alert = t('admin.base.check_timeout.flash_alert')
+        flash.alert = t('common.session.check_timeout.flash_alert')
         redirect_to :admin_login
       end
     end

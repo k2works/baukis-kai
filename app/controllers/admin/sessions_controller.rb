@@ -15,25 +15,25 @@ class Admin::SessionsController < Admin::Base
     if @form.email.present?
       administrator = Administrator.find_by(email_for_index: @form.email.downcase)
     end
-    if administrator
+    if Admin::Authenticator.new(administrator).authenticate(@form.password)
       if administrator.suspended?
-        flash.now.alert = 'アカウントが停止されています。'
+        flash.now.alert = t('common.session.create.alert_account')
         render action: 'new'
       else
         session[:administrator_id] = administrator.id
         session[:last_access_time] = Time.current
-        flash.notice = 'ログインしました。'
+        flash.notice = t('common.session.create.notice')
         redirect_to :admin_root
       end
     else
-      flash.now.alert = 'メールアドレスまたはパスワードが正しくありません。'
+      flash.now.alert = t('common.session.create.alert_mail_password')
       render action: 'new'
     end
   end
 
   def destroy
     session.delete(:administrator_id)
-    flash.notice = 'ログアウトしました。'
+    flash.notice = t('common.session.destroy.notice')
     redirect_to :admin_root
   end
 

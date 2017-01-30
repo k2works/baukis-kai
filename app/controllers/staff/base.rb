@@ -24,7 +24,7 @@ class Staff::Base < ApplicationController
   def check_account
     if current_staff_member && !current_staff_member.active?
       session.delete(:staff_member_id)
-      flash.alert = t('staff.base.check_account.flash_alert')
+      flash.alert = t('common.session.check_account.flash_alert')
       redirect_to :staff_root
     end
   end
@@ -37,7 +37,7 @@ class Staff::Base < ApplicationController
         session[:last_access_time] = Time.current
       else
         session.delete(:staff_member_id)
-        flash.alert = t('staff.base.check_timeout.flash_alert')
+        flash.alert = t('common.session.check_timeout.flash_alert')
         redirect_to :staff_login
       end
     end
