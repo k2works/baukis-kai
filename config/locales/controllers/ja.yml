@@ -14,6 +14,10 @@ ja:
     base:
       authrize:
         flash_alert: '管理者としてログインしてください。'
+      check_account:
+        flash_alert: 'アカウントが無効になりました。'
+      check_timeout:
+        flash_alert: 'セッションがタイム・アウトしました。'
     staff_members:
       create:
         flash_success: '職員アカウントを新規登録しました。'

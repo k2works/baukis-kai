@@ -10,6 +10,7 @@ describe Admin::StaffMembersController do
 
   before do
     session[:administrator_id] = administrator.id
+    session[:last_access_time] = 1.second.ago
   end
 
   describe '#create' do
