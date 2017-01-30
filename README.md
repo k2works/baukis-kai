@@ -443,6 +443,7 @@ git push heroku master
 ### アクセス制御
 #### before_action
 + 管理者ページのアクセス制御
++ before_actionの継承
 
 #### アクセス制御の強化
 #### アクセス制御のテスト

@@ -4,9 +4,10 @@ ja:
       update:
         flash_success: 'アカウント情報を更新しました。'
   admin:
-    staff_members:
-      index:
+    base:
+      authrize:
         flash_alert: '管理者としてログインしてください。'
+    staff_members:
       create:
         flash_success: '職員アカウントを新規登録しました。'
       update:
