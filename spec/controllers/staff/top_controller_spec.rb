@@ -22,5 +22,13 @@ describe Staff::TopController, 'Before login' do
       expect(session[:staff_member_id]).to be_nil
       expect(response).to redirect_to(staff_root_url)
     end
+
+    # セッションタイムアウト
+    it 'should session timeout' do
+      session[:last_access_time] = Staff::Base::TIMEOUT.ago.advance(seconds: -1)
+      get :index
+      expect(session[:staff_member_id]).to be_nil
+      expect(response).to redirect_to(staff_login_url)
+    end
   end
 end
