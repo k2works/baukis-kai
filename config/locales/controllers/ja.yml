@@ -5,6 +5,8 @@ ja:
         flash_success: 'アカウント情報を更新しました。'
   admin:
     staff_members:
+      index:
+        flash_alert: '管理者としてログインしてください。'
       create:
         flash_success: '職員アカウントを新規登録しました。'
       update:
