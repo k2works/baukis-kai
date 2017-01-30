@@ -444,6 +444,7 @@ git push heroku master
 #### before_action
 + 管理者ページのアクセス制御
 + before_actionの継承
++ 職員ページのアクセス制御
 
 #### アクセス制御の強化
 #### アクセス制御のテスト

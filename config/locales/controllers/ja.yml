@@ -1,5 +1,8 @@
 ja:
   staff:
+    base:
+      authrize:
+        flash_alert: '職員としてログインしてください。'
     accounts:
       update:
         flash_success: 'アカウント情報を更新しました。'
