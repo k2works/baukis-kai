@@ -476,6 +476,7 @@ git push heroku master
 + Gemパッケージkaminari
 + indexアクションの修正
 + ERBテンプレートの修正
++ ページネーションのカスタマイズ
 
 #### N + 1問題
 #### 演習問題
