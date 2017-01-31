@@ -473,6 +473,7 @@ git push heroku master
 
 #### ページネーション
 + シードデータの投入
++ Gemパッケージkaminari
 
 #### N + 1問題
 #### 演習問題
