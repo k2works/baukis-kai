@@ -30,6 +30,7 @@
           </td>
           <td class="Table__td Table__td--actions">
             <%= link_to t('.edit'), [ :edit, :admin, m ], class: 'btn btn-default btn-xs' %> |
+            <%= link_to t('.events'), [ :admin, m, :staff_events ], class: 'btn btn-default btn-xs' %> |
             <%= link_to t('.delete'), [ :admin, m ], method: :delete,
                         data: { confirm: t('.confirm')}, class: 'btn btn-default btn-xs' %>
           </td>
