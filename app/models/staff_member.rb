@@ -23,6 +23,8 @@
 #
 
 class StaffMember < ApplicationRecord
+  has_many :events, class_name: 'StaffEvent', dependent: :destroy
+
   before_validation do
     self.email_for_index = email.downcase if email
   end

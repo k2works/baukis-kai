@@ -10,33 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170120000741) do
+ActiveRecord::Schema.define(version: 20170131041629) do
 
-  create_table "administrators", force: :cascade do |t|
-    t.string   "email",                           null: false
-    t.string   "email_for_index",                 null: false
-    t.string   "hashed_password"
-    t.boolean  "suspended",       default: false, null: false
+  create_table "administrators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "管理者" do |t|
+    t.string   "email",                           null: false, comment: "メールアドレス"
+    t.string   "email_for_index",                 null: false, comment: "索引用メールアドレス"
+    t.string   "hashed_password",                              comment: "パスワード"
+    t.boolean  "suspended",       default: false, null: false, comment: "停止フラグ"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
-    t.index ["email_for_index"], name: "index_administrators_on_email_for_index", unique: true
+    t.index ["email_for_index"], name: "index_administrators_on_email_for_index", unique: true, using: :btree
   end
 
-  create_table "staff_members", force: :cascade do |t|
-    t.string   "email",                            null: false
-    t.string   "email_for_index",                  null: false
-    t.string   "family_name",                      null: false
-    t.string   "given_name",                       null: false
-    t.string   "family_name_kana",                 null: false
-    t.string   "given_name_kana",                  null: false
-    t.string   "hashed_password"
-    t.date     "start_date",                       null: false
-    t.date     "end_date"
-    t.boolean  "suspended",        default: false, null: false
+  create_table "staff_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "職員イベント" do |t|
+    t.integer  "staff_member_id", null: false, comment: "職員レコードへの外部キー"
+    t.string   "type",            null: false, comment: "イベントタイプ"
+    t.datetime "created_at",      null: false, comment: "発生時刻"
+    t.index ["created_at"], name: "index_staff_events_on_created_at", using: :btree
+    t.index ["staff_member_id", "created_at"], name: "index_staff_events_on_staff_member_id_and_created_at", using: :btree
+    t.index ["staff_member_id"], name: "index_staff_events_on_staff_member_id", using: :btree
+  end
+
+  create_table "staff_members", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "職員" do |t|
+    t.string   "email",                            null: false, comment: "メールアドレス"
+    t.string   "email_for_index",                  null: false, comment: "索引用メールアドレス"
+    t.string   "family_name",                      null: false, comment: "姓"
+    t.string   "given_name",                       null: false, comment: "名"
+    t.string   "family_name_kana",                 null: false, comment: "姓（カナ）"
+    t.string   "given_name_kana",                  null: false, comment: "名（カナ）"
+    t.string   "hashed_password",                               comment: "パスワード"
+    t.date     "start_date",                       null: false, comment: "開始日"
+    t.date     "end_date",                                      comment: "終了日"
+    t.boolean  "suspended",        default: false, null: false, comment: "停止フラグ"
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
-    t.index ["email_for_index"], name: "index_staff_members_on_email_for_index", unique: true
-    t.index ["family_name_kana", "given_name_kana"], name: "index_staff_members_on_family_name_kana_and_given_name_kana"
+    t.index ["email_for_index"], name: "index_staff_members_on_email_for_index", unique: true, using: :btree
+    t.index ["family_name_kana", "given_name_kana"], name: "index_staff_members_on_family_name_kana_and_given_name_kana", using: :btree
   end
 
+  add_foreign_key "staff_events", "staff_members"
 end
