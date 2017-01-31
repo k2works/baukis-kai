@@ -8,6 +8,8 @@
     <%= link_to t('.new'), :new_admin_staff_member, class: 'btn btn-default' %>
   </div>
 
+  <%= paginate @staff_members %>
+
   <table class="Table__body Table__body--listing AdminTable__body">
     <tr class="Table__tr">
       <th class="Table__th"><%= t('.full_name') %></th>
@@ -37,6 +39,8 @@
         </tr>
     <% end %>
   </table>
+
+  <%= paginate @staff_members %>
 
   <div class="Table__links">
     <%= link_to t('.new'), :new_admin_staff_member, class: 'btn btn-default' %>
