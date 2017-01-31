@@ -479,6 +479,10 @@ git push heroku master
 + ページネーションのカスタマイズ
 
 #### N + 1問題
++ Gemパッケージquiet_assets
++ N+1問題とは
++ includeメソッド
+
 #### 演習問題
 
 ### 値の正規化とバリデーション
