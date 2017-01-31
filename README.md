@@ -482,6 +482,7 @@ git push heroku master
 + Gemパッケージquiet_assets
 + N+1問題とは
 + includeメソッド
++ リファクタリング
 
 #### 演習問題
 
