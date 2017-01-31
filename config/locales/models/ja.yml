@@ -3,6 +3,7 @@ ja:
     models:
       administrator: 管理者
       staff_member: 職員
+      staff_event: 職員イベント
 
     attributes:
       administrator:
@@ -22,6 +23,14 @@ ja:
         hashed_password: パスワード
         start_date: 開始日
         suspended: 停止フラグ
+
+      staff_event:
+        member: 職員レコードへの外部キー
+        type: イベントタイプ
+        description:
+          logged_in: ログイン
+          logged_out: ログアウト
+          rejected: ログイン拒否
 
   activemodel:
     models:

@@ -1,0 +1,36 @@
+<%
+  if @staff_member
+    full_name = @staff_member.family_name + @staff_member.given_name
+    @title = "#{full_name}さんの#{t('.title')}"
+  else
+    @title = t('.title')
+  end
+%>
+<section class="Section">
+  <h1 class="Admin__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table">
+  <div class="Table__links">
+    <%= link_to t('.admin_staff_members'), :admin_staff_members, class: 'btn btn-default' %>
+  </div>
+
+  <table class="Table__body Table__body--listing AdminTable__body">
+    <tr class="Table__tr">
+      <% unless @staff_member %><th class="Table__th"><%= t('.full_name') %></th><% end %>
+      <th class="Table__th"><%= t('.type') %></th>
+      <th class="Table__th"><%= t('.date_time') %></th>
+    </tr>
+    <%= render partial: 'event', collection: @events %>
+    <% if @events.empty? %>
+        <tr>
+          <%= content_tag(:td, t('.contents_not_record'),
+              colspan: @staff_member ? 2 : 3, style: 'text-align: center') %>
+        </tr>
+    <% end %>
+  </table>
+
+  <div class="Table__links">
+    <%= link_to t('.admin_staff_members'), :admin_staff_members, class: 'btn btn-default' %>
+  </div>
+</section>

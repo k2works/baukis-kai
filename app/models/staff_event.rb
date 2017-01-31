@@ -18,5 +18,15 @@ class StaffEvent < ApplicationRecord
   self.inheritance_column = nil
 
   belongs_to :member, class_name: 'StaffMember', foreign_key: 'staff_member_id'
-  alias_attribute :occurred_at, :create_at
+  alias_attribute :occurred_at, :created_at
+
+  DESCRIPTIONS = {
+      logged_in: I18n.t('activerecord.attributes.staff_event.description.logged_in'),
+      logged_out: I18n.t('activerecord.attributes.staff_event.description.logged_out'),
+      rejected: I18n.t('activerecord.attributes.staff_event.description.rejected')
+  }
+
+  def description
+    DESCRIPTIONS[type.to_sym]
+  end
 end

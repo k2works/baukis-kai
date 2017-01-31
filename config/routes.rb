@@ -32,6 +32,10 @@
 #
 
 Rails.application.routes.draw do
+  namespace :admin do
+    get 'staff_events/index'
+  end
+
   config = Rails.application.config.baukis_kai
 
   concern :session_path do

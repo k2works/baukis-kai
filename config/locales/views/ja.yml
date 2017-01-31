@@ -58,3 +58,11 @@ ja:
         title: '職員アカウントの編集'
         update: '登録'
         cancel: 'キャンセル'
+    staff_events:
+        index:
+          title: 'ログイン・ログアウト記録'
+          admin_staff_members: '職員一覧'
+          full_name: '氏名'
+          type: '種別'
+          date_time: '日時'
+          contents_not_record: '記録がありません'

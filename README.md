@@ -469,6 +469,7 @@ git push heroku master
 
 #### ネストされたリソース
 + ネストされたリソースとは
++ admin/staff_eventsコントローラ
 
 #### ページネーション
 #### N + 1問題
