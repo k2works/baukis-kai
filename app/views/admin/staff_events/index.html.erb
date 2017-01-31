@@ -15,6 +15,8 @@
     <%= link_to t('.admin_staff_members'), :admin_staff_members, class: 'btn btn-default' %>
   </div>
 
+  <%= paginate @events %>
+
   <table class="Table__body Table__body--listing AdminTable__body">
     <tr class="Table__tr">
       <% unless @staff_member %><th class="Table__th"><%= t('.full_name') %></th><% end %>
@@ -29,6 +31,8 @@
         </tr>
     <% end %>
   </table>
+
+  <%= paginate @events %>
 
   <div class="Table__links">
     <%= link_to t('.admin_staff_members'), :admin_staff_members, class: 'btn btn-default' %>
