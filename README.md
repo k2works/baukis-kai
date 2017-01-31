@@ -472,6 +472,8 @@ git push heroku master
 + admin/staff_eventsコントローラ
 
 #### ページネーション
++ シードデータの投入
+
 #### N + 1問題
 #### 演習問題
 
