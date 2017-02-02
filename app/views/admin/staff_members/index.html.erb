@@ -21,6 +21,7 @@
       <th class="Table__th"><%= t('.action') %></th>
     </tr>
     <% @staff_members.each do |m| %>
+        <% p = Admin::StaffMemberPresenter.new(m, self) %>
         <tr  class="Table__tr">
           <td class="Table__td"><%= m.family_name %> <%= m.given_name %></td>
           <td class="Table__td"><%= m.family_name_kana %> <%= m.given_name_kana %></td>
@@ -28,7 +29,7 @@
           <td class="Table__td Table__td--date Table__td--center"><%= m.start_date %></td>
           <td class="Table__td Table__td--date Table__td--center"><%= m.end_date %></td>
           <td class="Table__td Table__td--boolean">
-            <%= m.suspended? ? raw('&#x2611;') : raw('&#x2610;') %>
+            <%= p.suspended_mark %>
           </td>
           <td class="Table__td Table__td--actions">
             <%= link_to t('.edit'), [ :edit, :admin, m ], class: 'btn btn-default btn-xs' %> |
