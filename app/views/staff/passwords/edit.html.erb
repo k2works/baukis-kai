@@ -1,0 +1,24 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column AppForm">
+  <div class="AppForm__generic-form StaffAppForm__generic-form">
+    <%= bootstrap_form_for @change_password_form, url: :staff_password, method: :patch do |f| %>
+        <div>
+          <%= f.password_field :current_password, size: 32, require: true %>
+        </div>
+        <div>
+          <%= f.password_field :new_password, size: 32, require: true %>
+        </div>
+        <div>
+          <%= f.password_field :new_password_confirmation, size: 32, require: true %>
+        </div>
+        <div class="AppForm__buttons">
+          <%= f.submit t('.submit'),class: 'btn btn-default btn-lg' %>
+          <%= link_to t('.cancel'), :staff_account, class: 'btn btn-default btn-lg' %>
+        </div>
+    <% end %>
+  </div>
+</section>

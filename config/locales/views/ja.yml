@@ -22,6 +22,11 @@ ja:
         title: 'アカウント情報編集'
         update: '更新'
         cancel: 'キャンセル'
+    passwords:
+      edit:
+        title: 'パスワード変更'
+        submit: '変更'
+        cancel: 'キャンセル'
   admin:
     shared:
       header:

@@ -499,6 +499,7 @@ git push heroku master
 + ルーティングの設定
 + リンクの設置
 + showアクション
++ editアクション
 
 #### 演習問題
 

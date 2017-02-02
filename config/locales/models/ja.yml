@@ -35,12 +35,17 @@ ja:
   activemodel:
     models:
       staff/login_form: 職員ログインフォーム
+      staff/change_password_form: 職員パスワード変更フォーム
       admin/login_form: 管理者ログインフォーム
 
     attributes:
       staff/login_form:
         email: メールアドレス
         password: パスワード
+      staff/change_password_form:
+        current_password: 現在のパスワード
+        new_password: 新しいパスワード
+        new_password_confirmation: 新しいパスワード（確認）
       admin/login_form:
         email: メールアドレス
         password: パスワード
