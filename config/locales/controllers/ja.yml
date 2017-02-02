@@ -18,6 +18,10 @@ ja:
     accounts:
       update:
         flash_success: 'アカウント情報を更新しました。'
+    passwords:
+      update:
+        flash_success: 'パスワードを変更しました。'
+        flash_alert: '入力に誤りがあります。'
   admin:
     base:
       authrize:

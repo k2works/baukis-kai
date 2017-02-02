@@ -500,6 +500,7 @@ git push heroku master
 + リンクの設置
 + showアクション
 + editアクション
++ updateアクション
 
 #### 演習問題
 
