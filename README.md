@@ -511,6 +511,7 @@ git push heroku master
 #### モデルプレゼンター
 + 問題の所在
 + プレゼンターとは
++ 委譲
 
 #### HtmlBuilder
 #### フォームプレゼンター
