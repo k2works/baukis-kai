@@ -6,15 +6,14 @@
 <section class="Section l-column AppForm">
   <div class="AppForm__generic-form StaffAppForm__generic-form">
     <%= bootstrap_form_for @change_password_form, url: :staff_password, method: :patch do |f| %>
-        <div>
-          <%= f.password_field :current_password, size: 32, require: true %>
-        </div>
-        <div>
-          <%= f.password_field :new_password, size: 32, require: true %>
-        </div>
-        <div>
-          <%= f.password_field :new_password_confirmation, size: 32, require: true %>
-        </div>
+        <%= markup do |m|
+          p = FormPresenter.new(f, self)
+          p.with_options(required: true, size: 32) do |q|
+            m << p.password_field_block(:current_password, t('activemodel.attributes.staff/change_password_form.current_password'))
+            m << p.password_field_block(:new_password, t('activemodel.attributes.staff/change_password_form.new_password'))
+            m << p.password_field_block(:new_password_confirmation, t('activemodel.attributes.staff/change_password_form.new_password_confirmation'))
+          end
+        end %>
         <div class="AppForm__buttons">
           <%= f.submit t('.submit'),class: 'btn btn-default btn-lg' %>
           <%= link_to t('.cancel'), :staff_account, class: 'btn btn-default btn-lg' %>
