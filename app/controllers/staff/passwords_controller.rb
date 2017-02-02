@@ -10,11 +10,11 @@ class Staff::PasswordsController < Staff::Base
   def update
     @change_password_form = Staff::ChangePasswordForm.new(staff_member_params)
     @change_password_form.object = current_staff_member
-    if @change_password_form
+    if @change_password_form.save
       flash.notice = t('.flash_success')
       redirect_to :staff_account
     else
-      flash.new.alert = t('.flash_alert')
+      flash.now.alert = t('.flash_alert')
       render action: 'edit'
     end
   end

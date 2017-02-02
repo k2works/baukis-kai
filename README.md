@@ -501,6 +501,7 @@ git push heroku master
 + showアクション
 + editアクション
 + updateアクション
++ バリデーション
 
 #### 演習問題
 
