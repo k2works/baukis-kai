@@ -43,4 +43,7 @@
     label { color: $red }
     input { background-color: $pink }
   }
+  &__input-block {
+    input { margin-right: $narrow * 2; }
+  }
 }

@@ -23,6 +23,9 @@ ja:
         hashed_password: パスワード
         start_date: 開始日
         suspended: 停止フラグ
+        full_name: 氏名
+        full_name_kana: フリガナ
+        suspended_on: アカウント停止
 
       staff_event:
         member: 職員レコードへの外部キー

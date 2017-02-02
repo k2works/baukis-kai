@@ -1,35 +1,9 @@
-<div class="AppForm__notes">
-  <span class="AppForm__notes--mark">*</span>印の付いた項目は入力必須です。
-</div>
-<div>
-  <%= f.label :email, t('activerecord.attributes.staff_member.email'), class: 'AppForm__label required' %>
-  <%= f.text_field :email, hide_label: true, size: 32, required: true %>
-</div>
-<% if f.object.new_record? %>
-<div>
-  <%= f.label :password, t('activerecord.attributes.staff_member.hashed_password'), class: 'AppForm__label required' %>
-  <%= f.password_field :password, hide_label: true, size:32, required: true %>
-</div>
-<% end %>
-<div>
-  <%= f.label :family_name, '氏名', class: 'required' %>
-  <%= f.text_field :family_name, hide_label: true, required: true %>
-  <%= f.text_field :given_name, hide_label: true, required: true %>
-</div>
-<div>
-  <%= f.label :family_name_kana, 'フリガナ', class: 'required' %>
-  <%= f.text_field :family_name_kana, hide_label: true, required: true %>
-  <%= f.text_field :given_name_kana, hide_label: true, required: true %>
-</div>
-<div>
-  <%= f.label :start_date, t('activerecord.attributes.staff_member.start_date'), class: 'AppForm__label required' %>
-  <%= f.text_field :start_date, hide_label: true, required: true %>
-</div>
-<div>
-  <%= f.label :end_date, t('activerecord.attributes.staff_member.end_date') %>
-  <%= f.text_field :end_date ,hide_label: true %>
-</div>
-<div class="check-box">
-  <%= f.label :suspended, 'アカウント停止' %>
-  <%= f.check_box :suspended ,hide_label: true %>
-</div>
+<% p = Admin::StaffMemberFormPresenter.new(f, self) %>
+<%= p.notes %>
+<%= p.text_field_block(:email, t('activerecord.attributes.staff_member.email'),size:32,required: true) %>
+<%= p.password_field_block(:pasword,t('activerecord.attributes.staff_member.hashed_password'),size: 32, required: true) %>
+<%= p.full_name_block(:family_name, :given_name, t('activerecord.attributes.staff_member.full_name'), {required: true}) %>
+<%= p.full_name_block(:family_name_kana, :given_name_kana, t('activerecord.attributes.staff_member.full_name_kana'), {required: true}) %>
+<%= p.date_field_block(:start_date,t('activerecord.attributes.staff_member.start_date'),required: true) %>
+<%= p.date_field_block(:end_date,t('activerecord.attributes.staff_member.end_date') ) %>
+<%= p.check_boxes %>
