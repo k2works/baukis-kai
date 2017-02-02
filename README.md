@@ -536,6 +536,7 @@ git push heroku master
 ### jQueryとCoffeeScript
 #### jQueryとCoffeeScript
 + 準備作業
++ 入力フォームの有効・無効を切り替える
 
 #### Datapicker
 

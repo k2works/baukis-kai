@@ -3,7 +3,7 @@
   m << p.notes
   p.with_options(required: true) do |q|
     m << p.text_field_block(:email, t('activerecord.attributes.staff_member.email'),size:32)
-    m << p.password_field_block(:pasword,t('activerecord.attributes.staff_member.hashed_password'),size: 32)
+    m << p.password_field_block(:password,t('activerecord.attributes.staff_member.hashed_password'),size: 32)
     m << p.full_name_block(:family_name, :given_name, t('activerecord.attributes.staff_member.full_name'))
     m << p.full_name_block(:family_name_kana, :given_name_kana, t('activerecord.attributes.staff_member.full_name_kana'))
     m << p.date_field_block(:start_date,t('activerecord.attributes.staff_member.start_date'))

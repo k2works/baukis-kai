@@ -8,8 +8,8 @@
     <%= bootstrap_form_for [ :admin, @staff_member ] do |f| %>
         <%= render 'form', f: f %>
         <div class="AppForm__buttons">
-          <%= f.submit t('.update') %>
-          <%= link_to t('.cancel'), :admin_staff_members %>
+          <%= f.submit t('.update'),class: 'btn btn-default btn-lg' %>
+          <%= link_to t('.cancel'), :admin_staff_members,class: 'btn btn-default btn-lg' %>
         </div>
     <% end %>
   </div>
