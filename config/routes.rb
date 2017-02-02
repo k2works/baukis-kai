@@ -9,6 +9,10 @@
 #                   staff_account GET    /staff/account(.:format)                             staff/accounts#show {:host=>"0.0.0.0"}
 #                                 PATCH  /staff/account(.:format)                             staff/accounts#update {:host=>"0.0.0.0"}
 #                                 PUT    /staff/account(.:format)                             staff/accounts#update {:host=>"0.0.0.0"}
+#             edit_staff_password GET    /staff/password/edit(.:format)                       staff/passwords#edit {:host=>"0.0.0.0"}
+#                  staff_password GET    /staff/password(.:format)                            staff/passwords#show {:host=>"0.0.0.0"}
+#                                 PATCH  /staff/password(.:format)                            staff/passwords#update {:host=>"0.0.0.0"}
+#                                 PUT    /staff/password(.:format)                            staff/passwords#update {:host=>"0.0.0.0"}
 #                      admin_root GET    /admin(.:format)                                     admin/top#index {:host=>"0.0.0.0"}
 #                     admin_login GET    /admin/login(.:format)                               admin/sessions#new {:host=>"0.0.0.0"}
 #                   admin_session DELETE /admin/session(.:format)                             admin/sessions#destroy {:host=>"0.0.0.0"}
@@ -32,10 +36,6 @@
 #
 
 Rails.application.routes.draw do
-  namespace :admin do
-    get 'staff_events/index'
-  end
-
   config = Rails.application.config.baukis_kai
 
   concern :session_path do
@@ -48,6 +48,7 @@ Rails.application.routes.draw do
       root   'top#index'
       concerns :session_path
       resource :account, only: [:show, :edit, :update]
+      resource :password, only: [:show, :edit, :update]
     end
   end
 
