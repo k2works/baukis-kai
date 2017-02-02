@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree ./shared
+//= require jquery-ui/datepicker
+//= require jquery-ui/datepicker-ja
 //= require_tree ./admin

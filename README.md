@@ -539,6 +539,7 @@ git push heroku master
 + 入力フォームの有効・無効を切り替える
 
 #### Datapicker
++ 準備作業
 
 ### 単一テーブ継承
 ### Capybara
