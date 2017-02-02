@@ -100,6 +100,16 @@ RSpec.describe StaffMember, type: :model do
       expect(member2).not_to be_valid
     end
 
+    # 漢字、ひらがな、カタカナ、アルファベット以外の文字を含まない
+    it 'does not include characters other than kanji, hiragana, katakana, and alphabet in family_name' do
+      member = build(:staff_member, family_name: '@@@')
+      expect(member).not_to be_valid
+    end
+
+    it 'does not include characters other than kanji, hiragana, katakana, and alphabet in given_name' do
+      member = build(:staff_member, given_name: '@@@')
+      expect(member).not_to be_valid
+    end
 
   end
 end

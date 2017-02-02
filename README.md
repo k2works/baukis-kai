@@ -504,6 +504,7 @@ git push heroku master
 + バリデーション
 
 #### 演習問題
++ テスト追加
 
 ### プレゼンター
 ### jQueryとCoffeeScript
