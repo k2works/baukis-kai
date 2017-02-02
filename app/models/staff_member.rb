@@ -36,10 +36,11 @@ class StaffMember < ApplicationRecord
     self.given_name_kana = normalize_as_furigana(given_name_kana)
   end
 
+  HUMAN_NAME_REGEXP = /\A[p{han}\p{hiragana}\p{katakana}\u{30fc}\p{alpha}]+\z/
   KATAKANA_REGEXP = /\A[\p{katakana}\u{30fc}]+\z/
 
   validates :email, presence: true, email: { alllow_blank: true }
-  validates :family_name, :given_name, presence: true
+  validates :family_name, :given_name, presence: true, format: { with: HUMAN_NAME_REGEXP, allow_blank: true }
   validates :family_name_kana, :given_name_kana, presence: true, format: { with: KATAKANA_REGEXP, allow_blank: true }
   validates :start_date, presence: true, date: {
       after_or_equal_to: Date.new(2000, 1, 1),
