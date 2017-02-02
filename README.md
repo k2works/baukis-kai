@@ -540,6 +540,7 @@ git push heroku master
 
 #### Datapicker
 + 準備作業
++ Datepickerの利用
 
 ### 単一テーブ継承
 ### Capybara

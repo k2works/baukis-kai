@@ -92,3 +92,6 @@ gem 'kaminari', '~> 0.17.0'
 gem 'date_validator', '~> 0.9.0'
 gem 'email_validator', '~> 1.6'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
+
