@@ -23,7 +23,9 @@
       <th class="Table__th"><%= t('.type') %></th>
       <th class="Table__th"><%= t('.date_time') %></th>
     </tr>
-    <%= render partial: 'event', collection: @events %>
+    <% @events.each do |event| %>
+        <%= Admin::StaffEventPresenter.new(event, self).table_row %>
+    <% end %>
     <% if @events.empty? %>
         <tr>
           <%= content_tag(:td, t('.contents_not_record'),
