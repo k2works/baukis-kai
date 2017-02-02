@@ -45,6 +45,16 @@ class FormPresenter
     end
   end
 
+  def error_message_for(name)
+    markup do |m|
+      object.errors.full_messages_for(name).each do |message|
+        m.div(class: 'error-message') do |m|
+          m.text message
+        end
+      end
+    end
+  end
+
   private
   def decorated_label(name, label_text, options)
     label(name, label_text, class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
