@@ -6,6 +6,7 @@
 <section class="Section l-column Table StaffTable">
   <div class="Table__links">
     <%= link_to t('.edit'), :edit_staff_account, class: 'btn btn-default' %>
+    <%= link_to t('.password_edit'), :edit_staff_password, class: 'btn btn-default' %>
   </div>
 
   <table class="Table__body Table__body--attributes StaffTable__body">
@@ -28,6 +29,10 @@
       <td class="Table__td--email">
         <%= @staff_member.email %>
       </td>
+    </tr>
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.password') %></th>
+      <td class="Table__td--password">*****************</td>
     </tr>
     <tr>
       <th class="Table__th"><%= t('.start_date') %></th>

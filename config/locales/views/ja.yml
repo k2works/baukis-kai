@@ -12,9 +12,11 @@ ja:
       show:
         title: 'アカウント情報'
         edit: 'アカウント情報編集'
+        password_edit: 'パスワード変更'
         full_name: '氏名'
         kana: 'フリガナ'
         email: 'メールアドレス'
+        password: 'パスワード'
         start_date: '開始日'
       edit:
         title: 'アカウント情報編集'
