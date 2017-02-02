@@ -1,9 +1,13 @@
-<% p = Admin::StaffMemberFormPresenter.new(f, self) %>
-<%= p.notes %>
-<%= p.text_field_block(:email, t('activerecord.attributes.staff_member.email'),size:32,required: true) %>
-<%= p.password_field_block(:pasword,t('activerecord.attributes.staff_member.hashed_password'),size: 32, required: true) %>
-<%= p.full_name_block(:family_name, :given_name, t('activerecord.attributes.staff_member.full_name'), {required: true}) %>
-<%= p.full_name_block(:family_name_kana, :given_name_kana, t('activerecord.attributes.staff_member.full_name_kana'), {required: true}) %>
-<%= p.date_field_block(:start_date,t('activerecord.attributes.staff_member.start_date'),required: true) %>
-<%= p.date_field_block(:end_date,t('activerecord.attributes.staff_member.end_date') ) %>
-<%= p.check_boxes %>
+<%= markup do |m|
+  p = Admin::StaffMemberFormPresenter.new(f, self)
+  m << p.notes
+  p.with_options(required: true) do |q|
+    m << p.text_field_block(:email, t('activerecord.attributes.staff_member.email'),size:32)
+    m << p.password_field_block(:pasword,t('activerecord.attributes.staff_member.hashed_password'),size: 32)
+    m << p.full_name_block(:family_name, :given_name, t('activerecord.attributes.staff_member.full_name'))
+    m << p.full_name_block(:family_name_kana, :given_name_kana, t('activerecord.attributes.staff_member.full_name_kana'))
+    m << p.date_field_block(:start_date,t('activerecord.attributes.staff_member.start_date'))
+    m << p.date_field_block(:end_date,t('activerecord.attributes.staff_member.end_date'),required: false)
+  end
+  m << p.check_boxes
+end %>

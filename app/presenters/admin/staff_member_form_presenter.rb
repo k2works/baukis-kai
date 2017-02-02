@@ -7,7 +7,7 @@ class Admin::StaffMemberFormPresenter < FormPresenter
 
   def full_name_block(name1, name2, label_text, options = {})
     markup(:dvi,class: 'AppForm__input-block') do |m|
-      m << label(name1, label_text ,class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
+      m << decorated_label(name1, label_text, options)
       m << text_field(name1, hide_label: true, class: options[:required] ? 'required' : nil)
       m << text_field(name2, hide_label: true, class: options[:required] ? 'required' : nil)
     end

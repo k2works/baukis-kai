@@ -26,22 +26,28 @@ class FormPresenter
 
   def text_field_block(name, label_text, options = {})
     markup(:div, class: 'AppForm__input-block') do |m|
-      m << label(name, label_text,class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
+      m << decorated_label(name, label_text, options)
       m << text_field(name, hide_label: true, class: options[:required] ? 'required' : nil)
     end
   end
 
   def password_field_block(name, label_text, options = {})
     markup(:div, class: 'AppForm__input-block') do |m|
-      m << label(name, label_text, class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
+      m << decorated_label(name, label_text, options)
       m << password_field(name, hide_label: true, class: options[:required] ? 'required' : nil)
     end
   end
 
   def date_field_block(name, label_text, options = {})
     markup(:div, class: 'AppForm__input-block') do |m|
-      m << label(name, label_text,class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
+      m << decorated_label(name, label_text, options)
       m << text_field(name, hide_label: true, class: options[:required] ? 'required' : nil)
     end
   end
+
+  private
+  def decorated_label(name, label_text, options)
+    label(name, label_text, class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
+  end
+
 end
