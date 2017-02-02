@@ -35,6 +35,20 @@ ja:
           logged_out: ログアウト
           rejected: ログイン拒否
 
+    errors:
+      models:
+        staff_member:
+          attributes:
+            email:
+              taken: が他の職員と重複しています
+              start_date:
+                after_or_equal_to: には2000年1月1日以降の日付を指定してください。
+                before: には1年後の日付より前の日付を指定してください。
+              end_date:
+                after_or_equal_to: には2000年1月1日以降の日付を指定してください。
+                before: には1年後の日付より前の日付を指定してください。
+                after: には開始日より後の日付を指定してください。
+
   activemodel:
     models:
       staff/login_form: 職員ログインフォーム

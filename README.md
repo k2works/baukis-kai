@@ -526,6 +526,9 @@ git push heroku master
 + さらなる改善
 
 #### 入力エラーメッセージの生成
++ Errorsオブジェクト
++ エラーメッセージの設定
+
 #### 演習問題
 
 ### jQueryとCoffeeScript
