@@ -8,6 +8,26 @@ ja:
     sessions:
       new:
         submit: 'ログイン'
+    top:
+      index:
+        title: '職員トップページ'
+      dashboard:
+        title: 'ダッシュボード'
+        staff_customers: '顧客管理'
+    customers:
+      index:
+        title: '顧客管理'
+        full_name: '氏名'
+        kana: 'フリガナ'
+        email: 'メールアドレス'
+        birthday: '生年月日'
+        gender: '性別'
+        action: 'アクション'
+        new: '新規登録'
+        show: '詳細'
+        edit: '編集'
+        delete: '削除'
+        confirm: '本当に削除しますか?'
     accounts:
       show:
         title: 'アカウント情報'

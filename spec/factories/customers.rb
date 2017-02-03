@@ -10,7 +10,7 @@
 #  family_name_kana :string(255)      not null              # 姓（カナ）
 #  given_name_kana  :string(255)      not null              # 名（カナ）
 #  gender           :string(255)                            # 性別
-#  birthday         :string(255)                            # 誕生日
+#  birthday         :date                                   # 誕生日
 #  hashed_password  :string(255)                            # パスワード
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null

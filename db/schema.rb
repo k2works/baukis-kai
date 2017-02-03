@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20170203051654) do
     t.string   "family_name_kana", null: false, comment: "姓（カナ）"
     t.string   "given_name_kana",  null: false, comment: "名（カナ）"
     t.string   "gender",                        comment: "性別"
-    t.string   "birthday",                      comment: "誕生日"
+    t.date     "birthday",                      comment: "誕生日"
     t.string   "hashed_password",               comment: "パスワード"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
