@@ -30,6 +30,14 @@ ja:
         confirm: '本当に削除しますか?'
       show:
         title: '顧客詳細情報'
+      new:
+        title: '顧客の新規登録'
+        create: '登録'
+        cancel: 'キャンセル'
+      edit:
+        title: '顧客アカウントの編集'
+        update: '登録'
+        cancel: 'キャンセル'
     accounts:
       show:
         title: 'アカウント情報'
