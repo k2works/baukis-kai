@@ -8,7 +8,7 @@ class Staff::CustomerFormPresenter < UserFormPresenter
       else
         options[:class] = 'birthday-picker'
       end
-      m << text_field(name, options)
+      m << text_field(name, options.merge(hide_label: true))
     end
   end
 
