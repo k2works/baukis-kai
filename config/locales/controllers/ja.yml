@@ -22,6 +22,13 @@ ja:
       update:
         flash_success: 'パスワードを変更しました。'
         flash_alert: '入力に誤りがあります。'
+    customers:
+      create:
+        flash_notice: '顧客を追加しました。'
+        flash_alert: '入力に誤りがあります。'
+      update:
+        flash_notice: '顧客を更新しました。'
+        flash_alert: '入力に誤りがあります。'
   admin:
     base:
       authrize:

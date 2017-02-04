@@ -14,4 +14,28 @@ class Staff::CustomersController < Staff::Base
   def edit
     @customer_form = Staff::CustomerForm.new(Customer.find(params[:id]))
   end
+
+  def create
+    @customer_form = Staff::CustomerForm.new
+    @customer_form.assign_attributes(params[:form])
+    if @customer_form.save
+      flash.notice = t('.flash_notice')
+      redirect_to action: 'index'
+    else
+      flash.now.alert = t('.flash_alert')
+      render action: 'new'
+    end
+  end
+
+  def update
+    @customer_form = Staff::CustomerForm.new(Customer.find(params[:id]))
+    @customer_form.assign_attributes(params[:form])
+    if @customer_form.save
+      flash.notice = t('.flash_notice')
+      redirect_to action: 'index'
+    else
+      flash.now.alert = t('.flash_alert')
+      render action: 'edit'
+    end
+  end
 end
