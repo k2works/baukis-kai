@@ -564,6 +564,7 @@ git push heroku master
 #### 顧客アカウントの新規登録・更新・削除
 + フォームオブジェクトの拡張
 + create/updateアクションの実装
++ destroyアクションの実装
 
 ### Capybara
 ### フォームオブジェクト

@@ -29,6 +29,8 @@ ja:
       update:
         flash_notice: '顧客を更新しました。'
         flash_alert: '入力に誤りがあります。'
+      destroy:
+        flash_notice: '顧客をアカウントを削除しました。'
   admin:
     base:
       authrize:

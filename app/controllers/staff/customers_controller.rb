@@ -38,4 +38,11 @@ class Staff::CustomersController < Staff::Base
       render action: 'edit'
     end
   end
+
+  def destroy
+    customer = Customer.find(params[:id])
+    customer.destroy!
+    flash.notice = t('.flash_notice')
+    redirect_to :staff_customers
+  end
 end
