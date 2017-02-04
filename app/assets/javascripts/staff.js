@@ -14,9 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require_tree ./lib
 //= require_tree ./shared
-//= require moment
-//= require bootstrap-datetimepicker
+//= require jquery-ui/datepicker
+//= require jquery-ui/datepicker-ja
 //= require moment
 //= require moment/ja
 //= require bootstrap-datetimepicker

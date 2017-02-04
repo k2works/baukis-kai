@@ -23,8 +23,8 @@
     <% @staff_members.each do |m| %>
         <% p = Admin::StaffMemberPresenter.new(m, self) %>
         <tr  class="Table__tr">
-          <td><%= p.full_name %></td>
-          <td><%= p.full_name_kana %></td>
+          <td class="Table__td"><%= p.full_name %></td>
+          <td class="Table__td"><%= p.full_name_kana %></td>
           <td class="Table__td Table__td--email"><%= m.email %></td>
           <td class="Table__td Table__td--date Table__td--center"><%= m.start_date %></td>
           <td class="Table__td Table__td--date Table__td--center"><%= m.end_date %></td>

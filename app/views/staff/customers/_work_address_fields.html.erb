@@ -1,0 +1,12 @@
+<%= f.fields_for :work_address, f.object.customer.work_address do |ff| %>
+    <%= markup do |m|
+      p = Staff::AddressFormPresenter.new(ff,self)
+      m << p.text_field_block(:company_name, t('activerecord.attributes.work_address.company_name'), size: 40, required: true)
+      m << p.text_field_block(:division_name, t('activerecord.attributes.work_address.division_name'), size: 40)
+      m << p.postal_code_block(:postal_code, t('activerecord.attributes.work_address.postal_code'), size: 7)
+      m << p.drop_down_list_block(:prefecture, t('activerecord.attributes.work_address.prefecture'),Address::PREFECTURE_NAMES)
+      m << p.text_field_block(:city, t('activerecord.attributes.work_address.city'), size: 16)
+      m << p.text_field_block(:address1, t('activerecord.attributes.work_address.address1'), size: 40)
+      m << p.text_field_block(:address2, t('activerecord.attributes.work_address.address2'), size: 40)
+    end %>
+<% end %>

@@ -1,0 +1,45 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table">
+  <div class="Table__links">
+    <%= link_to t('.new'), :new_staff_customer, class: 'btn btn-default' %>
+  </div>
+
+  <%= paginate @customers %>
+
+  <table class="Table__body Table__body--listing StaffTable__body">
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.full_name') %></th>
+      <th class="Table__th"><%= t('.kana') %></th>
+      <th class="Table__th"><%= t('.email') %></th>
+      <th class="Table__th"><%= t('.birthday') %></th>
+      <th class="Table__th"><%= t('.gender') %></th>
+      <th class="Table__th"><%= t('.action') %></th>
+    </tr>
+    <% @customers.each do |c| %>
+        <% p = Staff::CustomerPresenter.new(c, self) %>
+        <tr  class="Table__tr">
+          <td class="Table__td"><%= p.full_name %></td>
+          <td class="Table__td"><%= p.full_name_kana %></td>
+          <td class="Table__td Table__td--email"><%= p.email %></td>
+          <td class="Table__td Table__td--date Table__td--center"><%= p.birthday %></td>
+          <td class="Table__td"><%= p.gender %></td>
+          <td class="Table__td Table__td--actions">
+            <%= link_to t('.show'), [:staff, c ], class: 'btn btn-default btn-xs' %> |
+            <%= link_to t('.edit'), [:edit, :staff, c ], class: 'btn btn-default btn-xs' %> |
+            <%= link_to t('.delete'), [:staff, c ], method: :delete,
+                        data: { confirm: t('.confirm')}, class: 'btn btn-default btn-xs' %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+
+  <%= paginate @customers %>
+
+  <div class="Table__links">
+    <%= link_to t('.new'), :new_staff_customer, class: 'btn btn-default' %>
+  </div>
+</section>

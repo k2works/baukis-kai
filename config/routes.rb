@@ -13,6 +13,14 @@
 #                  staff_password GET    /staff/password(.:format)                            staff/passwords#show {:host=>"0.0.0.0"}
 #                                 PATCH  /staff/password(.:format)                            staff/passwords#update {:host=>"0.0.0.0"}
 #                                 PUT    /staff/password(.:format)                            staff/passwords#update {:host=>"0.0.0.0"}
+#                 staff_customers GET    /staff/customers(.:format)                           staff/customers#index {:host=>"0.0.0.0"}
+#                                 POST   /staff/customers(.:format)                           staff/customers#create {:host=>"0.0.0.0"}
+#              new_staff_customer GET    /staff/customers/new(.:format)                       staff/customers#new {:host=>"0.0.0.0"}
+#             edit_staff_customer GET    /staff/customers/:id/edit(.:format)                  staff/customers#edit {:host=>"0.0.0.0"}
+#                  staff_customer GET    /staff/customers/:id(.:format)                       staff/customers#show {:host=>"0.0.0.0"}
+#                                 PATCH  /staff/customers/:id(.:format)                       staff/customers#update {:host=>"0.0.0.0"}
+#                                 PUT    /staff/customers/:id(.:format)                       staff/customers#update {:host=>"0.0.0.0"}
+#                                 DELETE /staff/customers/:id(.:format)                       staff/customers#destroy {:host=>"0.0.0.0"}
 #                      admin_root GET    /admin(.:format)                                     admin/top#index {:host=>"0.0.0.0"}
 #                     admin_login GET    /admin/login(.:format)                               admin/sessions#new {:host=>"0.0.0.0"}
 #                   admin_session DELETE /admin/session(.:format)                             admin/sessions#destroy {:host=>"0.0.0.0"}
@@ -49,6 +57,7 @@ Rails.application.routes.draw do
       concerns :session_path
       resource :account, only: [:show, :edit, :update]
       resource :password, only: [:show, :edit, :update]
+      resources :customers
     end
   end
 

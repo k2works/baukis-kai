@@ -9,10 +9,10 @@ describe Staff::TopController, 'Before login' do
   end
 
   describe '#index' do
-    # 通常はstaff/top/indexを表示
-    it 'should display staff/top/index' do
+    # 通常はstaff/top/dashboardを表示
+    it 'should display staff/top/dashboard' do
       get :index
-      expect(response).to render_template('staff/top/index')
+      expect(response).to render_template('staff/top/dashboard')
     end
 
     # 停止フラグがセットされたら強制的にログアウト

@@ -8,6 +8,60 @@ ja:
     sessions:
       new:
         submit: 'ログイン'
+    top:
+      index:
+        title: '職員トップページ'
+      dashboard:
+        title: 'ダッシュボード'
+        staff_customers: '顧客管理'
+    customers:
+      index:
+        title: '顧客管理'
+        full_name: '氏名'
+        kana: 'フリガナ'
+        email: 'メールアドレス'
+        birthday: '生年月日'
+        gender: '性別'
+        action: 'アクション'
+        new: '新規登録'
+        show: '詳細'
+        edit: '編集'
+        delete: '削除'
+        confirm: '本当に削除しますか?'
+      show:
+        title: '顧客詳細情報'
+        basic_info: '基本情報'
+        home_address: '自宅住所'
+        work_address: '勤務先'
+        full_name: '氏名'
+        full_name_kana: 'フリガナ'
+        birthday: '生年月日'
+        gender: '性別'
+        create_at: '登録日時'
+        update_at: '更新日時'
+        home_address_postal_code: '郵便番号'
+        home_address_prefecture: '都道府県'
+        home_address_city: '市区町村'
+        home_address_address1: '町域、番地等'
+        home_address_address2: '建物名、部屋番号'
+        work_address_company_name: '会社名'
+        work_address_division_name: '部署名'
+        work_address_postal_code: '郵便番号'
+        work_address_prefecture: '都道府県'
+        work_address_city: '市区町村'
+        work_address_address1: '町域、番地等'
+        work_address_address2: '建物名、部屋番号'
+      new:
+        title: '顧客の新規登録'
+        basic_info: '基本情報'
+        home_address: '自宅住所'
+        work_address: '勤務先'
+        create: '登録'
+        cancel: 'キャンセル'
+      edit:
+        title: '顧客アカウントの編集'
+        update: '登録'
+        cancel: 'キャンセル'
     accounts:
       show:
         title: 'アカウント情報'
