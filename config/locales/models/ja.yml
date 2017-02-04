@@ -4,6 +4,8 @@ ja:
       administrator: 管理者
       staff_member: 職員
       staff_event: 職員イベント
+      customer: 顧客
+      address: 住所
 
     attributes:
       administrator:
@@ -34,6 +36,46 @@ ja:
           logged_in: ログイン
           logged_out: ログアウト
           rejected: ログイン拒否
+
+      customer:
+        email: メールアドレス
+        email_for_index: 顧客用メールアドレス
+        family_name: 姓
+        given_name: 名
+        family_name_kana: 姓（カナ）
+        given_name_kana: 名（カナ）
+        gender: 性別
+        birthday: 誕生日
+        hashed_password: パスワード
+        home_address: 自宅住所
+        work_address: 勤務先
+        full_name: 氏名
+        full_name_kana: フリガナ
+
+      address:
+        postal_code: 郵便番号
+        prefecture: 都道府県
+        city: 市区町村
+        address1: 町域・番地等
+        address2: 建物名・部屋番号
+        company_name: 会社名
+        division_name: 部署名
+
+      home_address:
+        postal_code: 郵便番号
+        prefecture: 都道府県
+        city: 市区町村
+        address1: 町域・番地等
+        address2: 建物名・部屋番号
+
+      work_address:
+        postal_code: 郵便番号
+        prefecture: 都道府県
+        city: 市区町村
+        address1: 町域・番地等
+        address2: 建物名・部屋番号
+        company_name: 会社名
+        division_name: 部署名
 
     errors:
       models:

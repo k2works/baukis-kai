@@ -2,11 +2,11 @@
 <%= markup do |m|
   p = Staff::AddressFormPresenter.new(ff,self)
   p.with_options(required: true) do |q|
-    m << q.postal_code_block(:postal_code, '郵便番号', size: 7)
-    m << q.drop_down_list_block(:prefecture, '都道府県',Address::PREFECTURE_NAMES)
-    m << q.text_field_block(:city, '市区町村', size: 16)
-    m << q.text_field_block(:address1, '町域、番地等', size: 40)
+    m << q.postal_code_block(:postal_code, t('activerecord.attributes.home_address.postal_code'), size: 7)
+    m << q.drop_down_list_block(:prefecture, t('activerecord.attributes.home_address.prefecture'),Address::PREFECTURE_NAMES)
+    m << q.text_field_block(:city, t('activerecord.attributes.home_address.city'), size: 16)
+    m << q.text_field_block(:address1, t('activerecord.attributes.home_address.address1'), size: 40)
   end
-  m << p.text_field_block(:address2, '建物名、部屋番号名', size: 40)
+  m << p.text_field_block(:address2, t('activerecord.attributes.home_address.address2'), size: 40)
 end %>
 <% end %>
