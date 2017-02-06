@@ -19,7 +19,7 @@ feature 'Customer management by staff' do
 
     fill_in I18n.t('activerecord.attributes.customer.email'), with: 'test@example.jp'
     within('fieldset#home-address-fields') do
-      fill_in I18n.t('activerecord.attributes.home_address.postal_code'), with: '99999999'
+      fill_in I18n.t('activerecord.attributes.home_address.postal_code'), with: '9999999'
     end
     within('fieldset#work-address-fields') do
       fill_in I18n.t('activerecord.attributes.work_address.company_name'), with: 'テスト'
@@ -28,7 +28,7 @@ feature 'Customer management by staff' do
 
     customer.reload
     expect(customer.email).to eq('test@example.jp')
-    expect(customer.home_address.postal_code).to eq('99999999')
+    expect(customer.home_address.postal_code).to eq('9999999')
     expect(customer.work_address.company_name).to eq('テスト')
   end
 
