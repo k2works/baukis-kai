@@ -4,7 +4,7 @@
 </section>
 
 <section class="Section l-column AppForm">
-  <div class="AppForm__generic-form StaffAppForm__generic-form">
+  <div class="AppForm__generic-form StaffAppForm__generic-form AppForm__customer-form">
     <%= bootstrap_form_for @customer_form, as: 'form', url: [:staff, @customer_form.customer] do |f| %>
         <%= render 'form', f: f %>
         <div class="AppForm__buttons">

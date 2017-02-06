@@ -55,7 +55,9 @@ ja:
         title: '顧客の新規登録'
         basic_info: '基本情報'
         home_address: '自宅住所'
+        home_address_inputs: '自宅住所を入力する'
         work_address: '勤務先'
+        work_address_inputs: '勤務先を入力する'
         create: '登録'
         cancel: 'キャンセル'
       edit:

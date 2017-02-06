@@ -6,8 +6,8 @@ class UserFormPresenter < FormPresenter
       markup(:div, class: 'AppForm__input-block') do |m|
         m << decorated_label(name, label_text, options.merge(required: false))
         m << password_field(name, options.merge(disabled: true).merge(hide_label: true))
-        m.button('変更する',type: 'button', id: 'enable-password-field', class: 'btn btn-warning btn-xs')
-        m.button('変更しない', type: 'button', id: 'disable-password-field',style: 'display: none', class: 'btn btn-primary btn-xs')
+        m.button('変更する',type: 'button', id: 'is-enable-password-field', class: 'btn btn-warning btn-xs')
+        m.button('変更しない', type: 'button', id: 'is-disable-password-field',style: 'display: none', class: 'btn btn-primary btn-xs')
       end
     end
   end
