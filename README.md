@@ -567,6 +567,10 @@ git push heroku master
 + destroyアクションの実装
 
 ### Capybara
+#### Capybara
+#### 顧客アカウント新規登録・更新機能の改良
+#### ActiveSupport::Concernによるコード共有
+
 ### フォームオブジェクト
 ### 検索フォーム
 **[⬆ back to top](#構成)**
