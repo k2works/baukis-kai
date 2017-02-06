@@ -580,6 +580,7 @@ git push heroku master
 + autosaveオプションによる処理の簡素化
 
 #### ActiveSupport::Concernによるコード共有
++ PersonalNameHolderモジュールの抽出
 
 ### フォームオブジェクト
 ### 検索フォーム
