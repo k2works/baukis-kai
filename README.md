@@ -582,6 +582,7 @@ git push heroku master
 #### ActiveSupport::Concernによるコード共有
 + PersonalNameHolderモジュールの抽出
 + EmailHolderモジュールの抽出
++ PasswordHolderモジュールの抽出
 
 ### フォームオブジェクト
 ### 検索フォーム
