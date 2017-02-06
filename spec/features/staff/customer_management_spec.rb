@@ -14,7 +14,6 @@ feature 'Customer management by staff' do
   # 職員が顧客、自宅住所、勤務先を更新する
   scenario 'Staff update customer, home address, work place' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
-
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
 
     fill_in I18n.t('activerecord.attributes.customer.email'), with: 'test@example.jp'
@@ -70,5 +69,20 @@ feature 'Customer management by staff' do
     expect(new_customer.gender).to eq('female')
     expect(new_customer.home_address.postal_code).to eq('1000001')
     expect(new_customer.work_address.company_name).to eq('テスト')
+  end
+
+  # 職員が生年月日と自宅の郵便番号に無効な値を入力する
+  scenario 'Employees enter invalid values for birth date and home postal code' do
+    click_link I18n.t('staff.top.dashboard.staff_customers')
+    first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
+
+    fill_in I18n.t('activerecord.attributes.customer.birthday'), with: '2100-01-01'
+    within('fieldset#home-address-fields') do
+      fill_in I18n.t('activerecord.attributes.home_address.postal_code'), with: 'XYZ'
+    end
+    click_button I18n.t('staff.customers.edit.update')
+
+    expect(page).to have_css('header span.Flash__alert')
+    expect(page).to have_css('.has-error span.help-block')
   end
 end
