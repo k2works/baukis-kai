@@ -567,6 +567,23 @@ git push heroku master
 + destroyアクションの実装
 
 ### Capybara
+#### Capybara
++ Capybaraとは
++ 準備作業
++ 顧客アカウント更新機能のテスト
++ 顧客アカウント新規登録機能のテスト
+
+#### 顧客アカウント新規登録・更新機能の改良
++ モデルオブジェクトにおける値の正規化とバリデーション
++ フォームオブジェクトにおけるバリエーションの実施
++ バリデーションのテスト
++ autosaveオプションによる処理の簡素化
+
+#### ActiveSupport::Concernによるコード共有
++ PersonalNameHolderモジュールの抽出
++ EmailHolderモジュールの抽出
++ PasswordHolderモジュールの抽出
+
 ### フォームオブジェクト
 ### 検索フォーム
 **[⬆ back to top](#構成)**
