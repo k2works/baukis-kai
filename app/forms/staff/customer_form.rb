@@ -19,11 +19,17 @@ class Staff::CustomerForm
     customer.work_address.assign_attributes(work_address_params)
   end
 
+  def valid?
+    [ customer, customer.home_address, customer.work_address ].map(&:valid?).all?
+  end
+
   def save
     ActiveRecord::Base.transaction do
-      customer.save!
-      customer.home_address.save!
-      customer.work_address.save!
+      if valid?
+        customer.save!
+        customer.home_address.save!
+        customer.work_address.save!
+      end
     end
   end
 
