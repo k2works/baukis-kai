@@ -54,14 +54,14 @@ ActiveRecord::Schema.define(version: 20170206085929) do
     t.index ["family_name_kana", "given_name_kana"], name: "index_customers_on_family_name_kana_and_given_name_kana", using: :btree
   end
 
-  create_table "phones", force: :cascade,  comment: "電話" do |t|
-    t.integer  "customer_id",      null: false
-    t.integer  "address_id"
-    t.string   "number",           null: false, comment: "電話番号"
-    t.string   "number_for_index", null: false, comment: "索引用電話番号"
-    t.boolean  "primary",          null: false, comment: "優先フラグ"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+  create_table "phones", force: :cascade, comment: "電話" do |t|
+    t.integer  "customer_id",                      null: false, comment: "顧客への外部キー"
+    t.integer  "address_id",                                    comment: "住所への外部キー"
+    t.string   "number",                           null: false, comment: "電話番号"
+    t.string   "number_for_index",                 null: false, comment: "索引用電話番号"
+    t.boolean  "primary",          default: false, null: false, comment: "優先フラグ"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.index ["address_id"], name: "index_phones_on_address_id", using: :btree
     t.index ["customer_id"], name: "index_phones_on_customer_id", using: :btree
     t.index ["number_for_index"], name: "index_phones_on_number_for_index", using: :btree
