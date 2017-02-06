@@ -591,6 +591,9 @@ git push heroku master
 + Capybaraによるテスト
 
 #### 顧客電話番号の管理（１） 
++ 電話番号管理機能の仕様
++ phonesテーブルとPhoneモデル
+
 #### 顧客電話番号の管理（２）
 #### 演習問題 
 

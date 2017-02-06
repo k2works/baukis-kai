@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170203051654) do
+ActiveRecord::Schema.define(version: 20170206085929) do
 
   create_table "addresses", force: :cascade,  comment: "住所" do |t|
     t.integer  "customer_id",                null: false, comment: "顧客への外部キー"
@@ -54,6 +54,19 @@ ActiveRecord::Schema.define(version: 20170203051654) do
     t.index ["family_name_kana", "given_name_kana"], name: "index_customers_on_family_name_kana_and_given_name_kana", using: :btree
   end
 
+  create_table "phones", force: :cascade,  comment: "電話" do |t|
+    t.integer  "customer_id",      null: false
+    t.integer  "address_id"
+    t.string   "number",           null: false, comment: "電話番号"
+    t.string   "number_for_index", null: false, comment: "索引用電話番号"
+    t.boolean  "primary",          null: false, comment: "優先フラグ"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["address_id"], name: "index_phones_on_address_id", using: :btree
+    t.index ["customer_id"], name: "index_phones_on_customer_id", using: :btree
+    t.index ["number_for_index"], name: "index_phones_on_number_for_index", using: :btree
+  end
+
   create_table "staff_events", force: :cascade,  comment: "職員イベント" do |t|
     t.integer  "staff_member_id", null: false, comment: "職員レコードへの外部キー"
     t.string   "type",            null: false, comment: "イベントタイプ"
@@ -81,5 +94,7 @@ ActiveRecord::Schema.define(version: 20170203051654) do
   end
 
   add_foreign_key "addresses", "customers"
+  add_foreign_key "phones", "addresses"
+  add_foreign_key "phones", "customers"
   add_foreign_key "staff_events", "staff_members"
 end
