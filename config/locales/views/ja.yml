@@ -60,7 +60,7 @@ ja:
         cancel: 'キャンセル'
       edit:
         title: '顧客アカウントの編集'
-        update: '登録'
+        update: '更新'
         cancel: 'キャンセル'
     accounts:
       show:

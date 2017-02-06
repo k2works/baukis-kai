@@ -570,6 +570,7 @@ git push heroku master
 #### Capybara
 + Capybaraとは
 + 準備作業
++ 顧客アカウント更新機能のテスト
 
 #### 顧客アカウント新規登録・更新機能の改良
 #### ActiveSupport::Concernによるコード共有
