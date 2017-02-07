@@ -1,6 +1,10 @@
 class Staff::CustomersController < Staff::Base
   def index
-    @search_form = Staff::CustomerSearchForm.new(search_params)
+    if params[:search].nil?
+      @search_form = Staff::CustomerSearchForm.new
+    else
+      @search_form = Staff::CustomerSearchForm.new(search_params)
+    end
     @customers = @search_form.search.page(params[:page])
   end
 

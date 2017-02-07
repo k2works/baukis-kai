@@ -23,6 +23,27 @@ class Staff::CustomerSearchForm
     rel = rel.where(birth_month: birth_month) if birth_month.present?
     rel = rel.where(birth_mday: birth_mday) if birth_mday.present?
 
+    if prefecture.present? || city.present?
+      case address_type
+        when 'home'
+          rel = rel.joins(:home_address)
+        when 'work'
+          rel = rel.joins(:work_address)
+        when ''
+          rel = rel.joins(:addresses)
+        else
+          raise
+      end
+      if prefecture.present?
+        rel = rel.where('addresses.prefecture' => prefecture)
+      end
+      rel = rel.where('addresses.city' => city) if city.present?
+    end
+
+    if phone_number.present?
+      rel = rel.joins(:phones).where('phones.number_for_index' => phone_number)
+    end
+
     rel.order(:family_name_kana, :given_name_kana)
   end
 end
