@@ -620,6 +620,7 @@ git push heroku master
 
 #### 演習問題
 + 検索条件に性別を追加 
++ 検索条件に郵便番号を追加
 
 **[⬆ back to top](#構成)**
 

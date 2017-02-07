@@ -63,7 +63,8 @@ class Staff::CustomersController < Staff::Base
         :prefecture,
         :city,
         :phone_number,
-        :gender
+        :gender,
+        :postal_code
     )
   end
 

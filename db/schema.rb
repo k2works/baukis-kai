@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170207063552) do
+ActiveRecord::Schema.define(version: 20170207064811) do
 
-  create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "住所" do |t|
+  create_table "addresses", force: :cascade, comment: "住所" do |t|
     t.integer  "customer_id",                null: false, comment: "顧客への外部キー"
     t.string   "type",                       null: false, comment: "継承カラム"
     t.string   "postal_code",                null: false, comment: "郵便番号"
@@ -26,13 +26,14 @@ ActiveRecord::Schema.define(version: 20170207063552) do
     t.datetime "updated_at",                 null: false
     t.index ["city"], name: "index_addresses_on_city", using: :btree
     t.index ["customer_id"], name: "index_addresses_on_customer_id", using: :btree
+    t.index ["postal_code"], name: "index_addresses_on_postal_code", using: :btree
     t.index ["prefecture", "city"], name: "index_addresses_on_prefecture_and_city", using: :btree
     t.index ["type", "city"], name: "index_addresses_on_type_and_city", using: :btree
     t.index ["type", "customer_id"], name: "index_addresses_on_type_and_customer_id", unique: true, using: :btree
     t.index ["type", "prefecture", "city"], name: "index_addresses_on_type_and_prefecture_and_city", using: :btree
   end
 
-  create_table "administrators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "管理者" do |t|
+  create_table "administrators", force: :cascade, comment: "管理者" do |t|
     t.string   "email",                           null: false, comment: "メールアドレス"
     t.string   "email_for_index",                 null: false, comment: "索引用メールアドレス"
     t.string   "hashed_password",                              comment: "パスワード"
@@ -42,7 +43,7 @@ ActiveRecord::Schema.define(version: 20170207063552) do
     t.index ["email_for_index"], name: "index_administrators_on_email_for_index", unique: true, using: :btree
   end
 
-  create_table "customers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "顧客" do |t|
+  create_table "customers", force: :cascade, comment: "顧客" do |t|
     t.string   "email",            null: false, comment: "メールアドレス"
     t.string   "email_for_index",  null: false, comment: "顧客用メールアドレス"
     t.string   "family_name",      null: false, comment: "姓"
@@ -71,7 +72,7 @@ ActiveRecord::Schema.define(version: 20170207063552) do
     t.index ["given_name_kana"], name: "index_customers_on_given_name_kana", using: :btree
   end
 
-  create_table "phones", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "電話" do |t|
+  create_table "phones", force: :cascade, comment: "電話" do |t|
     t.integer  "customer_id",                      null: false, comment: "顧客への外部キー"
     t.integer  "address_id",                                    comment: "住所への外部キー"
     t.string   "number",                           null: false, comment: "電話番号"
@@ -84,7 +85,7 @@ ActiveRecord::Schema.define(version: 20170207063552) do
     t.index ["number_for_index"], name: "index_phones_on_number_for_index", using: :btree
   end
 
-  create_table "staff_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "職員イベント" do |t|
+  create_table "staff_events", force: :cascade, comment: "職員イベント" do |t|
     t.integer  "staff_member_id", null: false, comment: "職員レコードへの外部キー"
     t.string   "type",            null: false, comment: "イベントタイプ"
     t.datetime "created_at",      null: false, comment: "発生時刻"
@@ -93,7 +94,7 @@ ActiveRecord::Schema.define(version: 20170207063552) do
     t.index ["staff_member_id"], name: "index_staff_events_on_staff_member_id", using: :btree
   end
 
-  create_table "staff_members", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "職員" do |t|
+  create_table "staff_members", force: :cascade, comment: "職員" do |t|
     t.string   "email",                            null: false, comment: "メールアドレス"
     t.string   "email_for_index",                  null: false, comment: "索引用メールアドレス"
     t.string   "family_name",                      null: false, comment: "姓"

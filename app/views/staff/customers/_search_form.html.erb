@@ -15,6 +15,7 @@
       m << p.drop_down_list_block(:prefecture, t('activerecord.attributes.address.prefecture')+':', Address::PREFECTURE_NAMES)
       m << p.text_field_block(:city, t('activerecord.attributes.address.city'))
       m.br
+      m << p.text_field_block(:postal_code, t('activerecord.attributes.address.postal_code')+':', size: 7)
       m << p.text_field_block(:phone_number, t('activerecord.attributes.phone.number')+':')
       m << f.submit(t('staff.shared.search.submit'))
       end %>
