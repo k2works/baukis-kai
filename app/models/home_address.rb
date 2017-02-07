@@ -17,8 +17,12 @@
 #
 # Indexes
 #
-#  index_addresses_on_customer_id           (customer_id)
-#  index_addresses_on_type_and_customer_id  (type,customer_id) UNIQUE
+#  index_addresses_on_city                          (city)
+#  index_addresses_on_customer_id                   (customer_id)
+#  index_addresses_on_prefecture_and_city           (prefecture,city)
+#  index_addresses_on_type_and_city                 (type,city)
+#  index_addresses_on_type_and_customer_id          (type,customer_id) UNIQUE
+#  index_addresses_on_type_and_prefecture_and_city  (type,prefecture,city)
 #
 
 class HomeAddress < Address
