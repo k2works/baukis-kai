@@ -8,5 +8,12 @@
       m << p.text_field_block(:city, t('activerecord.attributes.work_address.city'), size: 16)
       m << p.text_field_block(:address1, t('activerecord.attributes.work_address.address1'), size: 40)
       m << p.text_field_block(:address2, t('activerecord.attributes.work_address.address2'), size: 40)
+      m.div(class: 'FormApp__input-block') do
+        m.ol do
+          p.object.phones.each_with_index do |phone, index|
+            m << render('phone_fields', f: ff, phone: phone, index: index)
+          end
+        end
+      end
     end %>
 <% end %>
