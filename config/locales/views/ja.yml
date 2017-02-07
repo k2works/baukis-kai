@@ -5,6 +5,12 @@ ja:
         login: 'ログイン'
         logout: 'ログアウト'
         account: 'アカウント'
+      search:
+        address_type:
+          range: '住所の検索範囲'
+          home: '自宅住所のみ'
+          work: '勤務先のみ'
+        submit: '検索'
     sessions:
       new:
         submit: 'ログイン'

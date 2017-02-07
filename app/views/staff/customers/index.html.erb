@@ -8,6 +8,8 @@
     <%= link_to t('.new'), :new_staff_customer, class: 'btn btn-default' %>
   </div>
 
+  <%= render 'search_form' %>
+
   <%= paginate @customers %>
 
   <table class="Table__body Table__body--listing StaffTable__body">

@@ -46,4 +46,14 @@
   &__input-block {
     input { margin-right: $narrow * 2; }
   }
+  &__search {
+    padding: $wide;
+    border: solid $dark_gray 1px;
+    background-color: $very_light_gray;
+    div {
+      display: inline-block;
+      margin-right: $moderate $very_wide $moderate 0;
+      label { margin-right: $moderate }
+    }
+  }
 }

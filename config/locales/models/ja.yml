@@ -52,6 +52,9 @@ ja:
         work_address: 勤務先
         full_name: 氏名
         full_name_kana: フリガナ
+        birth_year: 誕生年
+        birth_month: 誕生月
+        birth_mday: 誕生日
 
       address:
         postal_code: 郵便番号

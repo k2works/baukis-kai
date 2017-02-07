@@ -1,0 +1,20 @@
+<%= bootstrap_form_for @search_form, as: 'search', url: :staff_customers, html: { method: :get, class: 'AppForm__search' } ,layout: :inline do |f| %>
+    <%= markup do |m|
+      p = FormPresenter.new(f, self)
+      m << p.text_field_block(:family_name_kana, t('activerecord.attributes.customer.family_name_kana'))
+      m << p.text_field_block(:given_name_kana, t('activerecord.attributes.customer.given_name_kana'))
+      m.br
+      m << p.drop_down_list_block(:birth_year, t('activerecord.attributes.customer.birthday') ,(1900..Time.current.year).to_a.reverse)
+      m << p.drop_down_list_block(:birth_month, t('activerecord.attributes.customer.birth_month'),1..12)
+      m << p.drop_down_list_block(:birth_mday, t('activerecord.attributes.customer.birth_mday'),1..31)
+      m.br
+      m.div do
+        m << p.drop_down_list_block(:address_type, t('staff.shared.search.address_type.range')+':',[ [t('staff.shared.search.address_type.home'),'home'],[t('staff.shared.search.address_type.work'),'work']])
+      end
+      m << p.drop_down_list_block(:prefecture, t('activerecord.attributes.address.prefecture')+':', Address::PREFECTURE_NAMES)
+      m << p.text_field_block(:city, t('activerecord.attributes.address.city'))
+      m.br
+      m << p.text_field_block(:phone_number, t('activerecord.attributes.phone.number')+':')
+      m << f.submit(t('staff.shared.search.submit'))
+      end %>
+<% end %>
