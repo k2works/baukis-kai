@@ -10,11 +10,13 @@
 #  primary          :boolean          default("0"), not null # 優先フラグ
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
+#  last_four_digits :string(255)                             # 電話番号下４桁
 #
 # Indexes
 #
 #  index_phones_on_address_id        (address_id)
 #  index_phones_on_customer_id       (customer_id)
+#  index_phones_on_last_four_digits  (last_four_digits)
 #  index_phones_on_number_for_index  (number_for_index)
 #
 

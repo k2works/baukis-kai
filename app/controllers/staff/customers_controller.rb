@@ -64,7 +64,8 @@ class Staff::CustomersController < Staff::Base
         :city,
         :phone_number,
         :gender,
-        :postal_code
+        :postal_code,
+        :last_four_digits
     )
   end
 

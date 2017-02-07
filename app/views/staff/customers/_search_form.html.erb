@@ -17,6 +17,7 @@
       m.br
       m << p.text_field_block(:postal_code, t('activerecord.attributes.address.postal_code')+':', size: 7)
       m << p.text_field_block(:phone_number, t('activerecord.attributes.phone.number')+':')
+      m << p.text_field_block(:last_four_digits, t('activerecord.attributes.phone.last_four_digits')+':', size: 4)
       m << f.submit(t('staff.shared.search.submit'))
       end %>
 <% end %>

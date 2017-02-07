@@ -85,6 +85,7 @@ ja:
         number: 電話番号
         number_for_index: 索引用電話番号
         primary: 優先
+        last_four_digits: 電話番号下４桁
 
     errors:
       models:

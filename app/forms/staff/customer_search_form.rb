@@ -12,7 +12,8 @@ class Staff::CustomerSearchForm
                 :city,
                 :phone_number,
                 :gender,
-                :postal_code
+                :postal_code,
+                :last_four_digits
 
   def search
     normalize_values
@@ -49,8 +50,14 @@ class Staff::CustomerSearchForm
       end
     end
 
-    if phone_number.present?
-      rel = rel.joins(:phones).where('phones.number_for_index' => phone_number)
+    if phone_number.present? || last_four_digits.present?
+      rel = rel.joins(:phones)
+      if phone_number.present?
+        rel = rel.where('phones.number_for_index' => phone_number)
+      end
+      if last_four_digits.present?
+        rel = rel.where('phones.last_four_digits' => last_four_digits)
+      end
     end
 
     rel.order(:family_name_kana, :given_name_kana)
