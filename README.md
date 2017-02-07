@@ -613,6 +613,8 @@ git push heroku master
 + 検索フォームの表示
 
 #### 検索機能の実装
++ indexアクションの修正
+
 #### 演習問題
 
 **[⬆ back to top](#構成)**
