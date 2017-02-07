@@ -1,6 +1,6 @@
 class Staff::CustomersController < Staff::Base
   def index
-    @search_form = Staff::CustomerSearchForm.new(params[:search])
+    @search_form = Staff::CustomerSearchForm.new(search_params)
     @customers = @search_form.search.page(params[:page])
   end
 
@@ -46,4 +46,20 @@ class Staff::CustomersController < Staff::Base
     flash.notice = t('.flash_notice')
     redirect_to :staff_customers
   end
+
+  private
+  def search_params
+    params.require(:search).permit(
+        :family_name_kana,
+        :given_name_kana,
+        :birth_year,
+        :birth_month,
+        :birth_mday,
+        :address_type,
+        :prefecture,
+        :city,
+        :phone_number
+    )
+  end
+
 end
