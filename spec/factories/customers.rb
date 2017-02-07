@@ -14,9 +14,9 @@
 #  hashed_password  :string(255)                            # パスワード
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
-#  birth_year       :integer                                # 誕生日（年）
-#  birth_month      :integer                                # 誕生日（月）
-#  birth_mday       :integer                                # 誕生日（日）
+#  birth_year       :integer                                # 誕生年
+#  birth_month      :integer                                # 誕生月
+#  birth_mday       :integer                                # 誕生日
 #
 # Indexes
 #

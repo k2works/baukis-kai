@@ -14,9 +14,9 @@
 #  hashed_password  :string(255)                            # パスワード
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
-#  birth_year       :integer                                # 誕生日年
-#  birth_month      :integer                                # 誕生日月
-#  birth_mday       :integer                                # 誕生日日
+#  birth_year       :integer                                # 誕生年
+#  birth_month      :integer                                # 誕生月
+#  birth_mday       :integer                                # 誕生日
 #
 # Indexes
 #
@@ -49,4 +49,12 @@ class Customer < ApplicationRecord
       before: ->(obj) { Date.today },
       allow_blank: true
   }
+
+  before_save do
+    if birthday
+      self.birth_year = birthday.year
+      self.birth_month = birthday.month
+      self.birth_mday = birthday.mday
+    end
+  end
 end
