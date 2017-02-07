@@ -67,7 +67,6 @@ class FormPresenter
     end
   end
 
-  private
   def decorated_label(name, label_text, options = {})
     label(name, label_text, class: options[:required] ? 'AppForm__label required' : 'AppForm__label')
   end

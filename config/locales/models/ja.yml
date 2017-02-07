@@ -46,6 +46,7 @@ ja:
         given_name_kana: 名（カナ）
         gender: 性別
         birthday: 誕生日
+        personal_phone: 電話番号
         hashed_password: パスワード
         home_address: 自宅住所
         work_address: 勤務先
@@ -76,6 +77,11 @@ ja:
         address2: 建物名・部屋番号
         company_name: 会社名
         division_name: 部署名
+
+      phone:
+        number: 電話番号
+        number_for_index: 索引用電話番号
+        primary: 優先
 
     errors:
       models:

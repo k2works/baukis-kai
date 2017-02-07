@@ -1,0 +1,6 @@
+<%= f.fields_for :phones, phone, index: index do |ff| %>
+    <%= markup(:li) do |m|
+      m << ff.text_field(:number, skip_required: true)
+      m << ff.check_box(:primary, label: t('activerecord.attributes.phone.primary'))
+      end %>
+<% end %>

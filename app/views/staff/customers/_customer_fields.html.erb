@@ -9,5 +9,12 @@
   end
   m << p.birthday_field_block(:birthday, t('activerecord.attributes.customer.birthday'))
   m << p.gender_field_block
+  m.div(class: 'AppForm__input-block') do
+    m.ol do
+      p.object.personal_phones.each_with_index do |phone, index|
+        m << render('phone_fields', f: ff, phone: phone, index: index)
+      end
+    end
+  end
   end %>
 <% end %>
