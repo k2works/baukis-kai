@@ -619,6 +619,7 @@ git push heroku master
 + 検索文字列の正規化
 
 #### 演習問題
++ 検索条件に性別を追加 
 
 **[⬆ back to top](#構成)**
 

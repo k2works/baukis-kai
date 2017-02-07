@@ -7,6 +7,7 @@
       m << p.drop_down_list_block(:birth_year, t('activerecord.attributes.customer.birthday') ,(1900..Time.current.year).to_a.reverse)
       m << p.drop_down_list_block(:birth_month, t('activerecord.attributes.customer.birth_month'),1..12)
       m << p.drop_down_list_block(:birth_mday, t('activerecord.attributes.customer.birth_mday'),1..31)
+      m << p.drop_down_list_block(:gender, t('activerecord.attributes.customer.gender'),[[t('staff.shared.search.gender.male'),'male'],[t('staff.shared.search.gender.female'),'female']])
       m.br
       m.div do
         m << p.drop_down_list_block(:address_type, t('staff.shared.search.address_type.range')+':',[ [t('staff.shared.search.address_type.home'),'home'],[t('staff.shared.search.address_type.work'),'work']])

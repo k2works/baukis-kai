@@ -30,6 +30,7 @@
 #  index_customers_on_birth_year_and_given_name_kana             (birth_year,given_name_kana)
 #  index_customers_on_email_for_index                            (email_for_index) UNIQUE
 #  index_customers_on_family_name_kana_and_given_name_kana       (family_name_kana,given_name_kana)
+#  index_customers_on_gender_and_furigana                        (gender,family_name_kana,given_name_kana)
 #  index_customers_on_given_name_kana                            (given_name_kana)
 #
 

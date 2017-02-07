@@ -10,6 +10,9 @@ ja:
           range: '住所の検索範囲'
           home: '自宅住所のみ'
           work: '勤務先のみ'
+        gender:
+          male: '男性'
+          female: '女性'
         submit: '検索'
     sessions:
       new:
