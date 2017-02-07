@@ -108,4 +108,20 @@ feature 'Customer management by staff' do
     expect(page).to have_css('header span.Flash__alert')
     expect(page).to have_css('.has-error span.help-block')
   end
+
+  # 職員が勤務先データのない既存顧客に会社名の情報を追加する
+  scenario 'Staff add company name information to existing customers that do not have work data' do
+    customer.work_address.destroy
+    click_link I18n.t('staff.top.dashboard.staff_customers')
+    first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
+
+    check I18n.t('staff.customers.new.work_address_inputs')
+    within('fieldset#work-address-fields') do
+      fill_in I18n.t('activerecord.attributes.work_address.company_name'), with: 'テスト'
+    end
+    click_button I18n.t('staff.customers.edit.update')
+
+    customer.reload
+    expect(customer.work_address.company_name).to eq('テスト')
+  end
 end
