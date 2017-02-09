@@ -42,3 +42,7 @@ ja:
         flash_success: '職員アカウントを更新しました。'
       destroy:
         flash_success: '職員アカウントを削除しました。'
+  customer:
+    base:
+      authrize:
+        flash_alert: 'ログインしてください。'

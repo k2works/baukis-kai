@@ -1,0 +1,18 @@
+class Customer::Base < ApplicationController
+  before_action :authorize
+
+  private
+  def current_customer
+    if session[:customer_id]
+      @current_customer ||= Customer.find_by(id: session[:cutomer_id])
+    end
+  end
+
+  helper_method :current_customer
+
+  def authorize
+    unless current_customer
+      flash.alert = t('customer.base.authrize.flash_alert')
+    end
+  end
+end
