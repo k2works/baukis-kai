@@ -17,9 +17,9 @@
     </ul>
   </nav>
   <%= if current_customer
-        link_to t('customer.shared.header.logout'), :admin_session, method: :delete, class: 'btn btn-default'
+        link_to t('customer.shared.header.logout'), :customer_session, method: :delete, class: 'btn btn-default'
       else
-        link_to t('customer.shared.header.login'), :admin_login, class: 'btn btn-default'
+        link_to t('customer.shared.header.login'), :customer_login, class: 'btn btn-default'
       end
   %>
 </header>

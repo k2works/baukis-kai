@@ -30,13 +30,13 @@ html, body {
     padding: $moderate * 1.5 $moderate;
     font-size: $large;
     font-weight: normal;
-    background-color: $very_dark_magenta;
+    background-color: $very_dark_yellow;
     color: $light_gray;
   }
 
   &__header {
     padding: $moderate;
-    background-color: $dark_magenta;
+    background-color: $dark_yellow;
     color: $very_light_gray;
     span.logo-mark {
       font-weight: bold;

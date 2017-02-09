@@ -150,9 +150,12 @@ ja:
   customer:
     shared:
       header:
-        login: 'Login'
-        logout: 'Logout'
+        login: 'ログイン'
+        logout: 'ログアウト'
     sessions:
       new:
         title: 'ログイン'
         submit: 'ログイン'
+    top:
+      dashboard:
+        title: 'ダッシュボード'

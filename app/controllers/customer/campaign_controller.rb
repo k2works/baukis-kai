@@ -1,4 +1,4 @@
-class Customer::CampaignController < ApplicationController
+class Customer::CampaignController < Customer::Base
   def index
   end
 

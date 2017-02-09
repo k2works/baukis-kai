@@ -2,6 +2,12 @@
 <section class="Section l-column">
   <div class="Login Login--customer">
     <h1 class="Login__head"><%= @title %></h1>
+
+    <div class="Flash">
+      <%= content_tag(:span, flash.notice, class: 'Flash__notice') if flash.notice %>
+      <%= content_tag(:span, flash.alert, class: 'Flash__alert') if flash.alert %>
+    </div>
+
     <div class="Login__body">
       <%= bootstrap_form_for @form, url: :customer_session do |f| %>
           <div>

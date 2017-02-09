@@ -10,10 +10,10 @@ class Customer::SessionsController < Customer::Base
     end
   end
 
-  def crete
-    @form = Customer::LoginForm.new(params[:customer_login_form])
+  def create
+    @form = Customer::LoginForm.new(post_params)
     if @form.email.present?
-      customer = Customer.find_by(email_for_inde: @form.email.downcase)
+      customer = Customer.find_by(email_for_index: @form.email.downcase)
     end
     if Customer::Authenticator.new(customer).authenticate(@form.password)
       session[:customer_id] = customer.id
@@ -28,6 +28,14 @@ class Customer::SessionsController < Customer::Base
   def destroy
     session.delete(:customer_id)
     flash.notice = t('common.session.destroy.notice')
-    redirect_to :customer_root
+    redirect_to :customer_login
+  end
+
+  private
+  def post_params
+    params.require(:customer_login_form).permit(
+        :email,
+        :password
+    )
   end
 end
