@@ -156,6 +156,7 @@ ja:
       new:
         title: 'ログイン'
         submit: 'ログイン'
+        remember: '次回から自動でログインする'
     top:
       dashboard:
         title: 'ダッシュボード'

@@ -17,6 +17,9 @@
             <%= f.password_field :password %>
           </div>
           <div>
+            <%= f.check_box :remember_me, label: t('.remember') %>
+          </div>
+          <div>
             <%= f.submit t '.submit' %>
           </div>
       <% end %>
