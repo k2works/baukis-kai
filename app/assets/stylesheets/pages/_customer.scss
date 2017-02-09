@@ -1,0 +1,62 @@
+@charset 'utf-8';
+
+// =====================
+// 顧客ページ固有のスタイル
+// =====================
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.Header__head {
+  text-align: left;
+}
+
+.Customer {
+  &__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0 auto;
+    padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
+    background-color: $gray;
+  }
+
+  &__title {
+    margin: 0;
+    padding: $moderate * 1.5 $moderate;
+    font-size: $large;
+    font-weight: normal;
+    background-color: $very_dark_magenta;
+    color: $light_gray;
+  }
+
+  &__header {
+    padding: $moderate;
+    background-color: $dark_magenta;
+    color: $very_light_gray;
+    span.logo-mark {
+      font-weight: bold;
+    }
+  }
+
+  &__footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: $dark_gray;
+    color: $very_light_gray;
+    p {
+      text-align: center;
+      padding: $moderate;
+      margin: 0;
+    }
+  }
+}
+
+.logo--customer {
+  color: $color-white;
+}

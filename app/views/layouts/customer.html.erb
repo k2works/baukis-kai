@@ -13,9 +13,11 @@
 <body>
 <div id="wrapper" class="SpMenu__wrapper">
   <div id="overlay" class="SpMenu__overlay"></div>
-  <%= render 'customer/shared/header' %>
+  <% header = current_customer ? 'header_login' : 'header' %>
+  <% footer = current_customer ? 'footer_login' : 'footer' %>
+  <%= render "customer/shared/#{header}" %>
   <%= yield %>
-  <%= render 'customer/shared/footer' %>
+  <%= render "customer/shared/#{footer}" %>
 </div>
 <script>
     imageSlide('Slide', 2);

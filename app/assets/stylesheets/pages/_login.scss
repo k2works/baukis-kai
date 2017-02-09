@@ -19,6 +19,9 @@
   &--admin {
     border: solid 4px $dark_magenta;
   }
+  &--customer {
+    border: solid 4px $dark_yellow;
+  }
 
   background-color: $very_light_gray;
 

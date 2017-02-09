@@ -1,0 +1,25 @@
+<header class="Header Customer__header">
+  <div id="menu-button" class="Header__button">
+    <%= fa_icon 'bars' %>
+  </div>
+  <div class="Header__head">
+    <h1 class="logo"><%= link_to('BAUKIS KAI', customer_root_url, class:'logo logo--customer') %></h1>
+  </div>
+
+  <div class="Flash">
+    <%= content_tag(:span, flash.notice, class: 'Flash__notice') if flash.notice %>
+    <%= content_tag(:span, flash.alert, class: 'Flash__alert') if flash.alert %>
+  </div>
+
+  <nav class="Header__body SpMenu">
+    <ul class="Menu">
+      <li class="Menu__item"><a href="#"></a></li>
+    </ul>
+  </nav>
+  <%= if current_customer
+        link_to t('customer.shared.header.logout'), :admin_session, method: :delete, class: 'btn btn-default'
+      else
+        link_to t('customer.shared.header.login'), :admin_login, class: 'btn btn-default'
+      end
+  %>
+</header>
