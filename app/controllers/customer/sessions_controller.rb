@@ -16,7 +16,12 @@ class Customer::SessionsController < Customer::Base
       customer = Customer.find_by(email_for_index: @form.email.downcase)
     end
     if Customer::Authenticator.new(customer).authenticate(@form.password)
-      session[:customer_id] = customer.id
+      if @form.remember_me?
+        cookies.permanent.signed[:customer_id] = customer.id
+      else
+        cookies.delete(:customer_id)
+        session[:customer_id] = customer.id
+      end
       flash.notice = t('common.session.create.notice')
       redirect_to :customer_root
     else
@@ -26,6 +31,7 @@ class Customer::SessionsController < Customer::Base
   end
 
   def destroy
+    cookies.delete(:customer_id)
     session.delete(:customer_id)
     flash.notice = t('common.session.destroy.notice')
     redirect_to :customer_login
