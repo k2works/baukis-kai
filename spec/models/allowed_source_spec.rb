@@ -58,7 +58,7 @@ RSpec.describe AllowedSource, type: :model do
 
   describe '.include?' do
     before do
-      Rails.application.config.baukis_kai[:restrict_ip_address] = true
+      Rails.application.config.baukis_kai[:restrict_ip_addresses] = true
       AllowedSource.create!(namespace: 'staff', ip_address: '127.0.0.1')
       AllowedSource.create!(namespace: 'staff', ip_address: '192.168.0.*')
     end

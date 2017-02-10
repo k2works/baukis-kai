@@ -6,7 +6,7 @@ describe Staff::TopController, 'Before login' do
   # IPアドレスによるアクセス制限
   describe 'access restriction by IP address' do
     before do
-      Rails.application.config.baukis_kai[:restrict_ip_address] = true
+      Rails.application.config.baukis_kai[:restrict_ip_addresses] = true
     end
 
     # 許可
@@ -28,7 +28,7 @@ describe Staff::TopController, 'Before login' do
     end
 
     after do
-      Rails.application.config.baukis_kai[:restrict_ip_address] = false
+      Rails.application.config.baukis_kai[:restrict_ip_addresses] = false
     end
   end
 end
