@@ -150,9 +150,13 @@ ja:
     allowed_sources:
         index:
           title: '許可IPアドレス一覧'
+          delete: '削除'
           ip_address: 'IPアドレス'
           created_at: '作成日時'
           form_label: '新規許可IPアドレス'
+          submit: 'チェックしたIPアドレスを削除'
+          confirm: '本当に削除しますか。'
+        new_allowed_source:
           submit: '追加'
 
   customer:
