@@ -1,0 +1,20 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Admin__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table">
+  <table class="Table__body Table__body--listing AdminTable__body">
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.ip_address') %></th>
+      <th class="Table__th"><%= t('.created_at') %></th>
+    </tr>
+    <% @allowed_sources.each do |s| %>
+        <% p = Admin::AllowedSourcePresenter.new(s, self) %>
+        <tr  class="Table__tr">
+          <td class="Table__td Table__td--ip Table__td--center"><%= p.ip_address %></td>
+          <td class="Table__td Table__td--date Table__td--center"><%= p.created_at %></td>
+        </tr>
+    <% end %>
+  </table>
+</section>

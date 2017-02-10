@@ -115,6 +115,7 @@ ja:
         title: 'ダッシュボード'
         admin_staff_members: '職員管理'
         admin_staff_events: '職員のログイン・ログアウト記録'
+        allowed_sources: '許可IPアドレス管理'
     staff_members:
       index:
         title: '職員管理'
@@ -146,6 +147,11 @@ ja:
           type: '種別'
           date_time: '日時'
           contents_not_record: '記録がありません'
+    allowed_sources:
+        index:
+          title: '許可IPアドレス一覧'
+          ip_address: 'IPアドレス'
+          created_at: '作成日時'
 
   customer:
     shared:
