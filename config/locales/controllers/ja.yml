@@ -42,6 +42,11 @@ ja:
         flash_success: '職員アカウントを更新しました。'
       destroy:
         flash_success: '職員アカウントを削除しました。'
+    allowed_sources:
+      create:
+        flash_notice: '許可IPアドレスを追加しました。'
+        flash_alert: '許可IPアドレスの値が正しくありません。'
+
   customer:
     base:
       authrize:
