@@ -644,6 +644,7 @@ git push heroku master
 + 仕様
 + 準備作業
 + AllowedSourceモデル
++ クラスメソッドinclude?
 
 #### 許可IPアドレスの管理
 #### 演習問題

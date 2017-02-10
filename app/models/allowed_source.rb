@@ -37,4 +37,21 @@ class AllowedSource < ApplicationRecord
       self.octet4 = octets[3]
     end
   end
+
+  class << self
+    def include?(namespace, ip_address)
+      !Rails.application.config.baukis_kai[:restrict_ip_address] ||
+          where(namespace: namespace).where(options_for(ip_address)).exists?
+    end
+
+    private
+    def options_for(ip_address)
+      octets = ip_address.split('.')
+      condition = %Q{
+        octet1 = ? AND octet2 = ? AND octet3 = ?
+        AND ((octet4 = ? AND wildcard = ?) OR wildcard = ?)
+        }.gsub(/\s+/, ' ').strip
+      [condition, *octets, false, true]
+    end
+  end
 end
