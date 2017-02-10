@@ -55,7 +55,8 @@ Rails.application.configure do
   config.baukis_kai = {
       staff: { host: '0.0.0.0', path: 'staff' },
       admin: { host: '0.0.0.0', path: 'admin' },
-      customer: { host: '0.0.0.0', path: '' }
+      customer: { host: '0.0.0.0', path: '' },
+      restrict_ip_addresses: true
   }
 
   config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
