@@ -643,6 +643,7 @@ git push heroku master
 #### IPアドレスによるアクセス制限
 + 仕様
 + 準備作業
++ AllowedSourceモデル
 
 #### 許可IPアドレスの管理
 #### 演習問題
