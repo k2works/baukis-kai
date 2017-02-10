@@ -40,7 +40,7 @@ class AllowedSource < ApplicationRecord
 
   class << self
     def include?(namespace, ip_address)
-      !Rails.application.config.baukis_kai[:restrict_ip_address] ||
+      !Rails.application.config.baukis_kai[:restrict_ip_addresses] ||
           where(namespace: namespace).where(options_for(ip_address)).exists?
     end
 
