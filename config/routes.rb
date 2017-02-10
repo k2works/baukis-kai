@@ -35,6 +35,9 @@
 #                                 PUT    /admin/staff/:id(.:format)                           admin/staff_members#update {:host=>"0.0.0.0"}
 #                                 DELETE /admin/staff/:id(.:format)                           admin/staff_members#destroy {:host=>"0.0.0.0"}
 #              admin_staff_events GET    /admin/staff_events(.:format)                        admin/staff_events#index {:host=>"0.0.0.0"}
+#    delete_admin_allowed_sources DELETE /admin/allowed_sources/delete(.:format)              admin/allowed_sources#delete {:host=>"0.0.0.0"}
+#           admin_allowed_sources GET    /admin/allowed_sources(.:format)                     admin/allowed_sources#index {:host=>"0.0.0.0"}
+#                                 POST   /admin/allowed_sources(.:format)                     admin/allowed_sources#create {:host=>"0.0.0.0"}
 #                   customer_root GET    /                                                    customer/top#index {:host=>"0.0.0.0"}
 #          customer_article_index GET    /article/index(.:format)                             customer/article#index {:host=>"0.0.0.0"}
 #         customer_campaign_index GET    /campaign/index(.:format)                            customer/campaign#index {:host=>"0.0.0.0"}
@@ -72,6 +75,9 @@ Rails.application.routes.draw do
         resources :staff_events, only: [:index]
       end
       resources :staff_events, only: [:index]
+      resources :allowed_sources, only: [ :index, :create ] do
+        delete :delete, on: :collection
+      end
     end
   end
 
