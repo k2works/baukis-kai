@@ -16,7 +16,7 @@
           </tr>
           <% @allowed_sources.each_with_index do |s, index| %>
               <% p = Admin::AllowedSourcePresenter.new(s, self) %>
-              <%= f.fields_for :@allowed_sources, s, index: index do |ff| %>
+              <%= f.fields_for :allowed_sources, s, index: index do |ff| %>
                   <%= ff.hidden_field :id %>
                   <tr  class="Table__tr">
                     <td class="Table__td Table__td--action Table__td--center"><%= ff.check_box :_destroy ,label:''%></td>
@@ -34,4 +34,3 @@
     <% end %>
   </div>
 </section>
-

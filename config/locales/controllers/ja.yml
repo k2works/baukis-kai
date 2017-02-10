@@ -46,6 +46,8 @@ ja:
       create:
         flash_notice: '許可IPアドレスを追加しました。'
         flash_alert: '許可IPアドレスの値が正しくありません。'
+      delete:
+        flash_notice: '許可IPアドレスを削除しました。'
 
   customer:
     base:
