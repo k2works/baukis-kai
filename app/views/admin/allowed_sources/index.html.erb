@@ -3,6 +3,13 @@
   <h1 class="Admin__title"><%= @title %></h1>
 </section>
 
+<section class="Section l-column AppForm">
+  <div class="AppForm__generic-form AdminAppForm__generic-form AppForm__customer_form">
+    <%= render 'new_allowed_source' %>
+  </div>
+</section>
+
+
 <section class="Section l-column Table">
   <table class="Table__body Table__body--listing AdminTable__body">
     <tr class="Table__tr">

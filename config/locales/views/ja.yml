@@ -152,6 +152,8 @@ ja:
           title: '許可IPアドレス一覧'
           ip_address: 'IPアドレス'
           created_at: '作成日時'
+          form_label: '新規許可IPアドレス'
+          submit: '追加'
 
   customer:
     shared:
