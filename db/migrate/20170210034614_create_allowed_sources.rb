@@ -1,6 +1,6 @@
 class CreateAllowedSources < ActiveRecord::Migration[5.0]
   def change
-    create_table :allowed_sources,options: 'ROW_FORMAT=DYNAMIC',comment:'IPアドレス制限' do |t|
+    create_table :allowed_sources, comment:'IPアドレス制限' do |t|
       t.string :namespace, null: false, comment:'名前空間'
       t.integer :octet1, null: false, comment:'第１オクテット'
       t.integer :octet2, null: false, comment:'第２オクテット'

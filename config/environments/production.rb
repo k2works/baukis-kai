@@ -87,6 +87,7 @@ Rails.application.configure do
   config.baukis_kai = {
       staff: { host: ENV["PRD_URL"] , path: 'staff' },
       admin: { host: ENV["PRD_URL"], path: 'admin' },
-      customer: { host: ENV["PRD_URL"], path: '' }
+      customer: { host: ENV["PRD_URL"], path: '' },
+      restrict_ip_addresses: ENV["RESTRICT_IP"]
   }
 end
