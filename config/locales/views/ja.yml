@@ -121,10 +121,26 @@ ja:
         program_max_entry: '最大参観者数'
         program_entry_count: '申し込み件数'
         program_staff: '登録職員'
+      new:
+        title: 'プログラムの新規登録'
+        create: '登録'
+        cancel: 'キャンセル'
+      edit:
+        title: 'プログラムの編集'
+        update: '更新'
+        cancel: 'キャンセル'
       form:
         show: '詳細'
         edit: '編集'
         delete: '削除'
+        title: 'タイトル'
+        program_start: '申し込み開始日時'
+        program_start_instruction: '現在から1年後まで'
+        program_end: '申し込み終了日時'
+        program_end_instruction: '開始日時から90日後まで'
+        program_min_entry: '最小参加者数'
+        program_max_entry: '最大参観者数'
+
   admin:
     shared:
       header:

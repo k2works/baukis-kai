@@ -1,0 +1,16 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column AppForm">
+  <div class="AppForm__generic-form StaffAppForm__generic-form AppForm__customer-form">
+    <%= bootstrap_form_for @program_form, as: 'form', url: :staff_programs do |f| %>
+        <%= render 'form', f: f %>
+        <div class="AppForm__buttons">
+          <%= f.submit t('.create') ,class: 'btn btn-default btn-lg'%>
+          <%= link_to t('.cancel'), :staff_programs ,class: 'btn btn-default btn-lg'%>
+        </div>
+    <% end %>
+  </div>
+</section>
