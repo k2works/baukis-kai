@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170210034614) do
+ActiveRecord::Schema.define(version: 20170214071032) do
 
   create_table "addresses", force: :cascade, comment: "住所" do |t|
     t.integer  "customer_id",                null: false, comment: "顧客への外部キー"
@@ -84,6 +84,18 @@ ActiveRecord::Schema.define(version: 20170210034614) do
     t.index ["given_name_kana"], name: "index_customers_on_given_name_kana", using: :btree
   end
 
+  create_table "entries", force: :cascade, comment: "申し込み" do |t|
+    t.integer  "program_id",                  null: false
+    t.integer  "customer_id",                 null: false
+    t.boolean  "approved",    default: false, null: false, comment: "承認済みフラグ"
+    t.boolean  "canceled",    default: false, null: false, comment: "取り消しフラグ"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.index ["customer_id"], name: "index_entries_on_customer_id", using: :btree
+    t.index ["program_id", "customer_id"], name: "index_entries_on_program_id_and_customer_id", unique: true, using: :btree
+    t.index ["program_id"], name: "index_entries_on_program_id", using: :btree
+  end
+
   create_table "phones", force: :cascade, comment: "電話" do |t|
     t.integer  "customer_id",                      null: false, comment: "顧客への外部キー"
     t.integer  "address_id",                                    comment: "住所への外部キー"
@@ -97,6 +109,20 @@ ActiveRecord::Schema.define(version: 20170210034614) do
     t.index ["customer_id"], name: "index_phones_on_customer_id", using: :btree
     t.index ["last_four_digits"], name: "index_phones_on_last_four_digits", using: :btree
     t.index ["number_for_index"], name: "index_phones_on_number_for_index", using: :btree
+  end
+
+  create_table "programs", force: :cascade, comment: "プログラム" do |t|
+    t.integer  "registrant_id",                            null: false, comment: "登録職員（外部キー）"
+    t.string   "title",                                    null: false, comment: "タイトル"
+    t.text     "description",                limit: 65535,              comment: "説明"
+    t.datetime "application_start_time",                   null: false, comment: "申し込み開始日"
+    t.datetime "application_end_time",                     null: false, comment: "申し込み終了日"
+    t.integer  "min_number_of_participants",                            comment: "最小参観者数"
+    t.integer  "max_number_of_participants",                            comment: "最大参観者数"
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.index ["application_start_time"], name: "index_programs_on_application_start_time", using: :btree
+    t.index ["registrant_id"], name: "index_programs_on_registrant_id", using: :btree
   end
 
   create_table "staff_events", force: :cascade, comment: "職員イベント" do |t|
@@ -126,7 +152,10 @@ ActiveRecord::Schema.define(version: 20170210034614) do
   end
 
   add_foreign_key "addresses", "customers"
+  add_foreign_key "entries", "customers"
+  add_foreign_key "entries", "programs"
   add_foreign_key "phones", "addresses"
   add_foreign_key "phones", "customers"
+  add_foreign_key "programs", "staff_members", column: "registrant_id"
   add_foreign_key "staff_events", "staff_members"
 end

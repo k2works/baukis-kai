@@ -40,8 +40,12 @@ class Admin::StaffMembersController < Admin::Base
 
   def destroy
     staff_member = StaffMember.find(params[:id])
-    staff_member.destroy!
-    flash.notice = t('.flash_success')
+    if staff_member.deletable?
+      staff_member.destroy!
+      flash.notice = t('.flash_success')
+    else
+      flash.alert = t('.flash_alert')
+    end
     redirect_to :admin_staff_members
   end
 

@@ -42,6 +42,7 @@ ja:
         flash_success: '職員アカウントを更新しました。'
       destroy:
         flash_success: '職員アカウントを削除しました。'
+        flash_alert: 'この職員アカウントは削除できません。'
     allowed_sources:
       create:
         flash_notice: '許可IPアドレスを追加しました。'
