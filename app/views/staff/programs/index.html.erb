@@ -1,0 +1,32 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table">
+  <div class="Table__links">
+    <%= link_to t('.new'), :new_staff_program, class: 'btn btn-default' %>
+  </div>
+
+  <%= paginate @programs %>
+
+  <table class="Table__body Table__body--listing StaffTable__body">
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.program_tiile') %></th>
+      <th class="Table__th"><%= t('.program_start') %></th>
+      <th class="Table__th"><%= t('.program_end') %></th>
+      <th class="Table__th"><%= t('.program_min_entry') %></th>
+      <th class="Table__th"><%= t('.program_max_entry') %></th>
+      <th class="Table__th"><%= t('.program_entry_count') %></th>
+      <th class="Table__th"><%= t('.program_staff') %></th>
+      <th class="Table__th"><%= t('.action') %></th>
+    </tr>
+    <%= render partial: 'program', collection: @programs %>
+  </table>
+
+  <%= paginate @programs %>
+
+  <div class="Table__links">
+    <%= link_to t('.new'), :new_staff_program, class: 'btn btn-default' %>
+  </div>
+</section>

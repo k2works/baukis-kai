@@ -24,6 +24,7 @@ ja:
       dashboard:
         title: 'ダッシュボード'
         staff_customers: '顧客管理'
+        staff_programs: 'プログラム管理'
     customers:
       index:
         title: '顧客管理'
@@ -99,6 +100,22 @@ ja:
         title: 'パスワード変更'
         submit: '変更'
         cancel: 'キャンセル'
+    programs:
+      index:
+        title: 'プログラム管理'
+        new: '新規登録'
+        program_tiile: 'タイトル'
+        program_start: '申し込み開始日時'
+        program_end: '申し込み終了日時'
+        program_min_entry: '最小参加者数'
+        program_max_entry: '最大参観者数'
+        program_entry_count: '申し込み件数'
+        program_staff: '登録職員'
+        action: 'アクション'
+      form:
+        show: '詳細'
+        edit: '編集'
+        delete: '削除'
   admin:
     shared:
       header:

@@ -1,0 +1,15 @@
+<% p = Staff::ProgramPresenter.new(program, self) %>
+<tr class="Table__tr">
+  <td class="Table__td"><%= p.title %></td>
+  <td class="Table__td--date"><%= p.application_start_time %></td>
+  <td class="Table__td--date"><%= p.application_end_time %></td>
+  <td class="Table__td--numeric"><%= p.min_number_of_participants %></td>
+  <td class="Table__td--numeric"><%= p.max_number_of_participants %></td>
+  <td class="Table__td--numeric"><%= p.number_of_applicants %></td>
+  <td class="Table__td"><%= p.registrant %></td>
+  <td class="Table__td--action">
+    <%= link_to t('staff.programs.form.show'), [ :staff, program ], class: 'btn btn-default btn-xs' %>
+    <%= link_to t('staff.programs.form.edit'), [ :edit, :staff, program ], class: 'btn btn-default btn-xs' %>
+    <%= link_to t('staff.programs.form.delete'), [ :staff, program ], method: :delete, data: { confirm: '本当に削除しますか？'}, class: 'btn btn-default btn-xs' %>
+  </td>
+</tr>
