@@ -27,6 +27,12 @@
       th { padding-right: $moderate; width: 200px }
       td { background-color: $very_light_gray }
     }
+
+    &--description {
+      margin: $wide;
+      padding: $wide;
+      background-color: $very_light_gray;
+    }
   }
 
   &__th {

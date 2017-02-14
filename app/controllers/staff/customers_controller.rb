@@ -5,7 +5,7 @@ class Staff::CustomersController < Staff::Base
     else
       @search_form = Staff::CustomerSearchForm.new(search_params)
     end
-    @programs = @search_form.search.page(params[:page])
+    @customers = @search_form.search.page(params[:page])
   end
 
   def show

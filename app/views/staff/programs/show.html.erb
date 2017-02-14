@@ -1,0 +1,19 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table StaffTable">
+  <table class="Table__body Table__body--attributes StaffTable__body">
+    <% p = Staff::ProgramPresenter.new(@program, self) %>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_tiile') %></th><td><%= p.title %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_start') %></th><td class="Table__td--date"><%= p.application_start_time %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_end') %></th><td class="Table__td--date"><%= p.application_end_time %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_min_entry') %></th><td class="Table__td--numeric"><%= p.min_number_of_participants %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_max_entry') %></th><td class="Table__td--numeric"><%= p.max_number_of_participants %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_entry_count')%></th><td class="Table__td--numeric"><%= p.number_of_applicants %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.program_staff') %></th><td><%= p.registrant %></td></tr>
+  </table>
+
+  <div class="Table__body--description"><%= @program.description %></div>
+</section>

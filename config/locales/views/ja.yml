@@ -112,6 +112,15 @@ ja:
         program_entry_count: '申し込み件数'
         program_staff: '登録職員'
         action: 'アクション'
+      show:
+        title: 'プログラム詳細情報'
+        program_tiile: 'タイトル'
+        program_start: '申し込み開始日時'
+        program_end: '申し込み終了日時'
+        program_min_entry: '最小参加者数'
+        program_max_entry: '最大参観者数'
+        program_entry_count: '申し込み件数'
+        program_staff: '登録職員'
       form:
         show: '詳細'
         edit: '編集'
