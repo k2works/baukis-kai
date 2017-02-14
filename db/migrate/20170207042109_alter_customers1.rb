@@ -1,8 +1,8 @@
 class AlterCustomers1 < ActiveRecord::Migration[5.0]
   def change
-    add_column :customers, :birth_year, :integer, comment:'誕生年'
-    add_column :customers, :birth_month, :integer, comment:'誕生月'
-    add_column :customers, :birth_mday, :integer, comment:'誕生日'
+    add_column :programs, :birth_year, :integer, comment:'誕生年'
+    add_column :programs, :birth_month, :integer, comment:'誕生月'
+    add_column :programs, :birth_mday, :integer, comment:'誕生日'
 
     add_index :customers, [ :birth_year, :birth_month, :birth_mday ]
     add_index :customers, [ :birth_month, :birth_mday ]
