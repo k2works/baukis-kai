@@ -52,6 +52,8 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
+  config.filter_run_excluding :performance => true
+
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
@@ -61,5 +63,15 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     FactoryGirl.reload
+  end
+
+  config.before(performance: true) do
+    ActionController::Base.perform_caching = true
+    ActiveSupport::Dependencies.mechanism = :require
+    Rails.logger.level = ActiveSupport::Logger::INFO
+  end
+
+  config.after do
+    Rails.application.config.baukis_kai[:restrict_ip_addresses] = false
   end
 end
