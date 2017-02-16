@@ -11,6 +11,6 @@ class CreateEntries < ActiveRecord::Migration[5.0]
 
     add_index :entries, [ :program_id, :customer_id ], unique: true
     add_foreign_key :entries, :programs
-    add_foreign_key :entries, :programs
+    add_foreign_key :entries, :customers
   end
 end
