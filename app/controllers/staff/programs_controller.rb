@@ -39,4 +39,11 @@ class Staff::ProgramsController < Staff::Base
       render action: 'edit'
     end
   end
+
+  def destroy
+    program = Program.find(params[:id])
+    program.destroy!
+    flash.notice = t('.flash_notice')
+    redirect_to :staff_programs
+  end
 end

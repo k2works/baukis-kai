@@ -38,6 +38,8 @@ ja:
       update:
         flash_notice: 'プログラムを更新しました。'
         flash_alert: '入力に誤りがあります。'
+      destroy:
+        flash_notice: 'プログラムを削除しました。'
   admin:
     base:
       authrize:
