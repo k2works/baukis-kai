@@ -42,8 +42,11 @@ class Staff::ProgramsController < Staff::Base
 
   def destroy
     program = Program.find(params[:id])
-    program.destroy!
-    flash.notice = t('.flash_notice')
+    if program.deletable?
+      program.destroy!
+      flash.notice = t('.flash_notice')
+    end
+    flash.alert = t('.flash_alert')
     redirect_to :staff_programs
   end
 

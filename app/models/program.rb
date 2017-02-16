@@ -20,7 +20,7 @@
 #
 
 class Program < ApplicationRecord
-  has_many :entries, dependent: :destroy
+  has_many :entries, dependent: :restrict_with_exception
   has_many :applicants, through: :entries, source: :customer
   belongs_to :registrant, class_name: 'StaffMember'
 
@@ -69,6 +69,10 @@ class Program < ApplicationRecord
         .order(application_start_time: :desc)
         .includes(:registrant)
   }
+
+  def deletable?
+    entries.empty?
+  end
 
   private
   def set_application_start_time
