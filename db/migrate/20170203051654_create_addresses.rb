@@ -15,6 +15,6 @@ class CreateAddresses < ActiveRecord::Migration[5.0]
     end
 
     add_index :addresses, [:type, :customer_id], unique: true
-    add_foreign_key :addresses, :programs
+    add_foreign_key :addresses, :customers
   end
 end

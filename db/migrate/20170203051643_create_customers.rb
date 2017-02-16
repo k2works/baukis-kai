@@ -1,6 +1,6 @@
 class CreateCustomers < ActiveRecord::Migration[5.0]
   def change
-    create_table :programs, comment:'顧客' do |t|
+    create_table :customers, comment:'顧客' do |t|
       t.string :email, null: false, comment:'メールアドレス'
       t.string :email_for_index, null: false, comment:'顧客用メールアドレス'
       t.string :family_name, null: false, comment:'姓'

@@ -11,7 +11,7 @@ class CreatePhones < ActiveRecord::Migration[5.0]
     end
 
     add_index :phones, :number_for_index
-    add_foreign_key :phones, :programs
+    add_foreign_key :phones, :customers
     add_foreign_key :phones, :addresses
   end
 end
