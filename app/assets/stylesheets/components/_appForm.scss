@@ -56,4 +56,8 @@
       label { margin-right: $moderate }
     }
   }
+  &--with-errors {
+    label { color: $red }
+    input, select { background-color: $pink }
+  }
 }
