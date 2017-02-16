@@ -46,4 +46,13 @@ class Staff::ProgramsController < Staff::Base
     flash.notice = t('.flash_notice')
     redirect_to :staff_programs
   end
+
+  # PATCH
+  def entries
+    entries_form = Staff::EntriesForm.new(Program.find(params[:id]))
+    entries_form.assign_attributes(params[:form])
+    entries_form.save
+    flash.notice = t('.flash_notice')
+    redirect_to :staff_programs
+  end
 end

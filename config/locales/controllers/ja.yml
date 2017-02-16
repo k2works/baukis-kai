@@ -40,6 +40,8 @@ ja:
         flash_alert: '入力に誤りがあります。'
       destroy:
         flash_notice: 'プログラムを削除しました。'
+      entries:
+        flash_notice: 'プログラム申し込みのフラグを更新しました。'
   admin:
     base:
       authrize:
