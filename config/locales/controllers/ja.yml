@@ -31,6 +31,13 @@ ja:
         flash_alert: '入力に誤りがあります。'
       destroy:
         flash_notice: '顧客をアカウントを削除しました。'
+    programs:
+      create:
+        flash_notice: 'プログラムを登録しました。'
+        flash_alert: '入力に誤りがあります。'
+      update:
+        flash_notice: 'プログラムを更新しました。'
+        flash_alert: '入力に誤りがあります。'
   admin:
     base:
       authrize:

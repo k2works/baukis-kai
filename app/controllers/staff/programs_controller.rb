@@ -14,4 +14,29 @@ class Staff::ProgramsController < Staff::Base
   def edit
     @program_form = Staff::ProgramForm.new(Program.find(params[:id]))
   end
+
+  def create
+    @program_form = Staff::ProgramForm.new
+    @program_form.assign_attributes(params[:form])
+    @program_form.program.registrant = current_staff_member
+    if @program_form.save
+      flash.notice = t('.flash_notice')
+      redirect_to action: 'index'
+    else
+      flash.now.alert = t('.flash_alert')
+      render action: 'new'
+    end
+  end
+
+  def update
+    @program_form = Staff::ProgramForm.new(Program.find(params[:id]))
+    @program_form.assign_attributes(params[:form])
+    if @program_form.save
+      flash.notice = t('.flash_notice')
+      redirect_to action: 'index'
+    else
+      flash.now.alert = t('.flash_alert')
+      render action: 'edit'
+    end
+  end
 end
