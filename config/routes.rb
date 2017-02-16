@@ -21,6 +21,7 @@
 #                                 PATCH  /staff/customers/:id(.:format)                       staff/customers#update {:host=>"0.0.0.0"}
 #                                 PUT    /staff/customers/:id(.:format)                       staff/customers#update {:host=>"0.0.0.0"}
 #                                 DELETE /staff/customers/:id(.:format)                       staff/customers#destroy {:host=>"0.0.0.0"}
+#           entries_staff_program PATCH  /staff/programs/:id/entries(.:format)                staff/programs#entries {:host=>"0.0.0.0"}
 #                  staff_programs GET    /staff/programs(.:format)                            staff/programs#index {:host=>"0.0.0.0"}
 #                                 POST   /staff/programs(.:format)                            staff/programs#create {:host=>"0.0.0.0"}
 #               new_staff_program GET    /staff/programs/new(.:format)                        staff/programs#new {:host=>"0.0.0.0"}
@@ -72,7 +73,9 @@ Rails.application.routes.draw do
       resource :account, only: [:show, :edit, :update]
       resource :password, only: [:show, :edit, :update]
       resources :customers
-      resources :programs
+      resources :programs do
+        patch :entries, on: :member
+      end
     end
   end
 
