@@ -1,0 +1,31 @@
+// =====================
+// ApplicationEntryForm
+// ---------------------
+// アプリケーション用エントリーフォーム
+// =====================
+
+
+.AppEntryForm {
+  background-color: $dark_gray;
+
+  tr:nth-child(1) {
+    th {
+      background-color: $dark_gray;
+      color: $very_light_gray;
+      text-align: center;
+    }
+  }
+  tr {
+    th:nth-child(4n+1) {
+      padding: $moderate; width: 30px; text-align: right;
+    }
+    td { background-color: $very_light_gray }
+  }
+  &--button-wrapper {
+    margin: $wide;
+    text-align: center;
+    button { padding: $moderate }
+  }
+  &__body {
+  }
+}

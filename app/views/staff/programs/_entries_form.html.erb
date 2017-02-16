@@ -1,0 +1,38 @@
+<%
+  entries = @program.entries.includes(:customer).order('entries.id')
+  cols = 4
+  rows = entries.size / cols
+  rows += 1 unless entries.size % cols == 0
+%>
+<table class="Table__body StaffTable__body AppEntryForm">
+  <tr>
+    <% cols.times do %>
+        <th></th>
+        <th><%= t('staff.programs.entries_form.name') %></th>
+        <th><%= t('staff.programs.entries_form.a') %></th>
+        <th><%= t('staff.programs.entries_form.c') %></th>
+    <% end %>
+  </tr>
+  <% rows.times do |i| %>
+  <tr>
+    <% cols.times do |j| %>
+        <% index = i * cols + j %>
+        <% e = entries[index] || break %>
+        <%= markup(:div, class: 'AppEntryForm__body') do |m|
+          m.th index + 1
+          m.td e.customer.family_name + ' ' + e.customer.given_name
+          m.td do
+            attributes = { type: 'checkbox' }
+            attributes[:checked] = 'checked' if e.approved?
+            m.input attributes
+          end
+          m.td do
+            attributes = { type: 'checkbox' }
+            attributes[:checked] = 'checked' if e.canceled?
+            m.input attributes
+          end
+        end %>
+      <% end %>
+  </tr>
+  <% end %>
+</table>
