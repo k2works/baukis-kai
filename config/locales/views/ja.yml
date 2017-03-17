@@ -246,7 +246,7 @@ ja:
         confirm: '本当に申し込みますか？'
     accounts:
       show:
-        title: '顧客詳細情報'
+        title: 'アカウント情報'
         basic_info: '基本情報'
         home_address: '自宅住所'
         work_address: '勤務先'
@@ -274,3 +274,8 @@ ja:
         work_address_address2: '建物名、部屋番号'
         work_address_phones_1: '勤務先電話番号（１）'
         work_address_phones_2: '勤務先電話番号（２）'
+        edit: '編集'
+      edit:
+        title: 'アカウントの編集'
+        update: '更新'
+        cancel: 'キャンセル'

@@ -1,9 +1,12 @@
 <% @title = t('.title') %>
 <section class="Section">
-  <h1 class="Staff__title"><%= @title %></h1>
+  <h1 class="Customer__title"><%= @title %></h1>
 </section>
 
 <section class="Section l-column Table StaffTable">
+  <div class="Table__links">
+    <%= link_to t('.edit'), :edit_customer_account , class: 'btn btn-default' %>
+  </div>
   <table class="Table__body Table__body--attributes StaffTable__body">
     <tr class="Table__tr"><th class="Table__th" colspan="2"><%= t('.basic_info') %></th></tr>
     <% p1 = Staff::CustomerPresenter.new(@customer, self) %>

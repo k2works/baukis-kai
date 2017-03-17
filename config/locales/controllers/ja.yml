@@ -73,3 +73,7 @@ ja:
         flash_alert_close: 'プログラムの申し込み期限が終了しました。'
       cancel:
         flash_notice: 'プログラムへの申込みをキャンセルしました。'
+    accounts:
+      update:
+        flash_notice: 'アカウント情報を更新しました。'
+        flash_alert: '入力に誤りがあります。'
