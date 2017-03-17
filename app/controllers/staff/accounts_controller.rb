@@ -7,12 +7,26 @@ class Staff::AccountsController < Staff::Base
     @staff_member = current_staff_member
   end
 
+  def confirm
+    @staff_member = current_staff_member
+    @staff_member.assign_attributes(staff_member_params)
+    if @staff_member.valid?
+      render action: 'confirm'
+    else
+      render action: 'edit'
+    end
+  end
+
   def update
     @staff_member = current_staff_member
     @staff_member.assign_attributes(staff_member_params)
-    if @staff_member.save
-      flash.notice = t('.flash_success')
-      redirect_to :staff_account
+    if params[:commit]
+      if @staff_member.save
+        flash.notice = t('.flash_success')
+        redirect_to :staff_account
+      else
+        render action: 'edit'
+      end
     else
       render action: 'edit'
     end

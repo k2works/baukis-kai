@@ -79,7 +79,9 @@ Rails.application.routes.draw do
     namespace :staff, path: config[:staff][:path] do
       root   'top#index'
       concerns :session_path
-      resource :account, only: [:show, :edit, :update]
+      resource :account, only: [:show, :edit, :update] do
+        patch :confirm
+      end
       resource :password, only: [:show, :edit, :update]
       resources :customers
       resources :programs do

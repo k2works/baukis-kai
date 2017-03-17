@@ -93,8 +93,14 @@ ja:
         start_date: '開始日'
       edit:
         title: 'アカウント情報編集'
+        confirm: '確認画面へ進む'
         update: '更新'
         cancel: 'キャンセル'
+      confirm:
+        title: 'アカウントの更新（確認）'
+        confirm_message: '以下の内容でアカウントを更新します。よろしいですか？'
+        update: '更新'
+        correct: '訂正'
     passwords:
       edit:
         title: 'パスワード変更'

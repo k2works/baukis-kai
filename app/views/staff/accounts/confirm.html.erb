@@ -1,0 +1,17 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column AppForm">
+  <div class="AppForm__generic-form CustomerAppForm__generic-form AppForm__customer-form AppForm--isConfirmed">
+    <%= bootstrap_form_for @staff_member, url: :staff_account do |f| %>
+        <p><%= t('.confirm_message')%></p>
+        <%= render 'confirming_form', f: f %>
+        <div class="AppForm__buttons">
+          <%= f.submit t('.update'),class: 'btn btn-default btn-lg' %>
+          <%= f.submit t('.correct'), name: 'correct', class: 'btn btn-default btn-lg' %>
+        </div>
+    <% end %>
+  </div>
+</section>
