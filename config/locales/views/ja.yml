@@ -220,3 +220,20 @@ ja:
       dashboard:
         title: 'ダッシュボード'
         customer_programs: 'プログラム一覧'
+    programs:
+      index:
+        title: 'プログラム管理'
+        new: '新規登録'
+        program_tiile: 'タイトル'
+        program_start: '申し込み開始日時'
+        program_end: '申し込み終了日時'
+        program_min_entry: '最小参加者数'
+        program_max_entry: '最大参観者数'
+        action: 'アクション'
+      show:
+        title: 'プログラム詳細情報'
+        program_tiile: 'タイトル'
+        program_start: '申し込み開始日時'
+        program_end: '申し込み終了日時'
+        program_min_entry: '最小参加者数'
+        program_max_entry: '最大参観者数'

@@ -1,0 +1,22 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Customer__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table">
+  <%= paginate @programs %>
+
+  <table class="Table__body Table__body--listing CustomerTable__body">
+    <tr class="Table__tr">
+      <th class="Table__th"><%= t('.program_tiile') %></th>
+      <th class="Table__th"><%= t('.program_start') %></th>
+      <th class="Table__th"><%= t('.program_end') %></th>
+      <th class="Table__th"><%= t('.program_min_entry') %></th>
+      <th class="Table__th"><%= t('.program_max_entry') %></th>
+      <th class="Table__th"><%= t('.action') %></th>
+    </tr>
+    <%= render partial: 'program', collection: @programs %>
+  </table>
+
+  <%= paginate @programs %>
+</section>
