@@ -62,6 +62,10 @@
 
 Rails.application.routes.draw do
   namespace :customer do
+    get 'entries/create'
+  end
+
+  namespace :customer do
     get 'programs/index'
   end
 

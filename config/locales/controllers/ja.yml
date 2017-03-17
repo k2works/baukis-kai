@@ -66,3 +66,7 @@ ja:
     base:
       authrize:
         flash_alert: 'ログインしてください。'
+    entries:
+      create:
+        flash_notice: 'プログラムに申し込みました。'
+        flash_alert: 'プログラムへの申込者数が上限に達しました。'
