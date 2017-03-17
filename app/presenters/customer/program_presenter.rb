@@ -2,6 +2,7 @@ class Customer::ProgramPresenter < ModelPresenter
   delegate :title,
            :description, to: :object
   delegate :number_with_delimiter,
+           :current_customer,
            :button_to, to: :view_context
 
   def initialize(object, view_context)
@@ -26,8 +27,13 @@ class Customer::ProgramPresenter < ModelPresenter
   end
 
   def apply_or_cancel_button
-    closed = object.application_end_time < Time.current
-    label_text = closed ? I18n.t('customer.programs.show.closed') : I18n.t('customer.programs.show.apply')
-    button_to label_text, [ :customer, object, :entries ], disabled: closed, method: :post, class: 'btn btn-default', data: { confirm: I18n.t('customer.programs.show.confirm')}
+    if entry = object.entries.where(customer_id: current_customer.id).first
+      label_text = entry.canceled? ? I18n.t('customer.programs.show.canceled') : I18n.t('customer.programs.show.cancel')
+      button_to label_text, [ :cancel, :customer, object, entry ], disabled: entry.canceled?, method: :patch, class: 'btn btn-default', data: { confirm: I18n.t('customer.programs.show.confirm_cancel') }
+    else
+      closed = object.application_end_time < Time.current
+      label_text = closed ? I18n.t('customer.programs.show.closed') : I18n.t('customer.programs.show.apply')
+      button_to label_text, [ :customer, object, :entries ], disabled: closed, method: :post, class: 'btn btn-default', data: { confirm: I18n.t('customer.programs.show.confirm')}
+    end
   end
 end

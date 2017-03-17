@@ -11,4 +11,13 @@ class Customer::EntriesController < Customer::Base
       end
     redirect_to [ :customer, program ]
   end
+
+  # PATCH
+  def cancel
+    program = Program.published.find(params[:program_id])
+    entry = program.entries.where(customer_id: current_customer.id).first!
+    entry.update_column(:canceled, true)
+    flash.notice = t('.flash_notice')
+    redirect_to [:customer, program ]
+  end
 end
