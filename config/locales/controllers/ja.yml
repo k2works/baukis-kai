@@ -70,3 +70,4 @@ ja:
       create:
         flash_notice: 'プログラムに申し込みました。'
         flash_alert: 'プログラムへの申込者数が上限に達しました。'
+        flash_alert_close: 'プログラムの申し込み期限が終了しました。'
