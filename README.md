@@ -721,6 +721,7 @@ git push heroku master
 + 確認画面の本実装
 + CoffeeScriptの修正
 + 訂正ボタン
++ Capybaraによるテスト
 
 #### 演習問題
 

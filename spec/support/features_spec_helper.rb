@@ -12,4 +12,13 @@ module FeaturesSpecHelper
       click_button I18n.t('staff.sessions.new.submit')
     end
   end
+
+  def login_as_customer(customer, password = 'pw')
+    visit customer_login_path
+    within('.Login--customer') do
+      fill_in I18n.t('activemodel.attributes.customer/login_form.email'), with: customer.email
+      fill_in I18n.t('activemodel.attributes.customer/login_form.password'), with: password
+      click_button I18n.t('customer.sessions.new.submit')
+    end
+  end
 end
