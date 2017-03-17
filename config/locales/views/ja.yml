@@ -277,5 +277,6 @@ ja:
         edit: '編集'
       edit:
         title: 'アカウントの編集'
+        confirm: '確認画面へ進む'
         update: '更新'
         cancel: 'キャンセル'
