@@ -1,0 +1,41 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table StaffTable">
+  <table class="Table__body Table__body--attributes StaffTable__body">
+    <tr class="Table__tr"><th class="Table__th" colspan="2"><%= t('.basic_info') %></th></tr>
+    <% p1 = Staff::CustomerPresenter.new(@customer, self) %>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.full_name') %></th><td><%= p1.full_name %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.full_name_kana') %></th><td><%= p1.full_name_kana %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.birthday') %></th><td class="Table__td--date"><%= p1.birthday %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.gender') %></th><td><%= p1.gender %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.personal_phones_1') %></th><td><%= p1.personal_phones[0] %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.personal_phones_2') %></th><td><%= p1.personal_phones[1] %></td></tr>
+    <% if @customer.home_address %>
+        <% p2 = Staff::AddressPresenter.new(@customer.home_address, self) %>
+        <tr class="Table__tr"><th class="Table__th" colspan="2"><%= t('.home_address') %></th></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_postal_code') %></th><td><%= p2.postal_code %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_prefecture') %></th><td><%= p2.prefecture %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_city') %></th><td><%= p2.city %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_address1') %></th><td><%= p2.address1 %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_address2') %></th><td><%= p2.address2 %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_phones_1') %></th><td><%= p2.phones[0] %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.home_address_phones_2') %></th><td><%= p2.phones[1] %></td></tr>
+    <% end %>
+    <% if @customer.work_address %>
+        <% p3 = Staff::AddressPresenter.new(@customer.work_address, self) %>
+        <tr class="Table__tr"><th class="Table__th" colspan="2"><%= t('.work_address') %></th></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_company_name') %></th><td><%= p3.company_name %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_division_name') %></th><td><%= p3.division_name %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_postal_code') %></th><td><%= p3.postal_code %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_prefecture')%></th><td><%= p3.prefecture %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_city') %></th><td><%= p3.city %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_address1') %></th><td><%= p3.address1 %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_address2') %></th><td><%= p3.address2 %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_phones_1') %></th><td><%= p3.phones[0] %></td></tr>
+        <tr class="Table__tr"><th class="Table__th"><%= t('.work_address_phones_2') %></th><td><%= p3.phones[1] %></td></tr>
+    <% end %>
+  </table>
+</section>
