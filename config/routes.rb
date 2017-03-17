@@ -1,6 +1,9 @@
 # == Route Map
 #
 #                          Prefix Verb   URI Pattern                                          Controller#Action
+#         customer_entries_create GET    /customer/entries/create(.:format)                   customer/entries#create
+#         customer_programs_index GET    /customer/programs/index(.:format)                   customer/programs#index
+#          customer_programs_show GET    /customer/programs/show(.:format)                    customer/programs#show
 #                      staff_root GET    /staff(.:format)                                     staff/top#index {:host=>"0.0.0.0"}
 #                     staff_login GET    /staff/login(.:format)                               staff/sessions#new {:host=>"0.0.0.0"}
 #                   staff_session DELETE /staff/session(.:format)                             staff/sessions#destroy {:host=>"0.0.0.0"}
@@ -54,6 +57,12 @@
 #                  customer_login GET    /login(.:format)                                     customer/sessions#new {:host=>"0.0.0.0"}
 #                customer_session DELETE /session(.:format)                                   customer/sessions#destroy {:host=>"0.0.0.0"}
 #                                 POST   /session(.:format)                                   customer/sessions#create {:host=>"0.0.0.0"}
+#           edit_customer_account GET    /account/edit(.:format)                              customer/accounts#edit {:host=>"0.0.0.0"}
+#                customer_account GET    /account(.:format)                                   customer/accounts#show {:host=>"0.0.0.0"}
+#                                 PATCH  /account(.:format)                                   customer/accounts#update {:host=>"0.0.0.0"}
+#                                 PUT    /account(.:format)                                   customer/accounts#update {:host=>"0.0.0.0"}
+#   cancel_customer_program_entry PATCH  /programs/:program_id/entries/:id/cancel(.:format)   customer/entries#cancel {:host=>"0.0.0.0"}
+#        customer_program_entries POST   /programs/:program_id/entries(.:format)              customer/entries#create {:host=>"0.0.0.0"}
 #               customer_programs GET    /programs(.:format)                                  customer/programs#index {:host=>"0.0.0.0"}
 #                customer_program GET    /programs/:id(.:format)                              customer/programs#show {:host=>"0.0.0.0"}
 #                            root GET    /                                                    errors#routing_error
@@ -115,6 +124,7 @@ Rails.application.routes.draw do
       get 'campaign_submit', to: 'campaign#submit'
       get 'login' => 'sessions#new', as: :login
       resource :session, only: [ :create, :destroy ]
+      resource :account, except: [ :new, :create, :destroy ]
       resources :programs, only: [ :index, :show ] do
         resources :entries, only: [ :create ] do
           patch :cancel, on: :member
