@@ -10,11 +10,15 @@ class Customer::AccountsController < Customer::Base
   def update
     @customer_form = Customer::AccountForm.new(current_customer)
     @customer_form.assign_attributes(params[:form])
-    if @customer_form.save
-      flash.notice = t('.flash_notice')
-      redirect_to :staff_account
+    if params[:commit]
+      if @customer_form.save
+        flash.notice = t('.flash_notice')
+        redirect_to :staff_account
+      else
+        flash.now.alert = t('.flash_alert')
+        render action: 'edit'
+      end
     else
-      flash.now.alert = t('.flash_alert')
       render action: 'edit'
     end
   end
