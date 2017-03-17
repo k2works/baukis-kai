@@ -4,6 +4,8 @@ $(document).on "turbolinks:load", ->
 
 class AccountForm
   constructor: ->
+    toggleHomeAddressFields()
+    toggleWorkAddressFields()
     $('.AppForm__customer-form input#form_inputs_home_address').on
       'click' : handleHomeAddressFields
     $('.AppForm__customer-form input#form_inputs_work_address').on

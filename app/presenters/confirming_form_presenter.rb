@@ -2,7 +2,7 @@ class ConfirmingFormPresenter
   include HtmlBuilder
 
   attr_reader :form_builder, :view_context
-  delegate :lable, :hidden_field, :object, to: :form_builder
+  delegate :label, :hidden_field, :object, to: :form_builder
 
   def initialize(form_builder, view_context)
     @form_builder = form_builder
@@ -13,9 +13,9 @@ class ConfirmingFormPresenter
     markup(:div) do |m|
       m << decorated_label(name, label_text, options)
       if options[:disabled]
-        m.div(object.send(name), class: 'field-value readonly')
+        m.div(object.send(name), class: 'AppForm--field-value AppForm--readonly')
       else
-        m.div(object.send(name), class: 'field-value')
+        m.div(object.send(name), class: 'AppForm--field-value')
         m << hidden_field(name, options)
       end
     end
@@ -24,7 +24,7 @@ class ConfirmingFormPresenter
   def drop_down_list_block(name, label_text, choices, options = {})
     markup(:div, class: 'AppForm__input-block') do |m|
       m << decorated_label(name, label_text, options)
-      m.div(object.send(name), class: 'field-value')
+      m.div(object.send(name), class: 'AppForm--field-value')
       m << hidden_field(name, options)
     end
   end

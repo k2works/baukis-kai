@@ -1,6 +1,6 @@
 <%= f.fields_for :customer, f.object.customer do |ff| %>
 <%= markup do |m|
-  p = Staff::CustomerFormPresenter.new(ff,self)
+  p = confirming ? Customer::ConfirmingCustomerFormPresenter.new(ff, self) : Staff::CustomerFormPresenter.new(ff, self)
   p.with_options(required: true) do |q|
     m << q.text_field_block(:email, t('activerecord.attributes.customer.email'), size: 32)
     m << q.full_name_block(:family_name, :given_name, t('activerecord.attributes.customer.full_name'))
@@ -11,7 +11,11 @@
   m.div(class: 'AppForm__input-block') do
     m.ol do
       p.object.personal_phones.each_with_index do |phone, index|
-        m << render('phone_fields', f: ff, phone: phone, index: index)
+        if confirming
+          m << render('confirming_phone_fields', f: ff, phone: phone, index: index)
+        else
+          m << render('phone_fields', f: ff, phone: phone, index: index)
+        end
       end
     end
   end

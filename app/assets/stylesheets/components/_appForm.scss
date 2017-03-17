@@ -60,4 +60,7 @@
     label { color: $red }
     input, select { background-color: $pink }
   }
+  &--field-value { margin-left: $wide; font-weight: bold;}
+  &--readonly { color: $dark_gray; }
+  &--field-value { font-weight: bold; }
 }

@@ -1,3 +1,4 @@
+<% @title = t('.title') %>
 <section class="Section">
   <h1 class="Customer__title"><%= @title %></h1>
 </section>
@@ -6,7 +7,7 @@
   <div class="AppForm__generic-form CustomerAppForm__generic-form AppForm__customer-form">
     <%= bootstrap_form_for @customer_form, as: 'form', url: :customer_account do |f| %>
         <p><%= t('.confirm_message')%></p>
-        <%= render 'form', f: f %>
+        <%= render 'confirming_form', f: f %>
         <div class="AppForm__buttons">
           <%= f.submit t('.update'),class: 'btn btn-default btn-lg' %>
           <%= f.submit t('.correct'), name: 'correct', class: 'btn btn-default btn-lg' %>

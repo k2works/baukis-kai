@@ -1,6 +1,6 @@
 <%= f.fields_for :work_address, f.object.customer.work_address do |ff| %>
     <%= markup do |m|
-      p = Staff::AddressFormPresenter.new(ff,self)
+      p = confirming ? Customer::ConfirmingAddressFormPresenter.new(ff, self) : Staff::AddressFormPresenter.new(ff,self)
       m << p.text_field_block(:company_name, t('activerecord.attributes.work_address.company_name'), size: 40, required: true)
       m << p.text_field_block(:division_name, t('activerecord.attributes.work_address.division_name'), size: 40)
       m << p.postal_code_block(:postal_code, t('activerecord.attributes.work_address.postal_code'), size: 7)
@@ -11,7 +11,11 @@
       m.div(class: 'FormApp__input-block') do
         m.ol do
           p.object.phones.each_with_index do |phone, index|
-            m << render('phone_fields', f: ff, phone: phone, index: index)
+            if confirming
+              m << render('confirming_phone_fields', f: ff, phone: phone, index: index)
+            else
+              m << render('phone_fields', f: ff, phone: phone, index: index)
+            end
           end
         end
       end

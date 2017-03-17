@@ -1,0 +1,22 @@
+<fieldset id="customer-fields">
+  <legend><%= t('staff.customers.new.basic_info') %></legend>
+  <%= render 'customer_fields', f: f, confirming: true %>
+</fieldset>
+<% if f.object.inputs_home_address %>
+    <div>
+      <%= f.hidden_field :inputs_home_address %>
+    </div>
+    <fieldset id="home-address-fields">
+      <legend><%= t('staff.customers.new.home_address') %></legend>
+      <%= render 'home_address_fields', f: f, confirming: true %>
+    </fieldset>
+<% end %>
+<% if f.object.inputs_work_address %>
+    <div>
+      <%= f.hidden_field :inputs_work_address %>
+    </div>
+    <fieldset id="work-address-fields">
+      <legend><%= t('staff.customers.new.work_address') %></legend>
+      <%= render 'work_address_fields', f: f, confirming: true %>
+    </fieldset>
+<% end %>

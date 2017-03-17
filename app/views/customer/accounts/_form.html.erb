@@ -1,19 +1,19 @@
 <%= FormPresenter.new(f,self).notes %>
 <fieldset id="customer-fields">
   <legend><%= t('staff.customers.new.basic_info') %></legend>
-  <%= render 'customer_fields', f: f %>
+  <%= render 'customer_fields', f: f, confirming: false %>
 </fieldset>
 <div>
   <%= f.check_box :inputs_home_address, label: t('staff.customers.new.home_address_inputs')  %>
 </div>
 <fieldset id="home-address-fields">
   <legend><%= t('staff.customers.new.home_address') %></legend>
-  <%= render 'home_address_fields', f: f %>
+  <%= render 'home_address_fields', f: f, confirming: false %>
 </fieldset>
 <div>
   <%= f.check_box :inputs_work_address, label: t('staff.customers.new.work_address_inputs') %>
 </div>
 <fieldset id="work-address-fields">
   <legend><%= t('staff.customers.new.work_address') %></legend>
-  <%= render 'work_address_fields', f: f %>
+  <%= render 'work_address_fields', f: f, confirming: false %>
 </fieldset>
