@@ -77,3 +77,5 @@ ja:
       update:
         flash_notice: 'アカウント情報を更新しました。'
         flash_alert: '入力に誤りがあります。'
+      confirm:
+        flash_alert: '入力に誤りがあります。'
