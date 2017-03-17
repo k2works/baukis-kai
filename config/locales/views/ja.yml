@@ -211,6 +211,7 @@ ja:
       header:
         login: 'ログイン'
         logout: 'ログアウト'
+        account: 'アカウント'
     sessions:
       new:
         title: 'ログイン'

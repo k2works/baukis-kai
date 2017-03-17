@@ -22,4 +22,5 @@
         link_to t('customer.shared.header.login'), :customer_login, class: 'btn btn-default'
       end
   %>
+  <%= link_to t('customer.shared.header.account'), :customer_account, class: 'btn btn-default Header__account' if current_customer %>
 </header>
