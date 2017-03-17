@@ -57,6 +57,7 @@
 #                  customer_login GET    /login(.:format)                                     customer/sessions#new {:host=>"0.0.0.0"}
 #                customer_session DELETE /session(.:format)                                   customer/sessions#destroy {:host=>"0.0.0.0"}
 #                                 POST   /session(.:format)                                   customer/sessions#create {:host=>"0.0.0.0"}
+#        confirm_customer_account PATCH  /account/confirm(.:format)                           customer/accounts#confirm {:host=>"0.0.0.0"}
 #           edit_customer_account GET    /account/edit(.:format)                              customer/accounts#edit {:host=>"0.0.0.0"}
 #                customer_account GET    /account(.:format)                                   customer/accounts#show {:host=>"0.0.0.0"}
 #                                 PATCH  /account(.:format)                                   customer/accounts#update {:host=>"0.0.0.0"}
@@ -124,7 +125,9 @@ Rails.application.routes.draw do
       get 'campaign_submit', to: 'campaign#submit'
       get 'login' => 'sessions#new', as: :login
       resource :session, only: [ :create, :destroy ]
-      resource :account, except: [ :new, :create, :destroy ]
+      resource :account, except: [ :new, :create, :destroy ] do
+        patch :confirm
+      end
       resources :programs, only: [ :index, :show ] do
         resources :entries, only: [ :create ] do
           patch :cancel, on: :member
