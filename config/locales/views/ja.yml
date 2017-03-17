@@ -237,3 +237,6 @@ ja:
         program_end: '申し込み終了日時'
         program_min_entry: '最小参加者数'
         program_max_entry: '最大参観者数'
+        closed: '募集終了'
+        apply: '申し込む'
+        confirm: '本当に申し込みますか？'
