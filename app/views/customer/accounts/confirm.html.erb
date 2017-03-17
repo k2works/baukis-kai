@@ -4,7 +4,7 @@
 </section>
 
 <section class="Section l-column AppForm">
-  <div class="AppForm__generic-form CustomerAppForm__generic-form AppForm__customer-form">
+  <div class="AppForm__generic-form CustomerAppForm__generic-form AppForm__customer-form AppForm--isConfirmed">
     <%= bootstrap_form_for @customer_form, as: 'form', url: :customer_account do |f| %>
         <p><%= t('.confirm_message')%></p>
         <%= render 'confirming_form', f: f %>

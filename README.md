@@ -719,6 +719,7 @@ git push heroku master
 + 確認画面の仮実装
 + 確認画面用プレゼンターの作成
 + 確認画面の本実装
++ CoffeeScriptの修正
 
 #### 演習問題
 
