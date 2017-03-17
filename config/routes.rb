@@ -1,9 +1,6 @@
 # == Route Map
 #
 #                          Prefix Verb   URI Pattern                                          Controller#Action
-#         customer_entries_create GET    /customer/entries/create(.:format)                   customer/entries#create
-#         customer_programs_index GET    /customer/programs/index(.:format)                   customer/programs#index
-#          customer_programs_show GET    /customer/programs/show(.:format)                    customer/programs#show
 #                      staff_root GET    /staff(.:format)                                     staff/top#index {:host=>"0.0.0.0"}
 #                     staff_login GET    /staff/login(.:format)                               staff/sessions#new {:host=>"0.0.0.0"}
 #                   staff_session DELETE /staff/session(.:format)                             staff/sessions#destroy {:host=>"0.0.0.0"}
@@ -71,18 +68,6 @@
 #
 
 Rails.application.routes.draw do
-  namespace :customer do
-    get 'entries/create'
-  end
-
-  namespace :customer do
-    get 'programs/index'
-  end
-
-  namespace :customer do
-    get 'programs/show'
-  end
-
   config = Rails.application.config.baukis_kai
 
   concern :session_path do
