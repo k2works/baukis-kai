@@ -54,6 +54,8 @@
 #                  customer_login GET    /login(.:format)                                     customer/sessions#new {:host=>"0.0.0.0"}
 #                customer_session DELETE /session(.:format)                                   customer/sessions#destroy {:host=>"0.0.0.0"}
 #                                 POST   /session(.:format)                                   customer/sessions#create {:host=>"0.0.0.0"}
+#               customer_programs GET    /programs(.:format)                                  customer/programs#index {:host=>"0.0.0.0"}
+#                customer_program GET    /programs/:id(.:format)                              customer/programs#show {:host=>"0.0.0.0"}
 #                            root GET    /                                                    errors#routing_error
 #                                 GET    /*anything(.:format)                                 errors#routing_error
 #
@@ -101,6 +103,7 @@ Rails.application.routes.draw do
       get 'campaign_submit', to: 'campaign#submit'
       get 'login' => 'sessions#new', as: :login
       resource :session, only: [ :create, :destroy ]
+      resources :programs, only: [ :index, :show ]
     end
   end
 
