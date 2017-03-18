@@ -5,7 +5,7 @@ class Staff::MessagePresenter < ModelPresenter
     case object
       when CustomerMessage
         '問い合わせ'
-      when StaffMember
+      when StaffMessage
         '返信'
       else
         raise
@@ -16,7 +16,7 @@ class Staff::MessagePresenter < ModelPresenter
     case object
       when CustomerMessage
         object.customer.family_name + ' ' + object.customer.given_name
-      when StaffMember
+      when StaffMessage
         object.staff_member.family_name + ' ' + object.staff_member.given_name
       else
         raise
@@ -27,7 +27,7 @@ class Staff::MessagePresenter < ModelPresenter
     case object
       when CustomerMessage
         ''
-      when StaffMember
+      when StaffMessage
         object.customer.family_name + ' ' + object.customer.given_name
       else
         raise
