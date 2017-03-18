@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170214071032) do
+ActiveRecord::Schema.define(version: 20170318002915) do
 
   create_table "addresses", force: :cascade, comment: "住所" do |t|
     t.integer  "customer_id",                null: false, comment: "顧客への外部キー"
@@ -96,6 +96,31 @@ ActiveRecord::Schema.define(version: 20170214071032) do
     t.index ["program_id"], name: "index_entries_on_program_id", using: :btree
   end
 
+  create_table "messages", force: :cascade, comment: "問い合わせ" do |t|
+    t.integer  "customer_id",                                   null: false
+    t.integer  "staff_member_id"
+    t.integer  "root_id",                                                    comment: "Messageへの外部キー"
+    t.integer  "parent_id",                                                  comment: "Messageへの外部キー"
+    t.string   "type",                                          null: false, comment: "継承カラム"
+    t.string   "status",                        default: "new", null: false, comment: "状態（職員向け）"
+    t.string   "subject",                                       null: false, comment: "件名"
+    t.text     "body",            limit: 65535,                              comment: "本文"
+    t.text     "remarks",         limit: 65535,                              comment: "備考（職員向け）"
+    t.boolean  "discarded",                     default: false, null: false, comment: "顧客側の削除フラグ"
+    t.boolean  "deleted",                       default: false, null: false, comment: "職員側の削除フラグ"
+    t.datetime "created_at",                                    null: false
+    t.datetime "updated_at",                                    null: false
+    t.index ["customer_id", "deleted", "created_at"], name: "index_messages_on_customer_id_and_deleted_and_created_at", using: :btree
+    t.index ["customer_id", "deleted", "status", "created_at"], name: "index_messages_on_c_d_s_c", using: :btree
+    t.index ["customer_id", "discarded", "created_at"], name: "index_messages_on_customer_id_and_discarded_and_created_at", using: :btree
+    t.index ["customer_id"], name: "index_messages_on_customer_id", using: :btree
+    t.index ["parent_id"], name: "fk_rails_aafcb31dbf", using: :btree
+    t.index ["root_id", "deleted", "created_at"], name: "index_messages_on_root_id_and_deleted_and_created_at", using: :btree
+    t.index ["staff_member_id"], name: "index_messages_on_staff_member_id", using: :btree
+    t.index ["type", "customer_id"], name: "index_messages_on_type_and_customer_id", using: :btree
+    t.index ["type", "staff_member_id"], name: "index_messages_on_type_and_staff_member_id", using: :btree
+  end
+
   create_table "phones", force: :cascade, comment: "電話" do |t|
     t.integer  "customer_id",                      null: false, comment: "顧客への外部キー"
     t.integer  "address_id",                                    comment: "住所への外部キー"
@@ -154,6 +179,10 @@ ActiveRecord::Schema.define(version: 20170214071032) do
   add_foreign_key "addresses", "customers"
   add_foreign_key "entries", "customers"
   add_foreign_key "entries", "programs"
+  add_foreign_key "messages", "customers"
+  add_foreign_key "messages", "messages", column: "parent_id"
+  add_foreign_key "messages", "messages", column: "root_id"
+  add_foreign_key "messages", "staff_members"
   add_foreign_key "phones", "addresses"
   add_foreign_key "phones", "customers"
   add_foreign_key "programs", "staff_members", column: "registrant_id"
