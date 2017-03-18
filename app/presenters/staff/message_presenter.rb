@@ -47,4 +47,8 @@ class Staff::MessagePresenter < ModelPresenter
       object.created_at.strftime('%Y/%m/%d %H:%M')
     end
   end
+
+  def formatted_body
+    ERB::Util.html_escape(body).gsub(/\n/, '<br />').html_safe
+  end
 end

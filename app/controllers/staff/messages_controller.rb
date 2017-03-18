@@ -27,4 +27,8 @@ class Staff::MessagesController < Staff::Base
   def count
     render text: CustomerMessage.unprocessed.count
   end
+
+  def show
+    @message = Message.find(params[:id])
+  end
 end

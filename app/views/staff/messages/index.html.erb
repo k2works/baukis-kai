@@ -1,8 +1,8 @@
 <% @title = case params[:action]
-              when 'index'; t('customer.messages.index.title_index')
-              when 'inbound'; t('customer.messages.index.title_inbound')
-              when 'outbound'; t('customer.messages.index.title_outbound')
-              when 'deleted'; t('customer.messages.index.title_deleted')
+              when 'index'; t('staff.messages.index.title_index')
+              when 'inbound'; t('staff.messages.index.title_inbound')
+              when 'outbound'; t('staff.messages.index.title_outbound')
+              when 'deleted'; t('staff.messages.index.title_deleted')
               else; raise
             end
 %>
@@ -15,12 +15,12 @@
 
   <table class="Table__body Table__body--listing StaffTable__body">
     <tr class="Table__tr">
-      <th class="Table__th"><%= t('customer.messages.index.type') %></th>
-      <th class="Table__th"><%= t('customer.messages.index.sender') %></th>
-      <th class="Table__th"><%= t('customer.messages.index.receiver') %></th>
-      <th class="Table__th"><%= t('customer.messages.index.subject') %></th>
-      <th class="Table__th"><%= t('customer.messages.index.created_at') %></th>
-      <th class="Table__th"><%= t('customer.messages.index.action') %></th>
+      <th class="Table__th"><%= t('staff.messages.index.type') %></th>
+      <th class="Table__th"><%= t('staff.messages.index.sender') %></th>
+      <th class="Table__th"><%= t('staff.messages.index.receiver') %></th>
+      <th class="Table__th"><%= t('staff.messages.index.subject') %></th>
+      <th class="Table__th"><%= t('staff.messages.index.created_at') %></th>
+      <th class="Table__th"><%= t('staff.messages.index.action') %></th>
     </tr>
     <% @messages.each do |m| %>
         <% p = Staff::MessagePresenter.new(m, self) %>
@@ -31,8 +31,8 @@
           <td class="Table__td"><%= p.truncated_subject %></td>
           <td class="Table__td--date"><%= p.created_at %></td>
           <td class="Table__td--action">
-            <%= link_to t('customer.messages.index.detail'), staff_message_path(m), class: 'btn btn-default btn-xs' %>
-            <%= link_to_if m.kind_of?(CustomerMessage), t('customer.messages.index.delete'), staff_message_path(m), method: :delete, class: 'btn btn-default btn-xs' %>
+            <%= link_to t('staff.messages.index.detail'), staff_message_path(m), class: 'btn btn-default btn-xs' %>
+            <%= link_to_if m.kind_of?(CustomerMessage), t('staff.messages.index.delete'), staff_message_path(m), method: :delete, class: 'btn btn-default btn-xs' %>
           </td>
         </tr>
     <% end %>

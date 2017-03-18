@@ -157,6 +157,27 @@ ja:
         a: 'A'
         c: 'C'
         update: '申し込みフラグを更新する'
+    messages:
+      index:
+        title_index: '全メッセージ一覧'
+        title_inbound: '問い合わせ一覧'
+        title_outbound: '返信一覧'
+        title_deleted: 'メッセージ一覧（ゴミ箱）'
+        type: '種類'
+        sender: '送信者'
+        receiver: '受信者'
+        subject: '件名'
+        created_at: '作成日時'
+        action: 'アクション'
+        detail: '詳細'
+        delete: '削除'
+      show:
+        title: 'メッセージ詳細'
+        type: '種類'
+        sender: '送信者'
+        receiver: '受信者'
+        subject: '件名'
+        created_at: '作成日時'
 
   admin:
     shared:
@@ -308,16 +329,3 @@ ja:
         confirm_message: '以下の内容でアカウントを更新します。よろしいですか？'
         update: '送信'
         correct: '訂正'
-      index:
-        title_index: '全メッセージ一覧'
-        title_inbound: '問い合わせ一覧'
-        title_outbound: '返信一覧'
-        title_deleted: 'メッセージ一覧（ゴミ箱）'
-        type: '種類'
-        sender: '送信者'
-        receiver: '受信者'
-        subject: '件名'
-        created_at: '作成日時'
-        action: 'アクション'
-        detail: '詳細'
-        delete: '削除'

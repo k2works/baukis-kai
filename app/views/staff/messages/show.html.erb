@@ -1,0 +1,17 @@
+<% @title = t('.title') %>
+<section class="Section">
+  <h1 class="Staff__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table StaffTable">
+  <table class="Table__body Table__body--attributes StaffTable__body">
+    <% p = Staff::MessagePresenter.new(@message, self) %>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.type') %></th><td><%= p.type %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.sender') %></th><td><%= p.sender %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.receiver') %></th><td><%= p.receiver %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.subject') %></th><td><%= p.subject %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.created_at') %></th><td class="Table__td--date"><%= p.created_at %></td></tr>
+  </table>
+
+  <div class="Table__body--description"><%= p.formatted_body %></div>
+</section>
