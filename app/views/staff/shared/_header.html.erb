@@ -16,14 +16,12 @@
       <li class="Menu__item"><a href="#"></a></li>
     </ul>
   </nav>
+  <%= number_of_unprocessed_messages if current_staff_member %>
   <%= if current_staff_member
         link_to t('staff.shared.header.logout'), :staff_session, method: :delete, class: 'btn btn-default'
       else
         link_to t('staff.shared.header.login'), :staff_login, class: 'btn btn-default'
       end
     %>
-  <%= if current_staff_member
-        link_to t('staff.shared.header.account'), :staff_account , class: 'btn btn-default'
-      end
-  %>
+  <%= link_to t('staff.shared.header.account'), :staff_account , class: 'btn btn-default' if current_staff_member %>
 </header>
