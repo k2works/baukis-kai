@@ -82,4 +82,7 @@ ja:
     messages:
       confirm:
         flash_alert: '入力に誤りがあります。'
+      create:
+        flash_notice: '問い合わせを送信しました。'
+        flash_alert: '入力に誤りがあります。'
 
