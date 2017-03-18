@@ -218,6 +218,7 @@ ja:
         login: 'ログイン'
         logout: 'ログアウト'
         account: 'アカウント'
+        message: '問い合わせ'
     sessions:
       new:
         title: 'ログイン'
@@ -291,3 +292,8 @@ ja:
         confirm_message: '以下の内容でアカウントを更新します。よろしいですか？'
         update: '更新'
         correct: '訂正'
+    messages:
+      new:
+        title: '新規問い合わせ'
+        submit: '確認画面へ進む'
+        cancel: 'キャンセル'

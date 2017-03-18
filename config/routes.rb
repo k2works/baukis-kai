@@ -72,6 +72,10 @@
 #
 
 Rails.application.routes.draw do
+  namespace :customer do
+    get 'messagges/new'
+  end
+
   config = Rails.application.config.baukis_kai
 
   concern :session_path do

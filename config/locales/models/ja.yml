@@ -7,6 +7,7 @@ ja:
       customer: 顧客
       address: 住所
       program: プログラム
+      message: 問い合わせ
 
     attributes:
       administrator:
@@ -100,6 +101,14 @@ ja:
         applicants: 応募者
         entries: エントリー
         registrant: 登録者
+
+      message:
+        status: 状態（職員向け）
+        subject: 件名
+        body: 本文
+        remarks: 備考（職員向け）
+        discarded: 顧客側の削除フラグ
+        deleted: 職員側の削除フラグ
 
     errors:
       models:

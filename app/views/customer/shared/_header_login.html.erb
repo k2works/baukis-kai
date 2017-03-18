@@ -23,4 +23,5 @@
       end
   %>
   <%= link_to t('customer.shared.header.account'), :customer_account, class: 'btn btn-default Header__account' if current_customer %>
+  <%= link_to t('customer.shared.header.message'), :new_customer_message, class: 'btn btn-default Header__account' if current_customer %>
 </header>
