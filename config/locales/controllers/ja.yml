@@ -43,6 +43,10 @@ ja:
         flash_alert: 'このプログラムは削除できません。'
       entries:
         flash_notice: 'プログラム申し込みのフラグを更新しました。'
+    messages:
+      destroy:
+        flash_notice: '問い合わせを削除しました。'
+
   admin:
     base:
       authrize:

@@ -31,4 +31,11 @@ class Staff::MessagesController < Staff::Base
   def show
     @message = Message.find(params[:id])
   end
+
+  def destroy
+    message = CustomerMessage.find(params[:id])
+    message.update_column(:deleted, true)
+    flash.notice = t('.flash_notice')
+    redirect_to :back
+  end
 end
