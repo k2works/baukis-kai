@@ -49,6 +49,13 @@ class Message < ApplicationRecord
 
   default_scope { order(created_at: :desc) }
 
+  before_validation do
+    if parent
+      self.root = parent.root || parent
+      self.customer = parent.customer
+    end
+  end
+
   attr_accessor :child_nodes
 
   def tree
