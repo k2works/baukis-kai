@@ -35,6 +35,9 @@
 #         outbound_staff_messages GET    /staff/messages/outbound(.:format)                   staff/messages#outbound {:host=>"0.0.0.0"}
 #          deleted_staff_messages GET    /staff/messages/deleted(.:format)                    staff/messages#deleted {:host=>"0.0.0.0"}
 #            count_staff_messages GET    /staff/messages/count(.:format)                      staff/messages#count {:host=>"0.0.0.0"}
+#     confirm_staff_message_reply POST   /staff/messages/:message_id/reply/confirm(.:format)  staff/replies#confirm {:host=>"0.0.0.0"}
+#         new_staff_message_reply GET    /staff/messages/:message_id/reply/new(.:format)      staff/replies#new {:host=>"0.0.0.0"}
+#             staff_message_reply POST   /staff/messages/:message_id/reply(.:format)          staff/replies#create {:host=>"0.0.0.0"}
 #                  staff_messages GET    /staff/messages(.:format)                            staff/messages#index {:host=>"0.0.0.0"}
 #                   staff_message GET    /staff/messages/:id(.:format)                        staff/messages#show {:host=>"0.0.0.0"}
 #                                 DELETE /staff/messages/:id(.:format)                        staff/messages#destroy {:host=>"0.0.0.0"}
@@ -100,6 +103,9 @@ Rails.application.routes.draw do
       end
       resources :messages, only: [ :index, :show, :destroy ] do
         get :inbound, :outbound, :deleted, :count, on: :collection
+        resource :reply, only: [ :new, :create ] do
+          post :confirm
+        end
       end
     end
   end
