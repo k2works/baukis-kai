@@ -179,6 +179,15 @@ ja:
         subject: '件名'
         created_at: '作成日時'
         reply: '返信する'
+    replies:
+      new:
+        title: '問い合わせへの返信'
+        confirm: '確認画面用へ進む'
+        cancel: 'キャンセル'
+        sender: '送信者'
+        subject: '件名'
+        created_at: '作成日時'
+
 
   admin:
     shared:
