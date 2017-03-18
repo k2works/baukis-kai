@@ -31,6 +31,7 @@
 #                                 PATCH  /staff/programs/:id(.:format)                        staff/programs#update {:host=>"0.0.0.0"}
 #                                 PUT    /staff/programs/:id(.:format)                        staff/programs#update {:host=>"0.0.0.0"}
 #                                 DELETE /staff/programs/:id(.:format)                        staff/programs#destroy {:host=>"0.0.0.0"}
+#            count_staff_messages GET    /staff/messages/count(.:format)                      staff/messages#count {:host=>"0.0.0.0"}
 #                      admin_root GET    /admin(.:format)                                     admin/top#index {:host=>"0.0.0.0"}
 #                     admin_login GET    /admin/login(.:format)                               admin/sessions#new {:host=>"0.0.0.0"}
 #                   admin_session DELETE /admin/session(.:format)                             admin/sessions#destroy {:host=>"0.0.0.0"}
@@ -72,10 +73,6 @@
 #
 
 Rails.application.routes.draw do
-  namespace :customer do
-    get 'messagges/new'
-  end
-
   config = Rails.application.config.baukis_kai
 
   concern :session_path do
@@ -94,6 +91,9 @@ Rails.application.routes.draw do
       resources :customers
       resources :programs do
         patch :entries, on: :member
+      end
+      resources :messages, only: [] do
+        get :count, on: :collection
       end
     end
   end
