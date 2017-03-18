@@ -5,11 +5,11 @@
 
 <section class="Section l-column AppForm">
   <div class="AppForm__generic-form CustomerAppForm__generic-form">
-    <%= bootstrap_form_for @message, url: :confirm_customer_messages do |f| %>
-        <%= render 'form', f: f %>
+    <%= bootstrap_form_for @message, url: :customer_messages do |f| %>
+        <%= render 'confirming_form', f: f %>
         <div class="AppForm__buttons">
-          <%= f.submit t('.submit') ,class: 'btn btn-default btn-lg'%>
-          <%= link_to t('.cancel'), :customer_root ,class: 'btn btn-default btn-lg'%>
+          <%= f.submit t('.update'),class: 'btn btn-default btn-lg' %>
+          <%= f.submit t('.correct'), name: 'correct', class: 'btn btn-default btn-lg' %>
         </div>
     <% end %>
   </div>

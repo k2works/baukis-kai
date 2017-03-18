@@ -1,0 +1,6 @@
+<%= markup(:div, id: 'confirming-panel') do |m|
+  p = ConfirmingFormPresenter.new(f, self)
+  m.div t('customer.messages.confirm.confirm_message')
+  m << p.text_field_block(:subject, t('activerecord.attributes.message.subject'))
+  m << p.text_area_block(:body, t('activerecord.attributes.message.body'))
+end %>

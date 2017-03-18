@@ -735,6 +735,7 @@ git push heroku master
 + バリデーション等
 + ルーティング
 + newアクション
++ confirmアクション
 
 #### 問い合わせ到着の通知
  

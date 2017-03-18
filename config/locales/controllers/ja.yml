@@ -79,3 +79,7 @@ ja:
         flash_alert: '入力に誤りがあります。'
       confirm:
         flash_alert: '入力に誤りがあります。'
+    messages:
+      confirm:
+        flash_alert: '入力に誤りがあります。'
+
