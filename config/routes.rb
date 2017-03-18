@@ -5,6 +5,7 @@
 #                     staff_login GET    /staff/login(.:format)                               staff/sessions#new {:host=>"0.0.0.0"}
 #                   staff_session DELETE /staff/session(.:format)                             staff/sessions#destroy {:host=>"0.0.0.0"}
 #                                 POST   /staff/session(.:format)                             staff/sessions#create {:host=>"0.0.0.0"}
+#           confirm_staff_account PATCH  /staff/account/confirm(.:format)                     staff/accounts#confirm {:host=>"0.0.0.0"}
 #              edit_staff_account GET    /staff/account/edit(.:format)                        staff/accounts#edit {:host=>"0.0.0.0"}
 #                   staff_account GET    /staff/account(.:format)                             staff/accounts#show {:host=>"0.0.0.0"}
 #                                 PATCH  /staff/account(.:format)                             staff/accounts#update {:host=>"0.0.0.0"}
@@ -63,6 +64,9 @@
 #        customer_program_entries POST   /programs/:program_id/entries(.:format)              customer/entries#create {:host=>"0.0.0.0"}
 #               customer_programs GET    /programs(.:format)                                  customer/programs#index {:host=>"0.0.0.0"}
 #                customer_program GET    /programs/:id(.:format)                              customer/programs#show {:host=>"0.0.0.0"}
+#       confirm_customer_messages POST   /messages/confirm(.:format)                          customer/messages#confirm {:host=>"0.0.0.0"}
+#               customer_messages POST   /messages(.:format)                                  customer/messages#create {:host=>"0.0.0.0"}
+#            new_customer_message GET    /messages/new(.:format)                              customer/messages#new {:host=>"0.0.0.0"}
 #                            root GET    /                                                    errors#routing_error
 #                                 GET    /*anything(.:format)                                 errors#routing_error
 #
@@ -119,6 +123,9 @@ Rails.application.routes.draw do
         resources :entries, only: [ :create ] do
           patch :cancel, on: :member
         end
+      end
+      resources :messages, only: [ :new, :create ] do
+        post :confirm, on: :collection
       end
     end
   end
