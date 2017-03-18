@@ -187,7 +187,12 @@ ja:
         sender: '送信者'
         subject: '件名'
         created_at: '作成日時'
-
+      confirm:
+        title: '問い合わせへの返信（確認）'
+        send: '送信'
+        correct: '訂正'
+        cancel: 'キャンセル'
+        confirm_message: '以下の内容で返信します。よろしいですか？'
 
   admin:
     shared:

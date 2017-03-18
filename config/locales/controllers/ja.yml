@@ -46,6 +46,9 @@ ja:
     messages:
       destroy:
         flash_notice: '問い合わせを削除しました。'
+    replieds:
+      confirm:
+        flash_notice: '入力に誤りがあります。'
 
   admin:
     base:
