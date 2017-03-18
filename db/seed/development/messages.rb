@@ -6,7 +6,7 @@ s = 2.years.ago
   m = CustomerMessage.create!(
                          customer: customers.sample,
                          subject: 'これは問い合わせです。' * 4,
-                         body: 'これは問い合わせです。\n' * 8,
+                         body: "これは問い合わせです。\n" * 8,
                          created_at: s.advance(months: n)
   )
   r = StaffMessage.create!(

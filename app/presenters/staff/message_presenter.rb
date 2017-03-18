@@ -51,4 +51,24 @@ class Staff::MessagePresenter < ModelPresenter
   def formatted_body
     ERB::Util.html_escape(body).gsub(/\n/, '<br />').html_safe
   end
+
+  def tree
+    expand(object.root || object)
+  end
+
+  private
+  def expand(node)
+    markup(:ul) do |m|
+      m.li do
+        if node.id == object.id
+          m.strong(node.subject)
+        else
+          m << link_to(node.subject, view_context.staff_message_path(node))
+        end
+        node.children.each do |c|
+          m << expand(c)
+        end
+      end
+    end
+  end
 end
