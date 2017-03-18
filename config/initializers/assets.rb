@@ -10,3 +10,5 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 Rails.application.config.assets.precompile += %w( staff.js admin.js customer.js )
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
+Sprockets::Context.send(:include, Rails.application.routes.url_helpers)
