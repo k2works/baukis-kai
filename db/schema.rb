@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170318002915) do
+ActiveRecord::Schema.define(version: 20170318093830) do
 
   create_table "addresses", force: :cascade, comment: "住所" do |t|
     t.integer  "customer_id",                null: false, comment: "顧客への外部キー"
@@ -96,6 +96,14 @@ ActiveRecord::Schema.define(version: 20170318002915) do
     t.index ["program_id"], name: "index_entries_on_program_id", using: :btree
   end
 
+  create_table "message_tag_links", force: :cascade, comment: "タグリンクテーブル" do |t|
+    t.integer "message_id", null: false
+    t.integer "tag_id",     null: false
+    t.index ["message_id", "tag_id"], name: "index_message_tag_links_on_message_id_and_tag_id", unique: true, using: :btree
+    t.index ["message_id"], name: "index_message_tag_links_on_message_id", using: :btree
+    t.index ["tag_id"], name: "index_message_tag_links_on_tag_id", using: :btree
+  end
+
   create_table "messages", force: :cascade, comment: "問い合わせ" do |t|
     t.integer  "customer_id",                                   null: false
     t.integer  "staff_member_id"
@@ -174,6 +182,13 @@ ActiveRecord::Schema.define(version: 20170318002915) do
     t.datetime "updated_at",                       null: false
     t.index ["email_for_index"], name: "index_staff_members_on_email_for_index", unique: true, using: :btree
     t.index ["family_name_kana", "given_name_kana"], name: "index_staff_members_on_family_name_kana_and_given_name_kana", using: :btree
+  end
+
+  create_table "tags", force: :cascade, comment: "タグ" do |t|
+    t.string   "value",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["value"], name: "index_tags_on_value", unique: true, using: :btree
   end
 
   add_foreign_key "addresses", "customers"
