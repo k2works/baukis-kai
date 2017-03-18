@@ -25,6 +25,12 @@ ja:
         title: 'ダッシュボード'
         staff_customers: '顧客管理'
         staff_programs: 'プログラム管理'
+        unprocessed_messages: '新規問い合わせ'
+        messages: 'メッセージ管理'
+        inbound_staff_messages: '問い合わせ一覧'
+        outbound_staff_messages: '返信一覧'
+        staff_messages: '全メッセージ一覧'
+        deleted_staff_messages: 'ゴミ箱'
     customers:
       index:
         title: '顧客管理'
