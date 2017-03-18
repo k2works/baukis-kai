@@ -5,6 +5,11 @@
 
 <section class="Section l-column Table StaffTable">
   <table class="Table__body Table__body--attributes StaffTable__body">
+    <% if @message.kind_of?(CustomerMessage) %>
+        <div class="Table__links">
+          <%= link_to t('.reply'), new_staff_message_reply_path(@message), class:'btn btn-default' %>
+        </div>
+    <% end %>
     <% p = Staff::MessagePresenter.new(@message, self) %>
     <tr class="Table__tr"><th class="Table__th"><%= t('.type') %></th><td><%= p.type %></td></tr>
     <tr class="Table__tr"><th class="Table__th"><%= t('.sender') %></th><td><%= p.sender %></td></tr>
