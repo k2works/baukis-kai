@@ -742,6 +742,7 @@ git push heroku master
 + ルーティング
 + countアクション
 + Ajax
++ アクセス制限
  
 ### ツリー構造
 #### 問い合わせの一覧表示と削除
