@@ -69,7 +69,7 @@ class Message < ApplicationRecord
 
   def add_tag(label)
     self.class.transaction do
-      tag = Tag.find_by_created_at(value: label)
+      tag = Tag.find_by(value: label)
       tag ||= Tag.create!(value: label)
       unless message_tag_links.where(tag_id: tag.id).exists?
         message_tag_links.create!(tag_id: tag.id)
