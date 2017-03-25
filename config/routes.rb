@@ -43,6 +43,10 @@
 #                  staff_messages GET    /staff/messages(.:format)                            staff/messages#index {:host=>"0.0.0.0"}
 #                   staff_message GET    /staff/messages/:id(.:format)                        staff/messages#show {:host=>"0.0.0.0"}
 #                                 DELETE /staff/messages/:id(.:format)                        staff/messages#destroy {:host=>"0.0.0.0"}
+#      inbound_staff_tag_messages GET    /staff/tags/:tag_id/messages/inbound(.:format)       staff/messages#inbound {:host=>"0.0.0.0"}
+#     outbound_staff_tag_messages GET    /staff/tags/:tag_id/messages/outbound(.:format)      staff/messages#outbound {:host=>"0.0.0.0"}
+#      deleted_staff_tag_messages GET    /staff/tags/:tag_id/messages/deleted(.:format)       staff/messages#deleted {:host=>"0.0.0.0"}
+#              staff_tag_messages GET    /staff/tags/:tag_id/messages(.:format)               staff/messages#index {:host=>"0.0.0.0"}
 #                      admin_root GET    /admin(.:format)                                     admin/top#index {:host=>"0.0.0.0"}
 #                     admin_login GET    /admin/login(.:format)                               admin/sessions#new {:host=>"0.0.0.0"}
 #                   admin_session DELETE /admin/session(.:format)                             admin/sessions#destroy {:host=>"0.0.0.0"}
@@ -109,6 +113,11 @@ Rails.application.routes.draw do
         delete :tag, on: :member
         resource :reply, only: [ :new, :create ] do
           post :confirm
+        end
+      end
+      resources :tags, only: [] do
+        resources :messages, only: [ :index ] do
+          get :inbound, :outbound, :deleted, on: :collection
         end
       end
     end
