@@ -19,7 +19,7 @@
     <tr class="Table__tr">
       <th  class="Table__th">タグ</th>
       <td>
-        <%= markup(:ul, id: 'tag-it') do |m|
+        <%= markup(:ul, id: 'tag-it', 'data-message-id' => @message.id) do |m|
           @message.tags.each do |tag|
             m.li tag.value
           end

@@ -38,4 +38,17 @@ class Staff::MessagesController < Staff::Base
     flash.notice = t('.flash_notice')
     redirect_to :back
   end
+
+  # POST/DELETE
+  def tag
+    message = CustomerMessage.find(params[:id])
+    if request.post?
+      message.add_tag(params[:label])
+    elsif request.delete?
+      message.remove_tag(params[:label])
+    else
+      raise
+    end
+    render text: 'OK'
+  end
 end
