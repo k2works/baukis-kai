@@ -16,6 +16,16 @@
     <tr class="Table__tr"><th class="Table__th"><%= t('.receiver') %></th><td><%= p.receiver %></td></tr>
     <tr class="Table__tr"><th class="Table__th"><%= t('.subject') %></th><td><%= p.subject %></td></tr>
     <tr class="Table__tr"><th class="Table__th"><%= t('.created_at') %></th><td class="Table__td--date"><%= p.created_at %></td></tr>
+    <tr class="Table__tr">
+      <th  class="Table__th">タグ</th>
+      <td>
+        <%= markup(:ul, id: 'tag-it') do |m|
+          @message.tags.each do |tag|
+            m.li tag.value
+          end
+        end %>
+      </td>
+    </tr>
   </table>
 
   <div class="tree"><%= p.tree %></div>
