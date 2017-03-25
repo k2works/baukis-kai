@@ -3,6 +3,10 @@ class Staff::MessagesController < Staff::Base
 
   def index
     @messages = Message.where(deleted: false).page(params[:page])
+    if params[:tag_id]
+      @messages = @messages.joins(:message_tag_links).where('message_tag_links.tag_id' => params[:tag_id])
+    end
+    @messages = @messages.page(params[:page])
   end
 
   # GET
