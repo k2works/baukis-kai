@@ -4,6 +4,7 @@
 </section>
 
 <section class="Section l-column Table StaffTable">
+  <%= render 'links' %>
   <table class="Table__body Table__body--attributes StaffTable__body">
     <% if @message.kind_of?(CustomerMessage) %>
         <div class="Table__links">

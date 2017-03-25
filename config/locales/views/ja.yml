@@ -179,6 +179,12 @@ ja:
         subject: '件名'
         created_at: '作成日時'
         reply: '返信する'
+      links:
+        inboud_staff_messages: '問い合わせ一覧'
+        outbound_staff_messages: '返信一覧'
+        staff_messages: '全メッセージ一覧'
+        deleted_staff_messages: 'ゴミ箱'
+        replay: '返信する'
     replies:
       new:
         title: '問い合わせへの返信'

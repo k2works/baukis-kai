@@ -1,0 +1,9 @@
+<div class="links">
+  <%= link_to t('staff.messages.links.inboud_staff_messages'), :inbound_staff_messages, class:'btn btn-default btn-xs' %>
+  <%= link_to t('staff.messages.links.outbound_staff_messages'), :outbound_staff_messages, class:'btn btn-default btn-xs' %>
+  <%= link_to t('staff.messages.links.staff_messages'), :staff_messages, class:'btn btn-default btn-xs' %>
+  <%= link_to t('staff.messages.links.deleted_staff_messages'), :deleted_staff_messages, class:'btn btn-default btn-xs' %>
+  <% if @message.kind_of?(CustomerMessage) %>
+    <%= link_to t('staff.messages.links.replay'), new_staff_message_reply_path(@message), class:'btn btn-default btn-xs' %>
+  <% end %>
+</div>
