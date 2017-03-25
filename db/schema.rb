@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170325081203) do
 
-  create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "住所" do |t|
+  create_table "addresses", force: :cascade, comment: "住所" do |t|
     t.integer  "customer_id",                null: false, comment: "顧客への外部キー"
     t.string   "type",                       null: false, comment: "継承カラム"
     t.string   "postal_code",                null: false, comment: "郵便番号"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["type", "prefecture", "city"], name: "index_addresses_on_type_and_prefecture_and_city", using: :btree
   end
 
-  create_table "administrators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "管理者" do |t|
+  create_table "administrators", force: :cascade, comment: "管理者" do |t|
     t.string   "email",                           null: false, comment: "メールアドレス"
     t.string   "email_for_index",                 null: false, comment: "索引用メールアドレス"
     t.string   "hashed_password",                              comment: "パスワード"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["email_for_index"], name: "index_administrators_on_email_for_index", unique: true, using: :btree
   end
 
-  create_table "allowed_sources", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "IPアドレス制限" do |t|
+  create_table "allowed_sources", force: :cascade, comment: "IPアドレス制限" do |t|
     t.string   "namespace",                  null: false, comment: "名前空間"
     t.integer  "octet1",                     null: false, comment: "第１オクテット"
     t.integer  "octet2",                     null: false, comment: "第２オクテット"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["namespace", "octet1", "octet2", "octet3", "octet4"], name: "index_allowed_sources_on_namespace_and_octets", unique: true, using: :btree
   end
 
-  create_table "customers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "顧客" do |t|
+  create_table "customers", force: :cascade, comment: "顧客" do |t|
     t.string   "email",            null: false, comment: "メールアドレス"
     t.string   "email_for_index",  null: false, comment: "顧客用メールアドレス"
     t.string   "family_name",      null: false, comment: "姓"
@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["given_name_kana"], name: "index_customers_on_given_name_kana", using: :btree
   end
 
-  create_table "entries", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "申し込み" do |t|
+  create_table "entries", force: :cascade, comment: "申し込み" do |t|
     t.integer  "program_id",                  null: false
     t.integer  "customer_id",                 null: false
     t.boolean  "approved",    default: false, null: false, comment: "承認済みフラグ"
@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["program_id"], name: "index_entries_on_program_id", using: :btree
   end
 
-  create_table "message_tag_links", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "タグリンクテーブル" do |t|
+  create_table "message_tag_links", force: :cascade, comment: "タグリンクテーブル" do |t|
     t.integer "message_id", null: false
     t.integer "tag_id",     null: false
     t.index ["message_id", "tag_id"], name: "index_message_tag_links_on_message_id_and_tag_id", unique: true, using: :btree
@@ -104,7 +104,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["tag_id"], name: "index_message_tag_links_on_tag_id", using: :btree
   end
 
-  create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "問い合わせ" do |t|
+  create_table "messages", force: :cascade, comment: "問い合わせ" do |t|
     t.integer  "customer_id",                                   null: false
     t.integer  "staff_member_id"
     t.integer  "root_id",                                                    comment: "Messageへの外部キー"
@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["type", "staff_member_id"], name: "index_messages_on_type_and_staff_member_id", using: :btree
   end
 
-  create_table "phones", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "電話" do |t|
+  create_table "phones", force: :cascade, comment: "電話" do |t|
     t.integer  "customer_id",                      null: false, comment: "顧客への外部キー"
     t.integer  "address_id",                                    comment: "住所への外部キー"
     t.string   "number",                           null: false, comment: "電話番号"
@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["number_for_index"], name: "index_phones_on_number_for_index", using: :btree
   end
 
-  create_table "programs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "プログラム" do |t|
+  create_table "programs", force: :cascade, comment: "プログラム" do |t|
     t.integer  "registrant_id",                            null: false, comment: "登録職員（外部キー）"
     t.string   "title",                                    null: false, comment: "タイトル"
     t.text     "description",                limit: 65535,              comment: "説明"
@@ -158,7 +158,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["registrant_id"], name: "index_programs_on_registrant_id", using: :btree
   end
 
-  create_table "staff_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "職員イベント" do |t|
+  create_table "staff_events", force: :cascade, comment: "職員イベント" do |t|
     t.integer  "staff_member_id", null: false, comment: "職員レコードへの外部キー"
     t.string   "type",            null: false, comment: "イベントタイプ"
     t.datetime "created_at",      null: false, comment: "発生時刻"
@@ -167,7 +167,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["staff_member_id"], name: "index_staff_events_on_staff_member_id", using: :btree
   end
 
-  create_table "staff_members", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "職員" do |t|
+  create_table "staff_members", force: :cascade, comment: "職員" do |t|
     t.string   "email",                            null: false, comment: "メールアドレス"
     t.string   "email_for_index",                  null: false, comment: "索引用メールアドレス"
     t.string   "family_name",                      null: false, comment: "姓"
@@ -184,7 +184,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do
     t.index ["family_name_kana", "given_name_kana"], name: "index_staff_members_on_family_name_kana_and_given_name_kana", using: :btree
   end
 
-  create_table "tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "タグ" do |t|
+  create_table "tags", force: :cascade, comment: "タグ" do |t|
     t.string   "value",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
