@@ -20,5 +20,7 @@
 //= require jquery-ui/datepicker-ja
 //= require moment
 //= require moment/ja
+//= require jquery-ui
+//= require tag-it
 //= require bootstrap-datetimepicker
 //= require_tree ./staff
