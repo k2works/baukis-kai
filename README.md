@@ -782,6 +782,7 @@ git push heroku master
 + ルーティング
 + indexアクションの変更
 + リンクの設置
++ staff/messagesコントローラ
 
 #### 一意制約と排他的ロック
 #### 演習問題  
