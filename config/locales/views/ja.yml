@@ -348,6 +348,8 @@ ja:
         created_at: '作成日時'
         action: 'アクション'
         detail: '詳細'
+        delete: '削除'
+        delete_confirm: '本当に削除しますか?'
       show:
         title: 'メッセージ詳細'
         sender: '送信者'

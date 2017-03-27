@@ -20,6 +20,7 @@
           <td class="Table__td--date"><%= p.created_at %></td>
           <td class="Table__td--action">
             <%= link_to t('customer.messages.index.detail'), customer_message_path(m), class: 'btn btn-default btn-xs' %>
+            <%= link_to t('customer.messages.index.delete'), customer_message_path(m), method: :delete, data: { confirm: t('.delete_confirm')},class: 'btn btn-default btn-xs' %>
           </td>
         </tr>
     <% end %>

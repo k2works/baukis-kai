@@ -85,6 +85,7 @@
 #                                 POST   /messages(.:format)                                  customer/messages#create {:host=>"0.0.0.0"}
 #            new_customer_message GET    /messages/new(.:format)                              customer/messages#new {:host=>"0.0.0.0"}
 #                customer_message GET    /messages/:id(.:format)                              customer/messages#show {:host=>"0.0.0.0"}
+#                                 DELETE /messages/:id(.:format)                              customer/messages#destroy {:host=>"0.0.0.0"}
 #                            root GET    /                                                    errors#routing_error
 #                                 GET    /*anything(.:format)                                 errors#routing_error
 #
@@ -155,7 +156,7 @@ Rails.application.routes.draw do
           patch :cancel, on: :member
         end
       end
-      resources :messages, only: [ :index, :show, :new, :create ] do
+      resources :messages, except: [ :edit, :update ] do
         post :confirm, on: :collection
       end
     end

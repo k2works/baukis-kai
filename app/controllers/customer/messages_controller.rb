@@ -1,6 +1,6 @@
 class Customer::MessagesController < Customer::Base
   def index
-    @messages = current_customer.inbound_messages.page(params[:page])
+    @messages = current_customer.inbound_messages.where(discarded: false).page(params[:page])
   end
 
   def show
@@ -36,6 +36,13 @@ class Customer::MessagesController < Customer::Base
     else
       render action: 'new'
     end
+  end
+
+  def destroy
+    message = StaffMessage.find(params[:id])
+    message.update_column(:discarded, true)
+    flash.notice = t('.flash_notice')
+    redirect_to :back
   end
 
   private
