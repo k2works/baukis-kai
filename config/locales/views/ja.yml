@@ -346,6 +346,13 @@ ja:
         sender: '送信者'
         subject: '件名'
         created_at: '作成日時'
+        action: 'アクション'
+        detail: '詳細'
+      show:
+        title: 'メッセージ詳細'
+        sender: '送信者'
+        subject: '件名'
+        created_at: '作成日時'
       new:
         title: '新規問い合わせ'
         submit: '確認画面へ進む'

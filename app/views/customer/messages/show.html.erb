@@ -1,0 +1,14 @@
+<section class="Section">
+  <h1 class="Customer__title"><%= @title %></h1>
+</section>
+
+<section class="Section l-column Table CustomerTable">
+  <table class="Table__body Table__body--attributes CustomerTable__body">
+    <% p = MessagePresenter.new(@message, self) %>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.sender') %></th><td><%= p.sender %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.subject') %></th><td><%= p.subject %></td></tr>
+    <tr class="Table__tr"><th class="Table__th"><%= t('.created_at') %></th><td class="Table__td--date"><%= p.created_at %></td></tr>
+  </table>
+
+  <div class="Table__body--description"><%= p.formatted_body %></div>
+</section>
