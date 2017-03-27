@@ -785,6 +785,9 @@ git push heroku master
 + staff/messagesコントローラ
 
 #### 一意制約と排他的ロック
++ 問題の所在
++ 排他制御のための専用テーブルを作る
+
 #### 演習問題  
 
 **[⬆ back to top](#構成)**
