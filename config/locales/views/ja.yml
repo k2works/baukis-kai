@@ -276,6 +276,7 @@ ja:
       dashboard:
         title: 'ダッシュボード'
         customer_programs: 'プログラム一覧'
+        customer_messages: '受信メッセージ一覧'
     programs:
       index:
         title: 'プログラム管理'
@@ -341,6 +342,10 @@ ja:
         update: '更新'
         correct: '訂正'
     messages:
+      index:
+        sender: '送信者'
+        subject: '件名'
+        created_at: '作成日時'
       new:
         title: '新規問い合わせ'
         submit: '確認画面へ進む'

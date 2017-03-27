@@ -24,7 +24,7 @@
       <th class="Table__th"><%= t('staff.messages.index.action') %></th>
     </tr>
     <% @messages.each do |m| %>
-        <% p = Staff::MessagePresenter.new(m, self) %>
+        <% p = MessagePresenter.new(m, self) %>
         <tr class="Table__tr">
           <td class="Table__td"><%= p.type %></td>
           <td class="Table__td"><%= p.sender %></td>

@@ -81,7 +81,8 @@
 #               customer_programs GET    /programs(.:format)                                  customer/programs#index {:host=>"0.0.0.0"}
 #                customer_program GET    /programs/:id(.:format)                              customer/programs#show {:host=>"0.0.0.0"}
 #       confirm_customer_messages POST   /messages/confirm(.:format)                          customer/messages#confirm {:host=>"0.0.0.0"}
-#               customer_messages POST   /messages(.:format)                                  customer/messages#create {:host=>"0.0.0.0"}
+#               customer_messages GET    /messages(.:format)                                  customer/messages#index {:host=>"0.0.0.0"}
+#                                 POST   /messages(.:format)                                  customer/messages#create {:host=>"0.0.0.0"}
 #            new_customer_message GET    /messages/new(.:format)                              customer/messages#new {:host=>"0.0.0.0"}
 #                            root GET    /                                                    errors#routing_error
 #                                 GET    /*anything(.:format)                                 errors#routing_error
@@ -153,7 +154,7 @@ Rails.application.routes.draw do
           patch :cancel, on: :member
         end
       end
-      resources :messages, only: [ :new, :create ] do
+      resources :messages, only: [ :index, :new, :create ] do
         post :confirm, on: :collection
       end
     end

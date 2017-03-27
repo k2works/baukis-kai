@@ -1,4 +1,4 @@
-class Staff::MessagePresenter < ModelPresenter
+class MessagePresenter < ModelPresenter
   delegate :subject, :body, to: :object
 
   def type
