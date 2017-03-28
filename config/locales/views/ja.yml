@@ -355,6 +355,7 @@ ja:
         sender: '送信者'
         subject: '件名'
         created_at: '作成日時'
+        reply: '回答する'
       new:
         title: '新規問い合わせ'
         submit: '確認画面へ進む'
@@ -364,3 +365,17 @@ ja:
         confirm_message: '以下の内容でアカウントを更新します。よろしいですか？'
         update: '送信'
         correct: '訂正'
+    replies:
+      new:
+        title: 'メッセージへの返信'
+        submit: '確認画面へ進む'
+        cancel: 'キャンセル'
+        sender: '送信者'
+        subject: '件名'
+        created_at: '作成日時'
+      confirm:
+        title: '問い合わせへの返信（確認）'
+        send: '送信'
+        correct: '訂正'
+        cancel: 'キャンセル'
+        confirm_message: '以下の内容で返信します。よろしいですか？'

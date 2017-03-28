@@ -81,6 +81,9 @@
 #               customer_programs GET    /programs(.:format)                                  customer/programs#index {:host=>"0.0.0.0"}
 #                customer_program GET    /programs/:id(.:format)                              customer/programs#show {:host=>"0.0.0.0"}
 #       confirm_customer_messages POST   /messages/confirm(.:format)                          customer/messages#confirm {:host=>"0.0.0.0"}
+#  confirm_customer_message_reply POST   /messages/:message_id/reply/confirm(.:format)        customer/replies#confirm {:host=>"0.0.0.0"}
+#      new_customer_message_reply GET    /messages/:message_id/reply/new(.:format)            customer/replies#new {:host=>"0.0.0.0"}
+#          customer_message_reply POST   /messages/:message_id/reply(.:format)                customer/replies#create {:host=>"0.0.0.0"}
 #               customer_messages GET    /messages(.:format)                                  customer/messages#index {:host=>"0.0.0.0"}
 #                                 POST   /messages(.:format)                                  customer/messages#create {:host=>"0.0.0.0"}
 #            new_customer_message GET    /messages/new(.:format)                              customer/messages#new {:host=>"0.0.0.0"}
@@ -158,6 +161,9 @@ Rails.application.routes.draw do
       end
       resources :messages, except: [ :edit, :update ] do
         post :confirm, on: :collection
+        resource :reply, only: [ :new, :create ] do
+          post :confirm
+        end
       end
     end
   end

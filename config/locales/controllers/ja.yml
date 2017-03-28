@@ -97,4 +97,11 @@ ja:
         flash_alert: '入力に誤りがあります。'
       destroy:
         flash_notice: 'メッセージを削除しました。'
+    replies:
+      confirm:
+        flash_alert: '入力に誤りがあります。'
+      create:
+        flash_notice: 'メッセージ返信しました。'
+        flash_alert: '入力に誤りがあります。'
+
 
