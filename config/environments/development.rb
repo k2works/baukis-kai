@@ -53,9 +53,9 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.baukis_kai = {
-      staff: { host: '0.0.0.0', path: 'staff' },
-      admin: { host: '0.0.0.0', path: 'admin' },
-      customer: { host: '0.0.0.0', path: '' },
+      staff: { host: '127.0.0.1', path: 'staff' },
+      admin: { host: '127.0.0.1', path: 'admin' },
+      customer: { host: '127.0.0.1', path: '' },
       restrict_ip_addresses: false
   }
 

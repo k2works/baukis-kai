@@ -1,7 +1,15 @@
 version: '2'
 services:
   db:
-    image: mysql
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-db:/var/lib/mysql
   web:
     build: .
     environment:
@@ -24,3 +32,23 @@ services:
       - web
     volumes:
       - ./nginx_default.conf:/etc/nginx/conf.d/default.conf
+
+  console:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: app_development
+    volumes:
+      - .:/srv
+    depends_on:
+      - db
+    stdin_open: true
+
+volumes:
+  mysql-db:
+    driver: local

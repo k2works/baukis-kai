@@ -1,9 +1,95 @@
-FROM ruby:2.4
+FROM ubuntu:18.04
 
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN mkdir /myapp
-WORKDIR /myapp
-ADD Gemfile /myapp/Gemfile
-ADD Gemfile.lock /myapp/Gemfile.lock
-RUN bundle install
-ADD . /myapp
+# Setup locale
+RUN \
+apt-get -yq update && \
+apt-get install -y language-pack-ja-base language-pack-ja
+RUN update-locale LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja
+ENV LANG=ja_JP.UTF-8
+ENV LC_ALL=ja_JP.UTF-8
+ENV LC_CTYPE=ja_JP.UTF-8
+
+RUN apt-get update && \
+    apt-get install -y \
+           sudo \
+           build-essential \
+           zip \
+           unzip \
+           git \
+           curl \
+           wget \
+           git-core \
+           libssl-dev \
+           libqt4-dev \
+           libc6-dev \
+           automake \
+           libtool \
+           libyaml-dev \
+           zlib1g \
+           zlib1g-dev \
+           openssl \
+           libreadline-dev \
+           libxml2-dev \
+           libxslt1-dev \
+           libncurses5-dev \
+           pkg-config \
+           chrpath \
+           libfontconfig1-dev \
+           libxft-dev \
+           libpq-dev \
+           libsqlite3-dev \
+           libmysqlclient-dev \
+           default-mysql-client \
+           postgresql-client \
+           xvfb \
+           qtbase5-dev \
+           libqt5webkit5-dev \
+           libqtwebkit-dev \
+           xauth \
+           libcurl4-openssl-dev \
+           software-properties-common \
+           libffi-dev \
+           libgdbm5 \
+           libgdbm-dev \
+           libdb-dev \
+           lsof \
+           vim
+
+# Ruby
+ENV RUBY_VER 2.4.0
+ENV BUNDLER_VER 1.13.7
+RUN rm -rf ~/.rbenv
+RUN git clone https://github.com/sstephenson/rbenv ~/.rbenv
+RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+RUN ~/.rbenv/plugins/ruby-build/install.sh
+RUN echo 'export PATH="/$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+RUN echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+RUN . ~/.bash_profile && \
+         rbenv install $RUBY_VER  && \
+         rbenv global $RUBY_VER
+ENV PATH ~/.rbenv/shims:$PATH
+RUN ~/.rbenv/shims/gem install bundler:$BUNDLER_VER
+
+# Node
+ENV NODE_VER 16
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+RUN . $HOME/.nvm/nvm.sh && \
+    nvm install $NODE_VER && \
+    nvm use $NODE_VER && \
+    node -v && npm -v && \
+    npm i -g yarn
+RUN apt install -y nodejs
+
+# Workaround for Ruby
+RUN apt-get install -y libmysqlclient-dev
+RUN ~/.rbenv/shims/gem install mysql2 -v '0.4.5' --source 'https://rubygems.org/'
+RUN apt-get install -y libssl1.0-dev
+RUN ~/.rbenv/shims/gem install puma -v '3.6.0' --source 'https://rubygems.org/'
+
+# Bundle install
+WORKDIR /srv
+COPY Gemfile /srv/Gemfile
+COPY Gemfile.lock /srv/Gemfile.lock
+RUN ~/.rbenv/shims/bundle install
+
+SHELL ["/bin/bash", "-c"]

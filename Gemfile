@@ -79,7 +79,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'
 
 gem 'font-awesome-rails'
 gem 'rails_12factor', group: :production
@@ -95,4 +95,3 @@ gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'tag-it-rails'
-
