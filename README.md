@@ -42,16 +42,12 @@ Baukis 改
    1. [検索フォーム](#検索フォーム)
 
 ## アプリケーション環境構築
-### Vagarntのセットアップ
-```
-vagrant up
-vagrant ssh
-```
 
 ### Dockerのセットアップ
 ```
-cd /vagrant/
-docker-compose build
+docker build -t baukis-kai -f Dockerfile-base .
+docker compose build
+docker compose up -d
 ```
 
 ### 追加Gemセットアップ

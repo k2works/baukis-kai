@@ -1,5 +1,18 @@
 version: '2'
 services:
+  app:
+    build:
+      context: .
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: app_development
+    ports:
+      - "3000:3000"
   db:
     image: mysql:5.7
     environment:
@@ -10,33 +23,11 @@ services:
       - 3306:3306
     volumes:
       - mysql-db:/var/lib/mysql
-  web:
-    build: .
-    environment:
-      - RAILS_ENV=production
-      - RAILS_SERVE_STATIC_FILES=public
-      - SECRET_KEY_BASE=8ea360b9c9f1fd8686e20bcf0e02ddcbcd78ad5984559739e04f343d79e44d3cecb09a2b930d0c78bfc5778026b7905a414222f43dd24db86fc076e43e4c35fa
-      - DATABASE_URL=db
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
-    volumes:
-      - .:/myapp
-    ports:
-      - "3000:3000"
-    depends_on:
-      - db
-  proxy:
-    image: nginx:1.11
-    ports:
-      - "80:80"
-    depends_on:
-      - web
-    volumes:
-      - ./nginx_default.conf:/etc/nginx/conf.d/default.conf
 
   console:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile-base
     environment:
       MYSQL_HOST: db
       MYSQL_PORT: 3306
