@@ -27,7 +27,7 @@ services:
   console:
     build:
       context: .
-      dockerfile: Dockerfile-base
+      dockerfile: Dockerfile-console
     environment:
       MYSQL_HOST: db
       MYSQL_PORT: 3306

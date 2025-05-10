@@ -1,0 +1,85 @@
+FROM baukis-kai
+
+# タイムゾーンの設定を非対話的に行うための環境変数
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Tokyo
+
+# PATH変数に ~/.local/bin を追加
+ENV PATH="$PATH:/root/.local/bin"
+
+# バージョン指定
+ENV PACKER_VERSION=1.9.2
+ENV TERRAFORM_VERSION=1.6.6
+
+# 必要なパッケージのインストール
+RUN apt-get update && \
+    apt-get install -y \
+    curl \
+    unzip \
+    sudo \
+    ansible \
+    rsync \
+    vim \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# AWS CLIのインストール
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    sudo ./aws/install && \
+    rm -rf awscliv2.zip aws
+
+# EB CLIのインストール
+RUN curl -O https://bootstrap.pypa.io/pip/3.6/get-pip.py
+RUN python3 get-pip.py --user
+RUN ~/.local/bin/pip install awsebcli --upgrade --user
+
+# Packerのインストール
+RUN curl -fsSL https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip -o packer.zip && \
+    unzip packer.zip -d /usr/local/bin && \
+    rm packer.zip
+
+# Terraformのインストール
+RUN curl -fsSL https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o terraform.zip && \
+    unzip terraform.zip -d /usr/local/bin && \
+    rm terraform.zip
+
+# Ubuntu特有のEasyRSAパスを確認
+RUN apt-get update && apt-get install -y easy-rsa && \
+    EASYRSA_PATH=$(find /usr -name "easyrsa" -type f | head -1) && \
+    if [ -n "$EASYRSA_PATH" ]; then \
+    echo "Found EasyRSA at $EASYRSA_PATH"; \
+    EASYRSA_DIR=$(dirname $EASYRSA_PATH); \
+    mkdir -p /home/vscode/easy-rsa; \
+    cp -r $EASYRSA_DIR/* /home/vscode/easy-rsa/; \
+    else \
+    echo "EasyRSA not found in standard locations, downloading..."; \
+    mkdir -p /home/vscode/easy-rsa; \
+    wget -qO- https://github.com/OpenVPN/easy-rsa/releases/download/v3.1.5/EasyRSA-3.1.5.tgz | tar xz -C /home/vscode/easy-rsa/ --strip-components=1; \
+    fi && \
+    mkdir -p /home/vscode && \
+    useradd -m vscode || true && \
+    chown -R vscode:vscode /home/vscode/easy-rsa && \
+    chmod -R 755 /home/vscode/easy-rsa
+
+# ヘルパーコマンドの作成
+RUN echo '#!/bin/bash\necho "Checking for EasyRSA:"\nfind /usr -name "easyrsa" -type f\necho ""\necho "Checking for OpenSSL configs:"\nfind /usr -name "openssl-*.cnf"' > /usr/local/bin/check-easyrsa && \
+    chmod +x /usr/local/bin/check-easyrsa
+
+# Homebrewのインストール
+RUN apt-get update && apt-get install -y build-essential procps curl file git
+RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || true
+RUN echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /root/.bashrc
+RUN eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
+# aws-vaultのインストール
+RUN /bin/bash -c "source /root/.bashrc && brew install aws-vault"
+
+# Bundle install
+WORKDIR /srv
+COPY Gemfile /srv/Gemfile
+COPY Gemfile.lock /srv/Gemfile.lock
+RUN ~/.rbenv/shims/bundle install
+
+SHELL ["/bin/bash", "-c"]
