@@ -1,4 +1,3 @@
-version: '2'
 services:
   app:
     build:
@@ -13,6 +12,9 @@ services:
       MYSQL_DATABASE: app_development
     ports:
       - "3000:3000"
+    working_dir: /app
+    volumes:
+      - ./:/app
   db:
     image: mysql:5.7
     environment:
@@ -35,7 +37,8 @@ services:
       MYSQL_PASSWORD: pass
       MYSQL_DATABASE: app_development
     volumes:
-      - .:/srv
+      - ./:/srv
+    working_dir: /srv
     depends_on:
       - db
     stdin_open: true
