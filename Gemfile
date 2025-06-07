@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.7.8'
+ruby '3.4.4'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -96,3 +96,13 @@ gem 'bootstrap3-datetimepicker-rails'
 gem 'tag-it-rails'
 gem 'ffi', '~> 1.15.5'
 gem 'concurrent-ruby', '1.3.4'
+# Ruby 3.4対応（標準ライブラリから削除されたgem）
+gem 'webrick'
+gem 'observer'
+gem 'mutex_m'
+gem 'bigdecimal'
+gem 'drb'
+gem 'ostruct'
+gem 'base64'
+gem 'csv'
+gem 'nkf'
