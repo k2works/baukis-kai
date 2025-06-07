@@ -8,7 +8,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.6.1'
+gem 'rails', '~> 6.1.7.10'
 # Use mysql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -55,7 +55,6 @@ group :development do
   gem 'spring-watcher-listen'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'migration_comments'
   gem 'annotate'
   gem 'i18n_generators'
   gem 'yard'
