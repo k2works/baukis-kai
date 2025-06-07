@@ -67,10 +67,11 @@ end
 group :test do
   gem 'faker'
   gem 'capybara'
-  gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'webdrivers'
   gem 'shoulda-matchers'
   gem 'capybara-screenshot'
   gem 'rails-controller-testing'
@@ -105,3 +106,4 @@ gem 'ostruct'
 gem 'base64'
 gem 'csv'
 gem 'nkf'
+
