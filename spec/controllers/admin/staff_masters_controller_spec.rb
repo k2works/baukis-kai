@@ -16,14 +16,14 @@ describe Admin::StaffMembersController do
   describe '#create' do
     # 職員一覧ページにリダイレクト
     it 'should redirect to StaffMember index page' do
-      post :create, staff_member: params_hash
+      post :create, params: { staff_member: params_hash }
       expect(response).to redirect_to(admin_staff_members_url)
     end
 
     # 例外ActionController::ParameterMissingが発生
     it 'should raise ActionController::ParameterMissing exception' do
       bypass_rescue
-      expect { post :create}.to raise_error(ActionController::ParameterMissing)
+      expect { post :create, params: {} }.to raise_error(ActionController::ParameterMissing)
     end
   end
 
@@ -33,7 +33,7 @@ describe Admin::StaffMembersController do
     # suspendedフラグをセットする
     it 'should set suspended flag' do
       params_hash.merge!(suspended: true)
-      patch :update, id: staff_member.id, staff_member: params_hash
+      patch :update, params: { id: staff_member.id, staff_member: params_hash }
       staff_member.reload
       expect(staff_member).to be_suspended
     end
@@ -43,7 +43,7 @@ describe Admin::StaffMembersController do
       params_hash.delete(:password)
       params_hash.merge!(hashed_password: 'x')
       expect {
-      patch :update, id: staff_member.id, staff_member: params_hash
+      patch :update, params: { id: staff_member.id, staff_member: params_hash }
       }.not_to change { staff_member.hashed_password.to_s }
     end
   end

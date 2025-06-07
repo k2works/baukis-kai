@@ -10,7 +10,7 @@ shared_examples 'a protected admin controller' do
   describe '#show' do
     # ログインフォームにリダイレクト
     it 'should redirect to login form' do
-      get :show, id: 1
+      get :show, params: { id: 1 }
       expect(response).to redirect_to(admin_login_url)
     end
   end
