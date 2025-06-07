@@ -11,7 +11,13 @@ module EmailHolder
 
     validates :email, presence: true, email: { allow_blank: true }
     validates :email_for_index, uniqueness: { allow_blank: true }
-
+    validates :email,
+              presence: true,
+              email: { allow_blank: true },
+              format: {
+                with: /\A[^@]+@[^@]+\z/,
+                message: "は1つの@のみ使用できます"
+              }
     after_validation do
       if errors.include?(:email_for_index)
         errors.add(:email, :taken)
