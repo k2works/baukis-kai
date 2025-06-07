@@ -4,6 +4,7 @@ class Staff::AddressFormPresenter < FormPresenter
       m << decorated_label(name, label_text, options)
       m << text_field(name, hide_label: true, class: options[:required] ? 'required' : nil)
       m.span '(7桁の半角数字で入力してください。)', class: 'AppForm__notes'
+      m << error_message_for(name)
     end
   end
 end

@@ -29,7 +29,7 @@ class Staff::CustomerForm
 
     customer.assign_attributes(customer_params)
 
-    phones = phone_params(:customer).fetch(:phones)
+    phones = phone_params(:customer)[:phones] || {}
     customer.personal_phones.size.times do |index|
       attributes = phones[index.to_s]
       if attributes && attributes[:number].present?
@@ -42,7 +42,7 @@ class Staff::CustomerForm
     if inputs_home_address
       customer.home_address.assign_attributes(home_address_params)
 
-      phones = phone_params(:home_address).fetch(:phones)
+      phones = phone_params(:home_address)[:phones] || {}
       customer.home_address.phones.size.times do |index|
         attributes = phones[index.to_s]
         if attributes && attributes[:number].present?
@@ -57,7 +57,7 @@ class Staff::CustomerForm
     if inputs_work_address
       customer.work_address.assign_attributes(work_address_params)
 
-      phones = phone_params(:work_address).fetch(:phones)
+      phones = phone_params(:work_address)[:phones] || {}
       customer.work_address.phones.size.times do |index|
         attributes = phones[index.to_s]
         if attributes && attributes[:number].present?
@@ -109,5 +109,8 @@ class Staff::CustomerForm
 
   def phone_params(record_name)
     @params.require(record_name).permit(phones: [ :number, :primary ])
+  rescue ActionController::ParameterMissing
+    # If the phones parameter is missing, return an empty hash with phones key
+    { phones: {} }
   end
 end
