@@ -24,7 +24,7 @@ class CreateMessages < ActiveRecord::Migration[5.0]
 
     add_foreign_key :messages, :customers
     add_foreign_key :messages, :staff_members
-    add_foreign_key :messages, :messages, column: 'root_id'
-    add_foreign_key :messages, :messages, column: 'parent_id'
+    add_foreign_key :messages, :messages, column: :root_id
+    add_foreign_key :messages, :messages, column: :parent_id
   end
 end

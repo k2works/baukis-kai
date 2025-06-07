@@ -14,6 +14,6 @@ class CreatePrograms < ActiveRecord::Migration[5.0]
 
     add_index :programs, :registrant_id
     add_index :programs, :application_start_time
-    add_foreign_key :programs, :staff_members, column: 'registrant_id'
+    add_foreign_key :programs, :staff_members, column: :registrant_id
   end
 end
