@@ -20,7 +20,7 @@
 #  index_phones_on_number_for_index  (number_for_index)
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :phone do
     
   end

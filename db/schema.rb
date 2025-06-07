@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2017_03_27_081649) do
-
+ActiveRecord::Schema[7.2].define(version: 2017_03_27_081649) do
   create_table "addresses", id: :integer, charset: "utf8mb3", comment: "住所", force: :cascade do |t|
     t.integer "customer_id", null: false, comment: "顧客への外部キー"
     t.string "type", null: false, comment: "継承カラム"

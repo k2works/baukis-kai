@@ -15,10 +15,10 @@
 #  index_administrators_on_email_for_index  (email_for_index) UNIQUE
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :administrator do
     sequence(:email) { |n| "admin#{n}@example.com" }
-    password 'pw'
-    suspended false
+    password {'pw'}
+    suspended {false}
   end
 end

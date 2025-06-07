@@ -8,7 +8,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.7.10'
+gem 'rails', '~> 7.2.2.1'
 # Use mysql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -41,7 +41,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'debase'
 end
 

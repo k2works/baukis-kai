@@ -30,16 +30,16 @@
 #  index_messages_on_type_and_staff_member_id                  (type,staff_member_id)
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :customer_message do
-    subject 'Subject'
-    body "Body.\nBody."
+    subject {'Subject'}
+    body {"Body.\nBody."}
     customer
   end
 
   factory :staff_message do
-    subject 'Subject'
-    body "Body.\nBody."
+    subject {'Subject'}
+    body {"Body.\nBody."}
     parent { FactoryGirl.create(:customer_message)}
     staff_member
   end

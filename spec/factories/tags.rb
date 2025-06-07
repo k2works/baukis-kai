@@ -12,7 +12,7 @@
 #  index_tags_on_value  (value) UNIQUE
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :tag do
     
   end

@@ -17,7 +17,7 @@
 #  index_entries_on_program_id_and_customer_id  (program_id,customer_id) UNIQUE
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :entry do
     
   end
