@@ -56,8 +56,8 @@ RUN apt-get update && \
            vim
 
 # Ruby
-ENV RUBY_VER 2.4.0
-ENV BUNDLER_VER 1.13.7
+ENV RUBY_VER 2.7.8
+ENV BUNDLER_VER 2.1.4
 RUN rm -rf ~/.rbenv
 RUN git clone https://github.com/sstephenson/rbenv ~/.rbenv
 RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
@@ -80,8 +80,3 @@ RUN . $HOME/.nvm/nvm.sh && \
     npm i -g yarn
 RUN apt install -y nodejs
 
-# Workaround for Ruby
-RUN apt-get install -y libmysqlclient-dev
-RUN ~/.rbenv/shims/gem install mysql2 -v '0.4.5' --source 'https://rubygems.org/'
-RUN apt-get install -y libssl1.0-dev
-RUN ~/.rbenv/shims/gem install puma -v '3.6.0' --source 'https://rubygems.org/'
