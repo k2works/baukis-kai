@@ -45,7 +45,7 @@ Baukis 改
 
 ### Dockerのセットアップ
 ```
-docker build -t app:base-kai .
+docker build -t app:base .
 docker compose build
 docker compose up -d
 ```
