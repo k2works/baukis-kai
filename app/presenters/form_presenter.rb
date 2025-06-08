@@ -31,6 +31,7 @@ class FormPresenter
       if options[:maxlength]
         m.span "(#{options[:maxlength]}文字以内)", class: 'instruction'
       end
+      m << error_message_for(name)
     end
   end
 
@@ -42,14 +43,15 @@ class FormPresenter
         max = view_context.number_with_delimiter(options[:max].to_i)
         m.span "(最大値： #{max})", class: 'instruction'
       end
+      m << error_message_for(name)
     end
-
   end
 
   def password_field_block(name, label_text, options = {})
     markup(:div, class: 'AppForm__input-block') do |m|
       m << decorated_label(name, label_text, options)
       m << password_field(name, hide_label: true, class: options[:required] ? 'required' : nil)
+      m << error_message_for(name)
     end
   end
 
@@ -63,20 +65,22 @@ class FormPresenter
         options[:class] = 'datetimepicker'
       end
       m << text_field(name, options.merge(hide_label: true))
+      m << error_message_for(name)
     end
   end
 
   def drop_down_list_block(name, label_text, choices, options ={})
     markup(:div, class: 'AppForm__input-block') do |m|
       m << form_builder.select(name, choices, options.merge(include_blank: true).merge(label: label_text))
+      m << error_message_for(name)
     end
   end
 
   def error_message_for(name)
     markup do |m|
       object.errors.full_messages_for(name).each do |message|
-        m.div(class: 'error-message') do |m|
-          m.text message
+        m.div(class: 'has-error') do |m|
+          m.span(message, class: 'help-block')
         end
       end
     end

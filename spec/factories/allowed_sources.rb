@@ -17,7 +17,7 @@
 #  index_allowed_sources_on_namespace_and_octets  (namespace,octet1,octet2,octet3,octet4) UNIQUE
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :allowed_source do
     
   end

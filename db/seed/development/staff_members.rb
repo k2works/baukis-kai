@@ -28,7 +28,7 @@ given_name = %w{
   gn = given_name[n % 5].split(':')
 
   StaffMember.create!(
-                 email: "#{fn[2]}.#{gn[2]}@example.com",
+                 email: "#{fn[2]}.#{gn[2]}-#{n}@example.com",
                  family_name: fn[0],
                  given_name: gn[0],
                  family_name_kana: fn[1],

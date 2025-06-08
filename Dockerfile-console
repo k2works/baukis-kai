@@ -1,0 +1,11 @@
+FROM app:base
+
+# Bundle install
+WORKDIR /srv
+COPY Gemfile /srv/Gemfile
+COPY Gemfile.lock /srv/Gemfile.lock
+RUN ~/.rbenv/shims/bundle install
+
+COPY . /srv
+
+SHELL ["/bin/bash", "-c"]

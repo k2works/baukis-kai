@@ -107,5 +107,5 @@ bower.json
 .byebug_history
 
 public/assets/
+.idea/
 *.iml
-.idea

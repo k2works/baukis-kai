@@ -1,0 +1,20 @@
+{
+	"name": "Baukis-Kai Dev Container",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		}
+	},
+
+	"customizations": {
+		"jetbrains": {
+			"backend": "IntelliJ"
+		}
+	}
+}

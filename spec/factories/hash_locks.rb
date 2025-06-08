@@ -14,7 +14,7 @@
 #  index_hash_locks_on_table_and_column_and_key  (table,column,key) UNIQUE
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :hash_lock do
     
   end

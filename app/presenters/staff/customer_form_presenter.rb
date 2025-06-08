@@ -9,6 +9,7 @@ class Staff::CustomerFormPresenter < UserFormPresenter
         options[:class] = 'birthday-picker'
       end
       m << text_field(name, options.merge(hide_label: true))
+      m << error_message_for(name)
     end
   end
 
@@ -19,6 +20,7 @@ class Staff::CustomerFormPresenter < UserFormPresenter
       m << label(:gender_male, '男性')
       m << radio_button(:gender, 'female')
       m << label(:gender_female, '女性')
+      m << error_message_for(:gender)
     end
   end
 end

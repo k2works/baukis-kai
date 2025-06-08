@@ -13,7 +13,7 @@
 #  index_message_tag_links_on_tag_id                 (tag_id)
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :message_tag_link do
     
   end

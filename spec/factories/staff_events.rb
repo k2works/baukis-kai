@@ -14,7 +14,7 @@
 #  index_staff_events_on_staff_member_id_and_created_at  (staff_member_id,created_at)
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :staff_event do
     
   end

@@ -4,6 +4,11 @@
 <div>
   <%= f.label :email, t('activerecord.attributes.staff_member.email'), class: 'AppForm__label required' %>
   <%= f.text_field :email, hide_label: true, size: 32, required: true %>
+  <% if @staff_member.errors.include?(:email) %>
+    <div class="has-error">
+      <span class="help-block"><%= @staff_member.errors.full_messages_for(:email).first %></span>
+    </div>
+  <% end %>
 </div>
 <div>
   <%= f.label :family_name, '氏名', class: 'required' %>

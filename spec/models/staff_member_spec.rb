@@ -77,8 +77,8 @@ RSpec.describe StaffMember, type: :model do
   describe 'validation' do
     # @を2個含むemailは無効
     it 'invalid email containing 2 @' do
-      memeber = build(:staff_member, email: 'test@@example.com')
-      expect(memeber).not_to be_valid
+      member = build(:staff_member, email: 'test@@example.com')
+      expect(member).not_to be_valid
     end
 
     # 漢字を含むfamily_name_kanaは無効
