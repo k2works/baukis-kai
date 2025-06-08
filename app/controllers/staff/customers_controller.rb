@@ -22,7 +22,7 @@ class Staff::CustomersController < Staff::Base
 
   def create
     @customer_form = Staff::CustomerForm.new
-    @customer_form.assign_attributes(params.require(:form))
+    @customer_form.assign_attributes(params[:form])
     if @customer_form.save
       flash.notice = t('.flash_notice')
       redirect_to action: 'index'
@@ -34,7 +34,7 @@ class Staff::CustomersController < Staff::Base
 
   def update
     @customer_form = Staff::CustomerForm.new(Customer.find(params[:id]))
-    @customer_form.assign_attributes(params.require(:form))
+    @customer_form.assign_attributes(params[:form])
     if @customer_form.save
       flash.notice = t('.flash_notice')
       redirect_to action: 'index'

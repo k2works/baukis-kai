@@ -6,14 +6,14 @@ class Staff::CustomerForm
 
   def initialize(customer = nil)
     @customer = customer
-    @customer ||= Customer.new(gender: 'male')
+    @customer ||= Customer.new(gender: 'mail')
     (2 - @customer.personal_phones.size).times do
       @customer.personal_phones.build
     end
     self.inputs_home_address = @customer.home_address.present?
     self.inputs_work_address = @customer.work_address.present?
-    @customer.build_home_address unless @customer.home_address
-    @customer.build_work_address unless @customer.work_address
+    @customer.build_home_address unless @customer.home_address.present?
+    @customer.build_work_address unless @customer.work_address.present?
     (2 - @customer.home_address.phones.size).times do
       @customer.home_address.phones.build
     end
@@ -24,12 +24,13 @@ class Staff::CustomerForm
 
   def assign_attributes(params = {})
     @params = params
-    self.inputs_home_address = params[:inputs_home_address] == '1'
-    self.inputs_work_address = params[:inputs_work_address] == '1'
+
+    self.inputs_home_address = (params[:inputs_home_address] == '1')
+    self.inputs_work_address = (params[:inputs_work_address] == '1')
 
     customer.assign_attributes(customer_params)
 
-    phones = phone_params(:customer)[:phones] || {}
+    phones = phone_params(:customer).fetch(:phones)
     customer.personal_phones.size.times do |index|
       attributes = phones[index.to_s]
       if attributes && attributes[:number].present?
@@ -42,7 +43,7 @@ class Staff::CustomerForm
     if inputs_home_address
       customer.home_address.assign_attributes(home_address_params)
 
-      phones = phone_params(:home_address)[:phones] || {}
+      phones = phone_params(:home_address).fetch(:phones)
       customer.home_address.phones.size.times do |index|
         attributes = phones[index.to_s]
         if attributes && attributes[:number].present?
@@ -54,10 +55,11 @@ class Staff::CustomerForm
     else
       customer.home_address.mark_for_destruction
     end
+
     if inputs_work_address
       customer.work_address.assign_attributes(work_address_params)
 
-      phones = phone_params(:work_address)[:phones] || {}
+      phones = phone_params(:work_address).fetch(:phones)
       customer.work_address.phones.size.times do |index|
         attributes = phones[index.to_s]
         if attributes && attributes[:number].present?
@@ -71,46 +73,31 @@ class Staff::CustomerForm
     end
   end
 
-  private
-  def customer_params
-    @params.require(:customer).permit(
-                                  :email,
-                                  :password,
-                                  :family_name,
-                                  :given_name,
-                                  :family_name_kana,
-                                  :given_name_kana,
-                                  :birthday,
-                                  :gender
-    )
+  def save
+    customer.save
   end
 
-  def home_address_params
-    @params.require(:home_address).permit(
-                                     :postal_code,
-                                     :prefecture,
-                                     :city,
-                                     :address1,
-                                     :address2,
-    )
+  private def customer_params
+    @params.require(:customer).except(:phones).permit(
+      :email, :password,
+      :family_name, :given_name, :family_name_kana, :given_name_kana,
+      :birthday, :gender)
   end
 
-  def work_address_params
-    @params.require(:work_address).permit(
-                                      :postal_code,
-                                      :prefecture,
-                                      :city,
-                                      :address1,
-                                      :address2,
-                                      :company_name,
-                                      :division_name
-    )
+  private def home_address_params
+    @params.require(:home_address).except(:phones).permit(
+      :postal_code, :prefecture, :city, :address1, :address2)
   end
 
-  def phone_params(record_name)
-    @params.require(record_name).permit(phones: [ :number, :primary ])
-  rescue ActionController::ParameterMissing
-    # If the phones parameter is missing, return an empty hash with phones key
-    { phones: {} }
+  private def work_address_params
+    @params.require(:work_address).except(:phones).permit(
+      :postal_code, :prefecture, :city, :address1, :address2,
+      :company_name, :division_name)
+  end
+
+  private def phone_params(record_name)
+    @params.require(record_name).slice(:phones).permit(
+      phones: [ :number, :primary ]
+    )
   end
 end
