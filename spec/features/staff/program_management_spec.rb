@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-# プログラム管理機能
-feature 'Program management function', :performace do
+feature 'プログラム管理機能', :performace do
   include FeaturesSpecHelper
   include PerformanceSpecHelper
   let(:staff_member) { create(:staff_member) }
@@ -19,8 +18,7 @@ feature 'Program management function', :performace do
     login_as_staff_member(staff_member)
   end
 
-  # プログラム一覧
-  scenario 'Program list' do |example|
+  scenario 'プログラム一覧' do |example|
     visit staff_programs_path
     expect(page).to have_css('h1', text: I18n.t('staff.programs.index.title'))
 
