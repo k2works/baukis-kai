@@ -11,6 +11,7 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
 require 'selenium-webdriver'
+require 'capybara-screenshot/rspec'
 
 # Chrome Headless設定
 Capybara.register_driver :selenium_chrome_headless do |app|
@@ -48,6 +49,10 @@ Capybara.default_driver = :rack_test
 Capybara.default_max_wait_time = 5
 Capybara.server_host = '0.0.0.0'
 Capybara.server_port = 3001
+
+# スクリーンショット設定
+Capybara::Screenshot.autosave_on_failure = true
+Capybara::Screenshot.prune_strategy = :keep_last_run
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
