@@ -21,4 +21,13 @@ module FeaturesSpecHelper
       click_button I18n.t('customer.sessions.new.submit')
     end
   end
+
+  def login_as_administrator(administrator, password = 'pw')
+    visit admin_login_path
+    within('.Login--admin') do
+      fill_in I18n.t('activemodel.attributes.admin/login_form.email'), with: administrator.email
+      fill_in I18n.t('activemodel.attributes.admin/login_form.password'), with: password
+      click_button I18n.t('admin.sessions.new.submit')
+    end
+  end
 end
