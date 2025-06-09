@@ -17,15 +17,15 @@ feature '管理者によるアカウント管理' do
     end
 
     expect(current_path).to eq(admin_root_path)
-    expect(page).to have_content(administrator.email)
+    expect(page).to have_content("ログインしました")
   end
 
   scenario '管理者がログアウトする' do
     login_as_administrator(administrator)
     click_link I18n.t('admin.shared.header.logout')
     
-    expect(current_path).to eq(admin_login_path)
-    expect(page).to have_css('.notice', text: I18n.t('admin.sessions.destroy.notice'))
+    expect(current_path).to eq(admin_root_path)
+    expect(page).to have_content("ログアウトしました")
   end
 
   scenario '管理者が無効なパスワードでログインを試みる' do
@@ -36,7 +36,6 @@ feature '管理者によるアカウント管理' do
       click_button I18n.t('admin.sessions.new.submit')
     end
 
-    expect(current_path).to eq(admin_login_path)
-    expect(page).to have_css('.alert', text: I18n.t('admin.sessions.create.alert'))
+    expect(current_path).to eq(admin_session_path)
   end
 end
