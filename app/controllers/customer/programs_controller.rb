@@ -4,6 +4,6 @@ class Customer::ProgramsController < Customer::Base
   end
 
   def show
-    @program = Program.published.find(params[:id])
+    @program = Program.published.find_by(params[:id])
   end
 end
