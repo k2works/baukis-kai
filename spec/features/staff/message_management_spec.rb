@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'スタッフによるメッセージ管理' do
+feature '職員によるメッセージ管理' do
   include FeaturesSpecHelper
   include PerformanceSpecHelper
   let(:staff_member) { create(:staff_member) }
@@ -18,24 +18,24 @@ feature 'スタッフによるメッセージ管理' do
     login_as_staff_member(staff_member)
   end
 
-  scenario 'スタッフがメッセージ一覧を表示する' do
+  scenario '職員がメッセージ一覧を表示する' do
     visit staff_messages_path
     expect(page).to have_css('h1', text: I18n.t('staff.messages.index.title_index'))
     expect(page).to have_content('Hello')
   end
 
-  scenario 'スタッフが問い合わせ一覧を表示する' do
+  scenario '職員が問い合わせ一覧を表示する' do
     visit inbound_staff_messages_path
     expect(page).to have_css('h1', text: I18n.t('staff.messages.index.title_inbound'))
     expect(page).to have_content('Hello')
   end
 
-  scenario 'スタッフが返信一覧を表示する' do
+  scenario '職員が返信一覧を表示する' do
     visit outbound_staff_messages_path
     expect(page).to have_css('h1', text: I18n.t('staff.messages.index.title_outbound'))
   end
 
-  scenario 'スタッフが顧客からのメッセージに返信する' do
+  scenario '職員が顧客からのメッセージに返信する' do
     visit staff_message_path(root_message)
     within('.Table__links') do
       click_link I18n.t('staff.messages.show.reply')
@@ -50,7 +50,7 @@ feature 'スタッフによるメッセージ管理' do
     expect(StaffMessage.find_by(subject: 'Re: Hello', staff_member: staff_member)).to be_present
   end
 
-  scenario 'スタッフが問い合わせを削除する' do
+  scenario '職員が問い合わせを削除する' do
     visit staff_message_path(root_message)
     expect(page).to have_css('h1', text: 'メッセージ詳細')
 
