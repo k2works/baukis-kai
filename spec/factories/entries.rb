@@ -19,6 +19,9 @@
 
 FactoryBot.define do
   factory :entry do
-    
+    program
+    customer
+    approved { false }
+    canceled { false }
   end
 end

@@ -120,7 +120,7 @@ ja:
         program_start: '申し込み開始日時'
         program_end: '申し込み終了日時'
         program_min_entry: '最小参加者数'
-        program_max_entry: '最大参観者数'
+        program_max_entry: '最大参加者数'
         program_entry_count: '申し込み件数'
         program_staff: '登録職員'
         action: 'アクション'
@@ -130,7 +130,7 @@ ja:
         program_start: '申し込み開始日時'
         program_end: '申し込み終了日時'
         program_min_entry: '最小参加者数'
-        program_max_entry: '最大参観者数'
+        program_max_entry: '最大参加者数'
         program_entry_count: '申し込み件数'
         program_staff: '登録職員'
       new:
@@ -151,7 +151,7 @@ ja:
         program_end: '申し込み終了日時'
         program_end_instruction: '開始日時から90日後まで'
         program_min_entry: '最小参加者数'
-        program_max_entry: '最大参観者数'
+        program_max_entry: '最大参加者数'
       entries_form:
         name: '氏名'
         a: 'A'
