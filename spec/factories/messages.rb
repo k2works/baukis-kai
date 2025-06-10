@@ -40,7 +40,7 @@ FactoryBot.define do
   factory :staff_message do
     subject {'Subject'}
     body {"Body.\nBody."}
-    parent { FactoryGirl.create(:customer_message)}
+    parent { FactoryBot.create(:customer_message)}
     staff_member
   end
 end

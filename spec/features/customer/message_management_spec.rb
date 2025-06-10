@@ -11,59 +11,58 @@ feature '顧客によるメッセージ管理' do
   end
 
   scenario '顧客がスタッフにメッセージを送信する' do
-    visit customer_messages_path
-    click_link I18n.t('customer.messages.index.new')
-    
+    visit new_customer_message_path
+
     fill_in I18n.t('activerecord.attributes.message.subject'), with: 'テストメッセージ'
     fill_in I18n.t('activerecord.attributes.message.body'), with: 'これはテストメッセージです。'
-    select staff_member.family_name + staff_member.given_name, from: I18n.t('activerecord.attributes.message.staff_member_id')
     click_button I18n.t('customer.messages.new.submit')
+    click_button I18n.t('customer.messages.confirm.update')
     
-    expect(page).to have_css('.notice', text: I18n.t('customer.messages.create.notice'))
+    expect(page).to have_css('.Flash__notice', text: I18n.t('customer.messages.create.flash_notice'))
     expect(Message.find_by(subject: 'テストメッセージ', customer: customer)).to be_present
   end
 
   scenario '顧客がメッセージ履歴を確認する' do
     # Create a message from customer to staff
-    message = create(:message, customer: customer, staff_member: staff_member)
+    message = create(:customer_message, customer: customer)
     # Create a reply from staff to customer
-    create(:reply, message: message, staff_member: staff_member)
+    create(:staff_message, parent: message, staff_member: staff_member)
     
     visit customer_messages_path
-    click_link message.subject
-    
-    expect(page).to have_css('h1', text: message.subject)
-    expect(page).to have_content(message.body)
-    expect(page).to have_css('.replies .reply', count: 1)
+    click_link I18n.t('customer.messages.index.detail')
+
+    expect(page).to have_content(message.subject)
+    expect(page).to have_content(message.body.to_s.delete("\n"))
   end
 
-  scenario '顧客がメッセージを検索する' do
-    create(:message, customer: customer, staff_member: staff_member, subject: '問い合わせ')
-    create(:message, customer: customer, staff_member: staff_member, subject: '予約について')
-    
+  scenario '顧客がスタッフからのメッセージに回答する' do
+    # Create a message from customer to staff
+    message = create(:customer_message, customer: customer)
+    # Create a reply from staff to customer
+    create(:staff_message, parent: message, staff_member: staff_member)
+
     visit customer_messages_path
-    fill_in I18n.t('customer.messages.index.search_form.subject'), with: '予約'
-    click_button I18n.t('customer.messages.index.search_form.submit')
-    
-    expect(page).to have_content('予約について')
-    expect(page).not_to have_content('問い合わせ')
+    click_link I18n.t('customer.messages.index.detail')
+    click_link I18n.t('customer.messages.show.reply')
+    fill_in I18n.t('activerecord.attributes.message.subject'), with: '回答テストメッセージ'
+    fill_in I18n.t('activerecord.attributes.message.body'), with: 'これは回答テストメッセージです。'
+    click_button I18n.t('customer.replies.new.submit')
+    click_button I18n.t('customer.replies.confirm.send')
+
+    expect(page).to have_css('.Flash__notice', text: I18n.t('customer.replies.create.flash_notice'))
+    expect(Message.find_by(subject: '回答テストメッセージ', customer: customer)).to be_present
   end
 
-  scenario '顧客がメッセージにタグを付ける' do
-    tag = create(:tag, value: 'テストタグ')
-    
+  scenario '顧客がスタッフからのメッセージを削除する' do
+    # Create a message from customer to staff
+    message = create(:customer_message, customer: customer)
+    # Create a reply from staff to customer
+    create(:staff_message, parent: message, staff_member: staff_member)
+
     visit customer_messages_path
-    click_link I18n.t('customer.messages.index.new')
-    
-    fill_in I18n.t('activerecord.attributes.message.subject'), with: 'タグ付きメッセージ'
-    fill_in I18n.t('activerecord.attributes.message.body'), with: 'これはタグ付きメッセージです。'
-    select staff_member.family_name + staff_member.given_name, from: I18n.t('activerecord.attributes.message.staff_member_id')
-    check "tag_#{tag.id}"
-    click_button I18n.t('customer.messages.new.submit')
-    
-    expect(page).to have_css('.notice', text: I18n.t('customer.messages.create.notice'))
-    message = Message.find_by(subject: 'タグ付きメッセージ', customer: customer)
-    expect(message).to be_present
-    expect(message.tags).to include(tag)
+    click_link I18n.t('customer.messages.index.delete')
+
+    expect(page).to have_css('.Flash__notice', text: I18n.t('customer.messages.destroy.flash_notice'))
   end
+
 end

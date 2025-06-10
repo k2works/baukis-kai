@@ -42,7 +42,8 @@ class Customer::MessagesController < Customer::Base
     message = StaffMessage.find(params[:id])
     message.update_column(:discarded, true)
     flash.notice = t('.flash_notice')
-    redirect_to :back
+
+    redirect_back(fallback_location: customer_root_path)
   end
 
   private
