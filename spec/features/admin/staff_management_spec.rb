@@ -61,4 +61,13 @@ feature '管理者によるスタッフ管理' do
     expect(page).to have_css('.Flash__notice', text: '職員アカウントを更新しました。')
     expect(staff_member.reload.suspended).to be_falsey
   end
+
+  scenario '管理者がスタッフアカウントを削除する' do
+    staff_member = create(:staff_member)
+    visit admin_staff_members_path
+
+    first('a', text: I18n.t('admin.staff_members.index.delete')).click
+
+    expect(page).to have_css('.Flash__notice', text: '職員アカウントを削除しました。')
+  end
 end

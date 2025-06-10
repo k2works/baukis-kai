@@ -45,7 +45,8 @@ class Staff::MessagesController < Staff::Base
     message = CustomerMessage.find(params[:id])
     message.update_column(:deleted, true)
     flash.notice = t('.flash_notice')
-    redirect_to :back
+
+    redirect_back(fallback_location: staff_message_path)
   end
 
   # POST/DELETE

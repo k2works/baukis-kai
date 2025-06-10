@@ -118,4 +118,11 @@ feature '職員による顧客管理' do
     customer.reload
     expect(customer.work_address.company_name).to eq('テスト')
   end
+
+  scenario '職員が顧客を削除する' do
+    click_link I18n.t('staff.top.dashboard.staff_customers')
+    first('table.Table__body--listing').click_link I18n.t('staff.customers.index.delete')
+
+    expect(page).to have_css('.Flash__notice', text: '顧客アカウントを削除しました。')
+  end
 end
