@@ -131,6 +131,24 @@ echo "Checking for OpenSSL configs:"
 find /usr -name "openssl-*.cnf"
 EOF
 
+# Chrome関連のライブラリ
+RUN apt-get update && \
+    apt-get install -y \
+    libnss3 \
+    libnss3-dev \
+    libxss1 \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libdrm2 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxrandr2 \
+    libgbm1 \
+    libgtk-3-0 \
+    libxkbcommon0 \
+    libatspi2.0-0 \
+    libxfixes3
+
 # パスの設定
 ENV PATH="/root/.rbenv/shims:$PATH"
 
