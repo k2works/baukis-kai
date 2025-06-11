@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-# 職員による顧客電話番号管理
-feature 'Customer telephone number management by staff' do
+feature '職員による顧客電話番号管理' do
   include FeaturesSpecHelper
   let(:staff_member) { create(:staff_member) }
   let!(:customer) { create(:customer) }
@@ -11,8 +10,7 @@ feature 'Customer telephone number management by staff' do
     login_as_staff_member(staff_member)
   end
 
-  # 職員が顧客の電話番号を追加する
-  scenario "The staff adds the customer's phone number" do
+  scenario '職員が顧客の電話番号を追加する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
 
@@ -25,8 +23,7 @@ feature 'Customer telephone number management by staff' do
     expect(customer.personal_phones[0].number).to eq('090-9999-9999')
   end
 
-  # 職員が顧客の自宅電話番号を追加する
-  scenario "The staff adds the customer's home phone number" do
+  scenario '職員が顧客の自宅電話番号を追加する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
 
@@ -39,8 +36,7 @@ feature 'Customer telephone number management by staff' do
     expect(customer.home_address.phones[0].number).to eq('090-9999-9999')
   end
 
-  # 職員が顧客の勤務先電話番号を追加する
-  scenario "The staff adds the customer's work phone number" do
+  scenario '職員が顧客の勤務先電話番号を追加する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
 

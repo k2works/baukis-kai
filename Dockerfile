@@ -29,7 +29,9 @@ RUN apt-get update && apt-get install -y \
             git \
             curl \
             wget \
-            git-core \
+            ansible \
+            rsync \
+            vim \
             libssl-dev \
             libc6-dev \
             automake \
@@ -43,17 +45,10 @@ RUN apt-get update && apt-get install -y \
             libxslt1-dev \
             libncurses5-dev \
             pkg-config \
-            chrpath \
-            libfontconfig1-dev \
-            libxft-dev \
             libpq-dev \
             libsqlite3-dev \
             default-mysql-client \
             postgresql-client \
-            xvfb \
-            qtbase5-dev \
-            libqt5webkit5-dev \
-            xauth \
             libcurl4-openssl-dev \
             software-properties-common \
             libffi-dev \
@@ -61,9 +56,6 @@ RUN apt-get update && apt-get install -y \
             libdb-dev \
             lsof \
             default-libmysqlclient-dev \
-            ansible \
-            rsync \
-            vim \
             && apt-get clean \
             && rm -rf /var/lib/apt/lists/*
 
@@ -139,8 +131,27 @@ echo "Checking for OpenSSL configs:"
 find /usr -name "openssl-*.cnf"
 EOF
 
+# Chrome関連のライブラリ
+RUN apt-get update && \
+    apt-get install -y \
+    libnss3 \
+    libnss3-dev \
+    libxss1 \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libdrm2 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxrandr2 \
+    libgbm1 \
+    libgtk-3-0 \
+    libxkbcommon0 \
+    libatspi2.0-0 \
+    libxfixes3
+
 # パスの設定
 ENV PATH="/root/.rbenv/shims:$PATH"
 
 # 作業ディレクトリの設定
 WORKDIR /srv
+

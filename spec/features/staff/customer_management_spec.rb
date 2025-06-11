@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-# 職員による顧客管理
-feature 'Customer management by staff' do
+feature '職員による顧客管理' do
   include FeaturesSpecHelper
   let(:staff_member) { create(:staff_member) }
   let!(:customer) { create(:customer) }
@@ -11,8 +10,7 @@ feature 'Customer management by staff' do
     login_as_staff_member(staff_member)
   end
 
-  # 職員が顧客（基本情報のみ）を登録する
-  scenario 'Employees register customers (only basic information)' do
+  scenario '職員が顧客（基本情報のみ）を登録する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('.Table__links').click_link I18n.t('staff.customers.index.new')
     fill_in I18n.t('activerecord.attributes.customer.email'), with: 'test@example.jp'
@@ -33,8 +31,7 @@ feature 'Customer management by staff' do
     expect(new_customer.work_address).to be_nil
   end
 
-  # 職員が顧客、自宅住所、勤務先を更新する
-  scenario 'Staff update customer, home address, work place' do
+  scenario '職員が顧客、自宅住所、勤務先を更新する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
 
@@ -53,8 +50,7 @@ feature 'Customer management by staff' do
     expect(customer.work_address.company_name).to eq('テスト')
   end
 
-  # 職員が顧客、自宅住所、勤務先を登録する
-  scenario 'Employees register customer, home address, work place' do
+  scenario '職員が顧客、自宅住所、勤務先を登録する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('.Table__links').click_link I18n.t('staff.customers.index.new')
 
@@ -94,8 +90,7 @@ feature 'Customer management by staff' do
     expect(new_customer.work_address.company_name).to eq('テスト')
   end
 
-  # 職員が生年月日と自宅の郵便番号に無効な値を入力する
-  scenario 'Employees enter invalid values for birth date and home postal code' do
+  scenario '職員が生年月日と自宅の郵便番号に無効な値を入力する' do
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
 
@@ -109,8 +104,7 @@ feature 'Customer management by staff' do
     expect(page).to have_css('.has-error span.help-block')
   end
 
-  # 職員が勤務先データのない既存顧客に会社名の情報を追加する
-  scenario 'Staff add company name information to existing customers that do not have work data' do
+  scenario '職員が勤務先データのない既存顧客に会社名の情報を追加する' do
     customer.work_address.destroy
     click_link I18n.t('staff.top.dashboard.staff_customers')
     first('table.Table__body--listing').click_link I18n.t('staff.customers.index.edit')
@@ -123,5 +117,12 @@ feature 'Customer management by staff' do
 
     customer.reload
     expect(customer.work_address.company_name).to eq('テスト')
+  end
+
+  scenario '職員が顧客を削除する' do
+    click_link I18n.t('staff.top.dashboard.staff_customers')
+    first('table.Table__body--listing').click_link I18n.t('staff.customers.index.delete')
+
+    expect(page).to have_css('.Flash__notice', text: '顧客アカウントを削除しました。')
   end
 end
