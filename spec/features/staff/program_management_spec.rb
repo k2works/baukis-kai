@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature '職員によるプログラム管理' do
+feature '職員によるプログラム管理', type: :system do
   include FeaturesSpecHelper
   include PerformanceSpecHelper
   let(:staff_member) { create(:staff_member) }
@@ -20,8 +20,7 @@ feature '職員によるプログラム管理' do
   end
 
   scenario '職員がプログラム詳細を表示する' do
-    visit staff_programs_path
-    click_link I18n.t('staff.programs.form.show')
+    visit staff_program_path(program)
 
     expect(page).to have_content(program.title)
     expect(page).to have_content(program.description)
@@ -49,8 +48,7 @@ feature '職員によるプログラム管理' do
   end
 
   scenario '職員がプログラムを編集する' do
-    visit staff_programs_path
-    click_link I18n.t('staff.programs.form.edit')
+    visit edit_staff_program_path(program)
 
     fill_in I18n.t('activerecord.attributes.program.title'), with: 'Updated Program'
     click_button I18n.t('staff.programs.edit.update')
@@ -65,6 +63,9 @@ feature '職員によるプログラム管理' do
     visit staff_programs_path
 
     all('a', text: I18n.t('staff.programs.form.delete')).last.click
+
+    # JavaScriptアラートを受け入れる
+    page.driver.browser.switch_to.alert.accept
 
     expect(page).to have_css('.Flash__notice', text: I18n.t('staff.programs.destroy.flash_notice'))
     expect(Program.find_by(id: program_without_entries.id)).to be_nil

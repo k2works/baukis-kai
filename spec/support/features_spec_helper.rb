@@ -1,7 +1,10 @@
 module FeaturesSpecHelper
   def switch_namespace(namespace)
     config = Rails.application.config.baukis_kai
-    Capybara.app_host = 'http://' + config[namespace][:host]
+    # ローカルテスト用にlocalhost:3001を使用
+    Capybara.app_host = "http://127.0.0.1:3001"
+    # パスプレフィックスを設定（必要な場合）
+    # Capybara.app_host = "http://localhost:3001/#{config[namespace][:path]}"
   end
 
   def login_as_staff_member(staff_member, password = 'pw')

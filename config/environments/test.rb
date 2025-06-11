@@ -48,8 +48,8 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.baukis_kai = {
-      staff: { host: 'baukis-kai.example.com', path: 'staff' },
-      admin: { host: 'baukis-kai.example.com', path: 'admin' },
-      customer: { host: 'baukis-kai.example.com', path: '' }
+      staff: { host: '127.0.0.1', path: 'staff' },
+      admin: { host: '127.0.0.1', path: 'admin' },
+      customer: { host: '127.0.0.1', path: '' }
   }
 end

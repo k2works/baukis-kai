@@ -49,6 +49,7 @@ Capybara.default_driver = :rack_test
 Capybara.default_max_wait_time = 5
 Capybara.server_host = '0.0.0.0'
 Capybara.server_port = 3001
+Capybara.app_host = 'http://127.0.0.1:3001'
 
 # スクリーンショット設定
 Capybara::Screenshot.autosave_on_failure = true
