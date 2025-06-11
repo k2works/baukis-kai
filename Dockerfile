@@ -29,7 +29,9 @@ RUN apt-get update && apt-get install -y \
             git \
             curl \
             wget \
-            git-core \
+            ansible \
+            rsync \
+            vim \
             libssl-dev \
             libc6-dev \
             automake \
@@ -43,17 +45,10 @@ RUN apt-get update && apt-get install -y \
             libxslt1-dev \
             libncurses5-dev \
             pkg-config \
-            chrpath \
-            libfontconfig1-dev \
-            libxft-dev \
             libpq-dev \
             libsqlite3-dev \
             default-mysql-client \
             postgresql-client \
-            xvfb \
-            qtbase5-dev \
-            libqt5webkit5-dev \
-            xauth \
             libcurl4-openssl-dev \
             software-properties-common \
             libffi-dev \
@@ -61,9 +56,6 @@ RUN apt-get update && apt-get install -y \
             libdb-dev \
             lsof \
             default-libmysqlclient-dev \
-            ansible \
-            rsync \
-            vim \
             && apt-get clean \
             && rm -rf /var/lib/apt/lists/*
 
@@ -144,3 +136,4 @@ ENV PATH="/root/.rbenv/shims:$PATH"
 
 # 作業ディレクトリの設定
 WORKDIR /srv
+
