@@ -4,8 +4,8 @@ require 'rails_helper'
 describe 'Routes' do
   # 職員トップページ
   it 'should route staff top page' do
-    expect(get: 'http://baukis-kai.example.com/staff').to route_to(
-                                         host: 'baukis-kai.example.com',
+    expect(get: 'http://127.0.0.1/staff').to route_to(
+                                         host: '127.0.0.1',
                                          controller: 'staff/top',
                                          action: 'index'
                                      )
@@ -13,8 +13,8 @@ describe 'Routes' do
 
   # 管理者ログインフォーム
   it 'should route administrator login form' do
-    expect(get: 'http://baukis-kai.example.com/admin/login').to route_to(
-                                         host: 'baukis-kai.example.com',
+    expect(get: 'http://127.0.0.1/admin/login').to route_to(
+                                         host: '127.0.0.1',
                                          controller: 'admin/sessions',
                                          action: 'new'
                                      )
@@ -22,8 +22,8 @@ describe 'Routes' do
 
   # 顧客トップページ
   it 'should route customer top page' do
-    expect(get: 'http://baukis-kai.example.com').to route_to(
-                                                              host: 'baukis-kai.example.com',
+    expect(get: 'http://127.0.0.1').to route_to(
+                                                              host: '127.0.0.1',
                                                               controller: 'customer/top',
                                                               action: 'index'
                                                           )
