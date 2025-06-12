@@ -1,0 +1,57 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Rails Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rails server -b 0.0.0.0 -p 3000",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      }
+    },
+    {
+      "name": "Rails Server (Production)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rails server -b 0.0.0.0 -p 3000 -e production",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "production",
+        "SECRET_KEY_BASE": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "PRD_URL": "127.0.0.1"
+      }
+    },
+    {
+      "name": "Rails Console",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rails console",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      }
+    },
+    {
+      "name": "RSpec Tests",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/bundle exec rspec",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    },
+    {
+      "name": "RSpec Current File",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/bundle exec rspec ${file}",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    }
+  ]
+}
