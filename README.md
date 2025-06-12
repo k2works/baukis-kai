@@ -43,7 +43,7 @@ http://127.0.0.1:3000 にアクセスして、アプリケーションが起動�
    1. [ユーザー認証(2)](#ユーザー認証(2))
    1. [ルーティング](#ルーティング)
    1. [レコードの表示、新規作成、更新、削除](#レコードの表示、新規作成、更新、削除)
-   1. [String Parameters](#String Parameters])
+   1. [Strong Parameters](#Strong Parameters])
    1. [アクセス制御](#アクセス制御)
    1. [モデル間の関連付け](#モデル間の関連付け)
    1. [値の正規化とバリデーション](#値の正規化とバリデーション)
@@ -564,8 +564,8 @@ git push heroku master
 + updateアクション
 + destroyアクション
 
-### String Parameters
-#### String Parameters
+### Strong Parameters
+#### Strong Parameters
 + マスアサインメント脆弱性
 + コントローラのテスト
 + 400 Bad Request
