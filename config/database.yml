@@ -15,10 +15,10 @@ development:
   encoding: utf8
   collation: utf8_general_ci
   pool: 5
-  username: root
-  password: password
-  host: <%= ENV.fetch("MYSQL_HOST", "127.0.0.1") %>
-  database: baukis-kai_development
+  username: <%= ENV.fetch("DB_USER", "root") %>
+  password: <%= ENV.fetch("DB_PASSWORD", "password") %>
+  host: <%= ENV.fetch("DB_HOST", "127.0.0.1") %>
+  database: <%= ENV.fetch("DB_DATABASE", "bauki-kai_development") %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -28,10 +28,10 @@ test:
   encoding: utf8
   collation: utf8_general_ci
   pool: 5
-  username: root
-  password: password
-  host: <%= ENV.fetch("MYSQL_HOST", "127.0.0.1") %>
-  database: baukis-kai_test
+  username: <%= ENV.fetch("DB_USER", "root") %>
+  password: <%= ENV.fetch("DB_PASSWORD", "password") %>
+  host: <%= ENV.fetch("DB_HOST", "127.0.0.1") %>
+  database: "app_test"
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -58,8 +58,8 @@ production:
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: password
-  host: 127.0.0.1
-  database: baukis-kai_production
+  username: <%= ENV.fetch("DB_USER", "postgres") %>
+  password: <%= ENV.fetch("DB_PASSWORD", "password") %>
+  host: <%= ENV.fetch("DB_HOST", "127.0.0.1") %>
+  database: <%= ENV.fetch("DB_DATABASE", "bauki-kai_production") %>
 
