@@ -4,48 +4,68 @@ services:
       context: .
       dockerfile: Dockerfile-app
     depends_on:
-      - db
+      - db_prd
     environment:
-      MYSQL_HOST: db
-      MYSQL_PORT: 3306
-      MYSQL_USER: user
-      MYSQL_PASSWORD: pass
-      MYSQL_DATABASE: app_development
+      RAILS_ENV: production
+      SECRET_KEY_BASE: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      PRD_URL: 127.0.0.1
+      DB_HOST: db_prd
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: password
+      DB_DATABASE: app_production
     ports:
-      - "3000:3000"
+      - "3001:3000"
     working_dir: /app
     volumes:
       - ./:/app
-  db:
+
+  db_dev:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_USER: user
-      MYSQL_PASSWORD: pass
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: app_development
     ports:
       - 3306:3306
     volumes:
       - mysql-db:/var/lib/mysql
+
+  db_prd:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+      POSTGRES_DB: app_production
+    user: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-db:/var/lib/postgresql
 
   console:
     build:
       context: .
       dockerfile: Dockerfile-console
     environment:
-      MYSQL_HOST: db
-      MYSQL_PORT: 3306
-      MYSQL_USER: user
-      MYSQL_PASSWORD: pass
-      MYSQL_DATABASE: app_development
+      DB_HOST: db_dev
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: password
+      DB_DATABASE: app_development
     volumes:
       - ./:/srv
     working_dir: /srv
     depends_on:
-      - db
+      - db_dev
     stdin_open: true
     ports:
-      - "3333:3000"
+      - "3000:3000"
 
 volumes:
   mysql-db:
+    driver: local
+  postgresql-db:
     driver: local
