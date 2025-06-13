@@ -1,0 +1,98 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Rails Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rails server -b 0.0.0.0 -p 3000",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      }
+    },
+    {
+      "name": "Rails Server (Production)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rails server -b 0.0.0.0 -p 3000 -e production",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "production",
+        "SECRET_KEY_BASE": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "PRD_URL": "127.0.0.1"
+      }
+    },
+    {
+      "name": "Rails Console",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rails console",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      }
+    },
+    {
+      "name": "RSpec Tests",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rspec",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    },
+    {
+      "name": "RSpec Current File",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bin/rspec ${file}",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    },
+    {
+      "name": "Debug Rails Server",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rails",
+      "args": ["server", "-b", "0.0.0.0", "-p", "3000"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      },
+      "useBundler": true
+    },
+    {
+      "name": "Debug RSpec Current File",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rspec",
+      "args": ["${file}"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    },
+    {
+      "name": "Debug RSpec All Tests",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rspec",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    },
+    {
+      "name": "Attach to Rails Server",
+      "type": "rdbg",
+      "request": "attach",
+      "rdbgPath": "rdbg",
+      "debugPort": "12345"
+    }
+  ]
+}
