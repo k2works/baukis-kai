@@ -3,7 +3,7 @@ name: Documentation Deployment
 on:
   push:
     branches:
-      - master develop
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
