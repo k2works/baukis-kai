@@ -8,12 +8,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    services:
-      plantuml:
-        image: plantuml/plantuml-server:jetty
-        ports:
-          - "8080:8080"
-
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2

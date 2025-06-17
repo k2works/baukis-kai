@@ -36,12 +36,14 @@ markdown_extensions:
   - toc:
       permalink: true
   - plantuml_markdown:
-      server: http://plantuml:8080/plantuml
+      server: !!python/object/apply:os.getenv
+        - PLANTUML_SERVER_URL
+        - http://www.plantuml.com/plantuml
       format: svg
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
-  - ops/docker/mkdocs/assets/js/extra.js
+  - docs/assets/js/extra.js
 
 extra:
   plantuml_url: http://www.plantuml.com/plantuml

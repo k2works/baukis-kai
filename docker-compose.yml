@@ -68,6 +68,8 @@ services:
     build:
       context: .
       dockerfile: ./docs/Dockerfile
+    environment:
+        PLANTUML_SERVER_URL: http://plantuml:8080/plantuml
     volumes:
       - ./docs:/docs/docs
       - ./README.md:/docs/README.md
