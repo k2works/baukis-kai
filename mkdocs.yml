@@ -1,0 +1,101 @@
+site_name: Baukis-Kai
+site_description: Documentation for the Baukis-Kai project.
+site_author: Project Team
+repo_url: https://github.com/k2works/baukis-kai
+repo_name: baukis-kai
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - docs/mkdocs/assets/css/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: plantuml
+          class: plantuml
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.emoji
+  - admonition
+  - toc:
+      permalink: true
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+      format: svg
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
+  - ops/docker/mkdocs/assets/js/extra.js
+
+extra:
+  plantuml_url: http://www.plantuml.com/plantuml
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/k2works/baukis-kai
+      name: GitHub Repository
+
+plugins:
+  - search
+
+nav:
+  - Home: README.md
+  - Architecture: アーキテクチャ概要.md
+  - UseCases: ユースケース.md
+  - Implementation: アプリケーション実装.md
+  - Glossary: 用語集.md
+  - Journal:
+      - 20170110: journal/20170110.md
+      - 20170111: journal/20170111.md
+      - 20170114: journal/20170114.md
+      - 20170116: journal/20170116.md
+      - 20170117: journal/20170117.md
+      - 20170118: journal/20170118.md
+      - 20170120: journal/20170120.md
+      - 20170121: journal/20170121.md
+      - 20170123: journal/20170123.md
+      - 20170124: journal/20170124.md
+      - 20170126: journal/20170126.md
+      - 20170127: journal/20170127.md
+      - 20170128: journal/20170128.md
+      - 20170130: journal/20170130.md
+      - 20170131: journal/20170131.md
+      - 20170202: journal/20170202.md
+      - 20170203: journal/20170203.md
+      - 20170204: journal/20170204.md
+      - 20170206: journal/20170206.md
+      - 20170207: journal/20170207.md
+      - 20170209: journal/20170209.md
+      - 20170210: journal/20170210.md
+      - 20170213: journal/20170213.md
+      - 20170214: journal/20170214.md
+      - 20170216: journal/20170216.md
+      - 20170220: journal/20170220.md
+      - 20170317: journal/20170317.md
+      - 20170318: journal/20170318.md
+      - 20170325: journal/20170325.md
+      - 20170327: journal/20170327.md
+      - 20170328: journal/20170328.md
+      - 20250424: journal/20250424.md
+      - 20250510: journal/20250510.md
+      - 20250607: journal/20250607.md
+      - 20250608: journal/20250608.md
+      - 20250609: journal/20250609.md
+      - 20250610: journal/20250610.md
+      - 20250611: journal/20250611.md
+      - 20250612: journal/20250612.md
