@@ -78,7 +78,6 @@ services:
       dockerfile: ./docs/Dockerfile
     volumes:
       - ./docs:/docs/docs
-      - ./README.md:/docs/docs/README.md
     ports:
       - "8000:8000"
     command: mkdocs serve --dev-addr=0.0.0.0:8000

@@ -54,9 +54,9 @@ plugins:
   - search
 
 nav:
-  - Home: README.md
-  - Architecture: アーキテクチャ概要.md
+  - Home: Home.md
   - UseCases: ユースケース.md
+  - Architecture: アーキテクチャ概要.md
   - Implementation: アプリケーション実装.md
   - Glossary: 用語集.md
   - Journal:
