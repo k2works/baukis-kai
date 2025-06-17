@@ -64,6 +64,27 @@ services:
     ports:
       - "3000:3000"
 
+  plantuml:
+    image: plantuml/plantuml-server:jetty
+    hostname: plantuml
+    environment:
+      BASE_URL: plantuml
+    ports:
+      - "9999:8080"
+
+  mkdocs:
+    build:
+      context: .
+      dockerfile: ./docs/Dockerfile
+    volumes:
+      - ./docs:/docs/docs
+      - ./README.md:/docs/docs/README.md
+    ports:
+      - "8000:8000"
+    command: mkdocs serve --dev-addr=0.0.0.0:8000
+    links:
+      - plantuml
+
 volumes:
   mysql-db:
     driver: local

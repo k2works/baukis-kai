@@ -110,3 +110,5 @@ bower.json
 public/assets/
 .idea/
 *.iml
+
+docs/README.md
