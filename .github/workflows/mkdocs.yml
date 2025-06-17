@@ -14,3 +14,4 @@ jobs:
           python-version: 3.9
       - run: pip install mkdocs-material pymdown-extensions plantuml-markdown
       - run: mkdocs gh-deploy --force
+
