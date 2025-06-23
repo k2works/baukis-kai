@@ -56,7 +56,7 @@ plugins:
   - search
 
 nav:
-  - Home: Home.md
+  - Home: index.md
   - UseCases: ユースケース.md
   - Architecture: アーキテクチャ概要.md
   - Implementation: アプリケーション実装.md
