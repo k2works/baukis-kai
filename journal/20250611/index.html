@@ -1,0 +1,2422 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20250610/">
+      
+      
+        <link rel="next" href="../20250612/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20250611 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2025-06-11" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20250611
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      システム構成図
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      作業内容
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作業内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e2e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E2Eテスト環境の改善
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E2Eテスト環境の改善">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更点の概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#589b060" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 589b060
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 589b060">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84e9ba2" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 84e9ba2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 84e9ba2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47fda6d" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 47fda6d
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 47fda6d">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cc4a690" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: cc4a690
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: cc4a690">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4646581" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 4646581
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 4646581">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27a16ff" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 27a16ff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 27a16ff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2025-06-11">作業履歴 2025-06-11<a class="headerlink" href="#2025-06-11" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2025-06-11の作業内容をまとめています。このジャーナルでは、E2Eテスト環境の構築と設定の改善、およびリリース準備に関する作業を記録しています。</p>
+<h2 id="_2">システム構成図<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9IjYyOXB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6NjU2cHg7aGVpZ2h0OjYyOXB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY1NiA2MjkiIHdpZHRoPSI2NTZweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyIGNpX2Vudi0tPjxnIGNsYXNzPSJjbHVzdGVyIiBkYXRhLWVudGl0eT0iY2lfZW52IiBkYXRhLXNvdXJjZS1saW5lPSIxNDY1IiBkYXRhLXVpZD0iZW50MDAwMyIgaWQ9ImNsdXN0ZXJfY2lfZW52Ij48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjQyMS44MSIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNDQ0NDQ0O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1kYXNoYXJyYXk6Ny4wLDcuMDsiIHdpZHRoPSIzODkiIHg9IjciIHk9IjIwMS4xOSIvPjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2MC42MjExIiB4PSIxNzEuMTg5NSIgeT0iMjA4Ljc1OTMiPiYjMTcxO3N5c3RlbV9ib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI2IiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzUuOTI5NyIgeD0iMTgzLjUzNTIiIHk9IjIxOC43NTkzIj4mIzE3MTtib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODAuNTYyNiIgeD0iMTYxLjIxODciIHk9IjIzOC4wNDE2Ij5DSS9DRCYjMjk4NzI7JiMyMjY1OTs8L3RleHQ+PHRleHQgZmlsbD0iIzQ0NDQ0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjU5LjQ1NTEiIHg9IjE3MS43NzI1IiB5PSIyNTIuOTUzNyI+W3N5c3RlbV08L3RleHQ+PC9nPjwhLS1jbHVzdGVyIGFwcF9lbnYtLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9ImFwcF9lbnYiIGRhdGEtc291cmNlLWxpbmU9IjE0NjUiIGRhdGEtdWlkPSJlbnQwMDA3IiBpZD0iY2x1c3Rlcl9hcHBfZW52Ij48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjE4Ni4xNiIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNDQ0NDQ0O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1kYXNoYXJyYXk6Ny4wLDcuMDsiIHdpZHRoPSIyMzAiIHg9IjQyMCIgeT0iNDMyLjM0Ii8+PHRleHQgZmlsbD0iIzQ0NDQ0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjYwLjYyMTEiIHg9IjUwNC42ODk1IiB5PSI0MzkuOTA5MyI+JiMxNzE7c3lzdGVtX2JvdW5kYXJ5JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNS45Mjk3IiB4PSI1MTcuMDM1MiIgeT0iNDQ5LjkwOTMiPiYjMTcxO2JvdW5kYXJ5JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNjAuMDAwMyIgeD0iNDU0Ljk5OTgiIHk9IjQ2OS4xOTE2Ij4mIzEyNDUwOyYjMTI1MDM7JiMxMjUyMjsmIzEyNDY1OyYjMTI1NDA7JiMxMjQ3MTsmIzEyNTE5OyYjMTI1MzE7JiMyOTg3MjsmIzIyNjU5OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTkuNDU1MSIgeD0iNTA1LjI3MjUiIHk9IjQ4NC4xMDM3Ij5bc3lzdGVtXTwvdGV4dD48L2c+PCEtLWVudGl0eSBnaXRodWJfYWN0aW9ucy0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJnaXRodWJfYWN0aW9ucyIgZGF0YS1zb3VyY2UtbGluZT0iNzEiIGRhdGEtdWlkPSJlbnQwMDA0IiBpZD0iZW50aXR5X2dpdGh1Yl9hY3Rpb25zIj48cmVjdCBmaWxsPSIjNDM4REQ1IiBoZWlnaHQ9Ijk5LjE1NjMiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzNDN0ZDMDtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1OS45OTk0IiB4PSIyMDIiIHk9IjI3Mi4xOSIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzEuNTQzIiB4PSIyNDYuMjI4MiIgeT0iMjkzLjMyODciPiYjMTcxO2NvbnRhaW5lciYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjIuNSIgeD0iMjE0LjUxMTQiIHk9IjMxMS4wMTAzIj5HaXRIdWI8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUuNTcwMyIgeD0iMjc3LjAxMTQiIHk9IjMxMS4wMTAzIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY2LjkwNjMiIHg9IjI4Mi41ODE3IiB5PSIzMTEuMDEwMyI+QWN0aW9uczwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjExNC45NDM5IiB4PSIyMjQuNTI3NyIgeT0iMzI1LjkyMjQiPltDSS9DRCYjMTI0OTc7JiMxMjQ1MjsmIzEyNTAzOyYjMTI1MjE7JiMxMjQ1MjsmIzEyNTMxO108L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIyNzkuNzc0NiIgeT0iMzQxLjc0NzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMzkuOTk5NCIgeD0iMjEyIiB5PSIzNTguMDQ0NSI+JiMzMzI1ODsmIzIxMjA1OyYjMTI0ODY7JiMxMjQ3MzsmIzEyNDg4OyYjMTI1Mzk7JiMxMjQ4NzsmIzEyNTAzOyYjMTI1MjU7JiMxMjQ1Mjs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgY2hyb21lLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImNocm9tZSIgZGF0YS1zb3VyY2UtbGluZT0iNzEiIGRhdGEtdWlkPSJlbnQwMDA1IiBpZD0iZW50aXR5X2Nocm9tZSI+PHJlY3QgZmlsbD0iIzQzOERENSIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMzQzdGQzA7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNTguNTk4MSIgeD0iMjIuNyIgeT0iNTAzLjM0Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI3MS41NDMiIHg9IjY2LjIyNzYiIHk9IjUyNC40Nzg3Ij4mIzE3MTtjb250YWluZXImIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY5LjUzOTEiIHg9IjY3LjIyOTUiIHk9IjU0Mi4xNjAzIj5DaHJvbWU8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1Ny4zNjM2IiB4PSI3My4zMTcyIiB5PSI1NTcuMDcyNCI+WyYjMTI1MDI7JiMxMjUyMTsmIzEyNDU0OyYjMTI0NzA7XTwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9Ijk5Ljc3NCIgeT0iNTcyLjg5NzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMzguNTk4MSIgeD0iMzIuNyIgeT0iNTg5LjE5NDUiPkUyRSYjMTI0ODY7JiMxMjQ3MzsmIzEyNDg4OyYjMjk5OTI7JiMxMjUwMjsmIzEyNTIxOyYjMTI0NTQ7JiMxMjQ3MDs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgZGItLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iZGIiIGRhdGEtc291cmNlLWxpbmU9Ijc1IiBkYXRhLXVpZD0iZW50MDAwNiIgaWQ9ImVudGl0eV9kYiI+PHBhdGggZD0iTTIxNiw1MDguODQgQzIxNiw0OTguODQgMjk4LjAwMDEsNDk4Ljg0IDI5OC4wMDAxLDQ5OC44NCBDMjk4LjAwMDEsNDk4Ljg0IDM4MC4wMDAzLDQ5OC44NCAzODAuMDAwMyw1MDguODQgTDM4MC4wMDAzLDU5Ni45OTYzIEMzODAuMDAwMyw2MDYuOTk2MyAyOTguMDAwMSw2MDYuOTk2MyAyOTguMDAwMSw2MDYuOTk2MyBDMjk4LjAwMDEsNjA2Ljk5NjMgMjE2LDYwNi45OTYzIDIxNiw1OTYuOTk2MyBMMjE2LDUwOC44NCIgZmlsbD0iIzQzOERENSIgc3R5bGU9InN0cm9rZTojM0M3RkMwO3N0cm9rZS13aWR0aDowLjU7Ii8+PHBhdGggZD0iTTIxNiw1MDguODQgQzIxNiw1MTguODQgMjk4LjAwMDEsNTE4Ljg0IDI5OC4wMDAxLDUxOC44NCBDMjk4LjAwMDEsNTE4Ljg0IDM4MC4wMDAzLDUxOC44NCAzODAuMDAwMyw1MDguODQiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzNDN0ZDMDtzdHJva2Utd2lkdGg6MC41OyIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzEuNTQzIiB4PSIyNjIuMjI4NyIgeT0iNTMzLjk3ODciPiYjMTcxO2NvbnRhaW5lciYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTQ0LjAwMDMiIHg9IjIyNiIgeT0iNTUxLjY2MDMiPiYjMTI0ODY7JiMxMjQ3MzsmIzEyNDg4OyYjMTI0ODc7JiMxMjU0MDsmIzEyNDc5OyYjMTI1MDU7JiMxMjU0MDsmIzEyNDczOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU2NjQiIHg9IjI3Mi43MTY5IiB5PSI1NjYuNTcyNCI+W015U1FMXTwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjI5NS43NzUiIHk9IjU4Mi4zOTc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTM5Ljk5OTQiIHg9IjIyOC4wMDA0IiB5PSI1OTguNjk0NSI+JiMxMjQ4NjsmIzEyNDczOyYjMTI0ODg7JiMyOTk5MjsmIzEyNDg3OyYjMTI1NDA7JiMxMjQ3OTsmIzEyNDM0OyYjMjY2ODQ7JiMzMjAxMzs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgcmFpbHNfYXBwLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9InJhaWxzX2FwcCIgZGF0YS1zb3VyY2UtbGluZT0iNzEiIGRhdGEtdWlkPSJlbnQwMDA4IiBpZD0iZW50aXR5X3JhaWxzX2FwcCI+PHJlY3QgZmlsbD0iIzQzOERENSIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMzQzdGQzA7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxOTcuMTc5OSIgeD0iNDM2LjQxIiB5PSI1MDMuMzQiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjcxLjU0MyIgeD0iNDk5LjIyODUiIHk9IjUyNC40Nzg3Ij4mIzE3MTtjb250YWluZXImIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQzLjYwOTQiIHg9IjQ0Ni40MSIgeT0iNTQyLjE2MDMiPlJhaWxzPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1LjU3MDMiIHg9IjQ5MC4wMTk0IiB5PSI1NDIuMTYwMyI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjguMDAwMiIgeD0iNDk1LjU4OTciIHk9IjU0Mi4xNjAzIj4mIzEyNDUwOyYjMTI1MDM7JiMxMjUyMjsmIzEyNDY1OyYjMTI1NDA7JiMxMjQ3MTsmIzEyNTE5OyYjMTI1MzE7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzUuMzQzOCIgeD0iNDY2LjQ5NTEiIHk9IjU1Ny4wNzI0Ij5bUnVieTwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNTAxLjgzODgiIHk9IjU1Ny4wNzI0Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC45NDczIiB4PSI1MDUuNjUzMyIgeT0iNTU3LjA3MjQiPm9uPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1MjAuNjAwNiIgeT0iNTU3LjA3MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI4LjYxMTMiIHg9IjUyNC40MTUiIHk9IjU1Ny4wNzI0Ij5SYWlsczwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNTUzLjAyNjMiIHk9IjU1Ny4wNzI0Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0Ni42NjQxIiB4PSI1NTYuODQwOCIgeT0iNTU3LjA3MjQiPjcuMi4yLjFdPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuNDUwMiIgeD0iNTMyLjc3NDkiIHk9IjU3Mi44OTc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTExLjk5OTUiIHg9IjQ3OS4wMDAyIiB5PSI1ODkuMTk0NSI+JiMzOTAxNTsmIzIzNDU4OyYjMzE2NDk7JiMyOTcwMjsmIzEyNDcxOyYjMTI0NzM7JiMxMjQ4NjsmIzEyNTEyOzwvdGV4dD48L2c+PCEtLWVudGl0eSBkZXZlbG9wZXItLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iZGV2ZWxvcGVyIiBkYXRhLXNvdXJjZS1saW5lPSIzNzQiIGRhdGEtdWlkPSJlbnQwMDAyIiBpZD0iZW50aXR5X2RldmVsb3BlciI+PHJlY3QgZmlsbD0iIzA4NDI3QiIgaGVpZ2h0PSIxMzMuMTg3NSIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMDczQjZGO3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTczLjk5OTMiIHg9IjE5NSIgeT0iNyIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTUuODE2NCIgeD0iMjU0LjA5MTUiIHk9IjI4LjEzODciPiYjMTcxO3BlcnNvbiYjMTg3OzwvdGV4dD48aW1hZ2UgaGVpZ2h0PSI0OCIgd2lkdGg9IjQ4IiB4PSIyNTcuOTk5NyIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEQUFBQUF3Q0FZQUFBQlhBdm1IQUFBQ01FbEVRVlI0WHUyWXZVckZRQkNGYitraitBaStncTNZMlBnQStnQ0N0WjJWMkFocWFTTmlxWTFnWVdNamFDdlh5a29FS3kyMXNMQ05mRUxnTXNja3N6OG1XZkRBQjNLdXllN3NUbVlubWN3dGJVOUtSb3pTRUNPVmxhM1Q2dVRxdnJxWlBsY1BUNjgvWE53K1Z0dkgxOVhDK3NHZS9mOVV4SWhsOC9DeSt2ajhxcnBFWUlzYlIxTjdmU3hpaERLL3Vydk1Lb2VLSGJIM2lrR01FSmk4WjlXYnRIOTJseHlFR0NIRXJMd1ZxV2Z2RzRJWVhraUJYR0luN2YyOWlPR0JBZTBrVWtUVnNtTjRFY01EMjU1YmRnd3ZZbmlnRk9ZVzU0Y2R4NE1ZSGxJcVQ1Tml5Nm9ZSHV6Z09SUmJVc1h3WUFmUG9WNERlSGw3dCtNbksvWThFTU1EelZsdTlmb1E1eTZqRkFVN2hoY3h2T1NzUkxINUQySjRLYnFWcU1seG9LM3RuRWV2UG9nUkFpdVhVcEZpRDY5WnhJZ2haaWRTVjc1R2pGaVlrR2MzS01FcE9XOFJJeFhlZDBrTkpzck9BTzB5cFRmbnhHdkVLQTB4U2tNTUQzemZJZWRKRlE0aENQbFV3clgxZGFRV2JVUnNlb25SQmhOdWUxRDVyYzUzSmtWUXdOOWMyMVd0K0QyMEp4TGpON2hwenRhaFN3VGkzUkV4TERsYmhoQ3htNTVQa1dMTWtydnJEQlc3M3JVVFl0U1F1L2FHUTRoMHNuTnpCZEQxd1BXcHRyWkREQmpMNnRmaWViQnpiQTJBVWpnMk5UM1FZa0JiclI5S1RTLzlZb0M5ZUF4cWV1MFVJL2VIMjF5aXU3VnpMU3FBcG5JcXhuOEFmNlRpQTNBL0E5Qm41K2xWMHhjTU1XRG9KczZxcmFrVG80YTZPd1p4cUxhOTdZa3hDMUh6TWtNek5RUnRFM2NGVUFKaWxNWTNPR1ROTDBORExxSUFBQUFBU1VWT1JLNUNZSUk9IiB5PSIzMC45Njg4Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQ4LjAwMDEiIHg9IjI1Ny45OTk2IiB5PSI5My44MjAzIj4mIzM4MjgzOyYjMzAzMzA7JiMzMjc3Mzs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIyNzkuNzc0NiIgeT0iMTEwLjU4ODkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNTMuOTk5MyIgeD0iMjA1IiB5PSIxMjYuODg1NyI+JiMxMjQ1MDsmIzEyNTAzOyYjMTI1MjI7JiMxMjQ2NTsmIzEyNTQwOyYjMTI0NzE7JiMxMjUxOTsmIzEyNTMxOyYjMzgyODM7JiMzMDMzMDsmIzMyNzczOzwvdGV4dD48L2c+PCEtLWxpbmsgZGV2ZWxvcGVyIHRvIGdpdGh1Yl9hY3Rpb25zLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImRldmVsb3BlciIgZGF0YS1lbnRpdHktMj0iZ2l0aHViX2FjdGlvbnMiIGRhdGEtc291cmNlLWxpbmU9IjE1NzgiIGRhdGEtdWlkPSJsbms5IiBpZD0ibGlua19kZXZlbG9wZXJfZ2l0aHViX2FjdGlvbnMiPjxwYXRoIGQ9Ik0yODIsMTQwLjU2IEMyODIsMTgxLjg3IDI4MiwyMjYuMTkgMjgyLDI2My44IiBmaWxsPSJub25lIiBpZD0iZGV2ZWxvcGVyLXRvLWdpdGh1Yl9hY3Rpb25zIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIyODIsMjcxLjgsMjg1LDI2My44LDI3OSwyNjMuOCwyODIsMjcxLjgiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjNjY2NjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODQuMDAwNiIgeD0iMjgzIiB5PSIxODIuMzI4NyI+JiMxMjQ2NzsmIzEyNTQwOyYjMTI0ODk7JiMxMjUwMzsmIzEyNDgzOyYjMTI0NzE7JiMxMjUxNzs8L3RleHQ+PC9nPjwhLS1saW5rIGdpdGh1Yl9hY3Rpb25zIHRvIGNocm9tZS0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJnaXRodWJfYWN0aW9ucyIgZGF0YS1lbnRpdHktMj0iY2hyb21lIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTAiIGlkPSJsaW5rX2dpdGh1Yl9hY3Rpb25zX2Nocm9tZSI+PHBhdGggZD0iTTIyMi4zOCwzNzEuNjUgQzIxMi40LDM4MS4wMiAyMDIuNTMsMzkxLjEyIDE5NCw0MDEuMzQgQzE2Ny44LDQzMi43NSAxNDcuNzYxOCw0NjUuMzM4MyAxMzAuODkxOCw0OTYuMDQ4MyIgZmlsbD0ibm9uZSIgaWQ9ImdpdGh1Yl9hY3Rpb25zLXRvLWNocm9tZSIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iMTI3LjA0LDUwMy4wNiwxMzMuNTIxMSw0OTcuNDkyNywxMjguMjYyNCw0OTQuNjAzOSwxMjcuMDQsNTAzLjA2IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijg0Ljc0NDYiIHg9IjE5NSIgeT0iNDEzLjQ3ODciPkUyRSYjMTI0ODY7JiMxMjQ3MzsmIzEyNDg4OyYjMjM0NTU7JiMzNDg5Mjs8L3RleHQ+PC9nPjwhLS1saW5rIGdpdGh1Yl9hY3Rpb25zIHRvIGRiLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImdpdGh1Yl9hY3Rpb25zIiBkYXRhLWVudGl0eS0yPSJkYiIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazExIiBpZD0ibGlua19naXRodWJfYWN0aW9uc19kYiI+PHBhdGggZD0iTTI4NS40MSwzNzEuNjQgQzI4OC4wMiw0MDguOTggMjkxLjA1MjQsNDUyLjM3OTUgMjkzLjczMjQsNDkwLjczOTUiIGZpbGw9Im5vbmUiIGlkPSJnaXRodWJfYWN0aW9ucy10by1kYiIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iMjk0LjI5LDQ5OC43MiwyOTYuNzI1MSw0OTAuNTMwNCwyOTAuNzM5Nyw0OTAuOTQ4NSwyOTQuMjksNDk4LjcyIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijk2LjAwMDciIHg9IjI5MCIgeT0iNDEzLjQ3ODciPiYjMTI0ODY7JiMxMjQ3MzsmIzEyNDg4OyYjMTI0ODc7JiMxMjU0MDsmIzEyNDc5OyYjMjU4MDU7JiMyMDMxNjs8L3RleHQ+PC9nPjwhLS1saW5rIGdpdGh1Yl9hY3Rpb25zIHRvIHJhaWxzX2FwcC0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJnaXRodWJfYWN0aW9ucyIgZGF0YS1lbnRpdHktMj0icmFpbHNfYXBwIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTIiIGlkPSJsaW5rX2dpdGh1Yl9hY3Rpb25zX3JhaWxzX2FwcCI+PHBhdGggZD0iTTM1Ny4yNSwzNzEuNzIgQzM3MC4yMSwzODEuMDkgMzgzLjI3LDM5MS4xNiAzOTUsNDAxLjM0IEM0MzAuOTksNDMyLjU4IDQ2Mi4yNzQ4LDQ2Ni4xMzk1IDQ4OC45ODQ4LDQ5Ni44OTk1IiBmaWxsPSJub25lIiBpZD0iZ2l0aHViX2FjdGlvbnMtdG8tcmFpbHNfYXBwIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSI0OTQuMjMsNTAyLjk0LDQ5MS4yNSw0OTQuOTMyNSw0ODYuNzE5Niw0OTguODY2NCw0OTQuMjMsNTAyLjk0IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQ4LjAwMDQiIHg9IjQxMiIgeT0iNDEzLjQ3ODciPiYjMTI0ODc7JiMxMjUwMzsmIzEyNTI1OyYjMTI0NTI7PC90ZXh0PjwvZz48IS0tU1JDPVtUTEJQSWlEMDU3dEZMeUd5SEgzNThsV1lXZ1A1MUdNajduMm8zM1FHOVlMRDJhSzRvTTJoZ0Uwa1dnMGpoV01CS2I2ZzVKX2NzZ1ItWEpESmhONDl5dDlkeGJka2Q5YVVtejlDSnFWeVkzR3E4MHQ5YWNzdlljNFhQdkpaUGY2SmpJckhIcGJhc1hkYXpGNzIteTV3U0ZKS05idUhvMFJ5Q2sxM20xTm14bTB0bTd5NFYwY3V6V3RndlJadlZEUDVRTmRTelluVFNWQVlQaVo4b1g2c0QzS1duT0VUc3NPUDJ4dHk4alRyNVhTQ0QtTWZpZ0F2WGNyYjJOSjJTMlN6YkhfaDcwWFZQQzNSdTktbjRRdlBLUUVqVGg3SU5EeTdOMDJfM2RXTHkzRlc4V0ZUNDEwUHdUajhJcGJzNmI0dkxoMHh1R0VjVFc3LTB6cWRPZWNrTEIxdHpRQ1RhZWdoZWd1b1VqVXNvMjl2MU5wNFlaZkxjeWRGcHFxQk9IcEpfOEJ3RXd0SkhkMl9JUElOX1lRZFAzQVZxS0s1X3MtUVpjQU9NUGNHMko1OVFwd0FKV1RCVWNnVWpvcy1XbnBrWnY0ckkxbGxmU2pjakhuS0l5NU1XSkJlejBOMGZ2clBheVdDX3ZDX0JtWC1aSmhYRE1RQ2NVS3ZlTEJVUnQzdExTQlBEd2lkeFQ5NjEyQ1ktalJrdmpsQlNHR2Q3Q2xGM184MV0tLT48L2c+PC9zdmc+" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="_3">作業内容<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="e2e">E2Eテスト環境の改善<a class="headerlink" href="#e2e" title="Permanent link">&para;</a></h3>
+<p>前日に引き続き、E2Eテスト環境の構築と改善を行いました。特に、GitHub Actionsでの自動テスト実行のためのセットアップを強化しました。</p>
+<h4 id="_4">変更点の概要<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ol>
+<li>GitHub Actions設定ファイルの更新（Chromeのセットアップ追加）</li>
+<li>Dockerfileの更新（Chrome関連ライブラリの追加）</li>
+<li>Capybara設定の分離と改善</li>
+</ol>
+<h4 id="_5">技術的詳細<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9IjMyMnB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6Njc1cHg7aGVpZ2h0OjMyMnB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY3NSAzMjIiIHdpZHRoPSI2NzVweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyIENJPz8tLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9IkNJLi4iIGRhdGEtc291cmNlLWxpbmU9IjEiIGRhdGEtdWlkPSJlbnQwMDAyIiBpZD0iY2x1c3Rlcl9DSS4uIj48cGF0aCBkPSJNOC41LDYgTDUyLjk4MzMsNiBBMy43NSwzLjc1IDAgMCAxIDU1LjQ4MzMsOC41IEw2Mi40ODMzLDI4LjI5NjkgTDIxOS41LDI4LjI5NjkgQTIuNSwyLjUgMCAwIDEgMjIyLDMwLjc5NjkgTDIyMiwzMTMuMzkgQTIuNSwyLjUgMCAwIDEgMjE5LjUsMzE1Ljg5IEw4LjUsMzE1Ljg5IEEyLjUsMi41IDAgMCAxIDYsMzEzLjM5IEw2LDguNSBBMi41LDIuNSAwIDAgMSA4LjUsNiIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7IiB4MT0iNiIgeDI9IjYyLjQ4MzMiIHkxPSIyOC4yOTY5IiB5Mj0iMjguMjk2OSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0My40ODMzIiB4PSIxMCIgeT0iMjAuOTk1MSI+Q0kmIzI5ODcyOyYjMjI2NTk7PC90ZXh0PjwvZz48IS0tY2x1c3RlciBEb2NrZXI/Py0tPjxnIGNsYXNzPSJjbHVzdGVyIiBkYXRhLWVudGl0eT0iRG9ja2VyLi4iIGRhdGEtc291cmNlLWxpbmU9IjYiIGRhdGEtdWlkPSJlbnQwMDA4IiBpZD0iY2x1c3Rlcl9Eb2NrZXIuLiI+PHBhdGggZD0iTTI0OC41LDYgTDMzMi43NDc5LDYgQTMuNzUsMy43NSAwIDAgMSAzMzUuMjQ3OSw4LjUgTDM0Mi4yNDc5LDI4LjI5NjkgTDQzNS41LDI4LjI5NjkgQTIuNSwyLjUgMCAwIDEgNDM4LDMwLjc5NjkgTDQzOCwyMDcuMDkgQTIuNSwyLjUgMCAwIDEgNDM1LjUsMjA5LjU5IEwyNDguNSwyMDkuNTkgQTIuNSwyLjUgMCAwIDEgMjQ2LDIwNy4wOSBMMjQ2LDguNSBBMi41LDIuNSAwIDAgMSAyNDguNSw2IiBmaWxsPSJub25lIiBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEuNTsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEuNTsiIHgxPSIyNDYiIHgyPSIzNDIuMjQ3OSIgeTE9IjI4LjI5NjkiIHkyPSIyOC4yOTY5Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgzLjI0NzkiIHg9IjI1MCIgeT0iMjAuOTk1MSI+RG9ja2VyJiMyOTg3MjsmIzIyNjU5OzwvdGV4dD48L2c+PCEtLWNsdXN0ZXIgPz8/Pz8tLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9Ii4uLi4uIiBkYXRhLXNvdXJjZS1saW5lPSIxMSIgZGF0YS11aWQ9ImVudDAwMTMiIGlkPSJjbHVzdGVyXy4uLi4uIj48cGF0aCBkPSJNNDY0LjUsNiBMNTM1LjQ5OTcsNiBBMy43NSwzLjc1IDAgMCAxIDUzNy45OTk3LDguNSBMNTQ0Ljk5OTcsMjguMjk2OSBMNjY1LjUsMjguMjk2OSBBMi41LDIuNSAwIDAgMSA2NjgsMzAuNzk2OSBMNjY4LDIwNy4wOSBBMi41LDIuNSAwIDAgMSA2NjUuNSwyMDkuNTkgTDQ2NC41LDIwOS41OSBBMi41LDIuNSAwIDAgMSA0NjIsMjA3LjA5IEw0NjIsOC41IEEyLjUsMi41IDAgMCAxIDQ2NC41LDYiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIgeDE9IjQ2MiIgeDI9IjU0NC45OTk3IiB5MT0iMjguMjk2OSIgeTI9IjI4LjI5NjkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjkuOTk5NyIgeD0iNDY2IiB5PSIyMC45OTUxIj4mIzEyNDg2OyYjMTI0NzM7JiMxMjQ4ODsmIzM1MzczOyYjMjM0NTA7PC90ZXh0PjwvZz48IS0tZW50aXR5IEdpdEh1YiBBY3Rpb25zLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IkdpdEh1YiBBY3Rpb25zIiBkYXRhLXNvdXJjZS1saW5lPSIyIiBkYXRhLXVpZD0iZW50MDAwMyIgaWQ9ImVudGl0eV9HaXRIdWIgQWN0aW9ucyI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNDQuMzUwNiIgeD0iNDEuODIiIHk9IjQxIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjE2Ni4xNzA2IiB5PSI0NiIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iMTY0LjE3MDYiIHk9IjQ4Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSIxNjQuMTcwNiIgeT0iNTIiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDQuMzUwNiIgeD0iNTYuODIiIHk9IjczLjk5NTEiPkdpdEh1YiBBY3Rpb25zPC90ZXh0PjwvZz48IS0tZW50aXR5IENocm9tZSBTZXR1cC0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJDaHJvbWUgU2V0dXAiIGRhdGEtc291cmNlLWxpbmU9IjIiIGRhdGEtdWlkPSJlbnQwMDA0IiBpZD0iZW50aXR5X0Nocm9tZSBTZXR1cCI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNDAuNDE5OSIgeD0iNDMuNzkiIHk9IjE0Ny4zIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjE2NC4yMDk5IiB5PSIxNTIuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iMTYyLjIwOTkiIHk9IjE1NC4zIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSIxNjIuMjA5OSIgeT0iMTU4LjMiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDAuNDE5OSIgeD0iNTguNzkiIHk9IjE4MC4yOTUxIj5DaHJvbWUgU2V0dXA8L3RleHQ+PC9nPjwhLS1lbnRpdHkgU2VsZW5pdW0gV2ViRHJpdmVyLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IlNlbGVuaXVtIFdlYkRyaXZlciIgZGF0YS1zb3VyY2UtbGluZT0iMyIgZGF0YS11aWQ9ImVudDAwMDYiIGlkPSJlbnRpdHlfU2VsZW5pdW0gV2ViRHJpdmVyIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE4NC4xNDk0IiB4PSIyMS45MyIgeT0iMjUzLjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjE4Ni4wNzk0IiB5PSIyNTguNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjE4NC4wNzk0IiB5PSIyNjAuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjE4NC4wNzk0IiB5PSIyNjQuNTkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNDQuMTQ5NCIgeD0iMzYuOTMiIHk9IjI4Ni41ODUxIj5TZWxlbml1bSBXZWJEcml2ZXI8L3RleHQ+PC9nPjwhLS1lbnRpdHkgRG9ja2VyZmlsZS0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJEb2NrZXJmaWxlIiBkYXRhLXNvdXJjZS1saW5lPSI3IiBkYXRhLXVpZD0iZW50MDAwOSIgaWQ9ImVudGl0eV9Eb2NrZXJmaWxlIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjExMC44NDA4IiB4PSIyODYuNTgiIHk9IjQxIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjM3Ny40MjA4IiB5PSI0NiIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iMzc1LjQyMDgiIHk9IjQ4Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSIzNzUuNDIwOCIgeT0iNTIiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI3MC44NDA4IiB4PSIzMDEuNTgiIHk9IjczLjk5NTEiPkRvY2tlcmZpbGU8L3RleHQ+PC9nPjwhLS1lbnRpdHkgQ2hyb21lIExpYnJhcmllcy0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJDaHJvbWUgTGlicmFyaWVzIiBkYXRhLXNvdXJjZS1saW5lPSI3IiBkYXRhLXVpZD0iZW50MDAxMCIgaWQ9ImVudGl0eV9DaHJvbWUgTGlicmFyaWVzIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE2MC4xMzQ4IiB4PSIyNjEuOTMiIHk9IjE0Ny4zIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjQwMi4wNjQ4IiB5PSIxNTIuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iNDAwLjA2NDgiIHk9IjE1NC4zIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSI0MDAuMDY0OCIgeT0iMTU4LjMiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjAuMTM0OCIgeD0iMjc2LjkzIiB5PSIxODAuMjk1MSI+Q2hyb21lIExpYnJhcmllczwvdGV4dD48L2c+PCEtLWVudGl0eSByYWlsc19oZWxwZXIucmItLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0icmFpbHNfaGVscGVyLnJiIiBkYXRhLXNvdXJjZS1saW5lPSIxMiIgZGF0YS11aWQ9ImVudDAwMTQiIGlkPSJlbnRpdHlfcmFpbHNfaGVscGVyLnJiIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE0MC4xMzI4IiB4PSI0OTQuOTMiIHk9IjQxIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjYxNS4wNjI4IiB5PSI0NiIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iNjEzLjA2MjgiIHk9IjQ4Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSI2MTMuMDYyOCIgeT0iNTIiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDAuMTMyOCIgeD0iNTA5LjkzIiB5PSI3My45OTUxIj5yYWlsc19oZWxwZXIucmI8L3RleHQ+PC9nPjwhLS1lbnRpdHkgY2FweWJhcmFfY29uZmlnLnJiLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImNhcHliYXJhX2NvbmZpZy5yYiIgZGF0YS1zb3VyY2UtbGluZT0iMTIiIGRhdGEtdWlkPSJlbnQwMDE1IiBpZD0iZW50aXR5X2NhcHliYXJhX2NvbmZpZy5yYiI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNzQuMTgyNiIgeD0iNDc3LjkxIiB5PSIxNDcuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1IiB4PSI2MzIuMDkyNiIgeT0iMTUyLjMiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjYzMC4wOTI2IiB5PSIxNTQuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iNjMwLjA5MjYiIHk9IjE1OC4zIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTM0LjE4MjYiIHg9IjQ5Mi45MSIgeT0iMTgwLjI5NTEiPmNhcHliYXJhX2NvbmZpZy5yYjwvdGV4dD48L2c+PCEtLWxpbmsgR2l0SHViIEFjdGlvbnMgdG8gQ2hyb21lIFNldHVwLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9IkdpdEh1YiBBY3Rpb25zIiBkYXRhLWVudGl0eS0yPSJDaHJvbWUgU2V0dXAiIGRhdGEtc291cmNlLWxpbmU9IjIiIGRhdGEtdWlkPSJsbms1IiBpZD0ibGlua19HaXRIdWIgQWN0aW9uc19DaHJvbWUgU2V0dXAiPjxwYXRoIGQ9Ik0xMTQsODcuNzggQzExNCwxMDUuMjcgMTE0LDEyMy4zOCAxMTQsMTQwLjg2IiBmaWxsPSJub25lIiBpZD0iR2l0SHViIEFjdGlvbnMtdG8tQ2hyb21lIFNldHVwIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIxMTQsMTQ2Ljg2LDExOCwxMzcuODYsMTE0LDE0MS44NiwxMTAsMTM3Ljg2LDExNCwxNDYuODYiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLWxpbmsgQ2hyb21lIFNldHVwIHRvIFNlbGVuaXVtIFdlYkRyaXZlci0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJDaHJvbWUgU2V0dXAiIGRhdGEtZW50aXR5LTI9IlNlbGVuaXVtIFdlYkRyaXZlciIgZGF0YS1zb3VyY2UtbGluZT0iMyIgZGF0YS11aWQ9ImxuazciIGlkPSJsaW5rX0Nocm9tZSBTZXR1cF9TZWxlbml1bSBXZWJEcml2ZXIiPjxwYXRoIGQ9Ik0xMTQsMTk0LjA4IEMxMTQsMjExLjU3IDExNCwyMjkuNjcgMTE0LDI0Ny4xNSIgZmlsbD0ibm9uZSIgaWQ9IkNocm9tZSBTZXR1cC10by1TZWxlbml1bSBXZWJEcml2ZXIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjExNCwyNTMuMTUsMTE4LDI0NC4xNSwxMTQsMjQ4LjE1LDExMCwyNDQuMTUsMTE0LDI1My4xNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjwvZz48IS0tbGluayBEb2NrZXJmaWxlIHRvIENocm9tZSBMaWJyYXJpZXMtLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0iRG9ja2VyZmlsZSIgZGF0YS1lbnRpdHktMj0iQ2hyb21lIExpYnJhcmllcyIgZGF0YS1zb3VyY2UtbGluZT0iNyIgZGF0YS11aWQ9ImxuazExIiBpZD0ibGlua19Eb2NrZXJmaWxlX0Nocm9tZSBMaWJyYXJpZXMiPjxwYXRoIGQ9Ik0zNDIsODcuNzggQzM0MiwxMDUuMjcgMzQyLDEyMy4zOCAzNDIsMTQwLjg2IiBmaWxsPSJub25lIiBpZD0iRG9ja2VyZmlsZS10by1DaHJvbWUgTGlicmFyaWVzIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIzNDIsMTQ2Ljg2LDM0NiwxMzcuODYsMzQyLDE0MS44NiwzMzgsMTM3Ljg2LDM0MiwxNDYuODYiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLWxpbmsgQ2hyb21lIExpYnJhcmllcyB0byBTZWxlbml1bSBXZWJEcml2ZXItLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0iQ2hyb21lIExpYnJhcmllcyIgZGF0YS1lbnRpdHktMj0iU2VsZW5pdW0gV2ViRHJpdmVyIiBkYXRhLXNvdXJjZS1saW5lPSI4IiBkYXRhLXVpZD0ibG5rMTIiIGlkPSJsaW5rX0Nocm9tZSBMaWJyYXJpZXNfU2VsZW5pdW0gV2ViRHJpdmVyIj48cGF0aCBkPSJNMjkyLjUzLDE5NC4wOCBDMjU0LjI4LDIxMS41NyAyMDcuMDQ2MiwyMzMuMTc0IDE2OC44MzYyLDI1MC42NTQiIGZpbGw9Im5vbmUiIGlkPSJDaHJvbWUgTGlicmFyaWVzLXRvLVNlbGVuaXVtIFdlYkRyaXZlciIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMTYzLjM4LDI1My4xNSwxNzMuMjI4MywyNTMuMDQzNCwxNjcuOTI2OCwyNTEuMDcsMTY5LjkwMDIsMjQ1Ljc2ODUsMTYzLjM4LDI1My4xNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjwvZz48IS0tbGluayByYWlsc19oZWxwZXIucmIgdG8gY2FweWJhcmFfY29uZmlnLnJiLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9InJhaWxzX2hlbHBlci5yYiIgZGF0YS1lbnRpdHktMj0iY2FweWJhcmFfY29uZmlnLnJiIiBkYXRhLXNvdXJjZS1saW5lPSIxMiIgZGF0YS11aWQ9ImxuazE2IiBpZD0ibGlua19yYWlsc19oZWxwZXIucmJfY2FweWJhcmFfY29uZmlnLnJiIj48cGF0aCBkPSJNNTY1LDg3Ljc4IEM1NjUsMTA1LjI3IDU2NSwxMjMuMzggNTY1LDE0MC44NiIgZmlsbD0ibm9uZSIgaWQ9InJhaWxzX2hlbHBlci5yYi10by1jYXB5YmFyYV9jb25maWcucmIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjU2NSwxNDYuODYsNTY5LDEzNy44Niw1NjUsMTQxLjg2LDU2MSwxMzcuODYsNTY1LDE0Ni44NiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjwvZz48IS0tbGluayBjYXB5YmFyYV9jb25maWcucmIgdG8gU2VsZW5pdW0gV2ViRHJpdmVyLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImNhcHliYXJhX2NvbmZpZy5yYiIgZGF0YS1lbnRpdHktMj0iU2VsZW5pdW0gV2ViRHJpdmVyIiBkYXRhLXNvdXJjZS1saW5lPSIxMyIgZGF0YS11aWQ9ImxuazE3IiBpZD0ibGlua19jYXB5YmFyYV9jb25maWcucmJfU2VsZW5pdW0gV2ViRHJpdmVyIj48cGF0aCBkPSJNNTA5LjM5LDE5My45OSBDNDg3LjQyLDIwMi4yNyA0NjEuNzgsMjExLjE5IDQzOCwyMTcuNTkgQzM2MS4wMiwyMzguMzIgMjc3LjY2NDcsMjUyLjg0NyAyMTIuMzM0NywyNjIuNTY3IiBmaWxsPSJub25lIiBpZD0iY2FweWJhcmFfY29uZmlnLnJiLXRvLVNlbGVuaXVtIFdlYkRyaXZlciIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMjA2LjQsMjYzLjQ1LDIxNS44OTA3LDI2Ni4wODIsMjExLjM0NTYsMjYyLjcxNDIsMjE0LjcxMzQsMjU4LjE2OTEsMjA2LjQsMjYzLjQ1IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1TUkM9W0FxWENwYXZDSnJMR1NsUHlGY2QzcXFORElXaExORDdrY0lLVWZLYUFaaWFiY1Zidm5SNEFraGZzMmo3RTZLTnZrUWFBbVFhYmZHTW5OQVhTWThoV3I5cEtsQ3BJTjhObXIySU5laW9vckE5T2hiZWtoV0FPN0l4dm9UY2ZIS1pzRzBKSUNkRElLVXRtb0ttZ0lZcEFKMnI2czhDRzhpd2tueXJqWnZqc0ZjeGtVQjVZeFREcml5M001SUxjdlhKN1B3SmM1QUdNd0hLYkdLckFKWW9lSjRlaUllbkZwaXpCb3FtN0lOMVg0eUhaQm0wMF0tLT48L2c+PC9zdmc+" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="589b060">コミット: 589b060<a class="headerlink" href="#589b060" title="Permanent link">&para;</a></h2>
+<h3 id="_6">メッセージ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>docs:リリース
+</code></pre></div>
+<h3 id="_7">変更されたファイル<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/views/customer/shared/_footer_login.html.erb</li>
+<li>M app/views/customer/top/dashboard.html.erb</li>
+</ul>
+<h3 id="_8">変更内容<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 589b0602663c4459f29b6012f410c5ddf57cddd4
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Wed Jun 11 14:02:39 2025 +0900
+
+<span class="w"> </span>   docs:リリース
+
+<span class="gh">diff --git a/app/views/customer/shared/_footer_login.html.erb b/app/views/customer/shared/_footer_login.html.erb</span>
+<span class="gh">index dd87033..d84ada3 100644</span>
+<span class="gd">--- a/app/views/customer/shared/_footer_login.html.erb</span>
+<span class="gi">+++ b/app/views/customer/shared/_footer_login.html.erb</span>
+<span class="gu">@@ -7,7 +7,7 @@</span>
+<span class="w"> </span>      &lt;/ul&gt;
+<span class="w"> </span>    &lt;/div&gt;
+<span class="w"> </span>    &lt;div class=&quot;Footer__body&quot;&gt;
+<span class="gd">-      &lt;p&gt;Powered by BAUKIS KAI &amp;copy; 2014 k2works&lt;/p&gt;</span>
+<span class="gi">+      &lt;p&gt;Powered by BAUKIS KAI &amp;copy; 2025 k2works&lt;/p&gt;</span>
+<span class="w"> </span>    &lt;/div&gt;
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>&lt;/footer&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/top/dashboard.html.erb b/app/views/customer/top/dashboard.html.erb</span>
+<span class="gh">index a819b2a..04e371b 100644</span>
+<span class="gd">--- a/app/views/customer/top/dashboard.html.erb</span>
+<span class="gi">+++ b/app/views/customer/top/dashboard.html.erb</span>
+<span class="gu">@@ -8,6 +8,10 @@</span>
+<span class="w"> </span>    &lt;h2 class=&quot;sectionLabel&quot;&gt;お知らせ&lt;/h2&gt;
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>  &lt;ol class=&quot;NewsList&quot;&gt;
+<span class="gi">+    &lt;li class=&quot;NewsList__item&quot;&gt;</span>
+<span class="gi">+      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2025-6-6&quot;&gt;2025.6.8&lt;/time&gt;</span>
+<span class="gi">+      &lt;span class=&quot;NewsList__body&quot;&gt;アプリケーションをバージョンアップ&lt;/span&gt;</span>
+<span class="gi">+    &lt;/li&gt;</span>
+<span class="w"> </span>    &lt;li class=&quot;NewsList__item&quot;&gt;
+<span class="w"> </span>      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-3-28&quot;&gt;2017.3.28&lt;/time&gt;
+<span class="w"> </span>      &lt;span class=&quot;NewsList__body&quot;&gt;問い合わせ返信機能を追加&lt;/span&gt;
+</code></pre></div>
+<h2 id="84e9ba2">コミット: 84e9ba2<a class="headerlink" href="#84e9ba2" title="Permanent link">&para;</a></h2>
+<h3 id="_9">メッセージ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>test:E2Eテスト
+</code></pre></div>
+<h3 id="_10">変更されたファイル<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M spec/features/staff/program_management_spec.rb</li>
+</ul>
+<h3 id="_11">変更内容<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 84e9ba28c6d63d2f8a32201572e68895ba7cb43a
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Wed Jun 11 13:37:38 2025 +0900
+
+<span class="w"> </span>   test:E2Eテスト
+
+<span class="gh">diff --git a/spec/features/staff/program_management_spec.rb b/spec/features/staff/program_management_spec.rb</span>
+<span class="gh">index 28b8976..c08a853 100644</span>
+<span class="gd">--- a/spec/features/staff/program_management_spec.rb</span>
+<span class="gi">+++ b/spec/features/staff/program_management_spec.rb</span>
+<span class="gu">@@ -1,6 +1,6 @@</span>
+<span class="w"> </span>require &#39;rails_helper&#39;
+
+<span class="gd">-feature &#39;職員によるプログラム管理&#39;, type: :system do</span>
+<span class="gi">+feature &#39;職員によるプログラム管理&#39; do</span>
+<span class="w"> </span>  include FeaturesSpecHelper
+<span class="w"> </span>  include PerformanceSpecHelper
+<span class="w"> </span>  let(:staff_member) { create(:staff_member) }
+<span class="gu">@@ -65,13 +65,14 @@ feature &#39;職員によるプログラム管理&#39;, type: :system do</span>
+<span class="w"> </span>    all(&#39;a&#39;, text: I18n.t(&#39;staff.programs.form.delete&#39;)).last.click
+
+<span class="w"> </span>    # JavaScriptアラートを受け入れる
+<span class="gd">-    page.driver.browser.switch_to.alert.accept</span>
+<span class="gi">+    # page.driver.browser.switch_to.alert.accept</span>
+
+<span class="w"> </span>    expect(page).to have_css(&#39;.Flash__notice&#39;, text: I18n.t(&#39;staff.programs.destroy.flash_notice&#39;))
+<span class="w"> </span>    expect(Program.find_by(id: program_without_entries.id)).to be_nil
+<span class="w"> </span>  end
+
+<span class="gd">-  scenario &#39;職員がエントリーを管理する&#39; do</span>
+<span class="gi">+  # type: :system指定時の挙動が不安定なので JavaScriptを使うE2Eテストは除外</span>
+<span class="gi">+  xscenario &#39;職員がエントリーを管理する&#39; do</span>
+<span class="w"> </span>    visit staff_program_path(program)
+
+<span class="w"> </span>    find(&quot;input[type=&#39;checkbox&#39;].isApproved[data-entry-id=&#39;#{entry.id}&#39;]&quot;).click
+</code></pre></div>
+<h2 id="47fda6d">コミット: 47fda6d<a class="headerlink" href="#47fda6d" title="Permanent link">&para;</a></h2>
+<h3 id="_12">メッセージ<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chore:E2Eセットアップ
+</code></pre></div>
+<h3 id="_13">変更されたファイル<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M .github/workflows/CI.yml</li>
+<li>M Dockerfile</li>
+</ul>
+<h3 id="_14">変更内容<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 47fda6dc29e0033a11b34d1cf79b98678c906c0b
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Wed Jun 11 13:19:55 2025 +0900
+
+<span class="w"> </span>   chore:E2Eセットアップ
+
+<span class="gh">diff --git a/.github/workflows/CI.yml b/.github/workflows/CI.yml</span>
+<span class="gh">index a71f2b1..90efec6 100644</span>
+<span class="gd">--- a/.github/workflows/CI.yml</span>
+<span class="gi">+++ b/.github/workflows/CI.yml</span>
+<span class="gu">@@ -36,6 +36,9 @@ jobs:</span>
+<span class="w"> </span>          bundle exec rake db:create RAILS_ENV=test
+<span class="w"> </span>          bundle exec rake db:migrate RAILS_ENV=test
+
+<span class="gi">+      - uses: browser-actions/setup-chrome@latest</span>
+<span class="gi">+      - run: chrome --version</span>
+<span class="gi">+</span>
+<span class="w"> </span>      - name: Run tests
+<span class="w"> </span>        env:
+<span class="w"> </span>          RAILS_ENV: test
+<span class="gh">diff --git a/Dockerfile b/Dockerfile</span>
+<span class="gh">index c2c6661..96177e8 100644</span>
+<span class="gd">--- a/Dockerfile</span>
+<span class="gi">+++ b/Dockerfile</span>
+<span class="gu">@@ -131,6 +131,24 @@ echo &quot;Checking for OpenSSL configs:&quot;</span>
+<span class="w"> </span>find /usr -name &quot;openssl-*.cnf&quot;
+<span class="w"> </span>EOF
+
+<span class="gi">+# Chrome関連のライブラリ</span>
+<span class="gi">+RUN apt-get update &amp;&amp; \</span>
+<span class="gi">+    apt-get install -y \</span>
+<span class="gi">+    libnss3 \</span>
+<span class="gi">+    libnss3-dev \</span>
+<span class="gi">+    libxss1 \</span>
+<span class="gi">+    libasound2 \</span>
+<span class="gi">+    libatk-bridge2.0-0 \</span>
+<span class="gi">+    libdrm2 \</span>
+<span class="gi">+    libxcomposite1 \</span>
+<span class="gi">+    libxdamage1 \</span>
+<span class="gi">+    libxrandr2 \</span>
+<span class="gi">+    libgbm1 \</span>
+<span class="gi">+    libgtk-3-0 \</span>
+<span class="gi">+    libxkbcommon0 \</span>
+<span class="gi">+    libatspi2.0-0 \</span>
+<span class="gi">+    libxfixes3</span>
+<span class="gi">+</span>
+<span class="w"> </span># パスの設定
+<span class="w"> </span>ENV PATH=&quot;/root/.rbenv/shims:$PATH&quot;
+</code></pre></div>
+<h2 id="cc4a690">コミット: cc4a690<a class="headerlink" href="#cc4a690" title="Permanent link">&para;</a></h2>
+<h3 id="_15">メッセージ<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chore(WIP):E2Eセットアップ
+</code></pre></div>
+<h3 id="_16">変更されたファイル<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M Dockerfile</li>
+<li>M spec/rails_helper.rb</li>
+<li>A spec/support/capybara_config.rb</li>
+</ul>
+<h3 id="_17">変更内容<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit cc4a690f318320ff3f9cd79d05c4279b1cd1733d
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Wed Jun 11 12:39:03 2025 +0900
+
+<span class="w"> </span>   chore(WIP):E2Eセットアップ
+
+<span class="gh">diff --git a/Dockerfile b/Dockerfile</span>
+<span class="gh">index 17ff930..c2c6661 100644</span>
+<span class="gd">--- a/Dockerfile</span>
+<span class="gi">+++ b/Dockerfile</span>
+<span class="gu">@@ -29,7 +29,9 @@ RUN apt-get update &amp;&amp; apt-get install -y \</span>
+<span class="w"> </span>            git \
+<span class="w"> </span>            curl \
+<span class="w"> </span>            wget \
+<span class="gd">-            git-core \</span>
+<span class="gi">+            ansible \</span>
+<span class="gi">+            rsync \</span>
+<span class="gi">+            vim \</span>
+<span class="w"> </span>            libssl-dev \
+<span class="w"> </span>            libc6-dev \
+<span class="w"> </span>            automake \
+<span class="gu">@@ -43,17 +45,10 @@ RUN apt-get update &amp;&amp; apt-get install -y \</span>
+<span class="w"> </span>            libxslt1-dev \
+<span class="w"> </span>            libncurses5-dev \
+<span class="w"> </span>            pkg-config \
+<span class="gd">-            chrpath \</span>
+<span class="gd">-            libfontconfig1-dev \</span>
+<span class="gd">-            libxft-dev \</span>
+<span class="w"> </span>            libpq-dev \
+<span class="w"> </span>            libsqlite3-dev \
+<span class="w"> </span>            default-mysql-client \
+<span class="w"> </span>            postgresql-client \
+<span class="gd">-            xvfb \</span>
+<span class="gd">-            qtbase5-dev \</span>
+<span class="gd">-            libqt5webkit5-dev \</span>
+<span class="gd">-            xauth \</span>
+<span class="w"> </span>            libcurl4-openssl-dev \
+<span class="w"> </span>            software-properties-common \
+<span class="w"> </span>            libffi-dev \
+<span class="gu">@@ -61,9 +56,6 @@ RUN apt-get update &amp;&amp; apt-get install -y \</span>
+<span class="w"> </span>            libdb-dev \
+<span class="w"> </span>            lsof \
+<span class="w"> </span>            default-libmysqlclient-dev \
+<span class="gd">-            ansible \</span>
+<span class="gd">-            rsync \</span>
+<span class="gd">-            vim \</span>
+<span class="w"> </span>            &amp;&amp; apt-get clean \
+<span class="w"> </span>            &amp;&amp; rm -rf /var/lib/apt/lists/*
+
+<span class="gu">@@ -144,3 +136,4 @@ ENV PATH=&quot;/root/.rbenv/shims:$PATH&quot;</span>
+
+<span class="w"> </span># 作業ディレクトリの設定
+<span class="w"> </span>WORKDIR /srv
+<span class="gi">+</span>
+<span class="gh">diff --git a/spec/rails_helper.rb b/spec/rails_helper.rb</span>
+<span class="gh">index da3a27d..09c97a9 100644</span>
+<span class="gd">--- a/spec/rails_helper.rb</span>
+<span class="gi">+++ b/spec/rails_helper.rb</span>
+<span class="gu">@@ -7,54 +7,6 @@ require &#39;spec_helper&#39;</span>
+<span class="w"> </span>require &#39;rspec/rails&#39;
+<span class="w"> </span># Add additional requires below this line. Rails is not loaded until this point!
+
+<span class="gd">-# Capybara とSelenium WebDriverの設定</span>
+<span class="gd">-require &#39;capybara/rails&#39;</span>
+<span class="gd">-require &#39;capybara/rspec&#39;</span>
+<span class="gd">-require &#39;selenium-webdriver&#39;</span>
+<span class="gd">-require &#39;capybara-screenshot/rspec&#39;</span>
+<span class="gd">-</span>
+<span class="gd">-# Chrome Headless設定</span>
+<span class="gd">-Capybara.register_driver :selenium_chrome_headless do |app|</span>
+<span class="gd">-  options = Selenium::WebDriver::Chrome::Options.new</span>
+<span class="gd">-  options.add_argument(&#39;--headless&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--no-sandbox&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--disable-dev-shm-usage&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--disable-gpu&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--remote-debugging-port=9222&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--window-size=1400,1400&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--disable-features=VizDisplayCompositor&#39;)</span>
+<span class="gd">-</span>
+<span class="gd">-  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)</span>
+<span class="gd">-end</span>
+<span class="gd">-</span>
+<span class="gd">-# Chrome設定（デバッグ用）</span>
+<span class="gd">-Capybara.register_driver :selenium_chrome do |app|</span>
+<span class="gd">-  options = Selenium::WebDriver::Chrome::Options.new</span>
+<span class="gd">-  options.add_argument(&#39;--no-sandbox&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--disable-dev-shm-usage&#39;)</span>
+<span class="gd">-  options.add_argument(&#39;--window-size=1400,1400&#39;)</span>
+<span class="gd">-</span>
+<span class="gd">-  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)</span>
+<span class="gd">-end</span>
+<span class="gd">-</span>
+<span class="gd">-# 環境に応じてドライバーを切り替え</span>
+<span class="gd">-if ENV[&#39;HEADLESS&#39;] || ENV[&#39;CI&#39;]</span>
+<span class="gd">-  Capybara.javascript_driver = :selenium_chrome_headless</span>
+<span class="gd">-else</span>
+<span class="gd">-  Capybara.javascript_driver = :selenium_chrome</span>
+<span class="gd">-end</span>
+<span class="gd">-</span>
+<span class="gd">-# Capybara設定</span>
+<span class="gd">-Capybara.default_driver = :rack_test</span>
+<span class="gd">-Capybara.default_max_wait_time = 5</span>
+<span class="gd">-Capybara.server_host = &#39;0.0.0.0&#39;</span>
+<span class="gd">-Capybara.server_port = 3001</span>
+<span class="gd">-Capybara.app_host = &#39;http://127.0.0.1:3001&#39;</span>
+<span class="gd">-</span>
+<span class="gd">-# スクリーンショット設定</span>
+<span class="gd">-Capybara::Screenshot.autosave_on_failure = true</span>
+<span class="gd">-Capybara::Screenshot.prune_strategy = :keep_last_run</span>
+<span class="gd">-</span>
+<span class="w"> </span># Requires supporting ruby files with custom matchers and macros, etc, in
+<span class="w"> </span># spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
+<span class="w"> </span># run as spec files by default. This means that files in spec/support that end
+<span class="gh">diff --git a/spec/support/capybara_config.rb b/spec/support/capybara_config.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..27a7986</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/spec/support/capybara_config.rb</span>
+<span class="gu">@@ -0,0 +1,47 @@</span>
+<span class="gi">+# Capybara とSelenium WebDriverの設定</span>
+<span class="gi">+require &#39;capybara/rails&#39;</span>
+<span class="gi">+require &#39;capybara/rspec&#39;</span>
+<span class="gi">+require &#39;selenium-webdriver&#39;</span>
+<span class="gi">+require &#39;capybara-screenshot/rspec&#39;</span>
+<span class="gi">+</span>
+<span class="gi">+# Chrome Headless設定</span>
+<span class="gi">+Capybara.register_driver :selenium_chrome_headless do |app|</span>
+<span class="gi">+  options = Selenium::WebDriver::Chrome::Options.new</span>
+<span class="gi">+  options.add_argument(&#39;--headless&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--no-sandbox&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--disable-dev-shm-usage&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--disable-gpu&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--remote-debugging-port=9222&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--window-size=1400,1400&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--disable-features=VizDisplayCompositor&#39;)</span>
+<span class="gi">+</span>
+<span class="gi">+  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)</span>
+<span class="gi">+end</span>
+<span class="gi">+</span>
+<span class="gi">+# Chrome設定（デバッグ用）</span>
+<span class="gi">+Capybara.register_driver :selenium_chrome do |app|</span>
+<span class="gi">+  options = Selenium::WebDriver::Chrome::Options.new</span>
+<span class="gi">+  options.add_argument(&#39;--no-sandbox&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--disable-dev-shm-usage&#39;)</span>
+<span class="gi">+  options.add_argument(&#39;--window-size=1400,1400&#39;)</span>
+<span class="gi">+</span>
+<span class="gi">+  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)</span>
+<span class="gi">+end</span>
+<span class="gi">+</span>
+<span class="gi">+# 環境に応じてドライバーを切り替え</span>
+<span class="gi">+if ENV[&#39;HEADLESS&#39;] || ENV[&#39;CI&#39;]</span>
+<span class="gi">+  Capybara.javascript_driver = :selenium_chrome_headless</span>
+<span class="gi">+else</span>
+<span class="gi">+  Capybara.javascript_driver = :selenium_chrome</span>
+<span class="gi">+end</span>
+<span class="gi">+</span>
+<span class="gi">+# Capybara設定</span>
+<span class="gi">+Capybara.default_driver = :rack_test</span>
+<span class="gi">+Capybara.default_max_wait_time = 5</span>
+<span class="gi">+Capybara.server_host = &#39;0.0.0.0&#39;</span>
+<span class="gi">+Capybara.server_port = 3001</span>
+<span class="gi">+Capybara.app_host = &#39;http://127.0.0.1:3001&#39;</span>
+<span class="gi">+</span>
+<span class="gi">+# スクリーンショット設定</span>
+<span class="gi">+Capybara::Screenshot.autosave_on_failure = true</span>
+<span class="gi">+Capybara::Screenshot.prune_strategy = :keep_last_run</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="4646581">コミット: 4646581<a class="headerlink" href="#4646581" title="Permanent link">&para;</a></h2>
+<h3 id="_18">メッセージ<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>test(WIP):E2Eテスト
+</code></pre></div>
+<h3 id="_19">変更されたファイル<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M spec/routing/hostname_constraints_spec.rb</li>
+</ul>
+<h3 id="_20">変更内容<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 4646581ecfb3363b0e2459fabaa0392cf7cf8bb1
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Wed Jun 11 12:29:25 2025 +0900
+
+<span class="w"> </span>   test(WIP):E2Eテスト
+
+<span class="gh">diff --git a/spec/routing/hostname_constraints_spec.rb b/spec/routing/hostname_constraints_spec.rb</span>
+<span class="gh">index cad8334..2438582 100644</span>
+<span class="gd">--- a/spec/routing/hostname_constraints_spec.rb</span>
+<span class="gi">+++ b/spec/routing/hostname_constraints_spec.rb</span>
+<span class="gu">@@ -4,8 +4,8 @@ require &#39;rails_helper&#39;</span>
+<span class="w"> </span>describe &#39;Routes&#39; do
+<span class="w"> </span>  # 職員トップページ
+<span class="w"> </span>  it &#39;should route staff top page&#39; do
+<span class="gd">-    expect(get: &#39;http://baukis-kai.example.com/staff&#39;).to route_to(</span>
+<span class="gd">-                                         host: &#39;baukis-kai.example.com&#39;,</span>
+<span class="gi">+    expect(get: &#39;http://127.0.0.1/staff&#39;).to route_to(</span>
+<span class="gi">+                                         host: &#39;127.0.0.1&#39;,</span>
+<span class="w"> </span>                                         controller: &#39;staff/top&#39;,
+<span class="w"> </span>                                         action: &#39;index&#39;
+<span class="w"> </span>                                     )
+<span class="gu">@@ -13,8 +13,8 @@ describe &#39;Routes&#39; do</span>
+
+<span class="w"> </span>  # 管理者ログインフォーム
+<span class="w"> </span>  it &#39;should route administrator login form&#39; do
+<span class="gd">-    expect(get: &#39;http://baukis-kai.example.com/admin/login&#39;).to route_to(</span>
+<span class="gd">-                                         host: &#39;baukis-kai.example.com&#39;,</span>
+<span class="gi">+    expect(get: &#39;http://127.0.0.1/admin/login&#39;).to route_to(</span>
+<span class="gi">+                                         host: &#39;127.0.0.1&#39;,</span>
+<span class="w"> </span>                                         controller: &#39;admin/sessions&#39;,
+<span class="w"> </span>                                         action: &#39;new&#39;
+<span class="w"> </span>                                     )
+<span class="gu">@@ -22,8 +22,8 @@ describe &#39;Routes&#39; do</span>
+
+<span class="w"> </span>  # 顧客トップページ
+<span class="w"> </span>  it &#39;should route customer top page&#39; do
+<span class="gd">-    expect(get: &#39;http://baukis-kai.example.com&#39;).to route_to(</span>
+<span class="gd">-                                                              host: &#39;baukis-kai.example.com&#39;,</span>
+<span class="gi">+    expect(get: &#39;http://127.0.0.1&#39;).to route_to(</span>
+<span class="gi">+                                                              host: &#39;127.0.0.1&#39;,</span>
+<span class="w"> </span>                                                              controller: &#39;customer/top&#39;,
+<span class="w"> </span>                                                              action: &#39;index&#39;
+<span class="w"> </span>                                                          )
+</code></pre></div>
+<h2 id="27a16ff">コミット: 27a16ff<a class="headerlink" href="#27a16ff" title="Permanent link">&para;</a></h2>
+<h3 id="_21">メッセージ<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>test(WIP):E2Eテスト
+</code></pre></div>
+<h3 id="_22">変更されたファイル<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M Gemfile</li>
+<li>M Gemfile.lock</li>
+<li>M config/environments/test.rb</li>
+<li>M spec/features/staff/program_management_spec.rb</li>
+<li>M spec/rails_helper.rb</li>
+<li>M spec/support/features_spec_helper.rb</li>
+</ul>
+<h3 id="_23">変更内容<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 27a16ff83164825e9b5253cac7d7bf97ccf785c4
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Wed Jun 11 12:22:58 2025 +0900
+
+<span class="w"> </span>   test(WIP):E2Eテスト
+
+<span class="gh">diff --git a/Gemfile b/Gemfile</span>
+<span class="gh">index e85164d..695fe3a 100644</span>
+<span class="gd">--- a/Gemfile</span>
+<span class="gi">+++ b/Gemfile</span>
+<span class="gu">@@ -69,9 +69,7 @@ group :test do</span>
+<span class="w"> </span>  gem &#39;capybara&#39;
+<span class="w"> </span>  gem &#39;database_cleaner&#39;
+<span class="w"> </span>  gem &#39;launchy&#39;
+<span class="gd">-  gem &#39;capybara&#39;</span>
+<span class="gd">-  gem &#39;selenium-webdriver&#39;</span>
+<span class="gd">-  gem &#39;webdrivers&#39;</span>
+<span class="gi">+  gem &#39;selenium-webdriver&#39;, &#39;~&gt; 4.11&#39;</span>
+<span class="w"> </span>  gem &#39;shoulda-matchers&#39;
+<span class="w"> </span>  gem &#39;capybara-screenshot&#39;
+<span class="w"> </span>  gem &#39;rails-controller-testing&#39;
+<span class="gh">diff --git a/Gemfile.lock b/Gemfile.lock</span>
+<span class="gh">index 944d710..edae2fd 100644</span>
+<span class="gd">--- a/Gemfile.lock</span>
+<span class="gi">+++ b/Gemfile.lock</span>
+<span class="gu">@@ -437,10 +437,6 @@ GEM</span>
+<span class="w"> </span>      activemodel (&gt;= 6.0.0)
+<span class="w"> </span>      bindex (&gt;= 0.4.0)
+<span class="w"> </span>      railties (&gt;= 6.0.0)
+<span class="gd">-    webdrivers (5.2.0)</span>
+<span class="gd">-      nokogiri (~&gt; 1.6)</span>
+<span class="gd">-      rubyzip (&gt;= 1.3.0)</span>
+<span class="gd">-      selenium-webdriver (~&gt; 4.0)</span>
+<span class="w"> </span>    webrick (1.9.1)
+<span class="w"> </span>    websocket (1.2.11)
+<span class="w"> </span>    websocket-driver (0.8.0)
+<span class="gu">@@ -513,7 +509,7 @@ DEPENDENCIES</span>
+<span class="w"> </span>  rails_12factor
+<span class="w"> </span>  rspec-rails
+<span class="w"> </span>  sass-rails
+<span class="gd">-  selenium-webdriver</span>
+<span class="gi">+  selenium-webdriver (~&gt; 4.11)</span>
+<span class="w"> </span>  shoulda-matchers
+<span class="w"> </span>  spring
+<span class="w"> </span>  spring-commands-rspec
+<span class="gu">@@ -523,7 +519,6 @@ DEPENDENCIES</span>
+<span class="w"> </span>  tzinfo-data
+<span class="w"> </span>  uglifier
+<span class="w"> </span>  web-console
+<span class="gd">-  webdrivers</span>
+<span class="w"> </span>  webrick
+<span class="w"> </span>  yard
+
+<span class="gh">diff --git a/config/environments/test.rb b/config/environments/test.rb</span>
+<span class="gh">index dc2c3b7..ea99a73 100644</span>
+<span class="gd">--- a/config/environments/test.rb</span>
+<span class="gi">+++ b/config/environments/test.rb</span>
+<span class="gu">@@ -48,8 +48,8 @@ Rails.application.configure do</span>
+<span class="w"> </span>  # config.action_view.raise_on_missing_translations = true
+
+<span class="w"> </span>  config.baukis_kai = {
+<span class="gd">-      staff: { host: &#39;baukis-kai.example.com&#39;, path: &#39;staff&#39; },</span>
+<span class="gd">-      admin: { host: &#39;baukis-kai.example.com&#39;, path: &#39;admin&#39; },</span>
+<span class="gd">-      customer: { host: &#39;baukis-kai.example.com&#39;, path: &#39;&#39; }</span>
+<span class="gi">+      staff: { host: &#39;127.0.0.1&#39;, path: &#39;staff&#39; },</span>
+<span class="gi">+      admin: { host: &#39;127.0.0.1&#39;, path: &#39;admin&#39; },</span>
+<span class="gi">+      customer: { host: &#39;127.0.0.1&#39;, path: &#39;&#39; }</span>
+<span class="w"> </span>  }
+<span class="w"> </span>end
+<span class="gh">diff --git a/spec/features/staff/program_management_spec.rb b/spec/features/staff/program_management_spec.rb</span>
+<span class="gh">index 190110a..28b8976 100644</span>
+<span class="gd">--- a/spec/features/staff/program_management_spec.rb</span>
+<span class="gi">+++ b/spec/features/staff/program_management_spec.rb</span>
+<span class="gu">@@ -1,6 +1,6 @@</span>
+<span class="w"> </span>require &#39;rails_helper&#39;
+
+<span class="gd">-feature &#39;職員によるプログラム管理&#39; do</span>
+<span class="gi">+feature &#39;職員によるプログラム管理&#39;, type: :system do</span>
+<span class="w"> </span>  include FeaturesSpecHelper
+<span class="w"> </span>  include PerformanceSpecHelper
+<span class="w"> </span>  let(:staff_member) { create(:staff_member) }
+<span class="gu">@@ -20,8 +20,7 @@ feature &#39;職員によるプログラム管理&#39; do</span>
+<span class="w"> </span>  end
+
+<span class="w"> </span>  scenario &#39;職員がプログラム詳細を表示する&#39; do
+<span class="gd">-    visit staff_programs_path</span>
+<span class="gd">-    click_link I18n.t(&#39;staff.programs.form.show&#39;)</span>
+<span class="gi">+    visit staff_program_path(program)</span>
+
+<span class="w"> </span>    expect(page).to have_content(program.title)
+<span class="w"> </span>    expect(page).to have_content(program.description)
+<span class="gu">@@ -49,8 +48,7 @@ feature &#39;職員によるプログラム管理&#39; do</span>
+<span class="w"> </span>  end
+
+<span class="w"> </span>  scenario &#39;職員がプログラムを編集する&#39; do
+<span class="gd">-    visit staff_programs_path</span>
+<span class="gd">-    click_link I18n.t(&#39;staff.programs.form.edit&#39;)</span>
+<span class="gi">+    visit edit_staff_program_path(program)</span>
+
+<span class="w"> </span>    fill_in I18n.t(&#39;activerecord.attributes.program.title&#39;), with: &#39;Updated Program&#39;
+<span class="w"> </span>    click_button I18n.t(&#39;staff.programs.edit.update&#39;)
+<span class="gu">@@ -66,6 +64,9 @@ feature &#39;職員によるプログラム管理&#39; do</span>
+
+<span class="w"> </span>    all(&#39;a&#39;, text: I18n.t(&#39;staff.programs.form.delete&#39;)).last.click
+
+<span class="gi">+    # JavaScriptアラートを受け入れる</span>
+<span class="gi">+    page.driver.browser.switch_to.alert.accept</span>
+<span class="gi">+</span>
+<span class="w"> </span>    expect(page).to have_css(&#39;.Flash__notice&#39;, text: I18n.t(&#39;staff.programs.destroy.flash_notice&#39;))
+<span class="w"> </span>    expect(Program.find_by(id: program_without_entries.id)).to be_nil
+<span class="w"> </span>  end
+<span class="gh">diff --git a/spec/rails_helper.rb b/spec/rails_helper.rb</span>
+<span class="gh">index cd000d0..da3a27d 100644</span>
+<span class="gd">--- a/spec/rails_helper.rb</span>
+<span class="gi">+++ b/spec/rails_helper.rb</span>
+<span class="gu">@@ -49,6 +49,7 @@ Capybara.default_driver = :rack_test</span>
+<span class="w"> </span>Capybara.default_max_wait_time = 5
+<span class="w"> </span>Capybara.server_host = &#39;0.0.0.0&#39;
+<span class="w"> </span>Capybara.server_port = 3001
+<span class="gi">+Capybara.app_host = &#39;http://127.0.0.1:3001&#39;</span>
+
+<span class="w"> </span># スクリーンショット設定
+<span class="w"> </span>Capybara::Screenshot.autosave_on_failure = true
+<span class="gh">diff --git a/spec/support/features_spec_helper.rb b/spec/support/features_spec_helper.rb</span>
+<span class="gh">index aac0165..5d2f87c 100644</span>
+<span class="gd">--- a/spec/support/features_spec_helper.rb</span>
+<span class="gi">+++ b/spec/support/features_spec_helper.rb</span>
+<span class="gu">@@ -1,7 +1,10 @@</span>
+<span class="w"> </span>module FeaturesSpecHelper
+<span class="w"> </span>  def switch_namespace(namespace)
+<span class="w"> </span>    config = Rails.application.config.baukis_kai
+<span class="gd">-    Capybara.app_host = &#39;http://&#39; + config[namespace][:host]</span>
+<span class="gi">+    # ローカルテスト用にlocalhost:3001を使用</span>
+<span class="gi">+    Capybara.app_host = &quot;http://127.0.0.1:3001&quot;</span>
+<span class="gi">+    # パスプレフィックスを設定（必要な場合）</span>
+<span class="gi">+    # Capybara.app_host = &quot;http://localhost:3001/#{config[namespace][:path]}&quot;</span>
+<span class="w"> </span>  end
+
+<span class="w"> </span>  def login_as_staff_member(staff_member, password = &#39;pw&#39;)
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

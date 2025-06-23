@@ -1,0 +1,2650 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20170328/">
+      
+      
+        <link rel="next" href="../20250510/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20250424 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2025-04-24" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20250424
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#49163f7-" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 49163f7 - システムドキュメントの作成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 49163f7 - システムドキュメントの作成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#826251b" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 826251b
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 826251b">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#835dfd2" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 835dfd2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 835dfd2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5517d0b" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 5517d0b
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 5517d0b">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2025-04-24">作業履歴 2025-04-24<a class="headerlink" href="#2025-04-24" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2025-04-24の作業内容をまとめています。このジャーナルでは、システムの現状分析として「アーキテクチャ概要」と「ユースケース」の2つの重要なドキュメントを作成しました。これらのドキュメントは、Baukis-Kaiシステムの構造、機能、および利用パターンを包括的に説明し、開発チームや新しいメンバーがシステムを理解するための基盤となります。</p>
+<h2 id="49163f7-">コミット: 49163f7 - システムドキュメントの作成<a class="headerlink" href="#49163f7-" title="Permanent link">&para;</a></h2>
+<h3 id="_2">概要<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>システムの現状分析として、アーキテクチャとユースケースに関する詳細なドキュメントを作成しました。これらのドキュメントは、システムの全体像を把握し、今後の開発や保守作業の指針となることを目的としています。</p>
+<h3 id="_3">技術的詳細<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>アーキテクチャ概要</strong>: システムの構造、層、コンポーネント間の関係を詳細に説明</li>
+<li>システム概要と主要機能</li>
+<li>3つの主要サブシステム（スタッフ、顧客、管理者インターフェース）</li>
+<li>アプリケーション層構造（MVC拡張）</li>
+<li>名前空間とインターフェース構造</li>
+<li>データモデルとその関連</li>
+<li>ビジネスフロー</li>
+<li>認証・認可システム</li>
+<li>配置アーキテクチャ</li>
+<li>
+<p>開発ガイドライン</p>
+</li>
+<li>
+<p><strong>ユースケース</strong>: システムの利用パターンを詳細に説明</p>
+</li>
+<li>アクター（職員、顧客、管理者）の定義</li>
+<li>各アクターのユースケース詳細</li>
+<li>ユースケース関連図</li>
+</ul>
+<h3 id="_4">メッセージ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>docs:現状分析
+</code></pre></div>
+<h3 id="_5">変更されたファイル<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A "docs/\343\202\242\343\203\274\343\202\255\343\203\206\343\202\257\343\203\201\343\203\243\346\246\202\350\246\201.md"</li>
+<li>A "docs/\343\203\246\343\203\274\343\202\271\343\202\261\343\203\274\343\202\271.md"</li>
+</ul>
+<h3 id="_6">変更内容<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>commit 49163f777eaed28780efdfe817f6749908e196cd
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Apr 24 18:47:02 2025 +0900
+
+<span class="w"> </span>   docs:現状分析
+
+<span class="gh">diff --git &quot;a/docs/\343\202\242\343\203\274\343\202\255\343\203\206\343\202\257\343\203\201\343\203\243\346\246\202\350\246\201.md&quot; &quot;b/docs/\343\202\242\343\203\274\343\202\255\343\203\206\343\202\257\343\203\201\343\203\243\346\246\202\350\246\201.md&quot;</span>
+new file mode 100644
+<span class="gh">index 0000000..d91f3e0</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ &quot;b/docs/\343\202\242\343\203\274\343\202\255\343\203\206\343\202\257\343\203\201\343\203\243\346\246\202\350\246\201.md&quot;</span>
+<span class="gu">@@ -0,0 +1,412 @@</span>
+<span class="gi">+# Baukis-Kai システムアーキテクチャ概要</span>
+<span class="gi">+</span>
+<span class="gi">+## 1. システム概要</span>
+<span class="gi">+</span>
+<span class="gi">+Baukis-Kaiは顧客管理システムで、主に以下の機能を提供します:</span>
+<span class="gi">+</span>
+<span class="gi">+- スタッフによる顧客情報管理</span>
+<span class="gi">+- 顧客のプログラム予約および参加管理</span>
+<span class="gi">+- 顧客とスタッフ間のメッセージングシステム</span>
+<span class="gi">+- 管理者によるスタッフ管理とシステム設定</span>
+<span class="gi">+</span>
+<span class="gi">+## 2. システム構成</span>
+<span class="gi">+</span>
+<span class="gi">+システムは以下の3つの主要なサブシステムに分かれています:</span>
+<span class="gi">+</span>
+<span class="gi">+1. **スタッフインターフェース**: スタッフが顧客情報やプログラムを管理するためのインターフェース</span>
+<span class="gi">+2. **顧客インターフェース**: 顧客が自身の情報、予約、メッセージを管理するためのインターフェース</span>
+<span class="gi">+3. **管理者インターフェース**: システム全体とスタッフを管理するための管理者用インターフェース</span>
+<span class="gi">+</span>
+<span class="gi">+## 3. アプリケーション層構造</span>
+<span class="gi">+</span>
+<span class="gi">+Railsアプリケーションの拡張版MVCアーキテクチャに基づいており、以下の層に分かれています:</span>
+<span class="gi">+</span>
+<span class="gi">+&lt;img src=&quot;data:image/svg+xml;base64,PCFkb2N0eXBlIGh0bWw+PGh0bWwgbGFuZz0iZW4iPjxoZWFkPjxzY3JpcHQ+dmFyIF9fZXpIdHRwQ29uc2VudD17c2V0QnlDYXQ6ZnVuY3Rpb24oc3JjLHRhZ1R5cGUsYXR0cmlidXRlcyxjYXRlZ29yeSxmb3JjZSxjdXN0b21TZXRTY3JpcHRGbj1udWxsKXt2YXIgc2V0U2NyaXB0PWZ1bmN0aW9uKCl7aWYoZm9yY2V8fHdpbmRvdy5lelRjZkNvbnNlbnRbY2F0ZWdvcnldKXtpZih0eXBlb2YgY3VzdG9tU2V0U2NyaXB0Rm49PT0nZnVuY3Rpb24nKXtjdXN0b21TZXRTY3JpcHRGbigpO31lbHNle3ZhciBzY3JpcHRFbGVtZW50PWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQodGFnVHlwZSk7c2NyaXB0RWxlbWVudC5zcmM9c3JjO2F0dHJpYnV0ZXMuZm9yRWFjaChmdW5jdGlvbihhdHRyKXtmb3IodmFyIGtleSBpbiBhdHRyKXtpZihhdHRyLmhhc093blByb3BlcnR5KGtleSkpe3NjcmlwdEVsZW1lbnQuc2V0QXR0cmlidXRlKGtleSxhdHRyW2tleV0pO319fSk7dmFyIGZpcnN0U2NyaXB0PWRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKHRhZ1R5cGUpWzBdO2ZpcnN0U2NyaXB0LnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHNjcmlwdEVsZW1lbnQsZmlyc3RTY3JpcHQpO319fTtpZihmb3JjZXx8KHdpbmRvdy5lelRjZkNvbnNlbnQmJndpbmRvdy5lelRjZkNvbnNlbnQubG9hZGVkKSl7c2V0U2NyaXB0KCk7fWVsc2UgaWYodHlwZW9mIGdldEV6Q29uc2VudERhdGE9PT0iZnVuY3Rpb24iKXtnZXRFekNvbnNlbnREYXRhKCkudGhlbihmdW5jdGlvbihlelRjZkNvbnNlbnQpe2lmKGV6VGNmQ29uc2VudCYmZXpUY2ZDb25zZW50LmxvYWRlZCl7c2V0U2NyaXB0KCk7fWVsc2V7Y29uc29sZS5lcnJvcigiY2Fubm90IGdldCBleiBjb25zZW50IGRhdGEiKTtmb3JjZT10cnVlO3NldFNjcmlwdCgpO319KTt9ZWxzZXtmb3JjZT10cnVlO3NldFNjcmlwdCgpO2NvbnNvbGUuZXJyb3IoImdldEV6Q29uc2VudERhdGEgaXMgbm90IGEgZnVuY3Rpb24iKTt9fSx9Ozwvc2NyaXB0Pgo8c2NyaXB0PnZhciBlelRjZkNvbnNlbnQ9d2luZG93LmV6VGNmQ29uc2VudD93aW5kb3cuZXpUY2ZDb25zZW50Ontsb2FkZWQ6ZmFsc2Usc3RvcmVfaW5mbzpmYWxzZSxkZXZlbG9wX2FuZF9pbXByb3ZlX3NlcnZpY2VzOmZhbHNlLG1lYXN1cmVfYWRfcGVyZm9ybWFuY2U6ZmFsc2UsbWVhc3VyZV9jb250ZW50X3BlcmZvcm1hbmNlOmZhbHNlLHNlbGVjdF9iYXNpY19hZHM6ZmFsc2UsY3JlYXRlX2FkX3Byb2ZpbGU6ZmFsc2Usc2VsZWN0X3BlcnNvbmFsaXplZF9hZHM6ZmFsc2UsY3JlYXRlX2NvbnRlbnRfcHJvZmlsZTpmYWxzZSxzZWxlY3RfcGVyc29uYWxpemVkX2NvbnRlbnQ6ZmFsc2UsdW5kZXJzdGFuZF9hdWRpZW5jZXM6ZmFsc2UsdXNlX2xpbWl0ZWRfZGF0YV90b19zZWxlY3RfY29udGVudDpmYWxzZSx9O2Z1bmN0aW9uIGdldEV6Q29uc2VudERhdGEoKXtyZXR1cm4gbmV3IFByb21pc2UoZnVuY3Rpb24ocmVzb2x2ZSl7ZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiZXpDb25zZW50RXZlbnQiLGZ1bmN0aW9uKGV2ZW50KXt2YXIgZXpUY2ZDb25zZW50PWV2ZW50LmRldGFpbC5lelRjZkNvbnNlbnQ7cmVzb2x2ZShlelRjZkNvbnNlbnQpO30pO30pO308L3NjcmlwdD4KPHNjcmlwdD5pZih0eXBlb2YgX3NldEV6Q29va2llcyE9PSdmdW5jdGlvbicpe2Z1bmN0aW9uIF9zZXRFekNvb2tpZXMoZXpDb25zZW50RGF0YSl7dmFyIGNvb2tpZXM9d2luZG93LmV6Q29va2llUXVldWU7Zm9yKHZhciBpPTA7aTxjb29raWVzLmxlbmd0aDtpKyspe3ZhciBjb29raWU9Y29va2llc1tpXTtpZihlekNvbnNlbnREYXRhJiZlekNvbnNlbnREYXRhLmxvYWRlZCYmZXpDb25zZW50RGF0YVtjb29raWUudGNmQ2F0ZWdvcnldKXtkb2N1bWVudC5jb29raWU9Y29va2llLm5hbWUrIj0iK2Nvb2tpZS52YWx1ZTt9fX19CndpbmRvdy5lekNvb2tpZVF1ZXVlPXdpbmRvdy5lekNvb2tpZVF1ZXVlfHxbXTtpZih0eXBlb2YgYWRkRXpDb29raWVzIT09J2Z1bmN0aW9uJyl7ZnVuY3Rpb24gYWRkRXpDb29raWVzKGFycil7d2luZG93LmV6Q29va2llUXVldWU9Wy4uLndpbmRvdy5lekNvb2tpZVF1ZXVlLC4uLmFycl07fX0KYWRkRXpDb29raWVzKFtdKTtpZih3aW5kb3cuZXpUY2ZDb25zZW50JiZ3aW5kb3cuZXpUY2ZDb25zZW50LmxvYWRlZCl7X3NldEV6Q29va2llcyh3aW5kb3cuZXpUY2ZDb25zZW50KTt9ZWxzZSBpZih0eXBlb2YgZ2V0RXpDb25zZW50RGF0YT09PSJmdW5jdGlvbiIpe2dldEV6Q29uc2VudERhdGEoKS50aGVuKGZ1bmN0aW9uKGV6VGNmQ29uc2VudCl7aWYoZXpUY2ZDb25zZW50JiZlelRjZkNvbnNlbnQubG9hZGVkKXtfc2V0RXpDb29raWVzKHdpbmRvdy5lelRjZkNvbnNlbnQpO31lbHNle2NvbnNvbGUuZXJyb3IoImNhbm5vdCBnZXQgZXogY29uc2VudCBkYXRhIik7X3NldEV6Q29va2llcyh3aW5kb3cuZXpUY2ZDb25zZW50KTt9fSk7fWVsc2V7Y29uc29sZS5lcnJvcigiZ2V0RXpDb25zZW50RGF0YSBpcyBub3QgYSBmdW5jdGlvbiIpO19zZXRFekNvb2tpZXMod2luZG93LmV6VGNmQ29uc2VudCk7fTwvc2NyaXB0Pjx0aXRsZT5IVFRQIFN0YXR1cyA0MDAg4oCTIEJhZCBSZXF1ZXN0PC90aXRsZT48c3R5bGUgdHlwZT0idGV4dC9jc3MiPmJvZHkge2ZvbnQtZmFtaWx5OlRhaG9tYSxBcmlhbCxzYW5zLXNlcmlmO30gaDEsIGgyLCBoMywgYiB7Y29sb3I6d2hpdGU7YmFja2dyb3VuZC1jb2xvcjojNTI1RDc2O30gaDEge2ZvbnQtc2l6ZToyMnB4O30gaDIge2ZvbnQtc2l6ZToxNnB4O30gaDMge2ZvbnQtc2l6ZToxNHB4O30gcCB7Zm9udC1zaXplOjEycHg7fSBhIHtjb2xvcjpibGFjazt9IC5saW5lIHtoZWlnaHQ6MXB4O2JhY2tncm91bmQtY29sb3I6IzUyNUQ3Njtib3JkZXI6bm9uZTt9PC9zdHlsZT48L2hlYWQ+PGJvZHk+PGgxPkhUVFAgU3RhdHVzIDQwMCDigJMgQmFkIFJlcXVlc3Q8L2gxPjxociBjbGFzcz0ibGluZSIgLz48cD48Yj5UeXBlPC9iPiBFeGNlcHRpb24gUmVwb3J0PC9wPjxwPjxiPk1lc3NhZ2U8L2I+IFJlcXVlc3QgaGVhZGVyIGlzIHRvbyBsYXJnZTwvcD48cD48Yj5EZXNjcmlwdGlvbjwvYj4gVGhlIHNlcnZlciBjYW5ub3Qgb3Igd2lsbCBub3QgcHJvY2VzcyB0aGUgcmVxdWVzdCBkdWUgdG8gc29tZXRoaW5nIHRoYXQgaXMgcGVyY2VpdmVkIHRvIGJlIGEgY2xpZW50IGVycm9yIChlLmcuLCBtYWxmb3JtZWQgcmVxdWVzdCBzeW50YXgsIGludmFsaWQgcmVxdWVzdCBtZXNzYWdlIGZyYW1pbmcsIG9yIGRlY2VwdGl2ZSByZXF1ZXN0IHJvdXRpbmcpLjwvcD48cD48Yj5FeGNlcHRpb248L2I+PC9wPjxwcmU+amF2YS5sYW5nLklsbGVnYWxBcmd1bWVudEV4Y2VwdGlvbjogUmVxdWVzdCBoZWFkZXIgaXMgdG9vIGxhcmdlCglvcmcuYXBhY2hlLmNveW90ZS5odHRwMTEuSHR0cDExSW5wdXRCdWZmZXIuZmlsbChIdHRwMTFJbnB1dEJ1ZmZlci5qYXZhOjc3OCkKCW9yZy5hcGFjaGUuY295b3RlLmh0dHAxMS5IdHRwMTFJbnB1dEJ1ZmZlci5wYXJzZVJlcXVlc3RMaW5lKEh0dHAxMUlucHV0QnVmZmVyLmphdmE6NDQyKQoJb3JnLmFwYWNoZS5jb3lvdGUuaHR0cDExLkh0dHAxMVByb2Nlc3Nvci5zZXJ2aWNlKEh0dHAxMVByb2Nlc3Nvci5qYXZhOjI1NikKCW9yZy5hcGFjaGUuY295b3RlLkFic3RyYWN0UHJvY2Vzc29yTGlnaHQucHJvY2VzcyhBYnN0cmFjdFByb2Nlc3NvckxpZ2h0LmphdmE6NjMpCglvcmcuYXBhY2hlLmNveW90ZS5BYnN0cmFjdFByb3RvY29sJENvbm5lY3Rpb25IYW5kbGVyLnByb2Nlc3MoQWJzdHJhY3RQcm90b2NvbC5qYXZhOjkzNykKCW9yZy5hcGFjaGUudG9tY2F0LnV0aWwubmV0Lk5pb0VuZHBvaW50JFNvY2tldFByb2Nlc3Nvci5kb1J1bihOaW9FbmRwb2ludC5qYXZhOjE3OTEpCglvcmcuYXBhY2hlLnRvbWNhdC51dGlsLm5ldC5Tb2NrZXRQcm9jZXNzb3JCYXNlLnJ1bihTb2NrZXRQcm9jZXNzb3JCYXNlLmphdmE6NTIpCglvcmcuYXBhY2hlLnRvbWNhdC51dGlsLnRocmVhZHMuVGhyZWFkUG9vbEV4ZWN1dG9yLnJ1bldvcmtlcihUaHJlYWRQb29sRXhlY3V0b3IuamF2YToxMTkwKQoJb3JnLmFwYWNoZS50b21jYXQudXRpbC50aHJlYWRzLlRocmVhZFBvb2xFeGVjdXRvciRXb3JrZXIucnVuKFRocmVhZFBvb2xFeGVjdXRvci5qYXZhOjY1OSkKCW9yZy5hcGFjaGUudG9tY2F0LnV0aWwudGhyZWFkcy5UYXNrVGhyZWFkJFdyYXBwaW5nUnVubmFibGUucnVuKFRhc2tUaHJlYWQuamF2YTo2MykKCWphdmEuYmFzZSYjNDc7amF2YS5sYW5nLlRocmVhZC5ydW4oVGhyZWFkLmphdmE6ODI5KQo8L3ByZT48cD48Yj5Ob3RlPC9iPiBUaGUgZnVsbCBzdGFjayB0cmFjZSBvZiB0aGUgcm9vdCBjYXVzZSBpcyBhdmFpbGFibGUgaW4gdGhlIHNlcnZlciBsb2dzLjwvcD48aHIgY2xhc3M9ImxpbmUiIC8+PGgzPkFwYWNoZSBUb21jYXQvOS4wLjk1PC9oMz48c2NyaXB0IGRhdGEtY2Zhc3luYz0iZmFsc2UiPmZ1bmN0aW9uIF9lbWl0RXpDb25zZW50RXZlbnQoKXt2YXIgY3VzdG9tRXZlbnQ9bmV3IEN1c3RvbUV2ZW50KCJlekNvbnNlbnRFdmVudCIse2RldGFpbDp7ZXpUY2ZDb25zZW50OndpbmRvdy5lelRjZkNvbnNlbnR9LGJ1YmJsZXM6dHJ1ZSxjYW5jZWxhYmxlOnRydWUsfSk7ZG9jdW1lbnQuZGlzcGF0Y2hFdmVudChjdXN0b21FdmVudCk7fQooZnVuY3Rpb24od2luZG93LGRvY3VtZW50KXtmdW5jdGlvbiBfc2V0QWxsRXpDb25zZW50VHJ1ZSgpe3dpbmRvdy5lelRjZkNvbnNlbnQubG9hZGVkPXRydWU7d2luZG93LmV6VGNmQ29uc2VudC5zdG9yZV9pbmZvPXRydWU7d2luZG93LmV6VGNmQ29uc2VudC5kZXZlbG9wX2FuZF9pbXByb3ZlX3NlcnZpY2VzPXRydWU7d2luZG93LmV6VGNmQ29uc2VudC5tZWFzdXJlX2FkX3BlcmZvcm1hbmNlPXRydWU7d2luZG93LmV6VGNmQ29uc2VudC5tZWFzdXJlX2NvbnRlbnRfcGVyZm9ybWFuY2U9dHJ1ZTt3aW5kb3cuZXpUY2ZDb25zZW50LnNlbGVjdF9iYXNpY19hZHM9dHJ1ZTt3aW5kb3cuZXpUY2ZDb25zZW50LmNyZWF0ZV9hZF9wcm9maWxlPXRydWU7d2luZG93LmV6VGNmQ29uc2VudC5zZWxlY3RfcGVyc29uYWxpemVkX2Fkcz10cnVlO3dpbmRvdy5lelRjZkNvbnNlbnQuY3JlYXRlX2NvbnRlbnRfcHJvZmlsZT10cnVlO3dpbmRvdy5lelRjZkNvbnNlbnQuc2VsZWN0X3BlcnNvbmFsaXplZF9jb250ZW50PXRydWU7d2luZG93LmV6VGNmQ29uc2VudC51bmRlcnN0YW5kX2F1ZGllbmNlcz10cnVlO3dpbmRvdy5lelRjZkNvbnNlbnQudXNlX2xpbWl0ZWRfZGF0YV90b19zZWxlY3RfY29udGVudD10cnVlO3dpbmRvdy5lelRjZkNvbnNlbnQuc2VsZWN0X3BlcnNvbmFsaXplZF9jb250ZW50PXRydWU7fQpmdW5jdGlvbiBfY2xlYXJFekNvbnNlbnRDb29raWUoKXtkb2N1bWVudC5jb29raWU9ImV6Q01QQ29va2llQ29uc2VudD10Y2YyO0RvbWFpbj0ucGxhbnR1bWwuY29tO1BhdGg9LztleHBpcmVzPVRodSwgMDEgSmFuIDE5NzAgMDA6MDA6MDAgR01UIjt9Cl9jbGVhckV6Q29uc2VudENvb2tpZSgpO2lmKHR5cGVvZiB3aW5kb3cuX190Y2ZhcGkhPT0idW5kZWZpbmVkIil7d2luZG93LmV6Z2NvbnNlbnQ9ZmFsc2U7dmFyIGFtYXpvbkhhc1J1bj1mYWxzZTtmdW5jdGlvbiBfZXpBbGxvd2VkKHRjZGF0YSxwdXJwb3NlKXtyZXR1cm4odGNkYXRhLnB1cnBvc2UuY29uc2VudHNbcHVycG9zZV18fHRjZGF0YS5wdXJwb3NlLmxlZ2l0aW1hdGVJbnRlcmVzdHNbcHVycG9zZV0pO30KZnVuY3Rpb24gX2hhbmRsZUNvbnNlbnREZWNpc2lvbih0Y2RhdGEpe3dpbmRvdy5lelRjZkNvbnNlbnQubG9hZGVkPXRydWU7aWYoIXRjZGF0YS52ZW5kb3IuY29uc2VudHNbIjM0NyJdJiYhdGNkYXRhLnZlbmRvci5sZWdpdGltYXRlSW50ZXJlc3RzWyIzNDciXSl7d2luZG93Ll9lbWl0RXpDb25zZW50RXZlbnQoKTtyZXR1cm47fQp3aW5kb3cuZXpUY2ZDb25zZW50LnN0b3JlX2luZm89X2V6QWxsb3dlZCh0Y2RhdGEsIjEiKTt3aW5kb3cuZXpUY2ZDb25zZW50LmRldmVsb3BfYW5kX2ltcHJvdmVfc2VydmljZXM9X2V6QWxsb3dlZCh0Y2RhdGEsIjEwIik7d2luZG93LmV6VGNmQ29uc2VudC5tZWFzdXJlX2NvbnRlbnRfcGVyZm9ybWFuY2U9X2V6QWxsb3dlZCh0Y2RhdGEsIjgiKTt3aW5kb3cuZXpUY2ZDb25zZW50LnNlbGVjdF9iYXNpY19hZHM9X2V6QWxsb3dlZCh0Y2RhdGEsIjIiKTt3aW5kb3cuZXpUY2ZDb25zZW50LmNyZWF0ZV9hZF9wcm9maWxlPV9lekFsbG93ZWQodGNkYXRhLCIzIik7d2luZG93LmV6VGNmQ29uc2VudC5zZWxlY3RfcGVyc29uYWxpemVkX2Fkcz1fZXpBbGxvd2VkKHRjZGF0YSwiNCIpO3dpbmRvdy5lelRjZkNvbnNlbnQuY3JlYXRlX2NvbnRlbnRfcHJvZmlsZT1fZXpBbGxvd2VkKHRjZGF0YSwiNSIpO3dpbmRvdy5lelRjZkNvbnNlbnQubWVhc3VyZV9hZF9wZXJmb3JtYW5jZT1fZXpBbGxvd2VkKHRjZGF0YSwiNyIpO3dpbmRvdy5lelRjZkNvbnNlbnQudXNlX2xpbWl0ZWRfZGF0YV90b19zZWxlY3RfY29udGVudD1fZXpBbGxvd2VkKHRjZGF0YSwiMTEiKTt3aW5kb3cuZXpUY2ZDb25zZW50LnNlbGVjdF9wZXJzb25hbGl6ZWRfY29udGVudD1fZXpBbGxvd2VkKHRjZGF0YSwiNiIpO3dpbmRvdy5lelRjZkNvbnNlbnQudW5kZXJzdGFuZF9hdWRpZW5jZXM9X2V6QWxsb3dlZCh0Y2RhdGEsIjkiKTt3aW5kb3cuX2VtaXRFekNvbnNlbnRFdmVudCgpO30KZnVuY3Rpb24gX2hhbmRsZUdvb2dsZUNvbnNlbnRWMih0Y2RhdGEpe2lmKCF0Y2RhdGF8fCF0Y2RhdGEucHVycG9zZXx8IXRjZGF0YS5wdXJwb3NlLmNvbnNlbnRzKXtyZXR1cm47fQp2YXIgZ29vZ0NvbnNlbnRWMj17fTtpZih0Y2RhdGEucHVycG9zZS5jb25zZW50c1sxXSl7Z29vZ0NvbnNlbnRWMi5hZF9zdG9yYWdlPSdncmFudGVkJztnb29nQ29uc2VudFYyLmFuYWx5dGljc19zdG9yYWdlPSdncmFudGVkJzt9CmlmKHRjZGF0YS5wdXJwb3NlLmNvbnNlbnRzWzNdJiZ0Y2RhdGEucHVycG9zZS5jb25zZW50c1s0XSl7Z29vZ0NvbnNlbnRWMi5hZF9wZXJzb25hbGl6YXRpb249J2dyYW50ZWQnO30KaWYodGNkYXRhLnB1cnBvc2UuY29uc2VudHNbMV0mJnRjZGF0YS5wdXJwb3NlLmNvbnNlbnRzWzddKXtnb29nQ29uc2VudFYyLmFkX3VzZXJfZGF0YT0nZ3JhbnRlZCc7fQppZihnb29nQ29uc2VudFYyLmFuYWx5dGljc19zdG9yYWdlPT0nZGVuaWVkJyl7Z3RhZygnc2V0JywndXJsX3Bhc3N0aHJvdWdoJyx0cnVlKTt9Cmd0YWcoJ2NvbnNlbnQnLCd1cGRhdGUnLGdvb2dDb25zZW50VjIpO30KX190Y2ZhcGkoImFkZEV2ZW50TGlzdGVuZXIiLDIsZnVuY3Rpb24odGNkYXRhLHN1Y2Nlc3Mpe2lmKCFzdWNjZXNzfHwhdGNkYXRhKXt3aW5kb3cuX2VtaXRFekNvbnNlbnRFdmVudCgpO3JldHVybjt9CmlmKCF0Y2RhdGEuZ2RwckFwcGxpZXMpe19zZXRBbGxFekNvbnNlbnRUcnVlKCk7d2luZG93Ll9lbWl0RXpDb25zZW50RXZlbnQoKTtyZXR1cm47fQppZih0Y2RhdGEuZXZlbnRTdGF0dXM9PT0idXNlcmFjdGlvbmNvbXBsZXRlInx8dGNkYXRhLmV2ZW50U3RhdHVzPT09InRjbG9hZGVkIil7aWYodHlwZW9mIGd0YWchPSd1bmRlZmluZWQnKXtfaGFuZGxlR29vZ2xlQ29uc2VudFYyKHRjZGF0YSk7fQpfaGFuZGxlQ29uc2VudERlY2lzaW9uKHRjZGF0YSk7aWYodGNkYXRhLnB1cnBvc2UuY29uc2VudHNbIjEiXT09PXRydWUmJnRjZGF0YS52ZW5kb3IuY29uc2VudHNbIjc1NSJdIT09ZmFsc2Upe3dpbmRvdy5lemdjb25zZW50PXRydWU7KGFkc2J5Z29vZ2xlPXdpbmRvdy5hZHNieWdvb2dsZXx8W10pLnBhdXNlQWRSZXF1ZXN0cz0wO30KaWYod2luZG93Ll9fZXpjb25zZW50KXtfX2V6Y29uc2VudC5zZXRFem9pY0NvbnNlbnRTZXR0aW5ncyhlekNvbnNlbnRDYXRlZ29yaWVzKTt9Cl9fdGNmYXBpKCJyZW1vdmVFdmVudExpc3RlbmVyIiwyLGZ1bmN0aW9uKHN1Y2Nlc3Mpe3JldHVybiBudWxsO30sdGNkYXRhLmxpc3RlbmVySWQpO2lmKCEodGNkYXRhLnB1cnBvc2UuY29uc2VudHNbIjEiXT09PXRydWUmJl9lekFsbG93ZWQodGNkYXRhLCIyIikmJl9lekFsbG93ZWQodGNkYXRhLCIzIikmJl9lekFsbG93ZWQodGNkYXRhLCI0IikpKXtpZih0eXBlb2YgX19lej09Im9iamVjdCImJnR5cGVvZiBfX2V6LmJpdD09Im9iamVjdCImJnR5cGVvZiB3aW5kb3dbIl9lemFxIl09PSJvYmplY3QiJiZ0eXBlb2Ygd2luZG93WyJfZXphcSJdWyJwYWdlX3ZpZXdfaWQiXT09InN0cmluZyIpe19fZXouYml0LkFkZCh3aW5kb3dbIl9lemFxIl1bInBhZ2Vfdmlld19pZCJdLFtuZXcgX19lekRvdERhdGEoIm5vbl9wZXJzb25hbGl6ZWRfYWRzIix0cnVlKSxdKTt9fX19KTt9ZWxzZXtfc2V0QWxsRXpDb25zZW50VHJ1ZSgpO3dpbmRvdy5fZW1pdEV6Q29uc2VudEV2ZW50KCk7fX0pKHdpbmRvdyxkb2N1bWVudCk7PC9zY3JpcHQ+PC9ib2R5PjwvaHRtbD4=&quot; class=&quot;uml&quot; alt=&quot;uml diagram&quot; title=&quot;&quot; /&gt;</span>
+
+## コミット: f6d663a
+
+### メッセージ
+</code></pre></div>
+build:レストア
+<div class="highlight"><pre><span></span><code>### 変更されたファイル
+
+- M .devcontainer/devcontainer.json
+- M Dockerfile
+- A Dockerfile-base
+- M README.md
+- M docker-compose.yml
+
+### 変更内容
+
+```diff
+commit f6d663a639d8545e7b41788280fa5da2561c8291
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Apr 24 17:13:56 2025 +0900
+
+    build:レストア
+
+diff --git a/.devcontainer/devcontainer.json b/.devcontainer/devcontainer.json
+index 52f7251..55a3816 100644
+--- a/.devcontainer/devcontainer.json
++++ b/.devcontainer/devcontainer.json
+@@ -2,7 +2,6 @@
+ // README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker
+ {
+    &quot;name&quot;: &quot;Docker in Docker&quot;,
+-   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    &quot;image&quot;: &quot;baukis-kai&quot;,
+
+    &quot;features&quot;: {
+diff --git a/Dockerfile b/Dockerfile
+index 91daa36..c68b6cd 100644
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -1,90 +1,4 @@
+-FROM ubuntu:18.04
+-
+-# Setup locale
+-RUN \
+-apt-get -yq update &amp;&amp; \
+-apt-get install -y language-pack-ja-base language-pack-ja
+-RUN update-locale LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja
+-ENV LANG=ja_JP.UTF-8
+-ENV LC_ALL=ja_JP.UTF-8
+-ENV LC_CTYPE=ja_JP.UTF-8
+-
+-RUN apt-get update &amp;&amp; \
+-    apt-get install -y \
+-           sudo \
+-           build-essential \
+-           zip \
+-           unzip \
+-           git \
+-           curl \
+-           wget \
+-           git-core \
+-           libssl-dev \
+-           libqt4-dev \
+-           libc6-dev \
+-           automake \
+-           libtool \
+-           libyaml-dev \
+-           zlib1g \
+-           zlib1g-dev \
+-           openssl \
+-           libreadline-dev \
+-           libxml2-dev \
+-           libxslt1-dev \
+-           libncurses5-dev \
+-           pkg-config \
+-           chrpath \
+-           libfontconfig1-dev \
+-           libxft-dev \
+-           libpq-dev \
+-           libsqlite3-dev \
+-           libmysqlclient-dev \
+-           default-mysql-client \
+-           postgresql-client \
+-           xvfb \
+-           qtbase5-dev \
+-           libqt5webkit5-dev \
+-           libqtwebkit-dev \
+-           xauth \
+-           libcurl4-openssl-dev \
+-           software-properties-common \
+-           libffi-dev \
+-           libgdbm5 \
+-           libgdbm-dev \
+-           libdb-dev \
+-           lsof \
+-           vim
+-
+-# Ruby
+-ENV RUBY_VER 2.4.0
+-ENV BUNDLER_VER 1.13.7
+-RUN rm -rf ~/.rbenv
+-RUN git clone https://github.com/sstephenson/rbenv ~/.rbenv
+-RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+-RUN ~/.rbenv/plugins/ruby-build/install.sh
+-RUN echo &#39;export PATH=&quot;/$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bash_profile
+-RUN echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bash_profile
+-RUN . ~/.bash_profile &amp;&amp; \
+-         rbenv install $RUBY_VER  &amp;&amp; \
+-         rbenv global $RUBY_VER
+-ENV PATH ~/.rbenv/shims:$PATH
+-RUN ~/.rbenv/shims/gem install bundler:$BUNDLER_VER
+-
+-# Node
+-ENV NODE_VER 16
+-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+-RUN . $HOME/.nvm/nvm.sh &amp;&amp; \
+-    nvm install $NODE_VER &amp;&amp; \
+-    nvm use $NODE_VER &amp;&amp; \
+-    node -v &amp;&amp; npm -v &amp;&amp; \
+-    npm i -g yarn
+-RUN apt install -y nodejs
+-
+-# Workaround for Ruby
+-RUN apt-get install -y libmysqlclient-dev
+-RUN ~/.rbenv/shims/gem install mysql2 -v &#39;0.4.5&#39; --source &#39;https://rubygems.org/&#39;
+-RUN apt-get install -y libssl1.0-dev
+-RUN ~/.rbenv/shims/gem install puma -v &#39;3.6.0&#39; --source &#39;https://rubygems.org/&#39;
++FROM baukis-kai
+
+ # Bundle install
+ WORKDIR /srv
+@@ -92,4 +6,6 @@ COPY Gemfile /srv/Gemfile
+ COPY Gemfile.lock /srv/Gemfile.lock
+ RUN ~/.rbenv/shims/bundle install
+
+-SHELL [&quot;/bin/bash&quot;, &quot;-c&quot;]
+\ No newline at end of file
++COPY . /srv
++
++CMD [&quot;bash&quot;, &quot;-c&quot;, &quot;bundle exec rake assets:precompile &amp;&amp; bundle exec rake db:migrate &amp;&amp; bundle exec rails server -b 0.0.0.0&quot;]
+diff --git a/Dockerfile-base b/Dockerfile-base
+new file mode 100644
+index 0000000..91daa36
+--- /dev/null
++++ b/Dockerfile-base
+@@ -0,0 +1,95 @@
++FROM ubuntu:18.04
++
++# Setup locale
++RUN \
++apt-get -yq update &amp;&amp; \
++apt-get install -y language-pack-ja-base language-pack-ja
++RUN update-locale LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja
++ENV LANG=ja_JP.UTF-8
++ENV LC_ALL=ja_JP.UTF-8
++ENV LC_CTYPE=ja_JP.UTF-8
++
++RUN apt-get update &amp;&amp; \
++    apt-get install -y \
++           sudo \
++           build-essential \
++           zip \
++           unzip \
++           git \
++           curl \
++           wget \
++           git-core \
++           libssl-dev \
++           libqt4-dev \
++           libc6-dev \
++           automake \
++           libtool \
++           libyaml-dev \
++           zlib1g \
++           zlib1g-dev \
++           openssl \
++           libreadline-dev \
++           libxml2-dev \
++           libxslt1-dev \
++           libncurses5-dev \
++           pkg-config \
++           chrpath \
++           libfontconfig1-dev \
++           libxft-dev \
++           libpq-dev \
++           libsqlite3-dev \
++           libmysqlclient-dev \
++           default-mysql-client \
++           postgresql-client \
++           xvfb \
++           qtbase5-dev \
++           libqt5webkit5-dev \
++           libqtwebkit-dev \
++           xauth \
++           libcurl4-openssl-dev \
++           software-properties-common \
++           libffi-dev \
++           libgdbm5 \
++           libgdbm-dev \
++           libdb-dev \
++           lsof \
++           vim
++
++# Ruby
++ENV RUBY_VER 2.4.0
++ENV BUNDLER_VER 1.13.7
++RUN rm -rf ~/.rbenv
++RUN git clone https://github.com/sstephenson/rbenv ~/.rbenv
++RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
++RUN ~/.rbenv/plugins/ruby-build/install.sh
++RUN echo &#39;export PATH=&quot;/$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bash_profile
++RUN echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bash_profile
++RUN . ~/.bash_profile &amp;&amp; \
++         rbenv install $RUBY_VER  &amp;&amp; \
++         rbenv global $RUBY_VER
++ENV PATH ~/.rbenv/shims:$PATH
++RUN ~/.rbenv/shims/gem install bundler:$BUNDLER_VER
++
++# Node
++ENV NODE_VER 16
++RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
++RUN . $HOME/.nvm/nvm.sh &amp;&amp; \
++    nvm install $NODE_VER &amp;&amp; \
++    nvm use $NODE_VER &amp;&amp; \
++    node -v &amp;&amp; npm -v &amp;&amp; \
++    npm i -g yarn
++RUN apt install -y nodejs
++
++# Workaround for Ruby
++RUN apt-get install -y libmysqlclient-dev
++RUN ~/.rbenv/shims/gem install mysql2 -v &#39;0.4.5&#39; --source &#39;https://rubygems.org/&#39;
++RUN apt-get install -y libssl1.0-dev
++RUN ~/.rbenv/shims/gem install puma -v &#39;3.6.0&#39; --source &#39;https://rubygems.org/&#39;
++
++# Bundle install
++WORKDIR /srv
++COPY Gemfile /srv/Gemfile
++COPY Gemfile.lock /srv/Gemfile.lock
++RUN ~/.rbenv/shims/bundle install
++
++SHELL [&quot;/bin/bash&quot;, &quot;-c&quot;]
+\ No newline at end of file
+diff --git a/README.md b/README.md
+index 20b3b14..8067995 100644
+--- a/README.md
++++ b/README.md
+@@ -42,16 +42,12 @@ Baukis 改
+    1. [検索フォーム](#検索フォーム)
+
+ ## アプリケーション環境構築
+-### Vagarntのセットアップ
+-```
+-vagrant up
+-vagrant ssh
+-```
+
+ ### Dockerのセットアップ
+ ```
+-cd /vagrant/
+-docker-compose build
++docker build -t baukis-kai -f Dockerfile-base .
++docker compose build
++docker compose up -d
+ ```
+
+ ### 追加Gemセットアップ
+diff --git a/docker-compose.yml b/docker-compose.yml
+index f15c0d7..1c4c872 100644
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -1,5 +1,18 @@
+ version: &#39;2&#39;
+ services:
++  app:
++    build:
++      context: .
++    depends_on:
++      - db
++    environment:
++      MYSQL_HOST: db
++      MYSQL_PORT: 3306
++      MYSQL_USER: user
++      MYSQL_PASSWORD: pass
++      MYSQL_DATABASE: app_development
++    ports:
++      - &quot;3000:3000&quot;
+   db:
+     image: mysql:5.7
+     environment:
+@@ -10,33 +23,11 @@ services:
+       - 3306:3306
+     volumes:
+       - mysql-db:/var/lib/mysql
+-  web:
+-    build: .
+-    environment:
+-      - RAILS_ENV=production
+-      - RAILS_SERVE_STATIC_FILES=public
+-      - SECRET_KEY_BASE=8ea360b9c9f1fd8686e20bcf0e02ddcbcd78ad5984559739e04f343d79e44d3cecb09a2b930d0c78bfc5778026b7905a414222f43dd24db86fc076e43e4c35fa
+-      - DATABASE_URL=db
+-    command: bundle exec rails s -p 3000 -b &#39;0.0.0.0&#39;
+-    volumes:
+-      - .:/myapp
+-    ports:
+-      - &quot;3000:3000&quot;
+-    depends_on:
+-      - db
+-  proxy:
+-    image: nginx:1.11
+-    ports:
+-      - &quot;80:80&quot;
+-    depends_on:
+-      - web
+-    volumes:
+-      - ./nginx_default.conf:/etc/nginx/conf.d/default.conf
+
+   console:
+     build:
+       context: .
+-      dockerfile: ./Dockerfile
++      dockerfile: Dockerfile-base
+     environment:
+       MYSQL_HOST: db
+       MYSQL_PORT: 3306
+</code></pre></div></p>
+<h2 id="826251b">コミット: 826251b<a class="headerlink" href="#826251b" title="Permanent link">&para;</a></h2>
+<h3 id="_7">メッセージ<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>build:ファイルの整理
+</code></pre></div>
+<h3 id="_8">変更されたファイル<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M .gitignore</li>
+<li>D .idea/.generators</li>
+<li>D .idea/.rakeTasks</li>
+<li>D .idea/misc.xml</li>
+<li>D .idea/modules.xml</li>
+<li>D .idea/vagrant.xml</li>
+<li>D .idea/vcs.xml</li>
+<li>D Jenkinsfile</li>
+<li>M README.md</li>
+<li>D Vagrantfile</li>
+<li>D circle.yml</li>
+</ul>
+<h3 id="_9">変更内容<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 826251ba59558977a2b089cb862f1c21b7d57cbe
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Apr 24 16:35:17 2025 +0900
+
+<span class="w"> </span>   build:ファイルの整理
+
+<span class="gh">diff --git a/.gitignore b/.gitignore</span>
+<span class="gh">index 05ce7cf..40045d9 100644</span>
+<span class="gd">--- a/.gitignore</span>
+<span class="gi">+++ b/.gitignore</span>
+<span class="gu">@@ -106,4 +106,6 @@ bower.json</span>
+<span class="w"> </span># Ignore Byebug command history file.
+<span class="w"> </span>.byebug_history
+
+<span class="gd">-public/assets/</span>
+\ No newline at end of file
+<span class="gi">+public/assets/</span>
+<span class="gi">+.idea/</span>
+<span class="gi">+*.iml</span>
+\ No newline at end of file
+<span class="gh">diff --git a/.idea/.generators b/.idea/.generators</span>
+deleted file mode 100644
+<span class="gh">index a68204b..0000000</span>
+<span class="gd">--- a/.idea/.generators</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,8 +0,0 @@</span>
+<span class="gd">-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gd">-&lt;Settings&gt;&lt;!--This file was automatically generated by Ruby plugin.</span>
+<span class="gd">-You are allowed to: </span>
+<span class="gd">-1. Reorder generators</span>
+<span class="gd">-2. Remove generators</span>
+<span class="gd">-3. Add installed generators</span>
+<span class="gd">-To add new installed generators automatically delete this file and reload the project.</span>
+<span class="gd">---&gt;&lt;GeneratorsGroup&gt;&lt;Generator name=&quot;annotate:install&quot; /&gt;&lt;Generator name=&quot;assets&quot; /&gt;&lt;Generator name=&quot;channel&quot; /&gt;&lt;Generator name=&quot;coffee:assets&quot; /&gt;&lt;Generator name=&quot;controller&quot; /&gt;&lt;Generator name=&quot;erd:install&quot; /&gt;&lt;Generator name=&quot;factory_girl:model&quot; /&gt;&lt;Generator name=&quot;generator&quot; /&gt;&lt;Generator name=&quot;helper&quot; /&gt;&lt;Generator name=&quot;i18n&quot; /&gt;&lt;Generator name=&quot;i18n_locale&quot; /&gt;&lt;Generator name=&quot;i18n_translation&quot; /&gt;&lt;Generator name=&quot;integration_test&quot; /&gt;&lt;Generator name=&quot;jbuilder&quot; /&gt;&lt;Generator name=&quot;job&quot; /&gt;&lt;Generator name=&quot;js:assets&quot; /&gt;&lt;Generator name=&quot;kaminari:config&quot; /&gt;&lt;Generator name=&quot;kaminari:views&quot; /&gt;&lt;Generator name=&quot;mailer&quot; /&gt;&lt;Generator name=&quot;migration&quot; /&gt;&lt;Generator name=&quot;model&quot; /&gt;&lt;Generator name=&quot;rack:dev-mark:install&quot; /&gt;&lt;Generator name=&quot;resource&quot; /&gt;&lt;Generator name=&quot;rspec:controller&quot; /&gt;&lt;Generator name=&quot;rspec:feature&quot; /&gt;&lt;Generator name=&quot;rspec:helper&quot; /&gt;&lt;Generator name=&quot;rspec:install&quot; /&gt;&lt;Generator name=&quot;rspec:integration&quot; /&gt;&lt;Generator name=&quot;rspec:job&quot; /&gt;&lt;Generator name=&quot;rspec:mailer&quot; /&gt;&lt;Generator name=&quot;rspec:model&quot; /&gt;&lt;Generator name=&quot;rspec:observer&quot; /&gt;&lt;Generator name=&quot;rspec:request&quot; /&gt;&lt;Generator name=&quot;rspec:scaffold&quot; /&gt;&lt;Generator name=&quot;rspec:view&quot; /&gt;&lt;Generator name=&quot;scaffold&quot; /&gt;&lt;Generator name=&quot;scaffold_controller&quot; /&gt;&lt;Generator name=&quot;task&quot; /&gt;&lt;Generator name=&quot;test_unit:controller&quot; /&gt;&lt;Generator name=&quot;test_unit:generator&quot; /&gt;&lt;Generator name=&quot;test_unit:helper&quot; /&gt;&lt;Generator name=&quot;test_unit:integration&quot; /&gt;&lt;Generator name=&quot;test_unit:job&quot; /&gt;&lt;Generator name=&quot;test_unit:mailer&quot; /&gt;&lt;Generator name=&quot;test_unit:model&quot; /&gt;&lt;Generator name=&quot;test_unit:plugin&quot; /&gt;&lt;Generator name=&quot;test_unit:scaffold&quot; /&gt;&lt;/GeneratorsGroup&gt;&lt;/Settings&gt;</span>
+<span class="gh">diff --git a/.idea/.rakeTasks b/.idea/.rakeTasks</span>
+deleted file mode 100644
+<span class="gh">index 435f846..0000000</span>
+<span class="gd">--- a/.idea/.rakeTasks</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,7 +0,0 @@</span>
+<span class="gd">-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gd">-&lt;Settings&gt;&lt;!--This file was automatically generated by Ruby plugin.</span>
+<span class="gd">-You are allowed to: </span>
+<span class="gd">-1. Remove rake task</span>
+<span class="gd">-2. Add existing rake tasks</span>
+<span class="gd">-To add existing rake tasks automatically delete this file and reload the project.</span>
+<span class="gd">---&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;rake&quot;&gt;&lt;RakeTask description=&quot;List versions of all Rails frameworks and the environment&quot; fullCmd=&quot;about&quot; taksId=&quot;about&quot; /&gt;&lt;RakeTask description=&quot;Add schema information (as comments) to model and fixture files&quot; fullCmd=&quot;annotate_models&quot; taksId=&quot;annotate_models&quot; /&gt;&lt;RakeTask description=&quot;Adds the route map to routes.rb&quot; fullCmd=&quot;annotate_routes&quot; taksId=&quot;annotate_routes&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;app&quot;&gt;&lt;RakeTask description=&quot;Applies the template supplied by LOCATION=(/path/to/template) or URL&quot; fullCmd=&quot;app:template&quot; taksId=&quot;template&quot; /&gt;&lt;RakeTask description=&quot;Update configs and some other initially generated files (or use just update:configs or update:bin)&quot; fullCmd=&quot;app:update&quot; taksId=&quot;update&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;templates&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:templates:copy&quot; taksId=&quot;copy&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;update&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:bin&quot; taksId=&quot;bin&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:configs&quot; taksId=&quot;configs&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:upgrade_guide_info&quot; taksId=&quot;upgrade_guide_info&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;assets&quot;&gt;&lt;RakeTask description=&quot;Remove old compiled assets&quot; fullCmd=&quot;assets:clean[keep]&quot; taksId=&quot;clean[keep]&quot; /&gt;&lt;RakeTask description=&quot;Remove compiled assets&quot; fullCmd=&quot;assets:clobber&quot; taksId=&quot;clobber&quot; /&gt;&lt;RakeTask description=&quot;Load asset compile environment&quot; fullCmd=&quot;assets:environment&quot; taksId=&quot;environment&quot; /&gt;&lt;RakeTask description=&quot;Compile all the assets named in config.assets.precompile&quot; fullCmd=&quot;assets:precompile&quot; taksId=&quot;precompile&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;assets:clean&quot; taksId=&quot;clean&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache_digests&quot;&gt;&lt;RakeTask description=&quot;Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)&quot; fullCmd=&quot;cache_digests:dependencies&quot; taksId=&quot;dependencies&quot; /&gt;&lt;RakeTask description=&quot;Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)&quot; fullCmd=&quot;cache_digests:nested_dependencies&quot; taksId=&quot;nested_dependencies&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;db&quot;&gt;&lt;RakeTask description=&quot;Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to creating the development and test databases&quot; fullCmd=&quot;db:create&quot; taksId=&quot;create&quot; /&gt;&lt;RakeTask description=&quot;Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to dropping the development and test databases&quot; fullCmd=&quot;db:drop&quot; taksId=&quot;drop&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;environment&quot;&gt;&lt;RakeTask description=&quot;Set the environment value for the database&quot; fullCmd=&quot;db:environment:set&quot; taksId=&quot;set&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;fixtures&quot;&gt;&lt;RakeTask description=&quot;Loads fixtures into the current environment&#39;s database&quot; fullCmd=&quot;db:fixtures:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:fixtures:identify&quot; taksId=&quot;identify&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)&quot; fullCmd=&quot;db:migrate&quot; taksId=&quot;migrate&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;migrate&quot;&gt;&lt;RakeTask description=&quot;Display status of migrations&quot; fullCmd=&quot;db:migrate:status&quot; taksId=&quot;status&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:change&quot; taksId=&quot;change&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:down&quot; taksId=&quot;down&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:redo&quot; taksId=&quot;redo&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:reset&quot; taksId=&quot;reset&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:up&quot; taksId=&quot;up&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Rolls the schema back to the previous version (specify steps w/ STEP=n)&quot; fullCmd=&quot;db:rollback&quot; taksId=&quot;rollback&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;schema&quot;&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache&quot;&gt;&lt;RakeTask description=&quot;Clears a db/schema_cache.dump file&quot; fullCmd=&quot;db:schema:cache:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;RakeTask description=&quot;Creates a db/schema_cache.dump file&quot; fullCmd=&quot;db:schema:cache:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Creates a db/schema.rb file that is portable against any DB supported by Active Record&quot; fullCmd=&quot;db:schema:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;RakeTask description=&quot;Loads a schema.rb file into the database&quot; fullCmd=&quot;db:schema:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:schema:load_if_ruby&quot; taksId=&quot;load_if_ruby&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Loads the seed data from db/seeds.rb&quot; fullCmd=&quot;db:seed&quot; taksId=&quot;seed&quot; /&gt;&lt;RakeTask description=&quot;Creates the database, loads the schema, and initializes with the seed data (use db:reset to also drop the database first)&quot; fullCmd=&quot;db:setup&quot; taksId=&quot;setup&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;structure&quot;&gt;&lt;RakeTask description=&quot;Dumps the database structure to db/structure.sql&quot; fullCmd=&quot;db:structure:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;RakeTask description=&quot;Recreates the databases from the structure.sql file&quot; fullCmd=&quot;db:structure:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:structure:load_if_sql&quot; taksId=&quot;load_if_sql&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Retrieves the current schema version number&quot; fullCmd=&quot;db:version&quot; taksId=&quot;version&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:_dump&quot; taksId=&quot;_dump&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:abort_if_pending_migrations&quot; taksId=&quot;abort_if_pending_migrations&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:charset&quot; taksId=&quot;charset&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:check_protected_environments&quot; taksId=&quot;check_protected_environments&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:collation&quot; taksId=&quot;collation&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;create&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:create:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;drop&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:drop:_unsafe&quot; taksId=&quot;_unsafe&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:drop:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:forward&quot; taksId=&quot;forward&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:load_config&quot; taksId=&quot;load_config&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:purge&quot; taksId=&quot;purge&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;purge&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:purge:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:reset&quot; taksId=&quot;reset&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;test&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone&quot; taksId=&quot;clone&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone_schema&quot; taksId=&quot;clone_schema&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone_structure&quot; taksId=&quot;clone_structure&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:deprecated&quot; taksId=&quot;deprecated&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load_schema&quot; taksId=&quot;load_schema&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load_structure&quot; taksId=&quot;load_structure&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:purge&quot; taksId=&quot;purge&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;dev&quot;&gt;&lt;RakeTask description=&quot;Toggle development mode caching on/off&quot; fullCmd=&quot;dev:cache&quot; taksId=&quot;cache&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Generate an Entity-Relationship Diagram based on your models&quot; fullCmd=&quot;erd&quot; taksId=&quot;erd&quot; /&gt;&lt;RakeTask description=&quot;Print out all defined initializers in the order they are invoked by Rails&quot; fullCmd=&quot;initializers&quot; taksId=&quot;initializers&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;log&quot;&gt;&lt;RakeTask description=&quot;Truncates all/specified *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)&quot; fullCmd=&quot;log:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Prints out your Rack middleware stack&quot; fullCmd=&quot;middleware&quot; taksId=&quot;middleware&quot; /&gt;&lt;RakeTask description=&quot;Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)&quot; fullCmd=&quot;notes&quot; taksId=&quot;notes&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;notes&quot;&gt;&lt;RakeTask description=&quot;Enumerate a custom annotation, specify with ANNOTATION=CUSTOM&quot; fullCmd=&quot;notes:custom&quot; taksId=&quot;custom&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:fixme&quot; taksId=&quot;fixme&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:optimize&quot; taksId=&quot;optimize&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:todo&quot; taksId=&quot;todo&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Remove schema information from model and fixture files&quot; fullCmd=&quot;remove_annotation&quot; taksId=&quot;remove_annotation&quot; /&gt;&lt;RakeTask description=&quot;Removes the route map from routes.rb&quot; fullCmd=&quot;remove_routes&quot; taksId=&quot;remove_routes&quot; /&gt;&lt;RakeTask description=&quot;Restart app by touching tmp/restart.txt&quot; fullCmd=&quot;restart&quot; taksId=&quot;restart&quot; /&gt;&lt;RakeTask description=&quot;Print out all defined routes in match order, with names&quot; fullCmd=&quot;routes&quot; taksId=&quot;routes&quot; /&gt;&lt;RakeTask description=&quot;Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)&quot; fullCmd=&quot;secret&quot; taksId=&quot;secret&quot; /&gt;&lt;RakeTask description=&quot;Run all specs in spec directory (excluding plugin specs)&quot; fullCmd=&quot;spec&quot; taksId=&quot;spec&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;spec&quot;&gt;&lt;RakeTask description=&quot;Run the code examples in spec/controllers&quot; fullCmd=&quot;spec:controllers&quot; taksId=&quot;controllers&quot; /&gt;&lt;RakeTask description=&quot;Run the code examples in spec/features&quot; fullCmd=&quot;spec:features&quot; taksId=&quot;features&quot; /&gt;&lt;RakeTask description=&quot;Run the code examples in spec/models&quot; fullCmd=&quot;spec:models&quot; taksId=&quot;models&quot; /&gt;&lt;RakeTask description=&quot;Run the code examples in spec/routing&quot; fullCmd=&quot;spec:routing&quot; taksId=&quot;routing&quot; /&gt;&lt;RakeTask description=&quot;Run the code examples in spec/services&quot; fullCmd=&quot;spec:services&quot; taksId=&quot;services&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;spec:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;spec:statsetup&quot; taksId=&quot;statsetup&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Report code statistics (KLOCs, etc) from the application or engine&quot; fullCmd=&quot;stats&quot; taksId=&quot;stats&quot; /&gt;&lt;RakeTask description=&quot;Runs all tests in test folder&quot; fullCmd=&quot;test&quot; taksId=&quot;test&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;test&quot;&gt;&lt;RakeTask description=&quot;Run tests quickly, but also reset db&quot; fullCmd=&quot;test:db&quot; taksId=&quot;db&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:controllers&quot; taksId=&quot;controllers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:functionals&quot; taksId=&quot;functionals&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:generators&quot; taksId=&quot;generators&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:helpers&quot; taksId=&quot;helpers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:integration&quot; taksId=&quot;integration&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:jobs&quot; taksId=&quot;jobs&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:mailers&quot; taksId=&quot;mailers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:models&quot; taksId=&quot;models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:run&quot; taksId=&quot;run&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:units&quot; taksId=&quot;units&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;time&quot;&gt;&lt;RakeTask description=&quot;List all time zones, list by two-letter country code (`rails time:zones[US]`), or list by UTC offset (`rails time:zones[-8]`)&quot; fullCmd=&quot;time:zones[country_or_offset]&quot; taksId=&quot;zones[country_or_offset]&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones&quot; taksId=&quot;zones&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;zones&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:all&quot; taksId=&quot;all&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:local&quot; taksId=&quot;local&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:us&quot; taksId=&quot;us&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;tmp&quot;&gt;&lt;RakeTask description=&quot;Clear cache and socket files from tmp/ (narrow w/ tmp:cache:clear, tmp:sockets:clear)&quot; fullCmd=&quot;tmp:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;RakeTask description=&quot;Creates tmp directories for cache, sockets, and pids&quot; fullCmd=&quot;tmp:create&quot; taksId=&quot;create&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:cache:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;pids&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:pids:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;sockets&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:sockets:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;default&quot; taksId=&quot;default&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;environment&quot; taksId=&quot;environment&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;erd&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:generate&quot; taksId=&quot;generate&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:load_models&quot; taksId=&quot;load_models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:options&quot; taksId=&quot;options&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;rails&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:template&quot; taksId=&quot;template&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;templates&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:templates:copy&quot; taksId=&quot;copy&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update&quot; taksId=&quot;update&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;update&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update:bin&quot; taksId=&quot;bin&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update:configs&quot; taksId=&quot;configs&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;railties&quot;&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;install&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;railties:install:migrations&quot; taksId=&quot;migrations&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;set_annotation_options&quot; taksId=&quot;set_annotation_options&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp&quot; taksId=&quot;tmp&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/cache&quot; taksId=&quot;tmp/cache&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/cache/assets&quot; taksId=&quot;tmp/cache/assets&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/pids&quot; taksId=&quot;tmp/pids&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/sockets&quot; taksId=&quot;tmp/sockets&quot; /&gt;&lt;/RakeGroup&gt;&lt;/Settings&gt;</span>
+<span class="gh">diff --git a/.idea/misc.xml b/.idea/misc.xml</span>
+deleted file mode 100644
+<span class="gh">index 5e26784..0000000</span>
+<span class="gd">--- a/.idea/misc.xml</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,6 +0,0 @@</span>
+<span class="gd">-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gd">-&lt;project version=&quot;4&quot;&gt;</span>
+<span class="gd">-  &lt;component name=&quot;ProjectRootManager&quot; version=&quot;2&quot; languageLevel=&quot;JDK_1_3&quot; default=&quot;false&quot; project-jdk-name=&quot;rbenv: 2.4.0&quot; project-jdk-type=&quot;RUBY_SDK&quot;&gt;</span>
+<span class="gd">-    &lt;output url=&quot;file://$PROJECT_DIR$/out&quot; /&gt;</span>
+<span class="gd">-  &lt;/component&gt;</span>
+<span class="gd">-&lt;/project&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/.idea/modules.xml b/.idea/modules.xml</span>
+deleted file mode 100644
+<span class="gh">index 1f69da7..0000000</span>
+<span class="gd">--- a/.idea/modules.xml</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,8 +0,0 @@</span>
+<span class="gd">-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gd">-&lt;project version=&quot;4&quot;&gt;</span>
+<span class="gd">-  &lt;component name=&quot;ProjectModuleManager&quot;&gt;</span>
+<span class="gd">-    &lt;modules&gt;</span>
+<span class="gd">-      &lt;module fileurl=&quot;file://$PROJECT_DIR$/baukis-kai.iml&quot; filepath=&quot;$PROJECT_DIR$/baukis-kai.iml&quot; /&gt;</span>
+<span class="gd">-    &lt;/modules&gt;</span>
+<span class="gd">-  &lt;/component&gt;</span>
+<span class="gd">-&lt;/project&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/.idea/vagrant.xml b/.idea/vagrant.xml</span>
+deleted file mode 100644
+<span class="gh">index c6e2d31..0000000</span>
+<span class="gd">--- a/.idea/vagrant.xml</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,6 +0,0 @@</span>
+<span class="gd">-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gd">-&lt;project version=&quot;4&quot;&gt;</span>
+<span class="gd">-  &lt;component name=&quot;VagrantProjectSettings&quot;&gt;</span>
+<span class="gd">-    &lt;option name=&quot;instanceFolder&quot; value=&quot;$PROJECT_DIR$&quot; /&gt;</span>
+<span class="gd">-  &lt;/component&gt;</span>
+<span class="gd">-&lt;/project&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/.idea/vcs.xml b/.idea/vcs.xml</span>
+deleted file mode 100644
+<span class="gh">index 35eb1dd..0000000</span>
+<span class="gd">--- a/.idea/vcs.xml</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,6 +0,0 @@</span>
+<span class="gd">-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gd">-&lt;project version=&quot;4&quot;&gt;</span>
+<span class="gd">-  &lt;component name=&quot;VcsDirectoryMappings&quot;&gt;</span>
+<span class="gd">-    &lt;mapping directory=&quot;&quot; vcs=&quot;Git&quot; /&gt;</span>
+<span class="gd">-  &lt;/component&gt;</span>
+<span class="gd">-&lt;/project&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/Jenkinsfile b/Jenkinsfile</span>
+deleted file mode 100644
+<span class="gh">index 098e206..0000000</span>
+<span class="gd">--- a/Jenkinsfile</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,24 +0,0 @@</span>
+<span class="gd">-node(&#39;master&#39;) {</span>
+<span class="gd">-</span>
+<span class="gd">-  stage &#39;Checkout&#39;</span>
+<span class="gd">-  git url: &#39;https://github.com/k2works/baukis-kai.git&#39;</span>
+<span class="gd">-</span>
+<span class="gd">-  stage &#39;Prepare&#39;</span>
+<span class="gd">-  env.PATH = &#39;/usr/local/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH&#39;</span>
+<span class="gd">-  sh &#39;eval &quot;$(rbenv init -)&quot;&#39;</span>
+<span class="gd">-  sh &#39;rbenv local 2.4.0&#39;</span>
+<span class="gd">-</span>
+<span class="gd">-  stage &#39;Prepare test&#39;</span>
+<span class="gd">-  sh &quot;bundle install&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rake db:migrate&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rake db:test:prepare&quot;</span>
+<span class="gd">-</span>
+<span class="gd">-  stage &quot;Unit test&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rspec spec/controllers/*_spec.rb&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rspec spec/models/*_spec.rb&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rspec spec/routing/*_spec.rb&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rspec spec/services/*_spec.rb&quot;</span>
+<span class="gd">-</span>
+<span class="gd">-  stage &quot;Integration test&quot;</span>
+<span class="gd">-  sh &quot;bundle exec rspec spec/features/*_spec.rb&quot;</span>
+<span class="gd">-}</span>
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 14a6731..20b3b14 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -10,7 +10,6 @@ Baukis 改</span>
+<span class="w"> </span>|:---------------|:-------------|:------------|
+<span class="w"> </span>| ruby           |2.4.0    |             |
+<span class="w"> </span>| rails          |5.0.1    |             |
+<span class="gd">-| vagrant        |1.8.7    |             |</span>
+<span class="w"> </span>| docker         |1.12.5    |             |
+<span class="w"> </span>| docker-compose |1.8.0    |             |
+
+<span class="gh">diff --git a/Vagrantfile b/Vagrantfile</span>
+deleted file mode 100644
+<span class="gh">index b27838b..0000000</span>
+<span class="gd">--- a/Vagrantfile</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,27 +0,0 @@</span>
+<span class="gd">-# -*- mode: ruby -*-</span>
+<span class="gd">-# vi: set ft=ruby :</span>
+<span class="gd">-</span>
+<span class="gd">-Vagrant.configure(&quot;2&quot;) do |config|</span>
+<span class="gd">-  config.vm.box = &quot;hiroshima-arc/manhattan&quot;</span>
+<span class="gd">-  config.vm.box_version = &quot;1.0.0&quot;</span>
+<span class="gd">-</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:80, host:8888, id:&quot;nginx&quot;</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:3000, host:3000, id:&quot;rails&quot;</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:3306, host:3306, id:&quot;mysql&quot;</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:5432, host:5432, id:&quot;postgresql&quot;</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:6379, host:6379, id:&quot;redis&quot;</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:27017, host:27017, id:&quot;mongodb&quot;</span>
+<span class="gd">-  config.vm.network :forwarded_port, guest:8080, host:8080, id:&quot;jenkins&quot;</span>
+<span class="gd">-  config.vm.network :private_network, ip:&quot;127.0.0.1&quot;</span>
+<span class="gd">-</span>
+<span class="gd">-  config.vm.synced_folder &quot;.&quot;, &quot;/vagrant&quot;, mount_options: [&#39;dmode=777&#39;,&#39;fmode=777&#39;]</span>
+<span class="gd">-</span>
+<span class="gd">-  config.vm.provider &quot;virtualbox&quot; do |vb|</span>
+<span class="gd">-    vb.gui = false</span>
+<span class="gd">-</span>
+<span class="gd">-    # Use VBoxManage to customize the VM. For example to change memory:</span>
+<span class="gd">-    vb.customize [&quot;modifyvm&quot;, :id, &quot;--memory&quot;, &quot;4096&quot;]</span>
+<span class="gd">-    vb.customize [&quot;modifyvm&quot;, :id, &quot;--vram&quot;, &quot;128&quot;]</span>
+<span class="gd">-    vb.customize [&quot;modifyvm&quot;, :id, &quot;--accelerate3d&quot;, &quot;on&quot;]</span>
+<span class="gd">-  end</span>
+<span class="gd">-end</span>
+\ No newline at end of file
+<span class="gh">diff --git a/circle.yml b/circle.yml</span>
+deleted file mode 100644
+<span class="gh">index 150a280..0000000</span>
+<span class="gd">--- a/circle.yml</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,5 +0,0 @@</span>
+<span class="gd">-deployment:</span>
+<span class="gd">-  staging:</span>
+<span class="gd">-    branch: master</span>
+<span class="gd">-    heroku:</span>
+<span class="gd">-      appname: baukis-kai</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="835dfd2">コミット: 835dfd2<a class="headerlink" href="#835dfd2" title="Permanent link">&para;</a></h2>
+<h3 id="_10">メッセージ<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>build:devcontainerセットアップ
+</code></pre></div>
+<h3 id="_11">変更されたファイル<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A .devcontainer/devcontainer.json</li>
+</ul>
+<h3 id="_12">変更内容<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 835dfd2f8375a81df83e71c3b6b91ffbd65b6448
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Apr 24 16:29:16 2025 +0900
+
+<span class="w"> </span>   build:devcontainerセットアップ
+
+<span class="gh">diff --git a/.devcontainer/devcontainer.json b/.devcontainer/devcontainer.json</span>
+new file mode 100644
+<span class="gh">index 0000000..52f7251</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/.devcontainer/devcontainer.json</span>
+<span class="gu">@@ -0,0 +1,31 @@</span>
+<span class="gi">+// For format details, see https://aka.ms/devcontainer.json. For config options, see the</span>
+<span class="gi">+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker</span>
+<span class="gi">+{</span>
+<span class="gi">+   &quot;name&quot;: &quot;Docker in Docker&quot;,</span>
+<span class="gi">+   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile</span>
+<span class="gi">+   &quot;image&quot;: &quot;baukis-kai&quot;,</span>
+<span class="gi">+</span>
+<span class="gi">+   &quot;features&quot;: {</span>
+<span class="gi">+       &quot;ghcr.io/devcontainers/features/docker-in-docker:2&quot;: {</span>
+<span class="gi">+           &quot;version&quot;: &quot;latest&quot;,</span>
+<span class="gi">+           &quot;enableNonRootDocker&quot;: &quot;true&quot;,</span>
+<span class="gi">+           &quot;moby&quot;: &quot;true&quot;</span>
+<span class="gi">+       }</span>
+<span class="gi">+   },</span>
+<span class="gi">+</span>
+<span class="gi">+   // Use &#39;forwardPorts&#39; to make a list of ports inside the container available locally.</span>
+<span class="gi">+   // &quot;forwardPorts&quot;: [],</span>
+<span class="gi">+</span>
+<span class="gi">+   // Use &#39;postCreateCommand&#39; to run commands after the container is created.</span>
+<span class="gi">+   // &quot;postCreateCommand&quot;: &quot;docker --version&quot;,</span>
+<span class="gi">+</span>
+<span class="gi">+   // Configure tool-specific properties.</span>
+<span class="gi">+  &quot;customizations&quot; : {</span>
+<span class="gi">+    &quot;jetbrains&quot; : {</span>
+<span class="gi">+      &quot;backend&quot; : &quot;IntelliJ&quot;</span>
+<span class="gi">+    }</span>
+<span class="gi">+  },</span>
+<span class="gi">+</span>
+<span class="gi">+   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.</span>
+<span class="gi">+   // &quot;remoteUser&quot;: &quot;root&quot;</span>
+<span class="gi">+}</span>
+</code></pre></div>
+<h2 id="5517d0b">コミット: 5517d0b<a class="headerlink" href="#5517d0b" title="Permanent link">&para;</a></h2>
+<h3 id="_13">メッセージ<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>build:レストア
+</code></pre></div>
+<h3 id="_14">変更されたファイル<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M Dockerfile</li>
+<li>M Gemfile</li>
+<li>M Gemfile.lock</li>
+<li>M config/database.yml</li>
+<li>M config/environments/development.rb</li>
+<li>M docker-compose.yml</li>
+</ul>
+<h3 id="_15">変更内容<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 5517d0b74d777666bfef08aad9a3a87b14bf6c0e
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Apr 24 16:00:48 2025 +0900
+
+<span class="w"> </span>   build:レストア
+
+<span class="gh">diff --git a/Dockerfile b/Dockerfile</span>
+<span class="gh">index de3b64d..91daa36 100644</span>
+<span class="gd">--- a/Dockerfile</span>
+<span class="gi">+++ b/Dockerfile</span>
+<span class="gu">@@ -1,9 +1,95 @@</span>
+<span class="gd">-FROM ruby:2.4</span>
+<span class="gd">-</span>
+<span class="gd">-RUN apt-get update -qq &amp;&amp; apt-get install -y build-essential libpq-dev nodejs</span>
+<span class="gd">-RUN mkdir /myapp</span>
+<span class="gd">-WORKDIR /myapp</span>
+<span class="gd">-ADD Gemfile /myapp/Gemfile</span>
+<span class="gd">-ADD Gemfile.lock /myapp/Gemfile.lock</span>
+<span class="gd">-RUN bundle install</span>
+<span class="gd">-ADD . /myapp</span>
+\ No newline at end of file
+<span class="gi">+FROM ubuntu:18.04</span>
+<span class="gi">+</span>
+<span class="gi">+# Setup locale</span>
+<span class="gi">+RUN \</span>
+<span class="gi">+apt-get -yq update &amp;&amp; \</span>
+<span class="gi">+apt-get install -y language-pack-ja-base language-pack-ja</span>
+<span class="gi">+RUN update-locale LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja</span>
+<span class="gi">+ENV LANG=ja_JP.UTF-8</span>
+<span class="gi">+ENV LC_ALL=ja_JP.UTF-8</span>
+<span class="gi">+ENV LC_CTYPE=ja_JP.UTF-8</span>
+<span class="gi">+</span>
+<span class="gi">+RUN apt-get update &amp;&amp; \</span>
+<span class="gi">+    apt-get install -y \</span>
+<span class="gi">+           sudo \</span>
+<span class="gi">+           build-essential \</span>
+<span class="gi">+           zip \</span>
+<span class="gi">+           unzip \</span>
+<span class="gi">+           git \</span>
+<span class="gi">+           curl \</span>
+<span class="gi">+           wget \</span>
+<span class="gi">+           git-core \</span>
+<span class="gi">+           libssl-dev \</span>
+<span class="gi">+           libqt4-dev \</span>
+<span class="gi">+           libc6-dev \</span>
+<span class="gi">+           automake \</span>
+<span class="gi">+           libtool \</span>
+<span class="gi">+           libyaml-dev \</span>
+<span class="gi">+           zlib1g \</span>
+<span class="gi">+           zlib1g-dev \</span>
+<span class="gi">+           openssl \</span>
+<span class="gi">+           libreadline-dev \</span>
+<span class="gi">+           libxml2-dev \</span>
+<span class="gi">+           libxslt1-dev \</span>
+<span class="gi">+           libncurses5-dev \</span>
+<span class="gi">+           pkg-config \</span>
+<span class="gi">+           chrpath \</span>
+<span class="gi">+           libfontconfig1-dev \</span>
+<span class="gi">+           libxft-dev \</span>
+<span class="gi">+           libpq-dev \</span>
+<span class="gi">+           libsqlite3-dev \</span>
+<span class="gi">+           libmysqlclient-dev \</span>
+<span class="gi">+           default-mysql-client \</span>
+<span class="gi">+           postgresql-client \</span>
+<span class="gi">+           xvfb \</span>
+<span class="gi">+           qtbase5-dev \</span>
+<span class="gi">+           libqt5webkit5-dev \</span>
+<span class="gi">+           libqtwebkit-dev \</span>
+<span class="gi">+           xauth \</span>
+<span class="gi">+           libcurl4-openssl-dev \</span>
+<span class="gi">+           software-properties-common \</span>
+<span class="gi">+           libffi-dev \</span>
+<span class="gi">+           libgdbm5 \</span>
+<span class="gi">+           libgdbm-dev \</span>
+<span class="gi">+           libdb-dev \</span>
+<span class="gi">+           lsof \</span>
+<span class="gi">+           vim</span>
+<span class="gi">+</span>
+<span class="gi">+# Ruby</span>
+<span class="gi">+ENV RUBY_VER 2.4.0</span>
+<span class="gi">+ENV BUNDLER_VER 1.13.7</span>
+<span class="gi">+RUN rm -rf ~/.rbenv</span>
+<span class="gi">+RUN git clone https://github.com/sstephenson/rbenv ~/.rbenv</span>
+<span class="gi">+RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build</span>
+<span class="gi">+RUN ~/.rbenv/plugins/ruby-build/install.sh</span>
+<span class="gi">+RUN echo &#39;export PATH=&quot;/$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bash_profile</span>
+<span class="gi">+RUN echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bash_profile</span>
+<span class="gi">+RUN . ~/.bash_profile &amp;&amp; \</span>
+<span class="gi">+         rbenv install $RUBY_VER  &amp;&amp; \</span>
+<span class="gi">+         rbenv global $RUBY_VER</span>
+<span class="gi">+ENV PATH ~/.rbenv/shims:$PATH</span>
+<span class="gi">+RUN ~/.rbenv/shims/gem install bundler:$BUNDLER_VER</span>
+<span class="gi">+</span>
+<span class="gi">+# Node</span>
+<span class="gi">+ENV NODE_VER 16</span>
+<span class="gi">+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash</span>
+<span class="gi">+RUN . $HOME/.nvm/nvm.sh &amp;&amp; \</span>
+<span class="gi">+    nvm install $NODE_VER &amp;&amp; \</span>
+<span class="gi">+    nvm use $NODE_VER &amp;&amp; \</span>
+<span class="gi">+    node -v &amp;&amp; npm -v &amp;&amp; \</span>
+<span class="gi">+    npm i -g yarn</span>
+<span class="gi">+RUN apt install -y nodejs</span>
+<span class="gi">+</span>
+<span class="gi">+# Workaround for Ruby</span>
+<span class="gi">+RUN apt-get install -y libmysqlclient-dev</span>
+<span class="gi">+RUN ~/.rbenv/shims/gem install mysql2 -v &#39;0.4.5&#39; --source &#39;https://rubygems.org/&#39;</span>
+<span class="gi">+RUN apt-get install -y libssl1.0-dev</span>
+<span class="gi">+RUN ~/.rbenv/shims/gem install puma -v &#39;3.6.0&#39; --source &#39;https://rubygems.org/&#39;</span>
+<span class="gi">+</span>
+<span class="gi">+# Bundle install</span>
+<span class="gi">+WORKDIR /srv</span>
+<span class="gi">+COPY Gemfile /srv/Gemfile</span>
+<span class="gi">+COPY Gemfile.lock /srv/Gemfile.lock</span>
+<span class="gi">+RUN ~/.rbenv/shims/bundle install</span>
+<span class="gi">+</span>
+<span class="gi">+SHELL [&quot;/bin/bash&quot;, &quot;-c&quot;]</span>
+\ No newline at end of file
+<span class="gh">diff --git a/Gemfile b/Gemfile</span>
+<span class="gh">index 7d8acb2..40c2377 100644</span>
+<span class="gd">--- a/Gemfile</span>
+<span class="gi">+++ b/Gemfile</span>
+<span class="gu">@@ -79,7 +79,7 @@ group :test do</span>
+<span class="w"> </span>end
+
+<span class="w"> </span># Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+<span class="gd">-gem &#39;tzinfo-data&#39;, platforms: [:mingw, :mswin, :x64_mingw, :jruby]</span>
+<span class="gi">+gem &#39;tzinfo-data&#39;</span>
+
+<span class="w"> </span>gem &#39;font-awesome-rails&#39;
+<span class="w"> </span>gem &#39;rails_12factor&#39;, group: :production
+<span class="gu">@@ -94,5 +94,4 @@ gem &#39;email_validator&#39;, &#39;~&gt; 1.6&#39;</span>
+<span class="w"> </span>gem &#39;jquery-ui-rails&#39;, &#39;~&gt; 5.0&#39;, &#39;&gt;= 5.0.5&#39;
+<span class="w"> </span>gem &#39;momentjs-rails&#39;
+<span class="w"> </span>gem &#39;bootstrap3-datetimepicker-rails&#39;
+<span class="gd">-gem &#39;tag-it-rails&#39;</span>
+<span class="gd">-</span>
+<span class="gi">+gem &#39;tag-it-rails&#39;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/Gemfile.lock b/Gemfile.lock</span>
+<span class="gh">index ac11a7f..600d0fd 100644</span>
+<span class="gd">--- a/Gemfile.lock</span>
+<span class="gi">+++ b/Gemfile.lock</span>
+<span class="gu">@@ -297,6 +297,8 @@ GEM</span>
+<span class="w"> </span>    turbolinks-source (5.0.0)
+<span class="w"> </span>    tzinfo (1.2.2)
+<span class="w"> </span>      thread_safe (~&gt; 0.1)
+<span class="gi">+    tzinfo-data (1.2025.2)</span>
+<span class="gi">+      tzinfo (&gt;= 1.0.0)</span>
+<span class="w"> </span>    uglifier (3.0.4)
+<span class="w"> </span>      execjs (&gt;= 0.3.0, &lt; 3)
+<span class="w"> </span>    web-console (3.4.0)
+<span class="gh">diff --git a/config/database.yml b/config/database.yml</span>
+<span class="gh">index 544640b..c44d192 100644</span>
+<span class="gd">--- a/config/database.yml</span>
+<span class="gi">+++ b/config/database.yml</span>
+<span class="gu">@@ -16,7 +16,7 @@ default: &amp;default</span>
+<span class="w"> </span>  pool: 5
+<span class="w"> </span>  username: root
+<span class="w"> </span>  password: password
+<span class="gd">-  host: 127.0.0.1</span>
+<span class="gi">+  host: &lt;%= ENV.fetch(&quot;MYSQL_HOST&quot;, &quot;127.0.0.1&quot;) %&gt;</span>
+
+<span class="w"> </span>development:
+<span class="w"> </span>  &lt;&lt;: *default
+<span class="gh">diff --git a/config/environments/development.rb b/config/environments/development.rb</span>
+<span class="gh">index 63bc608..cfacff4 100644</span>
+<span class="gd">--- a/config/environments/development.rb</span>
+<span class="gi">+++ b/config/environments/development.rb</span>
+<span class="gu">@@ -53,9 +53,9 @@ Rails.application.configure do</span>
+<span class="w"> </span>  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+<span class="w"> </span>  config.baukis_kai = {
+<span class="gd">-      staff: { host: &#39;0.0.0.0&#39;, path: &#39;staff&#39; },</span>
+<span class="gd">-      admin: { host: &#39;0.0.0.0&#39;, path: &#39;admin&#39; },</span>
+<span class="gd">-      customer: { host: &#39;0.0.0.0&#39;, path: &#39;&#39; },</span>
+<span class="gi">+      staff: { host: &#39;127.0.0.1&#39;, path: &#39;staff&#39; },</span>
+<span class="gi">+      admin: { host: &#39;127.0.0.1&#39;, path: &#39;admin&#39; },</span>
+<span class="gi">+      customer: { host: &#39;127.0.0.1&#39;, path: &#39;&#39; },</span>
+<span class="w"> </span>      restrict_ip_addresses: false
+<span class="w"> </span>  }
+
+<span class="gh">diff --git a/docker-compose.yml b/docker-compose.yml</span>
+<span class="gh">index 52da61d..f15c0d7 100644</span>
+<span class="gd">--- a/docker-compose.yml</span>
+<span class="gi">+++ b/docker-compose.yml</span>
+<span class="gu">@@ -1,7 +1,15 @@</span>
+<span class="w"> </span>version: &#39;2&#39;
+<span class="w"> </span>services:
+<span class="w"> </span>  db:
+<span class="gd">-    image: mysql</span>
+<span class="gi">+    image: mysql:5.7</span>
+<span class="gi">+    environment:</span>
+<span class="gi">+      MYSQL_ROOT_PASSWORD: password</span>
+<span class="gi">+      MYSQL_USER: user</span>
+<span class="gi">+      MYSQL_PASSWORD: pass</span>
+<span class="gi">+    ports:</span>
+<span class="gi">+      - 3306:3306</span>
+<span class="gi">+    volumes:</span>
+<span class="gi">+      - mysql-db:/var/lib/mysql</span>
+<span class="w"> </span>  web:
+<span class="w"> </span>    build: .
+<span class="w"> </span>    environment:
+<span class="gu">@@ -23,4 +31,24 @@ services:</span>
+<span class="w"> </span>    depends_on:
+<span class="w"> </span>      - web
+<span class="w"> </span>    volumes:
+<span class="gd">-      - ./nginx_default.conf:/etc/nginx/conf.d/default.conf</span>
+\ No newline at end of file
+<span class="gi">+      - ./nginx_default.conf:/etc/nginx/conf.d/default.conf</span>
+<span class="gi">+</span>
+<span class="gi">+  console:</span>
+<span class="gi">+    build:</span>
+<span class="gi">+      context: .</span>
+<span class="gi">+      dockerfile: ./Dockerfile</span>
+<span class="gi">+    environment:</span>
+<span class="gi">+      MYSQL_HOST: db</span>
+<span class="gi">+      MYSQL_PORT: 3306</span>
+<span class="gi">+      MYSQL_USER: user</span>
+<span class="gi">+      MYSQL_PASSWORD: pass</span>
+<span class="gi">+      MYSQL_DATABASE: app_development</span>
+<span class="gi">+    volumes:</span>
+<span class="gi">+      - .:/srv</span>
+<span class="gi">+    depends_on:</span>
+<span class="gi">+      - db</span>
+<span class="gi">+    stdin_open: true</span>
+<span class="gi">+</span>
+<span class="gi">+volumes:</span>
+<span class="gi">+  mysql-db:</span>
+<span class="gi">+    driver: local</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

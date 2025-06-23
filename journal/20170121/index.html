@@ -1,0 +1,3241 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20170120/">
+      
+      
+        <link rel="next" href="../20170123/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20170121 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2017-01-21" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20170121
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i18n" class="md-nav__link">
+    <span class="md-ellipsis">
+      国際化（i18n）機能の構成図
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      作業内容
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作業内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i18n_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      国際化（i18n）機能の実装
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="国際化（i18n）機能の実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更点の概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4275589" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 4275589
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 4275589">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2291956" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 2291956
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 2291956">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186c722" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 186c722
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 186c722">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ff92954" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: ff92954
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: ff92954">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b302929" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: b302929
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: b302929">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e3f75ee" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: e3f75ee
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: e3f75ee">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9e94c00" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 9e94c00
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 9e94c00">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ef6cb20" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: ef6cb20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: ef6cb20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8774e52" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 8774e52
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 8774e52">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fb466e7" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: fb466e7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: fb466e7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2017-01-21">作業履歴 2017-01-21<a class="headerlink" href="#2017-01-21" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2017-01-21の作業内容をまとめています。このジャーナルでは、国際化（i18n）機能の実装に関する作業を記録しています。主にアプリケーションの多言語対応とユーザー認証機能の更新を行いました。</p>
+<h2 id="i18n">国際化（i18n）機能の構成図<a class="headerlink" href="#i18n" title="Permanent link">&para;</a></h2>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9IjkxNXB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6Mzg2cHg7aGVpZ2h0OjkxNXB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDM4NiA5MTUiIHdpZHRoPSIzODZweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyIGkxOG5fc3lzdGVtLS0+PGcgY2xhc3M9ImNsdXN0ZXIiIGRhdGEtZW50aXR5PSJpMThuX3N5c3RlbSIgZGF0YS1zb3VyY2UtbGluZT0iMTQ2NSIgZGF0YS11aWQ9ImVudDAwMDMiIGlkPSJjbHVzdGVyX2kxOG5fc3lzdGVtIj48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjcwOC42MiIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNDQ0NDQ0O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1kYXNoYXJyYXk6Ny4wLDcuMDsiIHdpZHRoPSIzNzMiIHg9IjciIHk9IjIwMS4xOSIvPjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2MC42MjExIiB4PSIxNjMuMTg5NSIgeT0iMjA4Ljc1OTMiPiYjMTcxO3N5c3RlbV9ib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI2IiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzUuOTI5NyIgeD0iMTc1LjUzNTIiIHk9IjIxOC43NTkzIj4mIzE3MTtib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTEyLjAwMDIiIHg9IjEzNy40OTk5IiB5PSIyMzguMDQxNiI+JiMyMjI2OTsmIzM4NTU1OyYjMjEyNzA7JiMxMjQ3MTsmIzEyNDczOyYjMTI0ODY7JiMxMjUxMjs8L3RleHQ+PHRleHQgZmlsbD0iIzQ0NDQ0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjU5LjQ1NTEiIHg9IjE2My43NzI1IiB5PSIyNTIuOTUzNyI+W3N5c3RlbV08L3RleHQ+PC9nPjwhLS1lbnRpdHkgaTE4bl9jb25maWctLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iaTE4bl9jb25maWciIGRhdGEtc291cmNlLWxpbmU9IjYzIiBkYXRhLXVpZD0iZW50MDAwNCIgaWQ9ImVudGl0eV9pMThuX2NvbmZpZyI+PHJlY3QgZmlsbD0iIzg1QkJGMCIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM3OEE4RDg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNjMuODc2IiB4PSIxMDMuMDYiIHk9IjQ0Ni4zNCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODIuNTcwMyIgeD0iMTQzLjcxMjgiIHk9IjQ2Ny40Nzg3Ij4mIzE3MTtjb21wb25lbnQmIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjcxLjYwOTQiIHg9IjE0OS4xOTMzIiB5PSI0ODUuMTYwMyI+STE4biYjMzUzNzM7JiMyMzQ1MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzMy4zNjM1IiB4PSIxNjguMzE2MyIgeT0iNTAwLjA3MjQiPlsmIzM1MzczOyYjMjM0NTA7XTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjE4Mi43NzI5IiB5PSI1MTUuODk3NiI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE0My44NzYiIHg9IjExMy4wNiIgeT0iNTMyLjE5NDUiPmNvbmZpZy9hcHBsaWNhdGlvbi5yYjwvdGV4dD48L2c+PCEtLWVudGl0eSBsb2NhbGVfZmlsZXMtLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0ibG9jYWxlX2ZpbGVzIiBkYXRhLXNvdXJjZS1saW5lPSI2MyIgZGF0YS11aWQ9ImVudDAwMDUiIGlkPSJlbnRpdHlfbG9jYWxlX2ZpbGVzIj48cmVjdCBmaWxsPSIjODVCQkYwIiBoZWlnaHQ9Ijk5LjE1NjMiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6Izc4QThEODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1OC4wNjU0IiB4PSIxMDUuOTciIHk9IjYyMC41Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4Mi41NzAzIiB4PSIxNDMuNzE3NiIgeT0iNjQxLjYzODciPiYjMTcxO2NvbXBvbmVudCYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTI4LjAwMDIiIHg9IjEyMS4wMDI2IiB5PSI2NTkuMzIwMyI+JiMxMjUyNTsmIzEyNDY1OyYjMTI1NDA7JiMxMjUyMzsmIzEyNTAxOyYjMTI0NDk7JiMxMjQ1MjsmIzEyNTIzOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQxLjk0MTQiIHg9IjE2NC4wMzIiIHk9IjY3NC4yMzI0Ij5bWUFNTF08L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIxODIuNzc3NiIgeT0iNjkwLjA1NzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMzguMDY1NCIgeD0iMTE1Ljk3IiB5PSI3MDYuMzU0NSI+Y29uZmlnL2xvY2FsZXMvKi55bWw8L3RleHQ+PC9nPjwhLS1lbnRpdHkgbW9kZWxzX2xvY2FsZS0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJtb2RlbHNfbG9jYWxlIiBkYXRhLXNvdXJjZS1saW5lPSI2MyIgZGF0YS11aWQ9ImVudDAwMDYiIGlkPSJlbnRpdHlfbW9kZWxzX2xvY2FsZSI+PHJlY3QgZmlsbD0iIzg1QkJGMCIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM3OEE4RDg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMDQuNTcwMyIgeD0iNTkuNzEiIHk9Ijc5NC42NSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODIuNTcwMyIgeD0iNzAuNzEiIHk9IjgxNS43ODg3Ij4mIzE3MTtjb21wb25lbnQmIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgwLjAwMDIiIHg9IjcxLjk5NTEiIHk9IjgzMy40NzAzIj4mIzEyNTE0OyYjMTI0ODc7JiMxMjUyMzsmIzMyNzYzOyYjMzUzNzk7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNDEuOTQxNCIgeD0iOTEuMDI0NSIgeT0iODQ4LjM4MjQiPltZQU1MXTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjEwOS43NzAxIiB5PSI4NjQuMjA3NiI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgxLjE0OTQiIHg9IjcxLjQyMDQiIHk9Ijg4MC41MDQ1Ij5tb2RlbHMueW1sPC90ZXh0PjwvZz48IS0tZW50aXR5IHZpZXdzX2xvY2FsZS0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJ2aWV3c19sb2NhbGUiIGRhdGEtc291cmNlLWxpbmU9IjYzIiBkYXRhLXVpZD0iZW50MDAwNyIgaWQ9ImVudGl0eV92aWV3c19sb2NhbGUiPjxyZWN0IGZpbGw9IiM4NUJCRjAiIGhlaWdodD0iOTkuMTU2MyIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNzhBOEQ4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTA0LjU3MDMiIHg9IjIxNi43MSIgeT0iNzk0LjY1Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4Mi41NzAzIiB4PSIyMjcuNzEiIHk9IjgxNS43ODg3Ij4mIzE3MTtjb21wb25lbnQmIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgwLjAwMDIiIHg9IjIyOC45OTUxIiB5PSI4MzMuNDcwMyI+JiMxMjQ5OTsmIzEyNTE3OyYjMTI1NDA7JiMzMjc2MzsmIzM1Mzc5OzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQxLjk0MTQiIHg9IjI0OC4wMjQ1IiB5PSI4NDguMzgyNCI+W1lBTUxdPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuNDUwMiIgeD0iMjY2Ljc3MDEiIHk9Ijg2NC4yMDc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjkuNzk0OSIgeD0iMjM0LjA5NzciIHk9Ijg4MC41MDQ1Ij52aWV3cy55bWw8L3RleHQ+PC9nPjwhLS1lbnRpdHkgY29udHJvbGxlcnMtLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iY29udHJvbGxlcnMiIGRhdGEtc291cmNlLWxpbmU9IjYzIiBkYXRhLXVpZD0iZW50MDAwOCIgaWQ9ImVudGl0eV9jb250cm9sbGVycyI+PHJlY3QgZmlsbD0iIzg1QkJGMCIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM3OEE4RDg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMzEuOTk5NSIgeD0iMjMiIHk9IjI3Mi4xOSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODIuNTcwMyIgeD0iNDcuNzE0NiIgeT0iMjkzLjMyODciPiYjMTcxO2NvbXBvbmVudCYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOTYuMDAwMiIgeD0iNDAuOTk5NyIgeT0iMzExLjAxMDMiPiYjMTI0Njc7JiMxMjUzMTsmIzEyNDg4OyYjMTI1MjU7JiMxMjU0MDsmIzEyNTIxOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQwLjAyNTQiIHg9IjY4Ljk4NzEiIHk9IjMyNS45MjI0Ij5bUnVieV08L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSI4Ni43NzQ3IiB5PSIzNDEuNzQ3NiI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjExMS45OTk1IiB4PSIzMyIgeT0iMzU4LjA0NDUiPiYjMjE1MDg7JiMzMTI3ODsmIzEyNDY3OyYjMTI1MzE7JiMxMjQ4ODsmIzEyNTI1OyYjMTI1NDA7JiMxMjUyMTs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgdmlld3MtLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0idmlld3MiIGRhdGEtc291cmNlLWxpbmU9IjYzIiBkYXRhLXVpZD0iZW50MDAwOSIgaWQ9ImVudGl0eV92aWV3cyI+PHJlY3QgZmlsbD0iIzg1QkJGMCIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM3OEE4RDg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNzMuOTk5MyIgeD0iMTkwIiB5PSIyNzIuMTkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgyLjU3MDMiIHg9IjIzNS43MTQ1IiB5PSIyOTMuMzI4NyI+JiMxNzE7Y29tcG9uZW50JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0OC4wMDAxIiB4PSIyNTIuOTk5NiIgeT0iMzExLjAxMDMiPiYjMTI0OTk7JiMxMjUxNzsmIzEyNTQwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMzLjUxNTYiIHg9IjI2MC4yNDE5IiB5PSIzMjUuOTIyNCI+W0VSQl08L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIyNzQuNzc0NiIgeT0iMzQxLjc0NzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNTMuOTk5MyIgeD0iMjAwIiB5PSIzNTguMDQ0NSI+JiMyMTUwODsmIzMxMjc4OyYjMTI0OTk7JiMxMjUxNzsmIzEyNTQwOyYjMTI0ODY7JiMxMjUzMTsmIzEyNTAzOyYjMTI1MjQ7JiMxMjU0MDsmIzEyNDg4OzwvdGV4dD48L2c+PCEtLWVudGl0eSB1c2VyLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9InVzZXIiIGRhdGEtc291cmNlLWxpbmU9IjM3NCIgZGF0YS11aWQ9ImVudDAwMDIiIGlkPSJlbnRpdHlfdXNlciI+PHJlY3QgZmlsbD0iIzA4NDI3QiIgaGVpZ2h0PSIxMzMuMTg3NSIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMDczQjZGO3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTE3Ljk5OTYiIHg9IjIxOCIgeT0iNyIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTUuODE2NCIgeD0iMjQ5LjA5MTYiIHk9IjI4LjEzODciPiYjMTcxO3BlcnNvbiYjMTg3OzwvdGV4dD48aW1hZ2UgaGVpZ2h0PSI0OCIgd2lkdGg9IjQ4IiB4PSIyNTIuOTk5OCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEQUFBQUF3Q0FZQUFBQlhBdm1IQUFBQ01FbEVRVlI0WHUyWXZVckZRQkNGYitraitBaStncTNZMlBnQStnQ0N0WjJWMkFocWFTTmlxWTFnWVdNamFDdlh5a29FS3kyMXNMQ05mRUxnTXNja3N6OG1XZkRBQjNLdXllN3NUbVlubWN3dGJVOUtSb3pTRUNPVmxhM1Q2dVRxdnJxWlBsY1BUNjgvWE53K1Z0dkgxOVhDK3NHZS9mOVV4SWhsOC9DeSt2ajhxcnBFWUlzYlIxTjdmU3hpaERLL3Vydk1Lb2VLSGJIM2lrR01FSmk4WjlXYnRIOTJseHlFR0NIRXJMd1ZxV2Z2RzRJWVhraUJYR0luN2YyOWlPR0JBZTBrVWtUVnNtTjRFY01EMjU1YmRnd3ZZbmlnRk9ZVzU0Y2R4NE1ZSGxJcVQ1Tml5Nm9ZSHV6Z09SUmJVc1h3WUFmUG9WNERlSGw3dCtNbksvWThFTU1EelZsdTlmb1E1eTZqRkFVN2hoY3h2T1NzUkxINUQySjRLYnFWcU1seG9LM3RuRWV2UG9nUkFpdVhVcEZpRDY5WnhJZ2haaWRTVjc1R2pGaVlrR2MzS01FcE9XOFJJeFhlZDBrTkpzck9BTzB5cFRmbnhHdkVLQTB4U2tNTUQzemZJZWRKRlE0aENQbFV3clgxZGFRV2JVUnNlb25SQmhOdWUxRDVyYzUzSmtWUXdOOWMyMVd0K0QyMEp4TGpON2hwenRhaFN3VGkzUkV4TERsYmhoQ3htNTVQa1dMTWtydnJEQlc3M3JVVFl0U1F1L2FHUTRoMHNuTnpCZEQxd1BXcHRyWkREQmpMNnRmaWViQnpiQTJBVWpnMk5UM1FZa0JiclI5S1RTLzlZb0M5ZUF4cWV1MFVJL2VIMjF5aXU3VnpMU3FBcG5JcXhuOEFmNlRpQTNBL0E5Qm41K2xWMHhjTU1XRG9KczZxcmFrVG80YTZPd1p4cUxhOTdZa3hDMUh6TWtNek5RUnRFM2NGVUFKaWxNWTNPR1ROTDBORExxSUFBQUFBU1VWT1JLNUNZSUk9IiB5PSIzMC45Njg4Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY0LjAwMDEiIHg9IjI0NC45OTk3IiB5PSI5My44MjAzIj4mIzEyNTE4OyYjMTI1NDA7JiMxMjQ3MDsmIzEyNTQwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjI3NC43NzQ3IiB5PSIxMTAuNTg4OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijk3Ljk5OTYiIHg9IjIyOCIgeT0iMTI2Ljg4NTciPiYjMTI0NzE7JiMxMjQ3MzsmIzEyNDg2OyYjMTI1MTI7JiMyMTAzMzsmIzI5OTkyOyYjMzI3NzM7PC90ZXh0PjwvZz48IS0tbGluayB1c2VyIHRvIHZpZXdzLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9InVzZXIiIGRhdGEtZW50aXR5LTI9InZpZXdzIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTAiIGlkPSJsaW5rX3VzZXJfdmlld3MiPjxwYXRoIGQ9Ik0yNzcsMTQwLjU2IEMyNzcsMTgxLjg2IDI3NywyMjYuMTkgMjc3LDI2My44IiBmaWxsPSJub25lIiBpZD0idXNlci10by12aWV3cyIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iMjc3LDI3MS44LDI4MCwyNjMuOCwyNzQsMjYzLjgsMjc3LDI3MS44IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI0LjAwMDIiIHg9IjI3OCIgeT0iMTgyLjMyODciPiYjMzgzMjI7JiMzNTIzOTs8L3RleHQ+PC9nPjwhLS1saW5rIHZpZXdzIHRvIGkxOG5fY29uZmlnLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9InZpZXdzIiBkYXRhLWVudGl0eS0yPSJpMThuX2NvbmZpZyIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazExIiBpZD0ibGlua192aWV3c19pMThuX2NvbmZpZyI+PHBhdGggZD0iTTI1MC44OCwzNzEuNjQgQzIzOC40NSwzOTQuOSAyMjcuMzkxNiw0MTUuNTk0OSAyMTQuOTUxNiw0MzguODY0OSIgZmlsbD0ibm9uZSIgaWQ9InZpZXdzLXRvLWkxOG5fY29uZmlnIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIyMTEuMTgsNDQ1LjkyLDIxNy41OTczLDQ0MC4yNzkyLDIxMi4zMDYsNDM3LjQ1MDUsMjExLjE4LDQ0NS45MiIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiM2NjY2NjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0OC4wMDA0IiB4PSIyMzUiIHk9IjQxMy40Nzg3Ij4mIzMyNzYzOyYjMzUzNzk7JiMyMTQ2MjsmIzI0NDcxOzwvdGV4dD48L2c+PCEtLWxpbmsgaTE4bl9jb25maWcgdG8gbG9jYWxlX2ZpbGVzLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImkxOG5fY29uZmlnIiBkYXRhLWVudGl0eS0yPSJsb2NhbGVfZmlsZXMiIGRhdGEtc291cmNlLWxpbmU9IjE1NzgiIGRhdGEtdWlkPSJsbmsxMiIgaWQ9ImxpbmtfaTE4bl9jb25maWdfbG9jYWxlX2ZpbGVzIj48cGF0aCBkPSJNMTg1LDU0NS43OSBDMTg1LDU2OS4wNSAxODUsNTg4LjggMTg1LDYxMi4wOCIgZmlsbD0ibm9uZSIgaWQ9ImkxOG5fY29uZmlnLXRvLWxvY2FsZV9maWxlcyIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iMTg1LDYyMC4wOCwxODgsNjEyLjA4LDE4Miw2MTIuMDgsMTg1LDYyMC4wOCIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiM2NjY2NjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0OC4wMDA0IiB4PSIxODYiIHk9IjU4Ny42Mzg3Ij4mIzM1NTAxOyYjMTI0MTU7JiMzNjc5NjsmIzEyNDE1OzwvdGV4dD48L2c+PCEtLWxpbmsgbG9jYWxlX2ZpbGVzIHRvIG1vZGVsc19sb2NhbGUtLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0ibG9jYWxlX2ZpbGVzIiBkYXRhLWVudGl0eS0yPSJtb2RlbHNfbG9jYWxlIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTMiIGlkPSJsaW5rX2xvY2FsZV9maWxlc19tb2RlbHNfbG9jYWxlIj48cGF0aCBkPSJNMTQ4Ljg0LDcxOS44NCBDMTQyLjksNzI5LjM4IDEzNy4zLDczOS41NyAxMzMsNzQ5LjY1IEMxMjcsNzYzLjc1IDEyNC4yODI3LDc3MS45NzkgMTIxLjEwMjcsNzg2Ljc1OSIgZmlsbD0ibm9uZSIgaWQ9ImxvY2FsZV9maWxlcy10by1tb2RlbHNfbG9jYWxlIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIxMTkuNDIsNzk0LjU4LDEyNC4wMzU2LDc4Ny4zOSwxMTguMTY5OSw3ODYuMTI4LDExOS40Miw3OTQuNTgiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjNjY2NjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMjQuMDAwMiIgeD0iMTM0IiB5PSI3NjEuNzg4NyI+JiMyMTU0NzsmIzEyNDE2OzwvdGV4dD48L2c+PCEtLWxpbmsgbG9jYWxlX2ZpbGVzIHRvIHZpZXdzX2xvY2FsZS0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJsb2NhbGVfZmlsZXMiIGRhdGEtZW50aXR5LTI9InZpZXdzX2xvY2FsZSIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazE0IiBpZD0ibGlua19sb2NhbGVfZmlsZXNfdmlld3NfbG9jYWxlIj48cGF0aCBkPSJNMjA4Ljg1LDcxOS45NSBDMjIwLjIsNzQzLjIxIDIzMC4yMzQxLDc2My43NjkxIDI0MS41ODQxLDc4Ny4wNDkxIiBmaWxsPSJub25lIiBpZD0ibG9jYWxlX2ZpbGVzLXRvLXZpZXdzX2xvY2FsZSIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iMjQ1LjA5LDc5NC4yNCwyNDQuMjgwNyw3ODUuNzM0NCwyMzguODg3NSw3ODguMzYzOCwyNDUuMDksNzk0LjI0IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI0LjAwMDIiIHg9IjIzMSIgeT0iNzYxLjc4ODciPiYjMjE1NDc7JiMxMjQxNjs8L3RleHQ+PC9nPjwhLS1saW5rIGNvbnRyb2xsZXJzIHRvIGkxOG5fY29uZmlnLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImNvbnRyb2xsZXJzIiBkYXRhLWVudGl0eS0yPSJpMThuX2NvbmZpZyIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazE1IiBpZD0ibGlua19jb250cm9sbGVyc19pMThuX2NvbmZpZyI+PHBhdGggZD0iTTExNi4yNSwzNzEuNjQgQzEyOS4yMiwzOTQuOSAxNDAuODAyOSw0MTUuNjYzNCAxNTMuNzgyOSw0MzguOTMzNCIgZmlsbD0ibm9uZSIgaWQ9ImNvbnRyb2xsZXJzLXRvLWkxOG5fY29uZmlnIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIxNTcuNjgsNDQ1LjkyLDE1Ni40MDI5LDQzNy40NzIsMTUxLjE2MjksNDQwLjM5NDgsMTU3LjY4LDQ0NS45MiIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiM2NjY2NjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0OC4wMDA0IiB4PSIxNDEiIHk9IjQxMy40Nzg3Ij4mIzMyNzYzOyYjMzUzNzk7JiMyMTQ2MjsmIzI0NDcxOzwvdGV4dD48L2c+PCEtLWxpbmsgdmlld3MgdG8gdmlld3NfbG9jYWxlLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9InZpZXdzIiBkYXRhLWVudGl0eS0yPSJ2aWV3c19sb2NhbGUiIGRhdGEtc291cmNlLWxpbmU9IjE1NzgiIGRhdGEtdWlkPSJsbmsxNiIgaWQ9Imxpbmtfdmlld3Nfdmlld3NfbG9jYWxlIj48cGF0aCBkPSJNMjg3LjgsMzcxLjYgQzI4OS41NSwzODEuNCAyOTEuMDgsMzkxLjY2IDI5Miw0MDEuMzQgQzI5Mi42Myw0MDcuOTggMjkyLjExLDQwOS42OCAyOTIsNDE2LjM0IEMyODkuNzgsNTUxLjIgMjkxLjI4LDU4NS4wOSAyODIsNzE5LjY1IEMyODAuMyw3NDQuMyAyNzguNDE0Miw3NjMuNjcwMSAyNzUuODY0Miw3ODYuMzQwMSIgZmlsbD0ibm9uZSIgaWQ9InZpZXdzLXRvLXZpZXdzX2xvY2FsZSIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iMjc0Ljk3LDc5NC4yOSwyNzguODQ1NCw3ODYuNjc1NSwyNzIuODgzLDc4Ni4wMDQ4LDI3NC45Nyw3OTQuMjkiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjNjY2NjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMjQuMDAwMiIgeD0iMjkwIiB5PSI1ODcuNjM4NyI+JiMyMTQ0MjsmIzI5MDMxOzwvdGV4dD48L2c+PCEtLWxpbmsgY29udHJvbGxlcnMgdG8gbW9kZWxzX2xvY2FsZS0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJjb250cm9sbGVycyIgZGF0YS1lbnRpdHktMj0ibW9kZWxzX2xvY2FsZSIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazE3IiBpZD0ibGlua19jb250cm9sbGVyc19tb2RlbHNfbG9jYWxlIj48cGF0aCBkPSJNODUuNjEsMzcxLjgxIEM4MS4xNSw0NDYuOTMgNzUuMjcsNTk0Ljg5IDg4LDcxOS42NSBDOTAuNTMsNzQ0LjQ0IDkzLjg5MTgsNzYzLjgzNTkgOTguNzAxOCw3ODYuMzk1OSIgZmlsbD0ibm9uZSIgaWQ9ImNvbnRyb2xsZXJzLXRvLW1vZGVsc19sb2NhbGUiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjNjY2NjY2IiBwb2ludHM9IjEwMC4zNyw3OTQuMjIsMTAxLjYzNTksNzg1Ljc3MDMsOTUuNzY3OCw3ODcuMDIxNCwxMDAuMzcsNzk0LjIyIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI0LjAwMDIiIHg9IjgyIiB5PSI1ODcuNjM4NyI+JiMyMTQ0MjsmIzI5MDMxOzwvdGV4dD48L2c+PCEtLVNSQz1bWFA5REltOTE3Q1JsLW9kQ2FxT2VXT1NFNFFIcTIwaDJKZnFNTlNUTzY3VGFMbWs5bTdRb0YwRzZiTzlVQWlnTkpBNjQ4WkJ6Q0NGWS1Zc1FzTHJwTnVIV2NQc052X2REX3hfRkJlY0kwRkNmdTVrRkhTQW4yMXozY0lvSVc5SlJ1Qld6ODJqODJrR0w4QV91XzBHdDJIdUl6T0VFVmhQTUZ1ZHdIVjA1bVZUUWtKRXZSVWw1YVpfOFNWaTU5R1NvVjFKYmZMSDJCV0o0ckpNOUx1bkRRakNRRnpEd0d4a2dzbHQtZUUtNC14bFFUMFg4SWVrN3JCNURMdGd4Zl9OaHhEaHZwMUk0NHphaTU4TDRKYUhJSTR4STBrT1NZOEc0MTduUVg0MG5Fa1dIek9xcldSaTR0bjdyV1FYRlRDdlcxdmt4RXBRZXdMSjJvdzUyMVpnTzZQRzJLRTVEV0c1ejlGWUlLWVJaUnhxemlCRENnT1RtOTg5WjEtMjZ1NlRRYkhUV0Ezci1NYzlFSFgzSVQ4bU8xV0pKZnlvd093cnJjM0VVSm5ST014aS1keEp4MnBJVVdrb0xDRVRNRjZlM3A0d0NrMllmSGwyaGlJbkpxWWQ3bkc2cV9mQ1BSNWZ6cnZpalVpZ0VoNHJkaGNRX01nTWdaTWdNcFk1bWZRVV96Q1pQTTF5RHdNWjlkR2Z0Q2pmcmJ3WjVYTDlOMTB3YnVfRi1NeDdMY0hqT0tJVWJyWUFXZnFYQi1HaTBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="_2">作業内容<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="i18n_1">国際化（i18n）機能の実装<a class="headerlink" href="#i18n_1" title="Permanent link">&para;</a></h3>
+<p>アプリケーションの国際化（i18n）機能を実装するため、ロケールファイルの設定と翻訳リソースの追加を行いました。これにより、アプリケーション全体で一貫した言語表示が可能になり、将来的な多言語対応の基盤が整いました。</p>
+<h4 id="_3">変更点の概要<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<ol>
+<li>i18n設定の追加</li>
+<li>i18n_generators Gemの追加</li>
+<li>ロケールファイルの構造化</li>
+<li>
+<p>デフォルトロケールの設定</p>
+</li>
+<li>
+<p>翻訳リソースの追加</p>
+</li>
+<li>モデル関連の翻訳（属性名、エラーメッセージなど）</li>
+<li>ビュー関連の翻訳（ラベル、ボタン、メッセージなど）</li>
+<li>
+<p>共通部分の翻訳</p>
+</li>
+<li>
+<p>ビューテンプレートの更新</p>
+</li>
+<li>静的テキストを翻訳キーに置き換え</li>
+<li>ログインフォームの国際化対応</li>
+<li>ヘッダー部分の国際化対応</li>
+</ol>
+<h4 id="_4">技術的詳細<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>YAMLファイルによる階層的な翻訳リソース管理</li>
+<li><code>t</code>ヘルパーメソッドを使用した翻訳の適用</li>
+<li>モデル名や属性名の自動翻訳機能の活用</li>
+</ul>
+<h2 id="4275589">コミット: 4275589<a class="headerlink" href="#4275589" title="Permanent link">&para;</a></h2>
+<h3 id="_5">メッセージ<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ユーザー認証機能
+</code></pre></div>
+<h3 id="_6">変更されたファイル<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/views/admin/top/index.html.erb</li>
+<li>M app/views/staff/top/index.html.erb</li>
+</ul>
+<h3 id="_7">変更内容<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 4275589d1068bb49ceca3fc15a153a66363f5e52
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 19:04:21 2017 +0900
+
+<span class="w"> </span>   ユーザー認証機能
+
+<span class="gh">diff --git a/app/views/admin/top/index.html.erb b/app/views/admin/top/index.html.erb</span>
+<span class="gh">index 81d36bc..fa3f9a8 100644</span>
+<span class="gd">--- a/app/views/admin/top/index.html.erb</span>
+<span class="gi">+++ b/app/views/admin/top/index.html.erb</span>
+<span class="gu">@@ -9,7 +9,11 @@</span>
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>  &lt;ol class=&quot;NewsList&quot;&gt;
+<span class="w"> </span>    &lt;li class=&quot;NewsList__item&quot;&gt;
+<span class="gd">-      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-1-17&quot;&gt;2016.10.12&lt;/time&gt;</span>
+<span class="gi">+      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-1-21&quot;&gt;2017.1.21&lt;/time&gt;</span>
+<span class="gi">+      &lt;span class=&quot;NewsList__body&quot;&gt;ログイン機能を追加&lt;/span&gt;</span>
+<span class="gi">+    &lt;/li&gt;</span>
+<span class="gi">+    &lt;li class=&quot;NewsList__item&quot;&gt;</span>
+<span class="gi">+      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-1-17&quot;&gt;2017.1.17&lt;/time&gt;</span>
+<span class="w"> </span>      &lt;span class=&quot;NewsList__body&quot;&gt;開発を開始しました&lt;/span&gt;
+<span class="w"> </span>    &lt;/li&gt;
+<span class="w"> </span>  &lt;/ol&gt;
+<span class="gh">diff --git a/app/views/staff/top/index.html.erb b/app/views/staff/top/index.html.erb</span>
+<span class="gh">index feba999..f510527 100644</span>
+<span class="gd">--- a/app/views/staff/top/index.html.erb</span>
+<span class="gi">+++ b/app/views/staff/top/index.html.erb</span>
+<span class="gu">@@ -8,6 +8,10 @@</span>
+<span class="w"> </span>    &lt;h2 class=&quot;sectionLabel&quot;&gt;お知らせ&lt;/h2&gt;
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>  &lt;ol class=&quot;NewsList&quot;&gt;
+<span class="gi">+    &lt;li class=&quot;NewsList__item&quot;&gt;</span>
+<span class="gi">+      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-1-21&quot;&gt;2017.1.21&lt;/time&gt;</span>
+<span class="gi">+      &lt;span class=&quot;NewsList__body&quot;&gt;ログイン機能を追加&lt;/span&gt;</span>
+<span class="gi">+    &lt;/li&gt;</span>
+<span class="w"> </span>    &lt;li class=&quot;NewsList__item&quot;&gt;
+<span class="w"> </span>      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-1-18&quot;&gt;2017.1.18&lt;/time&gt;
+<span class="w"> </span>      &lt;span class=&quot;NewsList__body&quot;&gt;エラーページを追加&lt;/span&gt;
+</code></pre></div>
+<h2 id="2291956">コミット: 2291956<a class="headerlink" href="#2291956" title="Permanent link">&para;</a></h2>
+<h3 id="_8">メッセージ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>i18nの設定と適用
+</code></pre></div>
+<h3 id="_9">変更されたファイル<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M .idea/.rakeTasks</li>
+<li>M Gemfile</li>
+<li>M README.md</li>
+<li>M app/views/admin/sessions/new.html.erb</li>
+<li>M app/views/admin/shared/_header.html.erb</li>
+<li>M app/views/staff/sessions/new.html.erb</li>
+<li>M app/views/staff/shared/_header.html.erb</li>
+<li>M config/locales/ja.yml</li>
+<li>A config/locales/models/models.yml</li>
+<li>A config/locales/views/views.yml</li>
+</ul>
+<h3 id="_10">変更内容<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 2291956c5041add7e315ce47059d9a61f4c16b85
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 19:02:37 2017 +0900
+
+<span class="w"> </span>   i18nの設定と適用
+
+<span class="gh">diff --git a/.idea/.rakeTasks b/.idea/.rakeTasks</span>
+<span class="gh">index 9cf55a4..5b28e63 100644</span>
+<span class="gd">--- a/.idea/.rakeTasks</span>
+<span class="gi">+++ b/.idea/.rakeTasks</span>
+<span class="gu">@@ -4,4 +4,4 @@ You are allowed to:</span>
+<span class="w"> </span>1. Remove rake task
+<span class="w"> </span>2. Add existing rake tasks
+<span class="w"> </span>To add existing rake tasks automatically delete this file and reload the project.
+<span class="gd">---&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;rake&quot;&gt;&lt;RakeTask description=&quot;List versions of all Rails frameworks and the environment&quot; fullCmd=&quot;about&quot; taksId=&quot;about&quot; /&gt;&lt;RakeTask description=&quot;Add schema information (as comments) to model and fixture files&quot; fullCmd=&quot;annotate_models&quot; taksId=&quot;annotate_models&quot; /&gt;&lt;RakeTask description=&quot;Adds the route map to routes.rb&quot; fullCmd=&quot;annotate_routes&quot; taksId=&quot;annotate_routes&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;app&quot;&gt;&lt;RakeTask description=&quot;Applies the template supplied by LOCATION=(/path/to/template) or URL&quot; fullCmd=&quot;app:template&quot; taksId=&quot;template&quot; /&gt;&lt;RakeTask description=&quot;Update configs and some other initially generated files (or use just update:configs or update:bin)&quot; fullCmd=&quot;app:update&quot; taksId=&quot;update&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;templates&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:templates:copy&quot; taksId=&quot;copy&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;update&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:bin&quot; taksId=&quot;bin&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:configs&quot; taksId=&quot;configs&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:upgrade_guide_info&quot; taksId=&quot;upgrade_guide_info&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;assets&quot;&gt;&lt;RakeTask description=&quot;Remove old compiled assets&quot; fullCmd=&quot;assets:clean[keep]&quot; taksId=&quot;clean[keep]&quot; /&gt;&lt;RakeTask description=&quot;Remove compiled assets&quot; fullCmd=&quot;assets:clobber&quot; taksId=&quot;clobber&quot; /&gt;&lt;RakeTask description=&quot;Load asset compile environment&quot; fullCmd=&quot;assets:environment&quot; taksId=&quot;environment&quot; /&gt;&lt;RakeTask description=&quot;Compile all the assets named in config.assets.precompile&quot; fullCmd=&quot;assets:precompile&quot; taksId=&quot;precompile&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;assets:clean&quot; taksId=&quot;clean&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache_digests&quot;&gt;&lt;RakeTask description=&quot;Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)&quot; fullCmd=&quot;cache_digests:dependencies&quot; taksId=&quot;dependencies&quot; /&gt;&lt;RakeTask description=&quot;Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)&quot; fullCmd=&quot;cache_digests:nested_dependencies&quot; taksId=&quot;nested_dependencies&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;db&quot;&gt;&lt;RakeTask description=&quot;Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to creating the development and test databases&quot; fullCmd=&quot;db:create&quot; taksId=&quot;create&quot; /&gt;&lt;RakeTask description=&quot;Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to dropping the development and test databases&quot; fullCmd=&quot;db:drop&quot; taksId=&quot;drop&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;environment&quot;&gt;&lt;RakeTask description=&quot;Set the environment value for the database&quot; fullCmd=&quot;db:environment:set&quot; taksId=&quot;set&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;fixtures&quot;&gt;&lt;RakeTask description=&quot;Loads fixtures into the current environment&#39;s database&quot; fullCmd=&quot;db:fixtures:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:fixtures:identify&quot; taksId=&quot;identify&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)&quot; fullCmd=&quot;db:migrate&quot; taksId=&quot;migrate&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;migrate&quot;&gt;&lt;RakeTask description=&quot;Display status of migrations&quot; fullCmd=&quot;db:migrate:status&quot; taksId=&quot;status&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:change&quot; taksId=&quot;change&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:down&quot; taksId=&quot;down&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:redo&quot; taksId=&quot;redo&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:reset&quot; taksId=&quot;reset&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:up&quot; taksId=&quot;up&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Rolls the schema back to the previous version (specify steps w/ STEP=n)&quot; fullCmd=&quot;db:rollback&quot; taksId=&quot;rollback&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;schema&quot;&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache&quot;&gt;&lt;RakeTask description=&quot;Clears a db/schema_cache.dump file&quot; fullCmd=&quot;db:schema:cache:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;RakeTask description=&quot;Creates a db/schema_cache.dump file&quot; fullCmd=&quot;db:schema:cache:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Creates a db/schema.rb file that is portable against any DB supported by Active Record&quot; fullCmd=&quot;db:schema:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;RakeTask description=&quot;Loads a schema.rb file into the database&quot; fullCmd=&quot;db:schema:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:schema:load_if_ruby&quot; taksId=&quot;load_if_ruby&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Loads the seed data from db/seeds.rb&quot; fullCmd=&quot;db:seed&quot; taksId=&quot;seed&quot; /&gt;&lt;RakeTask description=&quot;Creates the database, loads the schema, and initializes with the seed data (use db:reset to also drop the database first)&quot; fullCmd=&quot;db:setup&quot; taksId=&quot;setup&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;structure&quot;&gt;&lt;RakeTask description=&quot;Dumps the database structure to db/structure.sql&quot; fullCmd=&quot;db:structure:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;RakeTask description=&quot;Recreates the databases from the structure.sql file&quot; fullCmd=&quot;db:structure:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:structure:load_if_sql&quot; taksId=&quot;load_if_sql&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Retrieves the current schema version number&quot; fullCmd=&quot;db:version&quot; taksId=&quot;version&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:_dump&quot; taksId=&quot;_dump&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:abort_if_pending_migrations&quot; taksId=&quot;abort_if_pending_migrations&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:charset&quot; taksId=&quot;charset&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:check_protected_environments&quot; taksId=&quot;check_protected_environments&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:collation&quot; taksId=&quot;collation&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;create&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:create:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;drop&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:drop:_unsafe&quot; taksId=&quot;_unsafe&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:drop:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:forward&quot; taksId=&quot;forward&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:load_config&quot; taksId=&quot;load_config&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:purge&quot; taksId=&quot;purge&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;purge&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:purge:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:reset&quot; taksId=&quot;reset&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;test&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone&quot; taksId=&quot;clone&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone_schema&quot; taksId=&quot;clone_schema&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone_structure&quot; taksId=&quot;clone_structure&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:deprecated&quot; taksId=&quot;deprecated&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load_schema&quot; taksId=&quot;load_schema&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load_structure&quot; taksId=&quot;load_structure&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:purge&quot; taksId=&quot;purge&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;dev&quot;&gt;&lt;RakeTask description=&quot;Toggle development mode caching on/off&quot; fullCmd=&quot;dev:cache&quot; taksId=&quot;cache&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Generate an Entity-Relationship Diagram based on your models&quot; fullCmd=&quot;erd&quot; taksId=&quot;erd&quot; /&gt;&lt;RakeTask description=&quot;Print out all defined initializers in the order they are invoked by Rails&quot; fullCmd=&quot;initializers&quot; taksId=&quot;initializers&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;log&quot;&gt;&lt;RakeTask description=&quot;Truncates all/specified *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)&quot; fullCmd=&quot;log:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Prints out your Rack middleware stack&quot; fullCmd=&quot;middleware&quot; taksId=&quot;middleware&quot; /&gt;&lt;RakeTask description=&quot;Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)&quot; fullCmd=&quot;notes&quot; taksId=&quot;notes&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;notes&quot;&gt;&lt;RakeTask description=&quot;Enumerate a custom annotation, specify with ANNOTATION=CUSTOM&quot; fullCmd=&quot;notes:custom&quot; taksId=&quot;custom&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:fixme&quot; taksId=&quot;fixme&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:optimize&quot; taksId=&quot;optimize&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:todo&quot; taksId=&quot;todo&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Remove schema information from model and fixture files&quot; fullCmd=&quot;remove_annotation&quot; taksId=&quot;remove_annotation&quot; /&gt;&lt;RakeTask description=&quot;Removes the route map from routes.rb&quot; fullCmd=&quot;remove_routes&quot; taksId=&quot;remove_routes&quot; /&gt;&lt;RakeTask description=&quot;Restart app by touching tmp/restart.txt&quot; fullCmd=&quot;restart&quot; taksId=&quot;restart&quot; /&gt;&lt;RakeTask description=&quot;Print out all defined routes in match order, with names&quot; fullCmd=&quot;routes&quot; taksId=&quot;routes&quot; /&gt;&lt;RakeTask description=&quot;Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)&quot; fullCmd=&quot;secret&quot; taksId=&quot;secret&quot; /&gt;&lt;RakeTask description=&quot;Run all specs in spec directory (excluding plugin specs)&quot; fullCmd=&quot;spec&quot; taksId=&quot;spec&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;spec&quot;&gt;&lt;RakeTask description=&quot;Run the code examples in spec/models&quot; fullCmd=&quot;spec:models&quot; taksId=&quot;models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;spec:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;spec:statsetup&quot; taksId=&quot;statsetup&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Report code statistics (KLOCs, etc) from the application or engine&quot; fullCmd=&quot;stats&quot; taksId=&quot;stats&quot; /&gt;&lt;RakeTask description=&quot;Runs all tests in test folder&quot; fullCmd=&quot;test&quot; taksId=&quot;test&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;test&quot;&gt;&lt;RakeTask description=&quot;Run tests quickly, but also reset db&quot; fullCmd=&quot;test:db&quot; taksId=&quot;db&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:controllers&quot; taksId=&quot;controllers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:functionals&quot; taksId=&quot;functionals&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:generators&quot; taksId=&quot;generators&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:helpers&quot; taksId=&quot;helpers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:integration&quot; taksId=&quot;integration&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:jobs&quot; taksId=&quot;jobs&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:mailers&quot; taksId=&quot;mailers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:models&quot; taksId=&quot;models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:run&quot; taksId=&quot;run&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:units&quot; taksId=&quot;units&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;time&quot;&gt;&lt;RakeTask description=&quot;List all time zones, list by two-letter country code (`rails time:zones[US]`), or list by UTC offset (`rails time:zones[-8]`)&quot; fullCmd=&quot;time:zones[country_or_offset]&quot; taksId=&quot;zones[country_or_offset]&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones&quot; taksId=&quot;zones&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;zones&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:all&quot; taksId=&quot;all&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:local&quot; taksId=&quot;local&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:us&quot; taksId=&quot;us&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;tmp&quot;&gt;&lt;RakeTask description=&quot;Clear cache and socket files from tmp/ (narrow w/ tmp:cache:clear, tmp:sockets:clear)&quot; fullCmd=&quot;tmp:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;RakeTask description=&quot;Creates tmp directories for cache, sockets, and pids&quot; fullCmd=&quot;tmp:create&quot; taksId=&quot;create&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:cache:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;pids&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:pids:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;sockets&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:sockets:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;default&quot; taksId=&quot;default&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;environment&quot; taksId=&quot;environment&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;erd&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:generate&quot; taksId=&quot;generate&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:load_models&quot; taksId=&quot;load_models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:options&quot; taksId=&quot;options&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;rails&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:template&quot; taksId=&quot;template&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;templates&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:templates:copy&quot; taksId=&quot;copy&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update&quot; taksId=&quot;update&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;update&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update:bin&quot; taksId=&quot;bin&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update:configs&quot; taksId=&quot;configs&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;railties&quot;&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;install&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;railties:install:migrations&quot; taksId=&quot;migrations&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;set_annotation_options&quot; taksId=&quot;set_annotation_options&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp&quot; taksId=&quot;tmp&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/cache&quot; taksId=&quot;tmp/cache&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/cache/assets&quot; taksId=&quot;tmp/cache/assets&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/pids&quot; taksId=&quot;tmp/pids&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/sockets&quot; taksId=&quot;tmp/sockets&quot; /&gt;&lt;/RakeGroup&gt;&lt;/Settings&gt;</span>
+<span class="gi">+--&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;rake&quot;&gt;&lt;RakeTask description=&quot;List versions of all Rails frameworks and the environment&quot; fullCmd=&quot;about&quot; taksId=&quot;about&quot; /&gt;&lt;RakeTask description=&quot;Add schema information (as comments) to model and fixture files&quot; fullCmd=&quot;annotate_models&quot; taksId=&quot;annotate_models&quot; /&gt;&lt;RakeTask description=&quot;Adds the route map to routes.rb&quot; fullCmd=&quot;annotate_routes&quot; taksId=&quot;annotate_routes&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;app&quot;&gt;&lt;RakeTask description=&quot;Applies the template supplied by LOCATION=(/path/to/template) or URL&quot; fullCmd=&quot;app:template&quot; taksId=&quot;template&quot; /&gt;&lt;RakeTask description=&quot;Update configs and some other initially generated files (or use just update:configs or update:bin)&quot; fullCmd=&quot;app:update&quot; taksId=&quot;update&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;templates&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:templates:copy&quot; taksId=&quot;copy&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;update&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:bin&quot; taksId=&quot;bin&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:configs&quot; taksId=&quot;configs&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;app:update:upgrade_guide_info&quot; taksId=&quot;upgrade_guide_info&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;assets&quot;&gt;&lt;RakeTask description=&quot;Remove old compiled assets&quot; fullCmd=&quot;assets:clean[keep]&quot; taksId=&quot;clean[keep]&quot; /&gt;&lt;RakeTask description=&quot;Remove compiled assets&quot; fullCmd=&quot;assets:clobber&quot; taksId=&quot;clobber&quot; /&gt;&lt;RakeTask description=&quot;Load asset compile environment&quot; fullCmd=&quot;assets:environment&quot; taksId=&quot;environment&quot; /&gt;&lt;RakeTask description=&quot;Compile all the assets named in config.assets.precompile&quot; fullCmd=&quot;assets:precompile&quot; taksId=&quot;precompile&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;assets:clean&quot; taksId=&quot;clean&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache_digests&quot;&gt;&lt;RakeTask description=&quot;Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)&quot; fullCmd=&quot;cache_digests:dependencies&quot; taksId=&quot;dependencies&quot; /&gt;&lt;RakeTask description=&quot;Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)&quot; fullCmd=&quot;cache_digests:nested_dependencies&quot; taksId=&quot;nested_dependencies&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;db&quot;&gt;&lt;RakeTask description=&quot;Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to creating the development and test databases&quot; fullCmd=&quot;db:create&quot; taksId=&quot;create&quot; /&gt;&lt;RakeTask description=&quot;Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to dropping the development and test databases&quot; fullCmd=&quot;db:drop&quot; taksId=&quot;drop&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;environment&quot;&gt;&lt;RakeTask description=&quot;Set the environment value for the database&quot; fullCmd=&quot;db:environment:set&quot; taksId=&quot;set&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;fixtures&quot;&gt;&lt;RakeTask description=&quot;Loads fixtures into the current environment&#39;s database&quot; fullCmd=&quot;db:fixtures:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:fixtures:identify&quot; taksId=&quot;identify&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)&quot; fullCmd=&quot;db:migrate&quot; taksId=&quot;migrate&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;migrate&quot;&gt;&lt;RakeTask description=&quot;Display status of migrations&quot; fullCmd=&quot;db:migrate:status&quot; taksId=&quot;status&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:change&quot; taksId=&quot;change&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:down&quot; taksId=&quot;down&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:redo&quot; taksId=&quot;redo&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:reset&quot; taksId=&quot;reset&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:migrate:up&quot; taksId=&quot;up&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Rolls the schema back to the previous version (specify steps w/ STEP=n)&quot; fullCmd=&quot;db:rollback&quot; taksId=&quot;rollback&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;schema&quot;&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache&quot;&gt;&lt;RakeTask description=&quot;Clears a db/schema_cache.dump file&quot; fullCmd=&quot;db:schema:cache:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;RakeTask description=&quot;Creates a db/schema_cache.dump file&quot; fullCmd=&quot;db:schema:cache:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Creates a db/schema.rb file that is portable against any DB supported by Active Record&quot; fullCmd=&quot;db:schema:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;RakeTask description=&quot;Loads a schema.rb file into the database&quot; fullCmd=&quot;db:schema:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:schema:load_if_ruby&quot; taksId=&quot;load_if_ruby&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Loads the seed data from db/seeds.rb&quot; fullCmd=&quot;db:seed&quot; taksId=&quot;seed&quot; /&gt;&lt;RakeTask description=&quot;Creates the database, loads the schema, and initializes with the seed data (use db:reset to also drop the database first)&quot; fullCmd=&quot;db:setup&quot; taksId=&quot;setup&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;structure&quot;&gt;&lt;RakeTask description=&quot;Dumps the database structure to db/structure.sql&quot; fullCmd=&quot;db:structure:dump&quot; taksId=&quot;dump&quot; /&gt;&lt;RakeTask description=&quot;Recreates the databases from the structure.sql file&quot; fullCmd=&quot;db:structure:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:structure:load_if_sql&quot; taksId=&quot;load_if_sql&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Retrieves the current schema version number&quot; fullCmd=&quot;db:version&quot; taksId=&quot;version&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:_dump&quot; taksId=&quot;_dump&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:abort_if_pending_migrations&quot; taksId=&quot;abort_if_pending_migrations&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:charset&quot; taksId=&quot;charset&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:check_protected_environments&quot; taksId=&quot;check_protected_environments&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:collation&quot; taksId=&quot;collation&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;create&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:create:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;drop&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:drop:_unsafe&quot; taksId=&quot;_unsafe&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:drop:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:forward&quot; taksId=&quot;forward&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:load_config&quot; taksId=&quot;load_config&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:purge&quot; taksId=&quot;purge&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;purge&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:purge:all&quot; taksId=&quot;all&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:reset&quot; taksId=&quot;reset&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;test&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone&quot; taksId=&quot;clone&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone_schema&quot; taksId=&quot;clone_schema&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:clone_structure&quot; taksId=&quot;clone_structure&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:deprecated&quot; taksId=&quot;deprecated&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load&quot; taksId=&quot;load&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load_schema&quot; taksId=&quot;load_schema&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:load_structure&quot; taksId=&quot;load_structure&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;db:test:purge&quot; taksId=&quot;purge&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;dev&quot;&gt;&lt;RakeTask description=&quot;Toggle development mode caching on/off&quot; fullCmd=&quot;dev:cache&quot; taksId=&quot;cache&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Generate an Entity-Relationship Diagram based on your models&quot; fullCmd=&quot;erd&quot; taksId=&quot;erd&quot; /&gt;&lt;RakeTask description=&quot;Print out all defined initializers in the order they are invoked by Rails&quot; fullCmd=&quot;initializers&quot; taksId=&quot;initializers&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;log&quot;&gt;&lt;RakeTask description=&quot;Truncates all/specified *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)&quot; fullCmd=&quot;log:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Prints out your Rack middleware stack&quot; fullCmd=&quot;middleware&quot; taksId=&quot;middleware&quot; /&gt;&lt;RakeTask description=&quot;Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)&quot; fullCmd=&quot;notes&quot; taksId=&quot;notes&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;notes&quot;&gt;&lt;RakeTask description=&quot;Enumerate a custom annotation, specify with ANNOTATION=CUSTOM&quot; fullCmd=&quot;notes:custom&quot; taksId=&quot;custom&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:fixme&quot; taksId=&quot;fixme&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:optimize&quot; taksId=&quot;optimize&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;notes:todo&quot; taksId=&quot;todo&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Remove schema information from model and fixture files&quot; fullCmd=&quot;remove_annotation&quot; taksId=&quot;remove_annotation&quot; /&gt;&lt;RakeTask description=&quot;Removes the route map from routes.rb&quot; fullCmd=&quot;remove_routes&quot; taksId=&quot;remove_routes&quot; /&gt;&lt;RakeTask description=&quot;Restart app by touching tmp/restart.txt&quot; fullCmd=&quot;restart&quot; taksId=&quot;restart&quot; /&gt;&lt;RakeTask description=&quot;Print out all defined routes in match order, with names&quot; fullCmd=&quot;routes&quot; taksId=&quot;routes&quot; /&gt;&lt;RakeTask description=&quot;Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)&quot; fullCmd=&quot;secret&quot; taksId=&quot;secret&quot; /&gt;&lt;RakeTask description=&quot;Run all specs in spec directory (excluding plugin specs)&quot; fullCmd=&quot;spec&quot; taksId=&quot;spec&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;spec&quot;&gt;&lt;RakeTask description=&quot;Run the code examples in spec/models&quot; fullCmd=&quot;spec:models&quot; taksId=&quot;models&quot; /&gt;&lt;RakeTask description=&quot;Run the code examples in spec/services&quot; fullCmd=&quot;spec:services&quot; taksId=&quot;services&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;spec:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;spec:statsetup&quot; taksId=&quot;statsetup&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;Report code statistics (KLOCs, etc) from the application or engine&quot; fullCmd=&quot;stats&quot; taksId=&quot;stats&quot; /&gt;&lt;RakeTask description=&quot;Runs all tests in test folder&quot; fullCmd=&quot;test&quot; taksId=&quot;test&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;test&quot;&gt;&lt;RakeTask description=&quot;Run tests quickly, but also reset db&quot; fullCmd=&quot;test:db&quot; taksId=&quot;db&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:controllers&quot; taksId=&quot;controllers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:functionals&quot; taksId=&quot;functionals&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:generators&quot; taksId=&quot;generators&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:helpers&quot; taksId=&quot;helpers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:integration&quot; taksId=&quot;integration&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:jobs&quot; taksId=&quot;jobs&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:mailers&quot; taksId=&quot;mailers&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:models&quot; taksId=&quot;models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:prepare&quot; taksId=&quot;prepare&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:run&quot; taksId=&quot;run&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;test:units&quot; taksId=&quot;units&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;time&quot;&gt;&lt;RakeTask description=&quot;List all time zones, list by two-letter country code (`rails time:zones[US]`), or list by UTC offset (`rails time:zones[-8]`)&quot; fullCmd=&quot;time:zones[country_or_offset]&quot; taksId=&quot;zones[country_or_offset]&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones&quot; taksId=&quot;zones&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;zones&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:all&quot; taksId=&quot;all&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:local&quot; taksId=&quot;local&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;time:zones:us&quot; taksId=&quot;us&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;tmp&quot;&gt;&lt;RakeTask description=&quot;Clear cache and socket files from tmp/ (narrow w/ tmp:cache:clear, tmp:sockets:clear)&quot; fullCmd=&quot;tmp:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;RakeTask description=&quot;Creates tmp directories for cache, sockets, and pids&quot; fullCmd=&quot;tmp:create&quot; taksId=&quot;create&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;cache&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:cache:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;pids&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:pids:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;sockets&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp:sockets:clear&quot; taksId=&quot;clear&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;default&quot; taksId=&quot;default&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;environment&quot; taksId=&quot;environment&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;erd&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:generate&quot; taksId=&quot;generate&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:load_models&quot; taksId=&quot;load_models&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;erd:options&quot; taksId=&quot;options&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;rails&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:template&quot; taksId=&quot;template&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;templates&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:templates:copy&quot; taksId=&quot;copy&quot; /&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update&quot; taksId=&quot;update&quot; /&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;update&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update:bin&quot; taksId=&quot;bin&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;rails:update:configs&quot; taksId=&quot;configs&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;railties&quot;&gt;&lt;RakeGroup description=&quot;&quot; fullCmd=&quot;&quot; taksId=&quot;install&quot;&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;railties:install:migrations&quot; taksId=&quot;migrations&quot; /&gt;&lt;/RakeGroup&gt;&lt;/RakeGroup&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;set_annotation_options&quot; taksId=&quot;set_annotation_options&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp&quot; taksId=&quot;tmp&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/cache&quot; taksId=&quot;tmp/cache&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/cache/assets&quot; taksId=&quot;tmp/cache/assets&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/pids&quot; taksId=&quot;tmp/pids&quot; /&gt;&lt;RakeTask description=&quot;&quot; fullCmd=&quot;tmp/sockets&quot; taksId=&quot;tmp/sockets&quot; /&gt;&lt;/RakeGroup&gt;&lt;/Settings&gt;</span>
+<span class="gh">diff --git a/Gemfile b/Gemfile</span>
+<span class="gh">index 0ef0810..3ac01ff 100644</span>
+<span class="gd">--- a/Gemfile</span>
+<span class="gi">+++ b/Gemfile</span>
+<span class="gu">@@ -63,6 +63,7 @@ group :development do</span>
+<span class="w"> </span>  gem &#39;rails-erd&#39;
+<span class="w"> </span>  gem &#39;guard-livereload&#39;, &#39;~&gt; 2.5&#39;, require: false
+<span class="w"> </span>  gem &#39;rack-livereload&#39;
+<span class="gi">+  gem &#39;i18n_generators&#39;</span>
+<span class="w"> </span>end
+
+<span class="w"> </span>group :test do
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 6140be5..d8e0b6e 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -386,6 +386,9 @@ git push heroku master</span>
+<span class="w"> </span>+ 管理者認証サービス追加
+<span class="w"> </span>+ メッセージの表示
+
+<span class="gi">+#### 改</span>
+<span class="gi">++ i18nの設定と適用</span>
+<span class="gi">+</span>
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="w"> </span>### String Parameters
+<span class="gu">@@ -407,4 +410,5 @@ git push heroku master</span>
+<span class="w"> </span>+ [Bootstrap for Sass](https://github.com/twbs/bootstrap-sass)
+<span class="w"> </span>+ [Rails Bootstrap Forms](https://github.com/bootstrap-ruby/rails-bootstrap-forms)
+<span class="w"> </span>+ [Annotate (aka AnnotateModels)](https://github.com/ctran/annotate_models)
+<span class="gd">-+ [MigrationComments](https://github.com/pinnymz/migration_comments)</span>
+\ No newline at end of file
+<span class="gi">++ [MigrationComments](https://github.com/pinnymz/migration_comments)</span>
+<span class="gi">++ [i18n_generators](https://github.com/amatsuda/i18n_generators)</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/admin/sessions/new.html.erb b/app/views/admin/sessions/new.html.erb</span>
+<span class="gh">index 18e4d98..a33ec06 100644</span>
+<span class="gd">--- a/app/views/admin/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/admin/sessions/new.html.erb</span>
+<span class="gu">@@ -5,15 +5,13 @@</span>
+<span class="w"> </span>    &lt;div class=&quot;Login__body&quot;&gt;
+<span class="w"> </span>      &lt;%= bootstrap_form_for @form, url: :admin_session do |f| %&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gd">-            &lt;%= f.label :email, &#39;メールアドレス&#39; %&gt;</span>
+<span class="w"> </span>            &lt;%= f.text_field :email %&gt;
+<span class="w"> </span>          &lt;/div&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gd">-            &lt;%= f.label :password, &#39;パスワード&#39; %&gt;</span>
+<span class="w"> </span>            &lt;%= f.password_field :password %&gt;
+<span class="w"> </span>          &lt;/div&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gd">-            &lt;%= f.submit &#39;ログイン&#39; %&gt;</span>
+<span class="gi">+            &lt;%= f.submit t &#39;.submit&#39; %&gt;</span>
+<span class="w"> </span>          &lt;/div&gt;
+<span class="w"> </span>      &lt;% end %&gt;
+<span class="w"> </span>    &lt;/div&gt;
+<span class="gh">diff --git a/app/views/admin/shared/_header.html.erb b/app/views/admin/shared/_header.html.erb</span>
+<span class="gh">index 13a99f6..388e5cc 100644</span>
+<span class="gd">--- a/app/views/admin/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/admin/shared/_header.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_administrator
+<span class="gd">-        link_to &#39;ログアウト&#39;, :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;admin.shared.header.login&#39;), :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to &#39;ログイン&#39;, :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;admin.shared.header.logout&#39;), :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>  %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/sessions/new.html.erb b/app/views/staff/sessions/new.html.erb</span>
+<span class="gh">index dbd71b3..8479cef 100644</span>
+<span class="gd">--- a/app/views/staff/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/staff/sessions/new.html.erb</span>
+<span class="gu">@@ -5,15 +5,13 @@</span>
+<span class="w"> </span>    &lt;div class=&quot;Login__body&quot;&gt;
+<span class="w"> </span>      &lt;%= bootstrap_form_for @form, url: :staff_session do |f| %&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gd">-            &lt;%= f.label :email, &#39;メールアドレス&#39; %&gt;</span>
+<span class="w"> </span>            &lt;%= f.text_field :email %&gt;
+<span class="w"> </span>          &lt;/div&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gd">-            &lt;%= f.label :password, &#39;パスワード&#39; %&gt;</span>
+<span class="w"> </span>            &lt;%= f.password_field :password %&gt;
+<span class="w"> </span>          &lt;/div&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gd">-            &lt;%= f.submit &#39;ログイン&#39; %&gt;</span>
+<span class="gi">+            &lt;%= f.submit t &#39;.submit&#39; %&gt;</span>
+<span class="w"> </span>          &lt;/div&gt;
+<span class="w"> </span>      &lt;% end %&gt;
+<span class="w"> </span>    &lt;/div&gt;
+<span class="gh">diff --git a/app/views/staff/shared/_header.html.erb b/app/views/staff/shared/_header.html.erb</span>
+<span class="gh">index 7a1ace8..830cc01 100644</span>
+<span class="gd">--- a/app/views/staff/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/staff/shared/_header.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_staff_member
+<span class="gd">-        link_to &#39;ログアウト&#39;, :staff_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;staff.shared.header.login&#39;), :staff_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to &#39;ログイン&#39;, :staff_login, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;staff.shared.header.logout&#39;), :staff_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>    %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/config/locales/ja.yml b/config/locales/ja.yml</span>
+<span class="gh">index 9ad8ae1..4a718e7 100644</span>
+<span class="gd">--- a/config/locales/ja.yml</span>
+<span class="gi">+++ b/config/locales/ja.yml</span>
+<span class="gu">@@ -1,2 +1,202 @@</span>
+<span class="gi">+---</span>
+<span class="w"> </span>ja:
+<span class="gd">-  hello: &quot;Hello world&quot;</span>
+\ No newline at end of file
+<span class="gi">+  activerecord:</span>
+<span class="gi">+    errors:</span>
+<span class="gi">+      messages:</span>
+<span class="gi">+        record_invalid: &quot;バリデーションに失敗しました: %{errors}&quot;</span>
+<span class="gi">+        restrict_dependent_destroy:</span>
+<span class="gi">+          has_one: &quot;%{record}が存在しているので削除できません&quot;</span>
+<span class="gi">+          has_many: &quot;%{record}が存在しているので削除できません&quot;</span>
+<span class="gi">+  date:</span>
+<span class="gi">+    abbr_day_names:</span>
+<span class="gi">+    - 日</span>
+<span class="gi">+    - 月</span>
+<span class="gi">+    - 火</span>
+<span class="gi">+    - 水</span>
+<span class="gi">+    - 木</span>
+<span class="gi">+    - 金</span>
+<span class="gi">+    - 土</span>
+<span class="gi">+    abbr_month_names:</span>
+<span class="gi">+    -</span>
+<span class="gi">+    - 1月</span>
+<span class="gi">+    - 2月</span>
+<span class="gi">+    - 3月</span>
+<span class="gi">+    - 4月</span>
+<span class="gi">+    - 5月</span>
+<span class="gi">+    - 6月</span>
+<span class="gi">+    - 7月</span>
+<span class="gi">+    - 8月</span>
+<span class="gi">+    - 9月</span>
+<span class="gi">+    - 10月</span>
+<span class="gi">+    - 11月</span>
+<span class="gi">+    - 12月</span>
+<span class="gi">+    day_names:</span>
+<span class="gi">+    - 日曜日</span>
+<span class="gi">+    - 月曜日</span>
+<span class="gi">+    - 火曜日</span>
+<span class="gi">+    - 水曜日</span>
+<span class="gi">+    - 木曜日</span>
+<span class="gi">+    - 金曜日</span>
+<span class="gi">+    - 土曜日</span>
+<span class="gi">+    formats:</span>
+<span class="gi">+      default: &quot;%Y/%m/%d&quot;</span>
+<span class="gi">+      long: &quot;%Y年%m月%d日(%a)&quot;</span>
+<span class="gi">+      short: &quot;%m/%d&quot;</span>
+<span class="gi">+    month_names:</span>
+<span class="gi">+    -</span>
+<span class="gi">+    - 1月</span>
+<span class="gi">+    - 2月</span>
+<span class="gi">+    - 3月</span>
+<span class="gi">+    - 4月</span>
+<span class="gi">+    - 5月</span>
+<span class="gi">+    - 6月</span>
+<span class="gi">+    - 7月</span>
+<span class="gi">+    - 8月</span>
+<span class="gi">+    - 9月</span>
+<span class="gi">+    - 10月</span>
+<span class="gi">+    - 11月</span>
+<span class="gi">+    - 12月</span>
+<span class="gi">+    order:</span>
+<span class="gi">+    - :year</span>
+<span class="gi">+    - :month</span>
+<span class="gi">+    - :day</span>
+<span class="gi">+  datetime:</span>
+<span class="gi">+    distance_in_words:</span>
+<span class="gi">+      about_x_hours:</span>
+<span class="gi">+        one: 約1時間</span>
+<span class="gi">+        other: 約%{count}時間</span>
+<span class="gi">+      about_x_months:</span>
+<span class="gi">+        one: 約1ヶ月</span>
+<span class="gi">+        other: 約%{count}ヶ月</span>
+<span class="gi">+      about_x_years:</span>
+<span class="gi">+        one: 約1年</span>
+<span class="gi">+        other: 約%{count}年</span>
+<span class="gi">+      almost_x_years:</span>
+<span class="gi">+        one: 1年弱</span>
+<span class="gi">+        other: &quot;%{count}年弱&quot;</span>
+<span class="gi">+      half_a_minute: 30秒前後</span>
+<span class="gi">+      less_than_x_minutes:</span>
+<span class="gi">+        one: 1分以内</span>
+<span class="gi">+        other: &quot;%{count}分未満&quot;</span>
+<span class="gi">+      less_than_x_seconds:</span>
+<span class="gi">+        one: 1秒以内</span>
+<span class="gi">+        other: &quot;%{count}秒未満&quot;</span>
+<span class="gi">+      over_x_years:</span>
+<span class="gi">+        one: 1年以上</span>
+<span class="gi">+        other: &quot;%{count}年以上&quot;</span>
+<span class="gi">+      x_days:</span>
+<span class="gi">+        one: 1日</span>
+<span class="gi">+        other: &quot;%{count}日&quot;</span>
+<span class="gi">+      x_minutes:</span>
+<span class="gi">+        one: 1分</span>
+<span class="gi">+        other: &quot;%{count}分&quot;</span>
+<span class="gi">+      x_months:</span>
+<span class="gi">+        one: 1ヶ月</span>
+<span class="gi">+        other: &quot;%{count}ヶ月&quot;</span>
+<span class="gi">+      x_seconds:</span>
+<span class="gi">+        one: 1秒</span>
+<span class="gi">+        other: &quot;%{count}秒&quot;</span>
+<span class="gi">+    prompts:</span>
+<span class="gi">+      day: 日</span>
+<span class="gi">+      hour: 時</span>
+<span class="gi">+      minute: 分</span>
+<span class="gi">+      month: 月</span>
+<span class="gi">+      second: 秒</span>
+<span class="gi">+      year: 年</span>
+<span class="gi">+  errors:</span>
+<span class="gi">+    format: &quot;%{attribute}%{message}&quot;</span>
+<span class="gi">+    messages:</span>
+<span class="gi">+      accepted: を受諾してください</span>
+<span class="gi">+      blank: を入力してください</span>
+<span class="gi">+      present: は入力しないでください</span>
+<span class="gi">+      confirmation: と%{attribute}の入力が一致しません</span>
+<span class="gi">+      empty: を入力してください</span>
+<span class="gi">+      equal_to: は%{count}にしてください</span>
+<span class="gi">+      even: は偶数にしてください</span>
+<span class="gi">+      exclusion: は予約されています</span>
+<span class="gi">+      greater_than: は%{count}より大きい値にしてください</span>
+<span class="gi">+      greater_than_or_equal_to: は%{count}以上の値にしてください</span>
+<span class="gi">+      inclusion: は一覧にありません</span>
+<span class="gi">+      invalid: は不正な値です</span>
+<span class="gi">+      less_than: は%{count}より小さい値にしてください</span>
+<span class="gi">+      less_than_or_equal_to: は%{count}以下の値にしてください</span>
+<span class="gi">+      model_invalid: &quot;バリデーションに失敗しました: %{errors}&quot;</span>
+<span class="gi">+      not_a_number: は数値で入力してください</span>
+<span class="gi">+      not_an_integer: は整数で入力してください</span>
+<span class="gi">+      odd: は奇数にしてください</span>
+<span class="gi">+      required: を入力してください</span>
+<span class="gi">+      taken: はすでに存在します</span>
+<span class="gi">+      too_long: は%{count}文字以内で入力してください</span>
+<span class="gi">+      too_short: は%{count}文字以上で入力してください</span>
+<span class="gi">+      wrong_length: は%{count}文字で入力してください</span>
+<span class="gi">+      other_than: は%{count}以外の値にしてください</span>
+<span class="gi">+    template:</span>
+<span class="gi">+      body: 次の項目を確認してください</span>
+<span class="gi">+      header:</span>
+<span class="gi">+        one: &quot;%{model}にエラーが発生しました&quot;</span>
+<span class="gi">+        other: &quot;%{model}に%{count}個のエラーが発生しました&quot;</span>
+<span class="gi">+  helpers:</span>
+<span class="gi">+    select:</span>
+<span class="gi">+      prompt: 選択してください</span>
+<span class="gi">+    submit:</span>
+<span class="gi">+      create: 登録する</span>
+<span class="gi">+      submit: 保存する</span>
+<span class="gi">+      update: 更新する</span>
+<span class="gi">+  number:</span>
+<span class="gi">+    currency:</span>
+<span class="gi">+      format:</span>
+<span class="gi">+        delimiter: &quot;,&quot;</span>
+<span class="gi">+        format: &quot;%n%u&quot;</span>
+<span class="gi">+        precision: 0</span>
+<span class="gi">+        separator: &quot;.&quot;</span>
+<span class="gi">+        significant: false</span>
+<span class="gi">+        strip_insignificant_zeros: false</span>
+<span class="gi">+        unit: 円</span>
+<span class="gi">+    format:</span>
+<span class="gi">+      delimiter: &quot;,&quot;</span>
+<span class="gi">+      precision: 3</span>
+<span class="gi">+      separator: &quot;.&quot;</span>
+<span class="gi">+      significant: false</span>
+<span class="gi">+      strip_insignificant_zeros: false</span>
+<span class="gi">+    human:</span>
+<span class="gi">+      decimal_units:</span>
+<span class="gi">+        format: &quot;%n %u&quot;</span>
+<span class="gi">+        units:</span>
+<span class="gi">+          billion: 十億</span>
+<span class="gi">+          million: 百万</span>
+<span class="gi">+          quadrillion: 千兆</span>
+<span class="gi">+          thousand: 千</span>
+<span class="gi">+          trillion: 兆</span>
+<span class="gi">+          unit: &#39;&#39;</span>
+<span class="gi">+      format:</span>
+<span class="gi">+        delimiter: &#39;&#39;</span>
+<span class="gi">+        precision: 3</span>
+<span class="gi">+        significant: true</span>
+<span class="gi">+        strip_insignificant_zeros: true</span>
+<span class="gi">+      storage_units:</span>
+<span class="gi">+        format: &quot;%n%u&quot;</span>
+<span class="gi">+        units:</span>
+<span class="gi">+          byte: バイト</span>
+<span class="gi">+          gb: GB</span>
+<span class="gi">+          kb: KB</span>
+<span class="gi">+          mb: MB</span>
+<span class="gi">+          tb: TB</span>
+<span class="gi">+    percentage:</span>
+<span class="gi">+      format:</span>
+<span class="gi">+        delimiter: &#39;&#39;</span>
+<span class="gi">+        format: &quot;%n%&quot;</span>
+<span class="gi">+    precision:</span>
+<span class="gi">+      format:</span>
+<span class="gi">+        delimiter: &#39;&#39;</span>
+<span class="gi">+  support:</span>
+<span class="gi">+    array:</span>
+<span class="gi">+      last_word_connector: と</span>
+<span class="gi">+      two_words_connector: と</span>
+<span class="gi">+      words_connector: と</span>
+<span class="gi">+  time:</span>
+<span class="gi">+    am: 午前</span>
+<span class="gi">+    formats:</span>
+<span class="gi">+      default: &quot;%Y/%m/%d %H:%M:%S&quot;</span>
+<span class="gi">+      long: &quot;%Y年%m月%d日(%a) %H時%M分%S秒 %z&quot;</span>
+<span class="gi">+      short: &quot;%y/%m/%d %H:%M&quot;</span>
+<span class="gi">+    pm: 午後</span>
+<span class="gh">diff --git a/config/locales/models/models.yml b/config/locales/models/models.yml</span>
+new file mode 100644
+<span class="gh">index 0000000..6138e72</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/config/locales/models/models.yml</span>
+<span class="gu">@@ -0,0 +1,39 @@</span>
+<span class="gi">+ja:</span>
+<span class="gi">+  activerecord:</span>
+<span class="gi">+    models:</span>
+<span class="gi">+      administrator: 管理者</span>
+<span class="gi">+      staff_member: 職員</span>
+<span class="gi">+</span>
+<span class="gi">+    attributes:</span>
+<span class="gi">+      administrator:</span>
+<span class="gi">+        email: メールアドレス</span>
+<span class="gi">+        email_for_index: 索引用メールアドレス</span>
+<span class="gi">+        hashed_password: パスワード</span>
+<span class="gi">+        suspended: 停止フラグ</span>
+<span class="gi">+</span>
+<span class="gi">+      staff_member:</span>
+<span class="gi">+        email: メールアドレス</span>
+<span class="gi">+        email_for_index: 索引用メールアドレス</span>
+<span class="gi">+        end_date: 終了日</span>
+<span class="gi">+        family_name: 姓</span>
+<span class="gi">+        family_name_kana: 姓（カナ）</span>
+<span class="gi">+        given_name: 名</span>
+<span class="gi">+        given_name_kana: 名（カナ）</span>
+<span class="gi">+        hashed_password: パスワード</span>
+<span class="gi">+        start_date: 開始日</span>
+<span class="gi">+        suspended: 停止フラグ</span>
+<span class="gi">+</span>
+<span class="gi">+  activemodel:</span>
+<span class="gi">+    models:</span>
+<span class="gi">+      staff/login_form: 職員ログインフォーム</span>
+<span class="gi">+      admin/login_form: 管理者ログインフォーム</span>
+<span class="gi">+</span>
+<span class="gi">+    attributes:</span>
+<span class="gi">+      staff/login_form:</span>
+<span class="gi">+        email: メールアドレス</span>
+<span class="gi">+        password: パスワード</span>
+<span class="gi">+</span>
+<span class="gi">+    attributes:</span>
+<span class="gi">+      admin/login_form:</span>
+<span class="gi">+        email: メールアドレス</span>
+<span class="gi">+        password: パスワード</span>
+<span class="gh">diff --git a/config/locales/views/views.yml b/config/locales/views/views.yml</span>
+new file mode 100644
+<span class="gh">index 0000000..aecaea0</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/config/locales/views/views.yml</span>
+<span class="gu">@@ -0,0 +1,17 @@</span>
+<span class="gi">+ja:</span>
+<span class="gi">+  staff:</span>
+<span class="gi">+    shared:</span>
+<span class="gi">+      header:</span>
+<span class="gi">+        login: &#39;ログイン&#39;</span>
+<span class="gi">+        logout: &#39;ログアウト&#39;</span>
+<span class="gi">+    sessions:</span>
+<span class="gi">+      new:</span>
+<span class="gi">+        submit: &#39;ログイン&#39;</span>
+<span class="gi">+  admin:</span>
+<span class="gi">+    shared:</span>
+<span class="gi">+      header:</span>
+<span class="gi">+        login: &#39;ログイン&#39;</span>
+<span class="gi">+        logout: &#39;ログアウト&#39;</span>
+<span class="gi">+    sessions:</span>
+<span class="gi">+      new:</span>
+<span class="gi">+        submit: &#39;ログイン&#39;</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="186c722">コミット: 186c722<a class="headerlink" href="#186c722" title="Permanent link">&para;</a></h2>
+<h3 id="_11">メッセージ<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>リファクタリング（デザイン修正）
+</code></pre></div>
+<h3 id="_12">変更されたファイル<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/assets/stylesheets/pages/_admin.scss</li>
+<li>M app/assets/stylesheets/pages/_staff.scss</li>
+<li>M app/views/admin/shared/_header.html.erb</li>
+<li>M app/views/staff/shared/_header.html.erb</li>
+</ul>
+<h3 id="_13">変更内容<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 186c7226233950babbb9ef7a4802d11aba77a44f
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 18:12:57 2017 +0900
+
+<span class="w"> </span>   リファクタリング（デザイン修正）
+
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_admin.scss b/app/assets/stylesheets/pages/_admin.scss</span>
+<span class="gh">index a44b621..8937028 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/pages/_admin.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_admin.scss</span>
+<span class="gu">@@ -15,15 +15,6 @@ html, body {</span>
+<span class="w"> </span>  text-align: left;
+<span class="w"> </span>}
+
+<span class="gd">-.logo--admin {</span>
+<span class="gd">-  color: $color-white;</span>
+<span class="gd">-}</span>
+<span class="gd">-</span>
+<span class="gd">-.login--admin {</span>
+<span class="gd">-  float: right;</span>
+<span class="gd">-  color: $very_light_gray;</span>
+<span class="gd">-}</span>
+<span class="gd">-</span>
+<span class="w"> </span>.Admin {
+<span class="w"> </span>  &amp;__wrapper {
+<span class="w"> </span>    position: relative;
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_staff.scss b/app/assets/stylesheets/pages/_staff.scss</span>
+<span class="gh">index 63ec54c..2252acd 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/pages/_staff.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_staff.scss</span>
+<span class="gu">@@ -15,15 +15,6 @@ html, body {</span>
+<span class="w"> </span>  text-align: left;
+<span class="w"> </span>}
+
+<span class="gd">-.logo--staff {</span>
+<span class="gd">-  color: $color-white;</span>
+<span class="gd">-}</span>
+<span class="gd">-</span>
+<span class="gd">-.login--staff {</span>
+<span class="gd">-  float: right;</span>
+<span class="gd">-  color: $very_light_gray;</span>
+<span class="gd">-}</span>
+<span class="gd">-</span>
+<span class="w"> </span>.Staff {
+<span class="w"> </span>  &amp;__wrapper {
+<span class="w"> </span>    position: relative;
+<span class="gh">diff --git a/app/views/admin/shared/_header.html.erb b/app/views/admin/shared/_header.html.erb</span>
+<span class="gh">index 9453da7..13a99f6 100644</span>
+<span class="gd">--- a/app/views/admin/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/admin/shared/_header.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_administrator
+<span class="gd">-        link_to &#39;ログアウト&#39;, :admin_session, method: :delete, class: &#39;login--admin&#39;</span>
+<span class="gi">+        link_to &#39;ログアウト&#39;, :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to &#39;ログイン&#39;, :admin_login, class: &#39;login--admin&#39;</span>
+<span class="gi">+        link_to &#39;ログイン&#39;, :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>  %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/shared/_header.html.erb b/app/views/staff/shared/_header.html.erb</span>
+<span class="gh">index 02c5c15..7a1ace8 100644</span>
+<span class="gd">--- a/app/views/staff/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/staff/shared/_header.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_staff_member
+<span class="gd">-        link_to &#39;ログアウト&#39;, :staff_session, method: :delete, class: &#39;login--staff&#39;</span>
+<span class="gi">+        link_to &#39;ログアウト&#39;, :staff_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to &#39;ログイン&#39;, :staff_login, class: &#39;login--staff&#39;</span>
+<span class="gi">+        link_to &#39;ログイン&#39;, :staff_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>    %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+</code></pre></div>
+<h2 id="ff92954">コミット: ff92954<a class="headerlink" href="#ff92954" title="Permanent link">&para;</a></h2>
+<h3 id="_14">メッセージ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>リファクタリング（配置変更）
+</code></pre></div>
+<h3 id="_15">変更されたファイル<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/views/layouts/admin.html.erb</li>
+<li>M app/views/layouts/customer.html.erb</li>
+<li>M app/views/layouts/staff.html.erb</li>
+</ul>
+<h3 id="_16">変更内容<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit ff92954c4c85f3b43510d602995aa51b53f2b504
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 18:08:44 2017 +0900
+
+<span class="w"> </span>   リファクタリング（配置変更）
+
+<span class="gh">diff --git a/app/views/shared/admin/_footer.html.erb b/app/views/admin/shared/_footer.html.erb</span>
+similarity index 100%
+rename from app/views/shared/admin/_footer.html.erb
+rename to app/views/admin/shared/_footer.html.erb
+<span class="gh">diff --git a/app/views/shared/admin/_header.html.erb b/app/views/admin/shared/_header.html.erb</span>
+similarity index 100%
+rename from app/views/shared/admin/_header.html.erb
+rename to app/views/admin/shared/_header.html.erb
+<span class="gh">diff --git a/app/views/shared/customer/_footer.html.erb b/app/views/customer/shared/_footer.html.erb</span>
+similarity index 100%
+rename from app/views/shared/customer/_footer.html.erb
+rename to app/views/customer/shared/_footer.html.erb
+<span class="gh">diff --git a/app/views/shared/customer/_header.html.erb b/app/views/customer/shared/_header.html.erb</span>
+similarity index 100%
+rename from app/views/shared/customer/_header.html.erb
+rename to app/views/customer/shared/_header.html.erb
+<span class="gh">diff --git a/app/views/layouts/admin.html.erb b/app/views/layouts/admin.html.erb</span>
+<span class="gh">index b1f43ad..9ca8f85 100644</span>
+<span class="gd">--- a/app/views/layouts/admin.html.erb</span>
+<span class="gi">+++ b/app/views/layouts/admin.html.erb</span>
+<span class="gu">@@ -11,9 +11,9 @@</span>
+<span class="w"> </span>&lt;body&gt;
+<span class="w"> </span>&lt;div id=&quot;wrapper&quot; class=&quot;SpMenu__wrapper Admin__wrapper&quot;&gt;
+<span class="w"> </span>  &lt;div id=&quot;overlay&quot; class=&quot;SpMenu__overlay&quot;&gt;&lt;/div&gt;
+<span class="gd">-  &lt;%= render &#39;shared/admin/header&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &#39;admin/shared/header&#39; %&gt;</span>
+<span class="w"> </span>  &lt;%= yield %&gt;
+<span class="gd">-  &lt;%= render &#39;shared/admin/footer&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &#39;admin/shared/footer&#39; %&gt;</span>
+<span class="w"> </span>&lt;/div&gt;
+<span class="w"> </span>&lt;%= stylesheet_link_tag    &#39;application&#39;, media: &#39;all&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+<span class="w"> </span>&lt;%= javascript_include_tag &#39;application&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+<span class="gh">diff --git a/app/views/layouts/customer.html.erb b/app/views/layouts/customer.html.erb</span>
+<span class="gh">index 76834c5..a1a4f25 100644</span>
+<span class="gd">--- a/app/views/layouts/customer.html.erb</span>
+<span class="gi">+++ b/app/views/layouts/customer.html.erb</span>
+<span class="gu">@@ -11,9 +11,9 @@</span>
+<span class="w"> </span>&lt;body&gt;
+<span class="w"> </span>&lt;div id=&quot;wrapper&quot; class=&quot;SpMenu__wrapper&quot;&gt;
+<span class="w"> </span>  &lt;div id=&quot;overlay&quot; class=&quot;SpMenu__overlay&quot;&gt;&lt;/div&gt;
+<span class="gd">-  &lt;%= render &#39;shared/customer/header&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &#39;customer/shared/header&#39; %&gt;</span>
+<span class="w"> </span>  &lt;%= yield %&gt;
+<span class="gd">-  &lt;%= render &#39;shared/customer/footer&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &#39;customer/shared/footer&#39; %&gt;</span>
+<span class="w"> </span>&lt;/div&gt;
+<span class="w"> </span>&lt;%= stylesheet_link_tag    &#39;application&#39;, media: &#39;all&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+<span class="w"> </span>&lt;%= javascript_include_tag &#39;application&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+<span class="gh">diff --git a/app/views/layouts/staff.html.erb b/app/views/layouts/staff.html.erb</span>
+<span class="gh">index 0b928de..39f318f 100644</span>
+<span class="gd">--- a/app/views/layouts/staff.html.erb</span>
+<span class="gi">+++ b/app/views/layouts/staff.html.erb</span>
+<span class="gu">@@ -11,9 +11,9 @@</span>
+<span class="w"> </span>&lt;body&gt;
+<span class="w"> </span>&lt;div id=&quot;wrapper&quot; class=&quot;SpMenu__wrapper Staff__wrapper&quot;&gt;
+<span class="w"> </span>  &lt;div id=&quot;overlay&quot; class=&quot;SpMenu__overlay&quot;&gt;&lt;/div&gt;
+<span class="gd">-  &lt;%= render &#39;shared/staff/header&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &#39;staff/shared/header&#39; %&gt;</span>
+<span class="w"> </span>  &lt;%= yield %&gt;
+<span class="gd">-  &lt;%= render &#39;shared/staff/footer&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &#39;staff/shared/footer&#39; %&gt;</span>
+<span class="w"> </span>&lt;/div&gt;
+<span class="w"> </span>&lt;%= stylesheet_link_tag    &#39;application&#39;, media: &#39;all&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+<span class="w"> </span>&lt;%= javascript_include_tag &#39;application&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+<span class="gh">diff --git a/app/views/shared/staff/_footer.html.erb b/app/views/staff/shared/_footer.html.erb</span>
+similarity index 100%
+rename from app/views/shared/staff/_footer.html.erb
+rename to app/views/staff/shared/_footer.html.erb
+<span class="gh">diff --git a/app/views/shared/staff/_header.html.erb b/app/views/staff/shared/_header.html.erb</span>
+similarity index 100%
+rename from app/views/shared/staff/_header.html.erb
+rename to app/views/staff/shared/_header.html.erb
+</code></pre></div>
+<h2 id="b302929">コミット: b302929<a class="headerlink" href="#b302929" title="Permanent link">&para;</a></h2>
+<h3 id="_17">メッセージ<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>メッセージの表示 #4
+</code></pre></div>
+<h3 id="_18">変更されたファイル<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/views/shared/admin/_header.html.erb</li>
+</ul>
+<h3 id="_19">変更内容<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit b302929522d9d1b47b4672c0a135e3c7fafce72e
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 18:03:01 2017 +0900
+
+<span class="w"> </span>   メッセージの表示 #4
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 4fdd7c8..6140be5 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -384,6 +384,7 @@ git push heroku master</span>
+<span class="w"> </span>+ 管理者ログアウト機能追加
+<span class="w"> </span>+ 管理者認証サービステスト追加
+<span class="w"> </span>+ 管理者認証サービス追加
+<span class="gi">++ メッセージの表示</span>
+
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="gh">diff --git a/app/views/shared/admin/_header.html.erb b/app/views/shared/admin/_header.html.erb</span>
+<span class="gh">index edc6444..9453da7 100644</span>
+<span class="gd">--- a/app/views/shared/admin/_header.html.erb</span>
+<span class="gi">+++ b/app/views/shared/admin/_header.html.erb</span>
+<span class="gu">@@ -4,6 +4,12 @@</span>
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>  &lt;div class=&quot;Header__head&quot;&gt;
+<span class="w"> </span>    &lt;h1 class=&quot;logo&quot;&gt;&lt;%= link_to(&#39;BAUKIS KAI&#39;, admin_root_url, class:&#39;logo logo--admin&#39;) %&gt;&lt;/h1&gt;
+<span class="gi">+</span>
+<span class="gi">+    &lt;div class=&quot;Flash&quot;&gt;</span>
+<span class="gi">+      &lt;%= content_tag(:span, flash.notice, class: &#39;Flash__notice&#39;) if flash.notice %&gt;</span>
+<span class="gi">+      &lt;%= content_tag(:span, flash.alert, class: &#39;Flash__alert&#39;) if flash.alert %&gt;</span>
+<span class="gi">+    &lt;/div&gt;</span>
+<span class="gi">+</span>
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>  &lt;nav class=&quot;Header__body SpMenu&quot;&gt;
+<span class="w"> </span>    &lt;ul class=&quot;Menu&quot;&gt;
+</code></pre></div>
+<h2 id="e3f75ee">コミット: e3f75ee<a class="headerlink" href="#e3f75ee" title="Permanent link">&para;</a></h2>
+<h3 id="_20">メッセージ<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>管理者認証サービス追加 #4
+</code></pre></div>
+<h3 id="_21">変更されたファイル<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/services/admin/authenticator.rb</li>
+</ul>
+<h3 id="_22">変更内容<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit e3f75eea7b187eef9102c543275e8682b48446e3
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 17:58:42 2017 +0900
+
+<span class="w"> </span>   管理者認証サービス追加 #4
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 14ef5d0..4fdd7c8 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -382,7 +382,8 @@ git push heroku master</span>
+<span class="w"> </span>+ 管理者用ログインフォーム作成
+<span class="w"> </span>+ 管理者ログイン機能追加
+<span class="w"> </span>+ 管理者ログアウト機能追加
+<span class="gd">-+ 認証サービステスト追加</span>
+<span class="gi">++ 管理者認証サービステスト追加</span>
+<span class="gi">++ 管理者認証サービス追加</span>
+
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="gh">diff --git a/app/services/admin/authenticator.rb b/app/services/admin/authenticator.rb</span>
+<span class="gh">index fa59fed..42a7868 100644</span>
+<span class="gd">--- a/app/services/admin/authenticator.rb</span>
+<span class="gi">+++ b/app/services/admin/authenticator.rb</span>
+<span class="gu">@@ -1,2 +1,11 @@</span>
+<span class="w"> </span>class Admin::Authenticator
+<span class="gi">+  def initialize(administrator)</span>
+<span class="gi">+    @administrator = administrator</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def authenticate(raw_password)</span>
+<span class="gi">+    @administrator &amp;&amp;</span>
+<span class="gi">+        @administrator.hashed_password &amp;&amp;</span>
+<span class="gi">+        BCrypt::Password.new(@administrator.hashed_password) == raw_password</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_23">構造変更<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="9e94c00">コミット: 9e94c00<a class="headerlink" href="#9e94c00" title="Permanent link">&para;</a></h2>
+<h3 id="_24">メッセージ<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>認証サービステスト追加 #4
+</code></pre></div>
+<h3 id="_25">変更されたファイル<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>A app/services/admin/authenticator.rb</li>
+<li>M spec/factories/administrators.rb</li>
+<li>A spec/services/admin/authenticator_spec.rb</li>
+</ul>
+<h3 id="_26">変更内容<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 9e94c00d50f1662d23ed2a36501eebee31bfd2ae
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 17:57:07 2017 +0900
+
+<span class="w"> </span>   認証サービステスト追加 #4
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 162925f..14ef5d0 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -382,6 +382,7 @@ git push heroku master</span>
+<span class="w"> </span>+ 管理者用ログインフォーム作成
+<span class="w"> </span>+ 管理者ログイン機能追加
+<span class="w"> </span>+ 管理者ログアウト機能追加
+<span class="gi">++ 認証サービステスト追加</span>
+
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="gh">diff --git a/app/services/admin/authenticator.rb b/app/services/admin/authenticator.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..fa59fed</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/services/admin/authenticator.rb</span>
+<span class="gu">@@ -0,0 +1,2 @@</span>
+<span class="gi">+class Admin::Authenticator</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+<span class="gh">diff --git a/spec/factories/administrators.rb b/spec/factories/administrators.rb</span>
+<span class="gh">index ee37bdc..336095c 100644</span>
+<span class="gd">--- a/spec/factories/administrators.rb</span>
+<span class="gi">+++ b/spec/factories/administrators.rb</span>
+<span class="gu">@@ -17,6 +17,8 @@</span>
+
+<span class="w"> </span>FactoryGirl.define do
+<span class="w"> </span>  factory :administrator do
+<span class="gd">-    </span>
+<span class="gi">+    sequence(:email) { |n| &quot;admin#{n}@example.com&quot; }</span>
+<span class="gi">+    password &#39;pw&#39;</span>
+<span class="gi">+    suspended false</span>
+<span class="w"> </span>  end
+<span class="w"> </span>end
+<span class="gh">diff --git a/spec/services/admin/authenticator_spec.rb b/spec/services/admin/authenticator_spec.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..74e40ab</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/spec/services/admin/authenticator_spec.rb</span>
+<span class="gu">@@ -0,0 +1,30 @@</span>
+<span class="gi">+require &#39;rails_helper&#39;</span>
+<span class="gi">+</span>
+<span class="gi">+describe Admin::Authenticator do</span>
+<span class="gi">+  describe &#39;#authenticate&#39; do</span>
+<span class="gi">+    # 正しいパスワードならtrueを返す</span>
+<span class="gi">+    it &#39;should return true given valid password&#39; do</span>
+<span class="gi">+      m = build(:administrator)</span>
+<span class="gi">+      expect(Admin::Authenticator.new(m).authenticate(&#39;pw&#39;)).to be_truthy</span>
+<span class="gi">+    end</span>
+<span class="gi">+</span>
+<span class="gi">+    # 誤ったパスワードならfalseを返す</span>
+<span class="gi">+    it &#39;should return false given invalid password&#39; do</span>
+<span class="gi">+      m = build(:administrator)</span>
+<span class="gi">+      expect(Admin::Authenticator.new(m).authenticate(&#39;xy&#39;)).to be_falsey</span>
+<span class="gi">+    end</span>
+<span class="gi">+</span>
+<span class="gi">+    # パスワード未設定ならfalseを返す</span>
+<span class="gi">+    it &#39;should return false given nil password&#39; do</span>
+<span class="gi">+      m = build(:administrator)</span>
+<span class="gi">+      expect(Admin::Authenticator.new(m).authenticate(nil)).to be_falsey</span>
+<span class="gi">+    end</span>
+<span class="gi">+    </span>
+<span class="gi">+    # 停止フラグが立っていてもtrueを返す</span>
+<span class="gi">+    it &#39;should return true given stop flag&#39; do</span>
+<span class="gi">+      m = build(:administrator, suspended: true)</span>
+<span class="gi">+      expect(Admin::Authenticator.new(m).authenticate(&#39;pw&#39;)).to be_truthy</span>
+<span class="gi">+    end</span>
+<span class="gi">+    </span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_27">構造変更<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="ef6cb20">コミット: ef6cb20<a class="headerlink" href="#ef6cb20" title="Permanent link">&para;</a></h2>
+<h3 id="_28">メッセージ<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>管理者ログアウト機能追加 #4
+</code></pre></div>
+<h3 id="_29">変更されたファイル<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/controllers/admin/base.rb</li>
+<li>M app/controllers/admin/sessions_controller.rb</li>
+<li>M app/views/shared/admin/_header.html.erb</li>
+</ul>
+<h3 id="_30">変更内容<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit ef6cb2018c0b0a5cd66a85c7b7133d760105806f
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 17:54:12 2017 +0900
+
+<span class="w"> </span>   管理者ログアウト機能追加 #4
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 35273aa..162925f 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -381,6 +381,7 @@ git push heroku master</span>
+<span class="w"> </span>#### 演習問題
+<span class="w"> </span>+ 管理者用ログインフォーム作成
+<span class="w"> </span>+ 管理者ログイン機能追加
+<span class="gi">++ 管理者ログアウト機能追加</span>
+
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="gh">diff --git a/app/controllers/admin/base.rb b/app/controllers/admin/base.rb</span>
+<span class="gh">index 8e245f0..93ca28f 100644</span>
+<span class="gd">--- a/app/controllers/admin/base.rb</span>
+<span class="gi">+++ b/app/controllers/admin/base.rb</span>
+<span class="gu">@@ -3,7 +3,7 @@ class Admin::Base &lt; ApplicationController</span>
+<span class="w"> </span>  def current_administrator
+<span class="w"> </span>    if session[:administrator_id]
+<span class="w"> </span>      @current_administrator ||=
+<span class="gd">-          Administrator.find_by(id: session[:administrator_id_id])</span>
+<span class="gi">+          Administrator.find_by(id: session[:administrator_id])</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+
+<span class="gh">diff --git a/app/controllers/admin/sessions_controller.rb b/app/controllers/admin/sessions_controller.rb</span>
+<span class="gh">index 41f5740..dd15b5a 100644</span>
+<span class="gd">--- a/app/controllers/admin/sessions_controller.rb</span>
+<span class="gi">+++ b/app/controllers/admin/sessions_controller.rb</span>
+<span class="gu">@@ -19,7 +19,6 @@ class Admin::SessionsController &lt; Admin::Base</span>
+<span class="w"> </span>        render action: &#39;new&#39;
+<span class="w"> </span>      else
+<span class="w"> </span>        session[:administrator_id] = administrator.id
+<span class="gd">-        session[:last_access_time] = Time.current</span>
+<span class="w"> </span>        flash.notice = &#39;ログインしました。&#39;
+<span class="w"> </span>        redirect_to :admin_root
+<span class="w"> </span>      end
+<span class="gu">@@ -29,6 +28,12 @@ class Admin::SessionsController &lt; Admin::Base</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+
+<span class="gi">+  def destroy</span>
+<span class="gi">+    session.delete(:administrator_id)</span>
+<span class="gi">+    flash.notice = &#39;ログアウトしました。&#39;</span>
+<span class="gi">+    redirect_to :admin_root</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="w"> </span>  private
+<span class="w"> </span>  def post_params
+<span class="w"> </span>    params.require(:admin_login_form).permit(
+<span class="gh">diff --git a/app/views/shared/admin/_header.html.erb b/app/views/shared/admin/_header.html.erb</span>
+<span class="gh">index a68e8a3..edc6444 100644</span>
+<span class="gd">--- a/app/views/shared/admin/_header.html.erb</span>
+<span class="gi">+++ b/app/views/shared/admin/_header.html.erb</span>
+<span class="gu">@@ -11,7 +11,7 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_administrator
+<span class="gd">-        link_to &#39;ログアウト&#39;, :admin_session, method:delete, class: &#39;login--admin&#39;</span>
+<span class="gi">+        link_to &#39;ログアウト&#39;, :admin_session, method: :delete, class: &#39;login--admin&#39;</span>
+<span class="w"> </span>      else
+<span class="w"> </span>        link_to &#39;ログイン&#39;, :admin_login, class: &#39;login--admin&#39;
+<span class="w"> </span>      end
+</code></pre></div>
+<h3 id="_31">構造変更<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="8774e52">コミット: 8774e52<a class="headerlink" href="#8774e52" title="Permanent link">&para;</a></h2>
+<h3 id="_32">メッセージ<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>管理者ログイン機能追加 #4
+</code></pre></div>
+<h3 id="_33">変更されたファイル<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/assets/stylesheets/pages/_login.scss</li>
+<li>A app/controllers/admin/sessions_controller.rb</li>
+<li>A app/views/admin/sessions/new.html.erb</li>
+<li>M app/views/shared/admin/_header.html.erb</li>
+<li>M app/views/staff/sessions/new.html.erb</li>
+</ul>
+<h3 id="_34">変更内容<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 8774e52d36945661511db6bf578e58e9455179d1
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 17:48:31 2017 +0900
+
+<span class="w"> </span>   管理者ログイン機能追加 #4
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 5af6f92..35273aa 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -379,7 +379,8 @@ git push heroku master</span>
+<span class="w"> </span>+ メッセージの表示
+
+<span class="w"> </span>#### 演習問題
+<span class="gd">-+　管理者用ログインフォーム作成</span>
+<span class="gi">++ 管理者用ログインフォーム作成</span>
+<span class="gi">++ 管理者ログイン機能追加</span>
+
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_login.scss b/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gh">index dea90df..c635be9 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gu">@@ -9,7 +9,14 @@</span>
+<span class="w"> </span>  margin: $wide * 2 auto;
+<span class="w"> </span>  padding: $wide * 2;
+<span class="w"> </span>  border-radius: $wide;
+<span class="gd">-  border: solid 4px $dark_cyan;</span>
+<span class="gi">+</span>
+<span class="gi">+  &amp;--staff {</span>
+<span class="gi">+    border: solid 4px $dark_cyan;</span>
+<span class="gi">+  }</span>
+<span class="gi">+  &amp;--admin {</span>
+<span class="gi">+    border: solid 4px $dark_magenta;</span>
+<span class="gi">+  }</span>
+<span class="gi">+</span>
+<span class="w"> </span>  background-color: $very_light_gray;
+
+<span class="w"> </span>  &amp;__head {
+<span class="gh">diff --git a/app/controllers/admin/sessions_controller.rb b/app/controllers/admin/sessions_controller.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..41f5740</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/controllers/admin/sessions_controller.rb</span>
+<span class="gu">@@ -0,0 +1,40 @@</span>
+<span class="gi">+class Admin::SessionsController &lt; Admin::Base</span>
+<span class="gi">+  def new</span>
+<span class="gi">+    if current_administrator</span>
+<span class="gi">+      redirect_to :admin_root</span>
+<span class="gi">+    else</span>
+<span class="gi">+      @form = Admin::LoginForm.new</span>
+<span class="gi">+      render action: &#39;new&#39;</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def create</span>
+<span class="gi">+    @form = Admin::LoginForm.new(post_params)</span>
+<span class="gi">+    if @form.email.present?</span>
+<span class="gi">+      administrator = Administrator.find_by(email_for_index: @form.email.downcase)</span>
+<span class="gi">+    end</span>
+<span class="gi">+    if administrator</span>
+<span class="gi">+      if administrator.suspended?</span>
+<span class="gi">+        flash.now.alert = &#39;アカウントが停止されています。&#39;</span>
+<span class="gi">+        render action: &#39;new&#39;</span>
+<span class="gi">+      else</span>
+<span class="gi">+        session[:administrator_id] = administrator.id</span>
+<span class="gi">+        session[:last_access_time] = Time.current</span>
+<span class="gi">+        flash.notice = &#39;ログインしました。&#39;</span>
+<span class="gi">+        redirect_to :admin_root</span>
+<span class="gi">+      end</span>
+<span class="gi">+    else</span>
+<span class="gi">+      flash.now.alert = &#39;メールアドレスまたはパスワードが正しくありません。&#39;</span>
+<span class="gi">+      render action: &#39;new&#39;</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  private</span>
+<span class="gi">+  def post_params</span>
+<span class="gi">+    params.require(:admin_login_form).permit(</span>
+<span class="gi">+        :email,</span>
+<span class="gi">+        :password</span>
+<span class="gi">+    )</span>
+<span class="gi">+  end</span>
+<span class="gi">+  </span>
+<span class="gi">+end</span>
+<span class="gh">diff --git a/app/views/admin/sessions/new.html.erb b/app/views/admin/sessions/new.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..18e4d98</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/admin/sessions/new.html.erb</span>
+<span class="gu">@@ -0,0 +1,21 @@</span>
+<span class="gi">+&lt;% @title = &#39;ログイン&#39; %&gt;</span>
+<span class="gi">+&lt;section class=&quot;Section l-column&quot;&gt;</span>
+<span class="gi">+  &lt;div class=&quot;Login Login--admin&quot;&gt;</span>
+<span class="gi">+    &lt;h1 class=&quot;Login__head&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;</span>
+<span class="gi">+    &lt;div class=&quot;Login__body&quot;&gt;</span>
+<span class="gi">+      &lt;%= bootstrap_form_for @form, url: :admin_session do |f| %&gt;</span>
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.label :email, &#39;メールアドレス&#39; %&gt;</span>
+<span class="gi">+            &lt;%= f.text_field :email %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.label :password, &#39;パスワード&#39; %&gt;</span>
+<span class="gi">+            &lt;%= f.password_field :password %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.submit &#39;ログイン&#39; %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="gi">+      &lt;% end %&gt;</span>
+<span class="gi">+    &lt;/div&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+&lt;/section&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/shared/admin/_header.html.erb b/app/views/shared/admin/_header.html.erb</span>
+<span class="gh">index 40dbea6..a68e8a3 100644</span>
+<span class="gd">--- a/app/views/shared/admin/_header.html.erb</span>
+<span class="gi">+++ b/app/views/shared/admin/_header.html.erb</span>
+<span class="gu">@@ -11,9 +11,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_administrator
+<span class="gd">-        link_to &#39;ログアウト&#39;, :staff_session, method:delete, class: &#39;login--staff&#39;</span>
+<span class="gi">+        link_to &#39;ログアウト&#39;, :admin_session, method:delete, class: &#39;login--admin&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to &#39;ログイン&#39;, :staff_login, class: &#39;login--staff&#39;</span>
+<span class="gi">+        link_to &#39;ログイン&#39;, :admin_login, class: &#39;login--admin&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>  %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/sessions/new.html.erb b/app/views/staff/sessions/new.html.erb</span>
+<span class="gh">index 866f5ee..dbd71b3 100644</span>
+<span class="gd">--- a/app/views/staff/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/staff/sessions/new.html.erb</span>
+<span class="gu">@@ -1,6 +1,6 @@</span>
+<span class="w"> </span>&lt;% @title = &#39;ログイン&#39; %&gt;
+<span class="w"> </span>&lt;section class=&quot;Section l-column&quot;&gt;
+<span class="gd">-  &lt;div class=&quot;Login&quot;&gt;</span>
+<span class="gi">+  &lt;div class=&quot;Login Login--staff&quot;&gt;</span>
+<span class="w"> </span>    &lt;h1 class=&quot;Login__head&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;
+<span class="w"> </span>    &lt;div class=&quot;Login__body&quot;&gt;
+<span class="w"> </span>      &lt;%= bootstrap_form_for @form, url: :staff_session do |f| %&gt;
+</code></pre></div>
+<h3 id="_35">構造変更<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="fb466e7">コミット: fb466e7<a class="headerlink" href="#fb466e7" title="Permanent link">&para;</a></h2>
+<h3 id="_36">メッセージ<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>管理者用ログインフォーム作成 #4
+</code></pre></div>
+<h3 id="_37">変更されたファイル<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>A app/forms/admin/login_form.rb</li>
+</ul>
+<h3 id="_38">変更内容<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit fb466e7ae94eaeb980e71cc22df50c319b6c2334
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Jan 21 17:34:12 2017 +0900
+
+<span class="w"> </span>   管理者用ログインフォーム作成 #4
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 6605555..5af6f92 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -379,6 +379,7 @@ git push heroku master</span>
+<span class="w"> </span>+ メッセージの表示
+
+<span class="w"> </span>#### 演習問題
+<span class="gi">++　管理者用ログインフォーム作成</span>
+
+<span class="w"> </span>### ルーティング
+<span class="w"> </span>### レコードの表示、新規作成、更新、削除
+<span class="gh">diff --git a/app/forms/admin/login_form.rb b/app/forms/admin/login_form.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..ab1b60f</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/forms/admin/login_form.rb</span>
+<span class="gu">@@ -0,0 +1,5 @@</span>
+<span class="gi">+class Admin::LoginForm</span>
+<span class="gi">+  include ActiveModel::Model</span>
+<span class="gi">+</span>
+<span class="gi">+  attr_accessor :email, :password</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

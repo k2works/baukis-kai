@@ -1,0 +1,2622 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20170203/">
+      
+      
+        <link rel="next" href="../20170206/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20170204 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2017-02-04" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20170204
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概要">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      実装内容の説明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="実装内容の説明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-table-inheritance" class="md-nav__link">
+    <span class="md-ellipsis">
+      単一テーブル継承（Single Table Inheritance）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScriptの読み込み不具合修正
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      アーキテクチャとの関連
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ユースケースとの関連
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6d1204e" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 6d1204e
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 6d1204e">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#423c08a" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 423c08a
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 423c08a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d4c2acb" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: d4c2acb
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: d4c2acb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0222844" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 0222844
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 0222844">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c7ef32d" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: c7ef32d
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: c7ef32d">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c77696c" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: c77696c
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: c77696c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223cdfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 223cdfb
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 223cdfb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2017-02-04">作業履歴 2017-02-04<a class="headerlink" href="#2017-02-04" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2017-02-04の作業内容をまとめています。この日は主に「単一テーブル継承」機能の実装と、JavaScriptの読み込み不具合修正を行いました。</p>
+<h3 id="_2">実装内容の説明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="single-table-inheritance">単一テーブル継承（Single Table Inheritance）<a class="headerlink" href="#single-table-inheritance" title="Permanent link">&para;</a></h4>
+<p>単一テーブル継承は、オブジェクト指向プログラミングの継承概念をデータベースに適用する手法です。この実装により、顧客関連の情報（住所や電話番号など）を効率的に管理できるようになりました。</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkNMQVNTIiBoZWlnaHQ9IjYyNHB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6NDg4cHg7aGVpZ2h0OjYyNHB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4OCA2MjQiIHdpZHRoPSI0ODhweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PHRpdGxlPiYjMjEzMzY7JiMxOTk2ODsmIzEyNDg2OyYjMTI1NDA7JiMxMjUwMjsmIzEyNTIzOyYjMzIxNTM7JiMyNTIxNTsmIzEyMzk4OyYjMjM0NTU7JiMzNTAxMzs8L3RpdGxlPjxkZWZzLz48Zz48ZyBjbGFzcz0idGl0bGUiIGRhdGEtc291cmNlLWxpbmU9IjEiPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNTMuOTk5MyIgeD0iMTYwLjE3NTciIHk9IjIyLjk5NTEiPiYjMjEzMzY7JiMxOTk2ODsmIzEyNDg2OyYjMTI1NDA7JiMxMjUwMjsmIzEyNTIzOyYjMzIxNTM7JiMyNTIxNTsmIzEyMzk4OyYjMjM0NTU7JiMzNTAxMzs8L3RleHQ+PC9nPjwhLS1jbGFzcyBDdXN0b21lci0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJDdXN0b21lciIgZGF0YS1zb3VyY2UtbGluZT0iMyIgZGF0YS11aWQ9ImVudDAwMDIiIGlkPSJlbnRpdHlfQ3VzdG9tZXIiPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTk0LjY3MTkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjIwNi40MDcyIiB4PSI2NC42MiIgeT0iNDQuMjk2OSIvPjxlbGxpcHNlIGN4PSIxMjkuNTcxNyIgY3k9IjYwLjI5NjkiIGZpbGw9IiNBREQxQjIiIHJ4PSIxMSIgcnk9IjExIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBhdGggZD0iTTEzMi41NDA0LDY1LjkzNzUgUTEzMS45NjIzLDY2LjIzNDQgMTMxLjMyMTcsNjYuMzc1IFExMzAuNjgxLDY2LjUzMTMgMTI5Ljk3NzksNjYuNTMxMyBRMTI3LjQ3NzksNjYuNTMxMyAxMjYuMTQ5OCw2NC44OTA2IFExMjQuODM3Myw2My4yMzQ0IDEyNC44MzczLDYwLjEwOTQgUTEyNC44MzczLDU2Ljk4NDQgMTI2LjE0OTgsNTUuMzI4MSBRMTI3LjQ3NzksNTMuNjcxOSAxMjkuOTc3OSw1My42NzE5IFExMzAuNjgxLDUzLjY3MTkgMTMxLjMyMTcsNTMuODI4MSBRMTMxLjk3NzksNTMuOTg0NCAxMzIuNTQwNCw1NC4yODEzIEwxMzIuNTQwNCw1NyBRMTMxLjkxNTQsNTYuNDIxOSAxMzEuMzIxNyw1Ni4xNTYzIFExMzAuNzI3OSw1NS44NzUgMTMwLjEwMjksNTUuODc1IFExMjguNzU5Miw1NS44NzUgMTI4LjA3MTcsNTYuOTUzMSBRMTI3LjM4NDIsNTguMDE1NiAxMjcuMzg0Miw2MC4xMDk0IFExMjcuMzg0Miw2Mi4yMDMxIDEyOC4wNzE3LDYzLjI4MTMgUTEyOC43NTkyLDY0LjM0MzggMTMwLjEwMjksNjQuMzQzOCBRMTMwLjcyNzksNjQuMzQzOCAxMzEuMzIxNyw2NC4wNzgxIFExMzEuOTE1NCw2My43OTY5IDEzMi41NDA0LDYzLjIxODggTDEzMi41NDA0LDY1LjkzNzUgWiAiIGZpbGw9IiMwMDAwMDAiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2OC4wMDM5IiB4PSIxNTAuMDcxNyIgeT0iNjUuMTQzNiI+Q3VzdG9tZXI8L3RleHQ+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB4MT0iNjUuNjIiIHgyPSIyNzAuMDI3MiIgeTE9Ijc2LjI5NjkiIHkyPSI3Ni4yOTY5Ii8+PGVsbGlwc2UgY3g9Ijc1LjYyIiBjeT0iODkuOTQ1MyIgZmlsbD0ibm9uZSIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzIuMDY0NSIgeD0iODQuNjIiIHk9IjkzLjI5MiI+aWQ6IGludGVnZXI8L3RleHQ+PGVsbGlwc2UgY3g9Ijc1LjYyIiBjeT0iMTA2LjI0MjIiIGZpbGw9Im5vbmUiIHJ4PSIzIiByeT0iMyIgc3R5bGU9InN0cm9rZTojMDM4MDQ4O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijg3Ljk2NDgiIHg9Ijg0LjYyIiB5PSIxMDkuNTg4OSI+ZW1haWw6IHN0cmluZzwvdGV4dD48ZWxsaXBzZSBjeD0iNzUuNjIiIGN5PSIxMjIuNTM5MSIgZmlsbD0ibm9uZSIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTM5LjI2ODYiIHg9Ijg0LjYyIiB5PSIxMjUuODg1NyI+ZmFtaWx5X25hbWU6IHN0cmluZzwvdGV4dD48ZWxsaXBzZSBjeD0iNzUuNjIiIGN5PSIxMzguODM1OSIgZmlsbD0ibm9uZSIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTM0LjYwNjQiIHg9Ijg0LjYyIiB5PSIxNDIuMTgyNiI+Z2l2ZW5fbmFtZTogc3RyaW5nPC90ZXh0PjxlbGxpcHNlIGN4PSI3NS42MiIgY3k9IjE1NS4xMzI4IiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxODAuNDA3MiIgeD0iODQuNjIiIHk9IjE1OC40Nzk1Ij5mYW1pbHlfbmFtZV9rYW5hOiBzdHJpbmc8L3RleHQ+PGVsbGlwc2UgY3g9Ijc1LjYyIiBjeT0iMTcxLjQyOTciIGZpbGw9Im5vbmUiIHJ4PSIzIiByeT0iMyIgc3R5bGU9InN0cm9rZTojMDM4MDQ4O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE3NS43NDUxIiB4PSI4NC42MiIgeT0iMTc0Ljc3NjQiPmdpdmVuX25hbWVfa2FuYTogc3RyaW5nPC90ZXh0PjxlbGxpcHNlIGN4PSI3NS42MiIgY3k9IjE4Ny43MjY2IiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5OC45ODQ0IiB4PSI4NC42MiIgeT0iMTkxLjA3MzIiPmdlbmRlcjogc3RyaW5nPC90ZXh0PjxlbGxpcHNlIGN4PSI3NS42MiIgY3k9IjIwNC4wMjM0IiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5OS4zODA5IiB4PSI4NC42MiIgeT0iMjA3LjM3MDEiPmJpcnRoZGF5OiBkYXRlPC90ZXh0PjxlbGxpcHNlIGN4PSI3NS42MiIgY3k9IjIyMC4zMjAzIiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNzQuMTg2NSIgeD0iODQuNjIiIHk9IjIyMy42NjciPmhhc2hlZF9wYXNzd29yZDogc3RyaW5nPC90ZXh0PjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgeDE9IjY1LjYyIiB4Mj0iMjcwLjAyNzIiIHkxPSIyMzAuOTY4OCIgeTI9IjIzMC45Njg4Ii8+PC9nPjwhLS1jbGFzcyBBZGRyZXNzLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IkFkZHJlc3MiIGRhdGEtc291cmNlLWxpbmU9IjE1IiBkYXRhLXVpZD0iZW50MDAwMyIgaWQ9ImVudGl0eV9BZGRyZXNzIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjE3OC4zNzUiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE3MC45OTAyIiB4PSI4Mi4zMyIgeT0iMjk4Ljk2NjkiLz48ZWxsaXBzZSBjeD0iMTM1LjQyMTMiIGN5PSIzMTQuOTY2OSIgZmlsbD0iI0FERDFCMiIgcng9IjExIiByeT0iMTEiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cGF0aCBkPSJNMTM4LjM5MDEsMzIwLjYwNzUgUTEzNy44MTE5LDMyMC45MDQ0IDEzNy4xNzEzLDMyMS4wNDUgUTEzNi41MzA3LDMyMS4yMDEyIDEzNS44Mjc2LDMyMS4yMDEyIFExMzMuMzI3NiwzMjEuMjAxMiAxMzEuOTk5NCwzMTkuNTYwNiBRMTMwLjY4NjksMzE3LjkwNDQgMTMwLjY4NjksMzE0Ljc3OTQgUTEzMC42ODY5LDMxMS42NTQ0IDEzMS45OTk0LDMwOS45OTgxIFExMzMuMzI3NiwzMDguMzQxOSAxMzUuODI3NiwzMDguMzQxOSBRMTM2LjUzMDcsMzA4LjM0MTkgMTM3LjE3MTMsMzA4LjQ5ODEgUTEzNy44Mjc2LDMwOC42NTQ0IDEzOC4zOTAxLDMwOC45NTEyIEwxMzguMzkwMSwzMTEuNjcgUTEzNy43NjUxLDMxMS4wOTE5IDEzNy4xNzEzLDMxMC44MjYyIFExMzYuNTc3NiwzMTAuNTQ1IDEzNS45NTI2LDMxMC41NDUgUTEzNC42MDg4LDMxMC41NDUgMTMzLjkyMTMsMzExLjYyMzEgUTEzMy4yMzM4LDMxMi42ODU2IDEzMy4yMzM4LDMxNC43Nzk0IFExMzMuMjMzOCwzMTYuODczMSAxMzMuOTIxMywzMTcuOTUxMiBRMTM0LjYwODgsMzE5LjAxMzcgMTM1Ljk1MjYsMzE5LjAxMzcgUTEzNi41Nzc2LDMxOS4wMTM3IDEzNy4xNzEzLDMxOC43NDgxIFExMzcuNzY1MSwzMTguNDY2OSAxMzguMzkwMSwzMTcuODg4NyBMMTM4LjM5MDEsMzIwLjYwNzUgWiAiIGZpbGw9IiMwMDAwMDAiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1Ni4zMDc2IiB4PSIxNTUuOTIxMyIgeT0iMzE5LjgxMzYiPkFkZHJlc3M8L3RleHQ+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB4MT0iODMuMzMiIHgyPSIyNTIuMzIwMiIgeTE9IjMzMC45NjY5IiB5Mj0iMzMwLjk2NjkiLz48ZWxsaXBzZSBjeD0iOTMuMzMiIGN5PSIzNDQuNjE1MyIgZmlsbD0ibm9uZSIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzIuMDY0NSIgeD0iMTAyLjMzIiB5PSIzNDcuOTYyIj5pZDogaW50ZWdlcjwvdGV4dD48ZWxsaXBzZSBjeD0iOTMuMzMiIGN5PSIzNjAuOTEyMiIgZmlsbD0ibm9uZSIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTQ0Ljk5MDIiIHg9IjEwMi4zMyIgeT0iMzY0LjI1ODkiPmN1c3RvbWVyX2lkOiBpbnRlZ2VyPC90ZXh0PjxlbGxpcHNlIGN4PSI5My4zMyIgY3k9IjM3Ny4yMDkxIiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4MC42Mjk5IiB4PSIxMDIuMzMiIHk9IjM4MC41NTU3Ij50eXBlOiBzdHJpbmc8L3RleHQ+PGVsbGlwc2UgY3g9IjkzLjMzIiBjeT0iMzkzLjUwNTkiIGZpbGw9Im5vbmUiIHJ4PSIzIiByeT0iMyIgc3R5bGU9InN0cm9rZTojMDM4MDQ4O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEzMi44MjIzIiB4PSIxMDIuMzMiIHk9IjM5Ni44NTI2Ij5wb3N0YWxfY29kZTogc3RyaW5nPC90ZXh0PjxlbGxpcHNlIGN4PSI5My4zMyIgY3k9IjQwOS44MDI4IiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuNTgyIiB4PSIxMDIuMzMiIHk9IjQxMy4xNDk1Ij5wcmVmZWN0dXJlOiBzdHJpbmc8L3RleHQ+PGVsbGlwc2UgY3g9IjkzLjMzIiBjeT0iNDI2LjA5OTciIGZpbGw9Im5vbmUiIHJ4PSIzIiByeT0iMyIgc3R5bGU9InN0cm9rZTojMDM4MDQ4O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijc0LjcxNjgiIHg9IjEwMi4zMyIgeT0iNDI5LjQ0NjQiPmNpdHk6IHN0cmluZzwvdGV4dD48ZWxsaXBzZSBjeD0iOTMuMzMiIGN5PSI0NDIuMzk2NiIgZmlsbD0ibm9uZSIgcng9IjMiIHJ5PSIzIiBzdHlsZT0ic3Ryb2tlOiMwMzgwNDg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTEzLjU3MjMiIHg9IjEwMi4zMyIgeT0iNDQ1Ljc0MzIiPmFkZHJlc3MxOiBzdHJpbmc8L3RleHQ+PGVsbGlwc2UgY3g9IjkzLjMzIiBjeT0iNDU4LjY5MzQiIGZpbGw9Im5vbmUiIHJ4PSIzIiByeT0iMyIgc3R5bGU9InN0cm9rZTojMDM4MDQ4O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjExMy41NzIzIiB4PSIxMDIuMzMiIHk9IjQ2Mi4wNDAxIj5hZGRyZXNzMjogc3RyaW5nPC90ZXh0PjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgeDE9IjgzLjMzIiB4Mj0iMjUyLjMyMDIiIHkxPSI0NjkuMzQxOSIgeTI9IjQ2OS4zNDE5Ii8+PC9nPjwhLS1jbGFzcyBIb21lQWRkcmVzcy0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJIb21lQWRkcmVzcyIgZGF0YS1zb3VyY2UtbGluZT0iMjYiIGRhdGEtdWlkPSJlbnQwMDA0IiBpZD0iZW50aXR5X0hvbWVBZGRyZXNzIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ4IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMjkuNjUxNCIgeD0iNyIgeT0iNTUzLjYzNjkiLz48ZWxsaXBzZSBjeD0iMjIiIGN5PSI1NjkuNjM2OSIgZmlsbD0iI0FERDFCMiIgcng9IjExIiByeT0iMTEiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cGF0aCBkPSJNMjQuOTY4OCw1NzUuMjc3NSBRMjQuMzkwNiw1NzUuNTc0NCAyMy43NSw1NzUuNzE1IFEyMy4xMDk0LDU3NS44NzEzIDIyLjQwNjMsNTc1Ljg3MTMgUTE5LjkwNjMsNTc1Ljg3MTMgMTguNTc4MSw1NzQuMjMwNiBRMTcuMjY1Niw1NzIuNTc0NCAxNy4yNjU2LDU2OS40NDk0IFExNy4yNjU2LDU2Ni4zMjQ0IDE4LjU3ODEsNTY0LjY2ODEgUTE5LjkwNjMsNTYzLjAxMTkgMjIuNDA2Myw1NjMuMDExOSBRMjMuMTA5NCw1NjMuMDExOSAyMy43NSw1NjMuMTY4MSBRMjQuNDA2Myw1NjMuMzI0NCAyNC45Njg4LDU2My42MjEzIEwyNC45Njg4LDU2Ni4zNCBRMjQuMzQzOCw1NjUuNzYxOSAyMy43NSw1NjUuNDk2MyBRMjMuMTU2Myw1NjUuMjE1IDIyLjUzMTMsNTY1LjIxNSBRMjEuMTg3NSw1NjUuMjE1IDIwLjUsNTY2LjI5MzEgUTE5LjgxMjUsNTY3LjM1NTYgMTkuODEyNSw1NjkuNDQ5NCBRMTkuODEyNSw1NzEuNTQzMSAyMC41LDU3Mi42MjEzIFEyMS4xODc1LDU3My42ODM4IDIyLjUzMTMsNTczLjY4MzggUTIzLjE1NjMsNTczLjY4MzggMjMuNzUsNTczLjQxODEgUTI0LjM0MzgsNTczLjEzNjkgMjQuOTY4OCw1NzIuNTU4OCBMMjQuOTY4OCw1NzUuMjc3NSBaICIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijk3LjY1MTQiIHg9IjM2IiB5PSI1NzQuNDgzNiI+SG9tZUFkZHJlc3M8L3RleHQ+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB4MT0iOCIgeDI9IjEzNS42NTE0IiB5MT0iNTg1LjYzNjkiIHkyPSI1ODUuNjM2OSIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgeDE9IjgiIHgyPSIxMzUuNjUxNCIgeTE9IjU5My42MzY5IiB5Mj0iNTkzLjYzNjkiLz48L2c+PCEtLWNsYXNzIFdvcmtBZGRyZXNzLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IldvcmtBZGRyZXNzIiBkYXRhLXNvdXJjZS1saW5lPSIyOSIgZGF0YS11aWQ9ImVudDAwMDUiIGlkPSJlbnRpdHlfV29ya0FkZHJlc3MiPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iODAuNTkzOCIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTg2LjU4MyIgeD0iMTcxLjUzIiB5PSI1MzcuMzQ2OSIvPjxlbGxpcHNlIGN4PSIyMTQuNDMxOCIgY3k9IjU1My4zNDY5IiBmaWxsPSIjQUREMUIyIiByeD0iMTEiIHJ5PSIxMSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwYXRoIGQ9Ik0yMTcuNDAwNSw1NTguOTg3NSBRMjE2LjgyMjQsNTU5LjI4NDQgMjE2LjE4MTgsNTU5LjQyNSBRMjE1LjU0MTEsNTU5LjU4MTMgMjE0LjgzOCw1NTkuNTgxMyBRMjEyLjMzOCw1NTkuNTgxMyAyMTEuMDA5OSw1NTcuOTQwNiBRMjA5LjY5NzQsNTU2LjI4NDQgMjA5LjY5NzQsNTUzLjE1OTQgUTIwOS42OTc0LDU1MC4wMzQ0IDIxMS4wMDk5LDU0OC4zNzgxIFEyMTIuMzM4LDU0Ni43MjE5IDIxNC44MzgsNTQ2LjcyMTkgUTIxNS41NDExLDU0Ni43MjE5IDIxNi4xODE4LDU0Ni44NzgxIFEyMTYuODM4LDU0Ny4wMzQ0IDIxNy40MDA1LDU0Ny4zMzEzIEwyMTcuNDAwNSw1NTAuMDUgUTIxNi43NzU1LDU0OS40NzE5IDIxNi4xODE4LDU0OS4yMDYzIFEyMTUuNTg4LDU0OC45MjUgMjE0Ljk2Myw1NDguOTI1IFEyMTMuNjE5Myw1NDguOTI1IDIxMi45MzE4LDU1MC4wMDMxIFEyMTIuMjQ0Myw1NTEuMDY1NiAyMTIuMjQ0Myw1NTMuMTU5NCBRMjEyLjI0NDMsNTU1LjI1MzEgMjEyLjkzMTgsNTU2LjMzMTMgUTIxMy42MTkzLDU1Ny4zOTM4IDIxNC45NjMsNTU3LjM5MzggUTIxNS41ODgsNTU3LjM5MzggMjE2LjE4MTgsNTU3LjEyODEgUTIxNi43NzU1LDU1Ni44NDY5IDIxNy40MDA1LDU1Ni4yNjg4IEwyMTcuNDAwNSw1NTguOTg3NSBaICIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjkyLjU3OTEiIHg9IjIzNC42MzIxIiB5PSI1NTguMTkzNiI+V29ya0FkZHJlc3M8L3RleHQ+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB4MT0iMTcyLjUzIiB4Mj0iMzU3LjExMyIgeTE9IjU2OS4zNDY5IiB5Mj0iNTY5LjM0NjkiLz48ZWxsaXBzZSBjeD0iMTgyLjUzIiBjeT0iNTgyLjk5NTMiIGZpbGw9Im5vbmUiIHJ4PSIzIiByeT0iMyIgc3R5bGU9InN0cm9rZTojMDM4MDQ4O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE2MC41ODMiIHg9IjE5MS41MyIgeT0iNTg2LjM0MiI+Y29tcGFueV9uYW1lOiBzdHJpbmc8L3RleHQ+PGVsbGlwc2UgY3g9IjE4Mi41MyIgY3k9IjU5OS4yOTIyIiBmaWxsPSJub25lIiByeD0iMyIgcnk9IjMiIHN0eWxlPSJzdHJva2U6IzAzODA0ODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNDkuNjMxOCIgeD0iMTkxLjUzIiB5PSI2MDIuNjM4OSI+ZGl2aXNpb25fbmFtZTogc3RyaW5nPC90ZXh0PjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgeDE9IjE3Mi41MyIgeDI9IjM1Ny4xMTMiIHkxPSI2MDkuOTQwNiIgeTI9IjYwOS45NDA2Ii8+PC9nPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJHTU45IiBkYXRhLXNvdXJjZS1saW5lPSIzOCIgZGF0YS11aWQ9ImVudDAwMTAiIGlkPSJlbnRpdHlfR01OOSI+PHBhdGggZD0iTTI4OC4zMSwzNzUuNTg2OSBMMjg4LjMxLDM4NC4xNTY5IEwyNTMuNDQsMzg4LjE1NjkgTDI4OC4zMSwzOTIuMTU2OSBMMjg4LjMxLDQwMC43MTk3IEEwLDAgMCAwIDAgMjg4LjMxLDQwMC43MTk3IEw0ODEuMzUwNyw0MDAuNzE5NyBBMCwwIDAgMCAwIDQ4MS4zNTA3LDQwMC43MTk3IEw0ODEuMzUwNywzODUuNTg2OSBMNDcxLjM1MDcsMzc1LjU4NjkgTDI4OC4zMSwzNzUuNTg2OSBBMCwwIDAgMCAwIDI4OC4zMSwzNzUuNTg2OSIgZmlsbD0iI0ZFRkZERCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHBhdGggZD0iTTQ3MS4zNTA3LDM3NS41ODY5IEw0NzEuMzUwNywzODUuNTg2OSBMNDgxLjM1MDcsMzg1LjU4NjkgTDQ3MS4zNTA3LDM3NS41ODY5IiBmaWxsPSIjRkVGRkREIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNzIuMDQwNyIgeD0iMjk0LjMxIiB5PSIzOTIuNjUzOCI+dHlwZSYjMTI0NTk7JiMxMjUyMTsmIzEyNTEyOyYjMTIzOTE7JiMzMjE1MzsmIzI1MjE1OyYjMzgzMDY7JiMyMDQxODsmIzEyNDM0OyYjMzQ5MjA7JiMyOTY5NDs8L3RleHQ+PC9nPjwhLS1saW5rIEN1c3RvbWVyIHRvIEFkZHJlc3MtLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0iQ3VzdG9tZXIiIGRhdGEtZW50aXR5LTI9IkFkZHJlc3MiIGRhdGEtc291cmNlLWxpbmU9IjM0IiBkYXRhLXVpZD0ibG5rNiIgaWQ9ImxpbmtfQ3VzdG9tZXJfQWRkcmVzcyI+PHBhdGggY29kZUxpbmU9IjM0IiBkPSJNMTY3LjgzLDIzOS4yNzY5IEMxNjcuODMsMjU4Ljg5NjkgMTY3LjgzLDI3OS40NDY5IDE2Ny44MywyOTguNzY2OSIgZmlsbD0ibm9uZSIgaWQ9IkN1c3RvbWVyLUFkZHJlc3MiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4LjI3MSIgeD0iMTU5LjU0NjciIHk9IjI1OS4wNzAyIj4xPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjIzLjAzNTYiIHg9IjE0My44Nzk1IiB5PSIyODcuODE1OCI+MC4uKjwvdGV4dD48L2c+PCEtLXJldmVyc2UgbGluayBBZGRyZXNzIHRvIEhvbWVBZGRyZXNzLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9IkFkZHJlc3MiIGRhdGEtZW50aXR5LTI9IkhvbWVBZGRyZXNzIiBkYXRhLXNvdXJjZS1saW5lPSIzNSIgZGF0YS11aWQ9ImxuazciIGlkPSJsaW5rX0FkZHJlc3NfSG9tZUFkZHJlc3MiPjxwYXRoIGNvZGVMaW5lPSIzNSIgZD0iTTExNC4yOTE5LDQ5My43MDY1IEMxMDAuMDExOSw1MjEuNTc2NSA5My42Myw1MzQuMDQ2OSA4My44LDU1My4yNTY5IiBmaWxsPSJub25lIiBpZD0iQWRkcmVzcy1iYWNrdG8tSG9tZUFkZHJlc3MiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSJub25lIiBwb2ludHM9IjEyMi41LDQ3Ny42ODY5LDEwOC45NTIsNDkwLjk3MDQsMTE5LjYzMTgsNDk2LjQ0MjUsMTIyLjUsNDc3LjY4NjkiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLXJldmVyc2UgbGluayBBZGRyZXNzIHRvIFdvcmtBZGRyZXNzLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9IkFkZHJlc3MiIGRhdGEtZW50aXR5LTI9IldvcmtBZGRyZXNzIiBkYXRhLXNvdXJjZS1saW5lPSIzNiIgZGF0YS11aWQ9ImxuazgiIGlkPSJsaW5rX0FkZHJlc3NfV29ya0FkZHJlc3MiPjxwYXRoIGNvZGVMaW5lPSIzNiIgZD0iTTIyMS45MDI5LDQ5My42NzMxIEMyMzIuNjkyOSw1MTQuNTIzMSAyMzUuMzksNTE5Ljc0NjkgMjQ0LjM5LDUzNy4xNDY5IiBmaWxsPSJub25lIiBpZD0iQWRkcmVzcy1iYWNrdG8tV29ya0FkZHJlc3MiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSJub25lIiBwb2ludHM9IjIxMy42Myw0NzcuNjg2OSwyMTYuNTc0Miw0OTYuNDMwNywyMjcuMjMxNyw0OTAuOTE1NCwyMTMuNjMsNDc3LjY4NjkiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLVNSQz1bUlBBekppQ201OEx0RnVNTGFRV0xQT25PNDBqbG0xWVAtM1FuY2pZSHVuUDVXNEdKV1NJMGExV2djRldSMDVOZ1kxV0dWSFl0akJtNUdJTURjcDlQenZvaHcteVVNcDRMMGZ2VXRhcFVKdEwtaGxDRmRHenFGZm96dE52VFo3TF9EMXRUcFBfRTRGOTJhWUh1anZpZTRPNzRIeVhjckM2Q0FfMTE4WGlZbWE4NzlxZW94WUV4Skk4TWZZdWQ0TElZcHRoMFF2aEh3N084OV96cnJtdFc1NkhMN3AyZjBhZkkxckVZMERhMUlHQVdSYnBtN1dmOWJ1cWR2SDh4YjRlZXBsZUV0anpveGVnZ3FqWldaS01ZSUVYd1dmZ1lYM1B1Z1lpRHBNQ2doSWdva0JBcmZjb2p1LXFMMzFOWUtqdU5pY0VHVW9BQTJRejdKNWNGOUtwS0tZdmNCMV9FUWJjdXFTM01QaEV2T1BMSGU3Qm16ZDdYNkcyaFhlNjA0MVNBaTZILWVCMWVidUNTXzFrTnBlT3dWek52bFV1X0JweEl6LTFuQ2l2cVRacl9VOWJUVlZ1MF0tLT48L2c+PC9zdmc+" class="uml" alt="uml diagram" title="" /></p>
+<h4 id="javascript">JavaScriptの読み込み不具合修正<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h4>
+<p>各インターフェース（管理者、職員、顧客）のJavaScriptファイルで共通ライブラリの読み込みが正しく行われるよう修正しました。</p>
+<h3 id="_3">アーキテクチャとの関連<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>この実装は、<a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/">アーキテクチャ概要</a>の「5. 主要なデータモデル」セクションに記載されている顧客、住所、電話番号のモデル関連を実現するものです。特に以下の部分に関連しています：</p>
+<div class="highlight"><pre><span></span><code>Customer ||--o{ HomeAddress
+Customer ||--o{ WorkAddress
+Customer ||--o{ Phone
+</code></pre></div>
+<h3 id="_4">ユースケースとの関連<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>この実装は、<a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/">ユースケース</a>の「3.2. 顧客管理」セクションに記載されている以下のユースケースをサポートします：</p>
+<ul>
+<li>S-004: 顧客情報登録</li>
+<li>S-005: 顧客情報検索</li>
+<li>S-006: 顧客情報更新</li>
+</ul>
+<h2 id="6d1204e">コミット: 6d1204e<a class="headerlink" href="#6d1204e" title="Permanent link">&para;</a></h2>
+<h3 id="_5">メッセージ<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>単一テーブ継承 #13
+</code></pre></div>
+<h3 id="_6">変更されたファイル<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/views/staff/top/index.html.erb</li>
+</ul>
+<h3 id="_7">変更内容<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 6d1204e22a968fad40ca1750e7f6ce79ac996656
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 15:33:12 2017 +0900
+
+<span class="w"> </span>   単一テーブ継承 #13
+
+<span class="gh">diff --git a/app/views/staff/top/index.html.erb b/app/views/staff/top/index.html.erb</span>
+<span class="gh">index 12d9143..cda3f0f 100644</span>
+<span class="gd">--- a/app/views/staff/top/index.html.erb</span>
+<span class="gi">+++ b/app/views/staff/top/index.html.erb</span>
+<span class="gu">@@ -8,6 +8,10 @@</span>
+<span class="w"> </span>    &lt;h2 class=&quot;sectionLabel&quot;&gt;お知らせ&lt;/h2&gt;
+<span class="w"> </span>  &lt;/div&gt;
+<span class="w"> </span>  &lt;ol class=&quot;NewsList&quot;&gt;
+<span class="gi">+    &lt;li class=&quot;NewsList__item&quot;&gt;</span>
+<span class="gi">+      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-2-4&quot;&gt;2017.2.4&lt;/time&gt;</span>
+<span class="gi">+      &lt;span class=&quot;NewsList__body&quot;&gt;顧客管理機能を追加&lt;/span&gt;</span>
+<span class="gi">+    &lt;/li&gt;</span>
+<span class="w"> </span>    &lt;li class=&quot;NewsList__item&quot;&gt;
+<span class="w"> </span>      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-2-2&quot;&gt;2017.2.2&lt;/time&gt;
+<span class="w"> </span>      &lt;span class=&quot;NewsList__body&quot;&gt;パスワード変更機能を追加&lt;/span&gt;
+</code></pre></div>
+<h2 id="423c08a">コミット: 423c08a<a class="headerlink" href="#423c08a" title="Permanent link">&para;</a></h2>
+<h3 id="_8">メッセージ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Merge branch &#39;wip&#39;
+</code></pre></div>
+<h3 id="_9">変更されたファイル<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_10">変更内容<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 423c08ab0ec62d6e038d6e9d1afc576a2203b643
+Merge: 1b81ab5 d4c2acb
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 15:31:20 2017 +0900
+
+<span class="w"> </span>   Merge branch &#39;wip&#39;
+</code></pre></div>
+<h2 id="d4c2acb">コミット: d4c2acb<a class="headerlink" href="#d4c2acb" title="Permanent link">&para;</a></h2>
+<h3 id="_11">メッセージ<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>javascript読み込み不具合修正
+</code></pre></div>
+<h3 id="_12">変更されたファイル<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/assets/javascripts/admin.js</li>
+<li>M app/assets/javascripts/customer.js</li>
+<li>M app/assets/javascripts/staff.js</li>
+</ul>
+<h3 id="_13">変更内容<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit d4c2acba426a968d6e1f36957a25b6f072c58bcd
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 15:30:54 2017 +0900
+
+<span class="w"> </span>   javascript読み込み不具合修正
+
+<span class="gh">diff --git a/app/assets/javascripts/admin.js b/app/assets/javascripts/admin.js</span>
+<span class="gh">index 46d0b8e..9c88f37 100644</span>
+<span class="gd">--- a/app/assets/javascripts/admin.js</span>
+<span class="gi">+++ b/app/assets/javascripts/admin.js</span>
+<span class="gu">@@ -14,6 +14,7 @@</span>
+<span class="w"> </span>//= require jquery_ujs
+<span class="w"> </span>//= require turbolinks
+<span class="w"> </span>//= require bootstrap-sprockets
+<span class="gi">+//= require_tree ./lib</span>
+<span class="w"> </span>//= require_tree ./shared
+<span class="w"> </span>//= require jquery-ui/datepicker
+<span class="w"> </span>//= require jquery-ui/datepicker-ja
+<span class="gh">diff --git a/app/assets/javascripts/customer.js b/app/assets/javascripts/customer.js</span>
+<span class="gh">index c8586cb..32e4a67 100644</span>
+<span class="gd">--- a/app/assets/javascripts/customer.js</span>
+<span class="gi">+++ b/app/assets/javascripts/customer.js</span>
+<span class="gu">@@ -14,6 +14,7 @@</span>
+<span class="w"> </span>//= require jquery_ujs
+<span class="w"> </span>//= require turbolinks
+<span class="w"> </span>//= require bootstrap-sprockets
+<span class="gi">+//= require_tree ./lib</span>
+<span class="w"> </span>//= require_tree ./shared
+<span class="w"> </span>//= require jquery-ui/datepicker
+<span class="w"> </span>//= require jquery-ui/datepicker-ja
+<span class="gh">diff --git a/app/assets/javascripts/main.js b/app/assets/javascripts/shared/main.js</span>
+similarity index 81%
+rename from app/assets/javascripts/main.js
+rename to app/assets/javascripts/shared/main.js
+<span class="gh">index ffd10d2..9343c80 100644</span>
+<span class="gd">--- a/app/assets/javascripts/main.js</span>
+<span class="gi">+++ b/app/assets/javascripts/shared/main.js</span>
+<span class="gu">@@ -1,26 +1,30 @@</span>
+<span class="w"> </span>/* main.js */
+
+<span class="w"> </span>/* メニュー */
+<span class="gd">-(function(){</span>
+<span class="gd">-    function toggle(targetDOM, _className, callback) {</span>
+<span class="gd">-        var className = &#39; &#39;+_className;</span>
+<span class="gd">-        return function(e) {</span>
+<span class="gd">-            if(targetDOM.className.indexOf(_className)&gt;-1) {</span>
+<span class="gd">-                targetDOM.className = targetDOM.className.replace(className, &#39;&#39;);</span>
+<span class="gd">-            } else {</span>
+<span class="gd">-                targetDOM.className += className;</span>
+<span class="gi">+(function() {</span>
+<span class="gi">+    $(document).on(&quot;turbolinks:load&quot;, function() {</span>
+<span class="gi">+        return (function(){</span>
+<span class="gi">+            function toggle(targetDOM, _className, callback) {</span>
+<span class="gi">+                var className = &#39; &#39;+_className;</span>
+<span class="gi">+                return function(e) {</span>
+<span class="gi">+                    if(targetDOM.className.indexOf(_className)&gt;-1) {</span>
+<span class="gi">+                        targetDOM.className = targetDOM.className.replace(className, &#39;&#39;);</span>
+<span class="gi">+                    } else {</span>
+<span class="gi">+                        targetDOM.className += className;</span>
+<span class="gi">+                    }</span>
+<span class="gi">+                }</span>
+<span class="w"> </span>            }
+<span class="gd">-        }</span>
+<span class="gd">-    }</span>
+<span class="gd">-    var menuButton = document.getElementById(&#39;menu-button&#39;),</span>
+<span class="gd">-        wrapper = document.getElementById(&#39;wrapper&#39;),</span>
+<span class="gd">-        overlay = document.getElementById(&#39;overlay&#39;),</span>
+<span class="gd">-        toggleMenu = toggle(wrapper, &#39;isOpened&#39;);</span>
+<span class="gi">+            var menuButton = document.getElementById(&#39;menu-button&#39;),</span>
+<span class="gi">+                wrapper = document.getElementById(&#39;wrapper&#39;),</span>
+<span class="gi">+                overlay = document.getElementById(&#39;overlay&#39;),</span>
+<span class="gi">+                toggleMenu = toggle(wrapper, &#39;isOpened&#39;);</span>
+
+<span class="gd">-    menuButton.addEventListener(&#39;click&#39;, toggleMenu, false);</span>
+<span class="gd">-    overlay.addEventListener(&#39;click&#39;, toggleMenu, false);</span>
+<span class="gi">+            menuButton.addEventListener(&#39;click&#39;, toggleMenu, false);</span>
+<span class="gi">+            overlay.addEventListener(&#39;click&#39;, toggleMenu, false);</span>
+
+<span class="gd">-}());</span>
+<span class="gi">+        }());</span>
+<span class="gi">+    });</span>
+<span class="gi">+}).call(this);</span>
+
+<span class="w"> </span>/* 画像スライダー */
+<span class="w"> </span>// @param {string} id - ラッパー要素のid
+<span class="gh">diff --git a/app/assets/javascripts/staff.js b/app/assets/javascripts/staff.js</span>
+<span class="gh">index a53eecd..aa1bf0e 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff.js</span>
+<span class="gi">+++ b/app/assets/javascripts/staff.js</span>
+<span class="gu">@@ -14,6 +14,7 @@</span>
+<span class="w"> </span>//= require jquery_ujs
+<span class="w"> </span>//= require turbolinks
+<span class="w"> </span>//= require bootstrap-sprockets
+<span class="gi">+//= require_tree ./lib</span>
+<span class="w"> </span>//= require_tree ./shared
+<span class="w"> </span>//= require jquery-ui/datepicker
+<span class="w"> </span>//= require jquery-ui/datepicker-ja
+</code></pre></div>
+<h2 id="0222844">コミット: 0222844<a class="headerlink" href="#0222844" title="Permanent link">&para;</a></h2>
+<h3 id="_14">メッセージ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>i18n設定追加
+</code></pre></div>
+<h3 id="_15">変更されたファイル<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/views/staff/customers/_customer_fields.html.erb</li>
+<li>M app/views/staff/customers/_form.html.erb</li>
+<li>M app/views/staff/customers/_home_address_fields.html.erb</li>
+<li>M app/views/staff/customers/_work_address_fields.html.erb</li>
+<li>M app/views/staff/customers/show.html.erb</li>
+<li>M config/locales/models/ja.yml</li>
+<li>M config/locales/views/ja.yml</li>
+</ul>
+<h3 id="_16">変更内容<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 0222844e278cae2ec58547831ef4678df1953ac8
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 15:09:13 2017 +0900
+
+<span class="w"> </span>   i18n設定追加
+
+<span class="gh">diff --git a/app/views/staff/customers/_customer_fields.html.erb b/app/views/staff/customers/_customer_fields.html.erb</span>
+<span class="gh">index a2871e1..cb1bc77 100644</span>
+<span class="gd">--- a/app/views/staff/customers/_customer_fields.html.erb</span>
+<span class="gi">+++ b/app/views/staff/customers/_customer_fields.html.erb</span>
+<span class="gu">@@ -2,12 +2,12 @@</span>
+<span class="w"> </span>&lt;%= markup do |m|
+<span class="w"> </span>  p = Staff::CustomerFormPresenter.new(ff,self)
+<span class="w"> </span>  p.with_options(required: true) do |q|
+<span class="gd">-    m &lt;&lt; q.text_field_block(:email, &#39;メールアドレス&#39;, size: 32)</span>
+<span class="gd">-    m &lt;&lt; q.password_field_block(:password, &#39;パスワード&#39;, size: 32)</span>
+<span class="gd">-    m &lt;&lt; q.full_name_block(:family_name, :given_name, &#39;氏名&#39;)</span>
+<span class="gd">-    m &lt;&lt; q.full_name_block(:family_name_kana, :given_name_kana, &#39;フリガナ&#39;)</span>
+<span class="gi">+    m &lt;&lt; q.text_field_block(:email, t(&#39;activerecord.attributes.customer.email&#39;), size: 32)</span>
+<span class="gi">+    m &lt;&lt; q.password_field_block(:password, t(&#39;activerecord.attributes.customer.hashed_password&#39;), size: 32)</span>
+<span class="gi">+    m &lt;&lt; q.full_name_block(:family_name, :given_name, t(&#39;activerecord.attributes.customer.full_name&#39;))</span>
+<span class="gi">+    m &lt;&lt; q.full_name_block(:family_name_kana, :given_name_kana, t(&#39;activerecord.attributes.customer.full_name&#39;))</span>
+<span class="w"> </span>  end
+<span class="gd">-  m &lt;&lt; p.birthday_field_block(:birthday, &#39;生年月日&#39;)</span>
+<span class="gi">+  m &lt;&lt; p.birthday_field_block(:birthday, t(&#39;activerecord.attributes.customer.birthday&#39;))</span>
+<span class="w"> </span>  m &lt;&lt; p.gender_field_block
+<span class="w"> </span>  end %&gt;
+<span class="w"> </span>&lt;% end %&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/customers/_form.html.erb b/app/views/staff/customers/_form.html.erb</span>
+<span class="gh">index 533dd1e..011332c 100644</span>
+<span class="gd">--- a/app/views/staff/customers/_form.html.erb</span>
+<span class="gi">+++ b/app/views/staff/customers/_form.html.erb</span>
+<span class="gu">@@ -1,13 +1,13 @@</span>
+<span class="w"> </span>&lt;%= FormPresenter.new(f,self).notes %&gt;
+<span class="w"> </span>&lt;fieldset id=&quot;customer-fields&quot;&gt;
+<span class="gd">-  &lt;legend&gt;基本情報&lt;/legend&gt;</span>
+<span class="gi">+  &lt;legend&gt;&lt;%= t(&#39;staff.customers.new.basic_info&#39;) %&gt;&lt;/legend&gt;</span>
+<span class="w"> </span>  &lt;%= render &#39;customer_fields&#39;, f: f %&gt;
+<span class="w"> </span>&lt;/fieldset&gt;
+<span class="w"> </span>&lt;fieldset id=&quot;home-address-fields&quot;&gt;
+<span class="gd">-  &lt;legend&gt;自宅住所&lt;/legend&gt;</span>
+<span class="gi">+  &lt;legend&gt;&lt;%= t(&#39;staff.customers.new.home_address&#39;) %&gt;&lt;/legend&gt;</span>
+<span class="w"> </span>  &lt;%= render &#39;home_address_fields&#39;, f: f %&gt;
+<span class="w"> </span>&lt;/fieldset&gt;
+<span class="w"> </span>&lt;fieldset id=&quot;work-address-fields&quot;&gt;
+<span class="gd">-  &lt;legend&gt;勤務先&lt;/legend&gt;</span>
+<span class="gi">+  &lt;legend&gt;&lt;%= t(&#39;staff.customers.new.work_address&#39;) %&gt;&lt;/legend&gt;</span>
+<span class="w"> </span>  &lt;%= render &#39;work_address_fields&#39;, f: f %&gt;
+<span class="w"> </span>&lt;/fieldset&gt;
+<span class="gh">diff --git a/app/views/staff/customers/_home_address_fields.html.erb b/app/views/staff/customers/_home_address_fields.html.erb</span>
+<span class="gh">index 7ae752b..0efe6ee 100644</span>
+<span class="gd">--- a/app/views/staff/customers/_home_address_fields.html.erb</span>
+<span class="gi">+++ b/app/views/staff/customers/_home_address_fields.html.erb</span>
+<span class="gu">@@ -2,11 +2,11 @@</span>
+<span class="w"> </span>&lt;%= markup do |m|
+<span class="w"> </span>  p = Staff::AddressFormPresenter.new(ff,self)
+<span class="w"> </span>  p.with_options(required: true) do |q|
+<span class="gd">-    m &lt;&lt; q.postal_code_block(:postal_code, &#39;郵便番号&#39;, size: 7)</span>
+<span class="gd">-    m &lt;&lt; q.drop_down_list_block(:prefecture, &#39;都道府県&#39;,Address::PREFECTURE_NAMES)</span>
+<span class="gd">-    m &lt;&lt; q.text_field_block(:city, &#39;市区町村&#39;, size: 16)</span>
+<span class="gd">-    m &lt;&lt; q.text_field_block(:address1, &#39;町域、番地等&#39;, size: 40)</span>
+<span class="gi">+    m &lt;&lt; q.postal_code_block(:postal_code, t(&#39;activerecord.attributes.home_address.postal_code&#39;), size: 7)</span>
+<span class="gi">+    m &lt;&lt; q.drop_down_list_block(:prefecture, t(&#39;activerecord.attributes.home_address.prefecture&#39;),Address::PREFECTURE_NAMES)</span>
+<span class="gi">+    m &lt;&lt; q.text_field_block(:city, t(&#39;activerecord.attributes.home_address.city&#39;), size: 16)</span>
+<span class="gi">+    m &lt;&lt; q.text_field_block(:address1, t(&#39;activerecord.attributes.home_address.address1&#39;), size: 40)</span>
+<span class="w"> </span>  end
+<span class="gd">-  m &lt;&lt; p.text_field_block(:address2, &#39;建物名、部屋番号名&#39;, size: 40)</span>
+<span class="gi">+  m &lt;&lt; p.text_field_block(:address2, t(&#39;activerecord.attributes.home_address.address2&#39;), size: 40)</span>
+<span class="w"> </span>end %&gt;
+<span class="w"> </span>&lt;% end %&gt;
+<span class="gh">diff --git a/app/views/staff/customers/_work_address_fields.html.erb b/app/views/staff/customers/_work_address_fields.html.erb</span>
+<span class="gh">index f660f7d..102516e 100644</span>
+<span class="gd">--- a/app/views/staff/customers/_work_address_fields.html.erb</span>
+<span class="gi">+++ b/app/views/staff/customers/_work_address_fields.html.erb</span>
+<span class="gu">@@ -1,12 +1,12 @@</span>
+<span class="w"> </span>&lt;%= f.fields_for :work_address, f.object.customer.work_address do |ff| %&gt;
+<span class="w"> </span>    &lt;%= markup do |m|
+<span class="w"> </span>      p = Staff::AddressFormPresenter.new(ff,self)
+<span class="gd">-      m &lt;&lt; p.text_field_block(:company_name, &#39;会社名&#39;, size: 40, required: true)</span>
+<span class="gd">-      m &lt;&lt; p.text_field_block(:division_name, &#39;部署名&#39;, size: 40)</span>
+<span class="gd">-      m &lt;&lt; p.postal_code_block(:postal_code, &#39;郵便番号&#39;, size: 7)</span>
+<span class="gd">-      m &lt;&lt; p.drop_down_list_block(:prefecture, &#39;都道府県&#39;,Address::PREFECTURE_NAMES)</span>
+<span class="gd">-      m &lt;&lt; p.text_field_block(:city, &#39;市区町村&#39;, size: 16)</span>
+<span class="gd">-      m &lt;&lt; p.text_field_block(:address1, &#39;町域、番地等&#39;, size: 40)</span>
+<span class="gd">-      m &lt;&lt; p.text_field_block(:address2, &#39;建物名、部屋番号名&#39;, size: 40)</span>
+<span class="gi">+      m &lt;&lt; p.text_field_block(:company_name, t(&#39;activerecord.attributes.work_address.company_name&#39;), size: 40, required: true)</span>
+<span class="gi">+      m &lt;&lt; p.text_field_block(:division_name, t(&#39;activerecord.attributes.work_address.division_name&#39;), size: 40)</span>
+<span class="gi">+      m &lt;&lt; p.postal_code_block(:postal_code, t(&#39;activerecord.attributes.work_address.postal_code&#39;), size: 7)</span>
+<span class="gi">+      m &lt;&lt; p.drop_down_list_block(:prefecture, t(&#39;activerecord.attributes.work_address.prefecture&#39;),Address::PREFECTURE_NAMES)</span>
+<span class="gi">+      m &lt;&lt; p.text_field_block(:city, t(&#39;activerecord.attributes.work_address.city&#39;), size: 16)</span>
+<span class="gi">+      m &lt;&lt; p.text_field_block(:address1, t(&#39;activerecord.attributes.work_address.address1&#39;), size: 40)</span>
+<span class="gi">+      m &lt;&lt; p.text_field_block(:address2, t(&#39;activerecord.attributes.work_address.address2&#39;), size: 40)</span>
+<span class="w"> </span>    end %&gt;
+<span class="w"> </span>&lt;% end %&gt;
+<span class="gh">diff --git a/app/views/staff/customers/show.html.erb b/app/views/staff/customers/show.html.erb</span>
+<span class="gh">index 53cec0c..0b78d96 100644</span>
+<span class="gd">--- a/app/views/staff/customers/show.html.erb</span>
+<span class="gi">+++ b/app/views/staff/customers/show.html.erb</span>
+<span class="gu">@@ -5,33 +5,33 @@</span>
+
+<span class="w"> </span>&lt;section class=&quot;Section l-column Table StaffTable&quot;&gt;
+<span class="w"> </span>  &lt;table class=&quot;Table__body Table__body--attributes StaffTable__body&quot;&gt;
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot; colspan=&quot;2&quot;&gt;基本情報&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot; colspan=&quot;2&quot;&gt;&lt;%= t(&#39;.basic_info&#39;) %&gt;&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="w"> </span>    &lt;% p1 = Staff::CustomerPresenter.new(@customer, self) %&gt;
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;氏名&lt;/th&gt;&lt;td&gt;&lt;%= p1.full_name %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;フリガナ&lt;/th&gt;&lt;td&gt;&lt;%= p1.full_name_kana %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;生年月日&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p1.birthday %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;性別&lt;/th&gt;&lt;td&gt;&lt;%= p1.gender %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;登録日時&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p1.created_at %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;更新日時&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p1.updated_at %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.full_name&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p1.full_name %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.full_name_kana&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p1.full_name_kana %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.birthday&#39;) %&gt;&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p1.birthday %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.gender&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p1.gender %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.create_at&#39;) %&gt;&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p1.created_at %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.update_at&#39;)%&gt;&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p1.updated_at %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="w"> </span>    &lt;% if @customer.home_address %&gt;
+<span class="w"> </span>      &lt;% p2 = Staff::AddressPresenter.new(@customer.home_address, self) %&gt;
+<span class="gd">-      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot; colspan=&quot;2&quot;&gt;自宅住所&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="gd">-      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;郵便番号&lt;/th&gt;&lt;td&gt;&lt;%= p2.postal_code %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;都道府県&lt;/th&gt;&lt;td&gt;&lt;%= p2.prefecture %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;市区町村&lt;/th&gt;&lt;td&gt;&lt;%= p2.city %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;町域、番地等&lt;/th&gt;&lt;td&gt;&lt;%= p2.address1 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;建物名、部屋番号&lt;/th&gt;&lt;td&gt;&lt;%= p2.address2 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot; colspan=&quot;2&quot;&gt;&lt;%= t(&#39;.home_address&#39;) %&gt;&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="gi">+      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.home_address_postal_code&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p2.postal_code %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.home_address_prefecture&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p2.prefecture %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.home_address_city&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p2.city %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.home_address_address1&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p2.address1 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+      &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.home_address_address2&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p2.address2 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="w"> </span>    &lt;% end %&gt;
+<span class="w"> </span>    &lt;% if @customer.work_address %&gt;
+<span class="w"> </span>        &lt;% p3 = Staff::AddressPresenter.new(@customer.work_address, self) %&gt;
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot; colspan=&quot;2&quot;&gt;勤務先&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;会社名&lt;/th&gt;&lt;td&gt;&lt;%= p3.company_name %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;部署名&lt;/th&gt;&lt;td&gt;&lt;%= p3.division_name %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;郵便番号&lt;/th&gt;&lt;td&gt;&lt;%= p3.postal_code %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;都道府県&lt;/th&gt;&lt;td&gt;&lt;%= p3.prefecture %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;市区町村&lt;/th&gt;&lt;td&gt;&lt;%= p3.city %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;町域、番地等&lt;/th&gt;&lt;td&gt;&lt;%= p3.address1 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gd">-        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;建物名、部屋番号&lt;/th&gt;&lt;td&gt;&lt;%= p3.address2 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot; colspan=&quot;2&quot;&gt;&lt;%= t(&#39;.work_address&#39;) %&gt;&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_company_name&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.company_name %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_division_name&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.division_name %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_postal_code&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.postal_code %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_prefecture&#39;)%&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.prefecture %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_city&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.city %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_address1&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.address1 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="gi">+        &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.work_address_address2&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p3.address2 %&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="w"> </span>    &lt;% end %&gt;
+<span class="w"> </span>  &lt;/table&gt;
+<span class="w"> </span>&lt;/section&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/config/locales/models/ja.yml b/config/locales/models/ja.yml</span>
+<span class="gh">index 9f4947d..b4eafec 100644</span>
+<span class="gd">--- a/config/locales/models/ja.yml</span>
+<span class="gi">+++ b/config/locales/models/ja.yml</span>
+<span class="gu">@@ -4,6 +4,8 @@ ja:</span>
+<span class="w"> </span>      administrator: 管理者
+<span class="w"> </span>      staff_member: 職員
+<span class="w"> </span>      staff_event: 職員イベント
+<span class="gi">+      customer: 顧客</span>
+<span class="gi">+      address: 住所</span>
+
+<span class="w"> </span>    attributes:
+<span class="w"> </span>      administrator:
+<span class="gu">@@ -35,6 +37,46 @@ ja:</span>
+<span class="w"> </span>          logged_out: ログアウト
+<span class="w"> </span>          rejected: ログイン拒否
+
+<span class="gi">+      customer:</span>
+<span class="gi">+        email: メールアドレス</span>
+<span class="gi">+        email_for_index: 顧客用メールアドレス</span>
+<span class="gi">+        family_name: 姓</span>
+<span class="gi">+        given_name: 名</span>
+<span class="gi">+        family_name_kana: 姓（カナ）</span>
+<span class="gi">+        given_name_kana: 名（カナ）</span>
+<span class="gi">+        gender: 性別</span>
+<span class="gi">+        birthday: 誕生日</span>
+<span class="gi">+        hashed_password: パスワード</span>
+<span class="gi">+        home_address: 自宅住所</span>
+<span class="gi">+        work_address: 勤務先</span>
+<span class="gi">+        full_name: 氏名</span>
+<span class="gi">+        full_name_kana: フリガナ</span>
+<span class="gi">+</span>
+<span class="gi">+      address:</span>
+<span class="gi">+        postal_code: 郵便番号</span>
+<span class="gi">+        prefecture: 都道府県</span>
+<span class="gi">+        city: 市区町村</span>
+<span class="gi">+        address1: 町域・番地等</span>
+<span class="gi">+        address2: 建物名・部屋番号</span>
+<span class="gi">+        company_name: 会社名</span>
+<span class="gi">+        division_name: 部署名</span>
+<span class="gi">+</span>
+<span class="gi">+      home_address:</span>
+<span class="gi">+        postal_code: 郵便番号</span>
+<span class="gi">+        prefecture: 都道府県</span>
+<span class="gi">+        city: 市区町村</span>
+<span class="gi">+        address1: 町域・番地等</span>
+<span class="gi">+        address2: 建物名・部屋番号</span>
+<span class="gi">+</span>
+<span class="gi">+      work_address:</span>
+<span class="gi">+        postal_code: 郵便番号</span>
+<span class="gi">+        prefecture: 都道府県</span>
+<span class="gi">+        city: 市区町村</span>
+<span class="gi">+        address1: 町域・番地等</span>
+<span class="gi">+        address2: 建物名・部屋番号</span>
+<span class="gi">+        company_name: 会社名</span>
+<span class="gi">+        division_name: 部署名</span>
+<span class="gi">+</span>
+<span class="w"> </span>    errors:
+<span class="w"> </span>      models:
+<span class="w"> </span>        staff_member:
+<span class="gh">diff --git a/config/locales/views/ja.yml b/config/locales/views/ja.yml</span>
+<span class="gh">index 56c6d3a..01db59a 100644</span>
+<span class="gd">--- a/config/locales/views/ja.yml</span>
+<span class="gi">+++ b/config/locales/views/ja.yml</span>
+<span class="gu">@@ -30,8 +30,32 @@ ja:</span>
+<span class="w"> </span>        confirm: &#39;本当に削除しますか?&#39;
+<span class="w"> </span>      show:
+<span class="w"> </span>        title: &#39;顧客詳細情報&#39;
+<span class="gi">+        basic_info: &#39;基本情報&#39;</span>
+<span class="gi">+        home_address: &#39;自宅住所&#39;</span>
+<span class="gi">+        work_address: &#39;勤務先&#39;</span>
+<span class="gi">+        full_name: &#39;氏名&#39;</span>
+<span class="gi">+        full_name_kana: &#39;フリガナ&#39;</span>
+<span class="gi">+        birthday: &#39;生年月日&#39;</span>
+<span class="gi">+        gender: &#39;性別&#39;</span>
+<span class="gi">+        create_at: &#39;登録日時&#39;</span>
+<span class="gi">+        update_at: &#39;更新日時&#39;</span>
+<span class="gi">+        home_address_postal_code: &#39;郵便番号&#39;</span>
+<span class="gi">+        home_address_prefecture: &#39;都道府県&#39;</span>
+<span class="gi">+        home_address_city: &#39;市区町村&#39;</span>
+<span class="gi">+        home_address_address1: &#39;町域、番地等&#39;</span>
+<span class="gi">+        home_address_address2: &#39;建物名、部屋番号&#39;</span>
+<span class="gi">+        work_address_company_name: &#39;会社名&#39;</span>
+<span class="gi">+        work_address_division_name: &#39;部署名&#39;</span>
+<span class="gi">+        work_address_postal_code: &#39;郵便番号&#39;</span>
+<span class="gi">+        work_address_prefecture: &#39;都道府県&#39;</span>
+<span class="gi">+        work_address_city: &#39;市区町村&#39;</span>
+<span class="gi">+        work_address_address1: &#39;町域、番地等&#39;</span>
+<span class="gi">+        work_address_address2: &#39;建物名、部屋番号&#39;</span>
+<span class="w"> </span>      new:
+<span class="w"> </span>        title: &#39;顧客の新規登録&#39;
+<span class="gi">+        basic_info: &#39;基本情報&#39;</span>
+<span class="gi">+        home_address: &#39;自宅住所&#39;</span>
+<span class="gi">+        work_address: &#39;勤務先&#39;</span>
+<span class="w"> </span>        create: &#39;登録&#39;
+<span class="w"> </span>        cancel: &#39;キャンセル&#39;
+<span class="w"> </span>      edit:
+</code></pre></div>
+<h2 id="c7ef32d">コミット: c7ef32d<a class="headerlink" href="#c7ef32d" title="Permanent link">&para;</a></h2>
+<h3 id="_17">メッセージ<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>destroyアクションの実装 #13
+</code></pre></div>
+<h3 id="_18">変更されたファイル<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/controllers/staff/customers_controller.rb</li>
+<li>M config/locales/controllers/ja.yml</li>
+</ul>
+<h3 id="_19">変更内容<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit c7ef32daf2bc5d710073f6e169ca2df3e7445e07
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 14:08:02 2017 +0900
+
+<span class="w"> </span>   destroyアクションの実装 #13
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 6d5229b..ef5ff0b 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -564,6 +564,7 @@ git push heroku master</span>
+<span class="w"> </span>#### 顧客アカウントの新規登録・更新・削除
+<span class="w"> </span>+ フォームオブジェクトの拡張
+<span class="w"> </span>+ create/updateアクションの実装
+<span class="gi">++ destroyアクションの実装</span>
+
+<span class="w"> </span>### Capybara
+<span class="w"> </span>### フォームオブジェクト
+<span class="gh">diff --git a/app/controllers/staff/customers_controller.rb b/app/controllers/staff/customers_controller.rb</span>
+<span class="gh">index 6207a88..3969abe 100644</span>
+<span class="gd">--- a/app/controllers/staff/customers_controller.rb</span>
+<span class="gi">+++ b/app/controllers/staff/customers_controller.rb</span>
+<span class="gu">@@ -38,4 +38,11 @@ class Staff::CustomersController &lt; Staff::Base</span>
+<span class="w"> </span>      render action: &#39;edit&#39;
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+<span class="gi">+</span>
+<span class="gi">+  def destroy</span>
+<span class="gi">+    customer = Customer.find(params[:id])</span>
+<span class="gi">+    customer.destroy!</span>
+<span class="gi">+    flash.notice = t(&#39;.flash_notice&#39;)</span>
+<span class="gi">+    redirect_to :staff_customers</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+<span class="gh">diff --git a/config/locales/controllers/ja.yml b/config/locales/controllers/ja.yml</span>
+<span class="gh">index bbfe3ee..b400f59 100644</span>
+<span class="gd">--- a/config/locales/controllers/ja.yml</span>
+<span class="gi">+++ b/config/locales/controllers/ja.yml</span>
+<span class="gu">@@ -29,6 +29,8 @@ ja:</span>
+<span class="w"> </span>      update:
+<span class="w"> </span>        flash_notice: &#39;顧客を更新しました。&#39;
+<span class="w"> </span>        flash_alert: &#39;入力に誤りがあります。&#39;
+<span class="gi">+      destroy:</span>
+<span class="gi">+        flash_notice: &#39;顧客をアカウントを削除しました。&#39;</span>
+<span class="w"> </span>  admin:
+<span class="w"> </span>    base:
+<span class="w"> </span>      authrize:
+</code></pre></div>
+<h3 id="_20">構造変更<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="c77696c">コミット: c77696c<a class="headerlink" href="#c77696c" title="Permanent link">&para;</a></h2>
+<h3 id="_21">メッセージ<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>create/updateアクションの実装 #13
+</code></pre></div>
+<h3 id="_22">変更されたファイル<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/controllers/staff/customers_controller.rb</li>
+<li>M app/forms/staff/customer_form.rb</li>
+<li>M config/locales/controllers/ja.yml</li>
+</ul>
+<h3 id="_23">変更内容<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit c77696cfeb66c72ff280f5b4695f051377179c63
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 14:02:05 2017 +0900
+
+<span class="w"> </span>   create/updateアクションの実装 #13
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index efc01d4..6d5229b 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -563,6 +563,7 @@ git push heroku master</span>
+
+<span class="w"> </span>#### 顧客アカウントの新規登録・更新・削除
+<span class="w"> </span>+ フォームオブジェクトの拡張
+<span class="gi">++ create/updateアクションの実装</span>
+
+<span class="w"> </span>### Capybara
+<span class="w"> </span>### フォームオブジェクト
+<span class="gh">diff --git a/app/controllers/staff/customers_controller.rb b/app/controllers/staff/customers_controller.rb</span>
+<span class="gh">index ffa88e4..6207a88 100644</span>
+<span class="gd">--- a/app/controllers/staff/customers_controller.rb</span>
+<span class="gi">+++ b/app/controllers/staff/customers_controller.rb</span>
+<span class="gu">@@ -14,4 +14,28 @@ class Staff::CustomersController &lt; Staff::Base</span>
+<span class="w"> </span>  def edit
+<span class="w"> </span>    @customer_form = Staff::CustomerForm.new(Customer.find(params[:id]))
+<span class="w"> </span>  end
+<span class="gi">+</span>
+<span class="gi">+  def create</span>
+<span class="gi">+    @customer_form = Staff::CustomerForm.new</span>
+<span class="gi">+    @customer_form.assign_attributes(params[:form])</span>
+<span class="gi">+    if @customer_form.save</span>
+<span class="gi">+      flash.notice = t(&#39;.flash_notice&#39;)</span>
+<span class="gi">+      redirect_to action: &#39;index&#39;</span>
+<span class="gi">+    else</span>
+<span class="gi">+      flash.now.alert = t(&#39;.flash_alert&#39;)</span>
+<span class="gi">+      render action: &#39;new&#39;</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def update</span>
+<span class="gi">+    @customer_form = Staff::CustomerForm.new(Customer.find(params[:id]))</span>
+<span class="gi">+    @customer_form.assign_attributes(params[:form])</span>
+<span class="gi">+    if @customer_form.save</span>
+<span class="gi">+      flash.notice = t(&#39;.flash_notice&#39;)</span>
+<span class="gi">+      redirect_to action: &#39;index&#39;</span>
+<span class="gi">+    else</span>
+<span class="gi">+      flash.now.alert = t(&#39;.flash_alert&#39;)</span>
+<span class="gi">+      render action: &#39;edit&#39;</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+<span class="gh">diff --git a/app/forms/staff/customer_form.rb b/app/forms/staff/customer_form.rb</span>
+<span class="gh">index 2c43187..69dc6e2 100644</span>
+<span class="gd">--- a/app/forms/staff/customer_form.rb</span>
+<span class="gi">+++ b/app/forms/staff/customer_form.rb</span>
+<span class="gu">@@ -14,7 +14,7 @@ class Staff::CustomerForm</span>
+<span class="w"> </span>  def assign_attributes(params = {})
+<span class="w"> </span>    @params = params
+
+<span class="gd">-    customer.assign_attributes(customer_parmas)</span>
+<span class="gi">+    customer.assign_attributes(customer_params)</span>
+<span class="w"> </span>    customer.home_address.assign_attributes(home_address_params)
+<span class="w"> </span>    customer.work_address.assign_attributes(work_address_params)
+<span class="w"> </span>  end
+<span class="gh">diff --git a/config/locales/controllers/ja.yml b/config/locales/controllers/ja.yml</span>
+<span class="gh">index 269cbec..bbfe3ee 100644</span>
+<span class="gd">--- a/config/locales/controllers/ja.yml</span>
+<span class="gi">+++ b/config/locales/controllers/ja.yml</span>
+<span class="gu">@@ -22,6 +22,13 @@ ja:</span>
+<span class="w"> </span>      update:
+<span class="w"> </span>        flash_success: &#39;パスワードを変更しました。&#39;
+<span class="w"> </span>        flash_alert: &#39;入力に誤りがあります。&#39;
+<span class="gi">+    customers:</span>
+<span class="gi">+      create:</span>
+<span class="gi">+        flash_notice: &#39;顧客を追加しました。&#39;</span>
+<span class="gi">+        flash_alert: &#39;入力に誤りがあります。&#39;</span>
+<span class="gi">+      update:</span>
+<span class="gi">+        flash_notice: &#39;顧客を更新しました。&#39;</span>
+<span class="gi">+        flash_alert: &#39;入力に誤りがあります。&#39;</span>
+<span class="w"> </span>  admin:
+<span class="w"> </span>    base:
+<span class="w"> </span>      authrize:
+</code></pre></div>
+<h3 id="_24">構造変更<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="223cdfb">コミット: 223cdfb<a class="headerlink" href="#223cdfb" title="Permanent link">&para;</a></h2>
+<h3 id="_25">メッセージ<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>フォームオブジェクトの拡張 #13
+</code></pre></div>
+<h3 id="_26">変更されたファイル<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/forms/staff/customer_form.rb</li>
+</ul>
+<h3 id="_27">変更内容<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 223cdfb88204178f64f8a2f8debd18494333f3be
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Feb 4 13:44:17 2017 +0900
+
+<span class="w"> </span>   フォームオブジェクトの拡張 #13
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 23ad161..efc01d4 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -562,6 +562,7 @@ git push heroku master</span>
+<span class="w"> </span>+ 部分テンプレート郡の作成
+
+<span class="w"> </span>#### 顧客アカウントの新規登録・更新・削除
+<span class="gi">++ フォームオブジェクトの拡張</span>
+
+<span class="w"> </span>### Capybara
+<span class="w"> </span>### フォームオブジェクト
+<span class="gh">diff --git a/app/forms/staff/customer_form.rb b/app/forms/staff/customer_form.rb</span>
+<span class="gh">index 3a7edae..2c43187 100644</span>
+<span class="gd">--- a/app/forms/staff/customer_form.rb</span>
+<span class="gi">+++ b/app/forms/staff/customer_form.rb</span>
+<span class="gu">@@ -10,4 +10,56 @@ class Staff::CustomerForm</span>
+<span class="w"> </span>    @customer.build_home_address unless @customer.home_address
+<span class="w"> </span>    @customer.build_work_address unless @customer.work_address
+<span class="w"> </span>  end
+<span class="gi">+</span>
+<span class="gi">+  def assign_attributes(params = {})</span>
+<span class="gi">+    @params = params</span>
+<span class="gi">+</span>
+<span class="gi">+    customer.assign_attributes(customer_parmas)</span>
+<span class="gi">+    customer.home_address.assign_attributes(home_address_params)</span>
+<span class="gi">+    customer.work_address.assign_attributes(work_address_params)</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def save</span>
+<span class="gi">+    ActiveRecord::Base.transaction do</span>
+<span class="gi">+      customer.save!</span>
+<span class="gi">+      customer.home_address.save!</span>
+<span class="gi">+      customer.work_address.save!</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  private</span>
+<span class="gi">+  def customer_params</span>
+<span class="gi">+    @params.require(:customer).permit(</span>
+<span class="gi">+                                  :email,</span>
+<span class="gi">+                                  :password,</span>
+<span class="gi">+                                  :family_name,</span>
+<span class="gi">+                                  :given_name,</span>
+<span class="gi">+                                  :family_name_kana,</span>
+<span class="gi">+                                  :given_name_kana,</span>
+<span class="gi">+                                  :birthday,</span>
+<span class="gi">+                                  :gender</span>
+<span class="gi">+    )</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def home_address_params</span>
+<span class="gi">+    @params.require(:home_address).permit(</span>
+<span class="gi">+                                     :postal_code,</span>
+<span class="gi">+                                     :prefecture,</span>
+<span class="gi">+                                     :city,</span>
+<span class="gi">+                                     :address1,</span>
+<span class="gi">+                                     :address2,</span>
+<span class="gi">+    )</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def work_address_params</span>
+<span class="gi">+    @params.require(:work_address).permit(</span>
+<span class="gi">+                                      :postal_code,</span>
+<span class="gi">+                                      :prefecture,</span>
+<span class="gi">+                                      :city,</span>
+<span class="gi">+                                      :address1,</span>
+<span class="gi">+                                      :address2,</span>
+<span class="gi">+                                      :company_name,</span>
+<span class="gi">+                                      :division_name</span>
+<span class="gi">+    )</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+\ No newline at end of file
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

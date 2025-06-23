@@ -1,0 +1,3332 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20170318/">
+      
+      
+        <link rel="next" href="../20170327/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20170325 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2017-03-25" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20170325
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3a25da2-staffmessages-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 3a25da2 - staff/messagesコントローラ #21
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 3a25da2 - staff/messagesコントローラ #21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージコントローラの構造
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#40d84d3" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 40d84d3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 40d84d3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#70c3a8c" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 70c3a8c
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 70c3a8c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9079487" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 9079487
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 9079487">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1dc1b6a" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 1dc1b6a
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 1dc1b6a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#80dd166" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 80dd166
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 80dd166">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e0ff568" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: e0ff568
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: e0ff568">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4b6e490" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 4b6e490
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 4b6e490">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5d9ae1a" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 5d9ae1a
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 5d9ae1a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59ac04f" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 59ac04f
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 59ac04f">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7899110" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 7899110
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 7899110">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9822a10" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 9822a10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 9822a10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2017-03-25">作業履歴 2017-03-25<a class="headerlink" href="#2017-03-25" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2017-03-25の作業内容をまとめています。このジャーナルでは、メッセージのタグ付け機能に関連する改善と拡張を行いました。具体的には、タグによるメッセージの絞り込み機能の実装、JavaScriptの改善、データベースの照合順序の変更などを実施し、メッセージ管理機能の使いやすさと保守性を向上させました。</p>
+<h2 id="3a25da2-staffmessages-21">コミット: 3a25da2 - staff/messagesコントローラ #21<a class="headerlink" href="#3a25da2-staffmessages-21" title="Permanent link">&para;</a></h2>
+<h3 id="_2">概要<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>メッセージコントローラのコードをリファクタリングし、タグによるメッセージの絞り込み機能を全てのメッセージ一覧（通常、受信、送信、削除済み）に適用できるようにしました。これにより、ユーザーはどのメッセージ一覧画面でもタグを使って効率的に情報を絞り込むことができます。</p>
+<h3 id="_3">技術的詳細<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>重複していたタグによる絞り込みロジックを<code>narrow_down</code>という共通のプライベートメソッドに抽出</li>
+<li>各アクション（index, inbound, outbound, deleted）で<code>narrow_down</code>メソッドを呼び出すように修正</li>
+<li>全てのアクションで明示的に<code>render action: 'index'</code>を指定し、一貫性を確保</li>
+<li>ページネーションの適用タイミングを統一（絞り込み後にページネーション）</li>
+</ul>
+<h3 id="_4">変更されたファイル<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/controllers/staff/messages_controller.rb</li>
+</ul>
+<h3 id="_5">変更内容<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 3a25da28aee8e59eb7edd383f742b3e4e36fa0b0
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 18:20:05 2017 +0900
+
+<span class="w"> </span>   staff/messagesコントローラ #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 5d11bd6..d9c1c78 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -782,6 +782,7 @@ git push heroku master</span>
+<span class="w"> </span>+ ルーティング
+<span class="w"> </span>+ indexアクションの変更
+<span class="w"> </span>+ リンクの設置
+<span class="gi">++ staff/messagesコントローラ</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/controllers/staff/messages_controller.rb b/app/controllers/staff/messages_controller.rb</span>
+<span class="gh">index 8c8bddf..00b5e99 100644</span>
+<span class="gd">--- a/app/controllers/staff/messages_controller.rb</span>
+<span class="gi">+++ b/app/controllers/staff/messages_controller.rb</span>
+<span class="gu">@@ -3,27 +3,32 @@ class Staff::MessagesController &lt; Staff::Base</span>
+
+<span class="w"> </span>  def index
+<span class="w"> </span>    @messages = Message.where(deleted: false).page(params[:page])
+<span class="gd">-    if params[:tag_id]</span>
+<span class="gd">-      @messages = @messages.joins(:message_tag_links).where(&#39;message_tag_links.tag_id&#39; =&gt; params[:tag_id])</span>
+<span class="gd">-    end</span>
+<span class="gi">+    narrow_down</span>
+<span class="w"> </span>    @messages = @messages.page(params[:page])
+<span class="gi">+    render action: &#39;index&#39;</span>
+<span class="w"> </span>  end
+
+<span class="w"> </span>  # GET
+<span class="w"> </span>  def inbound
+<span class="w"> </span>    @messages = CustomerMessage.where(deleted: false).page(params[:page])
+<span class="gi">+    narrow_down</span>
+<span class="gi">+    @messages = @messages.page(params[:page])</span>
+<span class="w"> </span>    render action: &#39;index&#39;
+<span class="w"> </span>  end
+
+<span class="w"> </span>  # GET
+<span class="w"> </span>  def outbound
+<span class="w"> </span>    @messages = StaffMessage.where(deleted: false).page(params[:page])
+<span class="gi">+    narrow_down</span>
+<span class="gi">+    @messages = @messages.page(params[:page])</span>
+<span class="w"> </span>    render action: &#39;index&#39;
+<span class="w"> </span>  end
+
+<span class="w"> </span>  # GET
+<span class="w"> </span>  def deleted
+<span class="w"> </span>    @messages = Message.where(deleted: true).page(params[:page])
+<span class="gi">+    narrow_down</span>
+<span class="gi">+    @messages = @messages.page(params[:page])</span>
+<span class="w"> </span>    render action: &#39;index&#39;
+<span class="w"> </span>  end
+
+<span class="gu">@@ -55,4 +60,11 @@ class Staff::MessagesController &lt; Staff::Base</span>
+<span class="w"> </span>    end
+<span class="w"> </span>    render text: &#39;OK&#39;
+<span class="w"> </span>  end
+<span class="gi">+</span>
+<span class="gi">+  private</span>
+<span class="gi">+  def narrow_down</span>
+<span class="gi">+    if params[:tag_id]</span>
+<span class="gi">+      @messages = @messages.joins(:message_tag_links).where(&#39;message_tag_links.tag_id&#39; =&gt; params[:tag_id])</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+</code></pre></div>
+<h3 id="_6">メッセージコントローラの構造<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSI0MzBweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjQ1M3B4O2hlaWdodDo0MzBweDtiYWNrZ3JvdW5kOiMwMDAwMDA7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0NTMgNDMwIiB3aWR0aD0iNDUzcHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48cmVjdCBmaWxsPSIjMDgxOTBEIiBoZWlnaHQ9IjEiIHN0eWxlPSJzdHJva2U6IzA4MTkwRDtzdHJva2Utd2lkdGg6MTsiIHdpZHRoPSIxIiB4PSIwIiB5PSIwIi8+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTY2LjkyMTkiIHg9IjUiIHk9IjE3Ij5QbGFudFVNTCAxLjIwMjUuNGJldGEyPC90ZXh0PjxyZWN0IGZpbGw9IiMzM0ZGMDIiIGhlaWdodD0iMjEuMjk2OSIgc3R5bGU9InN0cm9rZTojMzNGRjAyO3N0cm9rZS13aWR0aDoxOyIgd2lkdGg9IjQ0MS42NDk0IiB4PSI1IiB5PSIyNi45Njg4Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE4MS4wMjI1IiB4PSI2IiB5PSI0MS45Njg4Ij5bRnJvbSBzdHJpbmcgKGxpbmUgMjEpIF08L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuODc0IiB4PSI1IiB5PSI2Mi4yNjU2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgxLjQyMjkiIHg9IjUiIHk9Ijc4LjU2MjUiPkBzdGFydHVtbDwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNDEyLjk3MiIgeD0iNSIgeT0iOTQuODU5NCI+dGl0bGUgU3RhZmY6Ok1lc3NhZ2VzQ29udHJvbGxlciAtICYjMTI0Nzk7JiMxMjQ2NDsmIzEyMzk1OyYjMTI0MjQ7JiMxMjQyNzsmIzMyMDk0OyYjMTI0MjY7JiMzNjc5NjsmIzEyNDE1OyYjMjcyMzE7JiMzMzAyMTs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuODc0IiB4PSI1IiB5PSIxMTEuMTU2MyI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIyNzEuMjQzMiIgeD0iNSIgeT0iMTI3LjQ1MzEiPnNraW5wYXJhbSBiYWNrZ3JvdW5kQ29sb3Igd2hpdGU8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjIyNy42MTYyIiB4PSI1IiB5PSIxNDMuNzUiPnNraW5wYXJhbSBoYW5kd3JpdHRlbiBmYWxzZTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC44NzQiIHg9IjUiIHk9IjE2MC4wNDY5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3OS41NzYyIiB4PSI1IiB5PSIxNzYuMzQzOCI+Y2xhc3MgIlN0YWZmOjpNZXNzYWdlc0NvbnRyb2xsZXIiIHs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY3LjgzOTgiIHg9IjUiIHk9IjE5Mi42NDA2Ij4raW5kZXgoKTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODguODg3NyIgeD0iNSIgeT0iMjA4LjkzNzUiPitpbmJvdW5kKCk8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEwMC4zOTk0IiB4PSI1IiB5PSIyMjUuMjM0NCI+K291dGJvdW5kKCk8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijg0LjU0NjkiIHg9IjUiIHk9IjI0MS41MzEzIj4rZGVsZXRlZCgpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4NC43MTc4IiB4PSI1IiB5PSIyNTcuODI4MSI+K2Rlc3Ryb3koKTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjkuMDcwMyIgeD0iNSIgeT0iMjc0LjEyNSI+K2NvdW50KCk8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjY4ODUiIHg9IjUiIHk9IjI5MC40MjE5Ij4rdGFnKCk8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyMy45MjE5IiB4PSI1IiB5PSIzMDYuNzE4OCI+LW5hcnJvd19kb3duKCk8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjkuOTY2OCIgeD0iNSIgeT0iMzIzLjAxNTYiPn08L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuODc0IiB4PSI1IiB5PSIzMzkuMzEyNSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0NDEuNjQ5NCIgeD0iNSIgeT0iMzU1LjYwOTQiPm5vdGUgcmlnaHQgb2YgIlN0YWZmOjpNZXNzYWdlc0NvbnRyb2xsZXIiOjpuYXJyb3dfZG93bjwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTk1Ljk5OTEiIHg9IjUiIHk9IjM3MS45MDYzIj4mIzIwODQ5OyYjMzY4OTA7JiMyMTI3MDsmIzEyMzczOyYjMTI0Mjg7JiMxMjM4MzsmIzMyMDk0OyYjMTI0MjY7JiMzNjc5NjsmIzEyNDE1OyYjMTI1MjU7JiMxMjQ3MjsmIzEyNDgzOyYjMTI0NjM7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIyNjguODI5IiB4PSI1IiB5PSIzODguMjAzMSI+JiMxMjQ3OTsmIzEyNDY0O0lEJiMxMjM5NTsmIzEyNDI0OyYjMTI0Mjc7JiMxMjUxMzsmIzEyNDgzOyYjMTI0NzU7JiMxMjU0MDsmIzEyNDcyOyYjMTIzOTg7JiMzMjA5NDsmIzEyNDI2OyYjMzY3OTY7JiMxMjQxNTsmIzEyNDM0OyYjMzQ4OTI7JiMxMjM1ODs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHQtZGVjb3JhdGlvbj0id2F2eSB1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjcwLjEyOTkiIHg9IjUiIHk9IjQwNC41Ij5lbmQgbm90ZTwvdGV4dD48dGV4dCBmaWxsPSIjRkYwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzk1LjAzNTIiIHg9IjkuODc0IiB5PSI0MjAuNzk2OSI+Tm90aGluZyB0byBub3RlIHRvIChBc3N1bWVkIGRpYWdyYW0gdHlwZTogY2xhc3MpPC90ZXh0PjwhLS1TUkM9W1pMOURSekQwNEJ0RmhyWnZiOFphbURTYjFtdmpCWG11eUdGRzlqdXVManJUUDZ5TDQ0QWdsRzlMS0FHQUFBZ2dxWVc4REljODBhOUwyd0phbnFvVGtGLTJ0T3JaMUtHWkJpY3B2a3NSY0pURi1aOVd2QXdhaExRalRlVDU0VkxPajJvdTM0S0dpOTFLMklPWkpCdldfMTZKM0tvVUp1eHRDTmNNX0hmWUYxZVZUWkRyMVgyai1GbS0zVWFnUVQzY1lYVUFEVXVrWXEyNGZERnM5UGtoam9idEV3NGw5VUVhSE9FODBKRzM2YU40a05HNFhwbzJBcHZ0c09ESXNPMjZLSlRHaENhMmtvbldha0ttcVl5VjZqWktQTWMwZjl4LWd0OFFYZzlwcG5LVGhaeVYwdDBYNkdiemhvczlRMnNRZUxRUlVtbGZhd3lOd3hsZnZYa0NqcDdQbkJXeHhtZ2dKdllTZWJBT1Y4UWZVeFZoWE4tZVVoUnE0ek5HcUVBWkZ6dWNCeEVVNWRtQVpCbDRaMFQwY3I4eHdNSm5JVmdndm4wUUpTeTV6ZlRLZ3hTTWNiVkoxdG9kOXA0VGEteTBCZk1xR0lENmQxZFJJalFOMDFSOWMzUnI5UWtjZkdRZUZXMjRoMmFmenRILWRCLXNFWnpUcG14d01NeW1VVnkzclJQbkgwdEQ4S2pOb3JRZ1RBc2lqVEFEai1FelJnNk83ZE5yeWMxZ2JkRXpSRmpUNlp5bTNDa3lPUGJnRF9US2xSM1cxNUtWclJVQi03M29VVzI2UENhdDNOYm9sM05VdHZqRU0ySVg4UUdLZ3BPQV94TUczaTgwdW1Eem10X0lQeVJkU3EzOWZoWDJ5V25ObzJwMTVQQmRqdW5uN3o4ajdPMlRlZWtFbkZkUG82bW1ZeUhsXS0tPjwvZz48L3N2Zz4=" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="40d84d3">コミット: 40d84d3<a class="headerlink" href="#40d84d3" title="Permanent link">&para;</a></h2>
+<h3 id="_7">メッセージ<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>リンクの設置 #21
+</code></pre></div>
+<h3 id="_8">変更されたファイル<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>A app/views/staff/messages/_links.html.erb</li>
+<li>M app/views/staff/messages/index.html.erb</li>
+<li>M app/views/staff/messages/show.html.erb</li>
+<li>M config/locales/views/ja.yml</li>
+</ul>
+<h3 id="_9">変更内容<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 40d84d3d6982ec0faed3bb128cf2011078fffc2e
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 18:15:10 2017 +0900
+
+<span class="w"> </span>   リンクの設置 #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 289b68b..5d11bd6 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -781,6 +781,7 @@ git push heroku master</span>
+<span class="w"> </span>#### タグによるメッセージの絞込
+<span class="w"> </span>+ ルーティング
+<span class="w"> </span>+ indexアクションの変更
+<span class="gi">++ リンクの設置</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/views/staff/messages/_links.html.erb b/app/views/staff/messages/_links.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..cbd6e03</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/staff/messages/_links.html.erb</span>
+<span class="gu">@@ -0,0 +1,9 @@</span>
+<span class="gi">+&lt;div class=&quot;links&quot;&gt;</span>
+<span class="gi">+  &lt;%= link_to t(&#39;staff.messages.links.inboud_staff_messages&#39;), :inbound_staff_messages, class:&#39;btn btn-default btn-xs&#39; %&gt;</span>
+<span class="gi">+  &lt;%= link_to t(&#39;staff.messages.links.outbound_staff_messages&#39;), :outbound_staff_messages, class:&#39;btn btn-default btn-xs&#39; %&gt;</span>
+<span class="gi">+  &lt;%= link_to t(&#39;staff.messages.links.staff_messages&#39;), :staff_messages, class:&#39;btn btn-default btn-xs&#39; %&gt;</span>
+<span class="gi">+  &lt;%= link_to t(&#39;staff.messages.links.deleted_staff_messages&#39;), :deleted_staff_messages, class:&#39;btn btn-default btn-xs&#39; %&gt;</span>
+<span class="gi">+  &lt;% if @message.kind_of?(CustomerMessage) %&gt;</span>
+<span class="gi">+    &lt;%= link_to t(&#39;staff.messages.links.replay&#39;), new_staff_message_reply_path(@message), class:&#39;btn btn-default btn-xs&#39; %&gt;</span>
+<span class="gi">+  &lt;% end %&gt;</span>
+<span class="gi">+&lt;/div&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/messages/index.html.erb b/app/views/staff/messages/index.html.erb</span>
+<span class="gh">index 7a46542..29fcdac 100644</span>
+<span class="gd">--- a/app/views/staff/messages/index.html.erb</span>
+<span class="gi">+++ b/app/views/staff/messages/index.html.erb</span>
+<span class="gu">@@ -11,6 +11,7 @@</span>
+<span class="w"> </span>&lt;/section&gt;
+
+<span class="w"> </span>&lt;section class=&quot;Section l-column Table&quot;&gt;
+<span class="gi">+  &lt;%= render &#39;links&#39;%&gt;</span>
+<span class="w"> </span>  &lt;%= paginate @messages %&gt;
+
+<span class="w"> </span>  &lt;table class=&quot;Table__body Table__body--listing StaffTable__body&quot;&gt;
+<span class="gh">diff --git a/app/views/staff/messages/show.html.erb b/app/views/staff/messages/show.html.erb</span>
+<span class="gh">index 3cbc59b..a2d7653 100644</span>
+<span class="gd">--- a/app/views/staff/messages/show.html.erb</span>
+<span class="gi">+++ b/app/views/staff/messages/show.html.erb</span>
+<span class="gu">@@ -4,6 +4,7 @@</span>
+<span class="w"> </span>&lt;/section&gt;
+
+<span class="w"> </span>&lt;section class=&quot;Section l-column Table StaffTable&quot;&gt;
+<span class="gi">+  &lt;%= render &#39;links&#39; %&gt;</span>
+<span class="w"> </span>  &lt;table class=&quot;Table__body Table__body--attributes StaffTable__body&quot;&gt;
+<span class="w"> </span>    &lt;% if @message.kind_of?(CustomerMessage) %&gt;
+<span class="w"> </span>        &lt;div class=&quot;Table__links&quot;&gt;
+<span class="gh">diff --git a/config/locales/views/ja.yml b/config/locales/views/ja.yml</span>
+<span class="gh">index f2a92dd..efba53a 100644</span>
+<span class="gd">--- a/config/locales/views/ja.yml</span>
+<span class="gi">+++ b/config/locales/views/ja.yml</span>
+<span class="gu">@@ -179,6 +179,12 @@ ja:</span>
+<span class="w"> </span>        subject: &#39;件名&#39;
+<span class="w"> </span>        created_at: &#39;作成日時&#39;
+<span class="w"> </span>        reply: &#39;返信する&#39;
+<span class="gi">+      links:</span>
+<span class="gi">+        inboud_staff_messages: &#39;問い合わせ一覧&#39;</span>
+<span class="gi">+        outbound_staff_messages: &#39;返信一覧&#39;</span>
+<span class="gi">+        staff_messages: &#39;全メッセージ一覧&#39;</span>
+<span class="gi">+        deleted_staff_messages: &#39;ゴミ箱&#39;</span>
+<span class="gi">+        replay: &#39;返信する&#39;</span>
+<span class="w"> </span>    replies:
+<span class="w"> </span>      new:
+<span class="w"> </span>        title: &#39;問い合わせへの返信&#39;
+</code></pre></div>
+<h2 id="70c3a8c">コミット: 70c3a8c<a class="headerlink" href="#70c3a8c" title="Permanent link">&para;</a></h2>
+<h3 id="_10">メッセージ<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>indexアクションの変更 #21
+</code></pre></div>
+<h3 id="_11">変更されたファイル<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>A app/assets/stylesheets/components/_tags.scss</li>
+<li>M app/assets/stylesheets/main.scss</li>
+<li>M app/controllers/staff/messages_controller.rb</li>
+<li>A app/views/staff/messages/_tags.html.erb</li>
+<li>M app/views/staff/messages/index.html.erb</li>
+</ul>
+<h3 id="_12">変更内容<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 70c3a8c5815e273fbd2c16ad773c732c62e819ef
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 18:02:02 2017 +0900
+
+<span class="w"> </span>   indexアクションの変更 #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index abf077e..289b68b 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -780,6 +780,7 @@ git push heroku master</span>
+
+<span class="w"> </span>#### タグによるメッセージの絞込
+<span class="w"> </span>+ ルーティング
+<span class="gi">++ indexアクションの変更</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/assets/stylesheets/components/_tags.scss b/app/assets/stylesheets/components/_tags.scss</span>
+new file mode 100644
+<span class="gh">index 0000000..49f0f7b</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/assets/stylesheets/components/_tags.scss</span>
+<span class="gu">@@ -0,0 +1,8 @@</span>
+<span class="gi">+.Tags {</span>
+<span class="gi">+  margin: $wide 0;</span>
+<span class="gi">+  padding: $wide;</span>
+<span class="gi">+  background-color: $very_light_gray;</span>
+<span class="gi">+  &amp;__current_tag {</span>
+<span class="gi">+    font-weight: bold;</span>
+<span class="gi">+  }</span>
+<span class="gi">+}</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/assets/stylesheets/main.scss b/app/assets/stylesheets/main.scss</span>
+<span class="gh">index 6a01807..1296dc4 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/main.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/main.scss</span>
+<span class="gu">@@ -83,6 +83,9 @@</span>
+<span class="w"> </span>@import &quot;./components/staffTable&quot;;
+<span class="w"> </span>@import &quot;./components/customerTable&quot;;
+
+<span class="gi">+// タグ</span>
+<span class="gi">+@import &quot;./components/tags&quot;;</span>
+<span class="gi">+</span>
+<span class="w"> </span>//font-awesome
+<span class="w"> </span>@import &quot;font-awesome&quot;;
+
+<span class="gh">diff --git a/app/controllers/staff/messages_controller.rb b/app/controllers/staff/messages_controller.rb</span>
+<span class="gh">index 7e3768d..8c8bddf 100644</span>
+<span class="gd">--- a/app/controllers/staff/messages_controller.rb</span>
+<span class="gi">+++ b/app/controllers/staff/messages_controller.rb</span>
+<span class="gu">@@ -3,6 +3,10 @@ class Staff::MessagesController &lt; Staff::Base</span>
+
+<span class="w"> </span>  def index
+<span class="w"> </span>    @messages = Message.where(deleted: false).page(params[:page])
+<span class="gi">+    if params[:tag_id]</span>
+<span class="gi">+      @messages = @messages.joins(:message_tag_links).where(&#39;message_tag_links.tag_id&#39; =&gt; params[:tag_id])</span>
+<span class="gi">+    end</span>
+<span class="gi">+    @messages = @messages.page(params[:page])</span>
+<span class="w"> </span>  end
+
+<span class="w"> </span>  # GET
+<span class="gh">diff --git a/app/views/staff/messages/_tags.html.erb b/app/views/staff/messages/_tags.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..14fda43</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/staff/messages/_tags.html.erb</span>
+<span class="gu">@@ -0,0 +1,10 @@</span>
+<span class="gi">+&lt;div class=&quot;Tags&quot;&gt;</span>
+<span class="gi">+  タグ:</span>
+<span class="gi">+  &lt;% Tag.all.each do |tag| %&gt;</span>
+<span class="gi">+      &lt;% if tag.id == params[:tag_id].to_i %&gt;</span>
+<span class="gi">+          &lt;span class=&quot;Tags__current_tag&quot;&gt;&lt;%= tag.value %&gt;&lt;/span&gt;</span>
+<span class="gi">+      &lt;% else %&gt;</span>
+<span class="gi">+          &lt;%= link_to tag.value, [ :staff, tag, :messages ] %&gt;</span>
+<span class="gi">+      &lt;% end %&gt;</span>
+<span class="gi">+  &lt;% end %&gt;</span>
+<span class="gi">+&lt;/div&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/messages/index.html.erb b/app/views/staff/messages/index.html.erb</span>
+<span class="gh">index ceb696e..7a46542 100644</span>
+<span class="gd">--- a/app/views/staff/messages/index.html.erb</span>
+<span class="gi">+++ b/app/views/staff/messages/index.html.erb</span>
+<span class="gu">@@ -39,4 +39,6 @@</span>
+<span class="w"> </span>  &lt;/table&gt;
+
+<span class="w"> </span>  &lt;%= paginate @messages %&gt;
+<span class="gi">+</span>
+<span class="gi">+  &lt;%= render &#39;tags&#39; %&gt;</span>
+<span class="w"> </span>&lt;/section&gt;
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_13">構造変更<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="9079487">コミット: 9079487<a class="headerlink" href="#9079487" title="Permanent link">&para;</a></h2>
+<h3 id="_14">メッセージ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ルーティング #21
+</code></pre></div>
+<h3 id="_15">変更されたファイル<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M config/routes.rb</li>
+</ul>
+<h3 id="_16">変更内容<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 90794874b0c923e9af6c514d0902548e9b65af1a
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 17:48:19 2017 +0900
+
+<span class="w"> </span>   ルーティング #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 0ab32e8..abf077e 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -778,6 +778,9 @@ git push heroku master</span>
+<span class="w"> </span>+ JavaScriptプログラムの改善
+<span class="w"> </span>+ 照合順序の変更
+
+<span class="gi">+#### タグによるメッセージの絞込</span>
+<span class="gi">++ ルーティング</span>
+<span class="gi">+</span>
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+
+<span class="gh">diff --git a/config/routes.rb b/config/routes.rb</span>
+<span class="gh">index e6360a5..3b44fdd 100644</span>
+<span class="gd">--- a/config/routes.rb</span>
+<span class="gi">+++ b/config/routes.rb</span>
+<span class="gu">@@ -43,6 +43,10 @@</span>
+<span class="w"> </span>#                  staff_messages GET    /staff/messages(.:format)                            staff/messages#index {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#                   staff_message GET    /staff/messages/:id(.:format)                        staff/messages#show {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#                                 DELETE /staff/messages/:id(.:format)                        staff/messages#destroy {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="gi">+#      inbound_staff_tag_messages GET    /staff/tags/:tag_id/messages/inbound(.:format)       staff/messages#inbound {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="gi">+#     outbound_staff_tag_messages GET    /staff/tags/:tag_id/messages/outbound(.:format)      staff/messages#outbound {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="gi">+#      deleted_staff_tag_messages GET    /staff/tags/:tag_id/messages/deleted(.:format)       staff/messages#deleted {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="gi">+#              staff_tag_messages GET    /staff/tags/:tag_id/messages(.:format)               staff/messages#index {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="w"> </span>#                      admin_root GET    /admin(.:format)                                     admin/top#index {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#                     admin_login GET    /admin/login(.:format)                               admin/sessions#new {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#                   admin_session DELETE /admin/session(.:format)                             admin/sessions#destroy {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="gu">@@ -111,6 +115,11 @@ Rails.application.routes.draw do</span>
+<span class="w"> </span>          post :confirm
+<span class="w"> </span>        end
+<span class="w"> </span>      end
+<span class="gi">+      resources :tags, only: [] do</span>
+<span class="gi">+        resources :messages, only: [ :index ] do</span>
+<span class="gi">+          get :inbound, :outbound, :deleted, on: :collection</span>
+<span class="gi">+        end</span>
+<span class="gi">+      end</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+</code></pre></div>
+<h2 id="1dc1b6a">コミット: 1dc1b6a<a class="headerlink" href="#1dc1b6a" title="Permanent link">&para;</a></h2>
+<h3 id="_17">メッセージ<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>スキーママイグレーション不具合修正 #21
+</code></pre></div>
+<h3 id="_18">変更されたファイル<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M db/schema.rb</li>
+</ul>
+<h3 id="_19">変更内容<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 1dc1b6a114bdbb66a162c2911f3be8814810f7bc
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 17:41:17 2017 +0900
+
+<span class="w"> </span>   スキーママイグレーション不具合修正 #21
+
+<span class="gh">diff --git a/db/schema.rb b/db/schema.rb</span>
+<span class="gh">index 9788eac..0154c4b 100644</span>
+<span class="gd">--- a/db/schema.rb</span>
+<span class="gi">+++ b/db/schema.rb</span>
+<span class="gu">@@ -12,7 +12,7 @@</span>
+
+<span class="w"> </span>ActiveRecord::Schema.define(version: 20170325081203) do
+
+<span class="gd">-  create_table &quot;addresses&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;住所&quot; do |t|</span>
+<span class="gi">+  create_table &quot;addresses&quot;, force: :cascade, comment: &quot;住所&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                null: false, comment: &quot;顧客への外部キー&quot;
+<span class="w"> </span>    t.string   &quot;type&quot;,                       null: false, comment: &quot;継承カラム&quot;
+<span class="w"> </span>    t.string   &quot;postal_code&quot;,                null: false, comment: &quot;郵便番号&quot;
+<span class="gu">@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;type&quot;, &quot;prefecture&quot;, &quot;city&quot;], name: &quot;index_addresses_on_type_and_prefecture_and_city&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;administrators&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;管理者&quot; do |t|</span>
+<span class="gi">+  create_table &quot;administrators&quot;, force: :cascade, comment: &quot;管理者&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,                           null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,                 null: false, comment: &quot;索引用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;hashed_password&quot;,                              comment: &quot;パスワード&quot;
+<span class="gu">@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;email_for_index&quot;], name: &quot;index_administrators_on_email_for_index&quot;, unique: true, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;allowed_sources&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;IPアドレス制限&quot; do |t|</span>
+<span class="gi">+  create_table &quot;allowed_sources&quot;, force: :cascade, comment: &quot;IPアドレス制限&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;namespace&quot;,                  null: false, comment: &quot;名前空間&quot;
+<span class="w"> </span>    t.integer  &quot;octet1&quot;,                     null: false, comment: &quot;第１オクテット&quot;
+<span class="w"> </span>    t.integer  &quot;octet2&quot;,                     null: false, comment: &quot;第２オクテット&quot;
+<span class="gu">@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;namespace&quot;, &quot;octet1&quot;, &quot;octet2&quot;, &quot;octet3&quot;, &quot;octet4&quot;], name: &quot;index_allowed_sources_on_namespace_and_octets&quot;, unique: true, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;customers&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;顧客&quot; do |t|</span>
+<span class="gi">+  create_table &quot;customers&quot;, force: :cascade, comment: &quot;顧客&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,            null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,  null: false, comment: &quot;顧客用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;family_name&quot;,      null: false, comment: &quot;姓&quot;
+<span class="gu">@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;given_name_kana&quot;], name: &quot;index_customers_on_given_name_kana&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;entries&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;申し込み&quot; do |t|</span>
+<span class="gi">+  create_table &quot;entries&quot;, force: :cascade, comment: &quot;申し込み&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;program_id&quot;,                  null: false
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                 null: false
+<span class="w"> </span>    t.boolean  &quot;approved&quot;,    default: false, null: false, comment: &quot;承認済みフラグ&quot;
+<span class="gu">@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;program_id&quot;], name: &quot;index_entries_on_program_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;message_tag_links&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;タグリンクテーブル&quot; do |t|</span>
+<span class="gi">+  create_table &quot;message_tag_links&quot;, force: :cascade, comment: &quot;タグリンクテーブル&quot; do |t|</span>
+<span class="w"> </span>    t.integer &quot;message_id&quot;, null: false
+<span class="w"> </span>    t.integer &quot;tag_id&quot;,     null: false
+<span class="w"> </span>    t.index [&quot;message_id&quot;, &quot;tag_id&quot;], name: &quot;index_message_tag_links_on_message_id_and_tag_id&quot;, unique: true, using: :btree
+<span class="gu">@@ -104,7 +104,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;tag_id&quot;], name: &quot;index_message_tag_links_on_tag_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;messages&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;問い合わせ&quot; do |t|</span>
+<span class="gi">+  create_table &quot;messages&quot;, force: :cascade, comment: &quot;問い合わせ&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                                   null: false
+<span class="w"> </span>    t.integer  &quot;staff_member_id&quot;
+<span class="w"> </span>    t.integer  &quot;root_id&quot;,                                                    comment: &quot;Messageへの外部キー&quot;
+<span class="gu">@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;type&quot;, &quot;staff_member_id&quot;], name: &quot;index_messages_on_type_and_staff_member_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;phones&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;電話&quot; do |t|</span>
+<span class="gi">+  create_table &quot;phones&quot;, force: :cascade, comment: &quot;電話&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                      null: false, comment: &quot;顧客への外部キー&quot;
+<span class="w"> </span>    t.integer  &quot;address_id&quot;,                                    comment: &quot;住所への外部キー&quot;
+<span class="w"> </span>    t.string   &quot;number&quot;,                           null: false, comment: &quot;電話番号&quot;
+<span class="gu">@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;number_for_index&quot;], name: &quot;index_phones_on_number_for_index&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;programs&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;プログラム&quot; do |t|</span>
+<span class="gi">+  create_table &quot;programs&quot;, force: :cascade, comment: &quot;プログラム&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;registrant_id&quot;,                            null: false, comment: &quot;登録職員（外部キー）&quot;
+<span class="w"> </span>    t.string   &quot;title&quot;,                                    null: false, comment: &quot;タイトル&quot;
+<span class="w"> </span>    t.text     &quot;description&quot;,                limit: 65535,              comment: &quot;説明&quot;
+<span class="gu">@@ -158,7 +158,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;registrant_id&quot;], name: &quot;index_programs_on_registrant_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;staff_events&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;職員イベント&quot; do |t|</span>
+<span class="gi">+  create_table &quot;staff_events&quot;, force: :cascade, comment: &quot;職員イベント&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;staff_member_id&quot;, null: false, comment: &quot;職員レコードへの外部キー&quot;
+<span class="w"> </span>    t.string   &quot;type&quot;,            null: false, comment: &quot;イベントタイプ&quot;
+<span class="w"> </span>    t.datetime &quot;created_at&quot;,      null: false, comment: &quot;発生時刻&quot;
+<span class="gu">@@ -167,7 +167,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;staff_member_id&quot;], name: &quot;index_staff_events_on_staff_member_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;staff_members&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;職員&quot; do |t|</span>
+<span class="gi">+  create_table &quot;staff_members&quot;, force: :cascade, comment: &quot;職員&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,                            null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,                  null: false, comment: &quot;索引用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;family_name&quot;,                      null: false, comment: &quot;姓&quot;
+<span class="gu">@@ -184,7 +184,7 @@ ActiveRecord::Schema.define(version: 20170325081203) do</span>
+<span class="w"> </span>    t.index [&quot;family_name_kana&quot;, &quot;given_name_kana&quot;], name: &quot;index_staff_members_on_family_name_kana_and_given_name_kana&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;tags&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;タグ&quot; do |t|</span>
+<span class="gi">+  create_table &quot;tags&quot;, force: :cascade, comment: &quot;タグ&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;value&quot;,      null: false
+<span class="w"> </span>    t.datetime &quot;created_at&quot;, null: false
+<span class="w"> </span>    t.datetime &quot;updated_at&quot;, null: false
+</code></pre></div>
+<h2 id="80dd166">コミット: 80dd166<a class="headerlink" href="#80dd166" title="Permanent link">&para;</a></h2>
+<h3 id="_20">メッセージ<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>タグの追加・削除の不具合修正 #21
+</code></pre></div>
+<h3 id="_21">変更されたファイル<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/models/message.rb</li>
+<li>M db/schema.rb</li>
+</ul>
+<h3 id="_22">変更内容<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 80dd166b08845b6576064a92d66278e9c809efe8
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 17:38:04 2017 +0900
+
+<span class="w"> </span>   タグの追加・削除の不具合修正 #21
+
+<span class="gh">diff --git a/app/models/message.rb b/app/models/message.rb</span>
+<span class="gh">index 19e47e1..723f9f9 100644</span>
+<span class="gd">--- a/app/models/message.rb</span>
+<span class="gi">+++ b/app/models/message.rb</span>
+<span class="gu">@@ -69,7 +69,7 @@ class Message &lt; ApplicationRecord</span>
+
+<span class="w"> </span>  def add_tag(label)
+<span class="w"> </span>    self.class.transaction do
+<span class="gd">-      tag = Tag.find_by_created_at(value: label)</span>
+<span class="gi">+      tag = Tag.find_by(value: label)</span>
+<span class="w"> </span>      tag ||= Tag.create!(value: label)
+<span class="w"> </span>      unless message_tag_links.where(tag_id: tag.id).exists?
+<span class="w"> </span>        message_tag_links.create!(tag_id: tag.id)
+<span class="gh">diff --git a/db/schema.rb b/db/schema.rb</span>
+<span class="gh">index 2ea53dd..9788eac 100644</span>
+<span class="gd">--- a/db/schema.rb</span>
+<span class="gi">+++ b/db/schema.rb</span>
+<span class="gu">@@ -10,9 +10,9 @@</span>
+<span class="w"> </span>#
+<span class="w"> </span># It&#39;s strongly recommended that you check this file into your version control system.
+
+<span class="gd">-ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="gi">+ActiveRecord::Schema.define(version: 20170325081203) do</span>
+
+<span class="gd">-  create_table &quot;addresses&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;住所&quot; do |t|</span>
+<span class="gi">+  create_table &quot;addresses&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;住所&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                null: false, comment: &quot;顧客への外部キー&quot;
+<span class="w"> </span>    t.string   &quot;type&quot;,                       null: false, comment: &quot;継承カラム&quot;
+<span class="w"> </span>    t.string   &quot;postal_code&quot;,                null: false, comment: &quot;郵便番号&quot;
+<span class="gu">@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;type&quot;, &quot;prefecture&quot;, &quot;city&quot;], name: &quot;index_addresses_on_type_and_prefecture_and_city&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;administrators&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;管理者&quot; do |t|</span>
+<span class="gi">+  create_table &quot;administrators&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;管理者&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,                           null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,                 null: false, comment: &quot;索引用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;hashed_password&quot;,                              comment: &quot;パスワード&quot;
+<span class="gu">@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;email_for_index&quot;], name: &quot;index_administrators_on_email_for_index&quot;, unique: true, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;allowed_sources&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;IPアドレス制限&quot; do |t|</span>
+<span class="gi">+  create_table &quot;allowed_sources&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;IPアドレス制限&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;namespace&quot;,                  null: false, comment: &quot;名前空間&quot;
+<span class="w"> </span>    t.integer  &quot;octet1&quot;,                     null: false, comment: &quot;第１オクテット&quot;
+<span class="w"> </span>    t.integer  &quot;octet2&quot;,                     null: false, comment: &quot;第２オクテット&quot;
+<span class="gu">@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;namespace&quot;, &quot;octet1&quot;, &quot;octet2&quot;, &quot;octet3&quot;, &quot;octet4&quot;], name: &quot;index_allowed_sources_on_namespace_and_octets&quot;, unique: true, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;customers&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;顧客&quot; do |t|</span>
+<span class="gi">+  create_table &quot;customers&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;顧客&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,            null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,  null: false, comment: &quot;顧客用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;family_name&quot;,      null: false, comment: &quot;姓&quot;
+<span class="gu">@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;given_name_kana&quot;], name: &quot;index_customers_on_given_name_kana&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;entries&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;申し込み&quot; do |t|</span>
+<span class="gi">+  create_table &quot;entries&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;申し込み&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;program_id&quot;,                  null: false
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                 null: false
+<span class="w"> </span>    t.boolean  &quot;approved&quot;,    default: false, null: false, comment: &quot;承認済みフラグ&quot;
+<span class="gu">@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;program_id&quot;], name: &quot;index_entries_on_program_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;message_tag_links&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;タグリンクテーブル&quot; do |t|</span>
+<span class="gi">+  create_table &quot;message_tag_links&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;タグリンクテーブル&quot; do |t|</span>
+<span class="w"> </span>    t.integer &quot;message_id&quot;, null: false
+<span class="w"> </span>    t.integer &quot;tag_id&quot;,     null: false
+<span class="w"> </span>    t.index [&quot;message_id&quot;, &quot;tag_id&quot;], name: &quot;index_message_tag_links_on_message_id_and_tag_id&quot;, unique: true, using: :btree
+<span class="gu">@@ -104,7 +104,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;tag_id&quot;], name: &quot;index_message_tag_links_on_tag_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;messages&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;問い合わせ&quot; do |t|</span>
+<span class="gi">+  create_table &quot;messages&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;問い合わせ&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                                   null: false
+<span class="w"> </span>    t.integer  &quot;staff_member_id&quot;
+<span class="w"> </span>    t.integer  &quot;root_id&quot;,                                                    comment: &quot;Messageへの外部キー&quot;
+<span class="gu">@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;type&quot;, &quot;staff_member_id&quot;], name: &quot;index_messages_on_type_and_staff_member_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;phones&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;電話&quot; do |t|</span>
+<span class="gi">+  create_table &quot;phones&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;電話&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                      null: false, comment: &quot;顧客への外部キー&quot;
+<span class="w"> </span>    t.integer  &quot;address_id&quot;,                                    comment: &quot;住所への外部キー&quot;
+<span class="w"> </span>    t.string   &quot;number&quot;,                           null: false, comment: &quot;電話番号&quot;
+<span class="gu">@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;number_for_index&quot;], name: &quot;index_phones_on_number_for_index&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;programs&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;プログラム&quot; do |t|</span>
+<span class="gi">+  create_table &quot;programs&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;プログラム&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;registrant_id&quot;,                            null: false, comment: &quot;登録職員（外部キー）&quot;
+<span class="w"> </span>    t.string   &quot;title&quot;,                                    null: false, comment: &quot;タイトル&quot;
+<span class="w"> </span>    t.text     &quot;description&quot;,                limit: 65535,              comment: &quot;説明&quot;
+<span class="gu">@@ -158,7 +158,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;registrant_id&quot;], name: &quot;index_programs_on_registrant_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;staff_events&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;職員イベント&quot; do |t|</span>
+<span class="gi">+  create_table &quot;staff_events&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;職員イベント&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;staff_member_id&quot;, null: false, comment: &quot;職員レコードへの外部キー&quot;
+<span class="w"> </span>    t.string   &quot;type&quot;,            null: false, comment: &quot;イベントタイプ&quot;
+<span class="w"> </span>    t.datetime &quot;created_at&quot;,      null: false, comment: &quot;発生時刻&quot;
+<span class="gu">@@ -167,7 +167,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;staff_member_id&quot;], name: &quot;index_staff_events_on_staff_member_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;staff_members&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;職員&quot; do |t|</span>
+<span class="gi">+  create_table &quot;staff_members&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;職員&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,                            null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,                  null: false, comment: &quot;索引用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;family_name&quot;,                      null: false, comment: &quot;姓&quot;
+<span class="gu">@@ -184,7 +184,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;family_name_kana&quot;, &quot;given_name_kana&quot;], name: &quot;index_staff_members_on_family_name_kana_and_given_name_kana&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;tags&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;タグ&quot; do |t|</span>
+<span class="gi">+  create_table &quot;tags&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8&quot;, comment: &quot;タグ&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;value&quot;,      null: false
+<span class="w"> </span>    t.datetime &quot;created_at&quot;, null: false
+<span class="w"> </span>    t.datetime &quot;updated_at&quot;, null: false
+</code></pre></div>
+<h3 id="_23">構造変更<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="e0ff568">コミット: e0ff568<a class="headerlink" href="#e0ff568" title="Permanent link">&para;</a></h2>
+<h3 id="_24">メッセージ<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>照合順序の変更 #21
+</code></pre></div>
+<h3 id="_25">変更されたファイル<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M config/database.yml</li>
+<li>A db/migrate/20170325081203_change_collations.rb</li>
+<li>M db/schema.rb</li>
+</ul>
+<h3 id="_26">変更内容<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit e0ff56864f2f782ab7972a0aba81c5718f5c6b73
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 17:21:29 2017 +0900
+
+<span class="w"> </span>   照合順序の変更 #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 00b29d6..0ab32e8 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -776,6 +776,7 @@ git push heroku master</span>
+<span class="w"> </span>+ タグの追加・削除インターフェース
+<span class="w"> </span>+ タグの追加・削除
+<span class="w"> </span>+ JavaScriptプログラムの改善
+<span class="gi">++ 照合順序の変更</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/config/database.yml b/config/database.yml</span>
+<span class="gh">index aaf01f7..544640b 100644</span>
+<span class="gd">--- a/config/database.yml</span>
+<span class="gi">+++ b/config/database.yml</span>
+<span class="gu">@@ -12,6 +12,7 @@</span>
+<span class="w"> </span>default: &amp;default
+<span class="w"> </span>  adapter: mysql2
+<span class="w"> </span>  encoding: utf8
+<span class="gi">+  collation: utf8_general_ci</span>
+<span class="w"> </span>  pool: 5
+<span class="w"> </span>  username: root
+<span class="w"> </span>  password: password
+<span class="gh">diff --git a/db/migrate/20170325081203_change_collations.rb b/db/migrate/20170325081203_change_collations.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..55cf7d1</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/db/migrate/20170325081203_change_collations.rb</span>
+<span class="gu">@@ -0,0 +1,21 @@</span>
+<span class="gi">+class ChangeCollations &lt; ActiveRecord::Migration[5.0]</span>
+<span class="gi">+  def up</span>
+<span class="gi">+    if ActiveRecord::Base.connection.adapter_name == &quot;Mysql2&quot;</span>
+<span class="gi">+      ActiveRecord::Base.connection.tables.each do |table|</span>
+<span class="gi">+        execute(%Q{</span>
+<span class="gi">+                    ALTER TABLE #{table} CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci</span>
+<span class="gi">+                })</span>
+<span class="gi">+      end</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def down</span>
+<span class="gi">+    if ActiveRecord::Base.connection.adapter_name == &quot;Mysql2&quot;</span>
+<span class="gi">+      ActiveRecord::Base.connection.tables.each do |table|</span>
+<span class="gi">+        execute(%Q{</span>
+<span class="gi">+                    ALTER TABLE #{table} CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci</span>
+<span class="gi">+                })</span>
+<span class="gi">+      end</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+<span class="gh">diff --git a/db/schema.rb b/db/schema.rb</span>
+<span class="gh">index 1086b9a..2ea53dd 100644</span>
+<span class="gd">--- a/db/schema.rb</span>
+<span class="gi">+++ b/db/schema.rb</span>
+<span class="gu">@@ -12,7 +12,7 @@</span>
+
+<span class="w"> </span>ActiveRecord::Schema.define(version: 20170318093830) do
+
+<span class="gd">-  create_table &quot;addresses&quot;, force: :cascade, comment: &quot;住所&quot; do |t|</span>
+<span class="gi">+  create_table &quot;addresses&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;住所&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                null: false, comment: &quot;顧客への外部キー&quot;
+<span class="w"> </span>    t.string   &quot;type&quot;,                       null: false, comment: &quot;継承カラム&quot;
+<span class="w"> </span>    t.string   &quot;postal_code&quot;,                null: false, comment: &quot;郵便番号&quot;
+<span class="gu">@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;type&quot;, &quot;prefecture&quot;, &quot;city&quot;], name: &quot;index_addresses_on_type_and_prefecture_and_city&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;administrators&quot;, force: :cascade, comment: &quot;管理者&quot; do |t|</span>
+<span class="gi">+  create_table &quot;administrators&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;管理者&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,                           null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,                 null: false, comment: &quot;索引用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;hashed_password&quot;,                              comment: &quot;パスワード&quot;
+<span class="gu">@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;email_for_index&quot;], name: &quot;index_administrators_on_email_for_index&quot;, unique: true, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;allowed_sources&quot;, force: :cascade, comment: &quot;IPアドレス制限&quot; do |t|</span>
+<span class="gi">+  create_table &quot;allowed_sources&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;IPアドレス制限&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;namespace&quot;,                  null: false, comment: &quot;名前空間&quot;
+<span class="w"> </span>    t.integer  &quot;octet1&quot;,                     null: false, comment: &quot;第１オクテット&quot;
+<span class="w"> </span>    t.integer  &quot;octet2&quot;,                     null: false, comment: &quot;第２オクテット&quot;
+<span class="gu">@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;namespace&quot;, &quot;octet1&quot;, &quot;octet2&quot;, &quot;octet3&quot;, &quot;octet4&quot;], name: &quot;index_allowed_sources_on_namespace_and_octets&quot;, unique: true, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;customers&quot;, force: :cascade, comment: &quot;顧客&quot; do |t|</span>
+<span class="gi">+  create_table &quot;customers&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;顧客&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,            null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,  null: false, comment: &quot;顧客用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;family_name&quot;,      null: false, comment: &quot;姓&quot;
+<span class="gu">@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;given_name_kana&quot;], name: &quot;index_customers_on_given_name_kana&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;entries&quot;, force: :cascade, comment: &quot;申し込み&quot; do |t|</span>
+<span class="gi">+  create_table &quot;entries&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;申し込み&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;program_id&quot;,                  null: false
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                 null: false
+<span class="w"> </span>    t.boolean  &quot;approved&quot;,    default: false, null: false, comment: &quot;承認済みフラグ&quot;
+<span class="gu">@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;program_id&quot;], name: &quot;index_entries_on_program_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;message_tag_links&quot;, force: :cascade, comment: &quot;タグリンクテーブル&quot; do |t|</span>
+<span class="gi">+  create_table &quot;message_tag_links&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;タグリンクテーブル&quot; do |t|</span>
+<span class="w"> </span>    t.integer &quot;message_id&quot;, null: false
+<span class="w"> </span>    t.integer &quot;tag_id&quot;,     null: false
+<span class="w"> </span>    t.index [&quot;message_id&quot;, &quot;tag_id&quot;], name: &quot;index_message_tag_links_on_message_id_and_tag_id&quot;, unique: true, using: :btree
+<span class="gu">@@ -104,7 +104,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;tag_id&quot;], name: &quot;index_message_tag_links_on_tag_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;messages&quot;, force: :cascade, comment: &quot;問い合わせ&quot; do |t|</span>
+<span class="gi">+  create_table &quot;messages&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;問い合わせ&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                                   null: false
+<span class="w"> </span>    t.integer  &quot;staff_member_id&quot;
+<span class="w"> </span>    t.integer  &quot;root_id&quot;,                                                    comment: &quot;Messageへの外部キー&quot;
+<span class="gu">@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;type&quot;, &quot;staff_member_id&quot;], name: &quot;index_messages_on_type_and_staff_member_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;phones&quot;, force: :cascade, comment: &quot;電話&quot; do |t|</span>
+<span class="gi">+  create_table &quot;phones&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;電話&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;customer_id&quot;,                      null: false, comment: &quot;顧客への外部キー&quot;
+<span class="w"> </span>    t.integer  &quot;address_id&quot;,                                    comment: &quot;住所への外部キー&quot;
+<span class="w"> </span>    t.string   &quot;number&quot;,                           null: false, comment: &quot;電話番号&quot;
+<span class="gu">@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;number_for_index&quot;], name: &quot;index_phones_on_number_for_index&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;programs&quot;, force: :cascade, comment: &quot;プログラム&quot; do |t|</span>
+<span class="gi">+  create_table &quot;programs&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;プログラム&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;registrant_id&quot;,                            null: false, comment: &quot;登録職員（外部キー）&quot;
+<span class="w"> </span>    t.string   &quot;title&quot;,                                    null: false, comment: &quot;タイトル&quot;
+<span class="w"> </span>    t.text     &quot;description&quot;,                limit: 65535,              comment: &quot;説明&quot;
+<span class="gu">@@ -158,7 +158,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;registrant_id&quot;], name: &quot;index_programs_on_registrant_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;staff_events&quot;, force: :cascade, comment: &quot;職員イベント&quot; do |t|</span>
+<span class="gi">+  create_table &quot;staff_events&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;職員イベント&quot; do |t|</span>
+<span class="w"> </span>    t.integer  &quot;staff_member_id&quot;, null: false, comment: &quot;職員レコードへの外部キー&quot;
+<span class="w"> </span>    t.string   &quot;type&quot;,            null: false, comment: &quot;イベントタイプ&quot;
+<span class="w"> </span>    t.datetime &quot;created_at&quot;,      null: false, comment: &quot;発生時刻&quot;
+<span class="gu">@@ -167,7 +167,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;staff_member_id&quot;], name: &quot;index_staff_events_on_staff_member_id&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;staff_members&quot;, force: :cascade, comment: &quot;職員&quot; do |t|</span>
+<span class="gi">+  create_table &quot;staff_members&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;職員&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;email&quot;,                            null: false, comment: &quot;メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;email_for_index&quot;,                  null: false, comment: &quot;索引用メールアドレス&quot;
+<span class="w"> </span>    t.string   &quot;family_name&quot;,                      null: false, comment: &quot;姓&quot;
+<span class="gu">@@ -184,7 +184,7 @@ ActiveRecord::Schema.define(version: 20170318093830) do</span>
+<span class="w"> </span>    t.index [&quot;family_name_kana&quot;, &quot;given_name_kana&quot;], name: &quot;index_staff_members_on_family_name_kana_and_given_name_kana&quot;, using: :btree
+<span class="w"> </span>  end
+
+<span class="gd">-  create_table &quot;tags&quot;, force: :cascade, comment: &quot;タグ&quot; do |t|</span>
+<span class="gi">+  create_table &quot;tags&quot;, force: :cascade, options: &quot;ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci&quot;, comment: &quot;タグ&quot; do |t|</span>
+<span class="w"> </span>    t.string   &quot;value&quot;,      null: false
+<span class="w"> </span>    t.datetime &quot;created_at&quot;, null: false
+<span class="w"> </span>    t.datetime &quot;updated_at&quot;, null: false
+</code></pre></div>
+<h2 id="4b6e490">コミット: 4b6e490<a class="headerlink" href="#4b6e490" title="Permanent link">&para;</a></h2>
+<h3 id="_27">メッセージ<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>JavaScriptプログラムの改善 #21
+</code></pre></div>
+<h3 id="_28">変更されたファイル<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/assets/javascripts/staff/messages.coffee</li>
+<li>M app/assets/javascripts/staff/paths.coffee.erb</li>
+<li>M app/assets/javascripts/staff/tag-it.coffee</li>
+</ul>
+<h3 id="_29">変更内容<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 4b6e490065326cd194890c645250e5e4bf527015
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 17:06:28 2017 +0900
+
+<span class="w"> </span>   JavaScriptプログラムの改善 #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index fce025b..00b29d6 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -775,6 +775,7 @@ git push heroku master</span>
+<span class="w"> </span>+ Tag-itのインストール
+<span class="w"> </span>+ タグの追加・削除インターフェース
+<span class="w"> </span>+ タグの追加・削除
+<span class="gi">++ JavaScriptプログラムの改善</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/assets/javascripts/staff/messages.coffee b/app/assets/javascripts/staff/messages.coffee</span>
+<span class="gh">index c6f7f19..85dbe8f 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff/messages.coffee</span>
+<span class="gi">+++ b/app/assets/javascripts/staff/messages.coffee</span>
+<span class="gu">@@ -8,5 +8,5 @@ class Message</span>
+<span class="w"> </span>      window.setInterval(update_number_of_unprocessed_messages, 100 * 60)
+
+<span class="w"> </span>  update_number_of_unprocessed_messages = -&gt;
+<span class="gd">-    $.get window.paths.number_of_unprocessed_messages, (data) -&gt;</span>
+<span class="gi">+    $.get window.path_for(&quot;count_staff_messages&quot;), (data) -&gt;</span>
+<span class="w"> </span>      $(&#39;#number-of-unprocessed-messages&#39;).text &quot;(#{data})&quot;
+\ No newline at end of file
+<span class="gh">diff --git a/app/assets/javascripts/staff/paths.coffee.erb b/app/assets/javascripts/staff/paths.coffee.erb</span>
+<span class="gh">index 39cbdb5..e3965cc 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff/paths.coffee.erb</span>
+<span class="gi">+++ b/app/assets/javascripts/staff/paths.coffee.erb</span>
+<span class="gu">@@ -1,3 +1,12 @@</span>
+<span class="gd">-window.paths = new Object</span>
+<span class="gd">-window.paths.number_of_unprocessed_messages = &quot;&lt;%= count_staff_messages_path %&gt;&quot;</span>
+<span class="gd">-window.paths.staff_root = &quot;&lt;%= staff_root_path.sub(%r{/\z}, &#39;&#39;) %&gt;&quot;</span>
+\ No newline at end of file
+<span class="gi">+window.named_paths = []</span>
+<span class="gi">+&lt;% %w(count_staff_messages tag_staff_message).each do |name| %&gt;</span>
+<span class="gi">+&lt;% route = Rails.application.routes.named_routes[name] %&gt;</span>
+<span class="gi">+&lt;%= &quot;window.named_paths[&#39;#{name}&#39;] = &#39;#{route.path.spec.to_s}&#39;\n&quot; %&gt;</span>
+<span class="gi">+&lt;% end %&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+window.path_for = (name, ids = {}) -&gt;</span>
+<span class="gi">+  path = window.named_paths[name]</span>
+<span class="gi">+  path = path.replace(/\(\.:format\)$/, &#39;&#39;)</span>
+<span class="gi">+  for key, id of ids</span>
+<span class="gi">+    path = path.replace(new RegExp(&quot;:#{key}\\b&quot;), id)</span>
+<span class="gi">+  path</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/assets/javascripts/staff/tag-it.coffee b/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gh">index 3024be0..29279d2 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gi">+++ b/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gu">@@ -8,11 +8,11 @@ class TagIt</span>
+<span class="w"> </span>      afterTagAdded: (e, ui) -&gt;
+<span class="w"> </span>        unless ui.duringInitialization
+<span class="w"> </span>          message_id = $(&quot;#tag-it&quot;).data(&#39;message-id&#39;)
+<span class="gd">-          path = &quot;#{window.paths.staff_root}/messages/#{message_id}/tag&quot;</span>
+<span class="gi">+          path = window.path_for(&quot;tag_staff_message&quot;, { id: message_id })</span>
+<span class="w"> </span>          $.post(path, {label: ui.tagLabel})
+<span class="w"> </span>      afterTagRemoved: (e, ui) -&gt;
+<span class="w"> </span>        unless ui.duringInitialization
+<span class="w"> </span>          message_id = $(&quot;#tag-it&quot;).data(&#39;message-id&#39;)
+<span class="gd">-          path = &quot;#{window.paths.staff_root}/messages/#{message_id}/tag&quot;</span>
+<span class="gi">+          path = window.path_for(&quot;tag_staff_message&quot;, { id: message_id})</span>
+<span class="w"> </span>          $.ajax(type: &#39;DELETE&#39;, url: path, data: { label: ui.tagLabel})
+<span class="w"> </span>    )
+</code></pre></div>
+<h2 id="5d9ae1a">コミット: 5d9ae1a<a class="headerlink" href="#5d9ae1a" title="Permanent link">&para;</a></h2>
+<h3 id="_30">メッセージ<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>タグの追加・削除 #21
+</code></pre></div>
+<h3 id="_31">変更されたファイル<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/assets/javascripts/staff/paths.coffee.erb</li>
+<li>M app/assets/javascripts/staff/tag-it.coffee</li>
+<li>M app/controllers/staff/messages_controller.rb</li>
+<li>M app/models/message.rb</li>
+<li>M app/views/staff/messages/show.html.erb</li>
+<li>M config/routes.rb</li>
+</ul>
+<h3 id="_32">変更内容<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 5d9ae1a10822d97729d643cc8c620f9dc140a0f0
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 16:12:30 2017 +0900
+
+<span class="w"> </span>   タグの追加・削除 #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 138dd5f..fce025b 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -774,6 +774,7 @@ git push heroku master</span>
+<span class="w"> </span>+ モデル間の関連付け
+<span class="w"> </span>+ Tag-itのインストール
+<span class="w"> </span>+ タグの追加・削除インターフェース
+<span class="gi">++ タグの追加・削除</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/assets/javascripts/staff/paths.coffee.erb b/app/assets/javascripts/staff/paths.coffee.erb</span>
+<span class="gh">index b1a8104..39cbdb5 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff/paths.coffee.erb</span>
+<span class="gi">+++ b/app/assets/javascripts/staff/paths.coffee.erb</span>
+<span class="gu">@@ -1,2 +1,3 @@</span>
+<span class="w"> </span>window.paths = new Object
+<span class="gd">-window.paths.number_of_unprocessed_messages = &quot;&lt;%= count_staff_messages_path %&gt;&quot;</span>
+\ No newline at end of file
+<span class="gi">+window.paths.number_of_unprocessed_messages = &quot;&lt;%= count_staff_messages_path %&gt;&quot;</span>
+<span class="gi">+window.paths.staff_root = &quot;&lt;%= staff_root_path.sub(%r{/\z}, &#39;&#39;) %&gt;&quot;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/assets/javascripts/staff/tag-it.coffee b/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gh">index 2df1d97..3024be0 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gi">+++ b/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gu">@@ -4,4 +4,15 @@ $(document).on &quot;turbolinks:load&quot;, -&gt;</span>
+
+<span class="w"> </span>class TagIt
+<span class="w"> </span>  constructor: -&gt;
+<span class="gd">-    $(&quot;#tag-it&quot;).tagit()</span>
+<span class="gi">+    $(&quot;#tag-it&quot;).tagit(</span>
+<span class="gi">+      afterTagAdded: (e, ui) -&gt;</span>
+<span class="gi">+        unless ui.duringInitialization</span>
+<span class="gi">+          message_id = $(&quot;#tag-it&quot;).data(&#39;message-id&#39;)</span>
+<span class="gi">+          path = &quot;#{window.paths.staff_root}/messages/#{message_id}/tag&quot;</span>
+<span class="gi">+          $.post(path, {label: ui.tagLabel})</span>
+<span class="gi">+      afterTagRemoved: (e, ui) -&gt;</span>
+<span class="gi">+        unless ui.duringInitialization</span>
+<span class="gi">+          message_id = $(&quot;#tag-it&quot;).data(&#39;message-id&#39;)</span>
+<span class="gi">+          path = &quot;#{window.paths.staff_root}/messages/#{message_id}/tag&quot;</span>
+<span class="gi">+          $.ajax(type: &#39;DELETE&#39;, url: path, data: { label: ui.tagLabel})</span>
+<span class="gi">+    )</span>
+<span class="gh">diff --git a/app/controllers/staff/messages_controller.rb b/app/controllers/staff/messages_controller.rb</span>
+<span class="gh">index 641ebf1..7e3768d 100644</span>
+<span class="gd">--- a/app/controllers/staff/messages_controller.rb</span>
+<span class="gi">+++ b/app/controllers/staff/messages_controller.rb</span>
+<span class="gu">@@ -38,4 +38,17 @@ class Staff::MessagesController &lt; Staff::Base</span>
+<span class="w"> </span>    flash.notice = t(&#39;.flash_notice&#39;)
+<span class="w"> </span>    redirect_to :back
+<span class="w"> </span>  end
+<span class="gi">+</span>
+<span class="gi">+  # POST/DELETE</span>
+<span class="gi">+  def tag</span>
+<span class="gi">+    message = CustomerMessage.find(params[:id])</span>
+<span class="gi">+    if request.post?</span>
+<span class="gi">+      message.add_tag(params[:label])</span>
+<span class="gi">+    elsif request.delete?</span>
+<span class="gi">+      message.remove_tag(params[:label])</span>
+<span class="gi">+    else</span>
+<span class="gi">+      raise</span>
+<span class="gi">+    end</span>
+<span class="gi">+    render text: &#39;OK&#39;</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+<span class="gh">diff --git a/app/models/message.rb b/app/models/message.rb</span>
+<span class="gh">index ecc8a44..19e47e1 100644</span>
+<span class="gd">--- a/app/models/message.rb</span>
+<span class="gi">+++ b/app/models/message.rb</span>
+<span class="gu">@@ -66,4 +66,25 @@ class Message &lt; ApplicationRecord</span>
+<span class="w"> </span>    messages = Message.where(root_id: r.id).select(:id, :parent_id, :subject)
+<span class="w"> </span>    @tree = SimpleTree.new(r,messages)
+<span class="w"> </span>  end
+<span class="gi">+</span>
+<span class="gi">+  def add_tag(label)</span>
+<span class="gi">+    self.class.transaction do</span>
+<span class="gi">+      tag = Tag.find_by_created_at(value: label)</span>
+<span class="gi">+      tag ||= Tag.create!(value: label)</span>
+<span class="gi">+      unless message_tag_links.where(tag_id: tag.id).exists?</span>
+<span class="gi">+        message_tag_links.create!(tag_id: tag.id)</span>
+<span class="gi">+      end</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def remove_tag(label)</span>
+<span class="gi">+    self.class.transaction do</span>
+<span class="gi">+      if tag = Tag.find_by(value: label)</span>
+<span class="gi">+        message_tag_links.find_by(tag_id: tag.id).destroy</span>
+<span class="gi">+        if tag.message_tag_links.empty?</span>
+<span class="gi">+          tag.destroy</span>
+<span class="gi">+        end</span>
+<span class="gi">+      end</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+<span class="gh">diff --git a/app/views/staff/messages/show.html.erb b/app/views/staff/messages/show.html.erb</span>
+<span class="gh">index 82cd9da..3cbc59b 100644</span>
+<span class="gd">--- a/app/views/staff/messages/show.html.erb</span>
+<span class="gi">+++ b/app/views/staff/messages/show.html.erb</span>
+<span class="gu">@@ -19,7 +19,7 @@</span>
+<span class="w"> </span>    &lt;tr class=&quot;Table__tr&quot;&gt;
+<span class="w"> </span>      &lt;th  class=&quot;Table__th&quot;&gt;タグ&lt;/th&gt;
+<span class="w"> </span>      &lt;td&gt;
+<span class="gd">-        &lt;%= markup(:ul, id: &#39;tag-it&#39;) do |m|</span>
+<span class="gi">+        &lt;%= markup(:ul, id: &#39;tag-it&#39;, &#39;data-message-id&#39; =&gt; @message.id) do |m|</span>
+<span class="w"> </span>          @message.tags.each do |tag|
+<span class="w"> </span>            m.li tag.value
+<span class="w"> </span>          end
+<span class="gh">diff --git a/config/routes.rb b/config/routes.rb</span>
+<span class="gh">index 089b548..e6360a5 100644</span>
+<span class="gd">--- a/config/routes.rb</span>
+<span class="gi">+++ b/config/routes.rb</span>
+<span class="gu">@@ -35,6 +35,8 @@</span>
+<span class="w"> </span>#         outbound_staff_messages GET    /staff/messages/outbound(.:format)                   staff/messages#outbound {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#          deleted_staff_messages GET    /staff/messages/deleted(.:format)                    staff/messages#deleted {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#            count_staff_messages GET    /staff/messages/count(.:format)                      staff/messages#count {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="gi">+#               tag_staff_message POST   /staff/messages/:id/tag(.:format)                    staff/messages#tag {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="gi">+#                                 DELETE /staff/messages/:id/tag(.:format)                    staff/messages#tag {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="w"> </span>#     confirm_staff_message_reply POST   /staff/messages/:message_id/reply/confirm(.:format)  staff/replies#confirm {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#         new_staff_message_reply GET    /staff/messages/:message_id/reply/new(.:format)      staff/replies#new {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#             staff_message_reply POST   /staff/messages/:message_id/reply(.:format)          staff/replies#create {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="gu">@@ -103,6 +105,8 @@ Rails.application.routes.draw do</span>
+<span class="w"> </span>      end
+<span class="w"> </span>      resources :messages, only: [ :index, :show, :destroy ] do
+<span class="w"> </span>        get :inbound, :outbound, :deleted, :count, on: :collection
+<span class="gi">+        post :tag, on: :member</span>
+<span class="gi">+        delete :tag, on: :member</span>
+<span class="w"> </span>        resource :reply, only: [ :new, :create ] do
+<span class="w"> </span>          post :confirm
+<span class="w"> </span>        end
+</code></pre></div>
+<h3 id="_33">構造変更<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="59ac04f">コミット: 59ac04f<a class="headerlink" href="#59ac04f" title="Permanent link">&para;</a></h2>
+<h3 id="_34">メッセージ<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>タグの追加・削除インターフェース #21
+</code></pre></div>
+<h3 id="_35">変更されたファイル<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/views/staff/messages/show.html.erb</li>
+</ul>
+<h3 id="_36">変更内容<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 59ac04f28c872d0bc237048d6a31e6e27815f631
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 15:40:22 2017 +0900
+
+<span class="w"> </span>   タグの追加・削除インターフェース #21
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index eb6ea81..138dd5f 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -773,6 +773,7 @@ git push heroku master</span>
+<span class="w"> </span>+ データベース設計
+<span class="w"> </span>+ モデル間の関連付け
+<span class="w"> </span>+ Tag-itのインストール
+<span class="gi">++ タグの追加・削除インターフェース</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/views/staff/messages/show.html.erb b/app/views/staff/messages/show.html.erb</span>
+<span class="gh">index bfc7d1a..82cd9da 100644</span>
+<span class="gd">--- a/app/views/staff/messages/show.html.erb</span>
+<span class="gi">+++ b/app/views/staff/messages/show.html.erb</span>
+<span class="gu">@@ -16,6 +16,16 @@</span>
+<span class="w"> </span>    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.receiver&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p.receiver %&gt;&lt;/td&gt;&lt;/tr&gt;
+<span class="w"> </span>    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.subject&#39;) %&gt;&lt;/th&gt;&lt;td&gt;&lt;%= p.subject %&gt;&lt;/td&gt;&lt;/tr&gt;
+<span class="w"> </span>    &lt;tr class=&quot;Table__tr&quot;&gt;&lt;th class=&quot;Table__th&quot;&gt;&lt;%= t(&#39;.created_at&#39;) %&gt;&lt;/th&gt;&lt;td class=&quot;Table__td--date&quot;&gt;&lt;%= p.created_at %&gt;&lt;/td&gt;&lt;/tr&gt;
+<span class="gi">+    &lt;tr class=&quot;Table__tr&quot;&gt;</span>
+<span class="gi">+      &lt;th  class=&quot;Table__th&quot;&gt;タグ&lt;/th&gt;</span>
+<span class="gi">+      &lt;td&gt;</span>
+<span class="gi">+        &lt;%= markup(:ul, id: &#39;tag-it&#39;) do |m|</span>
+<span class="gi">+          @message.tags.each do |tag|</span>
+<span class="gi">+            m.li tag.value</span>
+<span class="gi">+          end</span>
+<span class="gi">+        end %&gt;</span>
+<span class="gi">+      &lt;/td&gt;</span>
+<span class="gi">+    &lt;/tr&gt;</span>
+<span class="w"> </span>  &lt;/table&gt;
+
+<span class="w"> </span>  &lt;div class=&quot;tree&quot;&gt;&lt;%= p.tree %&gt;&lt;/div&gt;
+</code></pre></div>
+<h2 id="7899110">コミット: 7899110<a class="headerlink" href="#7899110" title="Permanent link">&para;</a></h2>
+<h3 id="_37">メッセージ<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Tag-itのインストール #21
+</code></pre></div>
+<h3 id="_38">変更されたファイル<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M baukis-kai.iml</li>
+</ul>
+<h3 id="_39">変更内容<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 78991103ebaa0b8012bff6dd956ff73dfdd92a13
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 15:29:28 2017 +0900
+
+<span class="w"> </span>   Tag-itのインストール #21
+
+<span class="gh">diff --git a/baukis-kai.iml b/baukis-kai.iml</span>
+<span class="gh">index 7961602..fe5c0f2 100644</span>
+<span class="gd">--- a/baukis-kai.iml</span>
+<span class="gi">+++ b/baukis-kai.iml</span>
+<span class="gu">@@ -142,6 +142,7 @@</span>
+<span class="w"> </span>    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;sprockets (v3.7.1, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;
+<span class="w"> </span>    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;sprockets-rails (v3.2.0, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;
+<span class="w"> </span>    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;sqlite3 (v1.3.12, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;
+<span class="gi">+    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;tag-it-rails (v2.0.0, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;</span>
+<span class="w"> </span>    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;thor (v0.19.4, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;
+<span class="w"> </span>    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;thread_safe (v0.3.5, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;
+<span class="w"> </span>    &lt;orderEntry type=&quot;library&quot; scope=&quot;PROVIDED&quot; name=&quot;tilt (v2.0.5, rbenv: 2.4.0) [gem]&quot; level=&quot;application&quot; /&gt;
+</code></pre></div>
+<h2 id="9822a10">コミット: 9822a10<a class="headerlink" href="#9822a10" title="Permanent link">&para;</a></h2>
+<h3 id="_40">メッセージ<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Tag-itのインストール #21
+</code></pre></div>
+<h3 id="_41">変更されたファイル<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M Gemfile</li>
+<li>M Gemfile.lock</li>
+<li>M README.md</li>
+<li>M app/assets/javascripts/staff.js</li>
+<li>A app/assets/javascripts/staff/tag-it.coffee</li>
+<li>M app/assets/stylesheets/main.scss</li>
+</ul>
+<h3 id="_42">変更内容<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 9822a102b0c59ff3862fda2335cbfa6e7bb49e18
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Sat Mar 25 15:29:15 2017 +0900
+
+<span class="w"> </span>   Tag-itのインストール #21
+
+<span class="gh">diff --git a/Gemfile b/Gemfile</span>
+<span class="gh">index 4da1b83..7d8acb2 100644</span>
+<span class="gd">--- a/Gemfile</span>
+<span class="gi">+++ b/Gemfile</span>
+<span class="gu">@@ -94,4 +94,5 @@ gem &#39;email_validator&#39;, &#39;~&gt; 1.6&#39;</span>
+<span class="w"> </span>gem &#39;jquery-ui-rails&#39;, &#39;~&gt; 5.0&#39;, &#39;&gt;= 5.0.5&#39;
+<span class="w"> </span>gem &#39;momentjs-rails&#39;
+<span class="w"> </span>gem &#39;bootstrap3-datetimepicker-rails&#39;
+<span class="gi">+gem &#39;tag-it-rails&#39;</span>
+
+<span class="gh">diff --git a/Gemfile.lock b/Gemfile.lock</span>
+<span class="gh">index 2610cc3..ac11a7f 100644</span>
+<span class="gd">--- a/Gemfile.lock</span>
+<span class="gi">+++ b/Gemfile.lock</span>
+<span class="gu">@@ -286,6 +286,9 @@ GEM</span>
+<span class="w"> </span>      activesupport (&gt;= 4.0)
+<span class="w"> </span>      sprockets (&gt;= 3.0.0)
+<span class="w"> </span>    sqlite3 (1.3.12)
+<span class="gi">+    tag-it-rails (2.0.0)</span>
+<span class="gi">+      jquery-ui-rails</span>
+<span class="gi">+      railties</span>
+<span class="w"> </span>    thor (0.19.4)
+<span class="w"> </span>    thread_safe (0.3.5)
+<span class="w"> </span>    tilt (2.0.5)
+<span class="gu">@@ -361,6 +364,7 @@ DEPENDENCIES</span>
+<span class="w"> </span>  spring-commands-rspec
+<span class="w"> </span>  spring-watcher-listen (~&gt; 2.0.0)
+<span class="w"> </span>  sqlite3
+<span class="gi">+  tag-it-rails</span>
+<span class="w"> </span>  turbolinks (~&gt; 5)
+<span class="w"> </span>  tzinfo-data
+<span class="w"> </span>  uglifier (&gt;= 1.3.0)
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 480e469..eb6ea81 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -772,6 +772,7 @@ git push heroku master</span>
+<span class="w"> </span>#### メッセージのタグ付け
+<span class="w"> </span>+ データベース設計
+<span class="w"> </span>+ モデル間の関連付け
+<span class="gi">++ Tag-itのインストール</span>
+
+<span class="w"> </span>#### 一意制約と排他的ロック
+<span class="w"> </span>#### 演習問題  
+<span class="gh">diff --git a/app/assets/javascripts/staff.js b/app/assets/javascripts/staff.js</span>
+<span class="gh">index aa1bf0e..e746e87 100644</span>
+<span class="gd">--- a/app/assets/javascripts/staff.js</span>
+<span class="gi">+++ b/app/assets/javascripts/staff.js</span>
+<span class="gu">@@ -20,5 +20,7 @@</span>
+<span class="w"> </span>//= require jquery-ui/datepicker-ja
+<span class="w"> </span>//= require moment
+<span class="w"> </span>//= require moment/ja
+<span class="gi">+//= require jquery-ui</span>
+<span class="gi">+//= require tag-it</span>
+<span class="w"> </span>//= require bootstrap-datetimepicker
+<span class="w"> </span>//= require_tree ./staff
+<span class="gh">diff --git a/app/assets/javascripts/staff/tag-it.coffee b/app/assets/javascripts/staff/tag-it.coffee</span>
+new file mode 100644
+<span class="gh">index 0000000..2df1d97</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/assets/javascripts/staff/tag-it.coffee</span>
+<span class="gu">@@ -0,0 +1,7 @@</span>
+<span class="gi">+$(document).on &quot;turbolinks:load&quot;, -&gt;</span>
+<span class="gi">+  do -&gt;</span>
+<span class="gi">+    new TagIt</span>
+<span class="gi">+</span>
+<span class="gi">+class TagIt</span>
+<span class="gi">+  constructor: -&gt;</span>
+<span class="gi">+    $(&quot;#tag-it&quot;).tagit()</span>
+<span class="gh">diff --git a/app/assets/stylesheets/main.scss b/app/assets/stylesheets/main.scss</span>
+<span class="gh">index b0f45e1..6a01807 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/main.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/main.scss</span>
+<span class="gu">@@ -93,6 +93,8 @@</span>
+
+<span class="w"> </span>//jQuery
+<span class="w"> </span>@import &quot;jquery-ui/datepicker&quot;;
+<span class="gi">+@import &quot;jquery-ui&quot;;</span>
+<span class="gi">+@import &quot;jquery.tagit&quot;;</span>
+<span class="w"> </span>// ===========================
+<span class="w"> </span>// Pages
+<span class="w"> </span>// ===========================
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1988 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20170121/">
+      
+      
+        <link rel="next" href="../20170124/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20170123 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2017-01-23" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20170123
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      デプロイとレスポンシブ対応の構成図
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      作業内容
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作業内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ユーザーインターフェースの改善とデプロイ環境の設定
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ユーザーインターフェースの改善とデプロイ環境の設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更点の概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12ae098" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 12ae098
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 12ae098">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86e2719" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 86e2719
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 86e2719">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d6120a2" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: d6120a2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: d6120a2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adbeb4c" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: adbeb4c
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: adbeb4c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2017-01-23">作業履歴 2017-01-23<a class="headerlink" href="#2017-01-23" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2017-01-23の作業内容をまとめています。このジャーナルでは、ユーザーインターフェースの改善とデプロイ環境の設定に関する作業を記録しています。主にログインフォームのレスポンシブ対応とHerokuデプロイのためのデータベース設定を行いました。</p>
+<h2 id="_2">デプロイとレスポンシブ対応の構成図<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9Ijc3NXB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6NTQzcHg7aGVpZ2h0Ojc3NXB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDU0MyA3NzUiIHdpZHRoPSI1NDNweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyIGFwcF9zeXN0ZW0tLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9ImFwcF9zeXN0ZW0iIGRhdGEtc291cmNlLWxpbmU9IjE0NjUiIGRhdGEtdWlkPSJlbnQwMDA0IiBpZD0iY2x1c3Rlcl9hcHBfc3lzdGVtIj48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjM2MC4zMSIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNDQ0NDQ0O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1kYXNoYXJyYXk6Ny4wLDcuMDsiIHdpZHRoPSI1MzAiIHg9IjciIHk9IjQwOS4zOCIvPjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2MC42MjExIiB4PSIyNDEuNjg5NSIgeT0iNDE2Ljk0OTMiPiYjMTcxO3N5c3RlbV9ib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI2IiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzUuOTI5NyIgeD0iMjU0LjAzNTIiIHk9IjQyNi45NDkzIj4mIzE3MTtib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTkyLjAwMDQiIHg9IjE3NS45OTk4IiB5PSI0NDYuMjMxNiI+JiMxMjQ1MDsmIzEyNTAzOyYjMTI1MjI7JiMxMjQ2NTsmIzEyNTQwOyYjMTI0NzE7JiMxMjUxOTsmIzEyNTMxOyYjMTI0NzE7JiMxMjQ3MzsmIzEyNDg2OyYjMTI1MTI7PC90ZXh0Pjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1OS40NTUxIiB4PSIyNDIuMjcyNSIgeT0iNDYxLjE0MzciPltzeXN0ZW1dPC90ZXh0PjwvZz48IS0tZW50aXR5IGxvZ2luX2Zvcm0tLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0ibG9naW5fZm9ybSIgZGF0YS1zb3VyY2UtbGluZT0iNjMiIGRhdGEtdWlkPSJlbnQwMDA1IiBpZD0iZW50aXR5X2xvZ2luX2Zvcm0iPjxyZWN0IGZpbGw9IiM4NUJCRjAiIGhlaWdodD0iOTkuMTU2MyIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNzhBOEQ4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTQ4LjAwMDIiIHg9IjIzIiB5PSI0ODAuMzgiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgyLjU3MDMiIHg9IjU1LjcxNSIgeT0iNTAxLjUxODciPiYjMTcxO2NvbXBvbmVudCYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTI4LjAwMDIiIHg9IjMzIiB5PSI1MTkuMjAwMyI+JiMxMjUyNTsmIzEyNDY0OyYjMTI0NTI7JiMxMjUzMTsmIzEyNTAxOyYjMTI0NTc7JiMxMjU0MDsmIzEyNTEyOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQ1LjM2MzYiIHg9Ijc0LjMxODMiIHk9IjUzNC4xMTI0Ij5bJiMxMjQ5OTsmIzEyNTE3OyYjMTI1NDA7XTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9Ijk0Ljc3NSIgeT0iNTQ5LjkzNzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjYuMzc1NSIgeD0iMzMuODEyNCIgeT0iNTY2LjIzNDUiPiYjMTI1MjQ7JiMxMjQ3MzsmIzEyNTA5OyYjMTI1MzE7JiMxMjQ3MTsmIzEyNTAyOyYjMjM1NTA7JiMyNDU0MDtVSTwvdGV4dD48L2c+PCEtLWVudGl0eSBpMThuLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImkxOG4iIGRhdGEtc291cmNlLWxpbmU9IjYzIiBkYXRhLXVpZD0iZW50MDAwNiIgaWQ9ImVudGl0eV9pMThuIj48cmVjdCBmaWxsPSIjODVCQkYwIiBoZWlnaHQ9Ijk5LjE1NjMiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6Izc4QThEODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjExNy45OTk2IiB4PSIzOCIgeT0iNjU0LjUzIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4Mi41NzAzIiB4PSI1NS43MTQ2IiB5PSI2NzUuNjY4NyI+JiMxNzE7Y29tcG9uZW50JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0OC4wMDAxIiB4PSI3Mi45OTk3IiB5PSI2OTMuMzUwMyI+JiMyMjI2OTsmIzM4NTU1OyYjMjEyNzA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzMuMzYzNSIgeD0iODAuMzE4MSIgeT0iNzA4LjI2MjQiPlsmIzM1MzczOyYjMjM0NTA7XTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9Ijk0Ljc3NDciIHk9IjcyNC4wODc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOTcuOTk5NiIgeD0iNDgiIHk9Ijc0MC4zODQ1Ij4mIzEyNTEzOyYjMTI0ODM7JiMxMjQ3NTsmIzEyNTQwOyYjMTI0NzI7JiMzMjc2MzsmIzM1Mzc5OzwvdGV4dD48L2c+PCEtLWVudGl0eSBkYXRhYmFzZV9jb25maWctLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iZGF0YWJhc2VfY29uZmlnIiBkYXRhLXNvdXJjZS1saW5lPSI2MyIgZGF0YS11aWQ9ImVudDAwMDciIGlkPSJlbnRpdHlfZGF0YWJhc2VfY29uZmlnIj48cmVjdCBmaWxsPSIjODVCQkYwIiBoZWlnaHQ9Ijk5LjE1NjMiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6Izc4QThEODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE0OC4wMDAyIiB4PSIyMDYiIHk9IjQ4MC4zOCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODIuNTcwMyIgeD0iMjM4LjcxNSIgeT0iNTAxLjUxODciPiYjMTcxO2NvbXBvbmVudCYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTI4LjAwMDIiIHg9IjIxNiIgeT0iNTE5LjIwMDMiPiYjMTI0ODc7JiMxMjU0MDsmIzEyNDc5OyYjMTI1MDU7JiMxMjU0MDsmIzEyNDczOyYjMzUzNzM7JiMyMzQ1MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzMy4zNjM1IiB4PSIyNjMuMzE4NCIgeT0iNTM0LjExMjQiPlsmIzM1MzczOyYjMjM0NTA7XTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjI3Ny43NzUiIHk9IjU0OS45Mzc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOTAuMzg0NSIgeD0iMjM0LjgwNzkiIHk9IjU2Ni4yMzQ1Ij4mIzI5ODcyOyYjMjI2NTk7JiMyMTAyOTtEQiYjMjU1MDk7JiMzMjE1NDs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgc2VlZF9kYXRhLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9InNlZWRfZGF0YSIgZGF0YS1zb3VyY2UtbGluZT0iNjMiIGRhdGEtdWlkPSJlbnQwMDA4IiBpZD0iZW50aXR5X3NlZWRfZGF0YSI+PHJlY3QgZmlsbD0iIzg1QkJGMCIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM3OEE4RDg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMzEuOTk5NSIgeD0iMzg5IiB5PSI0ODAuMzgiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgyLjU3MDMiIHg9IjQxMy43MTQ2IiB5PSI1MDEuNTE4NyI+JiMxNzE7Y29tcG9uZW50JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5Ni4wMDAyIiB4PSI0MDYuOTk5NyIgeT0iNTE5LjIwMDMiPiYjMTI0NzE7JiMxMjU0MDsmIzEyNDg5OyYjMTI0ODc7JiMxMjU0MDsmIzEyNDc5OzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY5LjM2MzciIHg9IjQyMC4zMTc5IiB5PSI1MzQuMTEyNCI+WyYjMjEwMjE7JiMyNjM5OTsmIzEyNDg3OyYjMTI1NDA7JiMxMjQ3OTtdPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuNDUwMiIgeD0iNDUyLjc3NDciIHk9IjU0OS45Mzc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTExLjk5OTUiIHg9IjM5OSIgeT0iNTY2LjIzNDUiPiYjMjk4NzI7JiMyMjY1OTsmIzIxMDI5OyYjMjEwMjE7JiMyNjM5OTsmIzEyNDg3OyYjMTI1NDA7JiMxMjQ3OTs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgdXNlci0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJ1c2VyIiBkYXRhLXNvdXJjZS1saW5lPSIzNzQiIGRhdGEtdWlkPSJlbnQwMDAyIiBpZD0iZW50aXR5X3VzZXIiPjxyZWN0IGZpbGw9IiMwODQyN0IiIGhlaWdodD0iMTMzLjE4NzUiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzA3M0I2RjtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE2NC43MTYyIiB4PSIxNC42NCIgeT0iMjE1LjE5Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MTY0IiB4PSI2OS4wODk5IiB5PSIyMzYuMzI4NyI+JiMxNzE7cGVyc29uJiMxODc7PC90ZXh0PjxpbWFnZSBoZWlnaHQ9IjQ4IiB3aWR0aD0iNDgiIHg9IjcyLjk5ODEiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBREFBQUFBd0NBWUFBQUJYQXZtSEFBQUNNRWxFUVZSNFh1Mll2VXJGUUJDRmIra2orQWkrZ3EzWTJQZ0ErZ0NDdFoyVjJBaHFhU05pcVkxZ1lXTWphQ3ZYeWtvRUt5MjFzTENOZkVMZ01zY2tzejhtV2ZEQUIzS3V5ZTdzVG1Zbm1jd3RiVTlLUm96U0VDT1ZsYTNUNnVUcXZycVpQbGNQVDY4L1hOdytWdHZIMTlYQytzR2UvZjlVeElobDgvQ3krdmo4cXJwRVlJc2JSMU43ZlN4aWhESy91cnZNS29lS0hiSDNpa0dNRUppOFo5V2J0SDkybHh5RUdDSEVyTHdWcVdmdkc0SVlYa2lCWEdJbjdmMjlpT0dCQWUwa1VrVFZzbU40RWNNRDI1NWJkZ3d2WW5pZ0ZPWVc1NGNkeDRNWUhsSXFUNU5peTZvWUh1emdPUlJiVXNYd1lBZlBvVjREZUhsN3QrTW5LL1k4RU1NRHpWbHU5Zm9RNXk2akZBVTdoaGN4dk9Tc1JMSDVEMko0S2JxVnFNbHhvSzN0bkVldlBvZ1JBaXVYVXBGaUQ2OVp4SWdoWmlkU1Y3NUdqRmlZa0djM0tNRXBPVzhSSXhYZWQwa05Kc3JPQU8weXBUZm54R3ZFS0EweFNrTU1EM3pmSWVkSkZRNGhDUGxVd3JYMWRhUVdiVVJzZW9uUkJoTnVlMUQ1cmM1M0prVlF3TjljMjFXdCtEMjBKeExqTjdocHp0YWhTd1RpM1JFeExEbGJoaEN4bTU1UGtXTE1rcnZyREJXNzNyVVRZdFNRdS9hR1E0aDBzbk56QmREMXdQV3B0clpEREJqTDZ0ZmllYkJ6YkEyQVVqZzJOVDNRWWtCYnJSOUtUUy85WW9DOWVBeHFldTBVSS9lSDIxeWl1N1Z6TFNxQXBuSXF4bjhBZjZUaUEzQS9BOUJuNStsVjB4Y01NV0RvSnM2cXJha1RvNGE2T3daeHFMYTk3WWt4QzFIek1rTXpOUVJ0RTNjRlVBSmlsTVkzT0dUTkwwTkRMcUlBQUFBQVNVVk9SSzVDWUlJPSIgeT0iMjM5LjE1ODgiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjQuMDAwMSIgeD0iNjQuOTk4IiB5PSIzMDIuMDEwMyI+JiMxMjUxODsmIzEyNTQwOyYjMTI0NzA7JiMxMjU0MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSI5NC43NzMiIHk9IjMxOC43Nzg5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTQ0LjcxNjIiIHg9IjI0LjY0IiB5PSIzMzUuMDc1NyI+JiMxMjUxNDsmIzEyNDk2OyYjMTI0NTI7JiMxMjUyMzsvJiMxMjQ4NzsmIzEyNDczOyYjMTI0NjM7JiMxMjQ4ODsmIzEyNDgzOyYjMTI1MDM7PC90ZXh0PjwvZz48IS0tZW50aXR5IGRldmVsb3Blci0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJkZXZlbG9wZXIiIGRhdGEtc291cmNlLWxpbmU9IjM3NCIgZGF0YS11aWQ9ImVudDAwMDMiIGlkPSJlbnRpdHlfZGV2ZWxvcGVyIj48cmVjdCBmaWxsPSIjMDg0MjdCIiBoZWlnaHQ9IjEzMy4xODc1IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMwNzNCNkY7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNzMuOTk5MyIgeD0iMjUxIiB5PSI3Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MTY0IiB4PSIzMTAuMDkxNSIgeT0iMjguMTM4NyI+JiMxNzE7cGVyc29uJiMxODc7PC90ZXh0PjxpbWFnZSBoZWlnaHQ9IjQ4IiB3aWR0aD0iNDgiIHg9IjMxMy45OTk3IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQURBQUFBQXdDQVlBQUFCWEF2bUhBQUFDTUVsRVFWUjRYdTJZdlVyRlFCQ0ZiK2tqK0FpK2dxM1kyUGdBK2dDQ3RaMlYyQWhxYVNOaXFZMWdZV01qYUN2WHlrb0VLeTIxc0xDTmZFTGdNc2Nrc3o4bVdmREFCM0t1eWU3c1RtWW5tY3d0YlU5S1JvelNFQ09WbGEzVDZ1VHF2cnFaUGxjUFQ2OC9YTncrVnR2SDE5WEMrc0dlL2Y5VXhJaGw4L0N5K3ZqOHFycEVZSXNiUjFON2ZTeGloREsvdXJ2TUtvZUtIYkgzaWtHTUVKaThaOVdidEg5Mmx4eUVHQ0hFckx3VnFXZnZHNElZWGtpQlhHSW43ZjI5aU9HQkFlMGtVa1RWc21ONEVjTUQyNTViZGd3dlluaWdGT1lXNTRjZHg0TVlIbElxVDVOaXk2b1lIdXpnT1JSYlVzWHdZQWZQb1Y0RGVIbDd0K01uSy9ZOEVNTUR6Vmx1OWZvUTV5NmpGQVU3aGhjeHZPU3NSTEg1RDJKNEticVZxTWx4b0szdG5FZXZQb2dSQWl1WFVwRmlENjlaeElnaFppZFNWNzVHakZpWWtHYzNLTUVwT1c4Ukl4WGVkMGtOSnNyT0FPMHlwVGZueEd2RUtBMHhTa01NRDN6ZkllZEpGUTRoQ1BsVXdyWDFkYVFXYlVSc2VvblJCaE51ZTFENXJjNTNKa1ZRd045YzIxV3QrRDIwSnhMak43aHB6dGFoU3dUaTNSRXhMRGxiaGhDeG01NVBrV0xNa3J2ckRCVzczclVUWXRTUXUvYUdRNGgwc25OekJkRDF3UFdwdHJaRERCakw2dGZpZWJCemJBMkFVamcyTlQzUVlrQmJyUjlLVFMvOVlvQzllQXhxZXUwVUkvZUgyMXlpdTdWekxTcUFwbklxeG44QWY2VGlBM0EvQTlCbjUrbFYweGNNTVdEb0pzNnFyYWtUbzRhNk93WnhxTGE5N1lreEMxSHpNa016TlFSdEUzY0ZVQUppbE1ZM09HVE5MME5ETHFJQUFBQUFTVVZPUks1Q1lJST0iIHk9IjMwLjk2ODgiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNDguMDAwMSIgeD0iMzEzLjk5OTYiIHk9IjkzLjgyMDMiPiYjMzgyODM7JiMzMDMzMDsmIzMyNzczOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjMzNS43NzQ2IiB5PSIxMTAuNTg4OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE1My45OTkzIiB4PSIyNjEiIHk9IjEyNi44ODU3Ij4mIzEyNDUwOyYjMTI1MDM7JiMxMjUyMjsmIzEyNDY1OyYjMTI1NDA7JiMxMjQ3MTsmIzEyNTE5OyYjMTI1MzE7JiMzMTY0OTsmIzI5NzAyOyYjMzI3NzM7PC90ZXh0PjwvZz48IS0tZW50aXR5IGhlcm9rdS0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJoZXJva3UiIGRhdGEtc291cmNlLWxpbmU9IjQwOCIgZGF0YS11aWQ9ImVudDAwMDkiIGlkPSJlbnRpdHlfaGVyb2t1Ij48cmVjdCBmaWxsPSIjOTk5OTk5IiBoZWlnaHQ9IjEwMS40ODQ0IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM4QThBOEE7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMzUuODY1MiIgeD0iMjcwLjA3IiB5PSIyMzEuMDQiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjExMy44NjUyIiB4PSIyODEuMDciIHk9IjI1Mi4xNzg3Ij4mIzE3MTtleHRlcm5hbF9zeXN0ZW0mIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIzMzUuNzc3NSIgeT0iMjY4LjAwMzkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjUuMTU2MyIgeD0iMzA1LjQyNDUiIHk9IjI4Ni4xNTcyIj5IZXJva3U8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIzMzUuNzc3NSIgeT0iMzAyLjkyNTciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNC40ODczIiB4PSIzMjAuNzU5IiB5PSIzMTkuMjIyNiI+UGFhUzwvdGV4dD48L2c+PCEtLWxpbmsgdXNlciB0byBsb2dpbl9mb3JtLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9InVzZXIiIGRhdGEtZW50aXR5LTI9ImxvZ2luX2Zvcm0iIGRhdGEtc291cmNlLWxpbmU9IjE1NzgiIGRhdGEtdWlkPSJsbmsxMCIgaWQ9ImxpbmtfdXNlcl9sb2dpbl9mb3JtIj48cGF0aCBkPSJNOTcsMzQ4Ljc1IEM5NywzOTAuMDYgOTcsNDM0LjM4IDk3LDQ3MS45OSIgZmlsbD0ibm9uZSIgaWQ9InVzZXItdG8tbG9naW5fZm9ybSIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iOTcsNDc5Ljk5LDEwMCw0NzEuOTksOTQsNDcxLjk5LDk3LDQ3OS45OSIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjx0ZXh0IGZpbGw9IiM2NjY2NjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0OC4wMDA0IiB4PSI5OCIgeT0iMzkwLjUxODciPiYjMTI0NTA7JiMxMjQ2MzsmIzEyNDc1OyYjMTI0NzM7PC90ZXh0PjwvZz48IS0tbGluayBsb2dpbl9mb3JtIHRvIGkxOG4tLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0ibG9naW5fZm9ybSIgZGF0YS1lbnRpdHktMj0iaTE4biIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazExIiBpZD0ibGlua19sb2dpbl9mb3JtX2kxOG4iPjxwYXRoIGQ9Ik05Nyw1NzkuODMgQzk3LDYwMy4wOSA5Nyw2MjIuODQgOTcsNjQ2LjEyIiBmaWxsPSJub25lIiBpZD0ibG9naW5fZm9ybS10by1pMThuIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSI5Nyw2NTQuMTIsMTAwLDY0Ni4xMiw5NCw2NDYuMTIsOTcsNjU0LjEyIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijg0LjAwMDYiIHg9Ijk4IiB5PSI2MjEuNjY4NyI+JiMxMjUxMzsmIzEyNDgzOyYjMTI0NzU7JiMxMjU0MDsmIzEyNDcyOyYjMjE0NjI7JiMyNDQ3MTs8L3RleHQ+PC9nPjwhLS1saW5rIGRldmVsb3BlciB0byBoZXJva3UtLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0iZGV2ZWxvcGVyIiBkYXRhLWVudGl0eS0yPSJoZXJva3UiIGRhdGEtc291cmNlLWxpbmU9IjE1NzgiIGRhdGEtdWlkPSJsbmsxMiIgaWQ9ImxpbmtfZGV2ZWxvcGVyX2hlcm9rdSI+PHBhdGggZD0iTTMzOCwxNDAuNjkgQzMzOCwxNjkuOSAzMzgsMTk1LjY4IDMzOCwyMjIuNzUiIGZpbGw9Im5vbmUiIGlkPSJkZXZlbG9wZXItdG8taGVyb2t1IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIzMzgsMjMwLjc1LDM0MSwyMjIuNzUsMzM1LDIyMi43NSwzMzgsMjMwLjc1IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQ4LjAwMDQiIHg9IjMzOSIgeT0iMTgyLjMyODciPiYjMTI0ODc7JiMxMjUwMzsmIzEyNTI1OyYjMTI0NTI7PC90ZXh0PjwvZz48IS0tbGluayBoZXJva3UgdG8gZGF0YWJhc2VfY29uZmlnLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9Imhlcm9rdSIgZGF0YS1lbnRpdHktMj0iZGF0YWJhc2VfY29uZmlnIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTMiIGlkPSJsaW5rX2hlcm9rdV9kYXRhYmFzZV9jb25maWciPjxwYXRoIGQ9Ik0zMjYuMTksMzMyLjkgQzMxNi4wNiwzNzUuOTEgMzAzLjM3NTcsNDI5Ljc1MzUgMjkzLjMyNTcsNDcyLjM4MzUiIGZpbGw9Im5vbmUiIGlkPSJoZXJva3UtdG8tZGF0YWJhc2VfY29uZmlnIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIyOTEuNDksNDgwLjE3LDI5Ni4yNDU2LDQ3My4wNzE4LDI5MC40MDU3LDQ3MS42OTUxLDI5MS40OSw0ODAuMTciIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjNjY2NjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzIuMDAwNSIgeD0iMzE1IiB5PSIzOTAuNTE4NyI+JiMyNTUwOTsmIzMyMTU0OyYjMzUzNzM7JiMyMzQ1MDsmIzIxNDQyOyYjMjkwMzE7PC90ZXh0PjwvZz48IS0tbGluayBoZXJva3UgdG8gc2VlZF9kYXRhLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9Imhlcm9rdSIgZGF0YS1lbnRpdHktMj0ic2VlZF9kYXRhIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTQiIGlkPSJsaW5rX2hlcm9rdV9zZWVkX2RhdGEiPjxwYXRoIGQ9Ik0zNzAuNjcsMzMyLjk3IEMzNzkuNDEsMzQ3LjM1IDM4OC41MSwzNjMuMjQgMzk2LDM3OC4zOCBDNDEyLjMxLDQxMS4zNSA0MjQuNjU3LDQ0Mi40Nzc3IDQzNS40NzcsNDcyLjM2NzciIGZpbGw9Im5vbmUiIGlkPSJoZXJva3UtdG8tc2VlZF9kYXRhIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSI0MzguMiw0NzkuODksNDM4LjI5NzgsNDcxLjM0NjYsNDMyLjY1NjEsNDczLjM4ODgsNDM4LjIsNDc5Ljg5IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEwOC4wMDA4IiB4PSI0MDIiIHk9IjM5MC41MTg3Ij4mIzIxMDIxOyYjMjYzOTk7JiMxMjQ4NzsmIzEyNTQwOyYjMTI0Nzk7JiMzNTUwMTsmIzEyNDE1OyYjMzY3OTY7JiMxMjQxNTs8L3RleHQ+PC9nPjwhLS1TUkM9W1ZQQlZJbmoxNENWVnh3ejh4b2E3MUlkdXE4VkkxekQyLW9RTEZYek5SeE1YeUpSUzlLTUhHaGszY2o5SWZNQTJDVDhnZmpoSy04RTBjY2dKRnNST3RGYlZUN1RvTmR1Sy1oOHRqcEZWM3BGVnNOalBScFBOVDVkZ0tNUG84WkRmUF9YMmRkbENBcG1zWjZkYzF6bkI1bUZjdHEtUDIzeUdSYjFTZ0RFYV90czQzSEc3MkJ5YzREUEdqNTZTOGZHRzBBNVlNZFR3YnhyYkVQdWRvNnR2S3haekV0Z19HV0lYMjFNNDFlZnBHYnlZNzJBcW1mRXpTNkRMNXJjNkNSQ0s1RFkyRlNNQmRrbHVJc2FkZHhTM2tsaUZHR1VnN0xYNS02dlFnTUtaNklrVHVfRFBwdnhaRmtjWFlVQUNQY1dYUkE3dWdJYkFHeGJEWDdlb3gzNDFUc0N1YkVMZkh0UGhCdi1oN1dWbXg4RTdkZ2dNRXR6a2dwbG9TcmJCZXdFY0ZBZHM4TmxRNnQ1RGhMdzV0VWxlZzNNWVR2czJ5eWU5YzN0QmxSZGlGNmRNZ0JnQmk0cjFVeTBSSEU3TkN4YUZpYkhfQ2pOeEtXeWxnWUZLVzM3TnJjWG94OTk2XzlZMGpMd01UZGtyUm9ETjJOOHlQbmRsYWdxeU5Jb2FOcEVWbG9hZ25KQ0FqN1JRU01ScWpyU3gzaFNRVlBCVXZHa01Zcl9KdzFSSzVqTkJLUnc4alloSkxTRnZzREduei1Id01OT2dTVmRHNHFsUWVPdWhqRTYza0Vta3p3X0RWVFZ3WGlmcjRRdVNaYWM2RkhucDk2ZXF5S0N0d2pvZXF4Si0wVzAwXS0tPjwvZz48L3N2Zz4=" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="_3">作業内容<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">ユーザーインターフェースの改善とデプロイ環境の設定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>ユーザーインターフェースの改善とデプロイ環境の設定を行いました。ログインフォームをモバイルデバイスでも使いやすくするためのレスポンシブ対応と、Herokuへのデプロイに必要なデータベース設定を実施しました。</p>
+<h4 id="_5">変更点の概要<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ol>
+<li>ログインフォームのレスポンシブ対応</li>
+<li>モバイル表示時の幅を自動調整するメディアクエリの追加</li>
+<li>
+<p>スマートフォン向けのレイアウト最適化</p>
+</li>
+<li>
+<p>国際化対応の不具合修正</p>
+</li>
+<li>ログインフォームのメッセージ表示問題を解決</li>
+<li>
+<p>YAMLファイルの構造修正</p>
+</li>
+<li>
+<p>Herokuデプロイのための設定</p>
+</li>
+<li>データベース接続設定の環境変数対応</li>
+<li>本番環境用シードデータの追加</li>
+</ol>
+<h4 id="_6">技術的詳細<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>メディアクエリを使用したレスポンシブデザインの実装</li>
+<li>YAMLファイルの構造修正によるi18n不具合の解決</li>
+<li>環境変数を活用した本番環境データベース接続設定</li>
+</ul>
+<h2 id="12ae098">コミット: 12ae098<a class="headerlink" href="#12ae098" title="Permanent link">&para;</a></h2>
+<h3 id="_7">メッセージ<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ログインフォームレスポンシブ対応
+</code></pre></div>
+<h3 id="_8">変更されたファイル<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/assets/stylesheets/pages/_login.scss</li>
+</ul>
+<h3 id="_9">変更内容<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 12ae098d658dc1e4a1e2e1e41c7c80798207f89f
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Mon Jan 23 19:10:59 2017 +0900
+
+<span class="w"> </span>   ログインフォームレスポンシブ対応
+
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_login.scss b/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gh">index c635be9..72fc3e8 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gu">@@ -6,6 +6,9 @@</span>
+
+<span class="w"> </span>.Login {
+<span class="w"> </span>  width: 400px;
+<span class="gi">+  @include mq-sp {</span>
+<span class="gi">+    width: auto;</span>
+<span class="gi">+  }</span>
+<span class="w"> </span>  margin: $wide * 2 auto;
+<span class="w"> </span>  padding: $wide * 2;
+<span class="w"> </span>  border-radius: $wide;
+</code></pre></div>
+<h2 id="86e2719">コミット: 86e2719<a class="headerlink" href="#86e2719" title="Permanent link">&para;</a></h2>
+<h3 id="_10">メッセージ<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ログインフォームメッセージ表示不具合修正
+</code></pre></div>
+<h3 id="_11">変更されたファイル<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M config/locales/models/models.yml</li>
+</ul>
+<h3 id="_12">変更内容<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 86e2719efb52413f5720b845ce52d13159a4a993
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Mon Jan 23 19:00:14 2017 +0900
+
+<span class="w"> </span>   ログインフォームメッセージ表示不具合修正
+
+<span class="gh">diff --git a/config/locales/models/models.yml b/config/locales/models/models.yml</span>
+<span class="gh">index 6138e72..15cb668 100644</span>
+<span class="gd">--- a/config/locales/models/models.yml</span>
+<span class="gi">+++ b/config/locales/models/models.yml</span>
+<span class="gu">@@ -32,8 +32,6 @@ ja:</span>
+<span class="w"> </span>      staff/login_form:
+<span class="w"> </span>        email: メールアドレス
+<span class="w"> </span>        password: パスワード
+<span class="gd">-</span>
+<span class="gd">-    attributes:</span>
+<span class="w"> </span>      admin/login_form:
+<span class="w"> </span>        email: メールアドレス
+<span class="w"> </span>        password: パスワード
+</code></pre></div>
+<h2 id="d6120a2">コミット: d6120a2<a class="headerlink" href="#d6120a2" title="Permanent link">&para;</a></h2>
+<h3 id="_13">メッセージ<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Herokuデプロイデータベース接続対応
+</code></pre></div>
+<h3 id="_14">変更されたファイル<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M config/database.yml</li>
+<li>A db/seed/production/administrators.rb</li>
+<li>A db/seed/production/staff_members.rb</li>
+</ul>
+<h3 id="_15">変更内容<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit d6120a2456a8be7f0a89533924756372a222a1e7
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Mon Jan 23 18:53:48 2017 +0900
+
+<span class="w"> </span>   Herokuデプロイデータベース接続対応
+
+<span class="gh">diff --git a/config/database.yml b/config/database.yml</span>
+<span class="gh">index 0c508ef..0c4a245 100644</span>
+<span class="gd">--- a/config/database.yml</span>
+<span class="gi">+++ b/config/database.yml</span>
+<span class="gu">@@ -55,6 +55,6 @@ production:</span>
+<span class="w"> </span>  # For details on connection pooling, see rails configuration guide
+<span class="w"> </span>  # http://guides.rubyonrails.org/configuring.html#database-pooling
+<span class="w"> </span>  pool: &lt;%= ENV.fetch(&quot;RAILS_MAX_THREADS&quot;) { 5 } %&gt;
+<span class="gd">-  url: postgres://postgres:password@127.0.0.1/baukis-kai_production</span>
+<span class="gd">-  port: 5432</span>
+<span class="gi">+  url: &lt;%= ENV[&#39;DATABASE_URL&#39;] %&gt;</span>
+<span class="gi">+  port: &lt;%= ENV[&#39;PORT&#39;] %&gt;</span>
+
+<span class="gh">diff --git a/db/seed/production/administrators.rb b/db/seed/production/administrators.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..61dc988</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/db/seed/production/administrators.rb</span>
+<span class="gu">@@ -0,0 +1,4 @@</span>
+<span class="gi">+Administrator.create(</span>
+<span class="gi">+               email: &#39;hanako@example.com&#39;,</span>
+<span class="gi">+               password: &#39;foobar&#39;</span>
+<span class="gi">+)</span>
+\ No newline at end of file
+<span class="gh">diff --git a/db/seed/production/staff_members.rb b/db/seed/production/staff_members.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..7156a40</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/db/seed/production/staff_members.rb</span>
+<span class="gu">@@ -0,0 +1,9 @@</span>
+<span class="gi">+StaffMember.create(</span>
+<span class="gi">+               email: &#39;taro@example.com&#39;,</span>
+<span class="gi">+               family_name: &#39;山田&#39;,</span>
+<span class="gi">+               given_name: &#39;太郎&#39;,</span>
+<span class="gi">+               family_name_kana: &#39;ヤマダ&#39;,</span>
+<span class="gi">+               given_name_kana: &#39;タロウ&#39;,</span>
+<span class="gi">+               password: &#39;password&#39;,</span>
+<span class="gi">+               start_date: Date.today</span>
+<span class="gi">+)</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="adbeb4c">コミット: adbeb4c<a class="headerlink" href="#adbeb4c" title="Permanent link">&para;</a></h2>
+<h3 id="_16">メッセージ<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ログインボタン表示不具合修正
+</code></pre></div>
+<h3 id="_17">変更されたファイル<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M app/views/admin/shared/_header.html.erb</li>
+<li>M app/views/staff/shared/_header.html.erb</li>
+</ul>
+<h3 id="_18">変更内容<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit adbeb4c95aaafc6e3a5ca6ff42e0fae5f8931d79
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Mon Jan 23 18:53:15 2017 +0900
+
+<span class="w"> </span>   ログインボタン表示不具合修正
+
+<span class="gh">diff --git a/app/views/admin/shared/_header.html.erb b/app/views/admin/shared/_header.html.erb</span>
+<span class="gh">index 388e5cc..299226e 100644</span>
+<span class="gd">--- a/app/views/admin/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/admin/shared/_header.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_administrator
+<span class="gd">-        link_to t(&#39;admin.shared.header.login&#39;), :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;admin.shared.header.logout&#39;), :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to t(&#39;admin.shared.header.logout&#39;), :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;admin.shared.header.login&#39;), :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>  %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/staff/shared/_header.html.erb b/app/views/staff/shared/_header.html.erb</span>
+<span class="gh">index 830cc01..96aa3d6 100644</span>
+<span class="gd">--- a/app/views/staff/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/staff/shared/_header.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_staff_member
+<span class="gd">-        link_to t(&#39;staff.shared.header.login&#39;), :staff_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;staff.shared.header.logout&#39;), :staff_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to t(&#39;staff.shared.header.logout&#39;), :staff_login, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;staff.shared.header.login&#39;), :staff_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>    %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

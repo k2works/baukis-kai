@@ -1,0 +1,3226 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20170207/">
+      
+      
+        <link rel="next" href="../20170210/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20170209 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2017-02-09" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20170209
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概要">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      実装内容の説明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="実装内容の説明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      顧客の自動ログイン機能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      クッキーの値とセキュリティ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      テストの実装
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      アーキテクチャとの関連
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ユースケースとの関連
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cabf2d2" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: cabf2d2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: cabf2d2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4eed4f8" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 4eed4f8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 4eed4f8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7b0c7ec" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 7b0c7ec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 7b0c7ec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d205c43" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: d205c43
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: d205c43">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d801d1c" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: d801d1c
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: d801d1c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9b86839" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 9b86839
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 9b86839">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6862ae8" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 6862ae8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 6862ae8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      構造変更
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5352ad5" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 5352ad5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 5352ad5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#977c96a" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 977c96a
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 977c96a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250612/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2017-02-09">作業履歴 2017-02-09<a class="headerlink" href="#2017-02-09" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2017-02-09の作業内容をまとめています。この日は主に「顧客の自動ログイン機能」の実装を行いました。</p>
+<h3 id="_2">実装内容の説明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="_3">顧客の自動ログイン機能<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>顧客がシステムを再訪問した際に、毎回ログイン情報を入力する手間を省くため、「次回から自動でログイン」機能を実装しました。この機能は、顧客が明示的に選択した場合にのみ有効になります。実装にはクッキーを使用し、セキュリティを考慮して暗号化されたIDをクッキーに保存します。</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IlNFUVVFTkNFIiBoZWlnaHQ9IjYyMHB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6NjAxcHg7aGVpZ2h0OjYyMHB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDYwMSA2MjAiIHdpZHRoPSI2MDFweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PHRpdGxlPiYjMzkwMTU7JiMyMzQ1ODsmIzEyMzk4OyYjMzMyNTg7JiMyMTIwNTsmIzEyNTI1OyYjMTI0NjQ7JiMxMjQ1MjsmIzEyNTMxOyYjMjcyMzE7JiMzMzAyMTs8L3RpdGxlPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjk5OTMiIHg9IjIyNS40NjE0IiB5PSIyNy45OTUxIj4mIzM5MDE1OyYjMjM0NTg7JiMxMjM5ODsmIzMzMjU4OyYjMjEyMDU7JiMxMjUyNTsmIzEyNDY0OyYjMTI0NTI7JiMxMjUzMTsmIzI3MjMxOyYjMzMwMjE7PC90ZXh0PjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iMTAzLjUzMTMiIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIgd2lkdGg9IjUyNy44NjM1IiB4PSI2OC4wNTg3IiB5PSIyNDQuMTI1Ii8+PGc+PHRpdGxlPi4uPC90aXRsZT48cmVjdCBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjAuMDAwMDAiIGhlaWdodD0iNDIwLjg1OTQiIHdpZHRoPSI4IiB4PSIxNy45OTk5IiB5PSIxMTguNTkzOCIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41O3N0cm9rZS1kYXNoYXJyYXk6NS4wLDUuMDsiIHgxPSIyMSIgeDI9IjIxIiB5MT0iMTE4LjU5MzgiIHkyPSI1MzkuNDUzMSIvPjwvZz48Zz48dGl0bGU+U2Vzc2lvbnNDb250cm9sbGVyPC90aXRsZT48cmVjdCBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjAuMDAwMDAiIGhlaWdodD0iNDIwLjg1OTQiIHdpZHRoPSI4IiB4PSIxNDYuMDAwMSIgeT0iMTE4LjU5MzgiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtZGFzaGFycmF5OjUuMCw1LjA7IiB4MT0iMTQ5LjA1ODciIHgyPSIxNDkuMDU4NyIgeTE9IjExOC41OTM4IiB5Mj0iNTM5LjQ1MzEiLz48L2c+PGc+PHRpdGxlPkN1c3RvbWVyPC90aXRsZT48cmVjdCBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjAuMDAwMDAiIGhlaWdodD0iNDIwLjg1OTQiIHdpZHRoPSI4IiB4PSIyOTAuODQ0NCIgeT0iMTE4LjU5MzgiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtZGFzaGFycmF5OjUuMCw1LjA7IiB4MT0iMjk0Ljg0MjUiIHgyPSIyOTQuODQyNSIgeTE9IjExOC41OTM4IiB5Mj0iNTM5LjQ1MzEiLz48L2c+PGc+PHRpdGxlPkNvb2tpZTwvdGl0bGU+PHJlY3QgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIwLjAwMDAwIiBoZWlnaHQ9IjQyMC44NTk0IiB3aWR0aD0iOCIgeD0iMzY4LjYwNDciIHk9IjExOC41OTM4Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7c3Ryb2tlLWRhc2hhcnJheTo1LjAsNS4wOyIgeDE9IjM3MS44NDY0IiB4Mj0iMzcxLjg0NjQiIHkxPSIxMTguNTkzOCIgeTI9IjUzOS40NTMxIi8+PC9nPjxnIGNsYXNzPSJwYXJ0aWNpcGFudCBwYXJ0aWNpcGFudC1oZWFkIiBkYXRhLXBhcnRpY2lwYW50PSIuLiI+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMjcuOTk5OSIgeD0iNSIgeT0iMTE1LjI5MiI+JiMzOTAxNTsmIzIzNDU4OzwvdGV4dD48ZWxsaXBzZSBjeD0iMjEuOTk5OSIgY3k9IjUwLjc5NjkiIGZpbGw9IiNFMkUyRjAiIHJ4PSI4IiByeT0iOCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHBhdGggZD0iTTIxLjk5OTksNTguNzk2OSBMMjEuOTk5OSw4NS43OTY5IE04Ljk5OTksNjYuNzk2OSBMMzQuOTk5OSw2Ni43OTY5IE0yMS45OTk5LDg1Ljc5NjkgTDguOTk5OSwxMDAuNzk2OSBNMjEuOTk5OSw4NS43OTY5IEwzNC45OTk5LDEwMC43OTY5IiBmaWxsPSJub25lIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiLz48L2c+PGcgY2xhc3M9InBhcnRpY2lwYW50IHBhcnRpY2lwYW50LXRhaWwiIGRhdGEtcGFydGljaXBhbnQ9Ii4uIj48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIyNy45OTk5IiB4PSI1IiB5PSI1NTEuNDQ4MiI+JiMzOTAxNTsmIzIzNDU4OzwvdGV4dD48ZWxsaXBzZSBjeD0iMjEuOTk5OSIgY3k9IjU2My4yNSIgZmlsbD0iI0UyRTJGMCIgcng9IjgiIHJ5PSI4IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiLz48cGF0aCBkPSJNMjEuOTk5OSw1NzEuMjUgTDIxLjk5OTksNTk4LjI1IE04Ljk5OTksNTc5LjI1IEwzNC45OTk5LDU3OS4yNSBNMjEuOTk5OSw1OTguMjUgTDguOTk5OSw2MTMuMjUgTTIxLjk5OTksNTk4LjI1IEwzNC45OTk5LDYxMy4yNSIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PC9nPjxnIGNsYXNzPSJwYXJ0aWNpcGFudCBwYXJ0aWNpcGFudC1oZWFkIiBkYXRhLXBhcnRpY2lwYW50PSJTQyI+PHJlY3QgZmlsbD0iI0UyRTJGMCIgaGVpZ2h0PSIzMC4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNDMuODgyOCIgeD0iNzguMDU4NyIgeT0iODcuMjk2OSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyOS44ODI4IiB4PSI4NS4wNTg3IiB5PSIxMDcuMjkyIj5TZXNzaW9uc0NvbnRyb2xsZXI8L3RleHQ+PC9nPjxnIGNsYXNzPSJwYXJ0aWNpcGFudCBwYXJ0aWNpcGFudC10YWlsIiBkYXRhLXBhcnRpY2lwYW50PSJTQyI+PHJlY3QgZmlsbD0iI0UyRTJGMCIgaGVpZ2h0PSIzMC4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNDMuODgyOCIgeD0iNzguMDU4NyIgeT0iNTM4LjQ1MzEiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjkuODgyOCIgeD0iODUuMDU4NyIgeT0iNTU4LjQ0ODIiPlNlc3Npb25zQ29udHJvbGxlcjwvdGV4dD48L2c+PGcgY2xhc3M9InBhcnRpY2lwYW50IHBhcnRpY2lwYW50LWhlYWQiIGRhdGEtcGFydGljaXBhbnQ9IkMiPjxyZWN0IGZpbGw9IiNFMkUyRjAiIGhlaWdodD0iMzAuMjk2OSIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iODIuMDAzOSIgeD0iMjUzLjg0MjUiIHk9Ijg3LjI5NjkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2OC4wMDM5IiB4PSIyNjAuODQyNSIgeT0iMTA3LjI5MiI+Q3VzdG9tZXI8L3RleHQ+PC9nPjxnIGNsYXNzPSJwYXJ0aWNpcGFudCBwYXJ0aWNpcGFudC10YWlsIiBkYXRhLXBhcnRpY2lwYW50PSJDIj48cmVjdCBmaWxsPSIjRTJFMkYwIiBoZWlnaHQ9IjMwLjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjgyLjAwMzkiIHg9IjI1My44NDI1IiB5PSI1MzguNDUzMSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY4LjAwMzkiIHg9IjI2MC44NDI1IiB5PSI1NTguNDQ4MiI+Q3VzdG9tZXI8L3RleHQ+PC9nPjxnIGNsYXNzPSJwYXJ0aWNpcGFudCBwYXJ0aWNpcGFudC1oZWFkIiBkYXRhLXBhcnRpY2lwYW50PSJDb29raWUiPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQ3LjUxNjYiIHg9IjM0NS44NDY0IiB5PSIxMTUuMjkyIj5Db29raWU8L3RleHQ+PHBhdGggZD0iTTM1NC42MDQ3LDY2LjI5NjkgQzM1NC42MDQ3LDU2LjI5NjkgMzcyLjYwNDcsNTYuMjk2OSAzNzIuNjA0Nyw1Ni4yOTY5IEMzNzIuNjA0Nyw1Ni4yOTY5IDM5MC42MDQ3LDU2LjI5NjkgMzkwLjYwNDcsNjYuMjk2OSBMMzkwLjYwNDcsOTIuMjk2OSBDMzkwLjYwNDcsMTAyLjI5NjkgMzcyLjYwNDcsMTAyLjI5NjkgMzcyLjYwNDcsMTAyLjI5NjkgQzM3Mi42MDQ3LDEwMi4yOTY5IDM1NC42MDQ3LDEwMi4yOTY5IDM1NC42MDQ3LDkyLjI5NjkgTDM1NC42MDQ3LDY2LjI5NjkiIGZpbGw9IiNFMkUyRjAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS41OyIvPjxwYXRoIGQ9Ik0zNTQuNjA0Nyw2Ni4yOTY5IEMzNTQuNjA0Nyw3Ni4yOTY5IDM3Mi42MDQ3LDc2LjI5NjkgMzcyLjYwNDcsNzYuMjk2OSBDMzcyLjYwNDcsNzYuMjk2OSAzOTAuNjA0Nyw3Ni4yOTY5IDM5MC42MDQ3LDY2LjI5NjkiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS41OyIvPjwvZz48ZyBjbGFzcz0icGFydGljaXBhbnQgcGFydGljaXBhbnQtdGFpbCIgZGF0YS1wYXJ0aWNpcGFudD0iQ29va2llIj48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0Ny41MTY2IiB4PSIzNDUuODQ2NCIgeT0iNTUxLjQ0ODIiPkNvb2tpZTwvdGV4dD48cGF0aCBkPSJNMzU0LjYwNDcsNTY0Ljc1IEMzNTQuNjA0Nyw1NTQuNzUgMzcyLjYwNDcsNTU0Ljc1IDM3Mi42MDQ3LDU1NC43NSBDMzcyLjYwNDcsNTU0Ljc1IDM5MC42MDQ3LDU1NC43NSAzOTAuNjA0Nyw1NjQuNzUgTDM5MC42MDQ3LDU5MC43NSBDMzkwLjYwNDcsNjAwLjc1IDM3Mi42MDQ3LDYwMC43NSAzNzIuNjA0Nyw2MDAuNzUgQzM3Mi42MDQ3LDYwMC43NSAzNTQuNjA0Nyw2MDAuNzUgMzU0LjYwNDcsNTkwLjc1IEwzNTQuNjA0Nyw1NjQuNzUiIGZpbGw9IiNFMkUyRjAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MS41OyIvPjxwYXRoIGQ9Ik0zNTQuNjA0Nyw1NjQuNzUgQzM1NC42MDQ3LDU3NC43NSAzNzIuNjA0Nyw1NzQuNzUgMzcyLjYwNDcsNTc0Ljc1IEMzNzIuNjA0Nyw1NzQuNzUgMzkwLjYwNDcsNTc0Ljc1IDM5MC42MDQ3LDU2NC43NSIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxLjU7Ii8+PC9nPjxnIGNsYXNzPSJtZXNzYWdlIiBkYXRhLXBhcnRpY2lwYW50LTE9Ii4uIiBkYXRhLXBhcnRpY2lwYW50LTI9IlNDIj48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjEzOC4wMDAxLDE1Ni4yOTMsMTQ4LjAwMDEsMTYwLjI5MywxMzguMDAwMSwxNjQuMjkzLDE0Mi4wMDAxLDE2MC4yOTMiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7IiB4MT0iMjEuOTk5OSIgeDI9IjE0NC4wMDAxIiB5MT0iMTYwLjI5MyIgeTI9IjE2MC4yOTMiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI3OC4wMDAxIiB4PSIyOC45OTk5IiB5PSIxNTUuMjI3MSI+JiMxMjUyNTsmIzEyNDY0OyYjMTI0NTI7JiMxMjUzMTsmIzM1MjAxOyYjMjc3MTQ7PC90ZXh0PjwvZz48cGF0aCBkPSJNMTU1LDEzMy41OTM4IEwxNTUsMTczLjU5MzggTDM1OCwxNzMuNTkzOCBMMzU4LDE0My41OTM4IEwzNDgsMTMzLjU5MzggTDE1NSwxMzMuNTkzOCIgZmlsbD0iI0ZFRkZERCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHBhdGggZD0iTTM0OCwxMzMuNTkzOCBMMzQ4LDE0My41OTM4IEwzNTgsMTQzLjU5MzggTDM0OCwxMzMuNTkzOCIgZmlsbD0iI0ZFRkZERCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTgyLjAwMDIiIHg9IjE2MSIgeT0iMTUwLjY2MDYiPiYjMTI1MTM7JiMxMjU0MDsmIzEyNTIzOyYjMTI0NTA7JiMxMjQ4OTsmIzEyNTI0OyYjMTI0NzM7JiMxMjI4OTsmIzEyNDk3OyYjMTI0NzM7JiMxMjUyNzsmIzEyNTQwOyYjMTI0ODk7JiMxMjI4OTs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTU2LjAwMDIiIHg9IjE2MSIgeT0iMTY1Ljc5MzUiPiYjMzMyNTg7JiMyMTIwNTsmIzEyNTI1OyYjMTI0NjQ7JiMxMjQ1MjsmIzEyNTMxOyYjMTI1MDE7JiMxMjUyMTsmIzEyNDY0OyYjMTI0MzQ7JiMzNjg2NTsmIzIwNDQ5OzwvdGV4dD48ZyBjbGFzcz0ibWVzc2FnZSIgZGF0YS1wYXJ0aWNpcGFudC0xPSJTQyIgZGF0YS1wYXJ0aWNpcGFudC0yPSJDIj48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjI4Mi44NDQ0LDE5NS45OTIyLDI5Mi44NDQ0LDE5OS45OTIyLDI4Mi44NDQ0LDIwMy45OTIyLDI4Ni44NDQ0LDE5OS45OTIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIgeDE9IjE1MC4wMDAxIiB4Mj0iMjg4Ljg0NDQiIHkxPSIxOTkuOTkyMiIgeTI9IjE5OS45OTIyIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMjYiIHg9IjE1Ny4wMDAxIiB5PSIxOTQuOTI2MyI+JiMzNTQ2OTsmIzM1Mzg4OzwvdGV4dD48L2c+PGcgY2xhc3M9Im1lc3NhZ2UiIGRhdGEtcGFydGljaXBhbnQtMT0iQyIgZGF0YS1wYXJ0aWNpcGFudC0yPSJTQyI+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIxNjEuMDAwMSwyMjUuMTI1LDE1MS4wMDAxLDIyOS4xMjUsMTYxLjAwMDEsMjMzLjEyNSwxNTcuMDAwMSwyMjkuMTI1IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1kYXNoYXJyYXk6Mi4wLDIuMDsiIHgxPSIxNTUuMDAwMSIgeDI9IjI5My44NDQ0IiB5MT0iMjI5LjEyNSIgeTI9IjIyOS4xMjUiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1Mi4wMDAxIiB4PSIxNjcuMDAwMSIgeT0iMjI0LjA1OTEiPiYjMzU0Njk7JiMzNTM4ODsmIzMyMDgwOyYjMjY1MjQ7PC90ZXh0PjwvZz48cGF0aCBkPSJNNjguMDU4NywyNDQuMTI1IEwxMzIuNTAxNSwyNDQuMTI1IEwxMzIuNTAxNSwyNTEuMjU3OCBMMTIyLjUwMTUsMjYxLjI1NzggTDY4LjA1ODcsMjYxLjI1NzggTDY4LjA1ODcsMjQ0LjEyNSIgZmlsbD0iI0VFRUVFRSIgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7Ii8+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIxMDMuNTMxMyIgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7IiB3aWR0aD0iNTI3Ljg2MzUiIHg9IjY4LjA1ODciIHk9IjI0NC4xMjUiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTkuNDQyOSIgeD0iODMuMDU4NyIgeT0iMjU3LjE5MTkiPmFsdDwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTU5LjMwNTciIHg9IjE0Ny41MDE1IiB5PSIyNTYuMzM1NCI+WyYjMzU0Njk7JiMzNTM4ODsmIzI1MTA0OyYjMjExNTE7ICZhbXA7ICYjMzMyNTg7JiMyMTIwNTsmIzEyNTI1OyYjMTI0NjQ7JiMxMjQ1MjsmIzEyNTMxOyYjMzY5ODQ7JiMyNTI0NjtdPC90ZXh0PjxnIGNsYXNzPSJtZXNzYWdlIiBkYXRhLXBhcnRpY2lwYW50LTE9IlNDIiBkYXRhLXBhcnRpY2lwYW50LTI9IlNDIj48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7IiB4MT0iMTUwLjAwMDEiIHgyPSIxOTIuMDAwMSIgeTE9IjI4Mi4zOTA2IiB5Mj0iMjgyLjM5MDYiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7IiB4MT0iMTkyLjAwMDEiIHgyPSIxOTIuMDAwMSIgeTE9IjI4Mi4zOTA2IiB5Mj0iMjk1LjM5MDYiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7IiB4MT0iMTUxLjAwMDEiIHgyPSIxOTIuMDAwMSIgeTE9IjI5NS4zOTA2IiB5Mj0iMjk1LjM5MDYiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjE2MS4wMDAxLDI5MS4zOTA2LDE1MS4wMDAxLDI5NS4zOTA2LDE2MS4wMDAxLDI5OS4zOTA2LDE1Ny4wMDAxLDI5NS4zOTA2IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTMwLjg0NDQiIHg9IjE1Ny4wMDAxIiB5PSIyNzcuMzI0NyI+JiMyNjI2MzsmIzIxNDk1OyYjMjEyNzA7JiMxMjM3MzsmIzEyNDI4OyYjMTIzODM7SUQmIzEyNDM0OyYjMjk5ODM7JiMyNTEwNDs8L3RleHQ+PC9nPjxnIGNsYXNzPSJtZXNzYWdlIiBkYXRhLXBhcnRpY2lwYW50LTE9IlNDIiBkYXRhLXBhcnRpY2lwYW50LTI9IkNvb2tpZSI+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIzNjAuNjA0NywzMzUuNjU2MywzNzAuNjA0NywzMzkuNjU2MywzNjAuNjA0NywzNDMuNjU2MywzNjQuNjA0NywzMzkuNjU2MyIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiIHgxPSIxNTAuMDAwMSIgeDI9IjM2Ni42MDQ3IiB5MT0iMzM5LjY1NjMiIHkyPSIzMzkuNjU2MyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjkxLjAwMDEiIHg9IjE1Ny4wMDAxIiB5PSIzMTkuNDU3NSI+JiMxMjQ2MzsmIzEyNDgzOyYjMTI0NjE7JiMxMjU0MDsmIzEyMzk1OyYjMjA0NDU7JiMyMzM4NDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTAwLjE5NzgiIHg9IjE1Ny4wMDAxIiB5PSIzMzQuNTkwMyI+KCYjMjYzNzc7JiMyMTE3NzsmIzI2Mzk5OyYjMzg0ODA7OiAyMCYjMjQxODA7KTwvdGV4dD48L2c+PHBhdGggZD0iTTM3NywzMTIuOTU3IEwzNzcsMzM3Ljk1NyBMNTgwLDMzNy45NTcgTDU4MCwzMjIuOTU3IEw1NzAsMzEyLjk1NyBMMzc3LDMxMi45NTciIGZpbGw9IiNGRUZGREQiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjxwYXRoIGQ9Ik01NzAsMzEyLjk1NyBMNTcwLDMyMi45NTcgTDU4MCwzMjIuOTU3IEw1NzAsMzEyLjk1NyIgZmlsbD0iI0ZFRkZERCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTgyLjMxNzUiIHg9IjM4MyIgeT0iMzMwLjAyMzkiPmN1c3RvbWVyX2lkPSYjMjYyNjM7JiMyMTQ5NTsmIzIxMjcwOyYjMTIzNzM7JiMxMjQyODsmIzEyMzgzO0lEPC90ZXh0PjxnIGNsYXNzPSJtZXNzYWdlIiBkYXRhLXBhcnRpY2lwYW50LTE9Ii4uIiBkYXRhLXBhcnRpY2lwYW50LTI9IlNDIj48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjEzOC4wMDAxLDM3MS43ODkxLDE0OC4wMDAxLDM3NS43ODkxLDEzOC4wMDAxLDM3OS43ODkxLDE0Mi4wMDAxLDM3NS43ODkxIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIgeDE9IjIxLjk5OTkiIHgyPSIxNDQuMDAwMSIgeTE9IjM3NS43ODkxIiB5Mj0iMzc1Ljc4OTEiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzOSIgeD0iMjguOTk5OSIgeT0iMzcwLjcyMzEiPiYjMjA4Nzc7JiMzNTM3MDsmIzIxODM5OzwvdGV4dD48L2c+PGcgY2xhc3M9Im1lc3NhZ2UiIGRhdGEtcGFydGljaXBhbnQtMT0iU0MiIGRhdGEtcGFydGljaXBhbnQtMj0iQ29va2llIj48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjM2MC42MDQ3LDQwMC45MjE5LDM3MC42MDQ3LDQwNC45MjE5LDM2MC42MDQ3LDQwOC45MjE5LDM2NC42MDQ3LDQwNC45MjE5IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIgeDE9IjE1MC4wMDAxIiB4Mj0iMzY2LjYwNDciIHkxPSI0MDQuOTIxOSIgeTI9IjQwNC45MjE5Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOTEuMDAwMSIgeD0iMTU3LjAwMDEiIHk9IjM5OS44NTYiPiYjMTI0NjM7JiMxMjQ4MzsmIzEyNDYxOyYjMTI1NDA7JiMxMjQzNDsmIzMwOTA2OyYjMzU0Njk7PC90ZXh0PjwvZz48ZyBjbGFzcz0ibWVzc2FnZSIgZGF0YS1wYXJ0aWNpcGFudC0xPSJDb29raWUiIGRhdGEtcGFydGljaXBhbnQtMj0iU0MiPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMTYxLjAwMDEsNDMwLjA1NDcsMTUxLjAwMDEsNDM0LjA1NDcsMTYxLjAwMDEsNDM4LjA1NDcsMTU3LjAwMDEsNDM0LjA1NDciIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48bGluZSBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWRhc2hhcnJheToyLjAsMi4wOyIgeDE9IjE1NS4wMDAxIiB4Mj0iMzcxLjYwNDciIHkxPSI0MzQuMDU0NyIgeTI9IjQzNC4wNTQ3Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzkuNTgwNiIgeD0iMTY3LjAwMDEiIHk9IjQyOC45ODg4Ij5jdXN0b21lcl9pZDwvdGV4dD48L2c+PGcgY2xhc3M9Im1lc3NhZ2UiIGRhdGEtcGFydGljaXBhbnQtMT0iU0MiIGRhdGEtcGFydGljaXBhbnQtMj0iQyI+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIyODIuODQ0NCw0NTkuMTg3NSwyOTIuODQ0NCw0NjMuMTg3NSwyODIuODQ0NCw0NjcuMTg3NSwyODYuODQ0NCw0NjMuMTg3NSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiIHgxPSIxNTAuMDAwMSIgeDI9IjI4OC44NDQ0IiB5MT0iNDYzLjE4NzUiIHkyPSI0NjMuMTg3NSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY1LjAwMDEiIHg9IjE1Ny4wMDAxIiB5PSI0NTguMTIxNiI+JiMzOTAxNTsmIzIzNDU4OyYjMTI0MzQ7JiMyNjkwODsmIzMyMDM0OzwvdGV4dD48L2c+PGcgY2xhc3M9Im1lc3NhZ2UiIGRhdGEtcGFydGljaXBhbnQtMT0iQyIgZGF0YS1wYXJ0aWNpcGFudC0yPSJTQyI+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIxNjEuMDAwMSw0ODguMzIwMywxNTEuMDAwMSw0OTIuMzIwMywxNjEuMDAwMSw0OTYuMzIwMywxNTcuMDAwMSw0OTIuMzIwMyIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTtzdHJva2UtZGFzaGFycmF5OjIuMCwyLjA7IiB4MT0iMTU1LjAwMDEiIHgyPSIyOTMuODQ0NCIgeTE9IjQ5Mi4zMjAzIiB5Mj0iNDkyLjMyMDMiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1Mi4wMDAxIiB4PSIxNjcuMDAwMSIgeT0iNDg3LjI1NDQiPiYjMzkwMTU7JiMyMzQ1ODsmIzI0NzczOyYjMjI1Nzc7PC90ZXh0PjwvZz48ZyBjbGFzcz0ibWVzc2FnZSIgZGF0YS1wYXJ0aWNpcGFudC0xPSJTQyIgZGF0YS1wYXJ0aWNpcGFudC0yPSIuLiI+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIzMi45OTk5LDUxNy40NTMxLDIyLjk5OTksNTIxLjQ1MzEsMzIuOTk5OSw1MjUuNDUzMSwyOC45OTk5LDUyMS40NTMxIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PGxpbmUgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIgeDE9IjI2Ljk5OTkiIHgyPSIxNDkuMDAwMSIgeTE9IjUyMS40NTMxIiB5Mj0iNTIxLjQ1MzEiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDQuMDAwMSIgeD0iMzguOTk5OSIgeT0iNTE2LjM4NzIiPiYjMzMyNTg7JiMyMTIwNTsmIzEyNTI1OyYjMTI0NjQ7JiMxMjQ1MjsmIzEyNTMxOyYjMjM0MzY7JiMyMDEwMjs8L3RleHQ+PC9nPjwhLS1TUkM9W1ZMQkJKaTkwNUR0Rkxxbk82NXNPNjlTYWtnYVJyc25ESjhMNjZ4NGJ4UllkQ180MU9hR1psZTlNNmdDMldYOHJZajd1Q1BTUG9ieXVmTEwxWlJrdnp6b1NMdVJlOUF0WE5rTUFEcHJtY2x2NlpNLUxXM00wdFc2ejA3T2xnZ3hGdFgxSWF5SXFlYUVLS0lzWTlfTUNRWDBTSXNZc2hQazZoUFc2aVNucU1oRFlNQkxuR1hhLUtyUGpPZ3Y0ZTg5SUFiNE5MNWtKVzZha3dyZ3V4WnlIMmNObS1CSGFZVUQxRV93YjhyZUs2SVJIaUFLbEJmNDBoVzF4MUxPN3dXN0IwUmkxc2VRaTBzbXRVQjNSRmZnSmNwZFpUcHZXU2dwc254clVya2N5THIxMjJQSWJpNV9Semd6VmFIbVo5LTZZLXJXS1BzTFBJUGY0Nng1UHY3YU5aLTNWXzN0ZE1VSkY4aXcwR3ZtU3lmcWROWlcwZm1JcTA4dXhFb0Vya19ra1BGZEt4bFNXZXI1ZmRXNWoxMTZTVWtWemIzVUV2ZW5IS1N4blY1a0t0VHZuQ091ZDl0WnhPTW9lYXNIS3pob1VjbGZCNDZiNndjVkRWNXI2Z1Y3SXBkeWNmNTdsSE9QNjhWaExwODNXVHRfSGp3OXh1Z0JTVlYwNllXbUhtVFJ1VUlrdzNyVm5Gb2hhcEtCZFBWcTNdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h4 id="_4">クッキーの値とセキュリティ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>セキュリティを確保するため、クッキーには顧客IDをそのまま保存するのではなく、SHA1ハッシュ関数を使用して暗号化した値を保存します。また、クッキーの有効期限は20年と長期に設定し、顧客が明示的にログアウトするまで自動ログインが機能するようにしています。</p>
+<h4 id="_5">テストの実装<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>自動ログイン機能の信頼性を確保するため、以下のテストを実装しました：
+1. クッキーに正しい形式の値が保存されることを確認するテスト
+2. クッキーの有効期限が適切に設定されていることを確認するテスト</p>
+<h3 id="_6">アーキテクチャとの関連<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>この実装は、<a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/">アーキテクチャ概要</a>の「8. 認証・認可システム」セクションに関連しています。特に以下の部分を拡張するものです：</p>
+<div class="highlight"><pre><span></span><code>[Customer::SessionsController] --&gt; [Customer]: authenticate
+[Customer] --&gt; [Customer::BaseController]: current_customer
+</code></pre></div>
+<p>顧客認証の仕組みに、クッキーを使用した自動ログイン機能を追加することで、ユーザー体験を向上させています。</p>
+<h3 id="_7">ユースケースとの関連<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>この実装は、<a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/">ユースケース</a>の「4.1. アカウント管理」セクションに記載されている以下のユースケースを拡張するものです：</p>
+<ul>
+<li>C-002: 顧客ログイン</li>
+</ul>
+<p>ユースケースの基本フローに「次回から自動でログイン」のオプションを追加し、顧客が選択した場合はクッキーを使用して認証情報を保持するようになりました。これにより、顧客は再訪問時に自動的にログイン状態となり、利便性が向上します。</p>
+<h2 id="cabf2d2">コミット: cabf2d2<a class="headerlink" href="#cabf2d2" title="Permanent link">&para;</a></h2>
+<h3 id="_8">メッセージ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>クッキーの有効期限テスト #29
+</code></pre></div>
+<h3 id="_9">変更されたファイル<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M spec/controllers/customer/session_controller_spec.rb</li>
+</ul>
+<h3 id="_10">変更内容<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit cabf2d238f82761d8f40a1b265ff72295fd5e964
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 18:19:14 2017 +0900
+
+<span class="w"> </span>   クッキーの有効期限テスト #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 8ac8ad5..caffe50 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -637,6 +637,7 @@ git push heroku master</span>
+
+<span class="w"> </span>#### RSpecによるテスト
+<span class="w"> </span>+ クッキーの値のテスト
+<span class="gi">++ クッキーの有効期限テスト</span>
+
+<span class="w"> </span>### IPアドレスによるアクセス制限
+<span class="w"> </span>#### IPアドレスによるアクセス制限
+<span class="gh">diff --git a/spec/controllers/customer/session_controller_spec.rb b/spec/controllers/customer/session_controller_spec.rb</span>
+<span class="gh">index 6025c2f..5a0f323 100644</span>
+<span class="gd">--- a/spec/controllers/customer/session_controller_spec.rb</span>
+<span class="gi">+++ b/spec/controllers/customer/session_controller_spec.rb</span>
+<span class="gu">@@ -24,6 +24,9 @@ describe Customer::SessionsController do</span>
+
+<span class="w"> </span>      expect(session).not_to have_key(:customer_id)
+<span class="w"> </span>      expect(response.cookies[&#39;customer_id&#39;]).to match(/[0-9a-f]{40}\z/)
+<span class="gi">+</span>
+<span class="gi">+      cookies = response.request.env[&#39;action_dispatch.cookies&#39;].instance_variable_get(:@set_cookies)</span>
+<span class="gi">+      expect(cookies[&#39;customer_id&#39;][:expires]).to be &gt; 19.years.from_now</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+<span class="w"> </span>end
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_11">構造変更<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="4eed4f8">コミット: 4eed4f8<a class="headerlink" href="#4eed4f8" title="Permanent link">&para;</a></h2>
+<h3 id="_12">メッセージ<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>クッキーの値のテスト #29
+</code></pre></div>
+<h3 id="_13">変更されたファイル<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/controllers/customer/sessions_controller.rb</li>
+<li>A spec/controllers/customer/session_controller_spec.rb</li>
+</ul>
+<h3 id="_14">変更内容<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 4eed4f812bf206710c68d6505d9b2518633a4d62
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 18:15:18 2017 +0900
+
+<span class="w"> </span>   クッキーの値のテスト #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 9325084..8ac8ad5 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -636,6 +636,7 @@ git push heroku master</span>
+<span class="w"> </span>+ 動作確認
+
+<span class="w"> </span>#### RSpecによるテスト
+<span class="gi">++ クッキーの値のテスト</span>
+
+<span class="w"> </span>### IPアドレスによるアクセス制限
+<span class="w"> </span>#### IPアドレスによるアクセス制限
+<span class="gh">diff --git a/app/controllers/customer/sessions_controller.rb b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gh">index 62555e9..aee14f1 100644</span>
+<span class="gd">--- a/app/controllers/customer/sessions_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gu">@@ -41,7 +41,8 @@ class Customer::SessionsController &lt; Customer::Base</span>
+<span class="w"> </span>  def post_params
+<span class="w"> </span>    params.require(:customer_login_form).permit(
+<span class="w"> </span>        :email,
+<span class="gd">-        :password</span>
+<span class="gi">+        :password,</span>
+<span class="gi">+        :remember_me</span>
+<span class="w"> </span>    )
+<span class="w"> </span>  end
+<span class="w"> </span>end
+<span class="gh">diff --git a/spec/controllers/customer/session_controller_spec.rb b/spec/controllers/customer/session_controller_spec.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..6025c2f</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/spec/controllers/customer/session_controller_spec.rb</span>
+<span class="gu">@@ -0,0 +1,29 @@</span>
+<span class="gi">+require &#39;rails_helper&#39;</span>
+<span class="gi">+</span>
+<span class="gi">+describe Customer::SessionsController do</span>
+<span class="gi">+  describe &#39;#create&#39; do</span>
+<span class="gi">+    let(:customer) { create(:customer, password: &#39;password&#39;) }</span>
+<span class="gi">+</span>
+<span class="gi">+    # [次回から自動でログインする]にチェックせずログイン</span>
+<span class="gi">+    it &#39;Do not check &quot;次回から自動でログインする&quot; Login&#39; do</span>
+<span class="gi">+      post :create, customer_login_form: {</span>
+<span class="gi">+          email: customer.email,</span>
+<span class="gi">+          password: &#39;password&#39;</span>
+<span class="gi">+      }</span>
+<span class="gi">+      expect(session[:customer_id]).to eq(customer.id)</span>
+<span class="gi">+      expect(response.cookies).not_to have_key(&#39;custoemr_id&#39;)</span>
+<span class="gi">+    end</span>
+<span class="gi">+</span>
+<span class="gi">+    # [次回から自動でログインする]にチェックしてログイン</span>
+<span class="gi">+    it &#39;Do check &quot;次回から自動でログインする&quot; Login&#39; do</span>
+<span class="gi">+      post :create, customer_login_form: {</span>
+<span class="gi">+          email: customer.email,</span>
+<span class="gi">+          password: &#39;password&#39;,</span>
+<span class="gi">+          remember_me: &#39;1&#39;</span>
+<span class="gi">+      }</span>
+<span class="gi">+</span>
+<span class="gi">+      expect(session).not_to have_key(:customer_id)</span>
+<span class="gi">+      expect(response.cookies[&#39;customer_id&#39;]).to match(/[0-9a-f]{40}\z/)</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_15">構造変更<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="7b0c7ec">コミット: 7b0c7ec<a class="headerlink" href="#7b0c7ec" title="Permanent link">&para;</a></h2>
+<h3 id="_16">メッセージ<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>コントローラの修正 #29
+</code></pre></div>
+<h3 id="_17">変更されたファイル<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/controllers/customer/base.rb</li>
+<li>M app/controllers/customer/sessions_controller.rb</li>
+</ul>
+<h3 id="_18">変更内容<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 7b0c7ec1da8b6f90d6e710831e3c9c3f82c41f24
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 17:58:51 2017 +0900
+
+<span class="w"> </span>   コントローラの修正 #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index bdb8194..9325084 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -632,6 +632,8 @@ git push heroku master</span>
+
+<span class="w"> </span>#### 自動ログイン機能の追加
+<span class="w"> </span>+ ビューの修正
+<span class="gi">++ コントローラの修正</span>
+<span class="gi">++ 動作確認</span>
+
+<span class="w"> </span>#### RSpecによるテスト
+
+<span class="gh">diff --git a/app/controllers/customer/base.rb b/app/controllers/customer/base.rb</span>
+<span class="gh">index c95c283..2fd598b 100644</span>
+<span class="gd">--- a/app/controllers/customer/base.rb</span>
+<span class="gi">+++ b/app/controllers/customer/base.rb</span>
+<span class="gu">@@ -3,8 +3,8 @@ class Customer::Base &lt; ApplicationController</span>
+
+<span class="w"> </span>  private
+<span class="w"> </span>  def current_customer
+<span class="gd">-    if session[:customer_id]</span>
+<span class="gd">-      @current_customer ||= Customer.find_by(id: session[:customer_id])</span>
+<span class="gi">+    if customer_id = cookies.signed[:customer_id] || session[:customer_id]</span>
+<span class="gi">+      @current_customer ||= Customer.find_by(id: customer_id)</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+
+<span class="gh">diff --git a/app/controllers/customer/sessions_controller.rb b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gh">index 3394e51..62555e9 100644</span>
+<span class="gd">--- a/app/controllers/customer/sessions_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gu">@@ -16,7 +16,12 @@ class Customer::SessionsController &lt; Customer::Base</span>
+<span class="w"> </span>      customer = Customer.find_by(email_for_index: @form.email.downcase)
+<span class="w"> </span>    end
+<span class="w"> </span>    if Customer::Authenticator.new(customer).authenticate(@form.password)
+<span class="gd">-      session[:customer_id] = customer.id</span>
+<span class="gi">+      if @form.remember_me?</span>
+<span class="gi">+        cookies.permanent.signed[:customer_id] = customer.id</span>
+<span class="gi">+      else</span>
+<span class="gi">+        cookies.delete(:customer_id)</span>
+<span class="gi">+        session[:customer_id] = customer.id</span>
+<span class="gi">+      end</span>
+<span class="w"> </span>      flash.notice = t(&#39;common.session.create.notice&#39;)
+<span class="w"> </span>      redirect_to :customer_root
+<span class="w"> </span>    else
+<span class="gu">@@ -26,6 +31,7 @@ class Customer::SessionsController &lt; Customer::Base</span>
+<span class="w"> </span>  end
+
+<span class="w"> </span>  def destroy
+<span class="gi">+    cookies.delete(:customer_id)</span>
+<span class="w"> </span>    session.delete(:customer_id)
+<span class="w"> </span>    flash.notice = t(&#39;common.session.destroy.notice&#39;)
+<span class="w"> </span>    redirect_to :customer_login
+</code></pre></div>
+<h3 id="_19">構造変更<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="d205c43">コミット: d205c43<a class="headerlink" href="#d205c43" title="Permanent link">&para;</a></h2>
+<h3 id="_20">メッセージ<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ビューの修正 #29
+</code></pre></div>
+<h3 id="_21">変更されたファイル<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/forms/customer/login_form.rb</li>
+<li>M app/views/customer/sessions/new.html.erb</li>
+<li>M config/locales/views/ja.yml</li>
+</ul>
+<h3 id="_22">変更内容<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit d205c43ec864aad4b2cbc67cd7d60e296b3d55b2
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 17:47:23 2017 +0900
+
+<span class="w"> </span>   ビューの修正 #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index f47bb33..bdb8194 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -631,6 +631,8 @@ git push heroku master</span>
+<span class="w"> </span>+ サービスオブジェクト
+
+<span class="w"> </span>#### 自動ログイン機能の追加
+<span class="gi">++ ビューの修正</span>
+<span class="gi">+</span>
+<span class="w"> </span>#### RSpecによるテスト
+
+<span class="w"> </span>### IPアドレスによるアクセス制限
+<span class="gh">diff --git a/app/forms/customer/login_form.rb b/app/forms/customer/login_form.rb</span>
+<span class="gh">index 1feb6e1..a0e2ef5 100644</span>
+<span class="gd">--- a/app/forms/customer/login_form.rb</span>
+<span class="gi">+++ b/app/forms/customer/login_form.rb</span>
+<span class="gu">@@ -1,5 +1,9 @@</span>
+<span class="w"> </span>class Customer::LoginForm
+<span class="w"> </span>  include ActiveModel::Model
+
+<span class="gd">-  attr_accessor :email, :password</span>
+<span class="gi">+  attr_accessor :email, :password, :remember_me</span>
+<span class="gi">+</span>
+<span class="gi">+  def remember_me?</span>
+<span class="gi">+    remember_me == &#39;1&#39;</span>
+<span class="gi">+  end</span>
+<span class="w"> </span>end
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/sessions/new.html.erb b/app/views/customer/sessions/new.html.erb</span>
+<span class="gh">index 38e9d48..4d7bdc3 100644</span>
+<span class="gd">--- a/app/views/customer/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/customer/sessions/new.html.erb</span>
+<span class="gu">@@ -16,6 +16,9 @@</span>
+<span class="w"> </span>          &lt;div&gt;
+<span class="w"> </span>            &lt;%= f.password_field :password %&gt;
+<span class="w"> </span>          &lt;/div&gt;
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.check_box :remember_me, label: t(&#39;.remember&#39;) %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="w"> </span>          &lt;div&gt;
+<span class="w"> </span>            &lt;%= f.submit t &#39;.submit&#39; %&gt;
+<span class="w"> </span>          &lt;/div&gt;
+<span class="gh">diff --git a/config/locales/views/ja.yml b/config/locales/views/ja.yml</span>
+<span class="gh">index 2429038..7b1fcee 100644</span>
+<span class="gd">--- a/config/locales/views/ja.yml</span>
+<span class="gi">+++ b/config/locales/views/ja.yml</span>
+<span class="gu">@@ -156,6 +156,7 @@ ja:</span>
+<span class="w"> </span>      new:
+<span class="w"> </span>        title: &#39;ログイン&#39;
+<span class="w"> </span>        submit: &#39;ログイン&#39;
+<span class="gi">+        remember: &#39;次回から自動でログインする&#39;</span>
+<span class="w"> </span>    top:
+<span class="w"> </span>      dashboard:
+<span class="w"> </span>        title: &#39;ダッシュボード&#39;
+\ No newline at end of file
+</code></pre></div>
+<h2 id="d801d1c">コミット: d801d1c<a class="headerlink" href="#d801d1c" title="Permanent link">&para;</a></h2>
+<h3 id="_23">メッセージ<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>サービスオブジェクト #29
+</code></pre></div>
+<h3 id="_24">変更されたファイル<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/assets/stylesheets/main.scss</li>
+<li>M app/assets/stylesheets/pages/_customer.scss</li>
+<li>M app/controllers/customer/article_controller.rb</li>
+<li>M app/controllers/customer/base.rb</li>
+<li>M app/controllers/customer/campaign_controller.rb</li>
+<li>M app/controllers/customer/sessions_controller.rb</li>
+<li>M app/controllers/customer/top_controller.rb</li>
+<li>A app/services/customer/authenticator.rb</li>
+<li>M app/views/customer/sessions/new.html.erb</li>
+<li>M app/views/customer/shared/_header_login.html.erb</li>
+<li>A app/views/customer/top/dashboard.html.erb</li>
+<li>M config/locales/views/ja.yml</li>
+</ul>
+<h3 id="_25">変更内容<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit d801d1c3217355fd1e741e3663b66d17afed5a50
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 17:39:37 2017 +0900
+
+<span class="w"> </span>   サービスオブジェクト #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 4aa2842..f47bb33 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -628,6 +628,7 @@ git push heroku master</span>
+<span class="w"> </span>+ ルーティング
+<span class="w"> </span>+ コントローラ
+<span class="w"> </span>+ ビュー
+<span class="gi">++ サービスオブジェクト</span>
+
+<span class="w"> </span>#### 自動ログイン機能の追加
+<span class="w"> </span>#### RSpecによるテスト
+<span class="gh">diff --git a/app/assets/stylesheets/main.scss b/app/assets/stylesheets/main.scss</span>
+<span class="gh">index c21d5c5..82d9d5f 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/main.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/main.scss</span>
+<span class="gu">@@ -97,6 +97,7 @@</span>
+<span class="w"> </span>@import &quot;pages/customer/index&quot;;
+<span class="w"> </span>@import &quot;pages/customer/campaign&quot;;
+<span class="w"> </span>@import &quot;pages/customer/article&quot;;
+<span class="gi">+@import &quot;pages/customer&quot;;</span>
+
+<span class="w"> </span>// Staff
+<span class="w"> </span>@import &quot;pages/staff&quot;;
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_customer.scss b/app/assets/stylesheets/pages/_customer.scss</span>
+<span class="gh">index 468e113..c101d73 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/pages/_customer.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_customer.scss</span>
+<span class="gu">@@ -30,13 +30,13 @@ html, body {</span>
+<span class="w"> </span>    padding: $moderate * 1.5 $moderate;
+<span class="w"> </span>    font-size: $large;
+<span class="w"> </span>    font-weight: normal;
+<span class="gd">-    background-color: $very_dark_magenta;</span>
+<span class="gi">+    background-color: $very_dark_yellow;</span>
+<span class="w"> </span>    color: $light_gray;
+<span class="w"> </span>  }
+
+<span class="w"> </span>  &amp;__header {
+<span class="w"> </span>    padding: $moderate;
+<span class="gd">-    background-color: $dark_magenta;</span>
+<span class="gi">+    background-color: $dark_yellow;</span>
+<span class="w"> </span>    color: $very_light_gray;
+<span class="w"> </span>    span.logo-mark {
+<span class="w"> </span>      font-weight: bold;
+<span class="gh">diff --git a/app/controllers/customer/article_controller.rb b/app/controllers/customer/article_controller.rb</span>
+<span class="gh">index 3631c55..0355f89 100644</span>
+<span class="gd">--- a/app/controllers/customer/article_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/article_controller.rb</span>
+<span class="gu">@@ -1,4 +1,4 @@</span>
+<span class="gd">-class Customer::ArticleController &lt; ApplicationController</span>
+<span class="gi">+class Customer::ArticleController &lt; Customer::Base</span>
+<span class="w"> </span>  def index
+<span class="w"> </span>  end
+<span class="w"> </span>end
+\ No newline at end of file
+<span class="gh">diff --git a/app/controllers/customer/base.rb b/app/controllers/customer/base.rb</span>
+<span class="gh">index d714b08..c95c283 100644</span>
+<span class="gd">--- a/app/controllers/customer/base.rb</span>
+<span class="gi">+++ b/app/controllers/customer/base.rb</span>
+<span class="gu">@@ -4,7 +4,7 @@ class Customer::Base &lt; ApplicationController</span>
+<span class="w"> </span>  private
+<span class="w"> </span>  def current_customer
+<span class="w"> </span>    if session[:customer_id]
+<span class="gd">-      @current_customer ||= Customer.find_by(id: session[:cutomer_id])</span>
+<span class="gi">+      @current_customer ||= Customer.find_by(id: session[:customer_id])</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+
+<span class="gh">diff --git a/app/controllers/customer/campaign_controller.rb b/app/controllers/customer/campaign_controller.rb</span>
+<span class="gh">index 897f1f3..e852bae 100644</span>
+<span class="gd">--- a/app/controllers/customer/campaign_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/campaign_controller.rb</span>
+<span class="gu">@@ -1,4 +1,4 @@</span>
+<span class="gd">-class Customer::CampaignController &lt; ApplicationController</span>
+<span class="gi">+class Customer::CampaignController &lt; Customer::Base</span>
+<span class="w"> </span>  def index
+<span class="w"> </span>  end
+
+<span class="gh">diff --git a/app/controllers/customer/sessions_controller.rb b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gh">index 993e180..3394e51 100644</span>
+<span class="gd">--- a/app/controllers/customer/sessions_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gu">@@ -10,10 +10,10 @@ class Customer::SessionsController &lt; Customer::Base</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+
+<span class="gd">-  def crete</span>
+<span class="gd">-    @form = Customer::LoginForm.new(params[:customer_login_form])</span>
+<span class="gi">+  def create</span>
+<span class="gi">+    @form = Customer::LoginForm.new(post_params)</span>
+<span class="w"> </span>    if @form.email.present?
+<span class="gd">-      customer = Customer.find_by(email_for_inde: @form.email.downcase)</span>
+<span class="gi">+      customer = Customer.find_by(email_for_index: @form.email.downcase)</span>
+<span class="w"> </span>    end
+<span class="w"> </span>    if Customer::Authenticator.new(customer).authenticate(@form.password)
+<span class="w"> </span>      session[:customer_id] = customer.id
+<span class="gu">@@ -28,6 +28,14 @@ class Customer::SessionsController &lt; Customer::Base</span>
+<span class="w"> </span>  def destroy
+<span class="w"> </span>    session.delete(:customer_id)
+<span class="w"> </span>    flash.notice = t(&#39;common.session.destroy.notice&#39;)
+<span class="gd">-    redirect_to :customer_root</span>
+<span class="gi">+    redirect_to :customer_login</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  private</span>
+<span class="gi">+  def post_params</span>
+<span class="gi">+    params.require(:customer_login_form).permit(</span>
+<span class="gi">+        :email,</span>
+<span class="gi">+        :password</span>
+<span class="gi">+    )</span>
+<span class="w"> </span>  end
+<span class="w"> </span>end
+<span class="gh">diff --git a/app/controllers/customer/top_controller.rb b/app/controllers/customer/top_controller.rb</span>
+<span class="gh">index 013788c..7083b1d 100644</span>
+<span class="gd">--- a/app/controllers/customer/top_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/top_controller.rb</span>
+<span class="gu">@@ -2,6 +2,10 @@ class Customer::TopController &lt; Customer::Base</span>
+<span class="w"> </span>  skip_before_action :authorize
+
+<span class="w"> </span>  def index
+<span class="gd">-    render action: &#39;index&#39;</span>
+<span class="gi">+    if current_customer</span>
+<span class="gi">+      render action: &#39;dashboard&#39;</span>
+<span class="gi">+    else</span>
+<span class="gi">+      render action: &#39;index&#39;</span>
+<span class="gi">+    end</span>
+<span class="w"> </span>  end
+<span class="w"> </span>end
+<span class="gh">diff --git a/app/services/customer/authenticator.rb b/app/services/customer/authenticator.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..517d2c3</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/services/customer/authenticator.rb</span>
+<span class="gu">@@ -0,0 +1,11 @@</span>
+<span class="gi">+class Customer::Authenticator</span>
+<span class="gi">+  def initialize(customer)</span>
+<span class="gi">+    @customer = customer</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def authenticate(raw_password)</span>
+<span class="gi">+    @customer &amp;&amp;</span>
+<span class="gi">+        @customer.hashed_password &amp;&amp;</span>
+<span class="gi">+        BCrypt::Password.new(@customer.hashed_password) == raw_password</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/sessions/new.html.erb b/app/views/customer/sessions/new.html.erb</span>
+<span class="gh">index f199010..38e9d48 100644</span>
+<span class="gd">--- a/app/views/customer/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/customer/sessions/new.html.erb</span>
+<span class="gu">@@ -2,6 +2,12 @@</span>
+<span class="w"> </span>&lt;section class=&quot;Section l-column&quot;&gt;
+<span class="w"> </span>  &lt;div class=&quot;Login Login--customer&quot;&gt;
+<span class="w"> </span>    &lt;h1 class=&quot;Login__head&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;
+<span class="gi">+</span>
+<span class="gi">+    &lt;div class=&quot;Flash&quot;&gt;</span>
+<span class="gi">+      &lt;%= content_tag(:span, flash.notice, class: &#39;Flash__notice&#39;) if flash.notice %&gt;</span>
+<span class="gi">+      &lt;%= content_tag(:span, flash.alert, class: &#39;Flash__alert&#39;) if flash.alert %&gt;</span>
+<span class="gi">+    &lt;/div&gt;</span>
+<span class="gi">+</span>
+<span class="w"> </span>    &lt;div class=&quot;Login__body&quot;&gt;
+<span class="w"> </span>      &lt;%= bootstrap_form_for @form, url: :customer_session do |f| %&gt;
+<span class="w"> </span>          &lt;div&gt;
+<span class="gh">diff --git a/app/views/customer/shared/_header_login.html.erb b/app/views/customer/shared/_header_login.html.erb</span>
+<span class="gh">index fecb5a6..d957b92 100644</span>
+<span class="gd">--- a/app/views/customer/shared/_header_login.html.erb</span>
+<span class="gi">+++ b/app/views/customer/shared/_header_login.html.erb</span>
+<span class="gu">@@ -17,9 +17,9 @@</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>  &lt;%= if current_customer
+<span class="gd">-        link_to t(&#39;customer.shared.header.logout&#39;), :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;customer.shared.header.logout&#39;), :customer_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      else
+<span class="gd">-        link_to t(&#39;customer.shared.header.login&#39;), :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+        link_to t(&#39;customer.shared.header.login&#39;), :customer_login, class: &#39;btn btn-default&#39;</span>
+<span class="w"> </span>      end
+<span class="w"> </span>  %&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/top/dashboard.html.erb b/app/views/customer/top/dashboard.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..6aa1334</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/customer/top/dashboard.html.erb</span>
+<span class="gu">@@ -0,0 +1,16 @@</span>
+<span class="gi">+&lt;% @title = t(&#39;.title&#39;) %&gt;</span>
+<span class="gi">+&lt;section class=&quot;Section&quot;&gt;</span>
+<span class="gi">+  &lt;h1 class=&quot;Customer__title&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;</span>
+<span class="gi">+&lt;/section&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+&lt;section class=&quot;Section l-column DashBoard&quot;&gt;</span>
+<span class="gi">+  &lt;div class=&quot;Section__head&quot;&gt;</span>
+<span class="gi">+    &lt;h2 class=&quot;sectionLabel&quot;&gt;お知らせ&lt;/h2&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+  &lt;ol class=&quot;NewsList&quot;&gt;</span>
+<span class="gi">+    &lt;li class=&quot;NewsList__item&quot;&gt;</span>
+<span class="gi">+      &lt;time class=&quot;NewsList__head&quot; datatime=&quot;2017-2-9&quot;&gt;2017.2.9&lt;/time&gt;</span>
+<span class="gi">+      &lt;span class=&quot;NewsList__body&quot;&gt;顧客ログイン・ログアウト機能追加&lt;/span&gt;</span>
+<span class="gi">+    &lt;/li&gt;</span>
+<span class="gi">+  &lt;/ol&gt;</span>
+<span class="gi">+&lt;/section&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/config/locales/views/ja.yml b/config/locales/views/ja.yml</span>
+<span class="gh">index 08a8945..2429038 100644</span>
+<span class="gd">--- a/config/locales/views/ja.yml</span>
+<span class="gi">+++ b/config/locales/views/ja.yml</span>
+<span class="gu">@@ -150,9 +150,12 @@ ja:</span>
+<span class="w"> </span>  customer:
+<span class="w"> </span>    shared:
+<span class="w"> </span>      header:
+<span class="gd">-        login: &#39;Login&#39;</span>
+<span class="gd">-        logout: &#39;Logout&#39;</span>
+<span class="gi">+        login: &#39;ログイン&#39;</span>
+<span class="gi">+        logout: &#39;ログアウト&#39;</span>
+<span class="w"> </span>    sessions:
+<span class="w"> </span>      new:
+<span class="w"> </span>        title: &#39;ログイン&#39;
+<span class="gd">-        submit: &#39;ログイン&#39;</span>
+\ No newline at end of file
+<span class="gi">+        submit: &#39;ログイン&#39;</span>
+<span class="gi">+    top:</span>
+<span class="gi">+      dashboard:</span>
+<span class="gi">+        title: &#39;ダッシュボード&#39;</span>
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_26">構造変更<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="9b86839">コミット: 9b86839<a class="headerlink" href="#9b86839" title="Permanent link">&para;</a></h2>
+<h3 id="_27">メッセージ<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ビュー #29
+</code></pre></div>
+<h3 id="_28">変更されたファイル<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M app/assets/stylesheets/base/_variables.scss</li>
+<li>A app/assets/stylesheets/pages/_customer.scss</li>
+<li>M app/assets/stylesheets/pages/_login.scss</li>
+<li>A app/forms/customer/login_form.rb</li>
+<li>M app/views/admin/sessions/new.html.erb</li>
+<li>M app/views/admin/shared/_footer.html.erb</li>
+<li>A app/views/customer/sessions/new.html.erb</li>
+<li>M app/views/customer/shared/_footer.html.erb</li>
+<li>A app/views/customer/shared/_footer_login.html.erb</li>
+<li>M app/views/customer/shared/_header.html.erb</li>
+<li>A app/views/customer/shared/_header_login.html.erb</li>
+<li>M app/views/layouts/customer.html.erb</li>
+<li>M app/views/staff/sessions/new.html.erb</li>
+<li>M config/locales/models/ja.yml</li>
+<li>M config/locales/views/ja.yml</li>
+</ul>
+<h3 id="_29">変更内容<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 9b86839fc0db6c435e66b4e31748467694eba16e
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 16:39:28 2017 +0900
+
+<span class="w"> </span>   ビュー #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 3f4db64..4aa2842 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -627,6 +627,7 @@ git push heroku master</span>
+<span class="w"> </span>#### 顧客のログイン・ログアウト機能
+<span class="w"> </span>+ ルーティング
+<span class="w"> </span>+ コントローラ
+<span class="gi">++ ビュー</span>
+
+<span class="w"> </span>#### 自動ログイン機能の追加
+<span class="w"> </span>#### RSpecによるテスト
+<span class="gh">diff --git a/app/assets/stylesheets/base/_variables.scss b/app/assets/stylesheets/base/_variables.scss</span>
+<span class="gh">index 13563ca..d79c276 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/base/_variables.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/base/_variables.scss</span>
+<span class="gu">@@ -47,6 +47,11 @@ $very_dark_cyan: darken($dark_cyan, 25%);</span>
+<span class="w"> </span>$dark_magenta: #884488;
+<span class="w"> </span>$very_dark_magenta: darken($dark_magenta, 25%);
+
+<span class="gi">+/* イエロー系 */</span>
+<span class="gi">+</span>
+<span class="gi">+$dark_yellow: #888844;</span>
+<span class="gi">+$very_dark_yellow: darken($dark_yellow, 25%);</span>
+<span class="gi">+</span>
+<span class="w"> </span>/* 赤系 */
+<span class="w"> </span>$red: #cc0000;
+<span class="w"> </span>$pink: #ffcccc;
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_customer.scss b/app/assets/stylesheets/pages/_customer.scss</span>
+new file mode 100644
+<span class="gh">index 0000000..468e113</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_customer.scss</span>
+<span class="gu">@@ -0,0 +1,62 @@</span>
+<span class="gi">+@charset &#39;utf-8&#39;;</span>
+<span class="gi">+</span>
+<span class="gi">+// =====================</span>
+<span class="gi">+// 顧客ページ固有のスタイル</span>
+<span class="gi">+// =====================</span>
+<span class="gi">+</span>
+<span class="gi">+</span>
+<span class="gi">+html, body {</span>
+<span class="gi">+  margin: 0;</span>
+<span class="gi">+  padding: 0;</span>
+<span class="gi">+  height: 100%;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+.Header__head {</span>
+<span class="gi">+  text-align: left;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+.Customer {</span>
+<span class="gi">+  &amp;__wrapper {</span>
+<span class="gi">+    position: relative;</span>
+<span class="gi">+    box-sizing: border-box;</span>
+<span class="gi">+    min-height: 100%;</span>
+<span class="gi">+    margin: 0 auto;</span>
+<span class="gi">+    padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;</span>
+<span class="gi">+    background-color: $gray;</span>
+<span class="gi">+  }</span>
+<span class="gi">+</span>
+<span class="gi">+  &amp;__title {</span>
+<span class="gi">+    margin: 0;</span>
+<span class="gi">+    padding: $moderate * 1.5 $moderate;</span>
+<span class="gi">+    font-size: $large;</span>
+<span class="gi">+    font-weight: normal;</span>
+<span class="gi">+    background-color: $very_dark_magenta;</span>
+<span class="gi">+    color: $light_gray;</span>
+<span class="gi">+  }</span>
+<span class="gi">+</span>
+<span class="gi">+  &amp;__header {</span>
+<span class="gi">+    padding: $moderate;</span>
+<span class="gi">+    background-color: $dark_magenta;</span>
+<span class="gi">+    color: $very_light_gray;</span>
+<span class="gi">+    span.logo-mark {</span>
+<span class="gi">+      font-weight: bold;</span>
+<span class="gi">+    }</span>
+<span class="gi">+  }</span>
+<span class="gi">+</span>
+<span class="gi">+  &amp;__footer {</span>
+<span class="gi">+    bottom: 0;</span>
+<span class="gi">+    position: absolute;</span>
+<span class="gi">+    width: 100%;</span>
+<span class="gi">+    background-color: $dark_gray;</span>
+<span class="gi">+    color: $very_light_gray;</span>
+<span class="gi">+    p {</span>
+<span class="gi">+      text-align: center;</span>
+<span class="gi">+      padding: $moderate;</span>
+<span class="gi">+      margin: 0;</span>
+<span class="gi">+    }</span>
+<span class="gi">+  }</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+.logo--customer {</span>
+<span class="gi">+  color: $color-white;</span>
+<span class="gi">+}</span>
+<span class="gh">diff --git a/app/assets/stylesheets/pages/_login.scss b/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gh">index 72fc3e8..f86b2a9 100644</span>
+<span class="gd">--- a/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gi">+++ b/app/assets/stylesheets/pages/_login.scss</span>
+<span class="gu">@@ -19,6 +19,9 @@</span>
+<span class="w"> </span>  &amp;--admin {
+<span class="w"> </span>    border: solid 4px $dark_magenta;
+<span class="w"> </span>  }
+<span class="gi">+  &amp;--customer {</span>
+<span class="gi">+    border: solid 4px $dark_yellow;</span>
+<span class="gi">+  }</span>
+
+<span class="w"> </span>  background-color: $very_light_gray;
+
+<span class="gh">diff --git a/app/forms/customer/login_form.rb b/app/forms/customer/login_form.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..1feb6e1</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/forms/customer/login_form.rb</span>
+<span class="gu">@@ -0,0 +1,5 @@</span>
+<span class="gi">+class Customer::LoginForm</span>
+<span class="gi">+  include ActiveModel::Model</span>
+<span class="gi">+</span>
+<span class="gi">+  attr_accessor :email, :password</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/admin/sessions/new.html.erb b/app/views/admin/sessions/new.html.erb</span>
+<span class="gh">index a33ec06..a053234 100644</span>
+<span class="gd">--- a/app/views/admin/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/admin/sessions/new.html.erb</span>
+<span class="gu">@@ -1,4 +1,4 @@</span>
+<span class="gd">-&lt;% @title = &#39;ログイン&#39; %&gt;</span>
+<span class="gi">+&lt;% @title = t(&#39;.title&#39;) %&gt;</span>
+<span class="w"> </span>&lt;section class=&quot;Section l-column&quot;&gt;
+<span class="w"> </span>  &lt;div class=&quot;Login Login--admin&quot;&gt;
+<span class="w"> </span>    &lt;h1 class=&quot;Login__head&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;
+<span class="gh">diff --git a/app/views/admin/shared/_footer.html.erb b/app/views/admin/shared/_footer.html.erb</span>
+<span class="gh">index e3c34d8..3fb42b5 100644</span>
+<span class="gd">--- a/app/views/admin/shared/_footer.html.erb</span>
+<span class="gi">+++ b/app/views/admin/shared/_footer.html.erb</span>
+<span class="gu">@@ -1,7 +1,7 @@</span>
+<span class="w"> </span>&lt;footer class=&quot;Footer Admin__footer&quot;&gt;
+<span class="w"> </span>  &lt;div class=&quot;l-row l-column&quot;&gt;
+<span class="w"> </span>    &lt;div class=&quot;Footer__head&quot;&gt;
+<span class="gd">-      &lt;%= link_to(&#39;BAUKIS KAI&#39;, staff_root_url, class:&#39;logo&#39;) %&gt;</span>
+<span class="gi">+      &lt;%= link_to(&#39;BAUKIS KAI&#39;, admin_root_url, class:&#39;logo&#39;) %&gt;</span>
+<span class="w"> </span>      &lt;ul class=&quot;Menu Menu--sub&quot;&gt;
+<span class="w"> </span>        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;Menu__item&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+<span class="w"> </span>      &lt;/ul&gt;
+<span class="gh">diff --git a/app/views/customer/sessions/new.html.erb b/app/views/customer/sessions/new.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..f199010</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/customer/sessions/new.html.erb</span>
+<span class="gu">@@ -0,0 +1,19 @@</span>
+<span class="gi">+&lt;% @title = t(&#39;.title&#39;) %&gt;</span>
+<span class="gi">+&lt;section class=&quot;Section l-column&quot;&gt;</span>
+<span class="gi">+  &lt;div class=&quot;Login Login--customer&quot;&gt;</span>
+<span class="gi">+    &lt;h1 class=&quot;Login__head&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;</span>
+<span class="gi">+    &lt;div class=&quot;Login__body&quot;&gt;</span>
+<span class="gi">+      &lt;%= bootstrap_form_for @form, url: :customer_session do |f| %&gt;</span>
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.text_field :email %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.password_field :password %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="gi">+          &lt;div&gt;</span>
+<span class="gi">+            &lt;%= f.submit t &#39;.submit&#39; %&gt;</span>
+<span class="gi">+          &lt;/div&gt;</span>
+<span class="gi">+      &lt;% end %&gt;</span>
+<span class="gi">+    &lt;/div&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+&lt;/section&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/shared/_footer.html.erb b/app/views/customer/shared/_footer.html.erb</span>
+<span class="gh">index 46d3707..e57987c 100644</span>
+<span class="gd">--- a/app/views/customer/shared/_footer.html.erb</span>
+<span class="gi">+++ b/app/views/customer/shared/_footer.html.erb</span>
+<span class="gu">@@ -1,13 +1,14 @@</span>
+<span class="w"> </span>&lt;footer class=&quot;Footer&quot;&gt;
+<span class="w"> </span>  &lt;div class=&quot;l-row l-column&quot;&gt;
+<span class="w"> </span>    &lt;div class=&quot;Footer__head&quot;&gt;
+<span class="gd">-      &lt;%= link_to(&#39;BAUKIS KAI&#39;, staff_root_url, class:&#39;logo&#39;) %&gt;</span>
+<span class="gi">+      &lt;%= link_to(&#39;BAUKIS KAI&#39;, customer_root_url, class:&#39;logo&#39;) %&gt;</span>
+<span class="w"> </span>      &lt;ul class=&quot;Menu Menu--sub&quot;&gt;
+<span class="w"> </span>        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;Menu__item&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+<span class="w"> </span>        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;Menu__item&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
+<span class="w"> </span>        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;Menu__item&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;
+<span class="w"> </span>        &lt;li&gt;&lt;%= link_to(&#39;Blog&#39;, customer_article_index_url,class:&quot;Menu__item&quot;) %&gt;&lt;/li&gt;
+<span class="w"> </span>        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;Menu__item&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+<span class="gi">+        &lt;li&gt;&lt;%= link_to(&#39;Login&#39;, customer_login_url,class:&quot;Menu__item&quot;) %&gt;&lt;/li&gt;</span>
+<span class="w"> </span>      &lt;/ul&gt;
+<span class="w"> </span>    &lt;/div&gt;
+<span class="w"> </span>    &lt;div class=&quot;Footer__body&quot;&gt;
+<span class="gh">diff --git a/app/views/customer/shared/_footer_login.html.erb b/app/views/customer/shared/_footer_login.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..dd87033</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/customer/shared/_footer_login.html.erb</span>
+<span class="gu">@@ -0,0 +1,13 @@</span>
+<span class="gi">+&lt;footer class=&quot;Footer Customer__footer&quot;&gt;</span>
+<span class="gi">+  &lt;div class=&quot;l-row l-column&quot;&gt;</span>
+<span class="gi">+    &lt;div class=&quot;Footer__head&quot;&gt;</span>
+<span class="gi">+      &lt;%= link_to(&#39;BAUKIS KAI&#39;, customer_root_url, class:&#39;logo&#39;) %&gt;</span>
+<span class="gi">+      &lt;ul class=&quot;Menu Menu--sub&quot;&gt;</span>
+<span class="gi">+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;Menu__item&quot;&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="gi">+      &lt;/ul&gt;</span>
+<span class="gi">+    &lt;/div&gt;</span>
+<span class="gi">+    &lt;div class=&quot;Footer__body&quot;&gt;</span>
+<span class="gi">+      &lt;p&gt;Powered by BAUKIS KAI &amp;copy; 2014 k2works&lt;/p&gt;</span>
+<span class="gi">+    &lt;/div&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+&lt;/footer&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/shared/_header.html.erb b/app/views/customer/shared/_header.html.erb</span>
+<span class="gh">index ae88d5d..05d8bc0 100644</span>
+<span class="gd">--- a/app/views/customer/shared/_header.html.erb</span>
+<span class="gi">+++ b/app/views/customer/shared/_header.html.erb</span>
+<span class="gu">@@ -12,6 +12,7 @@</span>
+<span class="w"> </span>      &lt;li class=&quot;Menu__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+<span class="w"> </span>      &lt;li class=&quot;Menu__item&quot;&gt;&lt;%= link_to(&#39;Blog&#39;, customer_article_index_url) %&gt;&lt;/li&gt;
+<span class="w"> </span>      &lt;li class=&quot;Menu__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+<span class="gi">+      &lt;li class=&quot;Menu__item&quot;&gt;&lt;%= link_to(&#39;Login&#39;, customer_login_url) %&gt;&lt;/li&gt;</span>
+<span class="w"> </span>    &lt;/ul&gt;
+<span class="w"> </span>  &lt;/nav&gt;
+<span class="w"> </span>&lt;/header&gt;
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/customer/shared/_header_login.html.erb b/app/views/customer/shared/_header_login.html.erb</span>
+new file mode 100644
+<span class="gh">index 0000000..fecb5a6</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/views/customer/shared/_header_login.html.erb</span>
+<span class="gu">@@ -0,0 +1,25 @@</span>
+<span class="gi">+&lt;header class=&quot;Header Customer__header&quot;&gt;</span>
+<span class="gi">+  &lt;div id=&quot;menu-button&quot; class=&quot;Header__button&quot;&gt;</span>
+<span class="gi">+    &lt;%= fa_icon &#39;bars&#39; %&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+  &lt;div class=&quot;Header__head&quot;&gt;</span>
+<span class="gi">+    &lt;h1 class=&quot;logo&quot;&gt;&lt;%= link_to(&#39;BAUKIS KAI&#39;, customer_root_url, class:&#39;logo logo--customer&#39;) %&gt;&lt;/h1&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+  &lt;div class=&quot;Flash&quot;&gt;</span>
+<span class="gi">+    &lt;%= content_tag(:span, flash.notice, class: &#39;Flash__notice&#39;) if flash.notice %&gt;</span>
+<span class="gi">+    &lt;%= content_tag(:span, flash.alert, class: &#39;Flash__alert&#39;) if flash.alert %&gt;</span>
+<span class="gi">+  &lt;/div&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+  &lt;nav class=&quot;Header__body SpMenu&quot;&gt;</span>
+<span class="gi">+    &lt;ul class=&quot;Menu&quot;&gt;</span>
+<span class="gi">+      &lt;li class=&quot;Menu__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="gi">+    &lt;/ul&gt;</span>
+<span class="gi">+  &lt;/nav&gt;</span>
+<span class="gi">+  &lt;%= if current_customer</span>
+<span class="gi">+        link_to t(&#39;customer.shared.header.logout&#39;), :admin_session, method: :delete, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+      else</span>
+<span class="gi">+        link_to t(&#39;customer.shared.header.login&#39;), :admin_login, class: &#39;btn btn-default&#39;</span>
+<span class="gi">+      end</span>
+<span class="gi">+  %&gt;</span>
+<span class="gi">+&lt;/header&gt;</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/views/layouts/customer.html.erb b/app/views/layouts/customer.html.erb</span>
+<span class="gh">index 404c4c2..b8368e8 100644</span>
+<span class="gd">--- a/app/views/layouts/customer.html.erb</span>
+<span class="gi">+++ b/app/views/layouts/customer.html.erb</span>
+<span class="gu">@@ -13,9 +13,11 @@</span>
+<span class="w"> </span>&lt;body&gt;
+<span class="w"> </span>&lt;div id=&quot;wrapper&quot; class=&quot;SpMenu__wrapper&quot;&gt;
+<span class="w"> </span>  &lt;div id=&quot;overlay&quot; class=&quot;SpMenu__overlay&quot;&gt;&lt;/div&gt;
+<span class="gd">-  &lt;%= render &#39;customer/shared/header&#39; %&gt;</span>
+<span class="gi">+  &lt;% header = current_customer ? &#39;header_login&#39; : &#39;header&#39; %&gt;</span>
+<span class="gi">+  &lt;% footer = current_customer ? &#39;footer_login&#39; : &#39;footer&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &quot;customer/shared/#{header}&quot; %&gt;</span>
+<span class="w"> </span>  &lt;%= yield %&gt;
+<span class="gd">-  &lt;%= render &#39;customer/shared/footer&#39; %&gt;</span>
+<span class="gi">+  &lt;%= render &quot;customer/shared/#{footer}&quot; %&gt;</span>
+<span class="w"> </span>&lt;/div&gt;
+<span class="w"> </span>&lt;script&gt;
+<span class="w"> </span>    imageSlide(&#39;Slide&#39;, 2);
+<span class="gh">diff --git a/app/views/staff/sessions/new.html.erb b/app/views/staff/sessions/new.html.erb</span>
+<span class="gh">index 8479cef..07c6517 100644</span>
+<span class="gd">--- a/app/views/staff/sessions/new.html.erb</span>
+<span class="gi">+++ b/app/views/staff/sessions/new.html.erb</span>
+<span class="gu">@@ -1,4 +1,4 @@</span>
+<span class="gd">-&lt;% @title = &#39;ログイン&#39; %&gt;</span>
+<span class="gi">+&lt;% @title = t(&#39;.title&#39;) %&gt;</span>
+<span class="w"> </span>&lt;section class=&quot;Section l-column&quot;&gt;
+<span class="w"> </span>  &lt;div class=&quot;Login Login--staff&quot;&gt;
+<span class="w"> </span>    &lt;h1 class=&quot;Login__head&quot;&gt;&lt;%= @title %&gt;&lt;/h1&gt;
+<span class="gh">diff --git a/config/locales/models/ja.yml b/config/locales/models/ja.yml</span>
+<span class="gh">index 612676c..b52d1db 100644</span>
+<span class="gd">--- a/config/locales/models/ja.yml</span>
+<span class="gi">+++ b/config/locales/models/ja.yml</span>
+<span class="gu">@@ -115,6 +115,7 @@ ja:</span>
+<span class="w"> </span>      staff/login_form: 職員ログインフォーム
+<span class="w"> </span>      staff/change_password_form: 職員パスワード変更フォーム
+<span class="w"> </span>      admin/login_form: 管理者ログインフォーム
+<span class="gi">+      customer/login_form: 顧客ログインフォーム</span>
+
+<span class="w"> </span>    attributes:
+<span class="w"> </span>      staff/login_form:
+<span class="gu">@@ -127,3 +128,6 @@ ja:</span>
+<span class="w"> </span>      admin/login_form:
+<span class="w"> </span>        email: メールアドレス
+<span class="w"> </span>        password: パスワード
+<span class="gi">+      customer/login_form:</span>
+<span class="gi">+        email: メールアドレス</span>
+<span class="gi">+        password: パスワード</span>
+<span class="gh">diff --git a/config/locales/views/ja.yml b/config/locales/views/ja.yml</span>
+<span class="gh">index 5ac1a8e..08a8945 100644</span>
+<span class="gd">--- a/config/locales/views/ja.yml</span>
+<span class="gi">+++ b/config/locales/views/ja.yml</span>
+<span class="gu">@@ -16,6 +16,7 @@ ja:</span>
+<span class="w"> </span>        submit: &#39;検索&#39;
+<span class="w"> </span>    sessions:
+<span class="w"> </span>      new:
+<span class="gi">+        title: &#39;ログイン&#39;</span>
+<span class="w"> </span>        submit: &#39;ログイン&#39;
+<span class="w"> </span>    top:
+<span class="w"> </span>      index:
+<span class="gu">@@ -105,6 +106,7 @@ ja:</span>
+<span class="w"> </span>        logout: &#39;ログアウト&#39;
+<span class="w"> </span>    sessions:
+<span class="w"> </span>      new:
+<span class="gi">+        title: &#39;ログイン&#39;</span>
+<span class="w"> </span>        submit: &#39;ログイン&#39;
+<span class="w"> </span>    top:
+<span class="w"> </span>      index:
+<span class="gu">@@ -143,4 +145,14 @@ ja:</span>
+<span class="w"> </span>          full_name: &#39;氏名&#39;
+<span class="w"> </span>          type: &#39;種別&#39;
+<span class="w"> </span>          date_time: &#39;日時&#39;
+<span class="gd">-          contents_not_record: &#39;記録がありません&#39;</span>
+\ No newline at end of file
+<span class="gi">+          contents_not_record: &#39;記録がありません&#39;</span>
+<span class="gi">+</span>
+<span class="gi">+  customer:</span>
+<span class="gi">+    shared:</span>
+<span class="gi">+      header:</span>
+<span class="gi">+        login: &#39;Login&#39;</span>
+<span class="gi">+        logout: &#39;Logout&#39;</span>
+<span class="gi">+    sessions:</span>
+<span class="gi">+      new:</span>
+<span class="gi">+        title: &#39;ログイン&#39;</span>
+<span class="gi">+        submit: &#39;ログイン&#39;</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="6862ae8">コミット: 6862ae8<a class="headerlink" href="#6862ae8" title="Permanent link">&para;</a></h2>
+<h3 id="_30">メッセージ<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>コントローラ #29
+</code></pre></div>
+<h3 id="_31">変更されたファイル<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>A app/controllers/customer/base.rb</li>
+<li>A app/controllers/customer/sessions_controller.rb</li>
+<li>M app/controllers/customer/top_controller.rb</li>
+<li>M config/locales/controllers/ja.yml</li>
+</ul>
+<h3 id="_32">変更内容<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 6862ae8a1af4d4162c169ad9ca5a2ce7dd7b4ca8
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 15:13:26 2017 +0900
+
+<span class="w"> </span>   コントローラ #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index b52a5e7..3f4db64 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -626,6 +626,7 @@ git push heroku master</span>
+<span class="w"> </span>### 次回から自動でログイン
+<span class="w"> </span>#### 顧客のログイン・ログアウト機能
+<span class="w"> </span>+ ルーティング
+<span class="gi">++ コントローラ</span>
+
+<span class="w"> </span>#### 自動ログイン機能の追加
+<span class="w"> </span>#### RSpecによるテスト
+<span class="gh">diff --git a/app/controllers/customer/base.rb b/app/controllers/customer/base.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..d714b08</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/controllers/customer/base.rb</span>
+<span class="gu">@@ -0,0 +1,18 @@</span>
+<span class="gi">+class Customer::Base &lt; ApplicationController</span>
+<span class="gi">+  before_action :authorize</span>
+<span class="gi">+</span>
+<span class="gi">+  private</span>
+<span class="gi">+  def current_customer</span>
+<span class="gi">+    if session[:customer_id]</span>
+<span class="gi">+      @current_customer ||= Customer.find_by(id: session[:cutomer_id])</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  helper_method :current_customer</span>
+<span class="gi">+</span>
+<span class="gi">+  def authorize</span>
+<span class="gi">+    unless current_customer</span>
+<span class="gi">+      flash.alert = t(&#39;customer.base.authrize.flash_alert&#39;)</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+\ No newline at end of file
+<span class="gh">diff --git a/app/controllers/customer/sessions_controller.rb b/app/controllers/customer/sessions_controller.rb</span>
+new file mode 100644
+<span class="gh">index 0000000..993e180</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/app/controllers/customer/sessions_controller.rb</span>
+<span class="gu">@@ -0,0 +1,33 @@</span>
+<span class="gi">+class Customer::SessionsController &lt; Customer::Base</span>
+<span class="gi">+  skip_before_action :authorize</span>
+<span class="gi">+</span>
+<span class="gi">+  def new</span>
+<span class="gi">+    if current_customer</span>
+<span class="gi">+      redirect_to :customer_root</span>
+<span class="gi">+    else</span>
+<span class="gi">+      @form = Customer::LoginForm.new</span>
+<span class="gi">+      render action: &#39;new&#39;</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def crete</span>
+<span class="gi">+    @form = Customer::LoginForm.new(params[:customer_login_form])</span>
+<span class="gi">+    if @form.email.present?</span>
+<span class="gi">+      customer = Customer.find_by(email_for_inde: @form.email.downcase)</span>
+<span class="gi">+    end</span>
+<span class="gi">+    if Customer::Authenticator.new(customer).authenticate(@form.password)</span>
+<span class="gi">+      session[:customer_id] = customer.id</span>
+<span class="gi">+      flash.notice = t(&#39;common.session.create.notice&#39;)</span>
+<span class="gi">+      redirect_to :customer_root</span>
+<span class="gi">+    else</span>
+<span class="gi">+      flash.now.alert = t(&#39;common.session.create.alert_mail_password&#39;)</span>
+<span class="gi">+      render action: &#39;new&#39;</span>
+<span class="gi">+    end</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def destroy</span>
+<span class="gi">+    session.delete(:customer_id)</span>
+<span class="gi">+    flash.notice = t(&#39;common.session.destroy.notice&#39;)</span>
+<span class="gi">+    redirect_to :customer_root</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+<span class="gh">diff --git a/app/controllers/customer/top_controller.rb b/app/controllers/customer/top_controller.rb</span>
+<span class="gh">index 9fc6012..013788c 100644</span>
+<span class="gd">--- a/app/controllers/customer/top_controller.rb</span>
+<span class="gi">+++ b/app/controllers/customer/top_controller.rb</span>
+<span class="gu">@@ -1,4 +1,6 @@</span>
+<span class="gd">-class Customer::TopController &lt; ApplicationController</span>
+<span class="gi">+class Customer::TopController &lt; Customer::Base</span>
+<span class="gi">+  skip_before_action :authorize</span>
+<span class="gi">+</span>
+<span class="w"> </span>  def index
+<span class="w"> </span>    render action: &#39;index&#39;
+<span class="w"> </span>  end
+<span class="gh">diff --git a/config/locales/controllers/ja.yml b/config/locales/controllers/ja.yml</span>
+<span class="gh">index b400f59..8555c0e 100644</span>
+<span class="gd">--- a/config/locales/controllers/ja.yml</span>
+<span class="gi">+++ b/config/locales/controllers/ja.yml</span>
+<span class="gu">@@ -41,4 +41,8 @@ ja:</span>
+<span class="w"> </span>      update:
+<span class="w"> </span>        flash_success: &#39;職員アカウントを更新しました。&#39;
+<span class="w"> </span>      destroy:
+<span class="gd">-        flash_success: &#39;職員アカウントを削除しました。&#39;</span>
+\ No newline at end of file
+<span class="gi">+        flash_success: &#39;職員アカウントを削除しました。&#39;</span>
+<span class="gi">+  customer:</span>
+<span class="gi">+    base:</span>
+<span class="gi">+      authrize:</span>
+<span class="gi">+        flash_alert: &#39;ログインしてください。&#39;</span>
+\ No newline at end of file
+</code></pre></div>
+<h3 id="_33">構造変更<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIyNTdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU4N3B4O2hlaWdodDoyNTdweDtiYWNrZ3JvdW5kOiNGRkZGRkY7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1ODcgMjU3IiB3aWR0aD0iNTg3cHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTUzLjkxNDEiIHg9IjUiIHk9IjE2LjEzODciPldlbGNvbWUgdG8gUGxhbnRVTUwhPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMzAuMTA3NCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjI3Ny4xMDc0IiB4PSI1IiB5PSI0NC4wNzYyIj5Zb3UgY2FuIHN0YXJ0IHdpdGggYSBzaW1wbGUgVU1MIERpYWdyYW0gbGlrZTo8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSI1OC4wNDQ5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMjIuODE4NCIgeD0iNSIgeT0iNzIuMDEzNyI+Qm9iLSZndDtBbGljZTomIzE2MDtIZWxsbzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9Ijg1Ljk4MjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNC4zNzg5IiB4PSI1IiB5PSI5OS45NTEyIj5PcjwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjExMy45MTk5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5My45MTk5IiB4PSI1IiB5PSIxMjcuODg4NyI+Y2xhc3MmIzE2MDtFeGFtcGxlPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTQxLjg1NzQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNDEuOTUzMSIgeD0iNSIgeT0iMTU1LjgyNjIiPllvdSB3aWxsIGZpbmQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBQbGFudFVNTCBzeW50YXggb248L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dC1kZWNvcmF0aW9uPSJ1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjEyNS43MDEyIiB4PSIzNTAuNzY3NiIgeT0iMTU1LjgyNjIiPmh0dHBzOi8vcGxhbnR1bWwuY29tPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTY5Ljc5NDkiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMDYuNjExMyIgeD0iNSIgeT0iMTgzLjc2MzciPihEZXRhaWxzIGJ5IHR5cGluZzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjUwLjU3MjMiIHg9IjExNS40MjU4IiB5PSIxODMuNzYzNyI+bGljZW5zZTwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MjIzIiB4PSIxNjkuODEyNSIgeT0iMTgzLjc2MzciPmtleXdvcmQpPC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMTk3LjczMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjIxMS43MDEyIj4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSI1IiB5PSIyMjUuNjY5OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNSIgeT0iMjM5LjYzODciPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjUiIHk9IjI1My42MDc0Ij4mIzE2MDs8L3RleHQ+PGltYWdlIGhlaWdodD0iNzEiIHdpZHRoPSI4MCIgeD0iNTA2LjQ2ODgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRkFBQUFCSENBTUFBQUNuSERDOEFBQURBRkJNVkVYLy8vK0JwYnZEM3UvZjd2ZlB6OCtueitnM2tzdVpFRGtXQURyL3VqbHZzZHBUb2RMQ3dzT0x3T0ViZzhULy92NnBxYW1aRVRuTHlzdlQwOVRvNStqcUxTNFZBVGo5L2YyN3U3dkR3OE1UZnNLK3Y3L2o0K1NPd2VKcHJkakw0L0t4c2JFcmk4ams4UGdYYTU3YzI5dVVFVGV6MXV0UW9OSjF0TnRFbWM5Y3B0V0J1dDZheU9XLzNPNllFRGpZNnZVZmhjWEJ3Y0hzN096dzkvdjgzdDc5dVRuNysvdlgxOWVob2FIeDhmRzJ0TFhIeDhmdVZsZnJOVFlhQmpuL3ZVSDUrZm1rbzZXWGw1Zi8rZm45NXViKzlQVCs4UEQzcUtpZG1hTXhJVXJucURXY0ZqN241ZVgwOVBUdTd1MlNrcEtmblo2cnE2ejBsSlRtNHR6SnJIVWZEVDMzOS9lRkdEbjZ0amNyRXpPdnJiQnVaM2w0ZW9tU01TN0h6OVNtcHFhc3U4U0ZpWXVRRVRmYTJkdTFtNk9PTTA1MUowTldUV0w1eHNlNHVMajZ6YzMzcjYvNHZiN3lkSFhxTGkvNzJkbnRURTN0UjBpamJuNWpXM0MrdThOQU5WUXJHMFhGdWJxUlZHWnphNEdRR1QyVmFTN2EwTlBKdEk2SUpqL3pzenJmcWtYWHpyL0h3OGNnQzBMVXFsdE9RMkpzU0M1YlRHak9wRmFmU2kyK2lER3R5dDE0bTdUSmhUQ1BKVVN3b0lHL3FhK2lrSGlJZ3BDUkhqSTlqOEtYYm5hUUgwRkxmNkZHUGxwMGNuWXlLRTJyZzQ5V2o3ZEZYSG1jd3RycDZ1dSt4TWp2WVdMdlcxejk3ZTNzUEQzc1AwRHVVbFA3MDlQWXpkRFBtenFaV1d5U1JWeWdmSEhkMXNtV2taK1BnbmliRVRxc2wyNjBxNWZMdXBwSkxDL2RwajJIUEZMVHRIdi91anJUd0p5NXM2aVdqSWkwaUQzam9UVENtVTN0cmp1dlpTMnpsRnZqcTBIU3lMYllwMHFSdHMxMFhHeEVLQzl5UFZCUVpJT1BkbE52TWsyTmVZTnFSbHVqdGNDVnJyM2o1ZVkxZ0s5UW45R0xwN2xiZUpYUnhyQ2tpWkRhb3p5dWtvSitIMEIzcmMrT1l5K2lwckprWVhkaG1yNmVlMGFmczc5eHE5QmlrckdLakkzRm9tRWlMRk8wYXk2bmZJbTRwWlhSalRGdWhaU1pXbTB6Y1p5Sk4wS05UazRlZWJOZmRJR0dsWjkzaDVrY0VENW5PVll5UldiemlJazlkSjRrZXJFNVpZeFJVbkxHMWQ3cDhQVHZZMlB0VGsvMW5aMXljVi9iQUFBRngwbEVRVlI0WHUxWWUxQlVWUmcvZTNkaGw0Y3NLeXhxUGxCSlFWRVRGMmljQVkxM0dvZ2tFRnFpenFSUnBvQnBUQ0lhcGFVT2hXTmpVZE9NU0JwcUpZWlRnNEtpZ0ZLQUR6U0lWWjRxRDVWRmx1WGhMZ3ZiUGVlK3I0OVI3djJ6Myt6Y2M3N2ZPZlBiN3p2ZlBkODV1d0NJaHdUNHdQaXNBTndQQXVJS0huYkhIMUkrS3dBWERBMThTaERXNThDbmVDRW5YbDhKR3dtZkh5bENQU3ZsWi9GV3hoOFlJUkl4VFdrWkFFb2ZrVHo4c05xN3RBcUUyZ09ET0I2R1lab2JWYUgyMFNWWjRvUWNkbVhWMEw3YzRiOE9GdkpIUm9Zd2RWSW95UFgzZ3h0RkRBK1Y4ZTZtTThwQm9DamlqNHdRaVdvL0FMelYva3BraWZCaTEzcDR3YVp1R3JKRUVDeWNpeGNFVlNiWWdGd1Vvemc0L3FTcmFPeHJQN084RW9najJIRHh5TVdtenBrNjgyMyt5SWpodlI3ZkxPcERzQ3VHaHdDMFdmYmtqUXE4QTBNV0MwRWdJWXpQQ1lNeW1NOEl3Y3Z6Nks0SVd3OHNrVHJncTNpUE1JUW54ZGZLcnZ5ZWRweXZiU3N5QlF0NnpjSDZPeFhtanFZeGc5UGJnWEJCdmVLNmFSQVhORWwxU3NjK2h6N0JnbnR5b2hiL2dnUWxOcnJkemZJdW9ZS1NiNzkwNjdQclJvTG1HbzI1U2VnaEpSbjF5TXJTYlBUcHRaYW9CbHd0bFdiQkhzcHhpVyttVzgrNDZlcmVWbk1YR3hiRlErbWpvZmlIWlRyY2xKbjVFMTRVRWdkck85dFJWcGgwSERKbFlsUnNMdjRYRkE3UkJBMWtLNW9nQmI3Z3RuMDhBdnhXeW1jMmIrWXpMSEMzbm5PQ05IdmRheVVzWnBubnduUHFHZit5R0tjUEtsdjkydnRKQzIwOXpHeVJXSm1neWQxNnNTR0dUL0FtTTJyZEtaS1pIeHdDejdLVW9kTHpKT084dGg0T0JxeGRvMGMydGZVa05yM1FsSmtaUVdXTUJQMHV3Qkh2bVFRYjN6UlZDTW5zTU82QVRhemYzZjBra3phMEhUYVBDZElocHlUa25xUDYxVGUxZVYyZ1JwcjFGVW40eHR4UlQ3MnBESGhqMDkvVW5CTGppdjcycDRkOEZFdGxMaWJCZDdRZzB4SzUrWGZTOXEyQXp4U1ZIUG5OSU1CUzhCUVB3OE4xVzRnbFFXajBtdHA0K25TSGh2S1lPTTRHTDZ2SDFqR1RjRFEzcDE5NzlBUVBJNWFnWEVEWXd1UzVhd2tuSjczckhVNTZSeUxBcjZBQ3BPNWlNUkd2cDNYeWtqSW1nczRGZ20yLzdVUmM4ZGhiZUQ5amRoWVZOb24wbWRGY0FqVElYYm1DNzVWcm1WSGNRK0pESVhidU5tWVVZbFpvWXg2WGNXaktUV2F2WVhkMVd6VTlPRWg5d0xGZkVWRnphNVBFaFZoREF2Zkx4NjBjV00zZVBNYTloeVpHNUROcjZEYlFpQ1VjWVUwQUtHekd5WXhsa2Yrd3huQ2srd2R3Q2JBL1RrV0g3RGJnb3E4ZGNtS05zc1FRM0YvSm1NeGxJai9mem8vN3M5T0l3VU1lYmJZemJoMnpMZms3ZWhCR3pJYXU2T2VPK3h6R0tsQlJ3Q0dBWE5hQ0ZnWWJSb0tHK2hNVGZNZmY0TTZoMExZeHBtdi85MnltOXRJeGM0dVJ6YXd5bkNFV0dodW03b2RmOS83NXZoOHpnMGJLaWpYNUFNeGhNYWNzSzhwQnhhSmlodG5RcXIxS0c4eUZNenEvZHV0SjJpS3dOQ2JYQTdZYW1zbTJYbjBYdGd0b3dZM1h5OHJwWWM0Tk5xb244ZU00OWsrTnR6VTU1R3RNbGVHQWtOUjZvbGRETWhIK2U5RVgwSkIrVVlLdjRXZ0xackxDakhWN3dueVlsekpadllWNkE2ZDF3NnhFcGg4NDJVVXlUa2pHSWJ6d1JBL0pJT0JKS1N0ODh5Z2xxTkQxaDZUcGlRcVFWOTl3bUo3bmtuUWNnSUlIcWQwMEV3U3pndWRpZ0dZUVVIRTRxRk1jR0piMjJrcDdsTm9wOHA2em5TdHZnNVMyZTFUVlJ0aTU2dy96ajhmWnpLTGlEYTMxN01xQlFGYnMrSjNkY2JTZ28rSDREMGtMT29rSjgyL05SOEtaYnA5ZUlaZ2xsd0tSOEVjMWVqSVg4MjdQT2svMDZIcFlmZkdkNWRrb1pKWE1xREFWWGQxTmJoYXZseDRPeXVBaVBjeUFGM0ljazhmYVhBdUU1V1RvQXBrTXh5a0wxUGJOUko5MVNEa1hPeXltUEZSMVVNbHc5R2pSUEtDclBzUlN2VW5iemJrRUxqMlBTU1JrUUxpSDFBdlJPVHV0bHByeUxIUUFvQ0QrQzJCQlA0bnBNd2Q5enNJZ3pnYURzSytiY3RtVnczaGV0YWk1dDlSUzRQRXF1YjRRbkN2eHRlR3pPWnlRWHhqc2N4a2hIaXNXS01pNzIrVDBwMWR4R2VHWWtHMGV6K2VlRzdJbi9uL29OT2V4QzlmeklpTHZQeFZ0S3A4NGl6YStBQUFBQUVsRlRrU3VRbUNDIiB5PSIxODUuNDM3NSIvPjwhLS1TUkM9W0tyVHV0M1p2U1VFd25xc1I3cFZGVnpwU19CWXZ1dDdad2lURDdPLVJrZnlqeHR4UGlFM2ZhaXZkaXhTeVJmaHFPazZBbnVxcDdwU3RGNnZReWhYZnFVRWMzTy1STHB2a05XMkswWGkySEFqVnhEX3hqNmwxdXlSZlpua05GTXhpVnptOFA0enp0RFoyZlF4bVA1LXQ1UDFBcGFhaUJiUm1Jb3J0MVo3VzBndUxjU0tiY05kZkM1Nk8wV0xUTkpqS0lHMDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="5352ad5">コミット: 5352ad5<a class="headerlink" href="#5352ad5" title="Permanent link">&para;</a></h2>
+<h3 id="_34">メッセージ<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ルーティング #29
+</code></pre></div>
+<h3 id="_35">変更されたファイル<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>M config/routes.rb</li>
+</ul>
+<h3 id="_36">変更内容<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 5352ad579983fbcc3e34b515ca567de0d9e3211c
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 14:39:08 2017 +0900
+
+<span class="w"> </span>   ルーティング #29
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 5e01860..b52a5e7 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -625,6 +625,8 @@ git push heroku master</span>
+
+<span class="w"> </span>### 次回から自動でログイン
+<span class="w"> </span>#### 顧客のログイン・ログアウト機能
+<span class="gi">++ ルーティング</span>
+<span class="gi">+</span>
+<span class="w"> </span>#### 自動ログイン機能の追加
+<span class="w"> </span>#### RSpecによるテスト
+
+<span class="gh">diff --git a/config/routes.rb b/config/routes.rb</span>
+<span class="gh">index f0f1ae9..ce8228f 100644</span>
+<span class="gd">--- a/config/routes.rb</span>
+<span class="gi">+++ b/config/routes.rb</span>
+<span class="gu">@@ -39,6 +39,9 @@</span>
+<span class="w"> </span>#          customer_article_index GET    /article/index(.:format)                             customer/article#index {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#         customer_campaign_index GET    /campaign/index(.:format)                            customer/campaign#index {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="w"> </span>#        customer_campaign_submit GET    /campaign_submit(.:format)                           customer/campaign#submit {:host=&gt;&quot;0.0.0.0&quot;}
+<span class="gi">+#                  customer_login GET    /login(.:format)                                     customer/sessions#new {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="gi">+#                customer_session DELETE /session(.:format)                                   customer/sessions#destroy {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="gi">+#                                 POST   /session(.:format)                                   customer/sessions#create {:host=&gt;&quot;0.0.0.0&quot;}</span>
+<span class="w"> </span>#                            root GET    /                                                    errors#routing_error
+<span class="w"> </span>#                                 GET    /*anything(.:format)                                 errors#routing_error
+<span class="w"> </span>#
+<span class="gu">@@ -78,6 +81,8 @@ Rails.application.routes.draw do</span>
+<span class="w"> </span>      get &#39;article/index&#39;
+<span class="w"> </span>      get &#39;campaign/index&#39;
+<span class="w"> </span>      get &#39;campaign_submit&#39;, to: &#39;campaign#submit&#39;
+<span class="gi">+      get &#39;login&#39; =&gt; &#39;sessions#new&#39;, as: :login</span>
+<span class="gi">+      resource :session, only: [ :create, :destroy ]</span>
+<span class="w"> </span>    end
+<span class="w"> </span>  end
+</code></pre></div>
+<h2 id="977c96a">コミット: 977c96a<a class="headerlink" href="#977c96a" title="Permanent link">&para;</a></h2>
+<h3 id="_37">メッセージ<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>機能拡張編
+</code></pre></div>
+<h3 id="_38">変更されたファイル<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+</ul>
+<h3 id="_39">変更内容<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 977c96a4afebbd8d005b532d2d316b150c84cccd
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Feb 9 14:22:14 2017 +0900
+
+<span class="w"> </span>   機能拡張編
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 18c6f37..5e01860 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -623,6 +623,48 @@ git push heroku master</span>
+<span class="w"> </span>+ 検索条件に郵便番号を追加
+<span class="w"> </span>+ 検索条件に電話番号下４桁を追加
+
+<span class="gi">+### 次回から自動でログイン</span>
+<span class="gi">+#### 顧客のログイン・ログアウト機能</span>
+<span class="gi">+#### 自動ログイン機能の追加</span>
+<span class="gi">+#### RSpecによるテスト</span>
+<span class="gi">+</span>
+<span class="gi">+### IPアドレスによるアクセス制限</span>
+<span class="gi">+#### IPアドレスによるアクセス制限</span>
+<span class="gi">+#### 許可IPアドレスの管理</span>
+<span class="gi">+#### 演習問題</span>
+<span class="gi">+</span>
+<span class="gi">+### 多対多の関連付け</span>
+<span class="gi">+#### 多対多の関連付け</span>
+<span class="gi">+#### プログラム管理機能（前編）</span>
+<span class="gi">+#### パフォーマンス改善</span>
+<span class="gi">+</span>
+<span class="gi">+### 複雑なフォーム</span>
+<span class="gi">+#### プログラム管理機能（後編）</span>
+<span class="gi">+#### プログラム申し込み機能</span>
+<span class="gi">+</span>
+<span class="gi">+### トランザクションと排他的ロック</span>
+<span class="gi">+#### プログラム一覧表示・詳細表示機能（顧客向け)</span>
+<span class="gi">+#### プログラム申し込み機能</span>
+<span class="gi">+</span>
+<span class="gi">+### フォームの確認画面 </span>
+<span class="gi">+#### 顧客自身によるアカウント管理機能</span>
+<span class="gi">+#### 確認画面</span>
+<span class="gi">+#### 演習問題</span>
+<span class="gi">+</span>
+<span class="gi">+### Ajax</span>
+<span class="gi">+#### 顧客向け問い合わせフォーム</span>
+<span class="gi">+#### 問い合わせ到着の通知</span>
+<span class="gi">+ </span>
+<span class="gi">+### ツリー構造</span>
+<span class="gi">+#### 問い合わせの一覧表示と削除</span>
+<span class="gi">+#### メッセージツリーの表示</span>
+<span class="gi">+</span>
+<span class="gi">+### タグ付け</span>
+<span class="gi">+#### 問い合わせの返信機能</span>
+<span class="gi">+#### メッセージのタグ付け</span>
+<span class="gi">+#### 一意制約と排他的ロック</span>
+<span class="gi">+#### 演習問題  </span>
+<span class="gi">+</span>
+<span class="w"> </span>**[⬆ back to top](#構成)**
+
+<span class="w"> </span># 参照 #
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

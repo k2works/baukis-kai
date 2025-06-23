@@ -1,0 +1,2635 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Baukis-Kai project.">
+      
+      
+        <meta name="author" content="Project Team">
+      
+      
+      
+        <link rel="prev" href="../20250611/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>20250612 - Baukis-Kai</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../docs/mkdocs/assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2025-06-12" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Baukis-Kai" class="md-header__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Baukis-Kai
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20250612
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UseCases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../20170110/" class="md-tabs__link">
+          
+  
+  
+  Journal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Baukis-Kai" class="md-nav__button md-logo" aria-label="Baukis-Kai" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Baukis-Kai
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/k2works/baukis-kai" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    baukis-kai
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UseCases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E6%A6%82%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%AE%9F%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%94%A8%E8%AA%9E%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Journal
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Journal
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170110/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170110
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170111/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170111
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170114/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170114
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170116/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170116
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170117/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170117
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170118/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170118
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170120/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170120
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170121/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170121
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170123/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170123
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170124/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170124
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170126/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170126
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170127/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170127
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170128/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170128
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170130/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170130
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170131/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170131
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170202
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170203
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170204
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170206
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170207
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170209
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170210/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170210
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170213/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170213
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170214/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170214
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170216/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170216
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170220/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170317/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170317
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170318/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170318
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170325/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170325
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170327/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170327
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20170328/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20170328
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250424/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250424
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250510/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250510
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250607/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250607
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250608/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250608
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250609/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250609
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250610/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250610
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250611/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250611
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250612
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      システム構成図
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      作業内容
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作業内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code開発環境の改善
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Studio Code開発環境の改善">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更点の概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker環境の改善
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker環境の改善">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更点の概要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術的詳細
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8dc2f88" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 8dc2f88
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 8dc2f88">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7f46019" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 7f46019
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 7f46019">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c6a9e75" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: c6a9e75
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: c6a9e75">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76c2989" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 76c2989
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 76c2989">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d9b605a" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: d9b605a
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: d9b605a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2f21c63" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 2f21c63
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 2f21c63">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d3d40f" class="md-nav__link">
+    <span class="md-ellipsis">
+      コミット: 3d3d40f
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コミット: 3d3d40f">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      メッセージ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更されたファイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      変更内容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2025-06-12">作業履歴 2025-06-12<a class="headerlink" href="#2025-06-12" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>2025-06-12の作業内容をまとめています。このジャーナルでは、開発環境の改善とデバッグ効率化のための設定、およびドキュメントの修正に関する作業を記録しています。</p>
+<h2 id="_2">システム構成図<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9IjEwMzdweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjU2OHB4O2hlaWdodDoxMDM3cHg7YmFja2dyb3VuZDojRkZGRkZGOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTY4IDEwMzciIHdpZHRoPSI1NjhweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyIGRldl9lbnYtLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9ImRldl9lbnYiIGRhdGEtc291cmNlLWxpbmU9IjE0NjUiIGRhdGEtdWlkPSJlbnQwMDAzIiBpZD0iY2x1c3Rlcl9kZXZfZW52Ij48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjgzMC42MiIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojNDQ0NDQ0O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1kYXNoYXJyYXk6Ny4wLDcuMDsiIHdpZHRoPSI1NDIiIHg9IjciIHk9IjIwMS4xOSIvPjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2MC42MjExIiB4PSIyNDcuNjg5NSIgeT0iMjA4Ljc1OTMiPiYjMTcxO3N5c3RlbV9ib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI2IiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzUuOTI5NyIgeD0iMjYwLjAzNTIiIHk9IjIxOC43NTkzIj4mIzE3MTtib3VuZGFyeSYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjQuMDAwMSIgeD0iMjQ1Ljk5OTkiIHk9IjIzOC4wNDE2Ij4mIzM4MjgzOyYjMzAzMzA7JiMyOTg3MjsmIzIyNjU5OzwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTkuNDU1MSIgeD0iMjQ4LjI3MjUiIHk9IjI1Mi45NTM3Ij5bc3lzdGVtXTwvdGV4dD48L2c+PCEtLWNsdXN0ZXIgZG9ja2VyX2NvbnRhaW5lcnMtLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9ImRvY2tlcl9jb250YWluZXJzIiBkYXRhLXNvdXJjZS1saW5lPSIxNDY1IiBkYXRhLXVpZD0iZW50MDAwNiIgaWQ9ImNsdXN0ZXJfZG9ja2VyX2NvbnRhaW5lcnMiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iMzg1LjMxIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiM0NDQ0NDQ7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWRhc2hhcnJheTo3LjAsNy4wOyIgd2lkdGg9IjQ3OCIgeD0iMzkiIHk9IjYxNC41Ii8+PHRleHQgZmlsbD0iIzQ0NDQ0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjYwLjYyMTEiIHg9IjI0Ny42ODk1IiB5PSI2MjIuMDY5MyI+JiMxNzE7c3lzdGVtX2JvdW5kYXJ5JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNS45Mjk3IiB4PSIyNjAuMDM1MiIgeT0iNjMyLjA2OTMiPiYjMTcxO2JvdW5kYXJ5JiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiM0NDQ0NDQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNjYuNDIxOSIgeD0iMTk0Ljc4OTEiIHk9IjY1MS4zNTE2Ij5Eb2NrZXIgQ29udGFpbmVyczwvdGV4dD48dGV4dCBmaWxsPSIjNDQ0NDQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTkuNDU1MSIgeD0iMjQ4LjI3MjUiIHk9IjY2Ni4yNjM3Ij5bc3lzdGVtXTwvdGV4dD48L2c+PCEtLWVudGl0eSB2c2NvZGUtLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0idnNjb2RlIiBkYXRhLXNvdXJjZS1saW5lPSI3MSIgZGF0YS11aWQ9ImVudDAwMDQiIGlkPSJlbnRpdHlfdnNjb2RlIj48cmVjdCBmaWxsPSIjNDM4REQ1IiBoZWlnaHQ9Ijk5LjE1NjMiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzNDN0ZDMDtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE4OS43MzQ0IiB4PSIzNDMuMTMiIHk9IjI3Mi4xOSIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzEuNTQzIiB4PSI0MDIuMjI1NyIgeT0iMjkzLjMyODciPiYjMTcxO2NvbnRhaW5lciYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTUuMDYyNSIgeD0iMzUzLjEzIiB5PSIzMTEuMDEwMyI+VmlzdWFsPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1LjU3MDMiIHg9IjQwOC4xOTI1IiB5PSIzMTEuMDEwMyI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1OC40OTIyIiB4PSI0MTMuNzYyOCIgeT0iMzExLjAxMDMiPlN0dWRpbzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNS41NzAzIiB4PSI0NzIuMjU1IiB5PSIzMTEuMDEwMyI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0NS4wMzkxIiB4PSI0NzcuODI1MyIgeT0iMzExLjAxMDMiPkNvZGU8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIyOS43MjQ2IiB4PSI0MjMuMTM0OSIgeT0iMzI1LjkyMjQiPltJREVdPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuNDUwMiIgeD0iNDM1Ljc3MjEiIHk9IjM0MS43NDc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTM5Ljk5OTQiIHg9IjM2Ny45OTc1IiB5PSIzNTguMDQ0NSI+JiMxMjQ2NzsmIzEyNTQwOyYjMTI0ODk7JiMzMjIzMjsmIzM4NTk4OyYjMTI1Mzk7JiMxMjQ4NzsmIzEyNDk2OyYjMTI0ODM7JiMxMjQ2NDs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgZG9ja2VyLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImRvY2tlciIgZGF0YS1zb3VyY2UtbGluZT0iNzEiIGRhdGEtdWlkPSJlbnQwMDA1IiBpZD0iZW50aXR5X2RvY2tlciI+PHJlY3QgZmlsbD0iIzQzOERENSIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMzQzdGQzA7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxODcuOTk5MyIgeD0iMzQ0IiB5PSI0NDYuMzQiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjcxLjU0MyIgeD0iNDAyLjIyODEiIHk9IjQ2Ny40Nzg3Ij4mIzE3MTtjb250YWluZXImIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjYzLjE0MDYiIHg9IjQwNi40MjkzIiB5PSI0ODUuMTYwMyI+RG9ja2VyPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODEuMzYzOCIgeD0iMzk3LjMxNzciIHk9IjUwMC4wNzI0Ij5bJiMxMjQ2NzsmIzEyNTMxOyYjMTI0ODY7JiMxMjQ5MDsmIzI5ODcyOyYjMjI2NTk7XTwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjQzNS43NzQ1IiB5PSI1MTUuODk3NiI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE2Ny45OTkzIiB4PSIzNTQiIHk9IjUzMi4xOTQ1Ij4mIzEyNDUwOyYjMTI1MDM7JiMxMjUyMjsmIzEyNDY1OyYjMTI1NDA7JiMxMjQ3MTsmIzEyNTE5OyYjMTI1MzE7JiMyMzQ1NTsmIzM0ODkyOyYjMjk4NzI7JiMyMjY1OTs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgYXBwX2NvbnRhaW5lci0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJhcHBfY29udGFpbmVyIiBkYXRhLXNvdXJjZS1saW5lPSI3MSIgZGF0YS11aWQ9ImVudDAwMDciIGlkPSJlbnRpdHlfYXBwX2NvbnRhaW5lciI+PHJlY3QgZmlsbD0iIzQzOERENSIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMzQzdGQzA7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIyMTIuMDAwNCIgeD0iNjMiIHk9IjY5My41Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI3MS41NDMiIHg9IjEzMy4yMjg3IiB5PSI3MTQuNjM4NyI+JiMxNzE7Y29udGFpbmVyJiMxODc7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxOTIuMDAwNCIgeD0iNzMiIHk9IjczMi4zMjAzIj4mIzEyNDUwOyYjMTI1MDM7JiMxMjUyMjsmIzEyNDY1OyYjMTI1NDA7JiMxMjQ3MTsmIzEyNTE5OyYjMTI1MzE7JiMxMjQ2NzsmIzEyNTMxOyYjMTI0ODY7JiMxMjQ5MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzNS4zNDM4IiB4PSIxMjMuMzkzNyIgeT0iNzQ3LjIzMjQiPltSdWJ5PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMy44MTQ1IiB4PSIxNTguNzM3NSIgeT0iNzQ3LjIzMjQiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE0Ljk0NzMiIHg9IjE2Mi41NTE5IiB5PSI3NDcuMjMyNCI+b248L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjE3Ny40OTkyIiB5PSI3NDcuMjMyNCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMzMuMjkzIiB4PSIxODEuMzEzNyIgeT0iNzQ3LjIzMjQiPlJhaWxzXTwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjE2Ni43NzUxIiB5PSI3NjMuMDU3NiI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjU1Ljk5OTgiIHg9IjE0MS4wMDAzIiB5PSI3NzkuMzU0NSI+JiMyNjQxMjsmIzMwMDU4OyYjMjk4NzI7JiMyMjY1OTs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgY29uc29sZV9jb250YWluZXItLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iY29uc29sZV9jb250YWluZXIiIGRhdGEtc291cmNlLWxpbmU9IjcxIiBkYXRhLXVpZD0iZW50MDAwOCIgaWQ9ImVudGl0eV9jb25zb2xlX2NvbnRhaW5lciI+PHJlY3QgZmlsbD0iIzQzOERENSIgaGVpZ2h0PSI5OS4xNTYzIiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMzQzdGQzA7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNjQuMDAwMyIgeD0iMzEwIiB5PSI2OTMuNSIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzEuNTQzIiB4PSIzNTYuMjI4NyIgeT0iNzE0LjYzODciPiYjMTcxO2NvbnRhaW5lciYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTQ0LjAwMDMiIHg9IjMyMCIgeT0iNzMyLjMyMDMiPiYjMTI0Njc7JiMxMjUzMTsmIzEyNDc3OyYjMTI1NDA7JiMxMjUyMzsmIzEyNDY3OyYjMTI1MzE7JiMxMjQ4NjsmIzEyNDkwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjM1LjM0MzgiIHg9IjM0Ni4zOTM3IiB5PSI3NDcuMjMyNCI+W1J1Ynk8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzLjgxNDUiIHg9IjM4MS43Mzc0IiB5PSI3NDcuMjMyNCI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTQuOTQ3MyIgeD0iMzg1LjU1MTkiIHk9Ijc0Ny4yMzI0Ij5vbjwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjMuODE0NSIgeD0iNDAwLjQ5OTIiIHk9Ijc0Ny4yMzI0Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIzMy4yOTMiIHg9IjQwNC4zMTM2IiB5PSI3NDcuMjMyNCI+UmFpbHNdPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuNDUwMiIgeD0iMzg5Ljc3NSIgeT0iNzYzLjA1NzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS45OTk4IiB4PSIzNjQuMDAwMyIgeT0iNzc5LjM1NDUiPiYjMzgyODM7JiMzMDMzMDsmIzI5ODcyOyYjMjI2NTk7PC90ZXh0PjwvZz48IS0tZW50aXR5IGRiX2Rldi0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJkYl9kZXYiIGRhdGEtc291cmNlLWxpbmU9Ijc1IiBkYXRhLXVpZD0iZW50MDAwOSIgaWQ9ImVudGl0eV9kYl9kZXYiPjxwYXRoIGQ9Ik0zNDAsODc3LjY1IEMzNDAsODY3LjY1IDM5MS45OTk4LDg2Ny42NSAzOTEuOTk5OCw4NjcuNjUgQzM5MS45OTk4LDg2Ny42NSA0NDMuOTk5Niw4NjcuNjUgNDQzLjk5OTYsODc3LjY1IEw0NDMuOTk5Niw5NjUuODA2MyBDNDQzLjk5OTYsOTc1LjgwNjMgMzkxLjk5OTgsOTc1LjgwNjMgMzkxLjk5OTgsOTc1LjgwNjMgQzM5MS45OTk4LDk3NS44MDYzIDM0MCw5NzUuODA2MyAzNDAsOTY1LjgwNjMgTDM0MCw4NzcuNjUiIGZpbGw9IiM0MzhERDUiIHN0eWxlPSJzdHJva2U6IzNDN0ZDMDtzdHJva2Utd2lkdGg6MC41OyIvPjxwYXRoIGQ9Ik0zNDAsODc3LjY1IEMzNDAsODg3LjY1IDM5MS45OTk4LDg4Ny42NSAzOTEuOTk5OCw4ODcuNjUgQzM5MS45OTk4LDg4Ny42NSA0NDMuOTk5Niw4ODcuNjUgNDQzLjk5OTYsODc3LjY1IiBmaWxsPSJub25lIiBzdHlsZT0ic3Ryb2tlOiMzQzdGQzA7c3Ryb2tlLXdpZHRoOjAuNTsiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjcxLjU0MyIgeD0iMzU2LjIyODMiIHk9IjkwMi43ODg3Ij4mIzE3MTtjb250YWluZXImIzE4Nzs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjczLjQ3NjciIHg9IjM1NS4yNjE1IiB5PSI5MjAuNDcwMyI+JiMzODI4MzsmIzMwMzMwOyYjMjk5OTI7REI8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1MC41NjY0IiB4PSIzNjYuNzE2NiIgeT0iOTM1LjM4MjQiPltNeVNRTF08L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC40NTAyIiB4PSIzODkuNzc0NyIgeT0iOTUxLjIwNzYiPiYjMTYwOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4My45OTk2IiB4PSIzNTAiIHk9Ijk2Ny41MDQ1Ij4mIzM4MjgzOyYjMzAzMzA7JiMyOTk5MjsmIzEyNDg3OyYjMTI1NDA7JiMxMjQ3OTs8L3RleHQ+PC9nPjwhLS1lbnRpdHkgZGJfcHJkLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImRiX3ByZCIgZGF0YS1zb3VyY2UtbGluZT0iNzUiIGRhdGEtdWlkPSJlbnQwMDEwIiBpZD0iZW50aXR5X2RiX3ByZCI+PHBhdGggZD0iTTExNyw4NzcuNjUgQzExNyw4NjcuNjUgMTY4Ljk5OTgsODY3LjY1IDE2OC45OTk4LDg2Ny42NSBDMTY4Ljk5OTgsODY3LjY1IDIyMC45OTk2LDg2Ny42NSAyMjAuOTk5Niw4NzcuNjUgTDIyMC45OTk2LDk2NS44MDYzIEMyMjAuOTk5Niw5NzUuODA2MyAxNjguOTk5OCw5NzUuODA2MyAxNjguOTk5OCw5NzUuODA2MyBDMTY4Ljk5OTgsOTc1LjgwNjMgMTE3LDk3NS44MDYzIDExNyw5NjUuODA2MyBMMTE3LDg3Ny42NSIgZmlsbD0iIzQzOERENSIgc3R5bGU9InN0cm9rZTojM0M3RkMwO3N0cm9rZS13aWR0aDowLjU7Ii8+PHBhdGggZD0iTTExNyw4NzcuNjUgQzExNyw4ODcuNjUgMTY4Ljk5OTgsODg3LjY1IDE2OC45OTk4LDg4Ny42NSBDMTY4Ljk5OTgsODg3LjY1IDIyMC45OTk2LDg4Ny42NSAyMjAuOTk5Niw4NzcuNjUiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzNDN0ZDMDtzdHJva2Utd2lkdGg6MC41OyIvPjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXN0eWxlPSJpdGFsaWMiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzEuNTQzIiB4PSIxMzMuMjI4MyIgeT0iOTAyLjc4ODciPiYjMTcxO2NvbnRhaW5lciYjMTg3OzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzMuNDc2NyIgeD0iMTMyLjI2MTUiIHk9IjkyMC40NzAzIj4mIzI2NDEyOyYjMzAwNTg7JiMyOTk5MjtEQjwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC1zdHlsZT0iaXRhbGljIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijc4LjU4MDEiIHg9IjEyOS43MDk4IiB5PSI5MzUuMzgyNCI+W1Bvc3RncmVTUUxdPC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuNDUwMiIgeD0iMTY2Ljc3NDciIHk9Ijk1MS4yMDc2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODMuOTk5NiIgeD0iMTI3IiB5PSI5NjcuNTA0NSI+JiMyNjQxMjsmIzMwMDU4OyYjMjk5OTI7JiMxMjQ4NzsmIzEyNTQwOyYjMTI0Nzk7PC90ZXh0PjwvZz48IS0tZW50aXR5IGRldmVsb3Blci0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJkZXZlbG9wZXIiIGRhdGEtc291cmNlLWxpbmU9IjM3NCIgZGF0YS11aWQ9ImVudDAwMDIiIGlkPSJlbnRpdHlfZGV2ZWxvcGVyIj48cmVjdCBmaWxsPSIjMDg0MjdCIiBoZWlnaHQ9IjEzMy4xODc1IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMwNzNCNkY7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNzMuOTk5MyIgeD0iMzUxIiB5PSI3Ii8+PHRleHQgZmlsbD0iI0ZGRkZGRiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NS44MTY0IiB4PSI0MTAuMDkxNSIgeT0iMjguMTM4NyI+JiMxNzE7cGVyc29uJiMxODc7PC90ZXh0PjxpbWFnZSBoZWlnaHQ9IjQ4IiB3aWR0aD0iNDgiIHg9IjQxMy45OTk3IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQURBQUFBQXdDQVlBQUFCWEF2bUhBQUFDTUVsRVFWUjRYdTJZdlVyRlFCQ0ZiK2tqK0FpK2dxM1kyUGdBK2dDQ3RaMlYyQWhxYVNOaXFZMWdZV01qYUN2WHlrb0VLeTIxc0xDTmZFTGdNc2Nrc3o4bVdmREFCM0t1eWU3c1RtWW5tY3d0YlU5S1JvelNFQ09WbGEzVDZ1VHF2cnFaUGxjUFQ2OC9YTncrVnR2SDE5WEMrc0dlL2Y5VXhJaGw4L0N5K3ZqOHFycEVZSXNiUjFON2ZTeGloREsvdXJ2TUtvZUtIYkgzaWtHTUVKaThaOVdidEg5Mmx4eUVHQ0hFckx3VnFXZnZHNElZWGtpQlhHSW43ZjI5aU9HQkFlMGtVa1RWc21ONEVjTUQyNTViZGd3dlluaWdGT1lXNTRjZHg0TVlIbElxVDVOaXk2b1lIdXpnT1JSYlVzWHdZQWZQb1Y0RGVIbDd0K01uSy9ZOEVNTUR6Vmx1OWZvUTV5NmpGQVU3aGhjeHZPU3NSTEg1RDJKNEticVZxTWx4b0szdG5FZXZQb2dSQWl1WFVwRmlENjlaeElnaFppZFNWNzVHakZpWWtHYzNLTUVwT1c4Ukl4WGVkMGtOSnNyT0FPMHlwVGZueEd2RUtBMHhTa01NRDN6ZkllZEpGUTRoQ1BsVXdyWDFkYVFXYlVSc2VvblJCaE51ZTFENXJjNTNKa1ZRd045YzIxV3QrRDIwSnhMak43aHB6dGFoU3dUaTNSRXhMRGxiaGhDeG01NVBrV0xNa3J2ckRCVzczclVUWXRTUXUvYUdRNGgwc25OekJkRDF3UFdwdHJaRERCakw2dGZpZWJCemJBMkFVamcyTlQzUVlrQmJyUjlLVFMvOVlvQzllQXhxZXUwVUkvZUgyMXlpdTdWekxTcUFwbklxeG44QWY2VGlBM0EvQTlCbjUrbFYweGNNTVdEb0pzNnFyYWtUbzRhNk93WnhxTGE5N1lreEMxSHpNa016TlFSdEUzY0ZVQUppbE1ZM09HVE5MME5ETHFJQUFBQUFTVVZPUks1Q1lJST0iIHk9IjMwLjk2ODgiLz48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNDguMDAwMSIgeD0iNDEzLjk5OTYiIHk9IjkzLjgyMDMiPiYjMzgyODM7JiMzMDMzMDsmIzMyNzczOzwvdGV4dD48dGV4dCBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI0LjQ1MDIiIHg9IjQzNS43NzQ2IiB5PSIxMTAuNTg4OSI+JiMxNjA7PC90ZXh0Pjx0ZXh0IGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE1My45OTkzIiB4PSIzNjEiIHk9IjEyNi44ODU3Ij4mIzEyNDUwOyYjMTI1MDM7JiMxMjUyMjsmIzEyNDY1OyYjMTI1NDA7JiMxMjQ3MTsmIzEyNTE5OyYjMTI1MzE7JiMzODI4MzsmIzMwMzMwOyYjMzI3NzM7PC90ZXh0PjwvZz48IS0tbGluayBkZXZlbG9wZXIgdG8gdnNjb2RlLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImRldmVsb3BlciIgZGF0YS1lbnRpdHktMj0idnNjb2RlIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTEiIGlkPSJsaW5rX2RldmVsb3Blcl92c2NvZGUiPjxwYXRoIGQ9Ik00MzgsMTQwLjU2IEM0MzgsMTgxLjg2IDQzOCwyMjYuMTkgNDM4LDI2My44IiBmaWxsPSJub25lIiBpZD0iZGV2ZWxvcGVyLXRvLXZzY29kZSIgc3R5bGU9InN0cm9rZTojNjY2NjY2O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiM2NjY2NjYiIHBvaW50cz0iNDM4LDI3MS44LDQ0MSwyNjMuOCw0MzUsMjYzLjgsNDM4LDI3MS44IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyMC4wMDA5IiB4PSI0MzkiIHk9IjE4Mi4zMjg3Ij4mIzEyNDY3OyYjMTI1NDA7JiMxMjQ4OTsmIzMyMjMyOyYjMzg1OTg7JiMxMjUzOTsmIzEyNDg3OyYjMTI0OTY7JiMxMjQ4MzsmIzEyNDY0OzwvdGV4dD48L2c+PCEtLWxpbmsgdnNjb2RlIHRvIGRvY2tlci0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJ2c2NvZGUiIGRhdGEtZW50aXR5LTI9ImRvY2tlciIgZGF0YS1zb3VyY2UtbGluZT0iMTU3OCIgZGF0YS11aWQ9ImxuazEyIiBpZD0ibGlua192c2NvZGVfZG9ja2VyIj48cGF0aCBkPSJNNDM4LDM3MS42NCBDNDM4LDM5NC45IDQzOCw0MTQuNjUgNDM4LDQzNy45MiIgZmlsbD0ibm9uZSIgaWQ9InZzY29kZS10by1kb2NrZXIiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjNjY2NjY2IiBwb2ludHM9IjQzOCw0NDUuOTIsNDQxLDQzNy45Miw0MzUsNDM3LjkyLDQzOCw0NDUuOTIiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjNjY2NjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iODQuMDAwNiIgeD0iNDM5IiB5PSI0MTMuNDc4NyI+JiMyMzQ1NTsmIzM0ODkyOyYjMTI1Mzk7JiMxMjQ4NzsmIzEyNDk2OyYjMTI0ODM7JiMxMjQ2NDs8L3RleHQ+PC9nPjwhLS1saW5rIGRvY2tlciB0byBkb2NrZXJfY29udGFpbmVycy0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJkb2NrZXIiIGRhdGEtZW50aXR5LTI9ImRvY2tlcl9jb250YWluZXJzIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTMiIGlkPSJsaW5rX2RvY2tlcl9kb2NrZXJfY29udGFpbmVycyI+PHBhdGggZD0iTTQ2Ny4zMiw1NDUuODUgQzQ3NS44OCw1NjIuMTEgNDg0LjQzLDU4MC42MiA0OTAsNTk4LjUgQzQ5MS4xNzk0LDYwMi4yODA2IDQ5Mi4yODU1LDYwNi4xMzk1IDQ5My4zMjMxLDYxMC4wNTI3IEM0OTMuNTgyNCw2MTEuMDMxIDQ5My44Mzc1LDYxMi4wMTI2IDQ5NC4wODg0LDYxMi45OTc0IEM0OTQuMjEzOCw2MTMuNDg5NyA0OTIuMzk5Nyw2MDYuMjIxMiA0OTIuNTIzMSw2MDYuNzE1IiBmaWxsPSJub25lIiBpZD0iZG9ja2VyLXRvLWRvY2tlcl9jb250YWluZXJzIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSI0OTQuNDYxNSw2MTQuNDc2Niw0OTUuNDMzNyw2MDUuOTg4MSw0ODkuNjEyNSw2MDcuNDQyLDQ5NC40NjE1LDYxNC40NzY2IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjcyLjAwMDUiIHg9IjQ4OCIgeT0iNTg3LjYzODciPiYjMTI0Njc7JiMxMjUzMTsmIzEyNDg2OyYjMTI0OTA7JiMzMTY0OTsmIzI5NzAyOzwvdGV4dD48L2c+PCEtLWxpbmsgYXBwX2NvbnRhaW5lciB0byBkYl9wcmQtLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0iYXBwX2NvbnRhaW5lciIgZGF0YS1lbnRpdHktMj0iZGJfcHJkIiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTQiIGlkPSJsaW5rX2FwcF9jb250YWluZXJfZGJfcHJkIj48cGF0aCBkPSJNMTY5LDc5Mi44MiBDMTY5LDgxNS45IDE2OSw4MzUuNTIgMTY5LDg1OS4xOSIgZmlsbD0ibm9uZSIgaWQ9ImFwcF9jb250YWluZXItdG8tZGJfcHJkIiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzY2NjY2NiIgcG9pbnRzPSIxNjksODY3LjE5LDE3Miw4NTkuMTksMTY2LDg1OS4xOSwxNjksODY3LjE5IiBzdHlsZT0ic3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjE7Ii8+PHRleHQgZmlsbD0iIzY2NjY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjYwLjAwMDUiIHg9IjE3MCIgeT0iODM0Ljc4ODciPiYjMTI0ODc7JiMxMjU0MDsmIzEyNDc5OyYjMjU4MDU7JiMyMDMxNjs8L3RleHQ+PC9nPjwhLS1saW5rIGNvbnNvbGVfY29udGFpbmVyIHRvIGRiX2Rldi0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJjb25zb2xlX2NvbnRhaW5lciIgZGF0YS1lbnRpdHktMj0iZGJfZGV2IiBkYXRhLXNvdXJjZS1saW5lPSIxNTc4IiBkYXRhLXVpZD0ibG5rMTUiIGlkPSJsaW5rX2NvbnNvbGVfY29udGFpbmVyX2RiX2RldiI+PHBhdGggZD0iTTM5Miw3OTIuODIgQzM5Miw4MTUuOSAzOTIsODM1LjUyIDM5Miw4NTkuMTkiIGZpbGw9Im5vbmUiIGlkPSJjb25zb2xlX2NvbnRhaW5lci10by1kYl9kZXYiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjNjY2NjY2IiBwb2ludHM9IjM5Miw4NjcuMTksMzk1LDg1OS4xOSwzODksODU5LjE5LDM5Miw4NjcuMTkiIHN0eWxlPSJzdHJva2U6IzY2NjY2NjtzdHJva2Utd2lkdGg6MTsiLz48dGV4dCBmaWxsPSIjNjY2NjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjAuMDAwNSIgeD0iMzkzIiB5PSI4MzQuNzg4NyI+JiMxMjQ4NzsmIzEyNTQwOyYjMTI0Nzk7JiMyNTgwNTsmIzIwMzE2OzwvdGV4dD48L2c+PCEtLVNSQz1bWEw5VEl5OUc2QnhWaHJZeEtXWXd5SkF3UzdPSDU5WDJqc0V3R3VwTXBqWlAxOGFXVGlaZTJ3SEY4WTdxOWg0R21ta1hhZHhDSVFWX2VoRXZkU3FGYWtyWUV0aS10Y1ZGa3dCZ0hTck0wQnlrZmpSNGIySDJ0UDlMN1BXUjc5UzU5ZTl3R1c0YmU0NDNjQWt5Qzd3dVQ5eS1Ib1VkMGRxWEplRldIdTlSbkZhVy05aXVGTzlWMlV2NmUySjd2U2w4MGVUSTZqZ3c4ZmpiSnFxMlVlYmZrSlVUR0dDQklWdzhPenc5NFlmMjFMM0NkZWZpTVVGcGJnc2VhMVZmZU1VeWJUY1MtN1N6TXRwa3pmaFp2bWgxTm1JVjRMbWI2MUVkR3lxWkdHS00zX20wNlYtMWlVYkRVSFYxNEZ6YTZoSFZIbE1oU0RXNWlOblRnSFd3OGtSNWlvZEdKNGhQQzJCMkZ6eG5JUnFQU3RRWHA0RVRweWNnWGhvM09VdFRsTS1udUk4N2dld1cxY1BTVjNNZHhfLXhqd05ZcXBMNXVmYjJHWWI4akN1OFN6VkNmM3RBSlpjX2tvdDRwX3JZUUFBVlVHTjNMQTg4ZUs4TThjbFYxODRDLW5ZTkVRT05ibURRVjNfUHRZblQzT3lPZWpib0o0ZlUzMHYxWXVnVU1nTHN0UXJNMGo5Q21vbWpvcDZ5bFZ4anJtQnFXaFJPN3Z2Wl8wNDBdLS0+PC9nPjwvc3ZnPg==" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="_3">作業内容<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="visual-studio-code">Visual Studio Code開発環境の改善<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h3>
+<p>開発効率を向上させるために、Visual Studio Codeの設定を改善しました。特に、デバッグ設定とRuby開発環境の整備に焦点を当てました。</p>
+<h4 id="_4">変更点の概要<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ol>
+<li>VSCode用のlaunch.json設定ファイルの更新</li>
+<li>Rubyデバッグ設定の追加</li>
+<li>RSpecテスト実行用のbinstubの追加</li>
+</ol>
+<h4 id="_5">技術的詳細<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9IjI4OHB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6ODY5cHg7aGVpZ2h0OjI4OHB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDg2OSAyODgiIHdpZHRoPSI4NjlweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyIFZTQ29kZT8/LS0+PGcgY2xhc3M9ImNsdXN0ZXIiIGRhdGEtZW50aXR5PSJWU0NvZGUuLiIgZGF0YS1zb3VyY2UtbGluZT0iMSIgZGF0YS11aWQ9ImVudDAwMDIiIGlkPSJjbHVzdGVyX1ZTQ29kZS4uIj48cGF0aCBkPSJNOC41LDc4LjMgTDk3LjgyNyw3OC4zIEEzLjc1LDMuNzUgMCAwIDEgMTAwLjMyNyw4MC44IEwxMDcuMzI3LDEwMC41OTY5IEw1NDkuNSwxMDAuNTk2OSBBMi41LDIuNSAwIDAgMSA1NTIsMTAzLjA5NjkgTDU1MiwyNzkuMzkgQTIuNSwyLjUgMCAwIDEgNTQ5LjUsMjgxLjg5IEw4LjUsMjgxLjg5IEEyLjUsMi41IDAgMCAxIDYsMjc5LjM5IEw2LDgwLjggQTIuNSwyLjUgMCAwIDEgOC41LDc4LjMiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIgeDE9IjYiIHgyPSIxMDcuMzI3IiB5MT0iMTAwLjU5NjkiIHkyPSIxMDAuNTk2OSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI4OC4zMjciIHg9IjEwIiB5PSI5My4yOTUxIj5WU0NvZGUmIzM1MzczOyYjMjM0NTA7PC90ZXh0PjwvZz48IS0tY2x1c3RlciBSdWJ5Pz8tLT48ZyBjbGFzcz0iY2x1c3RlciIgZGF0YS1lbnRpdHk9IlJ1YnkuLiIgZGF0YS1zb3VyY2UtbGluZT0iNyIgZGF0YS11aWQ9ImVudDAwMTAiIGlkPSJjbHVzdGVyX1J1YnkuLiI+PHBhdGggZD0iTTU3OC41LDc4LjMgTDY0Ny4zOTQ0LDc4LjMgQTMuNzUsMy43NSAwIDAgMSA2NDkuODk0NCw4MC44IEw2NTYuODk0NCwxMDAuNTk2OSBMODU5LjUsMTAwLjU5NjkgQTIuNSwyLjUgMCAwIDEgODYyLDEwMy4wOTY5IEw4NjIsMjc5LjM5IEEyLjUsMi41IDAgMCAxIDg1OS41LDI4MS44OSBMNTc4LjUsMjgxLjg5IEEyLjUsMi41IDAgMCAxIDU3NiwyNzkuMzkgTDU3Niw4MC44IEEyLjUsMi41IDAgMCAxIDU3OC41LDc4LjMiIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIvPjxsaW5lIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS41OyIgeDE9IjU3NiIgeDI9IjY1Ni44OTQ0IiB5MT0iMTAwLjU5NjkiIHkyPSIxMDAuNTk2OSIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2Ny44OTQ0IiB4PSI1ODAiIHk9IjkzLjI5NTEiPlJ1YnkmIzI5ODcyOyYjMjI2NTk7PC90ZXh0PjwvZz48IS0tZW50aXR5IGxhdW5jaC5qc29uLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImxhdW5jaC5qc29uIiBkYXRhLXNvdXJjZS1saW5lPSIyIiBkYXRhLXVpZD0iZW50MDAwMyIgaWQ9ImVudGl0eV9sYXVuY2guanNvbiI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMTkuODU3NCIgeD0iMzIzLjA3IiB5PSIxMTMuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1IiB4PSI0MjIuOTI3NCIgeT0iMTE4LjMiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjQyMC45Mjc0IiB5PSIxMjAuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iNDIwLjkyNzQiIHk9IjEyNC4zIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzkuODU3NCIgeD0iMzM4LjA3IiB5PSIxNDYuMjk1MSI+bGF1bmNoLmpzb248L3RleHQ+PC9nPjwhLS1lbnRpdHkgUmFpbHMgU2VydmVyIERlYnVnLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IlJhaWxzIFNlcnZlciBEZWJ1ZyIgZGF0YS1zb3VyY2UtbGluZT0iMiIgZGF0YS11aWQ9ImVudDAwMDQiIGlkPSJlbnRpdHlfUmFpbHMgU2VydmVyIERlYnVnIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE3NC4yMzA1IiB4PSIyMS44OCIgeT0iMjE5LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjE3Ni4xMTA1IiB5PSIyMjQuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjE3NC4xMTA1IiB5PSIyMjYuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjE3NC4xMTA1IiB5PSIyMzAuNTkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxMzQuMjMwNSIgeD0iMzYuODgiIHk9IjI1Mi41ODUxIj5SYWlscyBTZXJ2ZXIgRGVidWc8L3RleHQ+PC9nPjwhLS1lbnRpdHkgUlNwZWMgRGVidWctLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iUlNwZWMgRGVidWciIGRhdGEtc291cmNlLWxpbmU9IjMiIGRhdGEtdWlkPSJlbnQwMDA2IiBpZD0iZW50aXR5X1JTcGVjIERlYnVnIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjEzNC4zMDE4IiB4PSIyMzAuODUiIHk9IjIxOS41OSIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1IiB4PSIzNDUuMTUxOCIgeT0iMjI0LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSIzNDMuMTUxOCIgeT0iMjI2LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSIzNDMuMTUxOCIgeT0iMjMwLjU5Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOTQuMzAxOCIgeD0iMjQ1Ljg1IiB5PSIyNTIuNTg1MSI+UlNwZWMgRGVidWc8L3RleHQ+PC9nPjwhLS1lbnRpdHkgQXR0YWNoIERlYnVnLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IkF0dGFjaCBEZWJ1ZyIgZGF0YS1zb3VyY2UtbGluZT0iNCIgZGF0YS11aWQ9ImVudDAwMDgiIGlkPSJlbnRpdHlfQXR0YWNoIERlYnVnIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjEzNi4xOTUzIiB4PSIzOTkuOSIgeT0iMjE5LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjUxNi4wOTUzIiB5PSIyMjQuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjUxNC4wOTUzIiB5PSIyMjYuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjUxNC4wOTUzIiB5PSIyMzAuNTkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5Ni4xOTUzIiB4PSI0MTQuOSIgeT0iMjUyLjU4NTEiPkF0dGFjaCBEZWJ1ZzwvdGV4dD48L2c+PCEtLWVudGl0eSBiaW4vYnVuZGxlLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9ImJpbi5idW5kbGUiIGRhdGEtc291cmNlLWxpbmU9IjgiIGRhdGEtdWlkPSJlbnQwMDExIiBpZD0iZW50aXR5X2Jpbi5idW5kbGUiPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iNDYuMjk2OSIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTE0LjM4ODciIHg9IjU5MS44MSIgeT0iMTEzLjMiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjEwIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNSIgeD0iNjg2LjE5ODciIHk9IjExOC4zIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSI2ODQuMTk4NyIgeT0iMTIwLjMiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjY4NC4xOTg3IiB5PSIxMjQuMyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9Ijc0LjM4ODciIHg9IjYwNi44MSIgeT0iMTQ2LjI5NTEiPmJpbi9idW5kbGU8L3RleHQ+PC9nPjwhLS1lbnRpdHkgQnVuZGxlci0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJCdW5kbGVyIiBkYXRhLXNvdXJjZS1saW5lPSI4IiBkYXRhLXVpZD0iZW50MDAxMiIgaWQ9ImVudGl0eV9CdW5kbGVyIj48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjQ2LjI5NjkiIHJ4PSIyLjUiIHJ5PSIyLjUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9Ijk0LjQ5NjEiIHg9IjYxMS43NSIgeT0iMjE5LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIxMCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iMTUiIHg9IjY4Ni4yNDYxIiB5PSIyMjQuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjY4NC4yNDYxIiB5PSIyMjYuNTkiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjY4NC4yNDYxIiB5PSIyMzAuNTkiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NC40OTYxIiB4PSI2MjYuNzUiIHk9IjI1Mi41ODUxIj5CdW5kbGVyPC90ZXh0PjwvZz48IS0tZW50aXR5IGJpbi9yc3BlYy0tPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJiaW4ucnNwZWMiIGRhdGEtc291cmNlLWxpbmU9IjkiIGRhdGEtdWlkPSJlbnQwMDE0IiBpZD0iZW50aXR5X2Jpbi5yc3BlYyI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxMDQuNjEzMyIgeD0iNzQxLjY5IiB5PSIxMTMuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1IiB4PSI4MjYuMzAzMyIgeT0iMTE4LjMiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjgyNC4zMDMzIiB5PSIxMjAuMyIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMiIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7IiB3aWR0aD0iNCIgeD0iODI0LjMwMzMiIHk9IjEyNC4zIi8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNjQuNjEzMyIgeD0iNzU2LjY5IiB5PSIxNDYuMjk1MSI+YmluL3JzcGVjPC90ZXh0PjwvZz48IS0tZW50aXR5IFJTcGVjLS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IlJTcGVjIiBkYXRhLXNvdXJjZS1saW5lPSI5IiBkYXRhLXVpZD0iZW50MDAxNSIgaWQ9ImVudGl0eV9SU3BlYyI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI4My44MTE1IiB4PSI3NTIuMDkiIHk9IjIxOS41OSIvPjxyZWN0IGZpbGw9IiNGMUYxRjEiIGhlaWdodD0iMTAiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjE1IiB4PSI4MTUuOTAxNSIgeT0iMjI0LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSI4MTMuOTAxNSIgeT0iMjI2LjU5Ii8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSI4MTMuOTAxNSIgeT0iMjMwLjU5Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNDMuODExNSIgeD0iNzY3LjA5IiB5PSIyNTIuNTg1MSI+UlNwZWM8L3RleHQ+PC9nPjwhLS1lbnRpdHkgPz8/LS0+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9Ii4uLiIgZGF0YS1zb3VyY2UtbGluZT0iMTMiIGRhdGEtdWlkPSJlbnQwMDE4IiBpZD0iZW50aXR5Xy4uLiI+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSI0Ni4yOTY5IiByeD0iMi41IiByeT0iMi41IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI4MS45OTk4IiB4PSI1OTAiIHk9IjciLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjEwIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSIxNSIgeD0iNjUxLjk5OTgiIHk9IjEyIi8+PHJlY3QgZmlsbD0iI0YxRjFGMSIgaGVpZ2h0PSIyIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiIHdpZHRoPSI0IiB4PSI2NDkuOTk5OCIgeT0iMTQiLz48cmVjdCBmaWxsPSIjRjFGMUYxIiBoZWlnaHQ9IjIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIgd2lkdGg9IjQiIHg9IjY0OS45OTk4IiB5PSIxOCIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQxLjk5OTgiIHg9IjYwNSIgeT0iMzkuOTk1MSI+JiMzODI4MzsmIzMwMzMwOyYjMzI3NzM7PC90ZXh0PjwvZz48IS0tbGluayBsYXVuY2guanNvbiB0byBSYWlscyBTZXJ2ZXIgRGVidWctLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0ibGF1bmNoLmpzb24iIGRhdGEtZW50aXR5LTI9IlJhaWxzIFNlcnZlciBEZWJ1ZyIgZGF0YS1zb3VyY2UtbGluZT0iMiIgZGF0YS11aWQ9ImxuazUiIGlkPSJsaW5rX2xhdW5jaC5qc29uX1JhaWxzIFNlcnZlciBEZWJ1ZyI+PHBhdGggZD0iTTMyMy41NSwxNjAuMDggQzI3Ny41OSwxNzcuNTcgMjE5Ljg3NzYsMTk5LjUzNTkgMTczLjk0NzYsMjE3LjAxNTkiIGZpbGw9Im5vbmUiIGlkPSJsYXVuY2guanNvbi10by1SYWlscyBTZXJ2ZXIgRGVidWciIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjE2OC4zNCwyMTkuMTUsMTc4LjE3NDIsMjE5LjY4NzIsMTczLjAxMywyMTcuMzcxNSwxNzUuMzI4NywyMTIuMjEwNCwxNjguMzQsMjE5LjE1IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1saW5rIGxhdW5jaC5qc29uIHRvIFJTcGVjIERlYnVnLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImxhdW5jaC5qc29uIiBkYXRhLWVudGl0eS0yPSJSU3BlYyBEZWJ1ZyIgZGF0YS1zb3VyY2UtbGluZT0iMyIgZGF0YS11aWQ9ImxuazciIGlkPSJsaW5rX2xhdW5jaC5qc29uX1JTcGVjIERlYnVnIj48cGF0aCBkPSJNMzY0LjU2LDE2MC4wOCBDMzUwLjMsMTc3LjU3IDMzNC40NTEyLDE5Ny4wMTk1IDMyMC4yMDEyLDIxNC40OTk1IiBmaWxsPSJub25lIiBpZD0ibGF1bmNoLmpzb24tdG8tUlNwZWMgRGVidWciIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjMxNi40MSwyMTkuMTUsMzI1LjE5NzEsMjE0LjcwMTcsMzE5LjU2OTMsMjE1LjI3NDYsMzE4Ljk5NjQsMjA5LjY0NjgsMzE2LjQxLDIxOS4xNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjwvZz48IS0tbGluayBsYXVuY2guanNvbiB0byBBdHRhY2ggRGVidWctLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0ibGF1bmNoLmpzb24iIGRhdGEtZW50aXR5LTI9IkF0dGFjaCBEZWJ1ZyIgZGF0YS1zb3VyY2UtbGluZT0iNCIgZGF0YS11aWQ9ImxuazkiIGlkPSJsaW5rX2xhdW5jaC5qc29uX0F0dGFjaCBEZWJ1ZyI+PHBhdGggZD0iTTQwMS40NCwxNjAuMDggQzQxNS43LDE3Ny41NyA0MzEuNTQ4OCwxOTcuMDE5NSA0NDUuNzk4OCwyMTQuNDk5NSIgZmlsbD0ibm9uZSIgaWQ9ImxhdW5jaC5qc29uLXRvLUF0dGFjaCBEZWJ1ZyIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iNDQ5LjU5LDIxOS4xNSw0NDcuMDAzNiwyMDkuNjQ2OCw0NDYuNDMwNywyMTUuMjc0Niw0NDAuODAyOSwyMTQuNzAxNyw0NDkuNTksMjE5LjE1IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1saW5rIGJpbi9idW5kbGUgdG8gQnVuZGxlci0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSJiaW4uYnVuZGxlIiBkYXRhLWVudGl0eS0yPSJCdW5kbGVyIiBkYXRhLXNvdXJjZS1saW5lPSI4IiBkYXRhLXVpZD0ibG5rMTMiIGlkPSJsaW5rX2Jpbi5idW5kbGVfQnVuZGxlciI+PHBhdGggZD0iTTY1MS4xNywxNjAuMDggQzY1Mi44NSwxNzcuNTcgNjU0LjU4OTQsMTk1LjY5NzIgNjU2LjI1OTQsMjEzLjE3NzIiIGZpbGw9Im5vbmUiIGlkPSJiaW4vYnVuZGxlLXRvLUJ1bmRsZXIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjY1Ni44MywyMTkuMTUsNjU5Ljk1NTksMjA5LjgxMDQsNjU2LjM1NDUsMjE0LjE3MjcsNjUxLjk5MjIsMjEwLjU3MTIsNjU2LjgzLDIxOS4xNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjwvZz48IS0tbGluayBiaW4vcnNwZWMgdG8gUlNwZWMtLT48ZyBjbGFzcz0ibGluayIgZGF0YS1lbnRpdHktMT0iYmluLnJzcGVjIiBkYXRhLWVudGl0eS0yPSJSU3BlYyIgZGF0YS1zb3VyY2UtbGluZT0iOSIgZGF0YS11aWQ9ImxuazE2IiBpZD0ibGlua19iaW4ucnNwZWNfUlNwZWMiPjxwYXRoIGQ9Ik03OTQsMTYwLjA4IEM3OTQsMTc3LjU3IDc5NCwxOTUuNjcgNzk0LDIxMy4xNSIgZmlsbD0ibm9uZSIgaWQ9ImJpbi9yc3BlYy10by1SU3BlYyIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iNzk0LDIxOS4xNSw3OTgsMjEwLjE1LDc5NCwyMTQuMTUsNzkwLDIxMC4xNSw3OTQsMjE5LjE1IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1saW5rIGJpbi9yc3BlYyB0byBCdW5kbGVyLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9ImJpbi5yc3BlYyIgZGF0YS1lbnRpdHktMj0iQnVuZGxlciIgZGF0YS1zb3VyY2UtbGluZT0iMTAiIGRhdGEtdWlkPSJsbmsxNyIgaWQ9ImxpbmtfYmluLnJzcGVjX0J1bmRsZXIiPjxwYXRoIGQ9Ik03NjQuNzEsMTYwLjA4IEM3NDIuMDYsMTc3LjU3IDcxNS42MTg0LDE5OC4wMDIyIDY5Mi45ODg0LDIxNS40ODIyIiBmaWxsPSJub25lIiBpZD0iYmluL3JzcGVjLXRvLUJ1bmRsZXIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48cG9seWdvbiBmaWxsPSIjMTgxODE4IiBwb2ludHM9IjY4OC4yNCwyMTkuMTUsNjk3LjgwNzgsMjE2LjgxMzksNjkyLjE5NywyMTYuMDkzNSw2OTIuOTE3NCwyMTAuNDgyNyw2ODguMjQsMjE5LjE1IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1saW5rID8/PyB0byBsYXVuY2guanNvbi0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSIuLi4iIGRhdGEtZW50aXR5LTI9ImxhdW5jaC5qc29uIiBkYXRhLXNvdXJjZS1saW5lPSIxMyIgZGF0YS11aWQ9ImxuazE5IiBpZD0ibGlua18uLi5fbGF1bmNoLmpzb24iPjxwYXRoIGQ9Ik01ODkuNzcsNDguNDkgQzU0Ny43Niw2Ni4xNSA0ODcuOTYwOSw5MS4zMDQzIDQ0MS45OTA5LDExMC42MzQzIiBmaWxsPSJub25lIiBpZD0iJiMzODI4MzsmIzMwMzMwOyYjMzI3NzM7LXRvLWxhdW5jaC5qc29uIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSI0MzYuNDYsMTEyLjk2LDQ0Ni4zMDY5LDExMy4xNTg3LDQ0MS4wNjkxLDExMS4wMjE5LDQ0My4yMDU5LDEwNS43ODQyLDQzNi40NiwxMTIuOTYiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLWxpbmsgPz8/IHRvIGJpbi9yc3BlYy0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSIuLi4iIGRhdGEtZW50aXR5LTI9ImJpbi5yc3BlYyIgZGF0YS1zb3VyY2UtbGluZT0iMTQiIGRhdGEtdWlkPSJsbmsyMCIgaWQ9ImxpbmtfLi4uX2Jpbi5yc3BlYyI+PHBhdGggZD0iTTY3Mi4zOCw0NC45NyBDNjg5LjA4LDUxLjQ1IDcwOC4xMSw2MC4wMiA3MjQsNzAuMyBDNzQyLjU0LDgyLjI5IDc1Ni41NDcxLDk1LjA3OTEgNzY5LjcyNzEsMTA4Ljc1OTEiIGZpbGw9Im5vbmUiIGlkPSImIzM4MjgzOyYjMzAzMzA7JiMzMjc3MzstdG8tYmluL3JzcGVjIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSI3NzMuODksMTEzLjA4LDc3MC41MjYyLDEwMy44MjM0LDc3MC40MjA5LDEwOS40NzkzLDc2NC43NjUsMTA5LjM3NCw3NzMuODksMTEzLjA4IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1TUkM9W0FxWENwYXZDSnJMRzJXanNwYXo5VlI1WXhURHJpdkdLZ2hjWVNuOUJ5djhwekJBQXlfRFk1TkhyeEhJWVduOHBTdWVMV2JFQm9iQUI1NW5JYXFoSk94NGcyb3Y4SlNPWnhyWElhZllTMExER295TEwwN0QzSzZiSXZWRDk2dnVrUVdReDgyYXBKcC1mRDJ5YjluTWdxbWRDQU9nNUkxS0wwLXIxalhFQkU1bTdxOWhlYnpFd2R5X1N6UUFYNUlnOXgzSENNT0hIMDAwMF0tLT48L2c+PC9zdmc+" class="uml" alt="uml diagram" title="" /></p>
+<h3 id="docker">Docker環境の改善<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
+<p>アプリケーションの実行環境をより本番に近い形で構築するため、Docker環境の設定を更新しました。</p>
+<h4 id="_6">変更点の概要<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ol>
+<li>docker-compose.ymlの更新（PostgreSQLの追加）</li>
+<li>環境変数の整理と統一</li>
+<li>データベース設定の改善</li>
+</ol>
+<h4 id="_7">技術的詳細<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgaGVpZ2h0PSIzMzJweCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgc3R5bGU9IndpZHRoOjQyMnB4O2hlaWdodDozMzJweDtiYWNrZ3JvdW5kOiMwMDAwMDA7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0MjIgMzMyIiB3aWR0aD0iNDIycHgiIHpvb21BbmRQYW49Im1hZ25pZnkiPjxkZWZzLz48Zz48cmVjdCBmaWxsPSIjMDQxOTEyIiBoZWlnaHQ9IjEiIHN0eWxlPSJzdHJva2U6IzA0MTkxMjtzdHJva2Utd2lkdGg6MTsiIHdpZHRoPSIxIiB4PSIwIiB5PSIwIi8+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTY2LjkyMTkiIHg9IjUiIHk9IjE3Ij5QbGFudFVNTCAxLjIwMjUuNGJldGEyPC90ZXh0PjxyZWN0IGZpbGw9IiMzM0ZGMDIiIGhlaWdodD0iMjEuMjk2OSIgc3R5bGU9InN0cm9rZTojMzNGRjAyO3N0cm9rZS13aWR0aDoxOyIgd2lkdGg9IjIwNS40NzQ2IiB4PSI1IiB5PSIyNi45Njg4Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE4MS4wMjI1IiB4PSI2IiB5PSI0MS45Njg4Ij5bRnJvbSBzdHJpbmcgKGxpbmUgMTUpIF08L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjQuODc0IiB4PSI1IiB5PSI2Mi4yNjU2Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjgxLjQyMjkiIHg9IjUiIHk9Ijc4LjU2MjUiPkBzdGFydHVtbDwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMjA1LjQ3NDYiIHg9IjUiIHk9Ijk0Ljg1OTQiPm5vZGUgIkRvY2tlciBDb21wb3NlIiB7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSIxNDIuMTczOCIgeD0iNSIgeT0iMTExLjE1NjMiPlthcHBdIC0tJmd0OyBbZGJfcHJkXTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTc0LjUwNzgiIHg9IjUiIHk9IjEyNy40NTMxIj5bY29uc29sZV0gLS0mZ3Q7IFtkYl9kZXZdPC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI5Ljk2NjgiIHg9IjUiIHk9IjE0My43NSI+fTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC44NzQiIHg9IjUiIHk9IjE2MC4wNDY5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE5OS40Mzg1IiB4PSI1IiB5PSIxNzYuMzQzOCI+ZGF0YWJhc2UgIlBvc3RncmVTUUwiIHs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjY2Ljc4NzEiIHg9IjUiIHk9IjE5Mi42NDA2Ij5bZGJfcHJkXTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOS45NjY4IiB4PSI1IiB5PSIyMDguOTM3NSI+fTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC44NzQiIHg9IjUiIHk9IjIyNS4yMzQ0Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjE2MS4xNzA5IiB4PSI1IiB5PSIyNDEuNTMxMyI+ZGF0YWJhc2UgIk15U1FMIiB7PC90ZXh0Pjx0ZXh0IGZpbGw9IiMzM0ZGMDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI2OC40ODI0IiB4PSI1IiB5PSIyNTcuODI4MSI+W2RiX2Rldl08L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjkuOTY2OCIgeD0iNSIgeT0iMjc0LjEyNSI+fTwvdGV4dD48dGV4dCBmaWxsPSIjMzNGRjAyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNC44NzQiIHg9IjUiIHk9IjI5MC40MjE5Ij4mIzE2MDs8L3RleHQ+PHRleHQgZmlsbD0iIzMzRkYwMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHQtZGVjb3JhdGlvbj0id2F2eSB1bmRlcmxpbmUiIHRleHRMZW5ndGg9IjExMy42MzM1IiB4PSI1IiB5PSIzMDYuNzE4OCI+W2FwcF0gOiAmIzI2NDEyOyYjMzAwNTg7JiMyOTg3MjsmIzIyNjU5OzwvdGV4dD48dGV4dCBmaWxsPSIjRkYwMDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNDA1LjUyODMiIHg9IjkuODc0IiB5PSIzMjMuMDE1NiI+U3ludGF4IEVycm9yPyAoQXNzdW1lZCBkaWFncmFtIHR5cGU6IGNvbXBvbmVudCk8L3RleHQ+PCEtLVNSQz1bb3lqRklMTEdTaWJGcGF1aktkM0Vwb3Q4QnF2TEtnWmNZYXVpQThYTHFETXJLdVhFSU9lbEE0Zzl2T2ZFcGl5aHBpejlIR1lkZjlSNVNqTG9TUUthYllHYzlITzMzR2g4Qm92OUJxZUQzbEcxNm1CSllnQjZqbjk5NmNPNG4zdWhYTVRwclpvVmtraHZmMHJGNXBLWnNNWWJ5NzlRel9FUGtvMEkwMDAwXS0tPjwvZz48L3N2Zz4=" class="uml" alt="uml diagram" title="" /></p>
+<h2 id="8dc2f88">コミット: 8dc2f88<a class="headerlink" href="#8dc2f88" title="Permanent link">&para;</a></h2>
+<h3 id="_8">メッセージ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chore:VSCodeセットアップ
+</code></pre></div>
+<h3 id="_9">変更されたファイル<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M .vscode/launch.json</li>
+<li>M bin/bundle</li>
+<li>A bin/rspec</li>
+</ul>
+<h3 id="_10">変更内容<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 8dc2f888f9c43ec5a64b9efda6ce40e6e25165bd
+Author: Katuyuki Kakigi &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 03:35:34 2025 +0000
+
+<span class="w"> </span>   chore:VSCodeセットアップ
+
+<span class="gh">diff --git a/.vscode/launch.json b/.vscode/launch.json</span>
+<span class="gh">index 097cc98..986756c 100644</span>
+<span class="gd">--- a/.vscode/launch.json</span>
+<span class="gi">+++ b/.vscode/launch.json</span>
+<span class="gu">@@ -37,7 +37,7 @@</span>
+<span class="w"> </span>      &quot;name&quot;: &quot;RSpec Tests&quot;,
+<span class="w"> </span>      &quot;type&quot;: &quot;node-terminal&quot;,
+<span class="w"> </span>      &quot;request&quot;: &quot;launch&quot;,
+<span class="gd">-      &quot;command&quot;: &quot;bin/bundle exec rspec&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/rspec&quot;,</span>
+<span class="w"> </span>      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,
+<span class="w"> </span>      &quot;env&quot;: {
+<span class="w"> </span>        &quot;RAILS_ENV&quot;: &quot;test&quot;
+<span class="gu">@@ -47,11 +47,52 @@</span>
+<span class="w"> </span>      &quot;name&quot;: &quot;RSpec Current File&quot;,
+<span class="w"> </span>      &quot;type&quot;: &quot;node-terminal&quot;,
+<span class="w"> </span>      &quot;request&quot;: &quot;launch&quot;,
+<span class="gd">-      &quot;command&quot;: &quot;bin/bundle exec rspec ${file}&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/rspec ${file}&quot;,</span>
+<span class="w"> </span>      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,
+<span class="w"> </span>      &quot;env&quot;: {
+<span class="w"> </span>        &quot;RAILS_ENV&quot;: &quot;test&quot;
+<span class="w"> </span>      }
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Debug Rails Server&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;rdbg&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;script&quot;: &quot;${workspaceFolder}/bin/rails&quot;,</span>
+<span class="gi">+      &quot;args&quot;: [&quot;server&quot;, &quot;-b&quot;, &quot;0.0.0.0&quot;, &quot;-p&quot;, &quot;3000&quot;],</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;development&quot;</span>
+<span class="gi">+      },</span>
+<span class="gi">+      &quot;useBundler&quot;: true</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Debug RSpec Current File&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;rdbg&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;script&quot;: &quot;${workspaceFolder}/bin/rspec&quot;,</span>
+<span class="gi">+      &quot;args&quot;: [&quot;${file}&quot;],</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;test&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Debug RSpec All Tests&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;rdbg&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;script&quot;: &quot;${workspaceFolder}/bin/rspec&quot;,</span>
+<span class="gi">+      &quot;args&quot;: [],</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;test&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Attach to Rails Server&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;rdbg&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;attach&quot;,</span>
+<span class="gi">+      &quot;rdbgPath&quot;: &quot;rdbg&quot;,</span>
+<span class="gi">+      &quot;debugPort&quot;: &quot;12345&quot;</span>
+<span class="w"> </span>    }
+<span class="w"> </span>  ]
+<span class="w"> </span>}
+<span class="gh">diff --git a/bin/bundle b/bin/bundle</span>
+<span class="gh">index 66e9889..50da5fd 100755</span>
+<span class="gd">--- a/bin/bundle</span>
+<span class="gi">+++ b/bin/bundle</span>
+<span class="gu">@@ -1,3 +1,109 @@</span>
+<span class="w"> </span>#!/usr/bin/env ruby
+<span class="gd">-ENV[&#39;BUNDLE_GEMFILE&#39;] ||= File.expand_path(&#39;../../Gemfile&#39;, __FILE__)</span>
+<span class="gd">-load Gem.bin_path(&#39;bundler&#39;, &#39;bundle&#39;)</span>
+<span class="gi">+# frozen_string_literal: true</span>
+<span class="gi">+</span>
+<span class="gi">+#</span>
+<span class="gi">+# This file was generated by Bundler.</span>
+<span class="gi">+#</span>
+<span class="gi">+# The application &#39;bundle&#39; is installed as part of a gem, and</span>
+<span class="gi">+# this file is here to facilitate running it.</span>
+<span class="gi">+#</span>
+<span class="gi">+</span>
+<span class="gi">+require &quot;rubygems&quot;</span>
+<span class="gi">+</span>
+<span class="gi">+m = Module.new do</span>
+<span class="gi">+  module_function</span>
+<span class="gi">+</span>
+<span class="gi">+  def invoked_as_script?</span>
+<span class="gi">+    File.expand_path($0) == File.expand_path(__FILE__)</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def env_var_version</span>
+<span class="gi">+    ENV[&quot;BUNDLER_VERSION&quot;]</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def cli_arg_version</span>
+<span class="gi">+    return unless invoked_as_script? # don&#39;t want to hijack other binstubs</span>
+<span class="gi">+    return unless &quot;update&quot;.start_with?(ARGV.first || &quot; &quot;) # must be running `bundle update`</span>
+<span class="gi">+    bundler_version = nil</span>
+<span class="gi">+    update_index = nil</span>
+<span class="gi">+    ARGV.each_with_index do |a, i|</span>
+<span class="gi">+      if update_index &amp;&amp; update_index.succ == i &amp;&amp; a.match?(Gem::Version::ANCHORED_VERSION_PATTERN)</span>
+<span class="gi">+        bundler_version = a</span>
+<span class="gi">+      end</span>
+<span class="gi">+      next unless a =~ /\A--bundler(?:[= ](#{Gem::Version::VERSION_PATTERN}))?\z/</span>
+<span class="gi">+      bundler_version = $1</span>
+<span class="gi">+      update_index = i</span>
+<span class="gi">+    end</span>
+<span class="gi">+    bundler_version</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def gemfile</span>
+<span class="gi">+    gemfile = ENV[&quot;BUNDLE_GEMFILE&quot;]</span>
+<span class="gi">+    return gemfile if gemfile &amp;&amp; !gemfile.empty?</span>
+<span class="gi">+</span>
+<span class="gi">+    File.expand_path(&quot;../Gemfile&quot;, __dir__)</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def lockfile</span>
+<span class="gi">+    lockfile =</span>
+<span class="gi">+      case File.basename(gemfile)</span>
+<span class="gi">+      when &quot;gems.rb&quot; then gemfile.sub(/\.rb$/, &quot;.locked&quot;)</span>
+<span class="gi">+      else &quot;#{gemfile}.lock&quot;</span>
+<span class="gi">+      end</span>
+<span class="gi">+    File.expand_path(lockfile)</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def lockfile_version</span>
+<span class="gi">+    return unless File.file?(lockfile)</span>
+<span class="gi">+    lockfile_contents = File.read(lockfile)</span>
+<span class="gi">+    return unless lockfile_contents =~ /\n\nBUNDLED WITH\n\s{2,}(#{Gem::Version::VERSION_PATTERN})\n/</span>
+<span class="gi">+    Regexp.last_match(1)</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def bundler_requirement</span>
+<span class="gi">+    @bundler_requirement ||=</span>
+<span class="gi">+      env_var_version ||</span>
+<span class="gi">+      cli_arg_version ||</span>
+<span class="gi">+      bundler_requirement_for(lockfile_version)</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def bundler_requirement_for(version)</span>
+<span class="gi">+    return &quot;#{Gem::Requirement.default}.a&quot; unless version</span>
+<span class="gi">+</span>
+<span class="gi">+    bundler_gem_version = Gem::Version.new(version)</span>
+<span class="gi">+</span>
+<span class="gi">+    bundler_gem_version.approximate_recommendation</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def load_bundler!</span>
+<span class="gi">+    ENV[&quot;BUNDLE_GEMFILE&quot;] ||= gemfile</span>
+<span class="gi">+</span>
+<span class="gi">+    activate_bundler</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def activate_bundler</span>
+<span class="gi">+    gem_error = activation_error_handling do</span>
+<span class="gi">+      gem &quot;bundler&quot;, bundler_requirement</span>
+<span class="gi">+    end</span>
+<span class="gi">+    return if gem_error.nil?</span>
+<span class="gi">+    require_error = activation_error_handling do</span>
+<span class="gi">+      require &quot;bundler/version&quot;</span>
+<span class="gi">+    end</span>
+<span class="gi">+    return if require_error.nil? &amp;&amp; Gem::Requirement.new(bundler_requirement).satisfied_by?(Gem::Version.new(Bundler::VERSION))</span>
+<span class="gi">+    warn &quot;Activating bundler (#{bundler_requirement}) failed:\n#{gem_error.message}\n\nTo install the version of bundler this project requires, run `gem install bundler -v &#39;#{bundler_requirement}&#39;`&quot;</span>
+<span class="gi">+    exit 42</span>
+<span class="gi">+  end</span>
+<span class="gi">+</span>
+<span class="gi">+  def activation_error_handling</span>
+<span class="gi">+    yield</span>
+<span class="gi">+    nil</span>
+<span class="gi">+  rescue StandardError, LoadError =&gt; e</span>
+<span class="gi">+    e</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+<span class="gi">+</span>
+<span class="gi">+m.load_bundler!</span>
+<span class="gi">+</span>
+<span class="gi">+if m.invoked_as_script?</span>
+<span class="gi">+  load Gem.bin_path(&quot;bundler&quot;, &quot;bundle&quot;)</span>
+<span class="gi">+end</span>
+<span class="gh">diff --git a/bin/rspec b/bin/rspec</span>
+new file mode 100755
+<span class="gh">index 0000000..cb53ebe</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/bin/rspec</span>
+<span class="gu">@@ -0,0 +1,27 @@</span>
+<span class="gi">+#!/usr/bin/env ruby</span>
+<span class="gi">+# frozen_string_literal: true</span>
+<span class="gi">+</span>
+<span class="gi">+#</span>
+<span class="gi">+# This file was generated by Bundler.</span>
+<span class="gi">+#</span>
+<span class="gi">+# The application &#39;rspec&#39; is installed as part of a gem, and</span>
+<span class="gi">+# this file is here to facilitate running it.</span>
+<span class="gi">+#</span>
+<span class="gi">+</span>
+<span class="gi">+ENV[&quot;BUNDLE_GEMFILE&quot;] ||= File.expand_path(&quot;../Gemfile&quot;, __dir__)</span>
+<span class="gi">+</span>
+<span class="gi">+bundle_binstub = File.expand_path(&quot;bundle&quot;, __dir__)</span>
+<span class="gi">+</span>
+<span class="gi">+if File.file?(bundle_binstub)</span>
+<span class="gi">+  if File.read(bundle_binstub, 300).include?(&quot;This file was generated by Bundler&quot;)</span>
+<span class="gi">+    load(bundle_binstub)</span>
+<span class="gi">+  else</span>
+<span class="gi">+    abort(&quot;Your `bin/bundle` was not generated by Bundler, so this binstub cannot run.</span>
+<span class="gi">+Replace `bin/bundle` by running `bundle binstubs bundler --force`, then run this command again.&quot;)</span>
+<span class="gi">+  end</span>
+<span class="gi">+end</span>
+<span class="gi">+</span>
+<span class="gi">+require &quot;rubygems&quot;</span>
+<span class="gi">+require &quot;bundler/setup&quot;</span>
+<span class="gi">+</span>
+<span class="gi">+load Gem.bin_path(&quot;rspec-core&quot;, &quot;rspec&quot;)</span>
+</code></pre></div>
+<h2 id="7f46019">コミット: 7f46019<a class="headerlink" href="#7f46019" title="Permanent link">&para;</a></h2>
+<h3 id="_11">メッセージ<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chore:VSCodeセットアップ
+</code></pre></div>
+<h3 id="_12">変更されたファイル<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A .vscode/launch.json</li>
+</ul>
+<h3 id="_13">変更内容<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 7f4601963232c9223e15b711b9035f70fddb0e29
+Author: Katuyuki Kakigi &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 03:17:43 2025 +0000
+
+<span class="w"> </span>   chore:VSCodeセットアップ
+
+<span class="gh">diff --git a/.vscode/launch.json b/.vscode/launch.json</span>
+new file mode 100644
+<span class="gh">index 0000000..097cc98</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/.vscode/launch.json</span>
+<span class="gu">@@ -0,0 +1,57 @@</span>
+<span class="gi">+{</span>
+<span class="gi">+  &quot;version&quot;: &quot;0.2.0&quot;,</span>
+<span class="gi">+  &quot;configurations&quot;: [</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Rails Server&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;node-terminal&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/rails server -b 0.0.0.0 -p 3000&quot;,</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;development&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Rails Server (Production)&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;node-terminal&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/rails server -b 0.0.0.0 -p 3000 -e production&quot;,</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;production&quot;,</span>
+<span class="gi">+        &quot;SECRET_KEY_BASE&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,</span>
+<span class="gi">+        &quot;PRD_URL&quot;: &quot;127.0.0.1&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;Rails Console&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;node-terminal&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/rails console&quot;,</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;development&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;RSpec Tests&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;node-terminal&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/bundle exec rspec&quot;,</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;test&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    },</span>
+<span class="gi">+    {</span>
+<span class="gi">+      &quot;name&quot;: &quot;RSpec Current File&quot;,</span>
+<span class="gi">+      &quot;type&quot;: &quot;node-terminal&quot;,</span>
+<span class="gi">+      &quot;request&quot;: &quot;launch&quot;,</span>
+<span class="gi">+      &quot;command&quot;: &quot;bin/bundle exec rspec ${file}&quot;,</span>
+<span class="gi">+      &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,</span>
+<span class="gi">+      &quot;env&quot;: {</span>
+<span class="gi">+        &quot;RAILS_ENV&quot;: &quot;test&quot;</span>
+<span class="gi">+      }</span>
+<span class="gi">+    }</span>
+<span class="gi">+  ]</span>
+<span class="gi">+}</span>
+</code></pre></div>
+<h2 id="c6a9e75">コミット: c6a9e75<a class="headerlink" href="#c6a9e75" title="Permanent link">&para;</a></h2>
+<h3 id="_14">メッセージ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>fix:Typo
+</code></pre></div>
+<h3 id="_15">変更されたファイル<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+</ul>
+<h3 id="_16">変更内容<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit c6a9e751f80538b8cc8f79eb3b39236383ddd45b
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 10:52:07 2025 +0900
+
+<span class="w"> </span>   fix:Typo
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 70683ae..acb352f 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -43,7 +43,7 @@ http://127.0.0.1:3000 にアクセスして、アプリケーションが起動</span>
+<span class="w"> </span>   1. [ユーザー認証(2)](#ユーザー認証(2))
+<span class="w"> </span>   1. [ルーティング](#ルーティング)
+<span class="w"> </span>   1. [レコードの表示、新規作成、更新、削除](#レコードの表示、新規作成、更新、削除)
+<span class="gd">-   1. [Strong Parameters](#Strong Parameters])</span>
+<span class="gi">+   1. [Strong Parameters](#Strong Parameters)</span>
+<span class="w"> </span>   1. [アクセス制御](#アクセス制御)
+<span class="w"> </span>   1. [モデル間の関連付け](#モデル間の関連付け)
+<span class="w"> </span>   1. [値の正規化とバリデーション](#値の正規化とバリデーション)
+</code></pre></div>
+<h2 id="76c2989">コミット: 76c2989<a class="headerlink" href="#76c2989" title="Permanent link">&para;</a></h2>
+<h3 id="_17">メッセージ<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Merge remote-tracking branch &#39;origin/develop&#39; into develop
+</code></pre></div>
+<h3 id="_18">変更されたファイル<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<h3 id="_19">変更内容<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 76c2989d29bb52b7d67dbc8e16c5dca1960ae6b6
+Merge: d9b605a 2f21c63
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 10:50:15 2025 +0900
+
+<span class="w"> </span>   Merge remote-tracking branch &#39;origin/develop&#39; into develop
+</code></pre></div>
+<h2 id="d9b605a">コミット: d9b605a<a class="headerlink" href="#d9b605a" title="Permanent link">&para;</a></h2>
+<h3 id="_20">メッセージ<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>fix:Typo
+</code></pre></div>
+<h3 id="_21">変更されたファイル<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M README.md</li>
+<li>D test_customer_message.rb</li>
+</ul>
+<h3 id="_22">変更内容<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit d9b605ac2e0a40e3ffb9772781208b015e67277d
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 10:38:50 2025 +0900
+
+<span class="w"> </span>   fix:Typo
+
+<span class="gh">diff --git a/README.md b/README.md</span>
+<span class="gh">index 5406c95..70683ae 100644</span>
+<span class="gd">--- a/README.md</span>
+<span class="gi">+++ b/README.md</span>
+<span class="gu">@@ -43,7 +43,7 @@ http://127.0.0.1:3000 にアクセスして、アプリケーションが起動</span>
+<span class="w"> </span>   1. [ユーザー認証(2)](#ユーザー認証(2))
+<span class="w"> </span>   1. [ルーティング](#ルーティング)
+<span class="w"> </span>   1. [レコードの表示、新規作成、更新、削除](#レコードの表示、新規作成、更新、削除)
+<span class="gd">-   1. [String Parameters](#String Parameters])</span>
+<span class="gi">+   1. [Strong Parameters](#Strong Parameters])</span>
+<span class="w"> </span>   1. [アクセス制御](#アクセス制御)
+<span class="w"> </span>   1. [モデル間の関連付け](#モデル間の関連付け)
+<span class="w"> </span>   1. [値の正規化とバリデーション](#値の正規化とバリデーション)
+<span class="gu">@@ -564,8 +564,8 @@ git push heroku master</span>
+<span class="w"> </span>+ updateアクション
+<span class="w"> </span>+ destroyアクション
+
+<span class="gd">-### String Parameters</span>
+<span class="gd">-#### String Parameters</span>
+<span class="gi">+### Strong Parameters</span>
+<span class="gi">+#### Strong Parameters</span>
+<span class="w"> </span>+ マスアサインメント脆弱性
+<span class="w"> </span>+ コントローラのテスト
+<span class="w"> </span>+ 400 Bad Request
+<span class="gu">@@ -940,4 +940,4 @@ git push heroku master</span>
+<span class="w"> </span>+ [Rails Bootstrap Forms](https://github.com/bootstrap-ruby/rails-bootstrap-forms)
+<span class="w"> </span>+ [Annotate (aka AnnotateModels)](https://github.com/ctran/annotate_models)
+<span class="w"> </span>+ [MigrationComments](https://github.com/pinnymz/migration_comments)
+<span class="gd">-+ [i18n_generators](https://github.com/amatsuda/i18n_generators)</span>
+\ No newline at end of file
+<span class="gi">++ [i18n_generators](https://github.com/amatsuda/i18n_generators)</span>
+<span class="gh">diff --git a/test_customer_message.rb b/test_customer_message.rb</span>
+deleted file mode 100644
+<span class="gh">index f754441..0000000</span>
+<span class="gd">--- a/test_customer_message.rb</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,29 +0,0 @@</span>
+<span class="gd">-#!/usr/bin/env ruby</span>
+<span class="gd">-require_relative &#39;config/environment&#39;</span>
+<span class="gd">-</span>
+<span class="gd">-# Create a customer</span>
+<span class="gd">-customer = Customer.first || Customer.create!(</span>
+<span class="gd">-  email: &#39;test@example.com&#39;,</span>
+<span class="gd">-  family_name: &#39;Test&#39;,</span>
+<span class="gd">-  given_name: &#39;User&#39;,</span>
+<span class="gd">-  family_name_kana: &#39;テスト&#39;,</span>
+<span class="gd">-  given_name_kana: &#39;ユーザー&#39;,</span>
+<span class="gd">-  password: &#39;password&#39;,</span>
+<span class="gd">-  birthday: Date.new(1980, 1, 1),</span>
+<span class="gd">-  gender: &#39;male&#39;</span>
+<span class="gd">-)</span>
+<span class="gd">-</span>
+<span class="gd">-# Create a CustomerMessage without staff_member, root, or parent</span>
+<span class="gd">-message = CustomerMessage.new(</span>
+<span class="gd">-  customer: customer,</span>
+<span class="gd">-  subject: &#39;Test Subject&#39;,</span>
+<span class="gd">-  body: &#39;Test Body&#39;</span>
+<span class="gd">-)</span>
+<span class="gd">-</span>
+<span class="gd">-puts &quot;Message valid? #{message.valid?}&quot;</span>
+<span class="gd">-if message.valid?</span>
+<span class="gd">-  message.save!</span>
+<span class="gd">-  puts &quot;Message saved successfully with ID: #{message.id}&quot;</span>
+<span class="gd">-else</span>
+<span class="gd">-  puts &quot;Message validation errors: #{message.errors.full_messages.join(&#39;, &#39;)}&quot;</span>
+<span class="gd">-end</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="2f21c63">コミット: 2f21c63<a class="headerlink" href="#2f21c63" title="Permanent link">&para;</a></h2>
+<h3 id="_23">メッセージ<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chore:不要なコード削除
+</code></pre></div>
+<h3 id="_24">変更されたファイル<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ul>
+<li>D test_customer_message.rb</li>
+</ul>
+<h3 id="_25">変更内容<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 2f21c631f45c00e5e73a50fb1b2197f8c3ac46b5
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 10:38:50 2025 +0900
+
+<span class="w"> </span>   chore:不要なコード削除
+
+<span class="gh">diff --git a/test_customer_message.rb b/test_customer_message.rb</span>
+deleted file mode 100644
+<span class="gh">index f754441..0000000</span>
+<span class="gd">--- a/test_customer_message.rb</span>
+<span class="gi">+++ /dev/null</span>
+<span class="gu">@@ -1,29 +0,0 @@</span>
+<span class="gd">-#!/usr/bin/env ruby</span>
+<span class="gd">-require_relative &#39;config/environment&#39;</span>
+<span class="gd">-</span>
+<span class="gd">-# Create a customer</span>
+<span class="gd">-customer = Customer.first || Customer.create!(</span>
+<span class="gd">-  email: &#39;test@example.com&#39;,</span>
+<span class="gd">-  family_name: &#39;Test&#39;,</span>
+<span class="gd">-  given_name: &#39;User&#39;,</span>
+<span class="gd">-  family_name_kana: &#39;テスト&#39;,</span>
+<span class="gd">-  given_name_kana: &#39;ユーザー&#39;,</span>
+<span class="gd">-  password: &#39;password&#39;,</span>
+<span class="gd">-  birthday: Date.new(1980, 1, 1),</span>
+<span class="gd">-  gender: &#39;male&#39;</span>
+<span class="gd">-)</span>
+<span class="gd">-</span>
+<span class="gd">-# Create a CustomerMessage without staff_member, root, or parent</span>
+<span class="gd">-message = CustomerMessage.new(</span>
+<span class="gd">-  customer: customer,</span>
+<span class="gd">-  subject: &#39;Test Subject&#39;,</span>
+<span class="gd">-  body: &#39;Test Body&#39;</span>
+<span class="gd">-)</span>
+<span class="gd">-</span>
+<span class="gd">-puts &quot;Message valid? #{message.valid?}&quot;</span>
+<span class="gd">-if message.valid?</span>
+<span class="gd">-  message.save!</span>
+<span class="gd">-  puts &quot;Message saved successfully with ID: #{message.id}&quot;</span>
+<span class="gd">-else</span>
+<span class="gd">-  puts &quot;Message validation errors: #{message.errors.full_messages.join(&#39;, &#39;)}&quot;</span>
+<span class="gd">-end</span>
+\ No newline at end of file
+</code></pre></div>
+<h2 id="3d3d40f">コミット: 3d3d40f<a class="headerlink" href="#3d3d40f" title="Permanent link">&para;</a></h2>
+<h3 id="_26">メッセージ<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chore:docker-compose更新
+</code></pre></div>
+<h3 id="_27">変更されたファイル<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li>M .gitignore</li>
+<li>M config/database.yml</li>
+<li>M docker-compose.yml</li>
+</ul>
+<h3 id="_28">変更内容<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>commit 3d3d40fb03a78e498d8787bdd0a5c53916845d9b
+Author: k2works &lt;kakimomokuri@gmail.com&gt;
+Date:   Thu Jun 12 10:15:21 2025 +0900
+
+<span class="w"> </span>   chore:docker-compose更新
+
+<span class="gh">diff --git a/.gitignore b/.gitignore</span>
+<span class="gh">index 40045d9..ee66fe4 100644</span>
+<span class="gd">--- a/.gitignore</span>
+<span class="gi">+++ b/.gitignore</span>
+<span class="gu">@@ -88,6 +88,7 @@ config/initializers/secret_token.rb</span>
+<span class="w"> </span>## Environment normalization:
+<span class="w"> </span>/.bundle
+<span class="w"> </span>/vendor/bundle
+<span class="gi">+.gem_rbs_collection</span>
+
+<span class="w"> </span># these should all be checked in to normalize the environment:
+<span class="w"> </span># Gemfile.lock, .ruby-version, .ruby-gemset
+<span class="gu">@@ -108,4 +109,4 @@ bower.json</span>
+
+<span class="w"> </span>public/assets/
+<span class="w"> </span>.idea/
+<span class="gd">-*.iml</span>
+\ No newline at end of file
+<span class="gi">+*.iml</span>
+<span class="gh">diff --git a/config/database.yml b/config/database.yml</span>
+<span class="gh">index 1b2c8a0..c42297f 100644</span>
+<span class="gd">--- a/config/database.yml</span>
+<span class="gi">+++ b/config/database.yml</span>
+<span class="gu">@@ -15,10 +15,10 @@ development:</span>
+<span class="w"> </span>  encoding: utf8
+<span class="w"> </span>  collation: utf8_general_ci
+<span class="w"> </span>  pool: 5
+<span class="gd">-  username: root</span>
+<span class="gd">-  password: password</span>
+<span class="gd">-  host: &lt;%= ENV.fetch(&quot;MYSQL_HOST&quot;, &quot;127.0.0.1&quot;) %&gt;</span>
+<span class="gd">-  database: baukis-kai_development</span>
+<span class="gi">+  username: &lt;%= ENV.fetch(&quot;DB_USER&quot;, &quot;root&quot;) %&gt;</span>
+<span class="gi">+  password: &lt;%= ENV.fetch(&quot;DB_PASSWORD&quot;, &quot;password&quot;) %&gt;</span>
+<span class="gi">+  host: &lt;%= ENV.fetch(&quot;DB_HOST&quot;, &quot;127.0.0.1&quot;) %&gt;</span>
+<span class="gi">+  database: &lt;%= ENV.fetch(&quot;DB_DATABASE&quot;, &quot;bauki-kai_development&quot;) %&gt;</span>
+
+<span class="w"> </span># Warning: The database defined as &quot;test&quot; will be erased and
+<span class="w"> </span># re-generated from your development database when you run &quot;rake&quot;.
+<span class="gu">@@ -28,10 +28,10 @@ test:</span>
+<span class="w"> </span>  encoding: utf8
+<span class="w"> </span>  collation: utf8_general_ci
+<span class="w"> </span>  pool: 5
+<span class="gd">-  username: root</span>
+<span class="gd">-  password: password</span>
+<span class="gd">-  host: &lt;%= ENV.fetch(&quot;MYSQL_HOST&quot;, &quot;127.0.0.1&quot;) %&gt;</span>
+<span class="gd">-  database: baukis-kai_test</span>
+<span class="gi">+  username: &lt;%= ENV.fetch(&quot;DB_USER&quot;, &quot;root&quot;) %&gt;</span>
+<span class="gi">+  password: &lt;%= ENV.fetch(&quot;DB_PASSWORD&quot;, &quot;password&quot;) %&gt;</span>
+<span class="gi">+  host: &lt;%= ENV.fetch(&quot;DB_HOST&quot;, &quot;127.0.0.1&quot;) %&gt;</span>
+<span class="gi">+  database: &quot;app_test&quot;</span>
+
+<span class="w"> </span># As with config/secrets.yml, you never want to store sensitive information,
+<span class="w"> </span># like your database password, in your source code. If your source code is
+<span class="gu">@@ -58,8 +58,8 @@ production:</span>
+<span class="w"> </span>  # For details on connection pooling, see rails configuration guide
+<span class="w"> </span>  # http://guides.rubyonrails.org/configuring.html#database-pooling
+<span class="w"> </span>  pool: &lt;%= ENV.fetch(&quot;RAILS_MAX_THREADS&quot;) { 5 } %&gt;
+<span class="gd">-  username: postgres</span>
+<span class="gd">-  password: password</span>
+<span class="gd">-  host: 127.0.0.1</span>
+<span class="gd">-  database: baukis-kai_production</span>
+<span class="gi">+  username: &lt;%= ENV.fetch(&quot;DB_USER&quot;, &quot;postgres&quot;) %&gt;</span>
+<span class="gi">+  password: &lt;%= ENV.fetch(&quot;DB_PASSWORD&quot;, &quot;password&quot;) %&gt;</span>
+<span class="gi">+  host: &lt;%= ENV.fetch(&quot;DB_HOST&quot;, &quot;127.0.0.1&quot;) %&gt;</span>
+<span class="gi">+  database: &lt;%= ENV.fetch(&quot;DB_DATABASE&quot;, &quot;bauki-kai_production&quot;) %&gt;</span>
+
+<span class="gh">diff --git a/docker-compose.yml b/docker-compose.yml</span>
+<span class="gh">index d9c992c..101dc00 100644</span>
+<span class="gd">--- a/docker-compose.yml</span>
+<span class="gi">+++ b/docker-compose.yml</span>
+<span class="gu">@@ -4,48 +4,68 @@ services:</span>
+<span class="w"> </span>      context: .
+<span class="w"> </span>      dockerfile: Dockerfile-app
+<span class="w"> </span>    depends_on:
+<span class="gd">-      - db</span>
+<span class="gi">+      - db_prd</span>
+<span class="w"> </span>    environment:
+<span class="gd">-      MYSQL_HOST: db</span>
+<span class="gd">-      MYSQL_PORT: 3306</span>
+<span class="gd">-      MYSQL_USER: user</span>
+<span class="gd">-      MYSQL_PASSWORD: pass</span>
+<span class="gd">-      MYSQL_DATABASE: app_development</span>
+<span class="gi">+      RAILS_ENV: production</span>
+<span class="gi">+      SECRET_KEY_BASE: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+<span class="gi">+      PRD_URL: 127.0.0.1</span>
+<span class="gi">+      DB_HOST: db_prd</span>
+<span class="gi">+      DB_PORT: 5432</span>
+<span class="gi">+      DB_USER: postgres</span>
+<span class="gi">+      DB_PASSWORD: password</span>
+<span class="gi">+      DB_DATABASE: app_production</span>
+<span class="w"> </span>    ports:
+<span class="gd">-      - &quot;3000:3000&quot;</span>
+<span class="gi">+      - &quot;3001:3000&quot;</span>
+<span class="w"> </span>    working_dir: /app
+<span class="w"> </span>    volumes:
+<span class="w"> </span>      - ./:/app
+<span class="gd">-  db:</span>
+<span class="gi">+</span>
+<span class="gi">+  db_dev:</span>
+<span class="w"> </span>    image: mysql:8.0
+<span class="w"> </span>    environment:
+<span class="w"> </span>      MYSQL_ROOT_PASSWORD: password
+<span class="w"> </span>      MYSQL_USER: user
+<span class="gd">-      MYSQL_PASSWORD: pass</span>
+<span class="gi">+      MYSQL_PASSWORD: password</span>
+<span class="gi">+      MYSQL_DATABASE: app_development</span>
+<span class="w"> </span>    ports:
+<span class="w"> </span>      - 3306:3306
+<span class="w"> </span>    volumes:
+<span class="w"> </span>      - mysql-db:/var/lib/mysql
+
+<span class="gi">+  db_prd:</span>
+<span class="gi">+    image: postgres:17</span>
+<span class="gi">+    environment:</span>
+<span class="gi">+      POSTGRES_USER: postgres</span>
+<span class="gi">+      POSTGRES_PASSWORD: password</span>
+<span class="gi">+      POSTGRES_INITDB_ARGS: &quot;--encoding=UTF-8&quot;</span>
+<span class="gi">+      POSTGRES_DB: app_production</span>
+<span class="gi">+    user: postgres</span>
+<span class="gi">+    ports:</span>
+<span class="gi">+      - &quot;5432:5432&quot;</span>
+<span class="gi">+    volumes:</span>
+<span class="gi">+      - postgresql-db:/var/lib/postgresql</span>
+<span class="gi">+</span>
+<span class="w"> </span>  console:
+<span class="w"> </span>    build:
+<span class="w"> </span>      context: .
+<span class="w"> </span>      dockerfile: Dockerfile-console
+<span class="w"> </span>    environment:
+<span class="gd">-      MYSQL_HOST: db</span>
+<span class="gd">-      MYSQL_PORT: 3306</span>
+<span class="gd">-      MYSQL_USER: user</span>
+<span class="gd">-      MYSQL_PASSWORD: pass</span>
+<span class="gd">-      MYSQL_DATABASE: app_development</span>
+<span class="gi">+      DB_HOST: db_dev</span>
+<span class="gi">+      DB_PORT: 3306</span>
+<span class="gi">+      DB_USER: root</span>
+<span class="gi">+      DB_PASSWORD: password</span>
+<span class="gi">+      DB_DATABASE: app_development</span>
+<span class="w"> </span>    volumes:
+<span class="w"> </span>      - ./:/srv
+<span class="w"> </span>    working_dir: /srv
+<span class="w"> </span>    depends_on:
+<span class="gd">-      - db</span>
+<span class="gi">+      - db_dev</span>
+<span class="w"> </span>    stdin_open: true
+<span class="w"> </span>    ports:
+<span class="gd">-      - &quot;3333:3000&quot;</span>
+<span class="gi">+      - &quot;3000:3000&quot;</span>
+
+<span class="w"> </span>volumes:
+<span class="w"> </span>  mysql-db:
+<span class="gd">-    driver: local</span>
+\ No newline at end of file
+<span class="gi">+    driver: local</span>
+<span class="gi">+  postgresql-db:</span>
+<span class="gi">+    driver: local</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/k2works/baukis-kai" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../docs/assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>
